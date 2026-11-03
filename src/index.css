@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #f4ead5;
+  --color-parchment-dark: #e8d9b5;
+  --color-ink: #2b1d10;
+  --color-leather: #3b2a1a;
+  --color-rubric: #8a3b12;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-body: Georgia, "Times New Roman", serif;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-parchment);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
