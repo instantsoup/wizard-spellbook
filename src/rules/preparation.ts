@@ -1,0 +1,125 @@
+// Daily preparation: which spells may go in which slot, and day bookkeeping.
+
+import type { Spell } from '../data/spell-schema'
+import { isProhibited } from './character'
+import { computeSlots, listSlots } from './slots'
+import { check, type PreparedSlot, type RuleCheck, type WizardCharacter } from './types'
+
+/** A fresh, empty set of slots for the day. */
+export function emptyDay(c: WizardCharacter): PreparedSlot[] {
+  return listSlots(c).map((s) => ({ ...s, expended: false }))
+}
+
+/** Can this spell go in this slot? */
+export function canFillSlot(
+  c: WizardCharacter,
+  slot: Pick<PreparedSlot, 'slotLevel' | 'kind'>,
+  spell: Spell,
+  knownSpellIds: ReadonlySet<string>,
+): RuleCheck {
+  const errors: string[] = []
+  if (!knownSpellIds.has(spell.id)) errors.push(`${spell.name} is not in your book.`)
+  if (isProhibited(c, spell.school)) errors.push(`${spell.school} is a prohibited school.`)
+  if (spell.level > slot.slotLevel) {
+    errors.push(`${spell.name} is level ${spell.level} and won't fit a level ${slot.slotLevel} slot.`)
+  }
+  if (slot.kind === 'specialist' && spell.school !== c.specialty) {
+    errors.push(`Specialist slots only hold ${c.specialty ?? 'specialty'} spells.`)
+  }
+  const level = computeSlots(c).find((l) => l.spellLevel === slot.slotLevel)
+  if (!level) errors.push(`You have no level ${slot.slotLevel} slots.`)
+  else if (level.locked) errors.push(`Your Int is too low for level ${slot.slotLevel} spells.`)
+  return check(errors)
+}
+
+/** Known spells that may legally fill a slot, sorted by level (highest first) then name. */
+export function candidatesForSlot(
+  c: WizardCharacter,
+  slot: Pick<PreparedSlot, 'slotLevel' | 'kind'>,
+  knownSpells: Spell[],
+): Spell[] {
+  const ids = new Set(knownSpells.map((s) => s.id))
+  return knownSpells
+    .filter((s) => canFillSlot(c, slot, s, ids).ok)
+    .sort((a, b) => b.level - a.level || a.name.localeCompare(b.name))
+}
+
+/** Checks every filled slot, and that the slot layout still matches the character. */
+export function validateDay(
+  c: WizardCharacter,
+  slots: PreparedSlot[],
+  spellsById: ReadonlyMap<string, Spell>,
+  knownSpellIds: ReadonlySet<string>,
+): RuleCheck {
+  const errors: string[] = []
+  const warnings: string[] = []
+  const expected = listSlots(c)
+  const key = (s: { slotLevel: number; kind: string }) => `${s.slotLevel}:${s.kind}`
+  const count = (list: { slotLevel: number; kind: string }[]) =>
+    list.reduce((m, s) => m.set(key(s), (m.get(key(s)) ?? 0) + 1), new Map<string, number>())
+  const want = count(expected)
+  const have = count(slots)
+  for (const k of new Set([...want.keys(), ...have.keys()])) {
+    if ((want.get(k) ?? 0) !== (have.get(k) ?? 0)) {
+      warnings.push('Your slots changed (level or Int). Re-prepare to update them.')
+      break
+    }
+  }
+  slots.forEach((slot) => {
+    if (!slot.spellId) return
+    const spell = spellsById.get(slot.spellId)
+    if (!spell) {
+      errors.push(`Unknown spell "${slot.spellId}".`)
+      return
+    }
+    errors.push(...canFillSlot(c, slot, spell, knownSpellIds).errors)
+  })
+  return check([...new Set(errors)], warnings)
+}
+
+/**
+ * New slot layout for the character, keeping existing picks where a slot of the
+ * same level and kind still exists. Used after a level-up or Int change, and to
+ * carry yesterday's picks into a new day (with expended reset).
+ */
+export function reconcileDay(c: WizardCharacter, previous: PreparedSlot[], resetExpended = true): PreparedSlot[] {
+  const pool = previous.map((s) => ({ ...s }))
+  return emptyDay(c).map((slot) => {
+    const i = pool.findIndex((p) => p.slotLevel === slot.slotLevel && p.kind === slot.kind)
+    if (i < 0) return slot
+    const [prev] = pool.splice(i, 1)
+    return { ...slot, spellId: prev.spellId, expended: resetExpended ? false : prev.expended }
+  })
+}
+
+export interface LevelUsage {
+  spellLevel: number
+  total: number
+  prepared: number
+  open: number
+  expended: number
+  remaining: number
+}
+
+/** Per-level counts for the Prepare and Today screens. */
+export function dayUsage(slots: PreparedSlot[]): LevelUsage[] {
+  const levels = [...new Set(slots.map((s) => s.slotLevel))].sort((a, b) => a - b)
+  return levels.map((spellLevel) => {
+    const here = slots.filter((s) => s.slotLevel === spellLevel)
+    const prepared = here.filter((s) => s.spellId).length
+    const expended = here.filter((s) => s.spellId && s.expended).length
+    return {
+      spellLevel,
+      total: here.length,
+      prepared,
+      open: here.length - prepared,
+      expended,
+      remaining: prepared - expended,
+    }
+  })
+}
+
+/** Mark a slot cast (or un-cast). Returns a new array. */
+export function setExpended(slots: PreparedSlot[], index: number, expended: boolean): PreparedSlot[] {
+  return slots.map((s, i) => (i === index && s.spellId ? { ...s, expended } : s))
+}

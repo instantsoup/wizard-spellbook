@@ -364,10 +364,13 @@ least 44 px.
   `docs/spell-format.md`.
 - Deploy a placeholder page and confirm it installs on the Android phone.
 
-**Phase 1 — Rules engine (tests first)**
-- Slot counts for levels 1–20, bonus spells at Int 10 to 30, specialist slots, the
-  prohibited-school checks and the Divination exception, the free-pick allowance and
-  legality for each level, the default cost, the minimum-Int lock.
+**Phase 1 — Rules engine (tests first)** ✅ done
+- `src/rules/`: `tables.ts` (Table 3-18 and Table 1-1), `character.ts` (Int totals,
+  specialist and prohibited-school checks), `slots.ts` (base, bonus and specialist
+  slots, minimum-Int lock), `known.ts` (free picks for each level, `canLearn`,
+  costs, starting cantrips), `preparation.ts` (slot checks, candidate lists, day
+  validation, carry-over, cast tracking) and `houseRules.ts`.
+- 76 tests, covering 97% of lines. Run `npm test`, or `npm run coverage`.
 
 **Phase 2 — Storage and character setup**
 - Dexie schema, character create and edit, the starting-spells flow, backup and
