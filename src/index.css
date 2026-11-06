@@ -17,3 +17,12 @@ body {
   color: var(--color-ink);
   font-family: var(--font-body);
 }
+
+/* Spell description text */
+.spell-text p { margin: 0 0 0.6em; line-height: 1.5; }
+.spell-text ul { margin: 0 0 0.6em 1.2em; list-style: disc; }
+.spell-text table { margin: 0.5em 0 0.8em; border-collapse: collapse; font-size: 0.85em; display: block; overflow-x: auto; }
+.spell-text th, .spell-text td { border: 1px solid color-mix(in srgb, var(--color-ink) 20%, transparent); padding: 0.25em 0.5em; text-align: left; vertical-align: top; }
+.spell-text th { background: color-mix(in srgb, var(--color-parchment-dark) 70%, transparent); }
+
+button, a { -webkit-tap-highlight-color: transparent; }

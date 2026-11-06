@@ -14,13 +14,13 @@
     "coverage": "vitest run --coverage.enabled --coverage.include=src/rules/** --coverage.exclude=src/rules/fixtures.ts --coverage.exclude=src/rules/index.ts --coverage.exclude=**/*.test.ts"
   },
   "dependencies": {
+    "@fontsource/cinzel": "^5.3.0",
     "dexie": "^4.4.7",
     "dexie-react-hooks": "^4.4.0",
     "minisearch": "^7.2.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.5",
-    "zustand": "^5.0.16"
+    "react-router-dom": "^7.18.5"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.4",
@@ -29,6 +29,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "@vitest/coverage-v8": "^5.1.0",
+    "fake-indexeddb": "^6.2.7",
     "oxlint": "^1.89.0",
     "tailwindcss": "^4.3.4",
     "typescript": "~7.0.2",

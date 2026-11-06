@@ -372,9 +372,16 @@ least 44 px.
   validation, carry-over, cast tracking) and `houseRules.ts`.
 - 76 tests, covering 97% of lines. Run `npm test`, or `npm run coverage`.
 
-**Phase 2 — Storage and character setup**
-- Dexie schema, character create and edit, the starting-spells flow, backup and
-  restore.
+**Phase 2 — Storage and character setup** ✅ done
+- Dexie schema, with every table declared up front. Character create, edit, switch
+  and delete. Starting cantrips are added automatically, then the player picks
+  3 + Int mod 1st-level spells. Backup and restore as one JSON file. Persistent
+  storage is requested.
+- App shell: hash routing, bottom tab bar, a basic Book view with expandable spell
+  text, and the More page (wizards, table-rule settings, backup, OGL notice).
+- A safe renderer for spell text: paragraphs, lists, italics and the SRD's HTML
+  tables, with everything else escaped.
+- Library, Prepare and Today are placeholders.
 
 **Phase 3 — Library and adding spells**
 - Spell loading from the manifest, merged with imported spells. Virtualized list,
