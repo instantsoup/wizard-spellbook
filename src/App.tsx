@@ -9,6 +9,7 @@ import { StartingSpellsPage } from './features/characters/StartingSpellsPage'
 import { CustomSpellPage } from './features/library/CustomSpellPage'
 import { LibraryPage } from './features/library/LibraryPage'
 import { MySpellsPage } from './features/library/MySpellsPage'
+import { LedgerPage } from './features/ledger/LedgerPage'
 import { MorePage } from './features/more/MorePage'
 import { PreparePage } from './features/prepare/PreparePage'
 import { TodayPage } from './features/today/TodayPage'
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/spells" element={<MySpellsPage />} />
         <Route path="/prepare" element={<WithCharacter render={(c) => <PreparePage character={c} />} />} />
         <Route path="/today" element={<WithCharacter render={(c) => <TodayPage character={c} />} />} />
+        <Route path="/ledger" element={<WithCharacter render={(c) => <LedgerPage character={c} />} />} />
         <Route path="/more" element={<WithCharacter render={(c) => <MorePage character={c} />} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

@@ -43,3 +43,7 @@ export function useTemplates(characterId: string | undefined) {
     [characterId],
   )
 }
+
+export function useLedger(characterId: string | undefined) {
+  return useLiveQuery(() => (characterId ? db.ledger.where('characterId').equals(characterId).toArray() : []), [characterId])
+}

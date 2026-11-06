@@ -54,12 +54,15 @@ export async function exportStoredSpells(d: SpellbookDB = db): Promise<Spell[]> 
     .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
 }
 
-export function downloadJson(data: unknown, fileName: string) {
-  const blob = new Blob([JSON.stringify(data, null, 2) + '\n'], { type: 'application/json' })
-  const url = URL.createObjectURL(blob)
+export function downloadText(text: string, fileName: string, type = 'text/plain') {
+  const url = URL.createObjectURL(new Blob([text], { type }))
   const a = document.createElement('a')
   a.href = url
   a.download = fileName
   a.click()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
+}
+
+export function downloadJson(data: unknown, fileName: string) {
+  downloadText(JSON.stringify(data, null, 2) + '\n', fileName, 'application/json')
 }

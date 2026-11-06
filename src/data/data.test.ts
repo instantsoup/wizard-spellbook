@@ -101,3 +101,22 @@ describe('mergeSpells', () => {
     expect(merged.map((s) => s.name)).toEqual(['Magic Missile', 'Fireball (fixed)'])
   })
 })
+
+describe('ledger and entry edits', () => {
+  it('adds and deletes manual entries; edits a book entry', async () => {
+    const { addLedgerEntry, deleteLedgerEntry, updateKnownSpell } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    await addLedgerEntry(c.id, 'Ink', 15, d)
+    const [entry] = await d.ledger.toArray()
+    expect(entry).toMatchObject({ label: 'Ink', amountGp: 15, characterId: c.id })
+    await deleteLedgerEntry(entry.id, d)
+    expect(await d.ledger.count()).toBe(0)
+
+    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, extraCostGp: 50, note: 'x' }], d)
+    await updateKnownSpell(r.added[0].id, { costGp: 250, extraCostGp: 0, note: '' }, d)
+    const k = (await knownSpellsFor(c.id, d))[0]
+    expect(k.costGp).toBe(250)
+    expect(k.extraCostGp).toBeUndefined()
+    expect(k.note).toBeUndefined()
+  })
+})

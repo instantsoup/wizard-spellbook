@@ -92,3 +92,24 @@ export async function addStartingCantrips(character: CharacterRecord, spells: Sp
 export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {
   await d.knownSpells.delete(knownSpellId)
 }
+
+/** Correct a book entry's cost or note. */
+export async function updateKnownSpell(
+  id: string,
+  changes: { costGp?: number; extraCostGp?: number; note?: string },
+  d: SpellbookDB = db,
+) {
+  await d.knownSpells.update(id, {
+    ...changes,
+    ...(changes.extraCostGp === 0 ? { extraCostGp: undefined } : {}),
+    ...(changes.note === '' ? { note: undefined } : {}),
+  })
+}
+
+export async function addLedgerEntry(characterId: string, label: string, amountGp: number, d: SpellbookDB = db) {
+  await d.ledger.add({ id: newId(), characterId, label, amountGp, at: Date.now() })
+}
+
+export async function deleteLedgerEntry(id: string, d: SpellbookDB = db) {
+  await d.ledger.delete(id)
+}

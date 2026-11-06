@@ -395,7 +395,15 @@ least 44 px.
 - My spells: custom spell form (create and edit), import a JSON file (validated,
   all-or-nothing), export as JSON, delete.
 
-**Phase 4 — Book view and ledger**
+**Phase 4 — Book view and ledger** ✅ done
+- Book:
+  - group by level or school, with filter chips;
+  - a free-pick summary (used/granted for each level);
+  - edit an entry's cost, extra cost or note, or remove it.
+  - The gold total links to the ledger.
+- Ledger: totals (learning, extra, other expenses), breakdowns by source and by spell
+  level, manual expenses (negative amounts allowed for refunds), history and CSV
+  export.
 
 **Phase 5 — Preparation and Today** ✅ done (built before Phase 4)
 - Prepare: slots grouped by level, with Base, Bonus and specialty-school tags.
