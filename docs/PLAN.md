@@ -383,10 +383,17 @@ least 44 px.
   tables, with everything else escaped.
 - Library, Prepare and Today are placeholders.
 
-**Phase 3 — Library and adding spells**
-- Spell loading from the manifest, merged with imported spells. Virtualized list,
-  search, filters, detail sheet, Add to book sheet, custom spell form, spell import
-  and export.
+**Phase 3 — Library and adding spells** ✅ done
+- Library tab with MiniSearch (fuzzy and prefix; names that start with the query rank
+  first). Filters: level and school multi-select, not in book, castable now, hide
+  prohibited, without component, source, subschool, descriptor. Filters are
+  remembered between visits.
+- Add to book sheet: free pick (defaults to the lowest level-up pick that fits),
+  scroll, another book, research or other. Editable cost, extra cost and a note, all
+  checked by `canLearn`.
+- Book: "Remove from book".
+- My spells: custom spell form (create and edit), import a JSON file (validated,
+  all-or-nothing), export as JSON, delete.
 
 **Phase 4 — Book view and ledger**
 

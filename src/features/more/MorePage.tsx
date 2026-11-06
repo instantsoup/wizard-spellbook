@@ -93,6 +93,14 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         <Toggle label="Headband counts toward bonus spells" checked={rules.enhancementCountsForBonus} onChange={(v) => setRule({ enhancementCountsForBonus: v })} />
       </Card>
 
+      <SectionTitle>Spells</SectionTitle>
+      <Card className="flex items-center justify-between gap-3">
+        <p className="text-sm text-ink/70">Add your own spells, or import spell files.</p>
+        <Link to="/spells">
+          <Button variant="secondary">My spells</Button>
+        </Link>
+      </Card>
+
       <SectionTitle>Backup</SectionTitle>
       <Card className="space-y-3">
         <p className="text-sm text-ink/70">

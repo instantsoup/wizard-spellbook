@@ -6,6 +6,9 @@ import type { CharacterRecord } from './data/db'
 import { useActiveCharacter } from './data/hooks'
 import { EditCharacterPage, NewCharacterPage } from './features/characters/CharacterPages'
 import { StartingSpellsPage } from './features/characters/StartingSpellsPage'
+import { CustomSpellPage } from './features/library/CustomSpellPage'
+import { LibraryPage } from './features/library/LibraryPage'
+import { MySpellsPage } from './features/library/MySpellsPage'
 import { MorePage } from './features/more/MorePage'
 import { BookPage } from './features/spellbook/BookPage'
 
@@ -34,7 +37,10 @@ export default function App() {
         <Route path="/setup/spells" element={<StartingSpellsPage />} />
         <Route path="/character" element={<EditCharacterPage />} />
         <Route path="/book" element={<WithCharacter render={(c) => <BookPage character={c} />} />} />
-        <Route path="/library" element={<ComingSoon title="Library" what="The spell library with filters and “Add to book” is coming in the next update." />} />
+        <Route path="/library" element={<WithCharacter render={(c) => <LibraryPage character={c} />} />} />
+        <Route path="/library/custom" element={<CustomSpellPage />} />
+        <Route path="/library/custom/:id" element={<CustomSpellPage />} />
+        <Route path="/spells" element={<MySpellsPage />} />
         <Route path="/prepare" element={<ComingSoon title="Prepare" what="Daily spell preparation is coming soon." />} />
         <Route path="/today" element={<ComingSoon title="Today" what="Casting tracker is coming soon." />} />
         <Route path="/more" element={<WithCharacter render={(c) => <MorePage character={c} />} />} />

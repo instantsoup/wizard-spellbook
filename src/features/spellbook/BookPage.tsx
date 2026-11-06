@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { levelLabel } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Page } from '../../components/ui'
+import { forgetSpell } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { useSpells } from '../../data/spells'
@@ -89,6 +90,18 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                       {k.costGp + (k.extraCostGp ?? 0) ? `${(k.costGp + (k.extraCostGp ?? 0)).toLocaleString()} gp` : 'free'}
                       {k.note ? ` · ${k.note}` : ''}
                     </p>
+                    <Button
+                      variant="ghost"
+                      className="mt-1 text-sm text-rubric"
+                      onClick={async () => {
+                        const refund = k.costGp + (k.extraCostGp ?? 0)
+                        if (confirm(`Remove ${spell!.name} from your book?${refund ? ` Its ${refund.toLocaleString()} gp will no longer count toward gold spent.` : ''}`)) {
+                          await forgetSpell(k.id)
+                        }
+                      }}
+                    >
+                      Remove from book
+                    </Button>
                   </SpellRow>
                 ))}
             </ul>
