@@ -123,3 +123,70 @@ export function dayUsage(slots: PreparedSlot[]): LevelUsage[] {
 export function setExpended(slots: PreparedSlot[], index: number, expended: boolean): PreparedSlot[] {
   return slots.map((s, i) => (i === index && s.spellId ? { ...s, expended } : s))
 }
+
+export interface CastGroup {
+  slotLevel: number
+  spellId: string
+  /** Indexes into the day's slots, in order. */
+  slotIndexes: number[]
+  expended: number
+  remaining: number
+}
+
+/** Prepared spells grouped by slot level and spell, for the Today screen. */
+export function castGroups(slots: PreparedSlot[]): CastGroup[] {
+  const groups = new Map<string, CastGroup>()
+  slots.forEach((s, i) => {
+    if (!s.spellId) return
+    const key = `${s.slotLevel}:${s.spellId}`
+    let g = groups.get(key)
+    if (!g) {
+      g = { slotLevel: s.slotLevel, spellId: s.spellId, slotIndexes: [], expended: 0, remaining: 0 }
+      groups.set(key, g)
+    }
+    g.slotIndexes.push(i)
+    if (s.expended) g.expended++
+    else g.remaining++
+  })
+  return [...groups.values()]
+}
+
+/** Casts one copy of a prepared spell (first unexpended slot). Returns the slot index used, or -1. */
+export function castOne(slots: PreparedSlot[], group: Pick<CastGroup, 'slotIndexes'>): { slots: PreparedSlot[]; index: number } {
+  const index = group.slotIndexes.find((i) => slots[i] && !slots[i].expended) ?? -1
+  return { slots: index < 0 ? slots : setExpended(slots, index, true), index }
+}
+
+/** Un-casts one copy (last expended slot). */
+export function restoreOne(slots: PreparedSlot[], group: Pick<CastGroup, 'slotIndexes'>): { slots: PreparedSlot[]; index: number } {
+  const index = [...group.slotIndexes].reverse().find((i) => slots[i]?.expended) ?? -1
+  return { slots: index < 0 ? slots : setExpended(slots, index, false), index }
+}
+
+/**
+ * Fills a day from saved picks (a template). Each pick goes to the first open slot of the
+ * same level and kind; picks that no longer fit (slot gone, spell not legal) are skipped.
+ */
+export function applyPicks(
+  c: WizardCharacter,
+  slots: PreparedSlot[],
+  picks: Pick<PreparedSlot, 'slotLevel' | 'kind' | 'spellId'>[],
+  spellsById: ReadonlyMap<string, Spell>,
+  knownSpellIds: ReadonlySet<string>,
+): { slots: PreparedSlot[]; skipped: number } {
+  const next: PreparedSlot[] = slots.map((s) => ({ ...s, spellId: undefined, expended: false }))
+  let skipped = 0
+  for (const p of picks) {
+    const spell = p.spellId ? spellsById.get(p.spellId) : undefined
+    if (!spell) {
+      if (p.spellId) skipped++
+      continue
+    }
+    const i = next.findIndex(
+      (s) => !s.spellId && s.slotLevel === p.slotLevel && s.kind === p.kind && canFillSlot(c, s, spell, knownSpellIds).ok,
+    )
+    if (i < 0) skipped++
+    else next[i].spellId = spell.id
+  }
+  return { slots: next, skipped }
+}

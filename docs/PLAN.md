@@ -397,8 +397,21 @@ least 44 px.
 
 **Phase 4 — Book view and ledger**
 
-**Phase 5 — Preparation and Today**
-- Slot grid, slot picker with checks, templates, Rest & Prepare, cast tracker, wake lock.
+**Phase 5 — Preparation and Today** ✅ done (built before Phase 4)
+- Prepare: slots grouped by level, with Base, Bonus and specialty-school tags.
+  - Tapping a slot opens a picker with only legal known spells; a specialist slot
+    shows only specialty-school spells, and lower-level spells are allowed in higher
+    slots.
+  - Slots can be left empty or the whole day cleared.
+  - Problems are shown per slot.
+  - An "Update" prompt appears after a level or Int change.
+- Loadouts: save current picks by name, or load them; picks that no longer fit are
+  skipped.
+- Rest & prepare: optionally keep yesterday's picks (cast marks cleared) and name the
+  day. The last 30 days are kept.
+- Today: spells grouped by level, one card per spell with a pip for each prepared
+  copy. Tapping casts one, with Undo. A details sheet offers Cast one, Restore one
+  and the full text. The screen stays awake while the tab is open.
 
 **Phase 6 — Polish and release v1**
 - Theme, school icons, empty states, a Lighthouse PWA check, Playwright smoke tests

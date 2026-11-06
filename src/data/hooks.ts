@@ -28,3 +28,18 @@ export function useKnownSpells(characterId: string | undefined): KnownSpellRecor
 export function useSetting<T>(key: string): T | undefined {
   return useLiveQuery(async () => (await db.settings.get(key))?.value as T | undefined, [key])
 }
+
+/** undefined while loading, null when the character has no current day yet. */
+export function useCurrentDay(characterId: string | undefined) {
+  return useLiveQuery(
+    async () => (characterId ? ((await db.days.where('[characterId+current]').equals([characterId, 1]).first()) ?? null) : null),
+    [characterId],
+  )
+}
+
+export function useTemplates(characterId: string | undefined) {
+  return useLiveQuery(
+    () => (characterId ? db.templates.where('characterId').equals(characterId).sortBy('name') : []),
+    [characterId],
+  )
+}

@@ -1,6 +1,18 @@
 import { describe, expect, it } from 'vitest'
 import { evoker5, S } from './fixtures'
-import { candidatesForSlot, canFillSlot, dayUsage, emptyDay, reconcileDay, setExpended, validateDay } from './preparation'
+import {
+  applyPicks,
+  candidatesForSlot,
+  canFillSlot,
+  castGroups,
+  castOne,
+  dayUsage,
+  emptyDay,
+  reconcileDay,
+  restoreOne,
+  setExpended,
+  validateDay,
+} from './preparation'
 import type { PreparedSlot } from './types'
 
 const known = [S.rayOfFrost, S.magicMissile, S.mageArmor, S.scorchingRay, S.fireball, S.haste, S.identify]
@@ -85,5 +97,51 @@ describe('a day of preparation', () => {
     const leveled = reconcileDay({ ...evoker5, wizardLevel: 7 }, day)
     expect(leveled.filter((s) => s.slotLevel === 4)).toHaveLength(3) // new 4th-level slots: base 1, bonus 1, specialist 1
     expect(leveled.filter((s) => s.spellId === 'magic-missile')).toHaveLength(5)
+  })
+})
+
+describe('casting helpers', () => {
+  const day = () => {
+    const slots = emptyDay(evoker5)
+    const l1 = slots.map((s, i) => (s.slotLevel === 1 ? i : -1)).filter((i) => i >= 0)
+    slots[l1[0]].spellId = 'magic-missile'
+    slots[l1[1]].spellId = 'magic-missile'
+    slots[l1[2]].spellId = 'mage-armor'
+    return slots
+  }
+
+  it('groups prepared spells by level and spell', () => {
+    const groups = castGroups(day())
+    expect(groups.map((g) => [g.slotLevel, g.spellId, g.remaining])).toEqual([
+      [1, 'magic-missile', 2],
+      [1, 'mage-armor', 1],
+    ])
+  })
+
+  it('casts and restores one copy at a time', () => {
+    let slots = day()
+    const mm = castGroups(slots)[0]
+    slots = castOne(slots, mm).slots
+    slots = castOne(slots, mm).slots
+    expect(castGroups(slots)[0]).toMatchObject({ expended: 2, remaining: 0 })
+    expect(castOne(slots, mm).index).toBe(-1)
+    slots = restoreOne(slots, mm).slots
+    expect(castGroups(slots)[0]).toMatchObject({ expended: 1, remaining: 1 })
+  })
+})
+
+describe('applyPicks (templates)', () => {
+  it('fills matching open slots and skips picks that no longer fit', () => {
+    const picks = [
+      { slotLevel: 3, kind: 'specialist' as const, spellId: 'fireball' },
+      { slotLevel: 3, kind: 'specialist' as const, spellId: 'haste' }, // not Evocation
+      { slotLevel: 4, kind: 'base' as const, spellId: 'fireball' }, // no 4th-level slots
+      { slotLevel: 1, kind: 'base' as const, spellId: 'gone-spell' },
+      { slotLevel: 1, kind: 'base' as const, spellId: 'magic-missile' },
+    ]
+    const { slots, skipped } = applyPicks(evoker5, emptyDay(evoker5), picks, byId, knownIds)
+    expect(skipped).toBe(3)
+    expect(slots.filter((s) => s.spellId).map((s) => s.spellId)).toEqual(['magic-missile', 'fireball'])
+    expect(slots.every((s) => !s.expended)).toBe(true)
   })
 })

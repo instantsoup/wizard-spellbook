@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
-import { Card, Loading, Page } from './components/ui'
+import { Loading } from './components/ui'
 import type { CharacterRecord } from './data/db'
 import { useActiveCharacter } from './data/hooks'
 import { EditCharacterPage, NewCharacterPage } from './features/characters/CharacterPages'
@@ -10,6 +10,8 @@ import { CustomSpellPage } from './features/library/CustomSpellPage'
 import { LibraryPage } from './features/library/LibraryPage'
 import { MySpellsPage } from './features/library/MySpellsPage'
 import { MorePage } from './features/more/MorePage'
+import { PreparePage } from './features/prepare/PreparePage'
+import { TodayPage } from './features/today/TodayPage'
 import { BookPage } from './features/spellbook/BookPage'
 
 /** Renders its child with the active character, or sends the user to setup. */
@@ -18,14 +20,6 @@ function WithCharacter({ render }: { render: (c: CharacterRecord) => ReactNode }
   if (c === undefined) return <Loading />
   if (c === null) return <Navigate to="/setup" replace />
   return <>{render(c)}</>
-}
-
-function ComingSoon({ title, what }: { title: string; what: string }) {
-  return (
-    <Page title={title}>
-      <Card className="text-center text-ink/70">{what}</Card>
-    </Page>
-  )
 }
 
 export default function App() {
@@ -41,8 +35,8 @@ export default function App() {
         <Route path="/library/custom" element={<CustomSpellPage />} />
         <Route path="/library/custom/:id" element={<CustomSpellPage />} />
         <Route path="/spells" element={<MySpellsPage />} />
-        <Route path="/prepare" element={<ComingSoon title="Prepare" what="Daily spell preparation is coming soon." />} />
-        <Route path="/today" element={<ComingSoon title="Today" what="Casting tracker is coming soon." />} />
+        <Route path="/prepare" element={<WithCharacter render={(c) => <PreparePage character={c} />} />} />
+        <Route path="/today" element={<WithCharacter render={(c) => <TodayPage character={c} />} />} />
         <Route path="/more" element={<WithCharacter render={(c) => <MorePage character={c} />} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
