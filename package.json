@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "vitest run --passWithNoTests"
+    "test": "vitest run",
+    "validate:spells": "node scripts/validate-spells.ts",
+    "build:srd": "node scripts/build-srd.ts"
   },
   "dependencies": {
     "dexie": "^4.4.7",

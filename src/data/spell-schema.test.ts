@@ -1,0 +1,61 @@
+import { readFileSync } from 'node:fs'
+import { describe, expect, it } from 'vitest'
+import { slugify, validateSpell, validateSpellFile } from './spell-schema'
+
+const good = {
+  id: 'orb-of-fire',
+  name: 'Orb of Fire',
+  school: 'Conjuration',
+  descriptors: ['Fire'],
+  level: 4,
+  components: ['V', 'S'],
+  description: 'Boom.',
+  source: 'Homebrew',
+}
+
+describe('validateSpell', () => {
+  it('accepts a minimal valid spell', () => {
+    expect(validateSpell(good)).toEqual([])
+  })
+  it('rejects bad school, level, components and unknown fields', () => {
+    const errors = validateSpell({ ...good, school: 'Wizardry', level: 10, components: ['Q'], colour: 'red' })
+    expect(errors).toHaveLength(4)
+  })
+  it('requires lowercase-kebab ids', () => {
+    expect(validateSpell({ ...good, id: 'Orb Of Fire' })).toHaveLength(1)
+  })
+  it('allows level 0 and 9 but not -1', () => {
+    expect(validateSpell({ ...good, level: 0 })).toEqual([])
+    expect(validateSpell({ ...good, level: 9 })).toEqual([])
+    expect(validateSpell({ ...good, level: -1 })).toHaveLength(1)
+  })
+})
+
+describe('validateSpellFile', () => {
+  it('flags duplicate ids', () => {
+    expect(validateSpellFile([good, good])).toEqual(['Orb of Fire: duplicate id "orb-of-fire"'])
+  })
+  it('requires an array', () => {
+    expect(validateSpellFile({})).toHaveLength(1)
+  })
+})
+
+describe('slugify', () => {
+  it('makes ids from SRD names', () => {
+    expect(slugify('Bull’s Strength, Mass')).toBe('bulls-strength-mass')
+    expect(slugify('Geas/Quest')).toBe('geas-quest')
+  })
+})
+
+describe('bundled SRD data', () => {
+  const srd = JSON.parse(readFileSync('public/data/spells/srd.json', 'utf8'))
+  it('is valid', () => {
+    expect(validateSpellFile(srd)).toEqual([])
+  })
+  it('has the 19 PHB cantrips and wizard-only spells', () => {
+    expect(srd.filter((s: { level: number }) => s.level === 0)).toHaveLength(19)
+    const ids = new Set(srd.map((s: { id: string }) => s.id))
+    expect(ids.has('mages-lucubration')).toBe(true)
+    expect(ids.has('fireball')).toBe(true)
+  })
+})

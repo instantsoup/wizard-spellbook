@@ -128,8 +128,8 @@ bundled with the app.
 `Spell` objects that all follow the same format.
 ```
 public/data/spells/
-  manifest.json        # ["srd-phb.json", "spell-compendium.json", ...]
-  srd-phb.json         # generated once from the SRD
+  manifest.json        # ["srd.json", "spell-compendium.json", ...]
+  srd.json         # generated once from the SRD
   my-homebrew.json     # added by hand later, same format
 ```
 - At startup the app loads every file listed in `manifest.json` and merges them by `id`.
@@ -162,17 +162,22 @@ interface Spell {
   savingThrow: string;
   spellResistance: string;
   description: string;        // plain text / light markdown
-  source: string;             // "PHB", "Spell Compendium", "Homebrew"
+  source: string;             // "SRD", "Spell Compendium", "Homebrew"
   page?: number;
 }
 ```
 The format is deliberately simple: a `level` number instead of a map of class
 levels, and `components` as a list of strings. That makes it easy to write by hand.
 
-**Pipeline:** a one-time script, `scripts/build-srd.ts`, takes an existing SRD
-dataset (the andargor.com 3.5 SRD database or a JSON version on GitHub, picked in
-Phase 0), keeps only the Sor/Wiz spells and writes `srd-phb.json`. Spot-check about
-20 spells against the PHB.
+**Pipeline (done):** `scripts/build-srd.ts` converts the 3.5 SRD Markdown at
+github.com/olimot/srd-v3.5-md into `srd.json`: 377 Sor/Wiz spells, including
+wizard-only ones. It fills in "functions like X" stat lines from the base spell, adds
+one-line summaries from the SRD spell list, and checks every level against that list.
+The field reference is in `docs/spell-format.md`. Spell data is labelled
+`source: "SRD"`, because the OGL treats book names like "Player's Handbook" as
+Product Identity.
+
+The `summary` field (optional) was added during Phase 0.
 
 ---
 
@@ -355,7 +360,7 @@ least 44 px.
 **Phase 0 — Setup and data**
 - Create the GitHub repo. Scaffold Vite + React + TypeScript + Tailwind + PWA +
   Vitest, and add a GitHub Actions workflow that deploys to Pages.
-- Write `build-srd.ts` → `srd-phb.json`, plus `validate-spells.ts` and
+- Write `build-srd.ts` → `srd.json`, plus `validate-spells.ts` and
   `docs/spell-format.md`.
 - Deploy a placeholder page and confirm it installs on the Android phone.
 

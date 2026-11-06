@@ -19,7 +19,7 @@ export default defineConfig({
       manifest: {
         name: "Wizard's Spellbook",
         short_name: 'Spellbook',
-        description: 'D&D 3.5e wizard spellbook and daily preparation',
+        description: '3.5e wizard spellbook and daily spell preparation',
         theme_color: '#3b2a1a',
         background_color: '#f4ead5',
         display: 'standalone',

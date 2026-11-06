@@ -22,7 +22,12 @@ Every push to `main` is tested, built and deployed to GitHub Pages by
 ## Spell data
 
 Spells are flat JSON files in `public/data/spells/`, listed in `manifest.json`.
-Add a file in the same format and list it in the manifest to add more spells.
+`srd.json` holds the 377 Sor/Wiz spells from the 3.5 SRD. To add more spells, see
+[docs/spell-format.md](docs/spell-format.md), then run:
+
+```bash
+npm run validate:spells
+```
 
 Spell content from the System Reference Document is Open Game Content under the
-Open Game License v1.0a.
+Open Game License v1.0a. See [OGL.md](OGL.md).
