@@ -21,7 +21,7 @@ spell database, track the gold that costs, and prepare each day's spells within 
 **Version 1**
 1. Character setup: wizard level, Intelligence, specialist school and prohibited schools.
 2. Spell database: searchable and filterable by level, school, subschool, descriptor,
-   components and source. Spells from prohibited schools are greyed out.
+   components and source. Spells from prohibited schools never appear.
 3. Adding spells: put a spell into the book with checks on prohibited schools,
    spell level and free picks, and track the **gold spent**.
 4. Browsing the book: a book-like view grouped by spell level, with the full spell text.
@@ -87,8 +87,9 @@ Store this as a data table in code, not as a formula.
   Only a spell from the specialty school can fill it.
 - Prohibited schools: two, which can't include Divination. A Divination specialist
   gives up only one.
-- Spells from prohibited schools can't be added or prepared. The database shows them
-  greyed out.
+- Spells from prohibited schools can't be added or prepared. They don't appear anywhere in
+  the app. Changing your prohibited schools removes their spells from your book (after a
+  confirmation) and from today's prepared slots.
 
 ### 2.4 Known spells (Eidetic Spellcasting)
 - **Starting spells (level 1):** all 0-level Sor/Wiz spells except prohibited ones,
@@ -298,7 +299,7 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
 3. **Library** (spell database)
    - Search bar and filter chips: **Level (0–9, multi-select)**, **School**,
      Subschool, Descriptor, Components, Source, "Not known yet", "Castable now".
-   - Prohibited spells are greyed out with a lock icon. Known spells are marked.
+   - Prohibited schools and their spells don't appear at all. Known spells are marked.
    - The **"Add to book"** sheet has:
      - How it was learned: free pick (shows the free picks left for each level),
        scroll, another book, research or other.

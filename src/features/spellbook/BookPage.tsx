@@ -9,7 +9,7 @@ import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { freePickStatus, ledgerSummary } from '../../rules'
+import { freePickStatus, isProhibited, ledgerSummary } from '../../rules'
 import { EditEntrySheet } from './EditEntrySheet'
 import { Reminders } from './Reminders'
 
@@ -47,9 +47,12 @@ export function BookPage({ character }: { character: CharacterRecord }) {
     const q = query.trim().toLowerCase()
     return (known ?? [])
       .map((k) => ({ k, spell: byId.get(k.spellId) }))
-      .filter((e): e is { k: KnownSpellRecord; spell: Spell } => !!e.spell && (!q || e.spell.name.toLowerCase().includes(q)))
+      .filter(
+        (e): e is { k: KnownSpellRecord; spell: Spell } =>
+          !!e.spell && !isProhibited(character, e.spell.school) && (!q || e.spell.name.toLowerCase().includes(q)),
+      )
       .sort((a, b) => a.spell.level - b.spell.level || a.spell.name.localeCompare(b.spell.name))
-  }, [known, byId, query])
+  }, [known, byId, query, character])
 
   if (!known || loading) return <Loading />
 

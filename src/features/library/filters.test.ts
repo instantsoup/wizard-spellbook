@@ -10,8 +10,9 @@ const run = (f: Partial<typeof EMPTY_FILTERS>) =>
   filterSpells(spells, { ...EMPTY_FILTERS, ...f }, { character: evoker5, knownIds }).map((s) => s.id)
 
 describe('filterSpells', () => {
-  it('returns everything with no filters', () => {
-    expect(run({})).toHaveLength(spells.length)
+  it('returns everything except prohibited schools with no filters', () => {
+    // evoker5 prohibits Enchantment and Illusion: Daze, Sleep, Invisibility
+    expect(run({})).toHaveLength(spells.length - 3)
   })
   it('filters by levels and schools (multi-select)', () => {
     expect(run({ levels: [3] })).toEqual(['fireball', 'haste'])
@@ -24,8 +25,10 @@ describe('filterSpells', () => {
     expect(run({ castableNow: true }).every((id) => spells.find((s) => s.id === id)!.level <= 3)).toBe(true)
     expect(run({ castableNow: true })).not.toContain('cone-of-cold')
   })
-  it('hides prohibited schools', () => {
-    expect(run({ hideProhibited: true })).not.toContain('sleep')
+  it('never shows prohibited schools, even if a saved filter asks for them', () => {
+    expect(run({})).not.toContain('sleep')
+    expect(run({ query: 'sleep' })).toEqual([])
+    expect(run({ schools: ['Enchantment'] })).toHaveLength(spells.length - 3)
   })
   it('excludes components and matches descriptors', () => {
     expect(run({ without: ['M'] })).not.toContain('fireball')

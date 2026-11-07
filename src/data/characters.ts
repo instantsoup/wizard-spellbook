@@ -97,3 +97,40 @@ export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {
 export async function updateKnownSpellNote(id: string, note: string, d: SpellbookDB = db) {
   await d.knownSpells.update(id, { note: note.trim() || undefined })
 }
+
+/** Book entries whose spell is from one of the given schools. */
+export async function knownSpellsInSchools(
+  characterId: string,
+  schools: readonly string[],
+  spellsById: ReadonlyMap<string, Spell>,
+  d: SpellbookDB = db,
+): Promise<KnownSpellRecord[]> {
+  if (!schools.length) return []
+  const known = await knownSpellsFor(characterId, d)
+  return known.filter((k) => {
+    const s = spellsById.get(k.spellId)
+    return s && schools.includes(s.school)
+  })
+}
+
+/** Saves character changes; spells from newly prohibited schools leave the book. */
+export async function updateCharacterAndBook(
+  id: string,
+  changes: Partial<CharacterInput>,
+  removeKnownIds: string[],
+  d: SpellbookDB = db,
+) {
+  await d.transaction('rw', d.characters, d.knownSpells, d.days, async () => {
+    await updateCharacter(id, changes, d)
+    if (!removeKnownIds.length) return
+    const removed = new Set((await d.knownSpells.bulkGet(removeKnownIds)).filter(Boolean).map((k) => k!.spellId))
+    await d.knownSpells.bulkDelete(removeKnownIds)
+    // Empty any prepared slots that held those spells.
+    await d.days
+      .where('characterId')
+      .equals(id)
+      .modify((day) => {
+        day.slots = day.slots.map((s) => (s.spellId && removed.has(s.spellId) ? { ...s, spellId: undefined, expended: false } : s))
+      })
+  })
+}

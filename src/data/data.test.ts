@@ -162,3 +162,22 @@ describe('database upgrade', () => {
     expect(await d.ledger.count()).toBe(0)
   })
 })
+
+describe('changing prohibited schools', () => {
+  it('finds and removes book spells from newly prohibited schools', async () => {
+    const { knownSpellsInSchools, updateCharacterAndBook } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    await learnSpells(c, [{ spell: S.haste, req: { method: 'scroll' } }, { spell: S.fireball, req: { method: 'scroll' } }], d)
+    const byId = new Map(Object.values(S).map((s) => [s.id, s]))
+    const hit = await knownSpellsInSchools(c.id, ['Transmutation', 'Illusion'], byId, d)
+    expect(hit.map((k) => k.spellId)).toEqual(['haste'])
+    const { ensureCurrentDay, getCurrentDay, saveDaySlots } = await import('./days')
+    const day = await ensureCurrentDay(c, d)
+    const i = day.slots.findIndex((s) => s.slotLevel === 3 && s.kind === 'base')
+    await saveDaySlots(day.id, day.slots.map((s, j) => (j === i ? { ...s, spellId: 'haste' } : s)), d)
+    await updateCharacterAndBook(c.id, { prohibited: ['Transmutation', 'Illusion'] }, hit.map((k) => k.id), d)
+    expect((await getCurrentDay(c.id, d))!.slots.some((s) => s.spellId === 'haste')).toBe(false)
+    expect((await knownSpellsFor(c.id, d)).map((k) => k.spellId)).toEqual(['fireball'])
+    expect((await d.characters.get(c.id))?.prohibited).toEqual(['Transmutation', 'Illusion'])
+  })
+})

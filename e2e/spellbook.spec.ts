@@ -24,8 +24,11 @@ test('library: free pick, paid spell, prohibited and above-level spells, fixed c
     expect(box.scroll).toBeLessThanOrEqual(box.client)
   }
 
+  // prohibited schools never appear: no spells, no school chip
   await page.getByPlaceholder('Search names and text').fill('Sleep')
-  await expect(page.getByRole('button', { name: 'Add Sleep', exact: true })).toHaveCount(0)
+  await expect(page.getByRole('button', { name: /^Sleep/ })).toHaveCount(0)
+  await expect(page.getByLabel('School', { exact: true }).getByRole('button', { name: 'Ench' })).toHaveCount(0)
+  await expect(page.getByLabel('School', { exact: true }).getByRole('button', { name: 'Illus' })).toHaveCount(0)
 
   // above the castable level: no Add button, just the level shown
   await page.getByPlaceholder('Search names and text').fill('Cone of Cold')

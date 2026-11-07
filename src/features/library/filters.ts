@@ -10,7 +10,6 @@ export interface LibraryFilters {
   schools: School[]
   notInBook: boolean
   castableNow: boolean
-  hideProhibited: boolean
   /** Hide spells that need any of these components. */
   without: ExcludableComponent[]
   sources: string[]
@@ -24,7 +23,6 @@ export const EMPTY_FILTERS: LibraryFilters = {
   schools: [],
   notInBook: false,
   castableNow: false,
-  hideProhibited: false,
   without: [],
   sources: [],
 }
@@ -35,7 +33,6 @@ export function activeFilterCount(f: LibraryFilters): number {
     (f.schools.length ? 1 : 0) +
     (f.notInBook ? 1 : 0) +
     (f.castableNow ? 1 : 0) +
-    (f.hideProhibited ? 1 : 0) +
     (f.without.length ? 1 : 0) +
     (f.sources.length ? 1 : 0) +
     (f.subschool ? 1 : 0) +
@@ -55,7 +52,7 @@ export function buildSearchIndex(spells: Spell[]) {
   return index
 }
 
-/** Applies filters; with a search query, results are ordered by relevance. */
+/** Applies filters (prohibited schools never appear); with a search query, results are ordered by relevance. */
 export function filterSpells(
   spells: Spell[],
   f: LibraryFilters,
@@ -64,6 +61,8 @@ export function filterSpells(
   const { character, knownIds } = ctx
   const castable = maxSpellLevel(character.wizardLevel)
   const int = effectiveInt(character)
+  // A remembered school filter may name a school that is now prohibited: ignore it.
+  const schools = f.schools.filter((s) => !isProhibited(character, s))
 
   let ordered = spells
   const q = f.query.trim()
@@ -81,10 +80,10 @@ export function filterSpells(
   return ordered.filter(
     (s) =>
       (!f.levels.length || f.levels.includes(s.level)) &&
-      (!f.schools.length || f.schools.includes(s.school)) &&
+      (!schools.length || schools.includes(s.school)) &&
       (!f.notInBook || !knownIds.has(s.id)) &&
       (!f.castableNow || (s.level <= castable && int >= minIntForSpellLevel(s.level))) &&
-      (!f.hideProhibited || !isProhibited(character, s.school)) &&
+      !isProhibited(character, s.school) &&
       !f.without.some((c) => s.components.includes(c)) &&
       (!f.sources.length || f.sources.includes(s.source)) &&
       (!f.subschool || s.subschool === f.subschool) &&

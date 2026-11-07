@@ -63,8 +63,7 @@ export function StartingSpellsPage() {
     <Page title="Starting spells" subtitle={character.name}>
       <Card className="mb-4">
         <p className="text-sm">
-          <span className="font-semibold">{cantrips.length} cantrips</span> are in your book: every 0-level spell
-          {character.prohibited.length ? ` except ${character.prohibited.join(' and ')}` : ''}.
+          <span className="font-semibold">{cantrips.length} cantrips</span> are in your book: every 0-level spell you can learn.
         </p>
         <p className="mt-2 text-sm">
           Choose <span className="font-semibold">{status.granted}</span> free 1st-level spells (3 + your 1st-level Int

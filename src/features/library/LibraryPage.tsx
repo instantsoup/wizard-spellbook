@@ -6,7 +6,7 @@ import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Messages, Page } from '../../components/ui'
 import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
-import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
+import { SCHOOLS, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
 import { AddToBookSheet } from './AddToBookSheet'
@@ -55,8 +55,10 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
     return () => clearTimeout(t)
   }, [toast])
 
-  const index = useMemo(() => buildSearchIndex(spells), [spells])
-  const options = useMemo(() => filterOptions(spells), [spells])
+  const index = useMemo(() => buildSearchIndex(spells.filter((s) => !isProhibited(character, s.school))), [spells, character])
+  // Spells from prohibited schools never appear anywhere in the Library.
+  const available = useMemo(() => spells.filter((s) => !isProhibited(character, s.school)), [spells, character])
+  const options = useMemo(() => filterOptions(available), [available])
   const knownIds = useMemo(() => new Set((known ?? []).map((k) => k.spellId)), [known])
   const results = useMemo(() => filterSpells(spells, f, { character, knownIds, index }), [spells, f, character, knownIds, index])
 
@@ -77,7 +79,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
   const moreCount = (f.without.length ? 1 : 0) + (f.sources.length ? 1 : 0) + (f.subschool ? 1 : 0) + (f.descriptor ? 1 : 0)
 
   return (
-    <Page title="Library" subtitle={`${spells.length} spells`} actions={<Link to="/spells"><Button variant="secondary">My spells</Button></Link>}>
+    <Page title="Library" subtitle={`${available.length} spells you can learn from`} actions={<Link to="/spells"><Button variant="secondary">My spells</Button></Link>}>
       {freeLeft > 0 && (
         <Card className="mb-3 border-rubric/30 text-sm">
           <p>
@@ -108,7 +110,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         ))}
       </div>
       <div className="mb-2 flex flex-wrap gap-1.5" aria-label="School">
-        {SCHOOLS.map((s) => (
+        {SCHOOLS.filter((s) => !isProhibited(character, s)).map((s) => (
           <Chip key={s} selected={f.schools.includes(s)} color={SCHOOL_STYLE[s].color} onClick={() => set({ schools: toggle(f.schools, s) })}>
             <span className="inline-flex items-center gap-1">
               <SchoolIcon school={s} />
@@ -123,9 +125,6 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         </Chip>
         <Chip selected={f.castableNow} onClick={() => set({ castableNow: !f.castableNow })}>
           Castable now
-        </Chip>
-        <Chip selected={f.hideProhibited} onClick={() => set({ hideProhibited: !f.hideProhibited })}>
-          Hide prohibited
         </Chip>
         <Chip selected={showMore || moreCount > 0} onClick={() => setShowMore(!showMore)}>
           More{moreCount ? ` (${moreCount})` : ''} {showMore ? '▴' : '▾'}
@@ -190,7 +189,6 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
       <ul>
         {results.slice(0, limit).map((s) => {
           const inBook = knownIds.has(s.id)
-          const prohibited = isProhibited(character, s.school as School)
           const tooHigh = s.level > castable
           return (
             <SpellRow
@@ -198,12 +196,10 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
               spell={s}
               open={openId === s.id}
               onToggle={() => setOpenId(openId === s.id ? undefined : s.id)}
-              muted={prohibited || (tooHigh && !inBook)}
+              muted={tooHigh && !inBook}
               aside={
                 inBook ? (
                   <span className="w-11 text-center text-xs font-semibold text-leather">✓<br />Book</span>
-                ) : prohibited ? (
-                  <span className="w-11 text-center text-xs text-ink/60" title="Prohibited school">🔒</span>
                 ) : tooHigh ? (
                   <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Level {s.level}</span>
                 ) : (
