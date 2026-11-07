@@ -50,7 +50,7 @@ export function Button({
 }
 
 export function Card({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <section className={`rounded-xl border border-ink/15 bg-white/40 p-4 shadow-sm ${className}`}>{children}</section>
+  return <section className={`rounded-xl border border-ink/15 bg-surface/40 p-4 shadow-sm ${className}`}>{children}</section>
 }
 
 export function SectionTitle({ children }: { children: ReactNode }) {
@@ -70,7 +70,7 @@ export function Field({ label, hint, group, children }: { label: string; hint?: 
 }
 
 export const inputClass =
-  'min-h-11 w-full rounded-lg border border-ink/25 bg-white/70 px-3 text-base text-ink outline-none focus:border-leather focus:ring-2 focus:ring-leather/20'
+  'min-h-11 w-full rounded-lg border border-ink/25 bg-surface/70 px-3 text-base text-ink outline-none focus:border-leather focus:ring-2 focus:ring-leather/20'
 
 export function Stepper({
   value,
@@ -93,7 +93,7 @@ export function Stepper({
       <button
         type="button"
         aria-label={`Decrease ${label}`}
-        className="size-11 rounded-lg border border-ink/25 bg-white/60 text-xl text-leather disabled:opacity-30"
+        className="size-11 rounded-lg border border-ink/25 bg-surface/60 text-xl text-leather disabled:opacity-30"
         disabled={value <= min}
         onClick={() => onChange(clamp(value - 1))}
       >
@@ -116,7 +116,7 @@ export function Stepper({
       <button
         type="button"
         aria-label={`Increase ${label}`}
-        className="size-11 rounded-lg border border-ink/25 bg-white/60 text-xl text-leather disabled:opacity-30"
+        className="size-11 rounded-lg border border-ink/25 bg-surface/60 text-xl text-leather disabled:opacity-30"
         disabled={value >= max}
         onClick={() => onChange(clamp(value + 1))}
       >
@@ -147,7 +147,7 @@ export function Chip({
       onClick={onClick}
       style={selected && color ? { backgroundColor: color, borderColor: color } : color ? { borderColor: color, color } : undefined}
       className={`min-h-9 rounded-full border px-3 text-sm transition-colors disabled:opacity-35 ${
-        selected ? 'border-leather bg-leather text-parchment' : 'border-ink/30 bg-white/50 text-ink'
+        selected ? 'border-leather bg-leather text-parchment' : 'border-ink/30 bg-surface/50 text-ink'
       }`}
     >
       {children}
@@ -165,7 +165,7 @@ export function Messages({ errors = [], warnings = [] }: { errors?: string[]; wa
         </p>
       ))}
       {warnings.map((w) => (
-        <p key={w} className="rounded-md bg-amber-100/70 px-3 py-2 text-amber-900">
+        <p key={w} className="rounded-md bg-warn-bg px-3 py-2 text-warn-text">
           {w}
         </p>
       ))}

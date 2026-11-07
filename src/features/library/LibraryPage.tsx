@@ -1,3 +1,4 @@
+import { SchoolIcon } from '../../components/SchoolIcon'
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ordinal, SCHOOL_STYLE } from '../../components/schools'
@@ -104,7 +105,10 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
       <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1" aria-label="School">
         {SCHOOLS.map((s) => (
           <Chip key={s} selected={f.schools.includes(s)} color={SCHOOL_STYLE[s].color} onClick={() => set({ schools: toggle(f.schools, s) })}>
-            {SCHOOL_STYLE[s].abbr}
+            <span className="inline-flex items-center gap-1">
+              <SchoolIcon school={s} />
+              {SCHOOL_STYLE[s].abbr}
+            </span>
           </Chip>
         ))}
       </div>

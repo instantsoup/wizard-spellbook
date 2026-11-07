@@ -74,10 +74,10 @@ export function TodayPage({ character }: { character: CharacterRecord }) {
                   .sort((a, b) => nameOf(a).localeCompare(nameOf(b)))
                   .map((g) => {
                     const spell = byId.get(g.spellId)
-                    const color = spell ? SCHOOL_STYLE[spell.school].color : '#888'
+                    const color = spell ? SCHOOL_STYLE[spell.school].color : 'var(--color-ink)'
                     const spent = g.remaining === 0
                     return (
-                      <li key={`${g.slotLevel}:${g.spellId}`} className="flex overflow-hidden rounded-xl border border-ink/15 bg-white/50 shadow-sm">
+                      <li key={`${g.slotLevel}:${g.spellId}`} className="flex overflow-hidden rounded-xl border border-ink/15 bg-surface/50 shadow-sm">
                         <button
                           type="button"
                           disabled={spent}

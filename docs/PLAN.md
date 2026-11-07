@@ -421,9 +421,18 @@ least 44 px.
   copy. Tapping casts one, with Undo. A details sheet offers Cast one, Restore one
   and the full text. The screen stays awake while the tab is open.
 
-**Phase 6 — Polish and release v1**
-- Theme, school icons, empty states, a Lighthouse PWA check, Playwright smoke tests
-  at 390 × 844, and the OGL notice.
+**Phase 6 — Polish and release v1** ✅ done
+- Candlelight (dark) theme: follows the phone, or can be forced under More →
+  Appearance. Every colour is a theme token, school colours included, and the theme
+  is applied before first paint.
+- A glyph for each school in spell rows, filter chips and Book headers.
+- A one-time "How it works" card, and a backup reminder every 14 days (snoozable).
+- 6 Playwright end-to-end tests at phone size: setup, library, prepare and cast,
+  ledger and backup, theme, offline. Run with `npm run e2e`; they also run in CI
+  before every deploy.
+- PWA check: Chrome reports no installability errors and all icons resolve.
+  Lighthouse's PWA audit has been removed upstream, so Chrome's own installability
+  check is used instead.
 
 ---
 

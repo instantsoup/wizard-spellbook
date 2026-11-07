@@ -125,7 +125,7 @@ export function AddToBookSheet({
 
 function Option({ checked, onSelect, label, children }: { checked: boolean; onSelect: () => void; label: string; children?: React.ReactNode }) {
   return (
-    <div className={`rounded-lg border px-3 py-2 ${checked ? 'border-leather bg-white/60' : 'border-ink/20'}`}>
+    <div className={`rounded-lg border px-3 py-2 ${checked ? 'border-leather bg-surface/60' : 'border-ink/20'}`}>
       <label className="flex min-h-9 items-center gap-3">
         <input type="radio" name="method" checked={checked} onChange={onSelect} className="size-5 accent-[var(--color-leather)]" />
         <span>{label}</span>

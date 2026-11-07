@@ -1,3 +1,4 @@
+import { SchoolIcon } from '../../components/SchoolIcon'
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gp, METHOD_LABEL } from '../../components/labels'
@@ -10,6 +11,7 @@ import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { freePickStatus, ledgerSummary } from '../../rules'
 import { EditEntrySheet } from './EditEntrySheet'
+import { Reminders } from './Reminders'
 
 type GroupBy = 'level' | 'school'
 const GROUP_KEY = 'bookGroupBy'
@@ -77,6 +79,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
         </>
       }
     >
+      <Reminders hasSpells={known.length > 0} />
       <Card className={`mb-4 ${freeLeft ? 'border-rubric/30' : ''}`}>
         <div className="flex items-center justify-between gap-3">
           <button type="button" className="min-h-11 flex-1 text-left text-sm" onClick={() => setShowPicks(!showPicks)} aria-expanded={showPicks}>
@@ -145,7 +148,16 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                 color={typeof g === 'string' ? SCHOOL_STYLE[g].color : undefined}
                 onClick={() => setFilter(filter === g ? undefined : g)}
               >
-                {typeof g === 'string' ? SCHOOL_STYLE[g].abbr : g === 0 ? 'Cantrips' : g}
+                {typeof g === 'string' ? (
+                  <span className="inline-flex items-center gap-1">
+                    <SchoolIcon school={g} />
+                    {SCHOOL_STYLE[g].abbr}
+                  </span>
+                ) : g === 0 ? (
+                  'Cantrips'
+                ) : (
+                  g
+                )}
               </Chip>
             ))}
           </div>
@@ -162,7 +174,14 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                 className="mb-1 flex items-baseline justify-between border-b border-leather/30 font-display text-lg"
                 style={{ color: typeof g === 'string' ? SCHOOL_STYLE[g].color : 'var(--color-leather)' }}
               >
-                {typeof g === 'string' ? g : levelLabel(g)}
+                {typeof g === 'string' ? (
+                  <span className="inline-flex items-center gap-2">
+                    <SchoolIcon school={g} className="size-5" />
+                    {g}
+                  </span>
+                ) : (
+                  levelLabel(g)
+                )}
                 <span className="font-body text-xs text-ink/50">{inGroup.length}</span>
               </h2>
               <ul>

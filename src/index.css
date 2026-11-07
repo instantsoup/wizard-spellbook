@@ -6,8 +6,72 @@
   --color-ink: #2b1d10;
   --color-leather: #3b2a1a;
   --color-rubric: #8a3b12;
+  --color-surface: #ffffff;
+  --color-good: #2e7d4f;
+  --color-warn-bg: #fbefc9;
+  --color-warn-text: #78350f;
   --font-display: "Cinzel", Georgia, serif;
   --font-body: Georgia, "Times New Roman", serif;
+}
+
+/* School colours (light / parchment) */
+:root {
+  color-scheme: light;
+  --school-abjuration: #2f5d8a;
+  --school-conjuration: #a4532a;
+  --school-divination: #86701c;
+  --school-enchantment: #9b3d78;
+  --school-evocation: #b22b1d;
+  --school-illusion: #5b4a9e;
+  --school-necromancy: #3f4f3e;
+  --school-transmutation: #2e7d4f;
+  --school-universal: #6b5b4b;
+}
+
+/* Candlelight (dark) theme: follows the system unless the user picked a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-parchment: #17120d;
+    --color-parchment-dark: #251d15;
+    --color-ink: #eadcc2;
+    --color-leather: #e3b97c;
+    --color-rubric: #f0895c;
+    --color-surface: #2e241a;
+    --color-good: #6fcf97;
+    --color-warn-bg: #3b2f12;
+    --color-warn-text: #f3d88f;
+    --school-abjuration: #82b2e2;
+    --school-conjuration: #e99c6c;
+    --school-divination: #dcc264;
+    --school-enchantment: #e18fc2;
+    --school-evocation: #f27d66;
+    --school-illusion: #aa9cf2;
+    --school-necromancy: #a3b99e;
+    --school-transmutation: #72d199;
+    --school-universal: #c2b19c;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-parchment: #17120d;
+  --color-parchment-dark: #251d15;
+  --color-ink: #eadcc2;
+  --color-leather: #e3b97c;
+  --color-rubric: #f0895c;
+  --color-surface: #2e241a;
+  --color-good: #6fcf97;
+  --color-warn-bg: #3b2f12;
+  --color-warn-text: #f3d88f;
+  --school-abjuration: #82b2e2;
+  --school-conjuration: #e99c6c;
+  --school-divination: #dcc264;
+  --school-enchantment: #e18fc2;
+  --school-evocation: #f27d66;
+  --school-illusion: #aa9cf2;
+  --school-necromancy: #a3b99e;
+  --school-transmutation: #72d199;
+  --school-universal: #c2b19c;
 }
 
 html, body, #root { min-height: 100%; }

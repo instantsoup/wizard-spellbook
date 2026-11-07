@@ -140,7 +140,7 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
                 {r.note ? ` · ${r.note}` : ''}
               </p>
             </div>
-            <span className={`shrink-0 font-display ${r.gp < 0 ? 'text-[#2e7d4f]' : 'text-leather'}`}>{gp(r.gp)}</span>
+            <span className={`shrink-0 font-display ${r.gp < 0 ? 'text-good' : 'text-leather'}`}>{gp(r.gp)}</span>
             {r.manualId && (
               <button
                 type="button"

@@ -1,3 +1,4 @@
+import { SchoolIcon } from '../../components/SchoolIcon'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SCHOOL_STYLE } from '../../components/schools'
@@ -91,7 +92,10 @@ export function StartingSpellsPage() {
               .filter((s) => !isProhibited(character, s as School) && s !== 'Universal')
               .map((s) => (
                 <Chip key={s} selected={school === s} color={SCHOOL_STYLE[s as School].color} onClick={() => setSchool(school === s ? undefined : (s as School))}>
-                  {SCHOOL_STYLE[s as School].abbr}
+                  <span className="inline-flex items-center gap-1">
+                    <SchoolIcon school={s as School} />
+                    {SCHOOL_STYLE[s as School].abbr}
+                  </span>
                 </Chip>
               ))}
           </div>

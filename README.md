@@ -12,7 +12,8 @@ each day's spells within the rules (base, Int bonus and specialist slots).
 ```bash
 npm install
 npm run dev      # local dev server
-npm test         # rules-engine unit tests (Vitest)
+npm test         # unit tests (Vitest)
+npm run e2e      # end-to-end tests at phone size (Playwright)
 npm run build    # production build to dist/
 ```
 

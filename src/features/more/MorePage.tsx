@@ -5,6 +5,7 @@ import { downloadBackup, parseBackup, restoreBackup } from '../../data/backup'
 import { deleteCharacter, setActiveCharacter, updateCharacter } from '../../data/characters'
 import type { CharacterRecord } from '../../data/db'
 import { useCharacters, useSetting } from '../../data/hooks'
+import { getTheme, setTheme, type ThemeChoice } from '../../theme'
 import { resolveHouseRules, type AboveCastablePolicy, type HouseRules } from '../../rules'
 
 export function MorePage({ character }: { character: CharacterRecord }) {
@@ -12,6 +13,7 @@ export function MorePage({ character }: { character: CharacterRecord }) {
   const characters = useCharacters() ?? []
   const lastBackupAt = useSetting<number>('lastBackupAt')
   const fileRef = useRef<HTMLInputElement>(null)
+  const [theme, setThemeState] = useState<ThemeChoice>(getTheme)
   const [msg, setMsg] = useState<{ errors?: string[]; warnings?: string[] }>({})
   const rules = resolveHouseRules(character.houseRules)
   const setRule = (patch: Partial<HouseRules>) =>
@@ -91,6 +93,25 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         </Field>
         <Toggle label="Specialist slot for cantrips" checked={rules.specialistCantripSlot} onChange={(v) => setRule({ specialistCantripSlot: v })} />
         <Toggle label="Headband counts toward bonus spells" checked={rules.enhancementCountsForBonus} onChange={(v) => setRule({ enhancementCountsForBonus: v })} />
+      </Card>
+
+      <SectionTitle>Appearance</SectionTitle>
+      <Card>
+        <Field label="Theme" hint="Candlelight is easier on the eyes at a dim table.">
+          <select
+            className={inputClass}
+            value={theme}
+            onChange={(e) => {
+              const t = e.target.value as ThemeChoice
+              setThemeState(t)
+              setTheme(t)
+            }}
+          >
+            <option value="system">Match my phone</option>
+            <option value="light">Parchment (light)</option>
+            <option value="dark">Candlelight (dark)</option>
+          </select>
+        </Field>
       </Card>
 
       <SectionTitle>Gold</SectionTitle>
