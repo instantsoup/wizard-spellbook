@@ -29,6 +29,8 @@ export interface WizardCharacter {
   int: IntScore
   /** Int modifier when the character was 1st level; fixes the starting free-spell count. */
   intModAtLevel1: number
+  /** Int score at 1st level (for display; the modifier above is what the rules use). */
+  intAtLevel1?: number
   /** undefined = generalist */
   specialty?: School
   prohibited: School[]

@@ -34,7 +34,7 @@ export function validateCharacter(c: WizardCharacter): RuleCheck {
   for (const [k, v] of Object.entries(c.int)) {
     if (!Number.isInteger(v)) errors.push(`Int ${k} must be a whole number.`)
   }
-  if (c.int.base < 1) errors.push('Base Int must be at least 1.')
+  if (c.int.base < 1) errors.push('Intelligence score must be at least 1.')
   if (effectiveInt(c) < 11) warnings.push('With Int below 11 a wizard cannot cast 1st-level spells.')
   if (abilityModifier(c.int.base) !== c.intModAtLevel1 && c.wizardLevel === 1) {
     warnings.push('Starting Int modifier does not match base Int.')

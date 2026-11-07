@@ -35,7 +35,7 @@ export function CharacterForm({
   const [c, setC] = useState<CharacterInput>(initial)
   // Starting Int follows base Int for a new character until edited by hand.
   const [startIntTouched, setStartIntTouched] = useState(!isNew)
-  const [startInt, setStartInt] = useState(10 + initial.intModAtLevel1 * 2)
+  const [startInt, setStartInt] = useState(initial.intAtLevel1 ?? 10 + initial.intModAtLevel1 * 2)
   const [busy, setBusy] = useState(false)
 
   const set = (patch: Partial<CharacterInput>) => setC((prev) => ({ ...prev, ...patch }))
@@ -44,13 +44,17 @@ export function CharacterForm({
     const changes: Partial<CharacterInput> = { int }
     if (!startIntTouched && patch.base !== undefined) {
       setStartInt(patch.base)
+      changes.intAtLevel1 = patch.base
       changes.intModAtLevel1 = abilityModifier(patch.base)
     }
     set(changes)
   }
 
+  // At 1st level your starting Intelligence is simply your current score.
+  const effective: CharacterInput =
+    c.wizardLevel === 1 ? { ...c, intAtLevel1: c.int.base, intModAtLevel1: abilityModifier(c.int.base) } : c
   const need = requiredProhibitedCount(c.specialty)
-  const result = validateCharacter(c)
+  const result = validateCharacter(effective)
   const errors = [...(c.name.trim() ? [] : ['Give your wizard a name.']), ...result.errors]
   const totalInt = c.int.base + c.int.enhancement + c.int.inherent
 
@@ -65,7 +69,7 @@ export function CharacterForm({
         if (errors.length) return
         setBusy(true)
         try {
-          await onSubmit({ ...c, name: c.name.trim() })
+          await onSubmit({ ...effective, name: c.name.trim() })
         } finally {
           setBusy(false)
         }
@@ -87,11 +91,11 @@ export function CharacterForm({
             {totalInt} <span className="text-base text-ink/60">({signed(abilityModifier(totalInt))})</span>
           </span>
         </div>
-        <Field group label="Base Int" hint="Ability score, including racial and level-up increases.">
-          <Stepper label="Base Int" value={c.int.base} min={3} max={50} onChange={(v) => setInt({ base: v })} />
+        <Field group label="Intelligence score" hint="Your current score, including your racial modifier and level-up increases. Item and tome bonuses go below.">
+          <Stepper label="Intelligence score" value={c.int.base} min={3} max={50} onChange={(v) => setInt({ base: v })} />
         </Field>
         <div className="grid grid-cols-2 gap-3">
-          <Field label="Enhancement" hint="Headband of Intellect">
+          <Field label="Item bonus" hint="Headband of Intellect">
             <select className={inputClass} value={c.int.enhancement} onChange={(e) => setInt({ enhancement: Number(e.target.value) })}>
               {[0, 2, 4, 6].map((n) => (
                 <option key={n} value={n}>
@@ -100,7 +104,7 @@ export function CharacterForm({
               ))}
             </select>
           </Field>
-          <Field label="Inherent" hint="Tome, wish">
+          <Field label="Tome / wish bonus" hint="Inherent bonus">
             <select className={inputClass} value={c.int.inherent} onChange={(e) => setInt({ inherent: Number(e.target.value) })}>
               {[0, 1, 2, 3, 4, 5].map((n) => (
                 <option key={n} value={n}>
@@ -110,23 +114,25 @@ export function CharacterForm({
             </select>
           </Field>
         </div>
-        <Field
-          group
-          label="Int at 1st level"
-          hint={`Sets your starting free 1st-level spells: 3 + modifier = ${Math.max(0, 3 + c.intModAtLevel1)}.`}
-        >
-          <Stepper
-            label="Int at 1st level"
-            value={startInt}
-            min={3}
-            max={30}
-            onChange={(v) => {
-              setStartIntTouched(true)
-              setStartInt(v)
-              set({ intModAtLevel1: abilityModifier(v) })
-            }}
-          />
-        </Field>
+        {c.wizardLevel > 1 && (
+          <Field
+            group
+            label="Intelligence when you started"
+            hint={`Your score at 1st level, including racial modifier. It sets your starting free 1st-level spells: 3 + modifier = ${Math.max(0, 3 + c.intModAtLevel1)}.`}
+          >
+            <Stepper
+              label="Intelligence when you started"
+              value={startInt}
+              min={3}
+              max={30}
+              onChange={(v) => {
+                setStartIntTouched(true)
+                setStartInt(v)
+                set({ intAtLevel1: v, intModAtLevel1: abilityModifier(v) })
+              }}
+            />
+          </Field>
+        )}
       </Card>
 
       <Card className="space-y-3">
@@ -179,7 +185,7 @@ export function CharacterForm({
 
       <Card>
         <SectionTitle>Spells per day</SectionTitle>
-        <SlotPreview character={c} />
+        <SlotPreview character={effective} />
       </Card>
 
       <Messages errors={errors} warnings={result.warnings} />

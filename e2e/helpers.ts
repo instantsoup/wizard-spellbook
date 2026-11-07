@@ -16,8 +16,11 @@ export function failOnErrors(page: Page) {
 export async function createEvoker(page: Page, starting = ['Magic Missile', 'Shield']) {
   await page.goto('./')
   await page.getByPlaceholder('e.g. Mialee').fill('Mialee')
+  // "Intelligence when you started" only matters above 1st level
+  await expect(page.getByText('Intelligence when you started')).toHaveCount(0)
   await page.getByRole('button', { name: 'Increase Wizard level' }).click({ clickCount: 4 })
-  await page.getByLabel('Base Int value').fill('18')
+  await expect(page.getByText('Intelligence when you started')).toBeVisible()
+  await page.getByLabel('Intelligence score value').fill('18')
   await page.getByLabel('Specialty').selectOption('Evocation')
   await page.getByRole('button', { name: 'Enchantment' }).click()
   await page.getByRole('button', { name: 'Illusion' }).click()
