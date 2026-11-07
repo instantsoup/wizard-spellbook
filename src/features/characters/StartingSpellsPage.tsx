@@ -63,7 +63,7 @@ export function StartingSpellsPage() {
     <Page title="Starting spells" subtitle={character.name}>
       <Card className="mb-4">
         <p className="text-sm">
-          <span className="font-semibold">{cantrips.length} cantrips</span> are in your book: every 0-level spell you can learn.
+          <span className="font-semibold">{cantrips.length} cantrips</span> are in your book: every core 0-level spell you can learn. Cantrips from other books can be added from the Library.
         </p>
         <p className="mt-2 text-sm">
           Choose <span className="font-semibold">{status.granted}</span> free 1st-level spells (3 + your 1st-level Int

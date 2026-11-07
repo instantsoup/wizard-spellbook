@@ -2,8 +2,8 @@
 // components/castingTime/range/duration/savingThrow/spellResistance/description) into the app's
 // spell file format. Keeps only Sor/Wiz spells and skips spells already in srd.json.
 //
-// The output is meant for in-app import (My spells → Import file), NOT for public/:
-// most such lists contain non-open content that must not be published.
+// The output can be imported in the app (My spells → Import file) or bundled as an index file.
+// Such lists usually contain non-open books: bundle summaries only, never full text.
 //   node scripts/convert-spell-list.ts <list.json> public/data/spells/srd.json <out.json>
 import { readFileSync, writeFileSync } from 'node:fs'
 import { slugify, validateSpellFile, SCHOOLS, type Spell } from '../src/data/spell-schema.ts'

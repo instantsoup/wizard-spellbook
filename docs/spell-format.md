@@ -22,8 +22,10 @@ If two files use the same `id`, the file **later** in the manifest wins. You can
 this to correct an SRD spell without editing `srd.json`.
 
 > **Public site warning:** everything in `public/` is published on GitHub Pages.
-> Only put Open Game Content or your own homebrew there. For spells from other
-> books, use the app's import feature (planned), which keeps them on your phone.
+> `srd.json` is Open Game Content. `index-extra.json` is an index of spells from other
+> books: name, stats, a one-line summary and book/page, but never full text. Don't add
+> full spell text from non-open books here. To keep a spell private, use the app's
+> **My spells → Import file**, which stores it only on your phone.
 
 ## A complete example
 
@@ -111,6 +113,6 @@ node scripts/convert-spell-list.ts list.json public/data/spells/srd.json my-spel
 - Only spells with a Sor/Wiz level are kept. "Arc" is the Archivist list, not the wizard list.
 - Spells already in `srd.json` are skipped, so the full SRD text is never replaced by a summary.
 - Non-standard components (Corrupt, Sacrifice, Abstinence, …) are kept as a note in the description.
-- Import the result on your phone with **My spells → Import file**. Don't put it in
-  `public/`: lists like this usually include non-open books (Spell Compendium and so on),
-  and everything in `public/` is published.
+- The result can be imported on a phone (**My spells → Import file**), or bundled as an
+  index file in `public/` (as `index-extra.json` is). Lists like this usually include
+  non-open books, so bundle summaries only, never full text.

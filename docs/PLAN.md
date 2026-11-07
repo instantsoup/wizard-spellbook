@@ -178,6 +178,12 @@ Product Identity.
 
 The `summary` field (optional) was added during Phase 0.
 
+**Extra index (added after v1):** `index-extra.json` holds 814 more Sor/Wiz spells from
+other books (Spell Compendium, Complete Arcane and others). Each has its stats, a one-line
+summary and the book and page, with no full text. It was made with
+`scripts/convert-spell-list.ts`. Automatic starting cantrips come from the SRD only;
+cantrips from other books are learned like any other spell.
+
 ---
 
 ## 4. Tech stack

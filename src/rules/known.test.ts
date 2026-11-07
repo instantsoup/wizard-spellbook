@@ -111,7 +111,11 @@ describe('costs', () => {
 })
 
 describe('startingCantrips', () => {
-  it('includes every cantrip except prohibited schools', () => {
+  it('leaves out cantrips from other books', () => {
+    const other = { ...S.rayOfFrost, id: 'other-cantrip', source: 'Spell Compendium' }
+    expect(startingCantrips(generalist1, [...Object.values(S), other]).map((s) => s.id)).not.toContain('other-cantrip')
+  })
+  it('includes every core cantrip except prohibited schools', () => {
     const all = Object.values(S)
     expect(startingCantrips(generalist1, all).map((s) => s.id)).toEqual(['detect-magic', 'daze', 'ray-of-frost'])
     expect(startingCantrips(evoker5, all).map((s) => s.id)).toEqual(['detect-magic', 'ray-of-frost'])

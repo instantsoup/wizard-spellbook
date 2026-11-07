@@ -59,3 +59,15 @@ describe('bundled SRD data', () => {
     expect(ids.has('fireball')).toBe(true)
   })
 })
+
+describe('bundled extra index', () => {
+  const extra = JSON.parse(readFileSync('public/data/spells/index-extra.json', 'utf8'))
+  const srdIds = new Set(JSON.parse(readFileSync('public/data/spells/srd.json', 'utf8')).map((s: { id: string }) => s.id))
+  it('is valid and never overrides a full-text SRD spell', () => {
+    expect(validateSpellFile(extra)).toEqual([])
+    expect(extra.filter((s: { id: string }) => srdIds.has(s.id))).toEqual([])
+  })
+  it('is listed in the manifest after srd.json', () => {
+    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json'])
+  })
+})

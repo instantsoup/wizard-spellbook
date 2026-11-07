@@ -40,7 +40,7 @@ const spell = (id: string, name: string, school: Spell['school'], level: number)
   descriptors: [],
   components: ['V', 'S'],
   description: '-',
-  source: 'test',
+  source: 'SRD',
 })
 
 export const S = {
