@@ -6,17 +6,13 @@ const known: KnownSpell[] = [
   { spellId: 'ray-of-frost', spellLevel: 0, method: 'starting-cantrip', costGp: 0 },
   { spellId: 'magic-missile', spellLevel: 1, method: 'starting-free', freePickLevel: 1, costGp: 0 },
   { spellId: 'fireball', spellLevel: 3, method: 'levelup-free', freePickLevel: 5, costGp: 0 },
-  { spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300, extraCostGp: 375 },
-  { spellId: 'web', spellLevel: 2, method: 'other-book', costGp: 200, extraCostGp: 50 },
+  { spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300 },
+  { spellId: 'web', spellLevel: 2, method: 'other-book', costGp: 200 },
 ]
 
 describe('ledgerSummary', () => {
-  it('totals learning, extra and manual costs', () => {
-    const s = ledgerSummary(known, [
-      { amountGp: 15, label: 'Ink and incense' },
-      { amountGp: -100, label: 'Sold a scroll' },
-    ])
-    expect(s).toMatchObject({ learning: 500, extra: 425, manual: -85, total: 840 })
+  it('totals what learned spells cost', () => {
+    expect(ledgerSummary(known).total).toBe(500)
   })
   it('breaks costs down by method and by spell level', () => {
     const s = ledgerSummary(known)
@@ -24,14 +20,14 @@ describe('ledgerSummary', () => {
       ['starting-cantrip', 1, 0],
       ['starting-free', 1, 0],
       ['levelup-free', 1, 0],
-      ['scroll', 1, 675],
-      ['other-book', 1, 250],
+      ['scroll', 1, 300],
+      ['other-book', 1, 200],
     ])
     expect(s.byLevel.map((l) => [l.spellLevel, l.count, l.gp])).toEqual([
       [0, 1, 0],
       [1, 1, 0],
-      [2, 1, 250],
-      [3, 2, 675],
+      [2, 1, 200],
+      [3, 2, 300],
     ])
   })
   it('handles an empty book', () => {
@@ -42,11 +38,11 @@ describe('ledgerSummary', () => {
 describe('ledgerCsv', () => {
   it('sorts by date and quotes awkward cells', () => {
     const csv = ledgerCsv([
-      { date: Date.UTC(2026, 10, 2), item: 'Haste', kind: 'From a scroll', gp: 675, note: 'Bought in "Waterdeep", cheap' },
-      { date: Date.UTC(2026, 10, 1), item: 'Ink', kind: 'Manual', gp: 15 },
+      { date: Date.UTC(2026, 10, 2), item: 'Haste', kind: 'From a scroll', gp: 300, note: 'From "Waterdeep", cheap' },
+      { date: Date.UTC(2026, 10, 1), item: 'Web', kind: "From another wizard's book", gp: 200 },
     ])
     expect(csv).toBe(
-      'Date,Item,Type,Gold (gp),Note\n2026-11-01,Ink,Manual,15,\n2026-11-02,Haste,From a scroll,675,"Bought in ""Waterdeep"", cheap"\n',
+      "Date,Spell,Learned,Gold (gp),Note\n2026-11-01,Web,From another wizard's book,200,\n2026-11-02,Haste,From a scroll,300,\"From \"\"Waterdeep\"\", cheap\"\n",
     )
   })
 })

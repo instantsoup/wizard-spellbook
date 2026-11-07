@@ -105,7 +105,6 @@ Store this as a data table in code, not as a formula.
     Eidetic Spellcasting keeps the standard gold cost (flavoured as incense or
     mental mapping) and skips writing on pages. The cost is fixed and can't be
     edited.
-  - There is an extra cost field, for example for buying the scroll.
 - **Spell levels above what the wizard can cast** can't be learned.
 
 ### 2.5 Preparing spells
@@ -245,7 +244,6 @@ interface KnownSpell {                 // an entry in the book
   method: AcquisitionMethod;
   freePickLevel?: number;              // which wizard level granted this free pick
   costGp: number;                      // 0 if free; default 100 × max(1, level)
-  extraCostGp?: number;                // e.g. buying the scroll
   note?: string;                       // "From the lich's tome, session 12"
   addedAt: number;
 }
@@ -270,14 +268,11 @@ interface PrepTemplate {               // saved loadouts: "Dungeon crawl", "Trav
   picks: { slotLevel: number; kind: PreparedSlot["kind"]; spellId: string }[];
 }
 
-interface LedgerEntry {                // other spell-related costs, entered by hand
-  id: string; characterId: string; amountGp: number; label: string; at: number;
-}
-
 interface ImportedSpell extends Spell { origin: "imported" | "custom"; }
 ```
-**Total spent** = the sum of `costGp + extraCostGp` over the book's spells, plus any
-manual ledger entries. It is calculated when shown, not stored.
+**Total spent** = the sum of `costGp` over the book's spells. It is calculated when
+shown, not stored. The app covers only the spellbook side: no scroll prices or other
+expenses.
 
 ---
 
@@ -307,7 +302,7 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
    - The **"Add to book"** sheet has:
      - How it was learned: free pick (shows the free picks left for each level),
        scroll, another book, research or other.
-     - The fixed cost (for example "3rd level · 300 gp"), plus an extra-cost field
+     - The fixed cost (for example "3rd level · 300 gp"), plus an optional note
        and a note.
      - Spells above your castable level have no Add button. There's a warning if
        your Int is too low to prepare the spell.
@@ -330,7 +325,7 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
    - The screen stays awake (Wake Lock API) while this tab is open.
 
 6. **More**
-   - **Ledger:** every learned spell with its cost and method, plus manual entries,
+   - **Ledger:** every learned spell with its cost and method,
      with totals.
    - **Settings:** theme (parchment or dark),
      import spells JSON, export custom spells, back up and restore character data,
@@ -350,7 +345,7 @@ None. The app follows the rules as written:
 - learning a spell costs a fixed 100 gp × spell level (cantrips 100 gp);
 - specialists get their extra slot at every spell level, including cantrips.
 
-The only optional cost is "extra cost", for example the price of a scroll.
+Only the spellbook's own costs are tracked: no scroll prices or other expenses.
 
 ---
 
@@ -388,8 +383,8 @@ The only optional cost is "extra cost", for example the price of a scroll.
   prohibited, without component, source, subschool, descriptor. Filters are
   remembered between visits.
 - Add to book sheet: free pick (defaults to the lowest level-up pick that fits),
-  scroll, another book, research or other. Editable cost, extra cost and a note, all
-  checked by `canLearn`.
+  scroll, another book, research or other. A fixed cost and an optional note, checked
+  by `canLearn`.
 - Book: "Remove from book".
 - My spells: custom spell form (create and edit), import a JSON file (validated,
   all-or-nothing), export as JSON, delete.
@@ -398,11 +393,11 @@ The only optional cost is "extra cost", for example the price of a scroll.
 - Book:
   - group by level or school, with filter chips;
   - a free-pick summary (used/granted for each level);
-  - edit an entry's cost, extra cost or note, or remove it.
+  - edit an entry's note, or remove it.
   - The gold total links to the ledger.
-- Ledger: totals (learning, extra, other expenses), breakdowns by source and by spell
-  level, manual expenses (negative amounts allowed for refunds), history and CSV
-  export.
+- Ledger: the total spent on the spellbook, breakdowns by source and by spell level,
+  the list of paid spells and a CSV export. (Extra costs and manual expenses were
+  removed later: the app tracks only the spellbook side.)
 
 **Phase 5 — Preparation and Today** ✅ done (built before Phase 4)
 - Prepare: slots grouped by level, with Base, Bonus and specialty-school tags.
@@ -426,6 +421,8 @@ The only optional cost is "extra cost", for example the price of a scroll.
   is applied before first paint.
 - A glyph for each school in spell rows, filter chips and Book headers.
 - A one-time "How it works" card, and a backup reminder every 14 days (snoozable).
+- No horizontal scrolling anywhere: filter chips wrap, and spells per day is a
+  wrapping grid.
 - 6 Playwright end-to-end tests at phone size: setup, library, prepare and cast,
   ledger and backup, theme, offline. Run with `npm run e2e`; they also run in CI
   before every deploy.

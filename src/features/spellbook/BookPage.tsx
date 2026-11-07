@@ -6,7 +6,7 @@ import { levelLabel, ordinal, SCHOOL_STYLE } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Page } from '../../components/ui'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
-import { useKnownSpells, useLedger } from '../../data/hooks'
+import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { freePickStatus, ledgerSummary } from '../../rules'
@@ -25,7 +25,6 @@ const loadGroup = (): GroupBy => {
 
 export function BookPage({ character }: { character: CharacterRecord }) {
   const known = useKnownSpells(character.id)
-  const ledger = useLedger(character.id)
   const { byId, loading } = useSpells()
   const [groupBy, setGroupByState] = useState<GroupBy>(loadGroup)
   const [filter, setFilter] = useState<number | School>()
@@ -52,7 +51,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
       .sort((a, b) => a.spell.level - b.spell.level || a.spell.name.localeCompare(b.spell.name))
   }, [known, byId, query])
 
-  if (!known || !ledger || loading) return <Loading />
+  if (!known || loading) return <Loading />
 
   const groupOf = (s: Spell): number | School => (groupBy === 'level' ? s.level : s.school)
   const groups: (number | School)[] =
@@ -63,7 +62,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
   const freeLeft = picks.reduce((n, p) => n + p.remaining, 0)
   const freeGranted = picks.reduce((n, p) => n + p.granted, 0)
   const startingLeft = picks.find((p) => p.wizardLevel === 1)?.remaining ?? 0
-  const summary = ledgerSummary(known, ledger)
+  const summary = ledgerSummary(known)
   const missing = known.filter((k) => !byId.has(k.spellId))
 
   return (
@@ -137,7 +136,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
               School
             </Chip>
           </div>
-          <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1">
+          <div className="mb-2 flex flex-wrap gap-1.5">
             <Chip selected={filter === undefined} onClick={() => setFilter(undefined)}>
               All
             </Chip>
@@ -197,7 +196,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                       <span>
                         {METHOD_LABEL[k.method]}
                         {k.freePickLevel && k.method === 'levelup-free' ? ` (level ${k.freePickLevel})` : ''} ·{' '}
-                        {k.costGp + (k.extraCostGp ?? 0) ? gp(k.costGp + (k.extraCostGp ?? 0)) : 'free'}
+                        {k.costGp ? gp(k.costGp) : 'free'}
                         {k.note ? ` · ${k.note}` : ''}
                       </span>
                       <button type="button" className="min-h-9 shrink-0 px-2 text-sm text-leather underline" onClick={() => setEditing(k)}>

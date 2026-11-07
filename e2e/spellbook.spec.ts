@@ -11,11 +11,18 @@ test('new wizard gets cantrips and starting spells', async ({ page }) => {
   noErrors()
 })
 
-test('library: free pick, paid spell with extra cost, prohibited and above-level spells, fixed cost', async ({ page }) => {
+test('library: free pick, paid spell, prohibited and above-level spells, fixed cost, no sideways scrolling', async ({ page }) => {
   const noErrors = failOnErrors(page)
   await createEvoker(page)
   await learn(page, 'Fireball') // level-5 free pick by default
-  await learn(page, 'Haste', 'From a scroll', '375')
+  await learn(page, 'Haste', 'From a scroll')
+
+  // filter chip rows wrap; the page never scrolls sideways
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
+  for (const row of ['Spell level', 'School']) {
+    const box = await page.getByLabel(row, { exact: true }).evaluate((el) => ({ scroll: el.scrollWidth, client: el.clientWidth }))
+    expect(box.scroll).toBeLessThanOrEqual(box.client)
+  }
 
   await page.getByPlaceholder('Search names and text').fill('Sleep')
   await expect(page.getByRole('button', { name: 'Add Sleep', exact: true })).toHaveCount(0)
@@ -31,10 +38,11 @@ test('library: free pick, paid spell with extra cost, prohibited and above-level
   await page.getByLabel('From a scroll').check()
   await expect(page.getByRole('dialog')).toContainText('200 gp')
   await expect(page.getByLabel('Cost to learn (gp)')).toHaveCount(0)
+  await expect(page.getByLabel('Extra cost (gp)')).toHaveCount(0)
   await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
 
   await page.getByRole('link', { name: 'Book' }).click()
-  await expect(page.locator('header')).toContainText('675 gp spent')
+  await expect(page.locator('header')).toContainText('300 gp spent')
   noErrors()
 })
 
@@ -78,13 +86,12 @@ test('ledger totals and backup round trip', async ({ page }) => {
   autoConfirm(page)
   const noErrors = failOnErrors(page)
   await createEvoker(page)
-  await learn(page, 'Haste', 'From a scroll', '375')
+  await learn(page, 'Haste', 'From a scroll')
+  await learn(page, 'Web', "From another wizard's book")
   await page.getByRole('link', { name: 'Book' }).click()
   await page.getByRole('link', { name: /gp spent/ }).click()
-  await page.getByPlaceholder('e.g. Rare incense, new spellbook').fill('Sold a scroll')
-  await page.getByPlaceholder('0').fill('-100')
-  await page.getByRole('button', { name: 'Add', exact: true }).click()
-  await expect(page.locator('header')).toContainText('575 gp spent in total')
+  await expect(page.locator('header')).toContainText('500 gp spent on the spellbook')
+  await expect(page.getByText('Add an expense')).toHaveCount(0)
 
   await page.getByRole('link', { name: 'More' }).click()
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Save backup' }).click()])
@@ -100,7 +107,7 @@ test('ledger totals and backup round trip', async ({ page }) => {
   await expect(page.getByText('Backup restored.')).toBeVisible()
   await page.getByRole('link', { name: 'Book' }).click()
   await expect(page.locator('header')).toContainText('Mialee')
-  await expect(page.locator('header')).toContainText('575 gp spent')
+  await expect(page.locator('header')).toContainText('500 gp spent')
   noErrors()
 })
 

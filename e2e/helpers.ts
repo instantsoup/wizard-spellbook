@@ -31,12 +31,11 @@ export async function createEvoker(page: Page, starting = ['Magic Missile', 'Shi
   await page.waitForURL(/#\/book/)
 }
 
-export async function learn(page: Page, name: string, how?: string, extra?: string) {
+export async function learn(page: Page, name: string, how?: string) {
   await page.getByRole('link', { name: 'Library' }).click()
   await page.getByPlaceholder('Search names and text').fill(name)
   await page.getByRole('button', { name: `Add ${name}`, exact: true }).click()
   if (how) await page.getByLabel(how).check()
-  if (extra) await page.getByLabel('Extra cost (gp)').fill(extra)
   await page.getByRole('button', { name: /^Add to book/ }).click()
   await expect(page.getByRole('status').filter({ hasText: `${name} added` })).toBeVisible()
 }

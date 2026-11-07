@@ -47,7 +47,11 @@ export async function restoreBackup(backup: Backup, d: SpellbookDB = db) {
   await d.transaction('rw', TABLES.map((t) => d.table(t)), async () => {
     for (const t of TABLES) {
       await d.table(t).clear()
-      const rows = backup.data[t] ?? []
+      let rows = backup.data[t] ?? []
+      // Older backups may hold data the app no longer tracks.
+      if (t === 'ledger') rows = []
+      if (t === 'knownSpells') rows = (rows as Record<string, unknown>[]).map(({ extraCostGp: _x, ...k }) => k)
+      if (t === 'characters') rows = (rows as Record<string, unknown>[]).map(({ houseRules: _h, ...c }) => c)
       if (rows.length) await d.table(t).bulkAdd(rows)
     }
   })

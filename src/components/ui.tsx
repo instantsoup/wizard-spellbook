@@ -146,7 +146,7 @@ export function Chip({
       disabled={disabled}
       onClick={onClick}
       style={selected && color ? { backgroundColor: color, borderColor: color } : color ? { borderColor: color, color } : undefined}
-      className={`min-h-9 rounded-full border px-3 text-sm transition-colors disabled:opacity-35 ${
+      className={`min-h-9 rounded-full border px-2.5 text-sm transition-colors disabled:opacity-35 ${
         selected ? 'border-leather bg-leather text-parchment' : 'border-ink/30 bg-surface/50 text-ink'
       }`}
     >

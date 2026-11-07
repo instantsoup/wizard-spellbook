@@ -70,6 +70,10 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
   const castable = maxSpellLevel(character.wizardLevel)
   const picks = freePickStatus(character, known).filter((s) => s.remaining > 0)
   const freeLeft = picks.reduce((n, s) => n + s.remaining, 0)
+  // Group picks by the highest spell level they can take.
+  const byMax = [...picks.reduce((m, p) => m.set(p.maxSpellLevel, (m.get(p.maxSpellLevel) ?? 0) + p.remaining), new Map<number, number>())].sort(
+    (a, b) => a[0] - b[0],
+  )
   const moreCount = (f.without.length ? 1 : 0) + (f.sources.length ? 1 : 0) + (f.subschool ? 1 : 0) + (f.descriptor ? 1 : 0)
 
   return (
@@ -80,9 +84,9 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
             <span className="font-semibold text-rubric">{freeLeft} free spell{freeLeft === 1 ? '' : 's'}</span> to choose. Tap + on a spell to use one.
           </p>
           <ul className="mt-2 flex flex-wrap gap-1.5 text-xs">
-            {picks.map((p) => (
-              <li key={p.wizardLevel} className="rounded-full bg-parchment-dark px-2.5 py-1">
-                {p.wizardLevel === 1 ? 'Starting' : `Lvl ${p.wizardLevel}`}: {p.remaining} × up to {ordinal(p.maxSpellLevel)}
+            {byMax.map(([max, count]) => (
+              <li key={max} className="rounded-full bg-parchment-dark px-2.5 py-1">
+                {count} × up to {ordinal(max)}-level
               </li>
             ))}
           </ul>
@@ -96,14 +100,14 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         value={f.query}
         onChange={(e) => set({ query: e.target.value })}
       />
-      <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1" aria-label="Spell level">
+      <div className="mb-2 flex flex-wrap gap-1.5" aria-label="Spell level">
         {Array.from({ length: 10 }, (_, l) => (
           <Chip key={l} selected={f.levels.includes(l)} onClick={() => set({ levels: toggle(f.levels, l) })}>
             {l === 0 ? 'Cantrip' : l}
           </Chip>
         ))}
       </div>
-      <div className="mb-2 flex gap-1.5 overflow-x-auto pb-1" aria-label="School">
+      <div className="mb-2 flex flex-wrap gap-1.5" aria-label="School">
         {SCHOOLS.map((s) => (
           <Chip key={s} selected={f.schools.includes(s)} color={SCHOOL_STYLE[s].color} onClick={() => set({ schools: toggle(f.schools, s) })}>
             <span className="inline-flex items-center gap-1">

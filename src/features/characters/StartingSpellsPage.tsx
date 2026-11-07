@@ -87,7 +87,7 @@ export function StartingSpellsPage() {
             onChange={(e) => setQuery(e.target.value)}
             type="search"
           />
-          <div className="mb-2 flex gap-2 overflow-x-auto pb-1">
+          <div className="mb-2 flex flex-wrap gap-1.5">
             {Object.keys(SCHOOL_STYLE)
               .filter((s) => !isProhibited(character, s as School) && s !== 'Universal')
               .map((s) => (

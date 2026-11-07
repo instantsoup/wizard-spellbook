@@ -41,7 +41,6 @@ export function AddToBookSheet({
   const canUseFree = spell.level > 0 && freeOptions.length > 0
   const [choice, setChoice] = useState<Choice>(canUseFree ? 'free' : 'scroll')
   const [freeLevel, setFreeLevel] = useState(freeOptions[0]?.wizardLevel)
-  const [extraText, setExtraText] = useState('')
   const [note, setNote] = useState('')
   const [busy, setBusy] = useState(false)
   const [saveErrors, setSaveErrors] = useState<string[]>([])
@@ -51,17 +50,16 @@ export function AddToBookSheet({
       ? { method: freeLevel === 1 ? 'starting-free' : 'levelup-free', freePickLevel: freeLevel }
       : { method: choice }
   const cost = learnCost(spell.level, req.method)
-  const extra = Math.max(0, parseInt(extraText, 10) || 0)
   const result = canLearn(character, spell, known, req)
 
   const add = async () => {
     setBusy(true)
     const r = await learnSpells(character, [
-      { spell, req, extraCostGp: extra || undefined, note: note.trim() || undefined },
+      { spell, req, note: note.trim() || undefined },
     ])
     setBusy(false)
     if (!r.ok) return setSaveErrors(r.errors)
-    const total = cost + extra
+    const total = cost
     onAdded(`${spell.name} added${total ? ` · ${total.toLocaleString()} gp` : ' · free'}`)
   }
 
@@ -97,16 +95,11 @@ export function AddToBookSheet({
       </fieldset>
 
       {choice !== 'free' && (
-        <div className="mb-4 grid grid-cols-2 gap-3">
-          <div>
-            <p className="mb-1 text-sm font-semibold text-ink/80">Cost to learn</p>
-            <p className="flex min-h-11 items-center font-display text-lg text-leather">{cost.toLocaleString()} gp</p>
-            <p className="text-xs text-ink/60">100 gp × spell level</p>
-          </div>
-          <Field label="Extra cost (gp)" hint="e.g. buying the scroll">
-            <input className={inputClass} inputMode="numeric" placeholder="0" value={extraText} onChange={(e) => setExtraText(e.target.value.replace(/[^0-9]/g, ''))} />
-          </Field>
-        </div>
+        <p className="mb-4 text-sm">
+          <span className="font-semibold text-ink/80">Cost to learn: </span>
+          <span className="font-display text-lg text-leather">{cost.toLocaleString()} gp</span>
+          <span className="text-ink/60"> (100 gp × spell level)</span>
+        </p>
       )}
       <Field label="Note (optional)">
         <input className={inputClass} value={note} onChange={(e) => setNote(e.target.value)} placeholder="e.g. From the lich's tome, session 12" />
@@ -115,7 +108,7 @@ export function AddToBookSheet({
       <div className="mt-4 space-y-3">
         <Messages errors={[...result.errors, ...saveErrors]} warnings={result.warnings} />
         <Button className="w-full" disabled={!result.ok || busy} onClick={add}>
-          Add to book{choice === 'free' ? ' · free' : ` · ${(cost + extra).toLocaleString()} gp`}
+          Add to book{choice === 'free' ? ' · free' : ` · ${cost.toLocaleString()} gp`}
         </Button>
       </div>
     </Sheet>

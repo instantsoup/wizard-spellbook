@@ -58,7 +58,7 @@ export function learnCost(spellLevel: number, method: AcquisitionMethod): number
 }
 
 export function totalSpent(known: KnownSpell[]): number {
-  return known.reduce((sum, k) => sum + k.costGp + (k.extraCostGp ?? 0), 0)
+  return known.reduce((sum, k) => sum + k.costGp, 0)
 }
 
 /** All cantrips a new wizard starts with: every 0-level spell not from a prohibited school. */
@@ -120,7 +120,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
 export function makeKnownSpell(
   spell: Spell,
   req: LearnRequest,
-  extra?: { extraCostGp?: number; note?: string },
+  extra?: { note?: string },
 ): KnownSpell {
   const freePickLevel = req.method === 'starting-free' ? 1 : req.method === 'levelup-free' ? req.freePickLevel : undefined
   return {
@@ -129,7 +129,6 @@ export function makeKnownSpell(
     method: req.method,
     ...(freePickLevel ? { freePickLevel } : {}),
     costGp: learnCost(spell.level, req.method),
-    ...(extra?.extraCostGp ? { extraCostGp: extra.extraCostGp } : {}),
     ...(extra?.note ? { note: extra.note } : {}),
   }
 }

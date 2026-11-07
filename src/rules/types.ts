@@ -55,7 +55,6 @@ export interface KnownSpell {
   /** Which wizard level granted this free pick (1 for starting picks). */
   freePickLevel?: number
   costGp: number
-  extraCostGp?: number
   note?: string
 }
 

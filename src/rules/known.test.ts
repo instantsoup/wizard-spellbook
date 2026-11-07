@@ -93,20 +93,20 @@ describe('costs', () => {
     expect(learnCost(1, 'starting-free')).toBe(0)
   })
   it('makeKnownSpell fills in the fixed cost', () => {
-    expect(makeKnownSpell(S.fireball, { method: 'scroll' }, { extraCostGp: 375 })).toEqual({
+    expect(makeKnownSpell(S.fireball, { method: 'scroll' }, { note: 'From a scroll' })).toEqual({
       spellId: 'fireball',
       spellLevel: 3,
       method: 'scroll',
       costGp: 300,
-      extraCostGp: 375,
+      note: 'From a scroll',
     })
     expect(makeKnownSpell(S.haste, { method: 'levelup-free', freePickLevel: 5 })).toMatchObject({
       costGp: 0,
       freePickLevel: 5,
     })
   })
-  it('totals gold spent including extra costs', () => {
-    expect(totalSpent([k('a', 3, { costGp: 300, extraCostGp: 375 }), k('b', 1, { costGp: 100 })])).toBe(775)
+  it('totals gold spent', () => {
+    expect(totalSpent([k('a', 3, { costGp: 300 }), k('b', 1, { costGp: 100 })])).toBe(400)
   })
 })
 

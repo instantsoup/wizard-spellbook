@@ -84,6 +84,18 @@ export class SpellbookDB extends Dexie {
           delete c.houseRules
         }),
     )
+    // v3: the app tracks only spellbook costs; drop extra costs and manual expenses.
+    this.version(3)
+      .stores({})
+      .upgrade(async (tx) => {
+        await tx.table('ledger').clear()
+        await tx
+          .table('knownSpells')
+          .toCollection()
+          .modify((k: Record<string, unknown>) => {
+            delete k.extraCostGp
+          })
+      })
   }
 }
 

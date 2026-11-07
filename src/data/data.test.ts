@@ -52,7 +52,7 @@ describe('characters', () => {
     const good = await learnSpells(
       c,
       [
-        { spell: S.fireball, req: { method: 'scroll' }, extraCostGp: 375 },
+        { spell: S.fireball, req: { method: 'scroll' } },
         { spell: S.scorchingRay, req: { method: 'levelup-free', freePickLevel: 3 } },
         { spell: S.magicMissile, req: { method: 'levelup-free', freePickLevel: 3 } },
         { spell: S.mageArmor, req: { method: 'levelup-free', freePickLevel: 3 } }, // 3rd pick from level 3
@@ -102,22 +102,15 @@ describe('mergeSpells', () => {
   })
 })
 
-describe('ledger and entry edits', () => {
-  it('adds and deletes manual entries; edits a book entry', async () => {
-    const { addLedgerEntry, deleteLedgerEntry, updateKnownSpell } = await import('./characters')
+describe('entry edits', () => {
+  it('changes only the note; the cost stays fixed', async () => {
+    const { updateKnownSpellNote } = await import('./characters')
     const c = await createCharacter({ ...evoker5, name: 'E' }, d)
-    await addLedgerEntry(c.id, 'Ink', 15, d)
-    const [entry] = await d.ledger.toArray()
-    expect(entry).toMatchObject({ label: 'Ink', amountGp: 15, characterId: c.id })
-    await deleteLedgerEntry(entry.id, d)
-    expect(await d.ledger.count()).toBe(0)
-
-    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, extraCostGp: 50, note: 'x' }], d)
-    await updateKnownSpell(r.added[0].id, { extraCostGp: 0, note: '' }, d)
-    const k = (await knownSpellsFor(c.id, d))[0]
-    expect(k.costGp).toBe(300)
-    expect(k.extraCostGp).toBeUndefined()
-    expect(k.note).toBeUndefined()
+    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, note: 'x' }], d)
+    await updateKnownSpellNote(r.added[0].id, '  From the lich  ', d)
+    expect((await knownSpellsFor(c.id, d))[0]).toMatchObject({ costGp: 300, note: 'From the lich' })
+    await updateKnownSpellNote(r.added[0].id, '', d)
+    expect((await knownSpellsFor(c.id, d))[0].note).toBeUndefined()
   })
 })
 
@@ -133,5 +126,39 @@ describe('database upgrade', () => {
     const c = await v2.characters.get('c1')
     expect(c?.name).toBe('Old')
     expect(c).not.toHaveProperty('houseRules')
+  })
+
+  it('v3 drops extra costs and manual expenses', async () => {
+    const Dexie = (await import('dexie')).default
+    const name = `upgrade-${n++}`
+    const v2 = new Dexie(name)
+    const stores = { characters: 'id, name', knownSpells: 'id, characterId, spellId, [characterId+spellId]', days: 'id, characterId, [characterId+current]', templates: 'id, characterId', ledger: 'id, characterId', storedSpells: 'id, origin', settings: 'key' }
+    v2.version(1).stores(stores)
+    v2.version(2).stores({})
+    await v2.table('knownSpells').add({ id: 'k1', characterId: 'c1', spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300, extraCostGp: 375, addedAt: 1 })
+    await v2.table('ledger').add({ id: 'l1', characterId: 'c1', label: 'Ink', amountGp: 15, at: 1 })
+    v2.close()
+    const v3 = new SpellbookDB(name)
+    expect(await v3.knownSpells.get('k1')).not.toHaveProperty('extraCostGp')
+    expect(await v3.ledger.count()).toBe(0)
+  })
+
+  it('restoring an old backup drops retired data', async () => {
+    const backup = parseBackup(
+      JSON.stringify({
+        app: 'wizard-spellbook',
+        version: 1,
+        exportedAt: '2026-11-01T00:00:00Z',
+        data: {
+          characters: [{ ...evoker5, id: 'c1', name: 'Old', houseRules: { gpPerSpellLevel: 50 } }],
+          knownSpells: [{ id: 'k1', characterId: 'c1', spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300, extraCostGp: 375, addedAt: 1 }],
+          ledger: [{ id: 'l1', characterId: 'c1', label: 'Ink', amountGp: 15, at: 1 }],
+        },
+      }),
+    )
+    await restoreBackup(backup, d)
+    expect(await d.characters.get('c1')).not.toHaveProperty('houseRules')
+    expect(await d.knownSpells.get('k1')).not.toHaveProperty('extraCostGp')
+    expect(await d.ledger.count()).toBe(0)
   })
 })

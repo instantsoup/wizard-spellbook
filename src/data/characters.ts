@@ -56,7 +56,7 @@ export async function knownSpellsFor(characterId: string, d: SpellbookDB = db) {
  */
 export async function learnSpells(
   character: CharacterRecord,
-  items: { spell: Spell; req: LearnRequest; extraCostGp?: number; note?: string }[],
+  items: { spell: Spell; req: LearnRequest; note?: string }[],
   d: SpellbookDB = db,
 ): Promise<{ ok: boolean; errors: string[]; added: KnownSpellRecord[] }> {
   return d.transaction('rw', d.knownSpells, async () => {
@@ -93,23 +93,7 @@ export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {
   await d.knownSpells.delete(knownSpellId)
 }
 
-/** Correct a book entry's extra cost or note (the learning cost is fixed by the rules). */
-export async function updateKnownSpell(
-  id: string,
-  changes: { extraCostGp?: number; note?: string },
-  d: SpellbookDB = db,
-) {
-  await d.knownSpells.update(id, {
-    ...changes,
-    ...(changes.extraCostGp === 0 ? { extraCostGp: undefined } : {}),
-    ...(changes.note === '' ? { note: undefined } : {}),
-  })
-}
-
-export async function addLedgerEntry(characterId: string, label: string, amountGp: number, d: SpellbookDB = db) {
-  await d.ledger.add({ id: newId(), characterId, label, amountGp, at: Date.now() })
-}
-
-export async function deleteLedgerEntry(id: string, d: SpellbookDB = db) {
-  await d.ledger.delete(id)
+/** Change a book entry's note (the cost is fixed by the rules). */
+export async function updateKnownSpellNote(id: string, note: string, d: SpellbookDB = db) {
+  await d.knownSpells.update(id, { note: note.trim() || undefined })
 }
