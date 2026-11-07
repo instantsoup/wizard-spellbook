@@ -30,8 +30,8 @@ export function SpellRow({
 }) {
   const style = SCHOOL_STYLE[spell.school]
   return (
-    <li className={`border-b border-ink/10 ${muted ? 'opacity-45' : ''}`}>
-      <div className="flex items-stretch gap-3">
+    <li className="border-b border-ink/10">
+      <div className={`flex items-stretch gap-3 ${muted ? 'opacity-45' : ''}`}>
         <span className="w-1 shrink-0 rounded-full" style={{ backgroundColor: style.color }} aria-hidden />
         <button type="button" onClick={onToggle} aria-expanded={open} className="min-w-0 flex-1 py-2.5 text-left">
           <div className="flex items-baseline gap-2">

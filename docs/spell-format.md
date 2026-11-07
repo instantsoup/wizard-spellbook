@@ -95,3 +95,22 @@ The converter keeps only Sor/Wiz spells, including the wizard-only ones (such as
 *Mage's Lucubration*). For "functions like X" spells, it fills in the missing stat
 lines from the base spell. It also adds summaries from the SRD spell list and checks
 every level against that list.
+
+## Converting another spell list
+
+`scripts/convert-spell-list.ts` turns a third-party 3.5 spell list into this format. The
+list must be a JSON array whose entries have `name`, `source: {abbr, page}`, `school`,
+`subschool`, `descriptor`, `levels: {"Sor/Wiz": n, ...}`, `components` (text),
+`castingTime`, `range`, `duration`, `savingThrow`, `spellResistance` and a one-line
+`description`.
+
+```bash
+node scripts/convert-spell-list.ts list.json public/data/spells/srd.json my-spells.json
+```
+
+- Only spells with a Sor/Wiz level are kept. "Arc" is the Archivist list, not the wizard list.
+- Spells already in `srd.json` are skipped, so the full SRD text is never replaced by a summary.
+- Non-standard components (Corrupt, Sacrifice, Abstinence, …) are kept as a note in the description.
+- Import the result on your phone with **My spells → Import file**. Don't put it in
+  `public/`: lists like this usually include non-open books (Spell Compendium and so on),
+  and everything in `public/` is published.
