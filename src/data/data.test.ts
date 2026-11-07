@@ -113,10 +113,25 @@ describe('ledger and entry edits', () => {
     expect(await d.ledger.count()).toBe(0)
 
     const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, extraCostGp: 50, note: 'x' }], d)
-    await updateKnownSpell(r.added[0].id, { costGp: 250, extraCostGp: 0, note: '' }, d)
+    await updateKnownSpell(r.added[0].id, { extraCostGp: 0, note: '' }, d)
     const k = (await knownSpellsFor(c.id, d))[0]
-    expect(k.costGp).toBe(250)
+    expect(k.costGp).toBe(300)
     expect(k.extraCostGp).toBeUndefined()
     expect(k.note).toBeUndefined()
+  })
+})
+
+describe('database upgrade', () => {
+  it('v2 strips old table-rule settings from saved wizards', async () => {
+    const Dexie = (await import('dexie')).default
+    const name = `upgrade-${n++}`
+    const v1 = new Dexie(name)
+    v1.version(1).stores({ characters: 'id, name', knownSpells: 'id, characterId, spellId, [characterId+spellId]', days: 'id, characterId, [characterId+current]', templates: 'id, characterId', ledger: 'id, characterId', storedSpells: 'id, origin', settings: 'key' })
+    await v1.table('characters').add({ ...evoker5, id: 'c1', name: 'Old', houseRules: { gpPerSpellLevel: 50 } })
+    v1.close()
+    const v2 = new SpellbookDB(name)
+    const c = await v2.characters.get('c1')
+    expect(c?.name).toBe('Old')
+    expect(c).not.toHaveProperty('houseRules')
   })
 })

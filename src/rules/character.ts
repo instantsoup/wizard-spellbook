@@ -1,16 +1,9 @@
-import { resolveHouseRules } from './houseRules'
 import { abilityModifier, MAX_WIZARD_LEVEL, MIN_WIZARD_LEVEL } from './tables'
 import { check, SPECIALIZABLE_SCHOOLS, type RuleCheck, type School, type WizardCharacter } from './types'
 
-/** Int used for casting and minimum-Int checks (all bonuses count). */
+/** Int used for bonus spells, casting and minimum-Int checks (score + item + inherent bonuses). */
 export function effectiveInt(c: WizardCharacter): number {
   return c.int.base + c.int.enhancement + c.int.inherent
-}
-
-/** Int used for bonus spells (enhancement may be excluded by house rule). */
-export function bonusSpellInt(c: WizardCharacter): number {
-  const rules = resolveHouseRules(c.houseRules)
-  return c.int.base + c.int.inherent + (rules.enhancementCountsForBonus ? c.int.enhancement : 0)
 }
 
 export function isProhibited(c: WizardCharacter, school: School): boolean {

@@ -73,6 +73,17 @@ export class SpellbookDB extends Dexie {
       storedSpells: 'id, origin',
       settings: 'key',
     })
+    // v2: table-rule settings were removed; strip them from saved wizards.
+    this.version(2)
+      .stores({})
+      .upgrade((tx) =>
+      tx
+        .table('characters')
+        .toCollection()
+        .modify((c: Record<string, unknown>) => {
+          delete c.houseRules
+        }),
+    )
   }
 }
 

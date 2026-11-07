@@ -8,10 +8,9 @@ import { FREE_METHODS } from '../../rules'
 
 const digits = (s: string) => s.replace(/[^0-9]/g, '')
 
-/** Correct the cost or note of a spell already in the book, or remove it. */
+/** Correct the extra cost or note of a spell already in the book, or remove it. */
 export function EditEntrySheet({ entry, name, onClose }: { entry: KnownSpellRecord; name: string; onClose: () => void }) {
   const free = FREE_METHODS.includes(entry.method)
-  const [cost, setCost] = useState(String(entry.costGp))
   const [extra, setExtra] = useState(entry.extraCostGp ? String(entry.extraCostGp) : '')
   const [note, setNote] = useState(entry.note ?? '')
 
@@ -23,9 +22,10 @@ export function EditEntrySheet({ entry, name, onClose }: { entry: KnownSpellReco
         {new Date(entry.addedAt).toLocaleDateString()}
       </p>
       <div className="mb-3 grid grid-cols-2 gap-3">
-        <Field label="Cost to learn (gp)" hint={free ? 'Free picks cost nothing' : undefined}>
-          <input className={inputClass} inputMode="numeric" disabled={free} value={cost} onChange={(e) => setCost(digits(e.target.value))} />
-        </Field>
+        <div>
+          <p className="mb-1 text-sm font-semibold text-ink/80">Cost to learn</p>
+          <p className="flex min-h-11 items-center font-display text-lg text-leather">{free ? 'Free' : `${entry.costGp.toLocaleString()} gp`}</p>
+        </div>
         <Field label="Extra cost (gp)">
           <input className={inputClass} inputMode="numeric" placeholder="0" value={extra} onChange={(e) => setExtra(digits(e.target.value))} />
         </Field>
@@ -37,7 +37,6 @@ export function EditEntrySheet({ entry, name, onClose }: { entry: KnownSpellReco
         className="mt-4 w-full"
         onClick={async () => {
           await updateKnownSpell(entry.id, {
-            costGp: free ? 0 : parseInt(cost, 10) || 0,
             extraCostGp: parseInt(extra, 10) || 0,
             note: note.trim(),
           })

@@ -3,7 +3,6 @@
 
 import type { Spell } from '../data/spell-schema'
 import { effectiveInt, isProhibited } from './character'
-import { resolveHouseRules, type HouseRules } from './houseRules'
 import { maxSpellLevel, minIntForSpellLevel } from './tables'
 import { check, FREE_METHODS, type AcquisitionMethod, type KnownSpell, type RuleCheck, type WizardCharacter } from './types'
 
@@ -49,10 +48,13 @@ export function totalFreePicksRemaining(c: WizardCharacter, known: KnownSpell[])
   return freePickStatus(c, known).reduce((sum, s) => sum + s.remaining, 0)
 }
 
-/** Default gold cost to learn a spell. Free methods cost nothing. */
-export function learnCost(spellLevel: number, method: AcquisitionMethod, rules: HouseRules): number {
+/** 100 gp per spell level (cantrips count as 1st). */
+export const GP_PER_SPELL_LEVEL = 100
+
+/** Gold cost to learn a spell. Free methods cost nothing. */
+export function learnCost(spellLevel: number, method: AcquisitionMethod): number {
   if (FREE_METHODS.includes(method)) return 0
-  return rules.gpPerSpellLevel * Math.max(1, spellLevel)
+  return GP_PER_SPELL_LEVEL * Math.max(1, spellLevel)
 }
 
 export function totalSpent(known: KnownSpell[]): number {
@@ -72,7 +74,6 @@ export interface LearnRequest {
 
 /** Can this spell be added to the book this way? */
 export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], req: LearnRequest): RuleCheck {
-  const rules = resolveHouseRules(c.houseRules)
   const errors: string[] = []
   const warnings: string[] = []
 
@@ -106,11 +107,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
       break
     }
     default:
-      if (spell.level > castable) {
-        const msg = `${spell.name} is level ${spell.level}; you can cast up to level ${castable}.`
-        if (rules.aboveCastableLevel === 'off') errors.push(msg)
-        else if (rules.aboveCastableLevel === 'warn') warnings.push(msg)
-      }
+      if (spell.level > castable) errors.push(`${spell.name} is level ${spell.level}; you can only learn spells up to level ${castable}.`)
   }
 
   if (effectiveInt(c) < minIntForSpellLevel(spell.level)) {
@@ -121,19 +118,17 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
 
 /** Builds the book entry for a successful learn, with the default cost filled in. */
 export function makeKnownSpell(
-  c: WizardCharacter,
   spell: Spell,
   req: LearnRequest,
-  extra?: { costGp?: number; extraCostGp?: number; note?: string },
+  extra?: { extraCostGp?: number; note?: string },
 ): KnownSpell {
-  const rules = resolveHouseRules(c.houseRules)
   const freePickLevel = req.method === 'starting-free' ? 1 : req.method === 'levelup-free' ? req.freePickLevel : undefined
   return {
     spellId: spell.id,
     spellLevel: spell.level,
     method: req.method,
     ...(freePickLevel ? { freePickLevel } : {}),
-    costGp: extra?.costGp ?? learnCost(spell.level, req.method, rules),
+    costGp: learnCost(spell.level, req.method),
     ...(extra?.extraCostGp ? { extraCostGp: extra.extraCostGp } : {}),
     ...(extra?.note ? { note: extra.note } : {}),
   }

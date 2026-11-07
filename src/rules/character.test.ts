@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { bonusSpellInt, effectiveInt, validateCharacter } from './character'
+import { effectiveInt, validateCharacter } from './character'
 import { diviner9, evoker5, generalist1 } from './fixtures'
 
 describe('validateCharacter', () => {
@@ -38,11 +38,7 @@ describe('validateCharacter', () => {
 })
 
 describe('Int totals', () => {
-  it('adds enhancement and inherent bonuses', () => {
+  it('adds item and inherent bonuses', () => {
     expect(effectiveInt(diviner9)).toBe(24)
-    expect(bonusSpellInt(diviner9)).toBe(24)
-  })
-  it('can leave enhancement out of bonus spells by house rule', () => {
-    expect(bonusSpellInt({ ...diviner9, houseRules: { enhancementCountsForBonus: false } })).toBe(20)
   })
 })

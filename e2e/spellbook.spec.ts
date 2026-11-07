@@ -11,7 +11,7 @@ test('new wizard gets cantrips and starting spells', async ({ page }) => {
   noErrors()
 })
 
-test('library: free pick, paid spell with extra cost, prohibited and above-level spells', async ({ page }) => {
+test('library: free pick, paid spell with extra cost, prohibited and above-level spells, fixed cost', async ({ page }) => {
   const noErrors = failOnErrors(page)
   await createEvoker(page)
   await learn(page, 'Fireball') // level-5 free pick by default
@@ -20,10 +20,17 @@ test('library: free pick, paid spell with extra cost, prohibited and above-level
   await page.getByPlaceholder('Search names and text').fill('Sleep')
   await expect(page.getByRole('button', { name: 'Add Sleep', exact: true })).toHaveCount(0)
 
+  // above the castable level: no Add button, just the level shown
   await page.getByPlaceholder('Search names and text').fill('Cone of Cold')
-  await page.getByRole('button', { name: 'Add Cone of Cold', exact: true }).click()
-  await expect(page.getByRole('dialog')).toContainText('you can cast up to level 3')
-  await expect(page.getByText('Free spell from leveling up')).toHaveCount(0)
+  await expect(page.getByRole('button', { name: /^Cone of Cold/ })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Add Cone of Cold', exact: true })).toHaveCount(0)
+
+  // learning cost is fixed: shown, not editable
+  await page.getByPlaceholder('Search names and text').fill('Web')
+  await page.getByRole('button', { name: 'Add Web', exact: true }).click()
+  await page.getByLabel('From a scroll').check()
+  await expect(page.getByRole('dialog')).toContainText('200 gp')
+  await expect(page.getByLabel('Cost to learn (gp)')).toHaveCount(0)
   await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
 
   await page.getByRole('link', { name: 'Book' }).click()

@@ -38,8 +38,8 @@ prestige classes that advance casting. Optional later features are listed in sec
 
 ## 2. Rules reference (what the rules engine must use)
 
-> Source: the 3.5 PHB, Wizard chapter and Table 1-1. Rules that tables often play
-> differently become **[house-rule toggle]** settings.
+> Source: the 3.5 PHB, Wizard chapter and Table 1-1. The app plays these rules as
+> written; there are no table-rule settings.
 
 ### 2.1 Spells per day (base slots), PHB Table 3-18
 
@@ -103,11 +103,10 @@ Store this as a data table in code, not as a formula.
   the player has already made the Spellcraft roll, so the app just records the spell.
   - **Cost:** by default **100 gp × spell level**, with cantrips counting as level 1.
     Eidetic Spellcasting keeps the standard gold cost (flavoured as incense or
-    mental mapping) and skips writing on pages. The rate per level is a setting, and
-    the cost can be changed on each spell.
+    mental mapping) and skips writing on pages. The cost is fixed and can't be
+    edited.
   - There is an extra cost field, for example for buying the scroll.
-- **Spell levels above what the wizard can cast:** **[house-rule toggle]**, default
-  "warn but allow".
+- **Spell levels above what the wizard can cast** can't be learned.
 
 ### 2.5 Preparing spells
 - The wizard needs 8 hours of rest, then 1 hour of study. The app records this as a
@@ -207,7 +206,6 @@ src/
     slots.ts             # computeSlots(character) -> SlotPlan
     known.ts             # canLearn(), learnCost(), freePickAllowance()
     preparation.ts       # validatePreparation(), canFillSlot()
-    houseRules.ts        # toggle definitions + defaults
   data/
     db.ts                # Dexie schema & migrations
     spells.ts            # load manifest + JSON files, merge imported/custom, index
@@ -234,7 +232,6 @@ interface Character {
   intModAtLevel1: number;              // locks starting free-spell count
   specialty?: School;                  // undefined = generalist
   prohibited: School[];                // validated per §2.3
-  houseRules: Partial<HouseRules>;
   createdAt: number; updatedAt: number;
 }
 
@@ -310,10 +307,10 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
    - The **"Add to book"** sheet has:
      - How it was learned: free pick (shows the free picks left for each level),
        scroll, another book, research or other.
-     - The cost, filled in automatically (for example "3rd level · 300 gp") and
-       editable, plus an extra-cost field and a note.
-     - Warnings: spell level above what the wizard can cast (house rule), or Int too
-       low to prepare it.
+     - The fixed cost (for example "3rd level · 300 gp"), plus an extra-cost field
+       and a note.
+     - Spells above your castable level have no Add button. There's a warning if
+       your Int is too low to prepare the spell.
    - **"+ Custom spell"** button.
 
 4. **Prepare**
@@ -335,7 +332,7 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
 6. **More**
    - **Ledger:** every learned spell with its cost and method, plus manual entries,
      with totals.
-   - **Settings:** house-rule toggles, gp per spell level, theme (parchment or dark),
+   - **Settings:** theme (parchment or dark),
      import spells JSON, export custom spells, back up and restore character data,
      about (OGL notice).
 
@@ -345,13 +342,15 @@ least 44 px.
 
 ---
 
-## 8. House-rule settings (defaults in **bold**)
+## 8. Table rules
 
-- Allow learning spells above the castable level: off / **warn** / allow.
-- Gold per spell level for learned (non-free) spells: **100 gp**. Cantrips count as
-  level 1.
-- Specialist bonus slot applies to cantrips: **yes**.
-- Int enhancement counts toward bonus spells: **yes**.
+None. The app follows the rules as written:
+- spells above your castable level can't be learned;
+- item (enhancement) bonuses to Int always count toward bonus spells;
+- learning a spell costs a fixed 100 gp × spell level (cantrips 100 gp);
+- specialists get their extra slot at every spell level, including cantrips.
+
+The only optional cost is "extra cost", for example the price of a scroll.
 
 ---
 
@@ -369,7 +368,7 @@ least 44 px.
   specialist and prohibited-school checks), `slots.ts` (base, bonus and specialist
   slots, minimum-Int lock), `known.ts` (free picks for each level, `canLearn`,
   costs, starting cantrips), `preparation.ts` (slot checks, candidate lists, day
-  validation, carry-over, cast tracking) and `houseRules.ts`.
+  validation, carry-over, cast tracking).
 - 76 tests, covering 97% of lines. Run `npm test`, or `npm run coverage`.
 
 **Phase 2 — Storage and character setup** ✅ done

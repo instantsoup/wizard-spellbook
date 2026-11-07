@@ -5,7 +5,7 @@ import { Button, Field, inputClass, Messages } from '../../components/ui'
 import { learnSpells } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import type { Spell } from '../../data/spell-schema'
-import { canLearn, freePickStatus, learnCost, resolveHouseRules, type AcquisitionMethod, type LearnRequest } from '../../rules'
+import { canLearn, freePickStatus, learnCost, type AcquisitionMethod, type LearnRequest } from '../../rules'
 
 type Choice = 'free' | Extract<AcquisitionMethod, 'scroll' | 'other-book' | 'research' | 'other'>
 
@@ -29,7 +29,6 @@ export function AddToBookSheet({
   onClose: () => void
   onAdded: (message: string) => void
 }) {
-  const rules = resolveHouseRules(character.houseRules)
   // Free picks this spell could use. Prefer the lowest granting level that fits,
   // keeping higher-level picks for higher-level spells.
   const freeOptions = useMemo(
@@ -42,7 +41,6 @@ export function AddToBookSheet({
   const canUseFree = spell.level > 0 && freeOptions.length > 0
   const [choice, setChoice] = useState<Choice>(canUseFree ? 'free' : 'scroll')
   const [freeLevel, setFreeLevel] = useState(freeOptions[0]?.wizardLevel)
-  const [costText, setCostText] = useState<string>()
   const [extraText, setExtraText] = useState('')
   const [note, setNote] = useState('')
   const [busy, setBusy] = useState(false)
@@ -52,19 +50,18 @@ export function AddToBookSheet({
     choice === 'free'
       ? { method: freeLevel === 1 ? 'starting-free' : 'levelup-free', freePickLevel: freeLevel }
       : { method: choice }
-  const defaultCost = learnCost(spell.level, req.method, rules)
-  const cost = costText === undefined || costText === '' ? defaultCost : Math.max(0, parseInt(costText, 10) || 0)
+  const cost = learnCost(spell.level, req.method)
   const extra = Math.max(0, parseInt(extraText, 10) || 0)
   const result = canLearn(character, spell, known, req)
 
   const add = async () => {
     setBusy(true)
     const r = await learnSpells(character, [
-      { spell, req, costGp: choice === 'free' ? 0 : cost, extraCostGp: extra || undefined, note: note.trim() || undefined },
+      { spell, req, extraCostGp: extra || undefined, note: note.trim() || undefined },
     ])
     setBusy(false)
     if (!r.ok) return setSaveErrors(r.errors)
-    const total = (choice === 'free' ? 0 : cost) + extra
+    const total = cost + extra
     onAdded(`${spell.name} added${total ? ` · ${total.toLocaleString()} gp` : ' · free'}`)
   }
 
@@ -101,9 +98,11 @@ export function AddToBookSheet({
 
       {choice !== 'free' && (
         <div className="mb-4 grid grid-cols-2 gap-3">
-          <Field label="Cost to learn (gp)" hint={`Default ${defaultCost.toLocaleString()} gp`}>
-            <input className={inputClass} inputMode="numeric" value={costText ?? String(defaultCost)} onChange={(e) => setCostText(e.target.value.replace(/[^0-9]/g, ''))} />
-          </Field>
+          <div>
+            <p className="mb-1 text-sm font-semibold text-ink/80">Cost to learn</p>
+            <p className="flex min-h-11 items-center font-display text-lg text-leather">{cost.toLocaleString()} gp</p>
+            <p className="text-xs text-ink/60">100 gp × spell level</p>
+          </div>
           <Field label="Extra cost (gp)" hint="e.g. buying the scroll">
             <input className={inputClass} inputMode="numeric" placeholder="0" value={extraText} onChange={(e) => setExtraText(e.target.value.replace(/[^0-9]/g, ''))} />
           </Field>

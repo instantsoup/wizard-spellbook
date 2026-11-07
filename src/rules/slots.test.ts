@@ -30,12 +30,13 @@ describe('computeSlots', () => {
     // Int 34 would give 9th-level bonus spells, but a 1st-level wizard has no 2nd+ slots
     expect(computeSlots({ ...generalist1, int: { base: 34, enhancement: 0, inherent: 0 } })).toHaveLength(2)
   })
-  it('house rule: no specialist cantrip slot', () => {
-    expect(totals({ ...evoker5, houseRules: { specialistCantripSlot: false } })).toEqual([4, 5, 4, 3])
+  it('specialists get an extra cantrip slot too', () => {
+    expect(computeSlots(evoker5)[0]).toMatchObject({ base: 4, specialist: 1, total: 5 })
   })
-  it('house rule: headband does not count for bonus spells', () => {
-    // Int 20 (+5): bonus 2/1/1/1/1
-    expect(totals({ ...diviner9, houseRules: { enhancementCountsForBonus: false } })).toEqual([5, 7, 6, 5, 4, 3])
+  it('a headband counts toward bonus spells', () => {
+    const noHeadband = { ...diviner9, int: { ...diviner9.int, enhancement: 0 } }
+    expect(totals(noHeadband)).toEqual([5, 7, 6, 5, 4, 3])
+    expect(totals(diviner9)).toEqual([5, 7, 7, 6, 4, 3])
   })
   it('locks levels whose minimum Int the wizard lacks', () => {
     const lowInt = { ...evoker5, int: { base: 12, enhancement: 0, inherent: 0 } }

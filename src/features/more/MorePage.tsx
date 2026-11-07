@@ -2,11 +2,10 @@ import { useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Button, Card, Field, inputClass, Messages, Page, SectionTitle } from '../../components/ui'
 import { downloadBackup, parseBackup, restoreBackup } from '../../data/backup'
-import { deleteCharacter, setActiveCharacter, updateCharacter } from '../../data/characters'
+import { deleteCharacter, setActiveCharacter } from '../../data/characters'
 import type { CharacterRecord } from '../../data/db'
 import { useCharacters, useSetting } from '../../data/hooks'
 import { getTheme, setTheme, type ThemeChoice } from '../../theme'
-import { resolveHouseRules, type AboveCastablePolicy, type HouseRules } from '../../rules'
 
 export function MorePage({ character }: { character: CharacterRecord }) {
   const navigate = useNavigate()
@@ -15,9 +14,6 @@ export function MorePage({ character }: { character: CharacterRecord }) {
   const fileRef = useRef<HTMLInputElement>(null)
   const [theme, setThemeState] = useState<ThemeChoice>(getTheme)
   const [msg, setMsg] = useState<{ errors?: string[]; warnings?: string[] }>({})
-  const rules = resolveHouseRules(character.houseRules)
-  const setRule = (patch: Partial<HouseRules>) =>
-    updateCharacter(character.id, { houseRules: { ...character.houseRules, ...patch } })
 
   const onRestore = async (file: File) => {
     try {
@@ -69,30 +65,6 @@ export function MorePage({ character }: { character: CharacterRecord }) {
             Delete {character.name}
           </Button>
         </div>
-      </Card>
-
-      <SectionTitle>Table rules</SectionTitle>
-      <Card className="space-y-4">
-        <Field label="Learning spells above your castable level">
-          <select className={inputClass} value={rules.aboveCastableLevel} onChange={(e) => setRule({ aboveCastableLevel: e.target.value as AboveCastablePolicy })}>
-            <option value="off">Not allowed</option>
-            <option value="warn">Allowed, with a warning</option>
-            <option value="allow">Allowed</option>
-          </select>
-        </Field>
-        <Field label="Gold per spell level to learn a spell" hint="Cantrips count as 1st level. Free picks cost nothing.">
-          <input
-            className={inputClass}
-            inputMode="numeric"
-            value={rules.gpPerSpellLevel}
-            onChange={(e) => {
-              const n = parseInt(e.target.value, 10)
-              if (!Number.isNaN(n) && n >= 0) setRule({ gpPerSpellLevel: n })
-            }}
-          />
-        </Field>
-        <Toggle label="Specialist slot for cantrips" checked={rules.specialistCantripSlot} onChange={(v) => setRule({ specialistCantripSlot: v })} />
-        <Toggle label="Headband counts toward bonus spells" checked={rules.enhancementCountsForBonus} onChange={(v) => setRule({ enhancementCountsForBonus: v })} />
       </Card>
 
       <SectionTitle>Appearance</SectionTitle>
@@ -168,14 +140,5 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         </p>
       </Card>
     </Page>
-  )
-}
-
-function Toggle({ label, checked, onChange }: { label: string; checked: boolean; onChange: (v: boolean) => void }) {
-  return (
-    <label className="flex min-h-11 items-center justify-between gap-3">
-      <span className="text-sm font-semibold text-ink/80">{label}</span>
-      <input type="checkbox" className="size-6 accent-[var(--color-leather)]" checked={checked} onChange={(e) => onChange(e.target.checked)} />
-    </label>
   )
 }

@@ -1,5 +1,4 @@
 import type { School } from '../data/spell-schema'
-import type { HouseRules } from './houseRules'
 
 export type { School }
 
@@ -34,7 +33,6 @@ export interface WizardCharacter {
   /** undefined = generalist */
   specialty?: School
   prohibited: School[]
-  houseRules?: Partial<HouseRules>
 }
 
 export type AcquisitionMethod =

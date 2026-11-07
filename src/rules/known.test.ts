@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest'
-import { DEFAULT_HOUSE_RULES } from './houseRules'
 import { evoker5, generalist1, S } from './fixtures'
 import {
   canLearn,
@@ -54,14 +53,10 @@ describe('canLearn', () => {
     expect(canLearn(evoker5, S.sleep, [], { method: 'scroll' }).ok).toBe(false)
     expect(canLearn(evoker5, S.fireball, [k('fireball', 3)], { method: 'scroll' }).ok).toBe(false)
   })
-  it('above castable level: warn by default, block or allow by house rule', () => {
+  it('cannot learn spells above the castable level', () => {
     const r = canLearn(evoker5, S.coneOfCold, [], { method: 'scroll' })
-    expect(r.ok).toBe(true)
-    expect(r.warnings).toHaveLength(1)
-    const off = { ...evoker5, houseRules: { aboveCastableLevel: 'off' as const } }
-    expect(canLearn(off, S.coneOfCold, [], { method: 'scroll' }).ok).toBe(false)
-    const allow = { ...evoker5, houseRules: { aboveCastableLevel: 'allow' as const } }
-    expect(canLearn(allow, S.coneOfCold, [], { method: 'scroll' }).warnings).toEqual([])
+    expect(r.ok).toBe(false)
+    expect(r.errors[0]).toMatch(/up to level 3/)
   })
   it('starting free picks must be 1st level', () => {
     expect(canLearn(generalist1, S.magicMissile, [], { method: 'starting-free' }).ok).toBe(true)
@@ -91,24 +86,21 @@ describe('canLearn', () => {
 
 describe('costs', () => {
   it('100 gp per spell level, cantrips count as 1, free methods cost 0', () => {
-    expect(learnCost(3, 'scroll', DEFAULT_HOUSE_RULES)).toBe(300)
-    expect(learnCost(0, 'other-book', DEFAULT_HOUSE_RULES)).toBe(100)
-    expect(learnCost(5, 'levelup-free', DEFAULT_HOUSE_RULES)).toBe(0)
-    expect(learnCost(1, 'starting-free', DEFAULT_HOUSE_RULES)).toBe(0)
+    expect(learnCost(3, 'scroll')).toBe(300)
+    expect(learnCost(0, 'other-book')).toBe(100)
+    expect(learnCost(4, 'research')).toBe(400)
+    expect(learnCost(5, 'levelup-free')).toBe(0)
+    expect(learnCost(1, 'starting-free')).toBe(0)
   })
-  it('uses the house-rule rate', () => {
-    expect(learnCost(4, 'research', { ...DEFAULT_HOUSE_RULES, gpPerSpellLevel: 50 })).toBe(200)
-  })
-  it('makeKnownSpell fills in the default cost, which can be overridden', () => {
-    expect(makeKnownSpell(evoker5, S.fireball, { method: 'scroll' }, { extraCostGp: 375 })).toEqual({
+  it('makeKnownSpell fills in the fixed cost', () => {
+    expect(makeKnownSpell(S.fireball, { method: 'scroll' }, { extraCostGp: 375 })).toEqual({
       spellId: 'fireball',
       spellLevel: 3,
       method: 'scroll',
       costGp: 300,
       extraCostGp: 375,
     })
-    expect(makeKnownSpell(evoker5, S.fireball, { method: 'scroll' }, { costGp: 0 }).costGp).toBe(0)
-    expect(makeKnownSpell(evoker5, S.haste, { method: 'levelup-free', freePickLevel: 5 })).toMatchObject({
+    expect(makeKnownSpell(S.haste, { method: 'levelup-free', freePickLevel: 5 })).toMatchObject({
       costGp: 0,
       freePickLevel: 5,
     })

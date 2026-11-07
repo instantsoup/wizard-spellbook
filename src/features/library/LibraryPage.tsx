@@ -8,7 +8,7 @@ import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { freePickStatus, isProhibited } from '../../rules'
+import { freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
 import { AddToBookSheet } from './AddToBookSheet'
 import {
   activeFilterCount,
@@ -67,6 +67,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
     setF((prev) => ({ ...prev, ...patch }))
     setLimit(PAGE)
   }
+  const castable = maxSpellLevel(character.wizardLevel)
   const picks = freePickStatus(character, known).filter((s) => s.remaining > 0)
   const freeLeft = picks.reduce((n, s) => n + s.remaining, 0)
   const moreCount = (f.without.length ? 1 : 0) + (f.sources.length ? 1 : 0) + (f.subschool ? 1 : 0) + (f.descriptor ? 1 : 0)
@@ -186,18 +187,21 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         {results.slice(0, limit).map((s) => {
           const inBook = knownIds.has(s.id)
           const prohibited = isProhibited(character, s.school as School)
+          const tooHigh = s.level > castable
           return (
             <SpellRow
               key={s.id}
               spell={s}
               open={openId === s.id}
               onToggle={() => setOpenId(openId === s.id ? undefined : s.id)}
-              muted={prohibited}
+              muted={prohibited || (tooHigh && !inBook)}
               aside={
                 inBook ? (
                   <span className="w-11 text-center text-xs font-semibold text-leather">✓<br />Book</span>
                 ) : prohibited ? (
                   <span className="w-11 text-center text-xs text-ink/60" title="Prohibited school">🔒</span>
+                ) : tooHigh ? (
+                  <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Level {s.level}</span>
                 ) : (
                   <button
                     type="button"

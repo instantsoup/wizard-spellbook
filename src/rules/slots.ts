@@ -1,5 +1,4 @@
-import { bonusSpellInt, effectiveInt } from './character'
-import { resolveHouseRules } from './houseRules'
+import { effectiveInt } from './character'
 import { abilityModifier, baseSpellsPerDay, bonusSpells, maxSpellLevel, minIntForSpellLevel } from './tables'
 import type { SlotKind, WizardCharacter } from './types'
 
@@ -15,15 +14,15 @@ export interface LevelSlots {
 
 /** Slots per day for every spell level the wizard has access to (0 to max). */
 export function computeSlots(c: WizardCharacter): LevelSlots[] {
-  const rules = resolveHouseRules(c.houseRules)
-  const bonusMod = abilityModifier(bonusSpellInt(c))
   const castInt = effectiveInt(c)
+  const bonusMod = abilityModifier(castInt)
   const result: LevelSlots[] = []
 
   for (let spellLevel = 0; spellLevel <= maxSpellLevel(c.wizardLevel); spellLevel++) {
     const base = baseSpellsPerDay(c.wizardLevel, spellLevel) ?? 0
     const bonus = bonusSpells(bonusMod, spellLevel)
-    const specialist = c.specialty && (spellLevel > 0 || rules.specialistCantripSlot) ? 1 : 0
+    // PHB: one extra spell of the specialty school per spell level, cantrips included.
+    const specialist = c.specialty ? 1 : 0
     result.push({
       spellLevel,
       base,

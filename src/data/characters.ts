@@ -56,7 +56,7 @@ export async function knownSpellsFor(characterId: string, d: SpellbookDB = db) {
  */
 export async function learnSpells(
   character: CharacterRecord,
-  items: { spell: Spell; req: LearnRequest; costGp?: number; extraCostGp?: number; note?: string }[],
+  items: { spell: Spell; req: LearnRequest; extraCostGp?: number; note?: string }[],
   d: SpellbookDB = db,
 ): Promise<{ ok: boolean; errors: string[]; added: KnownSpellRecord[] }> {
   return d.transaction('rw', d.knownSpells, async () => {
@@ -70,7 +70,7 @@ export async function learnSpells(
         continue
       }
       added.push({
-        ...makeKnownSpell(character, item.spell, item.req, item),
+        ...makeKnownSpell(item.spell, item.req, item),
         id: newId(),
         characterId: character.id,
         addedAt: Date.now(),
@@ -93,10 +93,10 @@ export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {
   await d.knownSpells.delete(knownSpellId)
 }
 
-/** Correct a book entry's cost or note. */
+/** Correct a book entry's extra cost or note (the learning cost is fixed by the rules). */
 export async function updateKnownSpell(
   id: string,
-  changes: { costGp?: number; extraCostGp?: number; note?: string },
+  changes: { extraCostGp?: number; note?: string },
   d: SpellbookDB = db,
 ) {
   await d.knownSpells.update(id, {
