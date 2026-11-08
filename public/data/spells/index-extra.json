@@ -145,27 +145,6 @@
   "page": 70
  },
  {
-  "id": "devlins-barb",
-  "name": "Devlin's Barb",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "You temporarily create an arrow, bolt, bullet, or sling stone that ceases to exist at the end of the duration.",
-  "description": "You temporarily create an arrow, bolt, bullet, or sling stone that ceases to exist at the end of the duration.\n\nSummary only. Full text: Book of Eldritch Might, p. 17.",
-  "source": "Book of Eldritch Might",
-  "page": 17
- },
- {
   "id": "electric-jolt",
   "name": "Electric Jolt",
   "school": "Evocation",
@@ -228,27 +207,6 @@
   "summary": "Ray deals 1d3 electricity damage.",
   "description": "Ray deals 1d3 electricity damage.\n\nSummary only. Full text: SKR.",
   "source": "SKR"
- },
- {
-  "id": "enchanting-flavor",
-  "name": "Enchanting Flavor",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "A meal tastes wonderful and you gain a one-time Charisma-based check bonus.",
-  "description": "A meal tastes wonderful and you gain a one-time Charisma-based check bonus.\n\nSummary only. Full text: Book of Eldritch Might, p. 18.",
-  "source": "Book of Eldritch Might",
-  "page": 18
  },
  {
   "id": "fire-flash",
@@ -412,25 +370,6 @@
   "description": "Hurls fine item up to long range.\n\nSummary only. Full text: Spell Compendium, p. 130.",
   "source": "Spell Compendium",
   "page": 130
- },
- {
-  "id": "mental-alarm",
-  "name": "Mental Alarm",
-  "school": "Divination",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Mental alarm that goes off at a specific time within the duration to all subjects simultaneiously.",
-  "description": "Mental alarm that goes off at a specific time within the duration to all subjects simultaneiously.\n\nSummary only. Full text: Book of Eldritch Might, p. 23.",
-  "source": "Book of Eldritch Might",
-  "page": 23
  },
  {
   "id": "minor-energy-ward",
@@ -658,48 +597,6 @@
   "source": "SKR"
  },
  {
-  "id": "tongue-of-angels",
-  "name": "Tongue of Angels",
-  "school": "Transmutation",
-  "descriptors": [
-   "Good"
-  ],
-  "level": 0,
-  "components": [
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 round/level",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "No",
-  "summary": "You can speak Celestial.",
-  "description": "You can speak Celestial.\n\nSummary only. Full text: Book of Eldritch Might, p. 28.",
-  "source": "Book of Eldritch Might",
-  "page": 28
- },
- {
-  "id": "tongue-of-fiends",
-  "name": "Tongue of Fiends",
-  "school": "Transmutation",
-  "descriptors": [
-   "Evil"
-  ],
-  "level": 0,
-  "components": [
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 round/level",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "No",
-  "summary": "You can speak Infernal.",
-  "description": "You can speak Infernal.\n\nSummary only. Full text: Book of Eldritch Might, p. 28.",
-  "source": "Book of Eldritch Might",
-  "page": 28
- },
- {
   "id": "unnerving-gaze",
   "name": "Unnerving Gaze",
   "school": "Illusion",
@@ -745,27 +642,6 @@
   "page": 74
  },
  {
-  "id": "ward-minor",
-  "name": "Ward, Minor",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "10 minutes",
-  "range": "Touch",
-  "duration": "1 day/level",
-  "savingThrow": "See text",
-  "spellResistance": "Yes (object)",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 23.",
-  "source": "Book of Eldritch Might",
-  "page": 23
- },
- {
   "id": "aberrate",
   "name": "Aberrate",
   "school": "Transmutation",
@@ -804,50 +680,6 @@
   "description": "Swift. Balance, Climb, Hide, Move Silently, and Tumble at normal speed with no penalty on skill check.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
   "page": 7
- },
- {
-  "id": "acidic-curse",
-  "name": "Acidic Curse",
-  "school": "Evocation",
-  "descriptors": [
-   "Acid"
-  ],
-  "level": 1,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 15.",
-  "source": "Book of Eldritch Might",
-  "page": 15
- },
- {
-  "id": "alustriels-banner",
-  "name": "Alustriel's Banner",
-  "school": "Illusion",
-  "subschool": "Figment",
-  "descriptors": [],
-  "level": 1,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Long (400 ft. + 40 ft./level)",
-  "duration": "1 round/level (D)",
-  "savingThrow": "Will disbelief (if interacted with)",
-  "spellResistance": "No",
-  "summary": "Create a minor image of a banner that is illuminated to guide and light.",
-  "description": "Create a minor image of a banner that is illuminated to guide and light.\n\nSummary only. Full text: SMW.",
-  "source": "SMW"
  },
  {
   "id": "appraising-touch",
@@ -1713,30 +1545,6 @@
   "page": 108
  },
  {
-  "id": "guilt",
-  "name": "Guilt",
-  "school": "Enchantment",
-  "subschool": "Compulsion",
-  "descriptors": [
-   "Mind-Affecting"
-  ],
-  "level": 1,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1d4 rounds",
-  "savingThrow": "Will negates",
-  "spellResistance": "Yes",
-  "summary": "A non-good creature is forced to think about some evil deed it performed, denying it any actions except to defend itself.",
-  "description": "A non-good creature is forced to think about some evil deed it performed, denying it any actions except to defend itself.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
- },
- {
   "id": "hail-of-stone",
   "name": "Hail of Stone",
   "school": "Conjuration",
@@ -2286,27 +2094,6 @@
   "page": 161
  },
  {
-  "id": "precise-vision",
-  "name": "Precise Vision",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 1,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "10 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 26.",
-  "source": "Book of Eldritch Might",
-  "page": 26
- },
- {
   "id": "quickswim",
   "name": "Quickswim",
   "school": "Transmutation",
@@ -2493,27 +2280,6 @@
   "description": "Reduces a surprised creature's initiative roll.\n\nSummary only. Full text: Dragon Magazine #325, p. 72.",
   "source": "Dragon Magazine #325",
   "page": 72
- },
- {
-  "id": "silent-sound",
-  "name": "Silent Sound",
-  "school": "Evocation",
-  "descriptors": [
-   "Sonic"
-  ],
-  "level": 1,
-  "components": [
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Ranged attack roll deals 1d6/level (max 5d6) sonic damage.",
-  "description": "Ranged attack roll deals 1d6/level (max 5d6) sonic damage.\n\nSummary only. Full text: Book of Eldritch Might, p. 26.",
-  "source": "Book of Eldritch Might",
-  "page": 26
  },
  {
   "id": "slide",
@@ -2866,8 +2632,8 @@
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Wards and area for 2 hours/level",
-  "description": "Wards and area for 2 hours/level\n\nSummary only. Full text: HB, p. 124.",
-  "source": "HB",
+  "description": "Wards and area for 2 hours/level\n\nSummary only. Full text: Heroes of Battle, p. 124.",
+  "source": "Heroes of Battle",
   "page": 124
  },
  {
@@ -3946,27 +3712,6 @@
   "page": 112
  },
  {
-  "id": "enhance-magical-flow",
-  "name": "Enhance Magical Flow",
-  "school": "Universal",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "10 min./level",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "No",
-  "summary": "Gain a +1 enhancement bonus to spell DCs.",
-  "description": "Gain a +1 enhancement bonus to spell DCs.\n\nSummary only. Full text: Book of Eldritch Might, p. 19.",
-  "source": "Book of Eldritch Might",
-  "page": 19
- },
- {
   "id": "enlarge-weapon",
   "name": "Enlarge Weapon",
   "school": "Transmutation",
@@ -4389,28 +4134,6 @@
   "page": 119
  },
  {
-  "id": "icebolt",
-  "name": "Icebolt",
-  "school": "Evocation",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Ranged attack against a target with a piercing ice sicle for 2d6 piercing damage +1d6 + 1/level (max +10) cold damage.  If a touch attack would hit, deal only the cold damage.",
-  "description": "Ranged attack against a target with a piercing ice sicle for 2d6 piercing damage +1d6 + 1/level (max +10) cold damage.  If a touch attack would hit, deal only the cold damage.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
- },
- {
   "id": "infernal-wound",
   "name": "Infernal Wound",
   "school": "Transmutation",
@@ -4584,27 +4307,6 @@
   "page": 133
  },
  {
-  "id": "locate-node",
-  "name": "Locate Node",
-  "school": "Divination",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 standard action",
-  "range": "1 mile/level",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Finds closest earth node in 1 mile/level radius.",
-  "description": "Finds closest earth node in 1 mile/level radius.\n\nSummary only. Full text: CR, p. 31.",
-  "source": "CR",
-  "page": 31
- },
- {
   "id": "lucky-streak",
   "name": "Lucky Streak",
   "school": "Transmutation",
@@ -4645,116 +4347,6 @@
   "description": "Cloud of fog deals 1d4 nonlethal damage/level.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
   "page": 137
- },
- {
-  "id": "mark-of-air",
-  "name": "Mark of Air",
-  "school": "Evocation",
-  "descriptors": [
-   "Air"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "Subject gains +2 to Dex.  The mark can be discharged to create sheild of air that provides +5 deflection bonus for 10 rounds.",
-  "description": "Subject gains +2 to Dex.  The mark can be discharged to create sheild of air that provides +5 deflection bonus for 10 rounds.\n\nSummary only. Full text: Book of Eldritch Might, p. 21.",
-  "source": "Book of Eldritch Might",
-  "page": 21
- },
- {
-  "id": "mark-of-earth",
-  "name": "Mark of Earth",
-  "school": "Evocation",
-  "descriptors": [
-   "Earth"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "Subject gains +2 to Str.  They can perform a ranged touch attack that deals 5d6 damage that ends the spell.",
-  "description": "Subject gains +2 to Str.  They can perform a ranged touch attack that deals 5d6 damage that ends the spell.\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-fire",
-  "name": "Mark of Fire",
-  "school": "Evocation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "Subject gains +2 to Dex.  Can also use a Ray attack for 3d3 fire damage, dismissing the spell.",
-  "description": "Subject gains +2 to Dex.  Can also use a Ray attack for 3d3 fire damage, dismissing the spell.\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-frost",
-  "name": "Mark of Frost",
-  "school": "Evocation",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "Subject gains +1 natural armor bonus to AC.  Can also create a spear that deals 1d8 piercing + 2d6 cold damage, dismissing the spell.",
-  "description": "Subject gains +1 natural armor bonus to AC.  Can also create a spear that deals 1d8 piercing + 2d6 cold damage, dismissing the spell.\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-water",
-  "name": "Mark of Water",
-  "school": "Evocation",
-  "descriptors": [
-   "Water"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "Subject gains +2 to Con.  Can also create a stream of water that deals 5d6 damage to a target, dismissing the spell.",
-  "description": "Subject gains +2 to Con.  Can also create a stream of water that deals 5d6 damage to a target, dismissing the spell.\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
  },
  {
   "id": "marked-man",
@@ -4879,8 +4471,8 @@
   "duration": "Instantaneous",
   "savingThrow": "Reflex negates",
   "summary": "5-ft.-radius burst deals 2d6 fire damage, ignites nearby targets.",
-  "description": "5-ft.-radius burst deals 2d6 fire damage, ignites nearby targets.\n\nSummary only. Full text: HB, p. 127.",
-  "source": "HB",
+  "description": "5-ft.-radius burst deals 2d6 fire damage, ignites nearby targets.\n\nSummary only. Full text: Heroes of Battle, p. 127.",
+  "source": "Heroes of Battle",
   "page": 127
  },
  {
@@ -4948,28 +4540,6 @@
   "description": "Hear or see encysted subject at a distance.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
   "page": 69
- },
- {
-  "id": "node-lock",
-  "name": "Node Lock",
-  "school": "Abjuration",
-  "descriptors": [
-   "Earth"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Permanent",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Deters others from using an earth node's powers.",
-  "description": "Deters others from using an earth node's powers.\n\nSummary only. Full text: CR, p. 33.",
-  "source": "CR",
-  "page": 33
  },
  {
   "id": "phades-fearsome-aspect",
@@ -5041,27 +4611,6 @@
   "page": 72
  },
  {
-  "id": "portal-well",
-  "name": "Portal Well",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "1 round/level (D)",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "When you step into a portal affected by this spell, you can wait for a short time within an extradimensional space between the portal's entrance and exit.",
-  "description": "When you step into a portal affected by this spell, you can wait for a short time within an extradimensional space between the portal's entrance and exit.\n\nSummary only. Full text: CV, p. 56.",
-  "source": "CV",
-  "page": 56
- },
- {
   "id": "pressure-sphere",
   "name": "Pressure Sphere",
   "school": "Evocation",
@@ -5106,23 +4655,6 @@
   "description": "Ray does a random type of damage.\n\nSummary only. Full text: Dragon Magazine #322, p. 74.",
   "source": "Dragon Magazine #322",
   "page": 74
- },
- {
-  "id": "razorscales",
-  "name": "Razorscales",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 round/level (D)",
-  "summary": "You deal lethal instead of nonlethal damage when grappling.",
-  "description": "You deal lethal instead of nonlethal damage when grappling.\n\nSummary only. Full text: SK, p. 156.",
-  "source": "SK",
-  "page": 156
  },
  {
   "id": "rebuke",
@@ -5275,28 +4807,6 @@
   "page": 181
  },
  {
-  "id": "scourge-of-force",
-  "name": "Scourge of Force",
-  "school": "Evocation",
-  "descriptors": [
-   "Force"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Tendrils of force lash foes for 1d8 + 1/2 levels damage each.",
-  "description": "Tendrils of force lash foes for 1d8 + 1/2 levels damage each.\n\nSummary only. Full text: CR, p. 34.",
-  "source": "CR",
-  "page": 34
- },
- {
   "id": "seeking-ray",
   "name": "Seeking Ray",
   "school": "Evocation",
@@ -5402,26 +4912,6 @@
   "description": "Negative energy shroud makes undead perceive you as undead.\n\nSummary only. Full text: Spell Compendium, p. 189.",
   "source": "Spell Compendium",
   "page": 189
- },
- {
-  "id": "silver-dragonmail",
-  "name": "Silver Dragonmail",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 hour/level (D); see text",
-  "summary": "You create a shining silver +1 mithral breastplate around your body.",
-  "description": "You create a shining silver +1 mithral breastplate around your body.\n\nSummary only. Full text: CV, p. 57.",
-  "source": "CV",
-  "page": 57
  },
  {
   "id": "sink",
@@ -5659,27 +5149,6 @@
   "page": 104
  },
  {
-  "id": "static-veil",
-  "name": "Static Veil",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "10 minutes",
-  "range": "0 ft.",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Scry DC increases by +1/level for targets within the area.",
-  "description": "Scry DC increases by +1/level for targets within the area.\n\nSummary only. Full text: Book of Eldritch Might, p. 27.",
-  "source": "Book of Eldritch Might",
-  "page": 27
- },
- {
   "id": "stay-the-hand",
   "name": "Stay the Hand",
   "school": "Enchantment",
@@ -5869,26 +5338,6 @@
   "page": 123
  },
  {
-  "id": "thief-ward",
-  "name": "Thief Ward",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "All Hide and Move Silently checks suffer a -10 penalty.",
-  "description": "All Hide and Move Silently checks suffer a -10 penalty.\n\nSummary only. Full text: Book of Eldritch Might, p. 28.",
-  "source": "Book of Eldritch Might",
-  "page": 28
- },
- {
   "id": "tune-of-the-dancing-weapon",
   "name": "Tune of the Dancing Weapon",
   "school": "Transmutation",
@@ -5927,26 +5376,6 @@
   "description": "Water surrounding you becomes cloudy, granting concealment.\n\nSummary only. Full text: Stormwrack, p. 123.",
   "source": "Stormwrack",
   "page": 123
- },
- {
-  "id": "undaunted-fixture",
-  "name": "Undaunted Fixture",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Permanent",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Two objects cannot be separated except by a DC 30 strength check.  Objects may break first.",
-  "description": "Two objects cannot be separated except by a DC 30 strength check.  Objects may break first.\n\nSummary only. Full text: Book of Eldritch Might, p. 28.",
-  "source": "Book of Eldritch Might",
-  "page": 28
  },
  {
   "id": "undeniable-gravity",
@@ -6393,24 +5822,6 @@
   "page": 209
  },
  {
-  "id": "avoid-planar-effects",
-  "name": "Avoid Planar Effects",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V"
-  ],
-  "castingTime": "1 immediate action",
-  "range": "20 ft.",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Provides temporary protection against overtly damaging planar traits.",
-  "description": "Provides temporary protection against overtly damaging planar traits.\n\nSummary only. Full text: Sandstorm.",
-  "source": "Sandstorm"
- },
- {
   "id": "bands-of-steel",
   "name": "Bands of Steel",
   "school": "Conjuration",
@@ -6446,33 +5857,9 @@
   "range": "Personal",
   "duration": "10 min./level (D)",
   "summary": "Sense and counter spellcasting within 100 feet.",
-  "description": "Sense and counter spellcasting within 100 feet.\n\nSummary only. Full text: HB, p. 125.",
-  "source": "HB",
+  "description": "Sense and counter spellcasting within 100 feet.\n\nSummary only. Full text: Heroes of Battle, p. 125.",
+  "source": "Heroes of Battle",
   "page": 125
- },
- {
-  "id": "bedevil",
-  "name": "Bedevil",
-  "school": "Conjuration",
-  "subschool": "Summoning",
-  "descriptors": [
-   "Evil"
-  ],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 round",
-  "range": "See text",
-  "duration": "1 day/level (D)",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Summon a mischievous spirit to torment your enemy.",
-  "description": "Summon a mischievous spirit to torment your enemy.\n\nSummary only. Full text: CR, p. 29.",
-  "source": "CR",
-  "page": 29
  },
  {
   "id": "bite-of-the-wererat",
@@ -6535,72 +5922,6 @@
   "description": "Creates blade of gnashing teeth.\n\nSummary only. Full text: Spell Compendium, p. 30.",
   "source": "Spell Compendium",
   "page": 30
- },
- {
-  "id": "bolt-of-conjuring",
-  "name": "Bolt of Conjuring",
-  "school": "Conjuration",
-  "subschool": "Summoning",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous; see text",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 15.",
-  "source": "Book of Eldritch Might",
-  "page": 15
- },
- {
-  "id": "bone-tattoo",
-  "name": "Bone Tattoo",
-  "school": "Necromancy",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 minute",
-  "range": "Touch",
-  "duration": "1 min./level",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 16.",
-  "source": "Book of Eldritch Might",
-  "page": 16
- },
- {
-  "id": "bridge-of-sound",
-  "name": "Bridge of Sound",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Sonic"
-  ],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "DF"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Concentration + 1 round/level",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.",
-  "description": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.\n\nSummary only. Full text: Sandstorm, p. 63.",
-  "source": "Sandstorm",
-  "page": 63
  },
  {
   "id": "capricious-zephyr",
@@ -6708,28 +6029,6 @@
   "description": "20-ft.-radius cloud of fog inflicts disease.\n\nSummary only. Full text: Spell Compendium, p. 52.",
   "source": "Spell Compendium",
   "page": 52
- },
- {
-  "id": "control-darkness-and-shadow",
-  "name": "Control Darkness and Shadow",
-  "school": "Transmutation",
-  "descriptors": [
-   "Darkness"
-  ],
-  "level": 3,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Concentration + 1 round/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Manipulate existing areas of darkness and shadow.",
-  "description": "Manipulate existing areas of darkness and shadow.\n\nSummary only. Full text: CR, p. 29.",
-  "source": "CR",
-  "page": 29
  },
  {
   "id": "corpse-candle",
@@ -6951,27 +6250,6 @@
   "page": 77
  },
  {
-  "id": "detect-metal-and-minerals",
-  "name": "Detect Metal and Minerals",
-  "school": "Divination",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "60 ft.",
-  "duration": "Concentration, up to 10 min./level (D)",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Find metals and minerals within 60 ft.",
-  "description": "Find metals and minerals within 60 ft.\n\nSummary only. Full text: Rac, p. 189.",
-  "source": "Rac",
-  "page": 189
- },
- {
   "id": "detect-ship",
   "name": "Detect Ship",
   "school": "Divination",
@@ -7032,27 +6310,6 @@
   "description": "You can see even in magical darkness up to 30 feet.\n\nSummary only. Full text: Book of Vile Darkness, p. 92.",
   "source": "Book of Vile Darkness",
   "page": 92
- },
- {
-  "id": "devlins-venomblade",
-  "name": "Devlin's Venomblade",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min./level or until discharged",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Temporarily create a slashing weapon coated in venom that disappears after the first wounding.",
-  "description": "Temporarily create a slashing weapon coated in venom that disappears after the first wounding.\n\nSummary only. Full text: Book of Eldritch Might, p. 18.",
-  "source": "Book of Eldritch Might",
-  "page": 18
  },
  {
   "id": "diamondsteel",
@@ -7504,26 +6761,6 @@
   "page": 95
  },
  {
-  "id": "foil-tracer",
-  "name": "Foil Tracer",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Subject cannot be tracked while teleporting.",
-  "description": "Subject cannot be tracked while teleporting.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
- },
- {
   "id": "fortify-familiar",
   "name": "Fortify Familiar",
   "school": "Universal",
@@ -7603,26 +6840,6 @@
   "description": "You get an answer to a yes-or-no question.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 96.",
   "source": "Book of Vile Darkness",
   "page": 96
- },
- {
-  "id": "golden-dragonmail",
-  "name": "Golden Dragonmail",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 hour/level (D); see text",
-  "summary": "You create a suit of shining golden +1 mithral full plate around your body.",
-  "description": "You create a suit of shining golden +1 mithral full plate around your body.\n\nSummary only. Full text: CV, p. 55.",
-  "source": "CV",
-  "page": 55
  },
  {
   "id": "grasping-wall",
@@ -7731,24 +6948,6 @@
   "description": "Subjects grow barbs, which damage foes that attack subject in melee.\n\nSummary only. Full text: Spell Compendium, p. 109.",
   "source": "Spell Compendium",
   "page": 109
- },
- {
-  "id": "handfang",
-  "name": "Handfang",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 round/level",
-  "summary": "Mouth in your hand deals 1d8 damage and allows a free grapple attempt on critical hit.",
-  "description": "Mouth in your hand deals 1d8 damage and allows a free grapple attempt on critical hit.\n\nSummary only. Full text: SK, p. 156.",
-  "source": "SK",
-  "page": 156
  },
  {
   "id": "healing-touch",
@@ -7900,28 +7099,6 @@
   "description": "Fey, vermin, plants, and animals take 1d10 damage/level.\n\nSummary only. Full text: Spell Compendium, p. 127.",
   "source": "Spell Compendium",
   "page": 127
- },
- {
-  "id": "laogzeds-breath",
-  "name": "Laogzed's Breath",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates; see text",
-  "spellResistance": "No",
-  "summary": "Nauseating vapors within cone persist for 10 rounds.",
-  "description": "Nauseating vapors within cone persist for 10 rounds.\n\nSummary only. Full text: SK, p. 156.",
-  "source": "SK",
-  "page": 156
  },
  {
   "id": "lash-of-the-kraken",
@@ -8146,26 +7323,6 @@
   "page": 67
  },
  {
-  "id": "node-door",
-  "name": "Node Door",
-  "school": "Conjuration",
-  "subschool": "Teleportation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V"
-  ],
-  "castingTime": "1 standard action",
-  "range": "See text",
-  "duration": "Instantaneous",
-  "savingThrow": "None and Will negates (object)",
-  "spellResistance": "No and Yes(object)",
-  "summary": "Allows teleportation between any known nodes.",
-  "description": "Allows teleportation between any known nodes.\n\nSummary only. Full text: CR, p. 32.",
-  "source": "CR",
-  "page": 32
- },
- {
   "id": "permeable-form",
   "name": "Permeable Form",
   "school": "Transmutation",
@@ -8291,27 +7448,6 @@
   "description": "Teleports nearby allies to your side.\n\nSummary only. Full text: Player's Handbook II, p. 123.",
   "source": "Player's Handbook II",
   "page": 123
- },
- {
-  "id": "rend-shadow-weave",
-  "name": "Rend Shadow Weave",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 minute",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "You damage the Shadow Weave, creating an area of dead magic that only affects the Shadow Weave rather than the Weave.",
-  "description": "You damage the Shadow Weave, creating an area of dead magic that only affects the Shadow Weave rather than the Weave.\n\nSummary only. Full text: CV, p. 57.",
-  "source": "CV",
-  "page": 57
  },
  {
   "id": "repair-serious-damage",
@@ -8465,30 +7601,6 @@
   "description": "Drain 5 or more charges from wand or staff to replace one or more cast spells.\n\nSummary only. Full text: Complete Scoundrel, p. 102.",
   "source": "Complete Scoundrel",
   "page": 102
- },
- {
-  "id": "sleep-greater",
-  "name": "Sleep, Greater",
-  "school": "Enchantment",
-  "subschool": "Compulsion",
-  "descriptors": [
-   "Mind-Affecting"
-  ],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 min./level",
-  "savingThrow": "Will negates",
-  "spellResistance": "Yes",
-  "summary": "As sleep, except that you roll 4d6 to see how many HD are affected: no creature with more than 10 HD is affected.",
-  "description": "As sleep, except that you roll 4d6 to see how many HD are affected: no creature with more than 10 HD is affected.\n\nSummary only. Full text: Book of Eldritch Might, p. 26.",
-  "source": "Book of Eldritch Might",
-  "page": 26
  },
  {
   "id": "snakes-swiftness-mass",
@@ -9054,31 +8166,9 @@
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "summary": "Create trench or berm.",
-  "description": "Create trench or berm.\n\nSummary only. Full text: HB, p. 125.",
-  "source": "HB",
+  "description": "Create trench or berm.\n\nSummary only. Full text: Heroes of Battle, p. 125.",
+  "source": "Heroes of Battle",
   "page": 125
- },
- {
-  "id": "bind-item",
-  "name": "Bind Item",
-  "school": "Evocation",
-  "descriptors": [
-   "Force"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 15.",
-  "source": "Book of Eldritch Might",
-  "page": 15
  },
  {
   "id": "bite-of-the-werewolf",
@@ -9098,27 +8188,6 @@
   "description": "You become enhanced such as that of a wolf.\n\nSummary only. Full text: Spell Compendium, p. 29.",
   "source": "Spell Compendium",
   "page": 29
- },
- {
-  "id": "black-mulching",
-  "name": "Black Mulching",
-  "school": "Necromancy",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 15.",
-  "source": "Book of Eldritch Might",
-  "page": 15
  },
  {
   "id": "blast-of-flame",
@@ -9209,8 +8278,8 @@
   "savingThrow": "Reflex half",
   "spellResistance": "No",
   "summary": "10-ft. cylinder deals 4d6 damage, +2d6 damage per round for 1 round/3 levels.",
-  "description": "10-ft. cylinder deals 4d6 damage, +2d6 damage per round for 1 round/3 levels.\n\nSummary only. Full text: HB, p. 125.",
-  "source": "HB",
+  "description": "10-ft. cylinder deals 4d6 damage, +2d6 damage per round for 1 round/3 levels.\n\nSummary only. Full text: Heroes of Battle, p. 125.",
+  "source": "Heroes of Battle",
   "page": 125
  },
  {
@@ -9274,28 +8343,6 @@
   "page": 94
  },
  {
-  "id": "chains-of-vengeance",
-  "name": "Chains of Vengeance",
-  "school": "Evocation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "Reflex negates",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 16.",
-  "source": "Book of Eldritch Might",
-  "page": 16
- },
- {
   "id": "channeled-pyroburst",
   "name": "Channeled Pyroburst",
   "school": "Evocation",
@@ -9316,29 +8363,6 @@
   "description": "Deal fire damage, amount and radius based on casting time.\n\nSummary only. Full text: Player's Handbook II, p. 106.",
   "source": "Player's Handbook II",
   "page": 106
- },
- {
-  "id": "coldscream",
-  "name": "Coldscream",
-  "school": "Evocation",
-  "descriptors": [
-   "Cold",
-   "Sonic"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "Deal 1d6/level (max 10d6) sonic and cold (half each) damage in a cone.",
-  "description": "Deal 1d6/level (max 10d6) sonic and cold (half each) damage in a cone.\n\nSummary only. Full text: Book of Eldritch Might, p. 17.",
-  "source": "Book of Eldritch Might",
-  "page": 17
  },
  {
   "id": "conjure-lesser-midnight-construct",
@@ -9698,8 +8722,8 @@
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Reduce light in 80-ft.-radius cylinder.",
-  "description": "Reduce light in 80-ft.-radius cylinder.\n\nSummary only. Full text: HB, p. 126.",
-  "source": "HB",
+  "description": "Reduce light in 80-ft.-radius cylinder.\n\nSummary only. Full text: Heroes of Battle, p. 126.",
+  "source": "Heroes of Battle",
   "page": 126
  },
  {
@@ -9745,27 +8769,6 @@
   "description": "Five colored spheres attack with or negate acid, cold, electricity, fire, and sonic damage.\n\nSummary only. Full text: Spell Compendium, p. 80.",
   "source": "Spell Compendium",
   "page": 80
- },
- {
-  "id": "enhance-magical-flow-greater",
-  "name": "Enhance Magical Flow, Greater",
-  "school": "Universal",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "10 min./level",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "No",
-  "summary": "Gain a +2 enhancement bonus to spell DCs.",
-  "description": "Gain a +2 enhancement bonus to spell DCs.\n\nSummary only. Full text: Book of Eldritch Might, p. 19.",
-  "source": "Book of Eldritch Might",
-  "page": 19
  },
  {
   "id": "entangling-staff",
@@ -9833,26 +8836,6 @@
   "page": 85
  },
  {
-  "id": "fang-trap",
-  "name": "Fang Trap",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Permanent until discharged (D)",
-  "savingThrow": "Fortitude negates; see text",
-  "spellResistance": "Yes",
-  "summary": "Inscription bites those who pass it.",
-  "description": "Inscription bites those who pass it.\n\nSummary only. Full text: SK, p. 155.",
-  "source": "SK",
-  "page": 155
- },
- {
   "id": "fire-stride",
   "name": "Fire Stride",
   "school": "Transmutation",
@@ -9870,29 +8853,6 @@
   "description": "Multiple-use dimension door that works only through large fires.\n\nSummary only. Full text: Spell Compendium, p. 93.",
   "source": "Spell Compendium",
   "page": 93
- },
- {
-  "id": "flaming-corrosion",
-  "name": "Flaming Corrosion",
-  "school": "Evocation",
-  "descriptors": [
-   "Acid",
-   "Fire"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 19.",
-  "source": "Book of Eldritch Might",
-  "page": 19
  },
  {
   "id": "flight-of-the-dragon",
@@ -10093,27 +9053,6 @@
   "page": 97
  },
  {
-  "id": "hidden-object",
-  "name": "Hidden Object",
-  "school": "Transmutation",
-  "subschool": "Glamer",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Permanent; see text",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Object is subject to invisibility and can be seen through a piece of glass.  Otherwise, cannot be seen.",
-  "description": "Object is subject to invisibility and can be seen through a piece of glass.  Otherwise, cannot be seen.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
- },
- {
   "id": "inescapable-swarm",
   "name": "Inescapable Swarm",
   "school": "Illusion",
@@ -10240,116 +9179,6 @@
   "summary": "Magnetic forces cause 5d6 or 3d6 damage and trip attacks.",
   "description": "Magnetic forces cause 5d6 or 3d6 damage and trip attacks.\n\nSummary only. Full text: FCotW.",
   "source": "FCotW"
- },
- {
-  "id": "mark-of-air-greater",
-  "name": "Mark of Air, Greater",
-  "school": "Evocation",
-  "descriptors": [
-   "Air"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 21.",
-  "source": "Book of Eldritch Might",
-  "page": 21
- },
- {
-  "id": "mark-of-earth-greater",
-  "name": "Mark of Earth, Greater",
-  "school": "Evocation",
-  "descriptors": [
-   "Earth"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-fire-greater",
-  "name": "Mark of Fire, Greater",
-  "school": "Evocation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-frost-greater",
-  "name": "Mark of Frost, Greater",
-  "school": "Evocation",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 22.",
-  "source": "Book of Eldritch Might",
-  "page": 22
- },
- {
-  "id": "mark-of-water-greater",
-  "name": "Mark of Water, Greater",
-  "school": "Evocation",
-  "descriptors": [
-   "Water"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 23.",
-  "source": "Book of Eldritch Might",
-  "page": 23
  },
  {
   "id": "metal-melt",
@@ -10619,28 +9448,6 @@
   "page": 120
  },
  {
-  "id": "plague-carrier",
-  "name": "Plague Carrier",
-  "school": "Necromancy",
-  "descriptors": [
-   "Evil"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "As contagion, except target can transmit the disease for a short time.",
-  "description": "As contagion, except target can transmit the disease for a short time.\n\nSummary only. Full text: Rac, p. 190.",
-  "source": "Rac",
-  "page": 190
- },
- {
   "id": "psychic-poison",
   "name": "Psychic Poison",
   "school": "Abjuration",
@@ -10813,27 +9620,6 @@
   "page": 174
  },
  {
-  "id": "serpent-arrow",
-  "name": "Serpent Arrow",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level (D) or until expended; see text",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Transforms missiles into Tiny vipers.",
-  "description": "Transforms missiles into Tiny vipers.\n\nSummary only. Full text: CR, p. 34.",
-  "source": "CR",
-  "page": 34
- },
- {
   "id": "shadow-curse",
   "name": "Shadow Curse",
   "school": "Necromancy",
@@ -10936,26 +9722,6 @@
   "page": 198
  },
  {
-  "id": "spelltrap",
-  "name": "Spelltrap",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 min./level",
-  "savingThrow": "None; see text",
-  "spellResistance": "Yes (object)",
-  "summary": "An intangible gem absobs spell and detonates if touched dealing 2d6/spell level absorbed in 20-ft.-spread.",
-  "description": "An intangible gem absobs spell and detonates if touched dealing 2d6/spell level absorbed in 20-ft.-spread.\n\nSummary only. Full text: Book of Eldritch Might, p. 26.",
-  "source": "Book of Eldritch Might",
-  "page": 26
- },
- {
   "id": "sphere-of-terror",
   "name": "Sphere of Terror",
   "school": "Illusion",
@@ -11022,29 +9788,6 @@
   "description": "All actions involving random elements are rolled twice and the worse roll is used.\n\nSummary only. Full text: Complete Arcane, p. 128.",
   "source": "Complete Arcane",
   "page": 128
- },
- {
-  "id": "venom-bolt",
-  "name": "Venom Bolt",
-  "school": "Evocation",
-  "descriptors": [
-   "Acid"
-  ],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "100 ft.",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half, Fortitude partial; see text",
-  "spellResistance": "Yes",
-  "summary": "All in beam take 2d8 acid damage; paralyzed.",
-  "description": "All in beam take 2d8 acid damage; paralyzed.\n\nSummary only. Full text: SK, p. 158.",
-  "source": "SK",
-  "page": 158
  },
  {
   "id": "vortex-of-teeth",
@@ -11137,27 +9880,6 @@
   "page": 240
  },
  {
-  "id": "zone-of-speed",
-  "name": "Zone of Speed",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Nothing moves faster than the speed you choose within the area.",
-  "description": "Nothing moves faster than the speed you choose within the area.\n\nSummary only. Full text: Book of Eldritch Might, p. 28.",
-  "source": "Book of Eldritch Might",
-  "page": 28
- },
- {
   "id": "acid-rain",
   "name": "Acid Rain",
   "school": "Conjuration",
@@ -11177,8 +9899,8 @@
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "20-ft.-radius cylinder deals 7d6 acid damage",
-  "description": "20-ft.-radius cylinder deals 7d6 acid damage\n\nSummary only. Full text: HB, p. 124.",
-  "source": "HB",
+  "description": "20-ft.-radius cylinder deals 7d6 acid damage\n\nSummary only. Full text: Heroes of Battle, p. 124.",
+  "source": "Heroes of Battle",
   "page": 124
  },
  {
@@ -11246,8 +9968,8 @@
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates skeletons or zombies.",
-  "description": "Creates skeletons or zombies.\n\nSummary only. Full text: HB, p. 124.",
-  "source": "HB",
+  "description": "Creates skeletons or zombies.\n\nSummary only. Full text: Heroes of Battle, p. 124.",
+  "source": "Heroes of Battle",
   "page": 124
  },
  {
@@ -11558,29 +10280,6 @@
   "page": 52
  },
  {
-  "id": "cross-of-lightning",
-  "name": "Cross of Lightning",
-  "school": "Evocation",
-  "descriptors": [
-   "Electricity"
-  ],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "As lightning bolt, except four lightning bolts that lauch 90 degrees apart from each other.",
-  "description": "As lightning bolt, except four lightning bolts that lauch 90 degrees apart from each other.\n\nSummary only. Full text: Book of Eldritch Might, p. 17.",
-  "source": "Book of Eldritch Might",
-  "page": 17
- },
- {
   "id": "cyclonic-blast",
   "name": "Cyclonic Blast",
   "school": "Evocation",
@@ -11763,32 +10462,6 @@
   "description": "Eruption deals 4d6 impact damage and 3d6 fire damage to all in area.\n\nSummary only. Full text: Spell Compendium, p. 75.",
   "source": "Spell Compendium",
   "page": 75
- },
- {
-  "id": "elemental-shroud",
-  "name": "Elemental Shroud",
-  "school": "Necromancy",
-  "descriptors": [
-   "Acid",
-   "Cold",
-   "Electricity",
-   "Fire",
-   "Sonic"
-  ],
-  "level": 5,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Grant undead creatures armor and turn bonuses and deal elemental damage upon being struck by a foe or striking a foe.",
-  "description": "Grant undead creatures armor and turn bonuses and deal elemental damage upon being struck by a foe or striking a foe.\n\nSummary only. Full text: Book of Eldritch Might, p. 18.",
-  "source": "Book of Eldritch Might",
-  "page": 18
  },
  {
   "id": "emerald-burst",
@@ -12258,8 +10931,8 @@
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates sturdy barracks.",
-  "description": "Creates sturdy barracks.\n\nSummary only. Full text: HB, p. 127.",
-  "source": "HB",
+  "description": "Creates sturdy barracks.\n\nSummary only. Full text: Heroes of Battle, p. 127.",
+  "source": "Heroes of Battle",
   "page": 127
  },
  {
@@ -12327,28 +11000,6 @@
   "page": 141
  },
  {
-  "id": "minor-servitor",
-  "name": "Minor Servitor",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M",
-   "XP"
-  ],
-  "castingTime": "1 day",
-  "range": "Touch",
-  "duration": "Permanent (D)",
-  "savingThrow": "None (Object)",
-  "spellResistance": "Yes (object)",
-  "summary": "Animated object does your bidding.",
-  "description": "Animated object does your bidding.\n\nSummary only. Full text: Sandstorm, p. 68.",
-  "source": "Sandstorm",
-  "page": 68
- },
- {
   "id": "moonbow",
   "name": "Moonbow",
   "school": "Evocation",
@@ -12393,27 +11044,6 @@
   "description": "Encysted subject killed, cyst begins to roam.\n\nSummary only. Full text: Libris Mortis, p. 67.",
   "source": "Libris Mortis",
   "page": 67
- },
- {
-  "id": "necrotic-skull-bomb",
-  "name": "Necrotic Skull Bomb",
-  "school": "Necromancy",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 swift action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "Exploding skull releases negative energy; targets each gain 1d4 negative levels.",
-  "description": "Exploding skull releases negative energy; targets each gain 1d4 negative levels.\n\nSummary only. Full text: CR, p. 32.",
-  "source": "CR",
-  "page": 32
  },
  {
   "id": "nights-caress",
@@ -12658,27 +11288,6 @@
   "page": 156
  },
  {
-  "id": "shape-metal",
-  "name": "Shape Metal",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "As stone shape, but affects metal.",
-  "description": "As stone shape, but affects metal.\n\nSummary only. Full text: Rac, p. 191.",
-  "source": "Rac",
-  "page": 191
- },
- {
   "id": "shard-storm",
   "name": "Shard Storm",
   "school": "Evocation",
@@ -12720,8 +11329,8 @@
   "savingThrow": "Fortitude partial; see text",
   "spellResistance": "Yes",
   "summary": "40-ft.-radius burst deafens and deals 8d6 sonic damage.",
-  "description": "40-ft.-radius burst deafens and deals 8d6 sonic damage.\n\nSummary only. Full text: HB, p. 127.",
-  "source": "HB",
+  "description": "40-ft.-radius burst deafens and deals 8d6 sonic damage.\n\nSummary only. Full text: Heroes of Battle, p. 127.",
+  "source": "Heroes of Battle",
   "page": 127
  },
  {
@@ -12926,47 +11535,6 @@
   "page": 109
  },
  {
-  "id": "teleport-block",
-  "name": "Teleport Block",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 round",
-  "range": "0 ft.",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Teleportation spells fail when the destination or the origin is within the area.",
-  "description": "Teleportation spells fail when the destination or the origin is within the area.\n\nSummary only. Full text: Book of Eldritch Might, p. 27.",
-  "source": "Book of Eldritch Might",
-  "page": 27
- },
- {
-  "id": "teleport-redirect",
-  "name": "Teleport Redirect",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Any teleportation subtype spell with an origin within the area directs the subjects to a destination of your choice.",
-  "description": "Any teleportation subtype spell with an origin within the area directs the subjects to a destination of your choice.\n\nSummary only. Full text: Book of Eldritch Might, p. 27.",
-  "source": "Book of Eldritch Might",
-  "page": 27
- },
- {
   "id": "thalassemia",
   "name": "Thalassemia",
   "school": "Necromancy",
@@ -13026,27 +11594,6 @@
   "description": "Coats weapon with poison.\n\nSummary only. Full text: Player's Handbook II, p. 126.",
   "source": "Player's Handbook II",
   "page": 126
- },
- {
-  "id": "trait-removal",
-  "name": "Trait Removal",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 hour",
-  "range": "Touch",
-  "duration": "1 hour/level",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "Temporarily remove one extraordinary or supernatural ability from the target creature.",
-  "description": "Temporarily remove one extraordinary or supernatural ability from the target creature.\n\nSummary only. Full text: SK, p. 158.",
-  "source": "SK",
-  "page": 158
  },
  {
   "id": "transformation-of-the-deeps",
@@ -13458,49 +12005,6 @@
   "page": 48
  },
  {
-  "id": "coma",
-  "name": "Coma",
-  "school": "Enchantment",
-  "subschool": "Compulsion",
-  "descriptors": [
-   "Mind-Affecting"
-  ],
-  "level": 6,
-  "components": [
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 hour/level",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "You put a living creature in a coma.",
-  "description": "You put a living creature in a coma.\n\nSummary only. Full text: Book of Eldritch Might, p. 17.",
-  "source": "Book of Eldritch Might",
-  "page": 17
- },
- {
-  "id": "conditional-spell",
-  "name": "Conditional Spell",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Permanent until triggered",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 17.",
-  "source": "Book of Eldritch Might",
-  "page": 17
- },
- {
   "id": "conjure-midnight-construct",
   "name": "Conjure Midnight Construct",
   "school": "Conjuration",
@@ -13613,29 +12117,6 @@
   "description": "Incorporeal undead gain +1 AC, +1d8 hp, +1 on attacks, +2 turn resistance for every 3 levels.\n\nSummary only. Full text: Book of Vile Darkness, p. 93.",
   "source": "Book of Vile Darkness",
   "page": 93
- },
- {
-  "id": "electrical-deluge",
-  "name": "Electrical Deluge",
-  "school": "Evocation",
-  "descriptors": [
-   "Electricity"
-  ],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 18.",
-  "source": "Book of Eldritch Might",
-  "page": 18
  },
  {
   "id": "energy-surge-greater",
@@ -13806,29 +12287,6 @@
   "description": "Target is stunned for 1 round, takes 1d6/level damage, and is nauseated for 1d4+2 rounds.\n\nSummary only. Full text: Spell Compendium, p. 95.",
   "source": "Spell Compendium",
   "page": 95
- },
- {
-  "id": "freezing-claw",
-  "name": "Freezing Claw",
-  "school": "Conjuration",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 round/level",
-  "savingThrow": "Fortitude partial",
-  "spellResistance": "Yes",
-  "summary": "Flying hand deals cold damage and freezes targets.",
-  "description": "Flying hand deals cold damage and freezes targets.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
  },
  {
   "id": "freezing-fog",
@@ -14215,31 +12673,6 @@
   "page": 104
  },
  {
-  "id": "remorseless-charm",
-  "name": "Remorseless Charm",
-  "school": "Enchantment",
-  "subschool": "Compulsion",
-  "descriptors": [
-   "Evil",
-   "Mind-Affecting"
-  ],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "See text",
-  "savingThrow": "Will negates",
-  "spellResistance": "Yes",
-  "summary": "Suppress the target's alignment.",
-  "description": "Suppress the target's alignment.\n\nSummary only. Full text: CR, p. 34.",
-  "source": "CR",
-  "page": 34
- },
- {
   "id": "resistance-superior",
   "name": "Resistance, Superior",
   "school": "Abjuration",
@@ -14325,28 +12758,6 @@
   "description": "Spy on a distant location.\n\nSummary only. Full text: Complete Scoundrel, p. 102.",
   "source": "Complete Scoundrel",
   "page": 102
- },
- {
-  "id": "shadow-canopy",
-  "name": "Shadow Canopy",
-  "school": "Evocation",
-  "descriptors": [
-   "Darkness"
-  ],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 round",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 hour/level",
-  "savingThrow": "Will negates or none (object)",
-  "spellResistance": "Yes or no (object)",
-  "summary": "You create a large umbrella of darkness.",
-  "description": "You create a large umbrella of darkness.\n\nSummary only. Full text: Rac.",
-  "source": "Rac"
  },
  {
   "id": "shadow-shield",
@@ -14501,26 +12912,6 @@
   "page": 71
  },
  {
-  "id": "spore-cloak",
-  "name": "Spore Cloak",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min./level",
-  "summary": "Cloud of dense yellow mold spores provides 20% concealment and other benefits.",
-  "description": "Cloud of dense yellow mold spores provides 20% concealment and other benefits.\n\nSummary only. Full text: Rac, p. 191.",
-  "source": "Rac",
-  "page": 191
- },
- {
   "id": "starmantle",
   "name": "Starmantle",
   "school": "Abjuration",
@@ -14628,45 +13019,6 @@
   "page": 125
  },
  {
-  "id": "teleport-coordinates-transfer",
-  "name": "Teleport Coordinates Transfer",
-  "school": "Divination",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Teach somebody else a familiar location so the location is familiar to them, or improve the quaility of a location to familiar learned by a divination spell.",
-  "description": "Teach somebody else a familiar location so the location is familiar to them, or improve the quaility of a location to familiar learned by a divination spell.\n\nSummary only. Full text: Book of Eldritch Might, p. 27.",
-  "source": "Book of Eldritch Might",
-  "page": 27
- },
- {
-  "id": "teleport-tracer",
-  "name": "Teleport Tracer",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Learn the destination of the most recent teleportation spell within the area.",
-  "description": "Learn the destination of the most recent teleportation spell within the area.\n\nSummary only. Full text: Book of Eldritch Might, p. 27.",
-  "source": "Book of Eldritch Might",
-  "page": 27
- },
- {
   "id": "transfix",
   "name": "Transfix",
   "school": "Enchantment",
@@ -14712,27 +13064,6 @@
   "description": "Evil creatures attack other evil creatures.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 111.",
   "source": "Book of Exalted Deeds",
   "page": 111
- },
- {
-  "id": "ability-rip",
-  "name": "Ability Rip",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 7,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 hour",
-  "range": "Touch",
-  "duration": "1 hour/level",
-  "savingThrow": "Fortitude negates; see text",
-  "spellResistance": "Yes",
-  "summary": "Rips a supernatural ability from one creature and transfer it to another.",
-  "description": "Rips a supernatural ability from one creature and transfer it to another.\n\nSummary only. Full text: SK, p. 155.",
-  "source": "SK",
-  "page": 155
  },
  {
   "id": "amber-sarcophagus",
@@ -15512,28 +13843,6 @@
   "page": 105
  },
  {
-  "id": "shadow-trap",
-  "name": "Shadow Trap",
-  "school": "Conjuration",
-  "subschool": "Summoning",
-  "descriptors": [],
-  "level": 7,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "10 minutes",
-  "range": "Touch",
-  "duration": "1 hour/level (D)",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "Bind a greater shadow to an object as its guardian.",
-  "description": "Bind a greater shadow to an object as its guardian.\n\nSummary only. Full text: CR, p. 34.",
-  "source": "CR",
-  "page": 34
- },
- {
   "id": "spell-matrix",
   "name": "Spell Matrix",
   "school": "Transmutation",
@@ -15732,28 +14041,6 @@
   "description": "Creates barrier that you can see through and that paralyzes and consumes those that touch it.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
   "page": 108
- },
- {
-  "id": "whirl-of-fangs",
-  "name": "Whirl of Fangs",
-  "school": "Evocation",
-  "descriptors": [
-   "Force"
-  ],
-  "level": 7,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "Passing through wall deals 12d4 damage.",
-  "description": "Passing through wall deals 12d4 damage.\n\nSummary only. Full text: SK, p. 158.",
-  "source": "SK",
-  "page": 158
  },
  {
   "id": "whirlwind-of-teeth",
@@ -16085,26 +14372,6 @@
   "page": 111
  },
  {
-  "id": "imbue-guardian",
-  "name": "Imbue Guardian",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 8,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 hour",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous; see text",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "A guardian gains bonuses to a 100-foot radius area.",
-  "description": "A guardian gains bonuses to a 100-foot radius area.\n\nSummary only. Full text: Book of Eldritch Might, p. 20.",
-  "source": "Book of Eldritch Might",
-  "page": 20
- },
- {
   "id": "invisibility-superior",
   "name": "Invisibility, Superior",
   "school": "Illusion",
@@ -16235,49 +14502,6 @@
   "page": 137
  },
  {
-  "id": "mantle-of-egregious-might",
-  "name": "Mantle of Egregious Might",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 8,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "10 min./level",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "No",
-  "summary": "Grant +4 luck bonus to AC, Attacks, saves, and ability scores.",
-  "description": "Grant +4 luck bonus to AC, Attacks, saves, and ability scores.\n\nSummary only. Full text: Book of Eldritch Might, p. 21.",
-  "source": "Book of Eldritch Might",
-  "page": 21
- },
- {
-  "id": "mark-of-death",
-  "name": "Mark of Death",
-  "school": "Evocation",
-  "descriptors": [
-   "Death"
-  ],
-  "level": 8,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Touch",
-  "duration": "1 hour/level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes",
-  "summary": "See Text",
-  "description": "See Text\n\nSummary only. Full text: Book of Eldritch Might, p. 21.",
-  "source": "Book of Eldritch Might",
-  "page": 21
- },
- {
   "id": "minimus-containment",
   "name": "Minimus Containment",
   "school": "Conjuration",
@@ -16365,27 +14589,6 @@
   "page": 159
  },
  {
-  "id": "primal-release",
-  "name": "Primal Release",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 8,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level",
-  "savingThrow": "Will negates",
-  "spellResistance": "Yes",
-  "summary": "Subject gains physical bonuses (+10, +2, +10, -6, -2, -6) and Base Attack bonus becomes +1/HD of subject and gains feats.",
-  "description": "Subject gains physical bonuses (+10, +2, +10, -6, -2, -6) and Base Attack bonus becomes +1/HD of subject and gains feats.\n\nSummary only. Full text: Book of Eldritch Might, p. 26.",
-  "source": "Book of Eldritch Might",
-  "page": 26
- },
- {
   "id": "shifting-paths",
   "name": "Shifting Paths",
   "school": "Illusion",
@@ -16426,27 +14629,6 @@
   "description": "Disintegrates subject's most valuable object.\n\nSummary only. Full text: Book of Vile Darkness, p. 104.",
   "source": "Book of Vile Darkness",
   "page": 104
- },
- {
-  "id": "stalking-spell",
-  "name": "Stalking Spell",
-  "school": "Illusion",
-  "subschool": "Glamer",
-  "descriptors": [],
-  "level": 8,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal or touch",
-  "duration": "1 hour/level (D)",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "As greater invisibility, but subject is silent and scentless.",
-  "description": "As greater invisibility, but subject is silent and scentless.\n\nSummary only. Full text: Sandstorm, p. 71.",
-  "source": "Sandstorm",
-  "page": 71
  },
  {
   "id": "steal-life",
@@ -16553,26 +14735,6 @@
   "description": "Summons demons to fight for you.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
   "page": 7
- },
- {
-  "id": "arcana-form",
-  "name": "Arcana Form",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 9,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "10 min./level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Become incorporeal and cast spells with your hit points and constitution.",
-  "description": "Become incorporeal and cast spells with your hit points and constitution.\n\nSummary only. Full text: Book of Eldritch Might, p. 15.",
-  "source": "Book of Eldritch Might",
-  "page": 15
  },
  {
   "id": "awaken-construct",
@@ -16904,28 +15066,6 @@
   "page": 82
  },
  {
-  "id": "incarnate-construct",
-  "name": "Incarnate Construct",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 9,
-  "components": [
-   "V",
-   "S",
-   "M",
-   "XP"
-  ],
-  "castingTime": "8 hours",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Turns construct into living creature.",
-  "description": "Turns construct into living creature.\n\nSummary only. Full text: Sandstorm, p. 67.",
-  "source": "Sandstorm",
-  "page": 67
- },
- {
   "id": "instant-refuge",
   "name": "Instant Refuge",
   "school": "Evocation",
@@ -16984,29 +15124,6 @@
   "description": "Solid fog reduces caster level by -4 and spell DCs by -2.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
   "page": 137
- },
- {
-  "id": "magma-burst",
-  "name": "Magma Burst",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 9,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "Creates an area of lava, dealing 20d6 fire damage/round.",
-  "description": "Creates an area of lava, dealing 20d6 fire damage/round.\n\nSummary only. Full text: Book of Eldritch Might, p. 21.",
-  "source": "Book of Eldritch Might",
-  "page": 21
  },
  {
   "id": "maw-of-chaos",
@@ -17077,28 +15194,6 @@
   "description": "Permanently eliminates encysted subject.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
   "page": 69
- },
- {
-  "id": "node-genesis",
-  "name": "Node Genesis",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 9,
-  "components": [
-   "V",
-   "S",
-   "XP"
-  ],
-  "castingTime": "1 tenday (8 hours/day)",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Creates a Class 1 earth node.",
-  "description": "Creates a Class 1 earth node.\n\nSummary only. Full text: CR, p. 32.",
-  "source": "CR",
-  "page": 32
  },
  {
   "id": "plague-of-undead",

@@ -17,18 +17,24 @@ const BOOKS: Record<string, string> = {
   SPC: 'Spell Compendium', BV: 'Book of Vile Darkness', BE: 'Book of Exalted Deeds', PH2: "Player's Handbook II",
   CAr: 'Complete Arcane', CAd: 'Complete Adventurer', CD: 'Complete Divine', CS: 'Complete Scoundrel',
   STO: 'Stormwrack', LM: 'Libris Mortis', LoM: 'Lords of Madness', MH: 'Miniatures Handbook', SS: 'Sandstorm',
-  MoI: 'Magic of Incarnum', RW: 'Races of the Wild', BoEM: 'Book of Eldritch Might', SRD: 'SRD',
+  MoI: 'Magic of Incarnum', RW: 'Races of the Wild', BoEM: 'Book of Eldritch Might', HB: 'Heroes of Battle', SRD: 'SRD',
 }
+
+// Not allowed at the table: Forgotten Realms and Eberron books, and non-WotC / non-3.5 books.
+// (Identified from their spells: CR Champions of Ruin, SK Serpent Kingdoms, CV Champions of Valor,
+// Rac Races of Faerûn, SMW Silver Marches, SS Shining South; BoEM is third-party 3.0.)
+const EXCLUDED_SOURCES = new Set(['CR', 'SK', 'CV', 'Rac', 'SMW', 'SS', 'BoEM'])
 const book = (abbr: string) => BOOKS[abbr] ?? (abbr.startsWith('Dragon ') ? `Dragon Magazine #${abbr.slice(7)}` : abbr)
 const STANDARD = new Set(['V', 'S', 'M', 'F', 'DF', 'XP'])
 
 const result: Spell[] = []
-const skipped = { notWizard: 0, alreadyBuiltIn: 0 }
+const skipped = { notWizard: 0, alreadyBuiltIn: 0, excludedBook: 0 }
 for (const x of raw) {
   const level = x.levels?.['Sor/Wiz']
   if (level === undefined) { skipped.notWizard++; continue }
   const id = slugify(x.name)
   if (srdIds.has(id)) { skipped.alreadyBuiltIn++; continue }
+  if (EXCLUDED_SOURCES.has(x.source?.abbr)) { skipped.excludedBook++; continue }
   if (!SCHOOLS.includes(x.school)) throw new Error(`${x.name}: unknown school ${x.school}`)
 
   const comps: string[] = []
@@ -75,7 +81,7 @@ const errors = validateSpellFile(result)
 if (errors.length) { console.error(errors.slice(0, 30).join('\n')); process.exit(1) }
 writeFileSync(out, JSON.stringify(result, null, 1) + '\n')
 const bySource = result.reduce<Record<string, number>>((m, s) => ((m[s.source] = (m[s.source] ?? 0) + 1), m), {})
-console.log(`Wrote ${result.length} wizard spells. Skipped: ${skipped.notWizard} not on the Sor/Wiz list, ${skipped.alreadyBuiltIn} already built in with full text.`)
+console.log(`Wrote ${result.length} wizard spells. Skipped: ${skipped.notWizard} not on the Sor/Wiz list, ${skipped.alreadyBuiltIn} already built in with full text, ${skipped.excludedBook} from excluded books.`)
 console.log('By level:', JSON.stringify(result.reduce<Record<number, number>>((m, s) => ((m[s.level] = (m[s.level] ?? 0) + 1), m), {})))
 console.log('By source:', JSON.stringify(Object.entries(bySource).sort((a, b) => b[1] - a[1])))
 console.log('With special components:', result.filter((s) => s.description.includes('_Special component')).length)
