@@ -19,16 +19,23 @@ const BOOKS: Record<string, string> = {
   STO: 'Stormwrack', LM: 'Libris Mortis', LoM: 'Lords of Madness', MH: 'Miniatures Handbook', SS: 'Savage Species',
   MoI: 'Magic of Incarnum', RW: 'Races of the Wild', BoEM: 'Book of Eldritch Might', HB: 'Heroes of Battle',
   CR: 'Champions of Ruin', CV: 'Champions of Valor', SK: 'Serpent Kingdoms', Rac: 'Races of Faerûn',
-  SMW: 'Silver Marches Web Enhancement', FCotW: 'Far Corners of the World', SKR: 'SeanKReynolds.com', SRD: 'SRD',
+  SMW: 'Silver Marches Web Enhancement', FCotW: 'Far Corners of the World', SKR: 'SeanKReynolds.com',
+  CC: 'Complete Champion', CW: 'Complete Warrior', SRD: 'SRD',
 }
 
-// Not allowed at the table: Forgotten Realms and Eberron, and anything that isn't a WotC D&D book
-// (third-party books, websites, unidentified sources).
-const EXCLUDED_SOURCES = new Set([
-  'CR', 'SK', 'CV', 'Rac', 'SMW', // Forgotten Realms
-  'BoEM', // third-party (Malhavoc, 3.0)
-  'SKR', // website
-  'FCotW', // not a WotC book
+// Allowed at the table: only the books in the player's library (no Forgotten Realms or
+// Eberron). Everything else in the list (other books, Dragon Magazine issues, websites,
+// third-party books) is left out.
+const ALLOWED_SOURCES = new Set([
+  'SRD', // core rules (PHB, DMG, MM, Expanded Psionics Handbook, Epic Level Handbook)
+  'SPC', // Spell Compendium
+  'PH2', // Player's Handbook II
+  'CAr', 'CAd', 'CD', 'CS', 'CC', 'CW', // Complete Arcane / Adventurer / Divine / Scoundrel / Champion / Warrior
+  'LM', // Libris Mortis
+  'BV', 'BE', // Book of Vile Darkness, Book of Exalted Deeds
+  'SS', // Savage Species
+  'RW', // Races of the Wild
+  'MoI', // Magic of Incarnum
 ])
 
 const book = (abbr: string) => BOOKS[abbr] ?? (abbr.startsWith('Dragon ') ? `Dragon Magazine #${abbr.slice(7)}` : abbr)
@@ -41,7 +48,7 @@ for (const x of raw) {
   if (level === undefined) { skipped.notWizard++; continue }
   const id = slugify(x.name)
   if (srdIds.has(id)) { skipped.alreadyBuiltIn++; continue }
-  if (EXCLUDED_SOURCES.has(x.source?.abbr)) { skipped.excludedBook++; continue }
+  if (!ALLOWED_SOURCES.has(x.source?.abbr)) { skipped.excludedBook++; continue }
   if (!SCHOOLS.includes(x.school)) throw new Error(`${x.name}: unknown school ${x.school}`)
 
   const comps: string[] = []
@@ -88,7 +95,7 @@ const errors = validateSpellFile(result)
 if (errors.length) { console.error(errors.slice(0, 30).join('\n')); process.exit(1) }
 writeFileSync(out, JSON.stringify(result, null, 1) + '\n')
 const bySource = result.reduce<Record<string, number>>((m, s) => ((m[s.source] = (m[s.source] ?? 0) + 1), m), {})
-console.log(`Wrote ${result.length} wizard spells. Skipped: ${skipped.notWizard} not on the Sor/Wiz list, ${skipped.alreadyBuiltIn} already built in with full text, ${skipped.excludedBook} from excluded books.`)
+console.log(`Wrote ${result.length} wizard spells. Skipped: ${skipped.notWizard} not on the Sor/Wiz list, ${skipped.alreadyBuiltIn} already built in with full text, ${skipped.excludedBook} from books not in the allowed list.`)
 console.log('By level:', JSON.stringify(result.reduce<Record<number, number>>((m, s) => ((m[s.level] = (m[s.level] ?? 0) + 1), m), {})))
 console.log('By source:', JSON.stringify(Object.entries(bySource).sort((a, b) => b[1] - a[1])))
 console.log('With special components:', result.filter((s) => s.description.includes('_Special component')).length)
