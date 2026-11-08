@@ -12,7 +12,8 @@
     "validate:spells": "node scripts/validate-spells.ts",
     "build:srd": "node scripts/build-srd.ts",
     "coverage": "vitest run --coverage.enabled --coverage.include=src/rules/** --coverage.exclude=src/rules/fixtures.ts --coverage.exclude=src/rules/index.ts --coverage.exclude=**/*.test.ts",
-    "e2e": "vite build && playwright test"
+    "e2e": "vite build && playwright test --project=phone",
+    "e2e:ios": "vite build && playwright test --project=iphone"
   },
   "dependencies": {
     "@fontsource/cinzel": "^5.3.0",

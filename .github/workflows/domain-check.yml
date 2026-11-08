@@ -1,0 +1,16 @@
+name: Domain check (temporary)
+on:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for h in magesticfacesweater.com www.magesticfacesweater.com; do
+            for t in A AAAA CNAME; do echo "== $h $t: $(dig +short $h $t | tr '\n' ' ')"; done
+          done
+          echo "== NS: $(dig +short NS magesticfacesweater.com | tr '\n' ' ')"
+          for u in http://magesticfacesweater.com https://magesticfacesweater.com https://www.magesticfacesweater.com https://instantsoup.github.io/wizard-spellbook/; do
+            echo "== $u"; curl -sS -m 20 -o /dev/null -D - "$u" | grep -iE '^(HTTP|location|server)' || echo "(no response)"
+          done

@@ -1,0 +1,28 @@
+name: Safari (WebKit) tests
+
+# iPhone-sized end-to-end tests in WebKit, the engine every iOS browser uses.
+# Separate from the deploy so a Safari-only problem is reported without blocking it.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  webkit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps webkit
+      - run: npx playwright test --project=iphone
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: webkit-report
+          path: test-results
+          retention-days: 7
