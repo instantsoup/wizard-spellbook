@@ -12,18 +12,25 @@ const [input, srdPath, out] = process.argv.slice(2)
 const raw = JSON.parse(readFileSync(input, 'utf8')) as any[] // eslint-disable-line
 const srdIds = new Set((JSON.parse(readFileSync(srdPath, 'utf8')) as Spell[]).map((s) => s.id))
 
-// Only abbreviations I'm sure of; anything else keeps the abbreviation as written.
+// Abbreviations used by the list, checked against imarvintpa.com's source index.
 const BOOKS: Record<string, string> = {
   SPC: 'Spell Compendium', BV: 'Book of Vile Darkness', BE: 'Book of Exalted Deeds', PH2: "Player's Handbook II",
   CAr: 'Complete Arcane', CAd: 'Complete Adventurer', CD: 'Complete Divine', CS: 'Complete Scoundrel',
-  STO: 'Stormwrack', LM: 'Libris Mortis', LoM: 'Lords of Madness', MH: 'Miniatures Handbook', SS: 'Sandstorm',
-  MoI: 'Magic of Incarnum', RW: 'Races of the Wild', BoEM: 'Book of Eldritch Might', HB: 'Heroes of Battle', SRD: 'SRD',
+  STO: 'Stormwrack', LM: 'Libris Mortis', LoM: 'Lords of Madness', MH: 'Miniatures Handbook', SS: 'Savage Species',
+  MoI: 'Magic of Incarnum', RW: 'Races of the Wild', BoEM: 'Book of Eldritch Might', HB: 'Heroes of Battle',
+  CR: 'Champions of Ruin', CV: 'Champions of Valor', SK: 'Serpent Kingdoms', Rac: 'Races of Faerûn',
+  SMW: 'Silver Marches Web Enhancement', FCotW: 'Far Corners of the World', SKR: 'SeanKReynolds.com', SRD: 'SRD',
 }
 
-// Not allowed at the table: Forgotten Realms and Eberron books, and non-WotC / non-3.5 books.
-// (Identified from their spells: CR Champions of Ruin, SK Serpent Kingdoms, CV Champions of Valor,
-// Rac Races of Faerûn, SMW Silver Marches, SS Shining South; BoEM is third-party 3.0.)
-const EXCLUDED_SOURCES = new Set(['CR', 'SK', 'CV', 'Rac', 'SMW', 'SS', 'BoEM'])
+// Not allowed at the table: Forgotten Realms and Eberron, and anything that isn't a WotC D&D book
+// (third-party books, websites, unidentified sources).
+const EXCLUDED_SOURCES = new Set([
+  'CR', 'SK', 'CV', 'Rac', 'SMW', // Forgotten Realms
+  'BoEM', // third-party (Malhavoc, 3.0)
+  'SKR', // website
+  'FCotW', // not a WotC book
+])
+
 const book = (abbr: string) => BOOKS[abbr] ?? (abbr.startsWith('Dragon ') ? `Dragon Magazine #${abbr.slice(7)}` : abbr)
 const STANDARD = new Set(['V', 'S', 'M', 'F', 'DF', 'XP'])
 

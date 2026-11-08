@@ -178,11 +178,12 @@ Product Identity.
 
 The `summary` field (optional) was added during Phase 0.
 
-**Extra index (added after v1):** `index-extra.json` holds 725 more Sor/Wiz spells from
+**Extra index (added after v1):** `index-extra.json` holds 698 more Sor/Wiz spells from
 other books (Spell Compendium, Complete Arcane and others). Each has its stats, a one-line
 summary and the book and page, with no full text. It was made with
 `scripts/convert-spell-list.ts`, which leaves out books the table doesn't allow: Forgotten
-Realms and Eberron books, and non-WotC or non-3.5 books. Automatic starting cantrips come
+Realms and Eberron books, and anything that is not a WotC D&D book (third-party books,
+websites, unidentified sources). Automatic starting cantrips come
 from the SRD only;
 cantrips from other books are learned like any other spell.
 

@@ -1,69 +1,5 @@
 [
  {
-  "id": "acid-dart",
-  "name": "Acid Dart",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Acid"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Energy bolt deals 1d3 acid damage.",
-  "description": "Energy bolt deals 1d3 acid damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "acid-glove",
-  "name": "Acid Glove",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Acid"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Touch attack deals 1d6 acid damage.",
-  "description": "Touch attack deals 1d6 acid damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "aiming-line",
-  "name": "Aiming Line",
-  "school": "Illusion",
-  "subschool": "Figment",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min.",
-  "savingThrow": "Will disbelief (if interacted with)",
-  "spellResistance": "No",
-  "summary": "Create an aiming line for +2 bonus to hit with touch attacks, target gains the same benefit vs. you.",
-  "description": "Create an aiming line for +2 bonus to hit with touch attacks, target gains the same benefit vs. you.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
   "id": "amanuensis",
   "name": "Amanuensis",
   "school": "Transmutation",
@@ -82,25 +18,6 @@
   "description": "Copy nonmagical text.\n\nSummary only. Full text: Spell Compendium, p. 9.",
   "source": "Spell Compendium",
   "page": 9
- },
- {
-  "id": "attract-fine-vermin",
-  "name": "Attract Fine Vermin",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min.",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Attract a normal vermin to you.",
-  "description": "Attract a normal vermin to you.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "caltrops",
@@ -167,90 +84,6 @@
   "page": 78
  },
  {
-  "id": "electric-slap",
-  "name": "Electric Slap",
-  "school": "Transmutation",
-  "descriptors": [
-   "Electricity"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Touch attack deals 1d6 electricity damage.",
-  "description": "Touch attack deals 1d6 electricity damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "electric-spark",
-  "name": "Electric Spark",
-  "school": "Transmutation",
-  "descriptors": [
-   "Electricity"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Ray deals 1d3 electricity damage.",
-  "description": "Ray deals 1d3 electricity damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "fire-flash",
-  "name": "Fire Flash",
-  "school": "Evocation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Energy missile deals 1d3 fire damage.",
-  "description": "Energy missile deals 1d3 fire damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "fire-hand",
-  "name": "Fire Hand",
-  "school": "Evocation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Touch attack deals 1d6 fire damage.",
-  "description": "Touch attack deals 1d6 fire damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
   "id": "fleeting-fame",
   "name": "Fleeting Fame",
   "school": "Illusion",
@@ -268,27 +101,6 @@
   "description": "Gives you a +2 bonus on Bluff, Diplomacy, and Intimidate checks.\n\nSummary only. Full text: Dragon Magazine #326, p. 73.",
   "source": "Dragon Magazine #326",
   "page": 73
- },
- {
-  "id": "frost-touch",
-  "name": "Frost Touch",
-  "school": "Evocation",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Touch attack deals 1d6 cold damage.",
-  "description": "Touch attack deals 1d6 cold damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "groundsmoke",
@@ -309,27 +121,6 @@
   "description": "Prevents smoke from rising from a small fire.\n\nSummary only. Full text: Dragon Magazine #326, p. 73.",
   "source": "Dragon Magazine #326",
   "page": 73
- },
- {
-  "id": "invisibility-minor",
-  "name": "Invisibility, Minor",
-  "school": "Illusion",
-  "subschool": "Glamer",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal or touch",
-  "duration": "See text",
-  "savingThrow": "Will negates (harmless) or Will negates (harmless, object)",
-  "spellResistance": "Yes (harmless) or Yes (harmless, object)",
-  "summary": "As invisibility, except as noted above and that the spell ends at the end of your turn on the round it was cast.",
-  "description": "As invisibility, except as noted above and that the spell ends at the end of your turn on the round it was cast.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "launch-bolt",
@@ -370,25 +161,6 @@
   "description": "Hurls fine item up to long range.\n\nSummary only. Full text: Spell Compendium, p. 130.",
   "source": "Spell Compendium",
   "page": 130
- },
- {
-  "id": "minor-energy-ward",
-  "name": "Minor Energy Ward",
-  "school": "Abjuration",
-  "descriptors": [],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "1 min.",
-  "savingThrow": "None (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Grant 5 points of energy resistance.",
-  "description": "Grant 5 points of energy resistance.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "necrosurgery",
@@ -553,48 +325,6 @@
   "description": "Subject takes -1 penalty on attacks, saves and checks for 1 round.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
   "page": 103
- },
- {
-  "id": "sonic-ray",
-  "name": "Sonic Ray",
-  "school": "Evocation",
-  "descriptors": [
-   "Sonic"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Ray deals 1d3 sonic damage.",
-  "description": "Ray deals 1d3 sonic damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
-  "id": "sonic-slap",
-  "name": "Sonic Slap",
-  "school": "Evocation",
-  "descriptors": [
-   "Sonic"
-  ],
-  "level": 0,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Touch attack deals 1d6 sonic damage.",
-  "description": "Touch attack deals 1d6 sonic damage.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "unnerving-gaze",
@@ -1361,26 +1091,6 @@
   "page": 99
  },
  {
-  "id": "false-vigor",
-  "name": "False Vigor",
-  "school": "Illusion",
-  "subschool": "Shadow",
-  "descriptors": [],
-  "level": 1,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Touch",
-  "duration": "1 min./level or until discharged",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Subject gains 1 temporary hitpoint and +1 morale bonus to attack until he attacks or is damaged.",
-  "description": "Subject gains 1 temporary hitpoint and +1 morale bonus to attack until he attacks or is damaged.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
- },
- {
   "id": "familiar-pocket",
   "name": "Familiar Pocket",
   "school": "Universal",
@@ -1400,28 +1110,6 @@
   "description": "Creates an extradimensional hiding place for your familiar.\n\nSummary only. Full text: Spell Compendium, p. 88.",
   "source": "Spell Compendium",
   "page": 88
- },
- {
-  "id": "fengut",
-  "name": "Fengut",
-  "school": "Illusion",
-  "subschool": "Phantasm",
-  "descriptors": [
-   "Mind-Affecting"
-  ],
-  "level": 1,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1d4+1 rounds",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "Subject is nauseated.",
-  "description": "Subject is nauseated.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "fist-of-stone",
@@ -2489,28 +2177,6 @@
   "page": 107
  },
  {
-  "id": "wall-of-smoke",
-  "name": "Wall of Smoke",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 1,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 round/level",
-  "savingThrow": "Fortitude partial; see text",
-  "spellResistance": "No",
-  "summary": "Simple wall of smoke to block vision.  Breathing causes nausea for 1 round (Fort save).",
-  "description": "Simple wall of smoke to block vision.  Breathing causes nausea for 1 round (Fort save).\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "wave-blessing",
   "name": "Wave Blessing",
   "school": "Transmutation",
@@ -2843,31 +2509,6 @@
   "description": "Hand deals 1d6 nonlethal damage/2 levels (max 5d6) and knocks subject back.\n\nSummary only. Full text: Player's Handbook II, p. 103.",
   "source": "Player's Handbook II",
   "page": 103
- },
- {
-  "id": "black-lightning",
-  "name": "Black Lightning",
-  "school": "Evocation",
-  "descriptors": [
-   "Electricity",
-   "Negative",
-   "Death",
-   "Evil"
-  ],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half",
-  "spellResistance": "Yes",
-  "summary": "Ray that deals 1d6/2 levels (Max 10d6) damage, half of which is Electrical energy and the other half is Negative energy.",
-  "description": "Ray that deals 1d6/2 levels (Max 10d6) damage, half of which is Electrical energy and the other half is Negative energy.\n\nSummary only. Full text: SKR.",
-  "source": "SKR"
  },
  {
   "id": "bladeweave",
@@ -4742,25 +4383,6 @@
   "page": 103
  },
  {
-  "id": "saltray",
-  "name": "Saltray",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude partial",
-  "spellResistance": "Yes",
-  "summary": "Ranged touch attack deals 1d6/2 levels (max 5d6) slashing damage.  If cast near an ocean, a second ray is cast.",
-  "description": "Ranged touch attack deals 1d6/2 levels (max 5d6) slashing damage.  If cast near an ocean, a second ray is cast.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "sap-strength",
   "name": "Sap Strength",
   "school": "Enchantment",
@@ -5107,26 +4729,6 @@
   "page": 197
  },
  {
-  "id": "splinterbolt",
-  "name": "Splinterbolt",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "Yes",
-  "summary": "Ranged Attack that deals 4d6 piercing damage per bolt (3-6:1, 7-10: 2, 11+: 3). Threatens 18-20, x3.  +4 damage, cold iron in forest.",
-  "description": "Ranged Attack that deals 4d6 piercing damage per bolt (3-6:1, 7-10: 2, 11+: 3). Threatens 18-20, x3.  +4 damage, cold iron in forest.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "spymasters-coin",
   "name": "Spymaster's Coin",
   "school": "Divination",
@@ -5274,26 +4876,6 @@
   "page": 126
  },
  {
-  "id": "surefooted-stride",
-  "name": "Surefooted Stride",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Treat mountainous terrain as plains.",
-  "description": "Treat mountainous terrain as plains.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "swim",
   "name": "Swim",
   "school": "Transmutation",
@@ -5397,25 +4979,6 @@
   "description": "Flying creature loses flying ability.\n\nSummary only. Full text: Miniatures Handbook, p. 40.",
   "source": "Miniatures Handbook",
   "page": 40
- },
- {
-  "id": "undertow",
-  "name": "Undertow",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "Cause water to splash out of containers or Stun creatures in large bodies of water for 1 round.",
-  "description": "Cause water to splash out of containers or Stun creatures in large bodies of water for 1 round.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "unheavened",
@@ -5822,6 +5385,24 @@
   "page": 209
  },
  {
+  "id": "avoid-planar-effects",
+  "name": "Avoid Planar Effects",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "20 ft.",
+  "duration": "1 min./level",
+  "savingThrow": "None",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Provides temporary protection against overtly damaging planar traits.",
+  "description": "Provides temporary protection against overtly damaging planar traits.\n\nSummary only. Full text: Savage Species.",
+  "source": "Savage Species"
+ },
+ {
   "id": "bands-of-steel",
   "name": "Bands of Steel",
   "school": "Conjuration",
@@ -5922,6 +5503,30 @@
   "description": "Creates blade of gnashing teeth.\n\nSummary only. Full text: Spell Compendium, p. 30.",
   "source": "Spell Compendium",
   "page": 30
+ },
+ {
+  "id": "bridge-of-sound",
+  "name": "Bridge of Sound",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "Concentration + 1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.",
+  "description": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.\n\nSummary only. Full text: Savage Species, p. 63.",
+  "source": "Savage Species",
+  "page": 63
  },
  {
   "id": "capricious-zephyr",
@@ -6779,26 +6384,6 @@
   "description": "Your familiar gains +2 natural armor and a 25% chance to avoid critical hits for 1 hour/level.\n\nSummary only. Full text: Spell Compendium, p. 98.",
   "source": "Spell Compendium",
   "page": 98
- },
- {
-  "id": "giants-wrath",
-  "name": "Giant's Wrath",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 3,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 round/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Thrown pebble turns into boulder dealing 2d6 + 1/2 caster levels bludgeoning damage.  Base damage increases to 2d8 at 9th level, 2d8 + 2d6 fire at 13th, and critical becomes x3 at 17th.",
-  "description": "Thrown pebble turns into boulder dealing 2d6 + 1/2 caster levels bludgeoning damage.  Base damage increases to 2d8 at 9th level, 2d8 + 2d6 fire at 13th, and critical becomes x3 at 17th.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "girallons-blessing",
@@ -9160,27 +8745,6 @@
   "page": 98
  },
  {
-  "id": "magnetic-pulse",
-  "name": "Magnetic Pulse",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [],
-  "level": 4,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "See text",
-  "spellResistance": "No",
-  "summary": "Magnetic forces cause 5d6 or 3d6 damage and trip attacks.",
-  "description": "Magnetic forces cause 5d6 or 3d6 damage and trip attacks.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "metal-melt",
   "name": "Metal Melt",
   "school": "Transmutation",
@@ -10725,27 +10289,6 @@
   "page": 114
  },
  {
-  "id": "ghost-storm",
-  "name": "Ghost Storm",
-  "school": "Necromancy",
-  "descriptors": [
-   "Death"
-  ],
-  "level": 5,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 round",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "Fortitude partial",
-  "spellResistance": "Yes",
-  "summary": "Save and become Frightened or fail and gain a temporary negative level, per round.  Levels return at the rate of 1 per minute.  More nastiness.",
-  "description": "Save and become Frightened or fail and gain a temporary negative level, per round.  Levels return at the rate of 1 per minute.  More nastiness.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "graymantle",
   "name": "Graymantle",
   "school": "Necromancy",
@@ -11000,6 +10543,28 @@
   "page": 141
  },
  {
+  "id": "minor-servitor",
+  "name": "Minor Servitor",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "M",
+   "XP"
+  ],
+  "castingTime": "1 day",
+  "range": "Touch",
+  "duration": "Permanent (D)",
+  "savingThrow": "None (Object)",
+  "spellResistance": "Yes (object)",
+  "summary": "Animated object does your bidding.",
+  "description": "Animated object does your bidding.\n\nSummary only. Full text: Savage Species, p. 68.",
+  "source": "Savage Species",
+  "page": 68
+ },
+ {
   "id": "moonbow",
   "name": "Moonbow",
   "school": "Evocation",
@@ -11144,26 +10709,6 @@
   "summary": "Invisible field leeches psionic power points away.",
   "description": "Invisible field leeches psionic power points away.\n\nSummary only. Full text: SRD.",
   "source": "SRD"
- },
- {
-  "id": "raise-hummock",
-  "name": "Raise Hummock",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "10 minutes",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Raise swamp land into dry stable land.",
-  "description": "Raise swamp land into dry stable land.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "reciprocal-gyre",
@@ -11452,26 +10997,6 @@
   "description": "Touched living humanoid drops to -8 hitpoints.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 106.",
   "source": "Book of Vile Darkness",
   "page": 106
- },
- {
-  "id": "surefooted-stride-mass",
-  "name": "Surefooted Stride, Mass",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 5,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 hour/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Treat mountainous terrain as plains.",
-  "description": "Treat mountainous terrain as plains.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "sword-of-deception",
@@ -12828,26 +12353,6 @@
   "page": 122
  },
  {
-  "id": "skyhurling",
-  "name": "Skyhurling",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "DF"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
-  "spellResistance": "Yes",
-  "summary": "Throw a creature up and let them take falling damage.  5-ft./level with yielding obstructions or 10-ft./level with no obstructions.",
-  "description": "Throw a creature up and let them take falling damage.  5-ft./level with yielding obstructions or 10-ft./level with no obstructions.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "snare-astral-traveler",
   "name": "Snare Astral Traveler",
   "school": "Abjuration",
@@ -12931,28 +12436,6 @@
   "description": "Cloak of stars destroys nonmagical weapons on contact and allows wearer a DC 15 Reflex save to reduce damage from magic weapons by half.\n\nSummary only. Full text: Book of Exalted Deeds, p. 108.",
   "source": "Book of Exalted Deeds",
   "page": 108
- },
- {
-  "id": "storm-prison",
-  "name": "Storm Prison",
-  "school": "Evocation",
-  "descriptors": [
-   "Electricity",
-   "Air"
-  ],
-  "level": 6,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Long (400 ft. + 40 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "Reflex partial",
-  "spellResistance": "Yes",
-  "summary": "Deal 1d6/level (max 15d6) electricity damage to target and encase them in a wind and lightning prison.",
-  "description": "Deal 1d6/level (max 15d6) electricity damage to target and encase them in a wind and lightning prison.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "stormwalk",
@@ -13516,29 +12999,6 @@
   "page": 80
  },
  {
-  "id": "expeditious-excavation",
-  "name": "Expeditious Excavation",
-  "school": "Transmutation",
-  "descriptors": [
-   "Earth"
-  ],
-  "level": 7,
-  "components": [
-   "V",
-   "S",
-   "M",
-   "F"
-  ],
-  "castingTime": "1 minute",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 hour/level (D); see text",
-  "savingThrow": "None or Reflex negates; see text",
-  "spellResistance": "No",
-  "summary": "Clear pathway of loose stone, sand, gravel, or other lightweight rubble into a tunnel.",
-  "description": "Clear pathway of loose stone, sand, gravel, or other lightweight rubble into a tunnel.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
- },
- {
   "id": "eye-of-the-beholder",
   "name": "Eye of the Beholder",
   "school": "Transmutation",
@@ -13557,30 +13017,6 @@
   "description": "Your eye gains random beholder ray.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
   "source": "Book of Vile Darkness",
   "page": 94
- },
- {
-  "id": "fey-ring",
-  "name": "Fey Ring",
-  "school": "Conjuration",
-  "subschool": "Calling",
-  "descriptors": [
-   "see text"
-  ],
-  "level": 7,
-  "components": [
-   "V",
-   "S",
-   "DF",
-   "XP"
-  ],
-  "castingTime": "10 minutes",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "See text",
-  "savingThrow": "See text",
-  "spellResistance": "No",
-  "summary": "Call a Fey creature that may or may not help you.",
-  "description": "Call a Fey creature that may or may not help you.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "fiendish-clarity",
@@ -13994,29 +13430,6 @@
   "description": "Similar to dolor but causes greater pain.\n\nSummary only. Full text: Dragon Magazine #336, p. 84.",
   "source": "Dragon Magazine #336",
   "page": 84
- },
- {
-  "id": "volcanic-storm",
-  "name": "Volcanic Storm",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Fire"
-  ],
-  "level": 7,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Long (400 ft. + 40 ft./level)",
-  "duration": "3 rounds",
-  "savingThrow": "See text",
-  "spellResistance": "No",
-  "summary": "Wind, Rocks, and lava sweep an area.",
-  "description": "Wind, Rocks, and lava sweep an area.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "wall-of-eyes",
@@ -14631,6 +14044,27 @@
   "page": 104
  },
  {
+  "id": "stalking-spell",
+  "name": "Stalking Spell",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 8,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal or touch",
+  "duration": "1 hour/level (D)",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "As greater invisibility, but subject is silent and scentless.",
+  "description": "As greater invisibility, but subject is silent and scentless.\n\nSummary only. Full text: Savage Species, p. 71.",
+  "source": "Savage Species",
+  "page": 71
+ },
+ {
   "id": "steal-life",
   "name": "Steal Life",
   "school": "Necromancy",
@@ -15066,6 +14500,28 @@
   "page": 82
  },
  {
+  "id": "incarnate-construct",
+  "name": "Incarnate Construct",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 9,
+  "components": [
+   "V",
+   "S",
+   "M",
+   "XP"
+  ],
+  "castingTime": "8 hours",
+  "range": "Touch",
+  "duration": "Instantaneous",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Turns construct into living creature.",
+  "description": "Turns construct into living creature.\n\nSummary only. Full text: Savage Species, p. 67.",
+  "source": "Savage Species",
+  "page": 67
+ },
+ {
   "id": "instant-refuge",
   "name": "Instant Refuge",
   "school": "Evocation",
@@ -15283,29 +14739,6 @@
   "description": "As dispel magic, except maximum +25 and if targeted, you can take control of the spell.\n\nSummary only. Full text: Complete Arcane, p. 119.",
   "source": "Complete Arcane",
   "page": 119
- },
- {
-  "id": "skyrift",
-  "name": "Skyrift",
-  "school": "Illusion",
-  "subschool": "Shadow",
-  "descriptors": [],
-  "level": 9,
-  "components": [
-   "V",
-   "S",
-   "M",
-   "F",
-   "XP"
-  ],
-  "castingTime": "1 hour",
-  "range": "Touch",
-  "duration": "Permanent",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Make a 1 mile radius area appear to be in perpetual night or dusk.",
-  "description": "Make a 1 mile radius area appear to be in perpetual night or dusk.\n\nSummary only. Full text: FCotW.",
-  "source": "FCotW"
  },
  {
   "id": "spell-matrix-greater",
