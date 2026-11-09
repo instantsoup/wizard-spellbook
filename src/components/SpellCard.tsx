@@ -1,6 +1,7 @@
 import { SchoolIcon } from './SchoolIcon'
 import { useMemo, type ReactNode } from 'react'
 import type { Spell } from '../data/spell-schema'
+import { sourceAbbr } from './labels'
 import { renderSpellText } from './markdown'
 import { ordinal, SCHOOL_STYLE } from './schools'
 
@@ -41,6 +42,9 @@ export function SpellRow({
               {style.abbr}
             </span>
             <span className="shrink-0 text-xs text-ink/50">{spell.components.join(', ')}</span>
+            <span className="ml-auto shrink-0 rounded border border-ink/20 px-1 text-[10px] font-semibold tracking-wide text-ink/60" title={spell.source}>
+              {sourceAbbr(spell.source)}
+            </span>
           </div>
           {spell.summary && <p className="truncate text-sm text-ink/70">{spell.summary}</p>}
         </button>
@@ -90,7 +94,7 @@ export function SpellDetails({ spell }: { spell: Spell }) {
       {spell.focus && <ComponentNote label="Focus" text={spell.focus} />}
       {spell.xpCost && <ComponentNote label="XP Cost" text={spell.xpCost} />}
       <p className="mt-2 text-xs text-ink/50">
-        Source: {spell.source}
+        Source: {spell.source} ({sourceAbbr(spell.source)})
         {spell.page ? `, p. ${spell.page}` : ''}
       </p>
     </div>
