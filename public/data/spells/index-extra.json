@@ -425,7 +425,8 @@
   "summary": "Hand trips subject.",
   "description": "Hand trips subject.\n\nSummary only. Full text: Player's Handbook II, p. 103.",
   "source": "Player's Handbook II",
-  "page": 103
+  "page": 103,
+  "target": "One creature"
  },
  {
   "id": "black-bag",
@@ -464,13 +465,14 @@
   ],
   "castingTime": "1 swift action",
   "range": "Touch",
-  "duration": "1 round/level or until discharged (D)",
+  "duration": "1 round/level or until discharged",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Weapon deals +1d6, or +3d6 if you take 5 points of damage.",
   "description": "Weapon deals +1d6, or +3d6 if you take 5 points of damage.\n\nSummary only. Full text: Player's Handbook II, p. 103.",
   "source": "Player's Handbook II",
-  "page": 103
+  "page": 103,
+  "target": "Weapon touched"
  },
  {
   "id": "blades-of-fire",
@@ -771,7 +773,8 @@
   "summary": "Gain a deflection bonus of +1/3 levels (max +5) against one attack.",
   "description": "Gain a deflection bonus of +1/3 levels (max +5) against one attack.\n\nSummary only. Full text: Player's Handbook II, p. 109.",
   "source": "Player's Handbook II",
-  "page": 109
+  "page": 109,
+  "target": "You"
  },
  {
   "id": "dispel-ward",
@@ -1284,7 +1287,8 @@
   "summary": "1d6 fire damage/level (max 5d6), partially ignore SR.",
   "description": "1d6 fire damage/level (max 5d6), partially ignore SR.\n\nSummary only. Full text: Player's Handbook II, p. 116.",
   "source": "Player's Handbook II",
-  "page": 116
+  "page": 116,
+  "target": "One creature"
  },
  {
   "id": "lantern-light",
@@ -1676,7 +1680,8 @@
   "summary": "Awakens creatures in area.",
   "description": "Awakens creatures in area.\n\nSummary only. Full text: Player's Handbook II, p. 123.",
   "source": "Player's Handbook II",
-  "page": 123
+  "page": 123,
+  "area": "10-ft.-radius burst"
  },
  {
   "id": "sacrificial-skill",
@@ -1777,7 +1782,8 @@
   "summary": "Subject stands up from prone.",
   "description": "Subject stands up from prone.\n\nSummary only. Full text: Player's Handbook II, p. 125.",
   "source": "Player's Handbook II",
-  "page": 125
+  "page": 125,
+  "target": "One willing prone creature"
  },
  {
   "id": "stupor",
@@ -1913,7 +1919,8 @@
   "summary": "Deal 1d6 nonlethal damage +1d6/2 levels above 1st (max 5d6).",
   "description": "Deal 1d6 nonlethal damage +1d6/2 levels above 1st (max 5d6).\n\nSummary only. Full text: Player's Handbook II, p. 128.",
   "source": "Player's Handbook II",
-  "page": 128
+  "page": 128,
+  "target": "One living creature"
  },
  {
   "id": "wings-of-the-sea",
@@ -2009,13 +2016,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +2 bonus to Str, Dex, and Con.",
   "description": "Subject gains +2 bonus to Str, Dex, and Con.\n\nSummary only. Full text: Player's Handbook II, p. 101.",
   "source": "Player's Handbook II",
-  "page": 101
+  "page": 101,
+  "target": "Creature touched"
  },
  {
   "id": "augment-familiar",
@@ -2169,7 +2177,8 @@
   "summary": "Hand deals 1d6 nonlethal damage/2 levels (max 5d6) and knocks subject back.",
   "description": "Hand deals 1d6 nonlethal damage/2 levels (max 5d6) and knocks subject back.\n\nSummary only. Full text: Player's Handbook II, p. 103.",
   "source": "Player's Handbook II",
-  "page": 103
+  "page": 103,
+  "target": "One creature"
  },
  {
   "id": "bladeweave",
@@ -2237,7 +2246,8 @@
   "summary": "Blind subject for 1 round, gain invisibility.",
   "description": "Blind subject for 1 round, gain invisibility.\n\nSummary only. Full text: Player's Handbook II, p. 104.",
   "source": "Player's Handbook II",
-  "page": 104
+  "page": 104,
+  "target": "You and one creature"
  },
  {
   "id": "body-of-the-sun",
@@ -2365,7 +2375,8 @@
   "summary": "Take a move action immediately, but be dazed for a round.",
   "description": "Take a move action immediately, but be dazed for a round.\n\nSummary only. Full text: Player's Handbook II, p. 105.",
   "source": "Player's Handbook II",
-  "page": 105
+  "page": 105,
+  "target": "You"
  },
  {
   "id": "chain-of-eyes",
@@ -2449,7 +2460,8 @@
   "summary": "Release one knife/round, 1d6 damage +1/3 levels (max +5).",
   "description": "Release one knife/round, 1d6 damage +1/3 levels (max +5).\n\nSummary only. Full text: Player's Handbook II, p. 107.",
   "source": "Player's Handbook II",
-  "page": 107
+  "page": 107,
+  "target": "You"
  },
  {
   "id": "combust",
@@ -2712,7 +2724,8 @@
   "summary": "Teleport subject short distance.",
   "description": "Teleport subject short distance.\n\nSummary only. Full text: Player's Handbook II, p. 110.",
   "source": "Player's Handbook II",
-  "page": 110
+  "page": 110,
+  "target": "Creature touched"
  },
  {
   "id": "discern-shapechanger",
@@ -2798,7 +2811,8 @@
   "summary": "Dispel one magical effect on touched subject.",
   "description": "Dispel one magical effect on touched subject.\n\nSummary only. Full text: Player's Handbook II, p. 110.",
   "source": "Player's Handbook II",
-  "page": 110
+  "page": 110,
+  "target": "One touched creature, object, or spell effect"
  },
  {
   "id": "dissonant-chant",
@@ -3000,7 +3014,8 @@
   "summary": "One attack deals an extra 1d6 energy damage.",
   "description": "One attack deals an extra 1d6 energy damage.\n\nSummary only. Full text: Player's Handbook II, p. 112.",
   "source": "Player's Handbook II",
-  "page": 112
+  "page": 112,
+  "target": "One weapon"
  },
  {
   "id": "enlarge-weapon",
@@ -3931,13 +3946,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
+  "duration": "Instantaneous; see text",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Ray deals 4d6 electricity damage, ignores concealment and cover; you gain +4 on attacks with rays against the subject.",
   "description": "Ray deals 4d6 electricity damage, ignores concealment and cover; you gain +4 on attacks with rays against the subject.\n\nSummary only. Full text: Player's Handbook II, p. 124.",
   "source": "Player's Handbook II",
-  "page": 124
+  "page": 124,
+  "effect": "Ray"
  },
  {
   "id": "shadow-radiance",
@@ -4163,7 +4179,8 @@
   "summary": "Change subject creature's attitude to helpful for 1 round.",
   "description": "Change subject creature's attitude to helpful for 1 round.\n\nSummary only. Full text: Player's Handbook II, p. 126.",
   "source": "Player's Handbook II",
-  "page": 126
+  "page": 126,
+  "target": "One humanoid"
  },
  {
   "id": "stolen-breath",
@@ -4200,13 +4217,14 @@
   ],
   "castingTime": "1 swift action",
   "range": "0 ft.",
-  "duration": "1 round or until discharged",
+  "duration": "One attack",
   "savingThrow": "Will negates (harmless, object)",
   "spellResistance": "Yes (harmless, object)",
   "summary": "Melee weapon gains 5 ft. of reach for one attack.",
   "description": "Melee weapon gains 5 ft. of reach for one attack.\n\nSummary only. Full text: Player's Handbook II, p. 126.",
   "source": "Player's Handbook II",
-  "page": 126
+  "page": 126,
+  "target": "Melee weapon wielded"
  },
  {
   "id": "sure-strike",
@@ -4223,7 +4241,8 @@
   "summary": "Gain +1 bonus/3 levels on next attack.",
   "description": "Gain +1 bonus/3 levels on next attack.\n\nSummary only. Full text: Player's Handbook II, p. 126.",
   "source": "Player's Handbook II",
-  "page": 126
+  "page": 126,
+  "target": "You"
  },
  {
   "id": "swim",
@@ -4295,7 +4314,7 @@
  {
   "id": "vertigo",
   "name": "Vertigo",
-  "school": "Abjuration",
+  "school": "Illusion",
   "subschool": "Phantasm",
   "descriptors": [
    "Fear",
@@ -4307,14 +4326,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "0 ft.",
-  "duration": "1 day",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
   "savingThrow": "Will disbelief",
   "spellResistance": "No",
   "summary": "Subject creature must succeed on a DC 10 Balance check to move each round.",
   "description": "Subject creature must succeed on a DC 10 Balance check to move each round.\n\nSummary only. Full text: Player's Handbook II, p. 127.",
   "source": "Player's Handbook II",
-  "page": 127
+  "page": 127,
+  "target": "One living creature"
  },
  {
   "id": "wall-of-gloom",
@@ -4363,7 +4383,8 @@
   "summary": "15-foot cone deals 1d6 nonlethal damage /2 levels (max 5d6).",
   "description": "15-foot cone deals 1d6 nonlethal damage /2 levels (max 5d6).\n\nSummary only. Full text: Player's Handbook II, p. 128.",
   "source": "Player's Handbook II",
-  "page": 128
+  "page": 128,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "whirling-blade",
@@ -4847,7 +4868,7 @@
  },
  {
   "id": "crown-of-might",
-  "name": "Crown Of Might",
+  "name": "Crown of Might",
   "school": "Transmutation",
   "descriptors": [],
   "level": 3,
@@ -4858,13 +4879,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 hour/level or until discharged (D)",
+  "duration": "1 hour/level (D) or until discharged",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Gain +2 Strength, discharge to gain +8 bonus for 1 round.",
   "description": "Gain +2 Strength, discharge to gain +8 bonus for 1 round.\n\nSummary only. Full text: Player's Handbook II, p. 108.",
   "source": "Player's Handbook II",
-  "page": 108
+  "page": 108,
+  "target": "Creature touched"
  },
  {
   "id": "crown-of-protection",
@@ -4879,13 +4901,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 hour/level or until discharged (D)",
+  "duration": "1 hour/level (D) or until discharged",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "+1 deflection bonus to AC, +1 resistance bonus on saves; discharge to gain +4 for 1 round.",
   "description": "+1 deflection bonus to AC, +1 resistance bonus on saves; discharge to gain +4 for 1 round.\n\nSummary only. Full text: Player's Handbook II, p. 108.",
   "source": "Player's Handbook II",
-  "page": 108
+  "page": 108,
+  "target": "Creature touched"
  },
  {
   "id": "crown-of-veils",
@@ -4901,13 +4924,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 hour/level or until discharged (D)",
+  "duration": "1 hour/level (D) or until discharged",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Gain +2 to Disguise and Hide, discharge to gain +8.",
   "description": "Gain +2 to Disguise and Hide, discharge to gain +8.\n\nSummary only. Full text: Player's Handbook II, p. 108.",
   "source": "Player's Handbook II",
-  "page": 108
+  "page": 108,
+  "target": "Creature touched"
  },
  {
   "id": "cruel-disappointment",
@@ -5331,7 +5355,8 @@
   "summary": "Subject gains resistance 20 against one energy type for one attack.",
   "description": "Subject gains resistance 20 against one energy type for one attack.\n\nSummary only. Full text: Player's Handbook II, p. 111.",
   "source": "Player's Handbook II",
-  "page": 111
+  "page": 111,
+  "target": "One creature"
  },
  {
   "id": "energy-surge",
@@ -5643,7 +5668,8 @@
   "summary": "Subject's feet become stuck to the ground.",
   "description": "Subject's feet become stuck to the ground.\n\nSummary only. Full text: Player's Handbook II, p. 114.",
   "source": "Player's Handbook II",
-  "page": 114
+  "page": 114,
+  "target": "One creature"
  },
  {
   "id": "hamatula-barbs",
@@ -5709,7 +5735,8 @@
   "summary": "Force subject to lose actions.",
   "description": "Force subject to lose actions.\n\nSummary only. Full text: Player's Handbook II, p. 114.",
   "source": "Player's Handbook II",
-  "page": 114
+  "page": 114,
+  "target": "One living creature"
  },
  {
   "id": "icelance",
@@ -5774,12 +5801,13 @@
   "castingTime": "1 standard action",
   "range": "Touch",
   "duration": "1 round/level",
-  "savingThrow": "None and Will negates",
+  "savingThrow": "None and Will negates; see text",
   "spellResistance": "Yes",
   "summary": "Subject takes 3d6 nonlethal damage/round.",
   "description": "Subject takes 3d6 nonlethal damage/round.\n\nSummary only. Full text: Player's Handbook II, p. 115.",
   "source": "Player's Handbook II",
-  "page": 115
+  "page": 115,
+  "target": "One creature"
  },
  {
   "id": "junglerazer",
@@ -5823,7 +5851,8 @@
   "summary": "Ghostly swordsmen threaten a 10-foot radius, deal 1d8 damage +1/3 levels (max +5).",
   "description": "Ghostly swordsmen threaten a 10-foot radius, deal 1d8 damage +1/3 levels (max +5).\n\nSummary only. Full text: Player's Handbook II, p. 116.",
   "source": "Player's Handbook II",
-  "page": 116
+  "page": 116,
+  "area": "10-ft.-radius emanation centered on a point in space"
  },
  {
   "id": "mage-armor-greater",
@@ -6100,7 +6129,8 @@
   "summary": "Teleports nearby allies to your side.",
   "description": "Teleports nearby allies to your side.\n\nSummary only. Full text: Player's Handbook II, p. 123.",
   "source": "Player's Handbook II",
-  "page": 123
+  "page": 122,
+  "target": "One willing creature/level"
  },
  {
   "id": "repair-serious-damage",
@@ -6377,12 +6407,13 @@
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 round/level",
-  "savingThrow": "Fortitude partial",
+  "savingThrow": "Fortitude partial; see text",
   "spellResistance": "Yes",
   "summary": "Creatures have 20% miss chance and possibly become nauseated.",
   "description": "Creatures have 20% miss chance and possibly become nauseated.\n\nSummary only. Full text: Player's Handbook II, p. 128.",
   "source": "Player's Handbook II",
-  "page": 128
+  "page": 128,
+  "area": "20-ft.-radius spread"
  },
  {
   "id": "vile-lance",
@@ -6862,7 +6893,8 @@
   "summary": "Deal fire damage, amount and radius based on casting time.",
   "description": "Deal fire damage, amount and radius based on casting time.\n\nSummary only. Full text: Player's Handbook II, p. 106.",
   "source": "Player's Handbook II",
-  "page": 106
+  "page": 106,
+  "area": "See text"
  },
  {
   "id": "conjure-lesser-midnight-construct",
@@ -7105,7 +7137,8 @@
   "summary": "Scarab swarm deals 1d6/2 levels, gives you temporary hit points.",
   "description": "Scarab swarm deals 1d6/2 levels, gives you temporary hit points.\n\nSummary only. Full text: Player's Handbook II, p. 110.",
   "source": "Player's Handbook II",
-  "page": 110
+  "page": 110,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "dragon-breath",
@@ -7589,12 +7622,13 @@
    "S"
   ],
   "castingTime": "1 immediate action",
-  "range": "Personal",
-  "duration": "1 min./level (D)",
+  "range": "Personal; see text for mirror image (PH 254)",
+  "duration": "1 minute/level (D)",
   "summary": "As mirror image, but gain an additional image each round.",
   "description": "As mirror image, but gain an additional image each round.\n\nSummary only. Full text: Player's Handbook II, p. 120.",
   "source": "Player's Handbook II",
-  "page": 120
+  "page": 120,
+  "target": "You"
  },
  {
   "id": "mirror-sending",
@@ -7820,7 +7854,8 @@
   "summary": "Illusion of battle flanks creatures and denies attacks of opportunity.",
   "description": "Illusion of battle flanks creatures and denies attacks of opportunity.\n\nSummary only. Full text: Player's Handbook II, p. 120.",
   "source": "Player's Handbook II",
-  "page": 120
+  "page": 120,
+  "area": "20-ft.-radius spread"
  },
  {
   "id": "psychic-poison",
@@ -8014,7 +8049,9 @@
   "summary": "As dispel magic, but creatures take damage for spells dispelled.",
   "description": "As dispel magic, but creatures take damage for spells dispelled.\n\nSummary only. Full text: Player's Handbook II, p. 125.",
   "source": "Player's Handbook II",
-  "page": 125
+  "page": 125,
+  "target": "One creature or 20-ft.-radius burst",
+  "targetLabel": "Target or Area"
  },
  {
   "id": "spell-enhancer",
@@ -8104,7 +8141,7 @@
  {
   "id": "whelm-mass",
   "name": "Whelm, Mass",
-  "school": "Abjuration",
+  "school": "Enchantment",
   "subschool": "Compulsion",
   "descriptors": [
    "Mind-Affecting"
@@ -8115,14 +8152,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "0 ft.",
-  "duration": "1 day",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "Instantaneous",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "1d6 nonlethal damage/level (max 10d6) to 1 creature/level.",
   "description": "1d6 nonlethal damage/level (max 10d6) to 1 creature/level.\n\nSummary only. Full text: Player's Handbook II, p. 128.",
   "source": "Player's Handbook II",
-  "page": 128
+  "page": 128,
+  "target": "One living creature/level"
  },
  {
   "id": "wingbind",
@@ -8714,7 +8752,8 @@
   "summary": "Subject momentarily becomes ethereal.",
   "description": "Subject momentarily becomes ethereal.\n\nSummary only. Full text: Player's Handbook II, p. 113.",
   "source": "Player's Handbook II",
-  "page": 113
+  "page": 113,
+  "target": "One willing creature"
  },
  {
   "id": "evacuation-rune",
@@ -8877,7 +8916,8 @@
   "summary": "Make subject creature believe its allies are its enemies.",
   "description": "Make subject creature believe its allies are its enemies.\n\nSummary only. Full text: Player's Handbook II, p. 114.",
   "source": "Player's Handbook II",
-  "page": 114
+  "page": 114,
+  "target": "One living creature/level, none of which are more than 30 ft. apart"
  },
  {
   "id": "graymantle",
@@ -9408,7 +9448,8 @@
   "summary": "+4 deflection bonus to AC; 1d8 sonic damage and push back creatures that hit you in melee.",
   "description": "+4 deflection bonus to AC; 1d8 sonic damage and push back creatures that hit you in melee.\n\nSummary only. Full text: Player's Handbook II, p. 125.",
   "source": "Player's Handbook II",
-  "page": 125
+  "page": 125,
+  "target": "You"
  },
  {
   "id": "soul-shackles",
@@ -9614,12 +9655,13 @@
   "castingTime": "1 standard action",
   "range": "Touch",
   "duration": "1 hour or until discharged",
-  "savingThrow": "Fortitude negates",
+  "savingThrow": "Fortitude negates; see text",
   "spellResistance": "No",
   "summary": "Coats weapon with poison.",
   "description": "Coats weapon with poison.\n\nSummary only. Full text: Player's Handbook II, p. 126.",
   "source": "Player's Handbook II",
-  "page": 126
+  "page": 126,
+  "target": "Piercing or slashing weapon touched"
  },
  {
   "id": "vanishing-weapon",

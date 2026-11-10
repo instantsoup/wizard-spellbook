@@ -1,0 +1,721 @@
+{
+ "source": "Player's Handbook II",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "alter-fortune",
+   "field": "components",
+   "value": [
+    "V",
+    "XP"
+   ],
+   "pdfPage": 101
+  },
+  {
+   "id": "animalistic-power",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 101
+  },
+  {
+   "id": "animalistic-power",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 101
+  },
+  {
+   "id": "bigbys-striking-fist",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 103
+  },
+  {
+   "id": "bigbys-tripping-hand",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 103
+  },
+  {
+   "id": "blade-of-blood",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 103
+  },
+  {
+   "id": "blade-of-blood",
+   "field": "duration",
+   "value": "1 round/level or until discharged",
+   "pdfPage": 103
+  },
+  {
+   "id": "blinding-color-surge",
+   "field": "target",
+   "value": "You and one creature",
+   "pdfPage": 104
+  },
+  {
+   "id": "celerity-lesser",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 105
+  },
+  {
+   "id": "channeled-pyroburst",
+   "field": "area",
+   "value": "See text",
+   "pdfPage": 106
+  },
+  {
+   "id": "cloud-of-knives",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 107
+  },
+  {
+   "id": "crown-of-might",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 108
+  },
+  {
+   "id": "crown-of-might",
+   "field": "duration",
+   "value": "1 hour/level (D) or until discharged",
+   "pdfPage": 108
+  },
+  {
+   "id": "crown-of-protection",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 108
+  },
+  {
+   "id": "crown-of-protection",
+   "field": "duration",
+   "value": "1 hour/level (D) or until discharged",
+   "pdfPage": 108
+  },
+  {
+   "id": "crown-of-veils",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 108
+  },
+  {
+   "id": "crown-of-veils",
+   "field": "duration",
+   "value": "1 hour/level (D) or until discharged",
+   "pdfPage": 108
+  },
+  {
+   "id": "deflect-lesser",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 109
+  },
+  {
+   "id": "dimension-hop",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 110
+  },
+  {
+   "id": "dimension-step",
+   "field": "target",
+   "value": "One willing creature/3 levels, no two of which are more than 30 ft. apart",
+   "pdfPage": 110
+  },
+  {
+   "id": "dispelling-touch",
+   "field": "target",
+   "value": "One touched creature, object, or spell effect",
+   "pdfPage": 110
+  },
+  {
+   "id": "doom-scarabs",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 110
+  },
+  {
+   "id": "energy-aegis",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 111
+  },
+  {
+   "id": "energy-surge-lesser",
+   "field": "target",
+   "value": "One weapon",
+   "pdfPage": 112
+  },
+  {
+   "id": "etherealness-swift",
+   "field": "target",
+   "value": "One willing creature",
+   "pdfPage": 113
+  },
+  {
+   "id": "friend-to-foe",
+   "field": "target",
+   "value": "One living creature/level, none of which are more than 30 ft. apart",
+   "pdfPage": 114
+  },
+  {
+   "id": "halt",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 114
+  },
+  {
+   "id": "hesitate",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 114
+  },
+  {
+   "id": "inevitable-defeat",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 115
+  },
+  {
+   "id": "inevitable-defeat",
+   "field": "savingThrow",
+   "value": "None and Will negates; see text",
+   "pdfPage": 115
+  },
+  {
+   "id": "kelgores-fire-bolt",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 116
+  },
+  {
+   "id": "legion-of-sentinels",
+   "field": "area",
+   "value": "10-ft.-radius emanation centered on a point in space",
+   "pdfPage": 116
+  },
+  {
+   "id": "melfs-unicorn-arrow",
+   "field": "target",
+   "value": "One creature or up to five creatures, no two of which are more than 15 ft. apart",
+   "pdfPage": 119
+  },
+  {
+   "id": "melfs-unicorn-arrow",
+   "field": "targetLabel",
+   "value": "Target or Targets",
+   "pdfPage": 119
+  },
+  {
+   "id": "mirror-image-greater",
+   "field": "range",
+   "value": "Personal; see text for mirror image (PH 254)",
+   "pdfPage": 120
+  },
+  {
+   "id": "mirror-image-greater",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 120
+  },
+  {
+   "id": "mirror-image-greater",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 120
+  },
+  {
+   "id": "overwhelm",
+   "field": "descriptors",
+   "value": [
+    "Mind-Affecting"
+   ],
+   "pdfPage": 120
+  },
+  {
+   "id": "phantom-battle",
+   "field": "area",
+   "value": "20-ft.-radius spread",
+   "pdfPage": 120
+  },
+  {
+   "id": "regroup",
+   "field": "target",
+   "value": "One willing creature/level",
+   "pdfPage": 122
+  },
+  {
+   "id": "rouse",
+   "field": "area",
+   "value": "10-ft.-radius burst",
+   "pdfPage": 123
+  },
+  {
+   "id": "seeking-ray",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 124
+  },
+  {
+   "id": "seeking-ray",
+   "field": "duration",
+   "value": "Instantaneous; see text",
+   "pdfPage": 124
+  },
+  {
+   "id": "slashing-dispel",
+   "field": "target",
+   "value": "One creature or 20-ft.-radius burst",
+   "pdfPage": 125
+  },
+  {
+   "id": "slashing-dispel",
+   "field": "targetLabel",
+   "value": "Target or Area",
+   "pdfPage": 125
+  },
+  {
+   "id": "sonic-shield",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 125
+  },
+  {
+   "id": "stand",
+   "field": "target",
+   "value": "One willing prone creature",
+   "pdfPage": 125
+  },
+  {
+   "id": "stay-the-hand",
+   "field": "target",
+   "value": "One humanoid",
+   "pdfPage": 126
+  },
+  {
+   "id": "stretch-weapon",
+   "field": "target",
+   "value": "Melee weapon wielded",
+   "pdfPage": 126
+  },
+  {
+   "id": "stretch-weapon",
+   "field": "duration",
+   "value": "One attack",
+   "pdfPage": 126
+  },
+  {
+   "id": "sure-strike",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 126
+  },
+  {
+   "id": "toxic-weapon",
+   "field": "target",
+   "value": "Piercing or slashing weapon touched",
+   "pdfPage": 126
+  },
+  {
+   "id": "toxic-weapon",
+   "field": "savingThrow",
+   "value": "Fortitude negates; see text",
+   "pdfPage": 126
+  },
+  {
+   "id": "vertigo",
+   "field": "school",
+   "value": "Illusion",
+   "pdfPage": 127
+  },
+  {
+   "id": "vertigo",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 levels)",
+   "pdfPage": 127
+  },
+  {
+   "id": "vertigo",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 127
+  },
+  {
+   "id": "vertigo",
+   "field": "duration",
+   "value": "1 round/level (D)",
+   "pdfPage": 127
+  },
+  {
+   "id": "vertigo-field",
+   "field": "area",
+   "value": "20-ft.-radius spread",
+   "pdfPage": 128
+  },
+  {
+   "id": "vertigo-field",
+   "field": "savingThrow",
+   "value": "Fortitude partial; see text",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelm",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelm-mass",
+   "field": "school",
+   "value": "Enchantment",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelm-mass",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 levels)",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelm-mass",
+   "field": "target",
+   "value": "One living creature/level",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelm-mass",
+   "field": "duration",
+   "value": "Instantaneous",
+   "pdfPage": 128
+  },
+  {
+   "id": "whelming-blast",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 128
+  },
+  {
+   "id": "regroup",
+   "field": "page",
+   "value": 122,
+   "pdfPage": 122
+  },
+  {
+   "id": "alter-fortune",
+   "field": "page",
+   "value": 101
+  },
+  {
+   "id": "animalistic-power-mass",
+   "field": "page",
+   "value": 101
+  },
+  {
+   "id": "as-the-frost",
+   "field": "page",
+   "value": 101
+  },
+  {
+   "id": "baleful-blink",
+   "field": "page",
+   "value": 102
+  },
+  {
+   "id": "bigbys-disrupting-hand",
+   "field": "page",
+   "value": 102
+  },
+  {
+   "id": "bigbys-warding-hand",
+   "field": "page",
+   "value": 103
+  },
+  {
+   "id": "black-karma-curse",
+   "field": "page",
+   "value": 103
+  },
+  {
+   "id": "bleakness",
+   "field": "page",
+   "value": 104
+  },
+  {
+   "id": "bright-worms",
+   "field": "page",
+   "value": 105
+  },
+  {
+   "id": "burning-rage",
+   "field": "page",
+   "value": 105
+  },
+  {
+   "id": "call-of-stone",
+   "field": "page",
+   "value": 105
+  },
+  {
+   "id": "chain-dispel",
+   "field": "page",
+   "value": 105
+  },
+  {
+   "id": "chasing-perfection",
+   "field": "page",
+   "value": 106
+  },
+  {
+   "id": "condemnation",
+   "field": "page",
+   "value": 107
+  },
+  {
+   "id": "crown-of-clarity",
+   "field": "page",
+   "value": 107
+  },
+  {
+   "id": "crown-of-the-grave",
+   "field": "page",
+   "value": 107
+  },
+  {
+   "id": "crushing-grip",
+   "field": "page",
+   "value": 109
+  },
+  {
+   "id": "curse-of-arrow-attraction",
+   "field": "page",
+   "value": 109
+  },
+  {
+   "id": "detonate",
+   "field": "page",
+   "value": 109
+  },
+  {
+   "id": "dimension-shuffle",
+   "field": "page",
+   "value": 110
+  },
+  {
+   "id": "dimension-step",
+   "field": "page",
+   "value": 110
+  },
+  {
+   "id": "dragonshape",
+   "field": "page",
+   "value": 111
+  },
+  {
+   "id": "electric-vengeance",
+   "field": "page",
+   "value": 111
+  },
+  {
+   "id": "electric-vengeance-greater",
+   "field": "page",
+   "value": 111
+  },
+  {
+   "id": "energy-vulnerability",
+   "field": "page",
+   "value": 112
+  },
+  {
+   "id": "evards-menacing-tentacles",
+   "field": "page",
+   "value": 113
+  },
+  {
+   "id": "explosive-rune-field",
+   "field": "page",
+   "value": 113
+  },
+  {
+   "id": "field-of-resistance",
+   "field": "page",
+   "value": 113
+  },
+  {
+   "id": "incite-riot",
+   "field": "page",
+   "value": 115
+  },
+  {
+   "id": "increase-virulence",
+   "field": "page",
+   "value": 115
+  },
+  {
+   "id": "insight-of-good-fortune",
+   "field": "page",
+   "value": 115
+  },
+  {
+   "id": "kelgores-grave-mist",
+   "field": "page",
+   "value": 116
+  },
+  {
+   "id": "luminous-assassin",
+   "field": "page",
+   "value": 117
+  },
+  {
+   "id": "luminous-assassin-greater",
+   "field": "page",
+   "value": 117
+  },
+  {
+   "id": "luminous-assassin-lesser",
+   "field": "page",
+   "value": 117
+  },
+  {
+   "id": "mana-flux",
+   "field": "page",
+   "value": 119
+  },
+  {
+   "id": "melfs-unicorn-arrow",
+   "field": "page",
+   "value": 119
+  },
+  {
+   "id": "mystic-surge",
+   "field": "page",
+   "value": 120
+  },
+  {
+   "id": "overwhelm",
+   "field": "page",
+   "value": 120
+  },
+  {
+   "id": "plague",
+   "field": "page",
+   "value": 121
+  },
+  {
+   "id": "prismatic-mist",
+   "field": "page",
+   "value": 121
+  },
+  {
+   "id": "pulse-of-hate",
+   "field": "page",
+   "value": 122
+  },
+  {
+   "id": "radiance",
+   "field": "page",
+   "value": 122
+  },
+  {
+   "id": "ray-of-the-python",
+   "field": "page",
+   "value": 122
+  },
+  {
+   "id": "scattering-trap",
+   "field": "page",
+   "value": 123
+  },
+  {
+   "id": "share-talents",
+   "field": "page",
+   "value": 124
+  },
+  {
+   "id": "stifle-spell",
+   "field": "page",
+   "value": 126
+  },
+  {
+   "id": "summon-golem",
+   "field": "page",
+   "value": 126
+  },
+  {
+   "id": "thunder-field",
+   "field": "page",
+   "value": 126
+  },
+  {
+   "id": "trollshape",
+   "field": "page",
+   "value": 127
+  }
+ ],
+ "renames": [
+  {
+   "id": "crown-of-might",
+   "name": "Crown of Might"
+  }
+ ],
+ "additions": [
+  {
+   "name": "Bigby's Helpful Hand",
+   "school": "Evocation",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "0 ft.",
+   "effect": "One hand of force",
+   "duration": "1 hour/level (D)",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "page": 102,
+   "summary": "Force hand stays beside you, holds an item and gives +2 on Craft, Disable Device, Open Lock."
+  },
+  {
+   "name": "Dancing Blade",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Weapon touched",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "page": 109,
+   "summary": "A weapon attacks on its own."
+  }
+ ],
+ "removals": [],
+ "notes": [
+  "doom-scarabs dual-school Conjuration/Necromancy",
+  "explosive-rune-field school line printed \"Conjuration (Fire)\" (Fire in parentheses, likely meant as [Fire] descriptor); app keeps subschool \"Fire\" as printed",
+  "kelgores-fire-bolt dual-school Conjuration/Evocation",
+  "kelgores-grave-mist dual-school Conjuration/Necromancy",
+  "Master's Touch (PHB2 p119, Div, Sor/Wiz 2) skipped: already in app as masters-touch from Spell Compendium (level 1 there)",
+  "slashing-dispel dual-school Abjuration/Evocation",
+  "Page offset: PDF page index = book page + 1 (book p.101 is PDF page 102).",
+  "Bigby's Helpful Hand (p.102, Evocation [Force], Sorcerer/wizard 1) added; it is missing from the chapter's Sor/Wiz spell list but its Level line is Sorcerer/wizard 1. Summary is my own wording.",
+  "Dancing Blade (p.109) added under its stat-block name; the Sor/Wiz 5th-level list calls it 'Dance of Blades' (summary taken from that list line).",
+  "Energy Surge / Energy Surge, Greater print the descriptor as '[see text for lesser energy surge]'; app keeps ['see text'] (not changed).",
+  "Animalistic Power, Mass, Dimension Shuffle, Dimension Step, Friend to Foe, Incite Riot, Plague, Regroup, Share Talents, Whelm, Mass, Chain Dispel, Energy Vulnerability, Blinding Color Surge print the label 'Targets:'; values are stored in target without targetLabel.",
+  "Unpaged spells' book pages are given in the 'pages' map; previously indexed pages that were wrong are page updates.",
+  "All 96 app spells were found in the chapter with a Sorcerer/wizard level matching the app; no removals."
+ ]
+}

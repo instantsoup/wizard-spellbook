@@ -90,6 +90,30 @@
   "page": 255
  },
  {
+  "id": "bigbys-helpful-hand",
+  "name": "Bigby's Helpful Hand",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "0 ft",
+  "effect": "One hand of force",
+  "duration": "1 hour/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Force hand stays beside you, holds an item and gives +2 on Craft, Disable Device, Open Lock.",
+  "description": "Force hand stays beside you, holds an item and gives +2 on Craft, Disable Device, Open Lock.\n\nSummary only. Full text: Player's Handbook II, p. 102.",
+  "source": "Player's Handbook II",
+  "page": 102
+ },
+ {
   "id": "bulwark-of-reality",
   "name": "Bulwark of Reality",
   "school": "Conjuration",
@@ -129,7 +153,8 @@
   "spellResistance": "Yes",
   "summary": "Subject takes 4 points of damage/round, gains attack bonus and DR.",
   "description": "Subject takes 4 points of damage/round, gains attack bonus and DR.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 105
  },
  {
   "id": "create-trap",
@@ -1384,7 +1409,8 @@
   "spellResistance": "Yes",
   "summary": "Hand of force slows opponent.",
   "description": "Hand of force slows opponent.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 103
  },
  {
   "id": "black-karma-curse",
@@ -1405,7 +1431,8 @@
   "spellResistance": "Yes",
   "summary": "Subject damages self with melee attack.",
   "description": "Subject damages self with melee attack.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 103
  },
  {
   "id": "blindsight",
@@ -1662,7 +1689,8 @@
   "spellResistance": "Yes",
   "summary": "2d8 damage +1/level (max +10) to opponent who damages you in melee.",
   "description": "2d8 damage +1/level (max +10) to opponent who damages you in melee.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 111
  },
  {
   "id": "escalating-enfeeblement",
@@ -1925,7 +1953,8 @@
   "spellResistance": "No",
   "summary": "Poison's DC increases by 2.",
   "description": "Poison's DC increases by 2.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 115
  },
  {
   "id": "insight-of-good-fortune",
@@ -1946,7 +1975,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Subject rolls twice, takes best result.",
   "description": "Subject rolls twice, takes best result.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 115
  },
  {
   "id": "kelgores-grave-mist",
@@ -1969,7 +1999,8 @@
   "spellResistance": "See text",
   "summary": "1d6 cold damage/level, cause fatigue, partially ignore SR.",
   "description": "1d6 cold damage/level, cause fatigue, partially ignore SR.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 116
  },
  {
   "id": "leomunds-tiny-igloo",
@@ -2532,7 +2563,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Subjects gain +2 bonus on skill checks.",
   "description": "Subjects gain +2 bonus on skill checks.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 124
  },
  {
   "id": "slide-greater",
@@ -2951,7 +2983,8 @@
   "descriptors": [],
   "level": 3,
   "components": [
-   "V"
+   "V",
+   "XP"
   ],
   "castingTime": "1 immediate action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
@@ -2961,7 +2994,8 @@
   "spellResistance": "No",
   "summary": "Cause one creature to reroll any die roll.",
   "description": "Cause one creature to reroll any die roll.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 101
  },
  {
   "id": "animate-weapon",
@@ -3048,7 +3082,8 @@
   "spellResistance": "Yes",
   "summary": "Hand disrupts opponent's spellcasting.",
   "description": "Hand disrupts opponent's spellcasting.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 102
  },
  {
   "id": "blinding-breath",
@@ -3200,7 +3235,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "+2 to Listen and Spot, discharge spell to gain +8.",
   "description": "+2 to Listen and Spot, discharge spell to gain +8.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 107
  },
  {
   "id": "crown-of-the-grave",
@@ -3222,7 +3258,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Command undead, discharge to gain +4 on turn or rebuke.",
   "description": "Command undead, discharge to gain +4 on turn or rebuke.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 107
  },
  {
   "id": "curse-of-arrow-attraction",
@@ -3243,7 +3280,8 @@
   "spellResistance": "Yes",
   "summary": "Subject takes –5 penalty to AC against ranged attacks.",
   "description": "Subject takes –5 penalty to AC against ranged attacks.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 109
  },
  {
   "id": "deceptive-facade",
@@ -3279,13 +3317,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "target": "One willing creature/3 levels, no two of which are more than 30ft. apart",
+  "target": "One willing creature/3 levels, no two of which are more than 30 ft. apart",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Allies can immediately teleport a distance equal to their speed.",
   "description": "Allies can immediately teleport a distance equal to their speed.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 110
  },
  {
   "id": "enduring-scrutiny",
@@ -3326,7 +3365,8 @@
   "spellResistance": "Yes",
   "summary": "Subjects gain vulnerability to the specified energy.",
   "description": "Subjects gain vulnerability to the specified energy.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 112
  },
  {
   "id": "evards-menacing-tentacles",
@@ -3345,7 +3385,8 @@
   "duration": "1 round/level",
   "summary": "Grow two tentacles with 10-ft. reach that deal 1d8 damage each.",
   "description": "Grow two tentacles with 10-ft. reach that deal 1d8 damage each.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 113
  },
  {
   "id": "ferocity-of-sanguine-rage",
@@ -3600,7 +3641,8 @@
   "spellResistance": "No",
   "summary": "Summons an assassin to attack the subject.",
   "description": "Summons an assassin to attack the subject.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 117
  },
  {
   "id": "mask-of-the-ideal",
@@ -3639,7 +3681,10 @@
   "spellResistance": "No",
   "summary": "1d8+8 damage and bull rush; +1 unicorn arrow/3 levels beyond 5th.",
   "description": "1d8+8 damage and bull rush; +1 unicorn arrow/3 levels beyond 5th.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "target": "One creature or up to five creatures, no two of which are more than 15 ft. apart",
+  "targetLabel": "Target or Targets",
+  "page": 119
  },
  {
   "id": "mighty-wallop-greater",
@@ -3834,7 +3879,8 @@
   "spellResistance": "No",
   "summary": "Multicolored mist has random effect.",
   "description": "Multicolored mist has random effect.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 121
  },
  {
   "id": "rainbow-blast",
@@ -3903,7 +3949,8 @@
   "spellResistance": "Yes",
   "summary": "Creature can only attack once per round, cannot make attacks of opportunity,–10 ft. penalty to speed.",
   "description": "Creature can only attack once per round, cannot make attacks of opportunity,–10 ft. penalty to speed.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 122
  },
  {
   "id": "repelling-shield",
@@ -4028,7 +4075,8 @@
   "spellResistance": "Yes",
   "summary": "Imbue one 5-ft. square/2 levels with teleport trap.",
   "description": "Imbue one 5-ft. square/2 levels with teleport trap.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 123
  },
  {
   "id": "scintillating-sphere",
@@ -4681,7 +4729,8 @@
   "spellResistance": "No",
   "summary": "Subject has 50% chance of failure on attacks and spells.",
   "description": "Subject has 50% chance of failure on attacks and spells.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 102
  },
  {
   "id": "beckon-monster",
@@ -4729,7 +4778,8 @@
   "spellResistance": "No",
   "summary": "1d6 damage/round to living creatures, grants undead turn resistance and fast healing.",
   "description": "1d6 damage/round to living creatures, grants undead turn resistance and fast healing.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 104
  },
  {
   "id": "bright-worms",
@@ -4752,7 +4802,8 @@
   "spellResistance": "No",
   "summary": "Fiery worms damage enemies within 20-ft. spread.",
   "description": "Fiery worms damage enemies within 20-ft. spread.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 105
  },
  {
   "id": "call-of-stone",
@@ -4772,7 +4823,8 @@
   "spellResistance": "Yes",
   "summary": "Slowly turn subject to stone.",
   "description": "Slowly turn subject to stone.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 105
  },
  {
   "id": "caustic-mire",
@@ -4836,7 +4888,8 @@
   "spellResistance": "Yes",
   "summary": "Lowers subject outsider's SR and stuns for 1 round.",
   "description": "Lowers subject outsider's SR and stuns for 1 round.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 107
  },
  {
   "id": "crushing-grip",
@@ -4856,7 +4909,8 @@
   "spellResistance": "Yes",
   "summary": "Subject takes –2 on attacks, checks, saves, and AC and –20 ft. penalty to speed, might be paralyzed.",
   "description": "Subject takes –2 on attacks, checks, saves, and AC and –20 ft. penalty to speed, might be paralyzed.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 109
  },
  {
   "id": "curse-of-the-elemental-lords",
@@ -4944,7 +4998,8 @@
   "spellResistance": "No",
   "summary": "Area is covered with runes that explode on contact with creatures.",
   "description": "Area is covered with runes that explode on contact with creatures.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 113
  },
  {
   "id": "finger-of-agony",
@@ -5353,7 +5408,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Ally's spell gains +2 DC and +1 caster level.",
   "description": "Ally's spell gains +2 DC and +1 caster level.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 120
  },
  {
   "id": "nightmare-terrain",
@@ -5763,7 +5819,8 @@
   "spellResistance": "Yes",
   "summary": "Subject must concentrate or botch spell.",
   "description": "Subject must concentrate or botch spell.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 126
  },
  {
   "id": "stone-sphere",
@@ -5998,7 +6055,8 @@
   "duration": "1 round/level (D)",
   "summary": "You take on the form and abilities of a troll.",
   "description": "You take on the form and abilities of a troll.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 127
  },
  {
   "id": "unbind-chakra",
@@ -6450,6 +6508,28 @@
   "source": "Complete Mage"
  },
  {
+  "id": "dancing-blade",
+  "name": "Dancing Blade",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Weapon touched",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "A weapon attacks on its own.",
+  "description": "A weapon attacks on its own.\n\nSummary only. Full text: Player's Handbook II, p. 109.",
+  "source": "Player's Handbook II",
+  "page": 109
+ },
+ {
   "id": "dimension-jumper",
   "name": "Dimension Jumper",
   "school": "Conjuration",
@@ -6485,7 +6565,8 @@
   "spellResistance": "Yes",
   "summary": "Teleport multiple creatures short distances within line of sight.",
   "description": "Teleport multiple creatures short distances within line of sight.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 110
  },
  {
   "id": "draconic-polymorph",
@@ -6545,7 +6626,8 @@
   "range": "5 ft.",
   "target": "One creature",
   "duration": "Instantaneous",
-  "spellResistance": "Yes"
+  "spellResistance": "Yes",
+  "page": 111
  },
  {
   "id": "fever-dream",
@@ -6588,7 +6670,8 @@
   "spellResistance": "No",
   "summary": "Zone provides SR 11 + caster level.",
   "description": "Zone provides SR 11 + caster level.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 113
  },
  {
   "id": "fire-and-brimstone",
@@ -6811,7 +6894,8 @@
   "spellResistance": "Yes",
   "summary": "Subjects attack nearest creature.",
   "description": "Subjects attack nearest creature.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 115
  },
  {
   "id": "lighting-leap",
@@ -6876,7 +6960,8 @@
   "effect": "One summoned assassin",
   "duration": "1 round/level",
   "savingThrow": "None",
-  "spellResistance": "No"
+  "spellResistance": "No",
+  "page": 117
  },
  {
   "id": "mana-flux",
@@ -6896,7 +6981,8 @@
   "spellResistance": "No",
   "summary": "Magic in area has 20% failure chance.",
   "description": "Magic in area has 20% failure chance.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 119
  },
  {
   "id": "oath-of-blood",
@@ -6964,7 +7050,8 @@
   "spellResistance": "No",
   "summary": "Creates daylight that dazzles undead.",
   "description": "Creates daylight that dazzles undead.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 122
  },
  {
   "id": "resounding-thunder",
@@ -7451,7 +7538,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +4 to all abilities.",
   "description": "Subject gains +4 to all abilities.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 106
  },
  {
   "id": "cloak-of-hate",
@@ -7858,7 +7946,7 @@
   "school": "Enchantment",
   "subschool": "Compulsion",
   "descriptors": [
-   "MindAffecting"
+   "Mind-Affecting"
   ],
   "level": 6,
   "components": [
@@ -7873,7 +7961,8 @@
   "spellResistance": "Yes",
   "summary": "Nonlethal damage knocks out subject.",
   "description": "Nonlethal damage knocks out subject.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 120
  },
  {
   "id": "power-word-nauseate",
@@ -8206,7 +8295,8 @@
   "spellResistance": "Yes",
   "summary": "Creatures in area take 1d8 sonic damage/round, knocked prone.",
   "description": "Creatures in area take 1d8 sonic damage/round, knocked prone.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 126
  },
  {
   "id": "transcribe-symbol",
@@ -8380,7 +8470,8 @@
   "castingTime": "1 standard action",
   "duration": "1 min./level",
   "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)"
+  "spellResistance": "Yes (harmless)",
+  "page": 101
  },
  {
   "id": "arcane-spellsurge",
@@ -8420,7 +8511,8 @@
   "duration": "1 round/level",
   "summary": "Transform into a creature of cold.",
   "description": "Transform into a creature of cold.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 101
  },
  {
   "id": "call-kolyarut",
@@ -8673,7 +8765,8 @@
   "effect": "One summoned assassin",
   "duration": "1 round/level",
   "savingThrow": "None",
-  "spellResistance": "No"
+  "spellResistance": "No",
+  "page": 117
  },
  {
   "id": "necrotic-curse",
@@ -8761,7 +8854,8 @@
   "spellResistance": "Yes",
   "summary": "Nearby enemies take 2d6 damage/round.",
   "description": "Nearby enemies take 2d6 damage/round.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 122
  },
  {
   "id": "radiant-assault",
@@ -8987,7 +9081,8 @@
   "spellResistance": "No",
   "summary": "Dispel multiple magical effects in multiple creatures.",
   "description": "Dispel multiple magical effects in multiple creatures.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 105
  },
  {
   "id": "deadly-lahar",
@@ -9225,7 +9320,8 @@
   "spellResistance": "Yes",
   "summary": "One creature/level contracts quickly terminal disease.",
   "description": "One creature/level contracts quickly terminal disease.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 121
  },
  {
   "id": "power-word-petrify",
@@ -9544,7 +9640,8 @@
   "spellResistance": "Yes",
   "summary": "Slays subject and creates 20-ft.-radius explosion that deals 1d6 damage/level (max 20d6).",
   "description": "Slays subject and creates 20-ft.-radius explosion that deals 1d6 damage/level (max 20d6).\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 109
  },
  {
   "id": "dimension-jumper-greater",
@@ -9581,7 +9678,8 @@
   "duration": "1 round/level (D)",
   "summary": "You take on the form and abilities of a Huge red dragon.",
   "description": "You take on the form and abilities of a Huge red dragon.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 111
  },
  {
   "id": "frostfell",
@@ -9875,7 +9973,8 @@
   "spellResistance": "No",
   "summary": "Summon a clay, flesh, iron, or stone golem from a small amount of like material.",
   "description": "Summon a clay, flesh, iron, or stone golem from a small amount of like material.\n\nSummary only. Full text: Player's Handbook II.",
-  "source": "Player's Handbook II"
+  "source": "Player's Handbook II",
+  "page": 126
  },
  {
   "id": "towering-thunderhead",
