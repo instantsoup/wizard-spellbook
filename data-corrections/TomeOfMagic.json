@@ -1,0 +1,111 @@
+{
+ "source": "Tome of Magic",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "expunge-the-supernatural",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "XP"
+   ],
+   "pdfPage": 256
+  },
+  {
+   "id": "augment-truefriend",
+   "field": "page",
+   "value": 255
+  },
+  {
+   "id": "bane-of-the-archrival",
+   "field": "page",
+   "value": 255
+  },
+  {
+   "id": "beckon-person",
+   "field": "page",
+   "value": 255
+  },
+  {
+   "id": "beckon-monster",
+   "field": "page",
+   "value": 256
+  },
+  {
+   "id": "bulwark-of-reality",
+   "field": "page",
+   "value": 256
+  },
+  {
+   "id": "expunge-the-supernatural",
+   "field": "page",
+   "value": 256
+  },
+  {
+   "id": "hidden-truename",
+   "field": "page",
+   "value": 256
+  },
+  {
+   "id": "horror-of-the-spoken-name",
+   "field": "page",
+   "value": 257
+  },
+  {
+   "id": "ritual-of-renaming",
+   "field": "page",
+   "value": 257
+  },
+  {
+   "id": "scramble-true-position",
+   "field": "page",
+   "value": 258
+  },
+  {
+   "id": "spurn-the-supernatural",
+   "field": "page",
+   "value": 258
+  },
+  {
+   "id": "truename-binding",
+   "field": "page",
+   "value": 259
+  },
+  {
+   "id": "truename-binding-lesser",
+   "field": "page",
+   "value": 259
+  },
+  {
+   "id": "truename-binding-greater",
+   "field": "page",
+   "value": 260
+  },
+  {
+   "id": "truename-dispel",
+   "field": "page",
+   "value": 260
+  },
+  {
+   "id": "unname",
+   "field": "page",
+   "value": 260
+  },
+  {
+   "id": "warp-truename",
+   "field": "page",
+   "value": 261
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "Spell section: Truename Spells, book pp. 253-261; PDF page = book page.",
+  "The Sorcerer/Wizard list (pp. 254-255) has exactly the 17 app spells.",
+  "Every one of these spells has the Truename component (T) on its Components line, which the app's component set can't show. Expunge the Supernatural prints V, S, T, XP (XP cost 500 XP).",
+  "Not sor/wiz, so not added: True Banishment (Cleric 8), True Prayer of the Chosen (Cleric 4, paladin 3), True Prayer of the Faithful (Cleric 2, paladin 2), Word of Genesis (cleric list only).",
+  "Ritual of Renaming target prints 'a Intelligence score' (book typo; app matches the book)."
+ ]
+}

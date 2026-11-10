@@ -1,0 +1,136 @@
+{
+ "source": "Complete Mage",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "deaths-call",
+   "field": "range",
+   "value": "10 ft.",
+   "pdfPage": 101
+  },
+  {
+   "id": "resinous-tar",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 levels)",
+   "pdfPage": 115
+  },
+  {
+   "id": "resinous-tar",
+   "field": "targetLabel",
+   "value": "Area or Target",
+   "pdfPage": 115
+  },
+  {
+   "id": "phantasmal-strangler",
+   "field": "range",
+   "value": "Medium (100 ft. + 10 ft./level)",
+   "pdfPage": 113
+  },
+  {
+   "id": "resounding-thunder",
+   "field": "range",
+   "value": "Medium (100 ft. + 10 ft./level)",
+   "pdfPage": 115
+  },
+  {
+   "id": "vecnas-malevolent-whisper",
+   "field": "components",
+   "value": [
+    "V"
+   ],
+   "pdfPage": 122
+  },
+  {
+   "id": "lighting-leap",
+   "field": "range",
+   "value": "Personal and 60 ft.",
+   "pdfPage": 109
+  },
+  {
+   "id": "lighting-leap",
+   "field": "target",
+   "value": "You/10-to-60-ft. line",
+   "pdfPage": 109
+  },
+  {
+   "id": "lighting-leap",
+   "field": "targetLabel",
+   "value": "Target/Area",
+   "pdfPage": 109
+  },
+  {
+   "id": "lighting-leap",
+   "field": "area",
+   "value": null,
+   "pdfPage": 109
+  },
+  {
+   "id": "lash-of-force",
+   "field": "range",
+   "value": "10 ft. or 30 ft.; see text",
+   "pdfPage": 109
+  },
+  {
+   "id": "lash-of-force",
+   "field": "target",
+   "value": "One whip or 30-ft. line",
+   "pdfPage": 109
+  },
+  {
+   "id": "lash-of-force",
+   "field": "targetLabel",
+   "value": "Effect or Area",
+   "pdfPage": 109
+  },
+  {
+   "id": "lash-of-force",
+   "field": "area",
+   "value": null,
+   "pdfPage": 109
+  }
+ ],
+ "renames": [
+  {
+   "id": "karmick-backlash",
+   "name": "Karmic Backlash"
+  },
+  {
+   "id": "lighting-leap",
+   "name": "Lightning Leap"
+  },
+  {
+   "id": "otilukes-impressing-field",
+   "name": "Otiluke's Suppressing Field"
+  }
+ ],
+ "additions": [
+  {
+   "name": "Rary's Arcane Conversion",
+   "school": "Universal",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 full round",
+   "range": "Personal",
+   "target": "You",
+   "duration": "Instantaneous",
+   "summary": "Instantly lose a prepared wizard spell and replace it with another spell from your spellbook.",
+   "page": 114
+  }
+ ],
+ "removals": [],
+ "notes": [
+  "Book page = PDF page index - 1 (e.g. PDF 97 shows printed page 96).",
+  "Rary's Arcane Conversion: Level line is 'Wizard 6' (wizard only, no sorcerer); added at level 6. Book has no Saving Throw / Spell Resistance lines.",
+  "Lightning Leap and Lash of Force: app stored the combined-label value in 'area'; moved to 'target' with targetLabel per the field rules ('area' update value null = clear the field).",
+  "Otiluke's Suppressing Field: app name 'Impressing' is an OCR misread; spell header and chapter spell list both read 'Suppressing'.",
+  "Genius Loci school line is printed 'Conjuration (Creation) [see text]'; app descriptors [] left as is (the bracket is a placeholder, not a real descriptor).",
+  "Book prints non-subschool words in parentheses on some school lines: Crystalline Memories 'Transmutation (Mind-Affecting)', Channeled Sound Blast 'Evocation (Sonic)', Unicorn Blood/Heart/Horn 'Transmutation (Good)'. App stores these as subschool exactly as printed; left unchanged (they are arguably descriptors).",
+  "Bigby's Slapping Hand is not in the spell chapter; it appears in a sidebar on book page 144 (PDF 145). Stats match the app.",
+  "Sor/Wiz-ineligible spells skipped: Arcane Fusion and Arcane Fusion, Greater (Level: Sorcerer 5 / Sorcerer 8, sorcerer only). Critical Strike is Assassin 1 only.",
+  "Functions-like spells (Attentive Alarm, Escalating Enfeeblement, Incendiary Slime, Karmic Backlash, Karmic Retribution, Dimension Jumper Greater, Mordenkainen's Trusted Bloodhound, Seed of Undeath Greater) print only some stat lines; unprinted fields left as in app."
+ ]
+}

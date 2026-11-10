@@ -1,0 +1,50 @@
+{
+ "source": "Cityscape",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "detect-weaponry",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "false-peacebond",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "leomunds-spacious-carriage",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "peacebond",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "secret-weapon",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "summon-pest-swarm",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "zone-of-peace",
+   "field": "page",
+   "value": 68
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "Spell section: New Spells, book pp. 65-68 (lists p. 65, descriptions pp. 66-68); PDF page = book page.",
+  "The Sorcerer/Wizard list has exactly the 7 app spells, and every stat line matches.",
+  "False Peacebond and Zone of Peace work like peacebond and print only some stat lines; the omitted ones were left alone.",
+  "Impeding Stones is druid/ranger only, so it was not added."
+ ]
+}

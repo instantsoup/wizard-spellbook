@@ -86,7 +86,8 @@
   "spellResistance": "Yes",
   "summary": "Force a humanoid to approach you against its will.",
   "description": "Force a humanoid to approach you against its will.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 255
  },
  {
   "id": "bulwark-of-reality",
@@ -107,7 +108,8 @@
   "duration": "1 minute/level (D)",
   "summary": "Bonus to AC equal to half your level (+5 minimum).",
   "description": "Bonus to AC equal to half your level (+5 minimum).\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 256
  },
  {
   "id": "burning-rage",
@@ -184,7 +186,7 @@
    "V"
   ],
   "castingTime": "1 standard action",
-  "range": "10 ft.557",
+  "range": "10 ft",
   "area": "10-ft.-radius burst, centered on you",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude partial",
@@ -211,7 +213,8 @@
   "spellResistance": "No",
   "summary": "Detect dragons and dragonblooded creatures within 60 ft.",
   "description": "Detect dragons and dragonblooded creatures within 60 ft.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 65
  },
  {
   "id": "detect-incarnum",
@@ -252,7 +255,8 @@
   "spellResistance": "No",
   "summary": "Reveals weapons within 60 feet.",
   "description": "Reveals weapons within 60 feet.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 66
  },
  {
   "id": "discern-bloodline",
@@ -375,7 +379,8 @@
   "duration": "1 hour/level",
   "summary": "Gain a second stomach to store objects in, similar to a bag of holding.",
   "description": "Gain a second stomach to store objects in, similar to a bag of holding.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 68
  },
  {
   "id": "instant-diversion",
@@ -559,7 +564,8 @@
   "spellResistance": "No",
   "summary": "Create a frozen path on the ground that slows movement and deals cold damage.",
   "description": "Create a frozen path on the ground that slows movement and deals cold damage.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 71
  },
  {
   "id": "peacebond",
@@ -580,7 +586,8 @@
   "spellResistance": "Yes (object)",
   "summary": "Weapon is impossible to draw.",
   "description": "Weapon is impossible to draw.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 67
  },
  {
   "id": "persistent-blade",
@@ -771,14 +778,15 @@
    "M"
   ],
   "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels) Area or",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
   "target": "One object or 10-ft. square",
   "duration": "1 round/level (D)",
   "savingThrow": "See text",
   "spellResistance": "No",
   "summary": "Sticky substance slows movement or renders object difficult to drop.",
   "description": "Sticky substance slows movement or renders object difficult to drop.\n\nSummary only. Full text: Complete Mage.",
-  "source": "Complete Mage"
+  "source": "Complete Mage",
+  "targetLabel": "Area or Target"
  },
  {
   "id": "resist-planar-alignment",
@@ -821,7 +829,8 @@
   "spellResistance": "No",
   "summary": "Cloud of rotting debris sickens or nauseates one creature, provides concealment for others.",
   "description": "Cloud of rotting debris sickens or nauseates one creature, provides concealment for others.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 72
  },
  {
   "id": "scatterspray",
@@ -882,7 +891,8 @@
   "spellResistance": "Yes",
   "summary": "You teleport your foes 10 feet in a random direction, knocking them over.",
   "description": "You teleport your foes 10 feet in a random direction, knocking them over.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 258
  },
  {
   "id": "secret-weapon",
@@ -904,7 +914,8 @@
   "spellResistance": "Yes (harmless, object)",
   "summary": "Makes hidden weapon almost impossible to detect.",
   "description": "Makes hidden weapon almost impossible to detect.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 67
  },
  {
   "id": "serene-visage",
@@ -1326,7 +1337,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +2 to Str, Dex, and Con for 1 min./level.",
   "description": "Subject gains +2 to Str, Dex, and Con for 1 min./level.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 255
  },
  {
   "id": "bigbys-slapping-hand",
@@ -1394,6 +1406,27 @@
   "summary": "Subject damages self with melee attack.",
   "description": "Subject damages self with melee attack.\n\nSummary only. Full text: Player's Handbook II.",
   "source": "Player's Handbook II"
+ },
+ {
+  "id": "blindsight",
+  "name": "Blindsight",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Touched creature gains blindsight out to 30 feet.",
+  "description": "Touched creature gains blindsight out to 30 feet.\n\nSummary only. Full text: Savage Species, p. 63.",
+  "source": "Savage Species",
+  "page": 63
  },
  {
   "id": "boiling-blood",
@@ -1528,6 +1561,27 @@
   "page": 47
  },
  {
+  "id": "cloud-wings",
+  "name": "Cloud Wings",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject's existing fly speed increases by 30 feet.",
+  "description": "Subject's existing fly speed increases by 30 feet.\n\nSummary only. Full text: Savage Species, p. 64.",
+  "source": "Savage Species",
+  "page": 64
+ },
+ {
   "id": "crystalline-memories",
   "name": "Crystalline Memories",
   "school": "Transmutation",
@@ -1585,7 +1639,8 @@
   "spellResistance": "No",
   "summary": "Create an invisible draconic mark on an object or creature.",
   "description": "Create an invisible draconic mark on an object or creature.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 66
  },
  {
   "id": "electric-vengeance",
@@ -1648,7 +1703,8 @@
   "target": "One weapon",
   "duration": "10 min./level (D)",
   "savingThrow": "Will negates (object)",
-  "spellResistance": "Yes (object)"
+  "spellResistance": "Yes (object)",
+  "page": 66
  },
  {
   "id": "frost-weapon",
@@ -1757,7 +1813,8 @@
   "spellResistance": "Yes",
   "summary": "Frighten creature that hears its own truename.",
   "description": "Frighten creature that hears its own truename.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 257
  },
  {
   "id": "ice-darts",
@@ -1936,6 +1993,28 @@
   "summary": "Creates igloo that lasts for 2 hours/level.",
   "description": "Creates igloo that lasts for 2 hours/level.\n\nSummary only. Full text: Frostburn.",
   "source": "Frostburn"
+ },
+ {
+  "id": "lions-charge",
+  "name": "Lion's Charge",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject can make a full attack at the end of a charge.",
+  "description": "Subject can make a full attack at the end of a charge.\n\nSummary only. Full text: Savage Species, p. 68.",
+  "source": "Savage Species",
+  "page": 68
  },
  {
   "id": "listening-lorecall",
@@ -2180,6 +2259,28 @@
   "description": "Ray dazzles and deals 1d12 damage/3 levels of random type.\n\nSummary only. Full text: Spell Compendium, p. 165.",
   "source": "Spell Compendium",
   "page": 165
+ },
+ {
+  "id": "rapid-burrowing",
+  "name": "Rapid Burrowing",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject's existing burrow speed increases by 20 feet.",
+  "description": "Subject's existing burrow speed increases by 20 feet.\n\nSummary only. Full text: Savage Species, p. 69.",
+  "source": "Savage Species",
+  "page": 69
  },
  {
   "id": "ray-of-ice",
@@ -2530,7 +2631,8 @@
   "duration": "1 hour",
   "summary": "Gain +5 on Escape Artist checks and grapple checks to avoid being grappled, your natural weapons are chaotic-aligned, and you are treated as being chaotic-aligned for adjudicating effects.",
   "description": "Gain +5 on Escape Artist checks and grapple checks to avoid being grappled, your natural weapons are chaotic-aligned, and you are treated as being chaotic-aligned for adjudicating effects.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 72
  },
  {
   "id": "soul-of-order",
@@ -2550,7 +2652,8 @@
   "duration": "1 hour",
   "summary": "Gain +2 on Will saves to resist enchantments, your natural weapons are lawful-aligned, and you are treated as being lawful-aligned for adjudicating effects.",
   "description": "Gain +2 on Will saves to resist enchantments, your natural weapons are lawful-aligned, and you are treated as being lawful-aligned for adjudicating effects.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 73
  },
  {
   "id": "steal-size",
@@ -2750,6 +2853,29 @@
   "source": "Draconomicon"
  },
  {
+  "id": "wither-limb",
+  "name": "Wither Limb",
+  "school": "Necromancy",
+  "descriptors": [
+   "Evil"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One humanoid creature with limbs",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Caster reduces subject's speed to 5 ft. or makes it impossible for subject to use objects or cast somatic spells.",
+  "description": "Caster reduces subject's speed to 5 ft. or makes it impossible for subject to use objects or cast somatic spells.\n\nSummary only. Full text: Book of Vile Darkness, p. 110.",
+  "source": "Book of Vile Darkness",
+  "page": 110
+ },
+ {
   "id": "zone-of-glacial-cold",
   "name": "Zone of Glacial Cold",
   "school": "Conjuration",
@@ -2809,13 +2935,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "60 ft.",
-  "area": "60-ft. radius emanation centered on you",
+  "area": "60-ft. radius emanation, centered on you",
   "duration": "1 minute/level",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Make fearful creatures friendly to you.",
   "description": "Make fearful creatures friendly to you.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 64
  },
  {
   "id": "alter-fortune",
@@ -2897,7 +3024,8 @@
   "spellResistance": "No; see text",
   "summary": "+4 to AC and saves, counter mind control, and keep specific truenamed enemy away.",
   "description": "+4 to AC and saves, counter mind control, and keep specific truenamed enemy away.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 255
  },
  {
   "id": "bigbys-disrupting-hand",
@@ -3235,7 +3363,8 @@
   "duration": "1 round/level or until expended",
   "summary": "Gain bonus on melee damage rolls and one use of true strike.",
   "description": "Gain bonus on melee damage rolls and one use of true strike.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 67
  },
  {
   "id": "ghost-lantern",
@@ -3376,7 +3505,7 @@
  },
  {
   "id": "karmick-backlash",
-  "name": "Karmick Backlash",
+  "name": "Karmic Backlash",
   "school": "Abjuration",
   "descriptors": [],
   "level": 3,
@@ -3392,6 +3521,29 @@
   "duration": "1 round/level",
   "savingThrow": "Will partial",
   "spellResistance": "Yes"
+ },
+ {
+  "id": "laogzeds-breath",
+  "name": "Laogzed's Breath",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "Cone",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "No",
+  "summary": "Breathe a cone of nauseating vapor that hangs in the air for 10 rounds.",
+  "description": "Breathe a cone of nauseating vapor that hangs in the air for 10 rounds.\n\nSummary only. Full text: Savage Species, p. 68.",
+  "source": "Savage Species",
+  "page": 68
  },
  {
   "id": "least-dragonshape",
@@ -3410,7 +3562,8 @@
   "duration": "1 round/level (D)",
   "summary": "Take the form of a pseudodragon.",
   "description": "Take the form of a pseudodragon.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 66
  },
  {
   "id": "light-of-venya",
@@ -3547,7 +3700,7 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "Medium (100ft. + 10 ft./level)",
+  "range": "Medium (100 ft. + 10 ft./level)",
   "target": "One living creature",
   "duration": "5 rounds",
   "savingThrow": "Will disbelief",
@@ -4400,7 +4553,8 @@
   "duration": "1 minute/level",
   "summary": "Gain +10 bonus on Spot checks, immunity to being dazzled or blinded, and one use of faerie fire.",
   "description": "Gain +10 bonus on Spot checks, immunity to being dazzled or blinded, and one use of faerie fire.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 74
  },
  {
   "id": "walk-the-mountains-path",
@@ -4451,7 +4605,9 @@
   "id": "wingblast",
   "name": "Wingblast",
   "school": "Evocation",
-  "descriptors": [],
+  "descriptors": [
+   "Air"
+  ],
   "level": 3,
   "components": [
    "V",
@@ -4465,7 +4621,8 @@
   "spellResistance": "No or Yes; see text",
   "summary": "Create wings that can transform into a gust of wind or obscuring mist.",
   "description": "Create wings that can transform into a gust of wind or obscuring mist.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 74
  },
  {
   "id": "wreath-of-flames",
@@ -4485,7 +4642,8 @@
   "duration": "1 round/level",
   "summary": "Flames around you deal 1d6 damage to adjacent foes; your melee attacks deal +1d6 fire damage.",
   "description": "Flames around you deal 1d6 damage to adjacent foes; your melee attacks deal +1d6 fire damage.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 75
  },
  {
   "id": "aspect-of-the-icy-hunter",
@@ -4546,7 +4704,8 @@
   "spellResistance": "Yes",
   "summary": "Force a creature to approach you against its will.",
   "description": "Force a creature to approach you against its will.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 256
  },
  {
   "id": "bleakness",
@@ -4717,7 +4876,32 @@
   "spellResistance": "Yes",
   "summary": "Bestow a curse on enemies, making them more susceptible to your energy damage.",
   "description": "Bestow a curse on enemies, making them more susceptible to your energy damage.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 65
+ },
+ {
+  "id": "damning-darkness",
+  "name": "Damning Darkness",
+  "school": "Evocation",
+  "descriptors": [
+   "Darkness",
+   "Evil"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "M"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Object touched",
+  "duration": "10 minutes/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Darkness deals either 2d6 or 1d6 damage per round.",
+  "description": "Darkness deals either 2d6 or 1d6 damage per round.\n\nSummary only. Full text: Book of Vile Darkness, p. 89.",
+  "source": "Book of Vile Darkness",
+  "page": 89
  },
  {
   "id": "essentia-lock",
@@ -4803,7 +4987,8 @@
   "spellResistance": "Yes",
   "summary": "Deal 8d6 points of fire damage in 30-ft. cone, and teleport anywhere within the area.",
   "description": "Deal 8d6 points of fire damage in 30-ft. cone, and teleport anywhere within the area.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 67
  },
  {
   "id": "flame-whips",
@@ -4998,6 +5183,27 @@
   "source": "Frostburn"
  },
  {
+  "id": "improved-blindsight",
+  "name": "Improved Blindsight",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "As blindsight, but the blindsight granted reaches 60 feet.",
+  "description": "As blindsight, but the blindsight granted reaches 60 feet.\n\nSummary only. Full text: Savage Species, p. 67.",
+  "source": "Savage Species",
+  "page": 67
+ },
+ {
   "id": "incendiary-surge",
   "name": "Incendiary Surge",
   "school": "Evocation",
@@ -5039,7 +5245,8 @@
   "spellResistance": "No",
   "summary": "Summons carriage and horses to pull it.",
   "description": "Summons carriage and horses to pull it.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 66
  },
  {
   "id": "lower-spell-resistance",
@@ -5079,7 +5286,8 @@
   "duration": "3 rounds or until ended",
   "summary": "Spells gain the good descriptor and deal extra damage to evil creatures.",
   "description": "Spells gain the good descriptor and deal extra damage to evil creatures.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 70
  },
  {
   "id": "melfs-slumber-arrows",
@@ -5190,7 +5398,7 @@
  },
  {
   "id": "otilukes-impressing-field",
-  "name": "Otiluke's Impressing Field",
+  "name": "Otiluke's Suppressing Field",
   "school": "Abjuration",
   "descriptors": [],
   "level": 4,
@@ -5226,7 +5434,8 @@
   "duration": "1 minute/level (D) or until expended",
   "summary": "Become a swirling sand cloud; gain one use of gust of wind.",
   "description": "Become a swirling sand cloud; gain one use of gust of wind.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 70
  },
  {
   "id": "perinarch",
@@ -5617,7 +5826,8 @@
   "spellResistance": "No",
   "summary": "Summons swarm of urban animals and vermin.",
   "description": "Summons swarm of urban animals and vermin.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 67
  },
  {
   "id": "summon-undead-iv",
@@ -5684,7 +5894,8 @@
   "duration": "3 rounds or until ended",
   "summary": "Spells gain the evil descriptor and deal extra damage to good creatures.",
   "description": "Spells gain the evil descriptor and deal extra damage to good creatures.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 73
  },
  {
   "id": "touch-of-years",
@@ -5727,7 +5938,8 @@
   "spellResistance": "Yes",
   "summary": "Fascinate a single foe for 3 rounds, and make target vulnerable to your mind-affecting abilities.",
   "description": "Fascinate a single foe for 3 rounds, and make target vulnerable to your mind-affecting abilities.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 74
  },
  {
   "id": "translocation-trick",
@@ -5860,7 +6072,9 @@
    "Mind-Affecting"
   ],
   "level": 4,
-  "components": [],
+  "components": [
+   "V"
+  ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "target": "One living creature that has 10 hit points or fewer",
@@ -6042,7 +6256,8 @@
   "spellResistance": "Yes",
   "summary": "Gives foe a temporary form that's grotesque and useless.",
   "description": "Gives foe a temporary form that's grotesque and useless.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 261
  },
  {
   "id": "blink-improved",
@@ -6456,7 +6671,9 @@
   "duration": "1 round/level (D)",
   "summary": "Take the form of a dragonne.",
   "description": "Take the form of a dragonne.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "subschool": "Polymorph",
+  "page": 67
  },
  {
   "id": "form-of-the-threefold-beast",
@@ -6598,7 +6815,7 @@
  },
  {
   "id": "lighting-leap",
-  "name": "Lighting Leap",
+  "name": "Lightning Leap",
   "school": "Transmutation",
   "descriptors": [
    "Electricity"
@@ -6608,14 +6825,15 @@
    "V"
   ],
   "castingTime": "1 standard action",
-  "range": "Personal and 60 ft. Target/",
-  "area": "You/10-to-60-ft. line",
+  "range": "Personal and 60 ft",
   "duration": "Instantaneous",
   "savingThrow": "None and Reflex half",
   "spellResistance": "No and Yes",
   "summary": "Transform into bolt of lightning, damaging foes and transporting yourself.",
   "description": "Transform into bolt of lightning, damaging foes and transporting yourself.\n\nSummary only. Full text: Complete Mage.",
-  "source": "Complete Mage"
+  "source": "Complete Mage",
+  "target": "You/10-to-60-ft. line",
+  "targetLabel": "Target/Area"
  },
  {
   "id": "lord-of-the-sky",
@@ -6635,7 +6853,8 @@
   "duration": "1 minute/level",
   "summary": "Gain flight and one use of lightning bolt; slow airborne creatures.",
   "description": "Gain flight and one use of lightning bolt; slow airborne creatures.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 69
  },
  {
   "id": "luminous-assassin",
@@ -6760,7 +6979,7 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "Medium (100ft. + 10 ft./level)",
+  "range": "Medium (100 ft. + 10 ft./level)",
   "area": "20-ft.-radius spread",
   "duration": "5 rounds (D)",
   "savingThrow": "Fortitude partial",
@@ -6967,7 +7186,8 @@
   "spellResistance": "Yes",
   "summary": "Suppresses one or more of a foe's supernatural abilities.",
   "description": "Suppresses one or more of a foe's supernatural abilities.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 258
  },
  {
   "id": "summon-undead-v",
@@ -7088,7 +7308,8 @@
   "spellResistance": "No and yes; see lesser planar binding text",
   "summary": "Enslaves extraplanar creature of CR 6 or less with the power of its truename.",
   "description": "Enslaves extraplanar creature of CR 6 or less with the power of its truename.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 259
  },
  {
   "id": "unicorn-blood",
@@ -7187,7 +7408,8 @@
   "area": "10-ft./level emanation",
   "summary": "As peacebond, but affects all weapons in area.",
   "description": "As peacebond, but affects all weapons in area.\n\nSummary only. Full text: Cityscape.",
-  "source": "Cityscape"
+  "source": "Cityscape",
+  "page": 68
  },
  {
   "id": "call-of-the-twilight-defender",
@@ -7207,7 +7429,8 @@
   "spellResistance": "No",
   "summary": "Summon a twilight guardian to fight for you.",
   "description": "Summon a twilight guardian to fight for you.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 65
  },
  {
   "id": "chasing-perfection",
@@ -7339,7 +7562,8 @@
   "duration": "1 round/level or until expended",
   "summary": "Gain +2 bonus to AC and on Reflex saves; ready one extra action.",
   "description": "Gain +2 bonus to AC and on Reflex saves; ready one extra action.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 66
  },
  {
   "id": "familiar-refuge",
@@ -7425,7 +7649,8 @@
   "spellResistance": "Yes",
   "summary": "Volcanic stones deal 4d6 bludgeoning and 8d6 fire damage in a 60-foot cone.",
   "description": "Volcanic stones deal 4d6 bludgeoning and 8d6 fire damage in a 60-foot cone.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 68
  },
  {
   "id": "heartfreeze",
@@ -7468,7 +7693,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Subject's personal truename is hard to discover through research.",
   "description": "Subject's personal truename is hard to discover through research.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 256
  },
  {
   "id": "ice-rift",
@@ -7529,7 +7755,8 @@
   "duration": "1 round/level (D)",
   "summary": "Take the form of a Large red dragon.",
   "description": "Take the form of a Large red dragon.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 66
  },
  {
   "id": "lingering-flames",
@@ -7687,6 +7914,25 @@
   "summary": "Shield of colors offers concealment and damages your attackers.",
   "description": "Shield of colors offers concealment and damages your attackers.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "rarys-arcane-conversion",
+  "name": "Rary's Arcane Conversion",
+  "school": "Universal",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 full round",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "summary": "Instantly lose a prepared wizard spell and replace it with another spell from your spellbook.",
+  "description": "Instantly lose a prepared wizard spell and replace it with another spell from your spellbook.\n\nSummary only. Full text: Complete Mage, p. 114.",
+  "source": "Complete Mage",
+  "page": 114
  },
  {
   "id": "ray-of-entropy",
@@ -8152,7 +8398,8 @@
   "duration": "1 round/level",
   "summary": "Reduce the casting time of your arcane spells.",
   "description": "Reduce the casting time of your arcane spells.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 64
  },
  {
   "id": "as-the-frost",
@@ -8302,7 +8549,8 @@
   "spellResistance": "Yes",
   "summary": "Channel acid, cold, electricity, or fire damage into ranged touch attacks.",
   "description": "Channel acid, cold, electricity, or fire damage into ranged touch attacks.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 67
  },
  {
   "id": "greater-stunning-breath",
@@ -8381,7 +8629,8 @@
   "duration": "5 rounds",
   "summary": "Create a field of arcane force that deals 4d6 damage to melee attackers.",
   "description": "Create a field of arcane force that deals 4d6 damage to melee attackers.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 68
  },
  {
   "id": "kiss-of-draconic-defiance",
@@ -8401,7 +8650,8 @@
   "spellResistance": "Yes; see text",
   "summary": "Hinder nearby spellcasters; counter one spell automatically.",
   "description": "Hinder nearby spellcasters; counter one spell automatically.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 69
  },
  {
   "id": "luminous-assassin-greater",
@@ -8696,7 +8946,8 @@
   "spellResistance": "No and yes; see lesser planar binding text",
   "summary": "Enslaves extraplanar creature of CR 10 or less with the power of its truename.",
   "description": "Enslaves extraplanar creature of CR 10 or less with the power of its truename.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 259
  },
  {
   "id": "unicorn-heart",
@@ -8809,7 +9060,8 @@
   "level": 8,
   "components": [
    "V",
-   "S"
+   "S",
+   "XP"
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
@@ -8819,7 +9071,8 @@
   "spellResistance": "Yes",
   "summary": "Permanently eliminates a foe's supernatural ability.",
   "description": "Permanently eliminates a foe's supernatural ability.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 256
  },
  {
   "id": "familial-geas",
@@ -8909,7 +9162,8 @@
   "duration": "1 hour/level or until expended",
   "summary": "Confuse enemies who try to affect your mind; dominate one such attacker.",
   "description": "Confuse enemies who try to affect your mind; dominate one such attacker.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 70
  },
  {
   "id": "mysterious-redirection",
@@ -9034,7 +9288,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "You give a creature a new personal truename, expunging the old one.",
   "description": "You give a creature a new personal truename, expunging the old one.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 257
  },
  {
   "id": "sever-legacy",
@@ -9162,7 +9417,8 @@
   "spellResistance": "No",
   "summary": "Cancels spells and magical effects on a creature whose personal truename you know.",
   "description": "Cancels spells and magical effects on a creature whose personal truename you know.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 260
  },
  {
   "id": "unyielding-form-of-inevitable-death",
@@ -9228,7 +9484,8 @@
   "spellResistance": "Yes",
   "summary": "Freeze nearby creatures, turning them into solid blocks of ice.",
   "description": "Freeze nearby creatures, turning them into solid blocks of ice.\n\nSummary only. Full text: Dragon Magic.",
-  "source": "Dragon Magic"
+  "source": "Dragon Magic",
+  "page": 64
  },
  {
   "id": "deadly-sunstroke",
@@ -9429,14 +9686,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "10 ft. or 30 ft.; see text Effect or",
-  "area": "One whip or 30-ft. line",
+  "range": "10 ft. or 30 ft.; see text",
   "duration": "1 round/level or until exhausted",
   "savingThrow": "None or Reflex partial",
   "spellResistance": "Yes",
   "summary": "Whip of force strikes for 5d6 damage; can become a 15d6 line attack.",
   "description": "Whip of force strikes for 5d6 damage; can become a 15d6 line attack.\n\nSummary only. Full text: Complete Mage.",
-  "source": "Complete Mage"
+  "source": "Complete Mage",
+  "target": "One whip or 30-ft. line",
+  "targetLabel": "Effect or Area"
  },
  {
   "id": "obedient-avalanche",
@@ -9662,7 +9920,8 @@
   "spellResistance": "No and yes; see lesser planar binding text",
   "summary": "Enslaves extraplanar creature of CR 14 or less with the power of its truename.",
   "description": "Enslaves extraplanar creature of CR 14 or less with the power of its truename.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 260
  },
  {
   "id": "undermaster",
@@ -9703,6 +9962,7 @@
   "spellResistance": "Yes",
   "summary": "Erase a creature from reality.",
   "description": "Erase a creature from reality.\n\nSummary only. Full text: Tome of Magic.",
-  "source": "Tome of Magic"
+  "source": "Tome of Magic",
+  "page": 260
  }
 ]

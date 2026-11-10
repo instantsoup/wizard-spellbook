@@ -1,0 +1,225 @@
+{
+ "source": "Complete Scoundrel",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "armor-lock",
+   "field": "target",
+   "value": "One creature wearing armor",
+   "pdfPage": 95
+  },
+  {
+   "id": "blockade",
+   "field": "effect",
+   "value": "5-ft. cube of wood",
+   "pdfPage": 95
+  },
+  {
+   "id": "blockade",
+   "field": "savingThrow",
+   "value": "No",
+   "pdfPage": 95
+  },
+  {
+   "id": "blockade",
+   "field": "spellResistance",
+   "value": "None",
+   "pdfPage": 95
+  },
+  {
+   "id": "mage-burr",
+   "field": "target",
+   "value": "One creature wearing armor or using a shield",
+   "pdfPage": 101
+  },
+  {
+   "id": "catapult",
+   "field": "target",
+   "value": "One held object, weighing up to 5 lb.",
+   "pdfPage": 95
+  },
+  {
+   "id": "catapult",
+   "field": "savingThrow",
+   "value": "No",
+   "pdfPage": 95
+  },
+  {
+   "id": "catapult",
+   "field": "spellResistance",
+   "value": "None",
+   "pdfPage": 95
+  },
+  {
+   "id": "enlarge-weapon",
+   "field": "target",
+   "value": "One touched melee weapon",
+   "pdfPage": 97
+  },
+  {
+   "id": "fatal-flame",
+   "field": "target",
+   "value": "One living creature with 1 or more HD",
+   "pdfPage": 99
+  },
+  {
+   "id": "fatal-flame",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 99
+  },
+  {
+   "id": "fatal-flame",
+   "field": "savingThrow",
+   "value": "Will negates, Reflex half; see text",
+   "pdfPage": 99
+  },
+  {
+   "id": "lucky-streak",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 100
+  },
+  {
+   "id": "lucky-streak",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 100
+  },
+  {
+   "id": "spymasters-coin",
+   "field": "effect",
+   "value": "Magical sensor",
+   "pdfPage": 104
+  },
+  {
+   "id": "spymasters-coin",
+   "field": "duration",
+   "value": "1 hour/level or until triggered, then 1 round/level",
+   "pdfPage": 104
+  },
+  {
+   "id": "disobedience",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 97
+  },
+  {
+   "id": "grasping-wall",
+   "field": "effect",
+   "value": "Hands sprout from a wall in an area of up to four 5-ft. squares (S)",
+   "pdfPage": 99
+  },
+  {
+   "id": "grasping-wall",
+   "field": "duration",
+   "value": "Concentration (max. 1 round/level) + 3 rounds",
+   "pdfPage": 99
+  },
+  {
+   "id": "siphon",
+   "field": "target",
+   "value": "One touched wand or staff",
+   "pdfPage": 102
+  },
+  {
+   "id": "wand-modulation",
+   "field": "components",
+   "value": [
+    "V",
+    "S"
+   ],
+   "pdfPage": 105
+  },
+  {
+   "id": "wand-modulation",
+   "field": "range",
+   "value": "Touch",
+   "pdfPage": 105
+  },
+  {
+   "id": "wand-modulation",
+   "field": "target",
+   "value": "One touched wand",
+   "pdfPage": 105
+  },
+  {
+   "id": "wand-modulation",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 105
+  },
+  {
+   "id": "wand-modulation",
+   "field": "savingThrow",
+   "value": "Yes (harmless, object)",
+   "pdfPage": 105
+  },
+  {
+   "id": "create-fetch",
+   "field": "effect",
+   "value": "A duplicate of yourself",
+   "pdfPage": 96
+  },
+  {
+   "id": "create-fetch",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 96
+  },
+  {
+   "id": "evacuation-rune",
+   "field": "effect",
+   "value": "One invisible rune",
+   "pdfPage": 98
+  },
+  {
+   "id": "evacuation-rune",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 98
+  },
+  {
+   "id": "spell-theft",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 104
+  },
+  {
+   "id": "spell-theft",
+   "field": "summary",
+   "value": "Dispel spells on target and gain their benefit for yourself.",
+   "pdfPage": 94
+  },
+  {
+   "id": "scry-location",
+   "field": "effect",
+   "value": "Magical sensor",
+   "pdfPage": 102
+  },
+  {
+   "id": "scry-location",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 102
+  },
+  {
+   "id": "scry-location",
+   "field": "savingThrow",
+   "value": "No",
+   "pdfPage": 102
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "PDF page index = book page (offset 0). Stat lines checked against page images (pp. 95, 99, 102, 105); the text layer matches the printed page.",
+  "Blockade and Catapult really print 'Saving Throw: No' and 'Spell Resistance: None' (not swapped); Scry Location prints 'Saving Throw: No'. Recorded as printed.",
+  "Wand Modulation really prints 'Saving Throw: Yes (harmless, object)'.",
+  "Fatal Flame prints its school line as 'Evocation (Fire)', with Fire in parentheses. Fire is a descriptor, not a subschool, so the app's descriptors ['Fire'] were left as they are and no subschool was set.",
+  "Mage Burr's stat block runs from p. 100 onto p. 101 (Target and the following lines are on p. 101).",
+  "Spell Theft's summary had '[lf][lf]' glitch characters; it is replaced with the line from the Sor/Wiz spell list (p. 94).",
+  "All 16 sorcerer/wizard spells in the book (spell list p. 94) are in the app; none to add or remove. Levels and schools all match."
+ ]
+}

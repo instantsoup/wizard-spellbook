@@ -1,0 +1,191 @@
+{
+ "source": "Dragon Magic",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "adoration-of-the-frightful",
+   "field": "area",
+   "value": "60-ft. radius emanation, centered on you",
+   "pdfPage": 64
+  },
+  {
+   "id": "form-of-the-desert-hunter",
+   "field": "subschool",
+   "value": "Polymorph",
+   "pdfPage": 67
+  },
+  {
+   "id": "wingblast",
+   "field": "descriptors",
+   "value": [
+    "Air"
+   ],
+   "pdfPage": 74
+  },
+  {
+   "id": "adoration-of-the-frightful",
+   "field": "page",
+   "value": 64
+  },
+  {
+   "id": "arcane-spellsurge",
+   "field": "page",
+   "value": 64
+  },
+  {
+   "id": "burst-of-glacial-wrath",
+   "field": "page",
+   "value": 64
+  },
+  {
+   "id": "call-of-the-twilight-defender",
+   "field": "page",
+   "value": 65
+  },
+  {
+   "id": "curse-of-the-elemental-lords",
+   "field": "page",
+   "value": 65
+  },
+  {
+   "id": "detect-dragonblood",
+   "field": "page",
+   "value": 65
+  },
+  {
+   "id": "dragoneye-rune",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "least-dragonshape",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "lesser-dragonshape",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "eyes-of-the-oracle",
+   "field": "page",
+   "value": 66
+  },
+  {
+   "id": "ferocity-of-sanguine-rage",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "firestride-exhalation",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "form-of-the-desert-hunter",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "glorious-master-of-the-elements",
+   "field": "page",
+   "value": 67
+  },
+  {
+   "id": "haze-of-smoldering-stone",
+   "field": "page",
+   "value": 68
+  },
+  {
+   "id": "hoard-gullet",
+   "field": "page",
+   "value": 68
+  },
+  {
+   "id": "justice-of-the-wyrm-king",
+   "field": "page",
+   "value": 68
+  },
+  {
+   "id": "kiss-of-draconic-defiance",
+   "field": "page",
+   "value": 69
+  },
+  {
+   "id": "lord-of-the-sky",
+   "field": "page",
+   "value": 69
+  },
+  {
+   "id": "mark-of-the-enlightened-soul",
+   "field": "page",
+   "value": 70
+  },
+  {
+   "id": "mind-of-the-labyrinth",
+   "field": "page",
+   "value": 70
+  },
+  {
+   "id": "passage-of-the-shifting-sands",
+   "field": "page",
+   "value": 70
+  },
+  {
+   "id": "path-of-frost",
+   "field": "page",
+   "value": 71
+  },
+  {
+   "id": "rot-of-ages",
+   "field": "page",
+   "value": 72
+  },
+  {
+   "id": "soul-of-anarchy",
+   "field": "page",
+   "value": 72
+  },
+  {
+   "id": "soul-of-order",
+   "field": "page",
+   "value": 73
+  },
+  {
+   "id": "touch-of-the-blackened-soul",
+   "field": "page",
+   "value": 73
+  },
+  {
+   "id": "trance-of-the-verdant-domain",
+   "field": "page",
+   "value": 74
+  },
+  {
+   "id": "vision-of-the-omniscient-eye",
+   "field": "page",
+   "value": 74
+  },
+  {
+   "id": "wingblast",
+   "field": "page",
+   "value": 74
+  },
+  {
+   "id": "wreath-of-flames",
+   "field": "page",
+   "value": 75
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "Spell section: book pp. 60-75 (lists pp. 60-63, descriptions pp. 64-75); PDF page = book page.",
+  "The book's Sorcerer/Wizard list (pp. 62-63) has exactly the 31 app spells; all 31 have sorcerer/wizard on their Level line, so no removals.",
+  "Sorcerer-only spells (Level: Sorcerer N) not added: Magic of the Dragonheart (Sor 2), Primal Hunter (Sor 2), Primal Instinct (Sor 3), Primal Senses (Sor 4), Undying Vigor of the Dragonlords (Sor 5), Primal Speed (Sor 6), Aspect of the Platinum Dragon (Sor 7), Aspect of the Chromatic Dragon (Sor 8).",
+  "Dual-school spells (first school kept): Burst of Glacial Wrath Evocation/Transmutation; Ferocity of Sanguine Rage Transmutation/Divination; Firestride Exhalation Conjuration (Teleportation)/Evocation; Lord of the Sky Evocation/Transmutation; Passage of the Shifting Sands Transmutation/Evocation; Rot of Ages Conjuration (Creation)/Necromancy; Vision of the Omniscient Eye Divination/Evocation; Wingblast Evocation [Air]/Transmutation.",
+  "Glorious Master of the Elements prints 'Components: None' (app [] is correct)."
+ ]
+}

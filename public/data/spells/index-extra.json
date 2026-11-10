@@ -117,15 +117,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Prevents normal light from illuminating.",
   "description": "Prevents normal light from illuminating.\n\nSummary only. Full text: Book of Vile Darkness, p. 100.",
   "source": "Book of Vile Darkness",
-  "page": 100
+  "page": 100,
+  "area": "20-ft.-radius spread"
  },
  {
   "id": "preserve-organ",
@@ -140,13 +141,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes",
   "summary": "Protects one detached organ from decay for 24 hours.",
   "description": "Protects one detached organ from decay for 24 hours.\n\nSummary only. Full text: Book of Vile Darkness, p. 101.",
   "source": "Book of Vile Darkness",
-  "page": 101
+  "page": 101,
+  "effect": "One organ"
  },
  {
   "id": "repair-minor-damage",
@@ -180,7 +182,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round",
   "savingThrow": "Fortitude negates",
@@ -188,7 +190,8 @@
   "summary": "Subject takes -1 penalty on attacks, saves and checks for 1 round.",
   "description": "Subject takes -1 penalty on attacks, saves and checks for 1 round.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "One living creature with a tongue"
  },
  {
   "id": "unnerving-gaze",
@@ -201,7 +204,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round/level",
   "savingThrow": "Will negates",
@@ -209,7 +212,8 @@
   "summary": "Subject takes -1 penalty on attacks.",
   "description": "Subject takes -1 penalty on attacks.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
-  "page": 108
+  "page": 108,
+  "target": "One humanoid creature"
  },
  {
   "id": "aberrate",
@@ -223,15 +227,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "Subject becomes an aberration.",
   "description": "Subject becomes an aberration.\n\n_Special component:_ Fiend.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
   "source": "Book of Vile Darkness",
-  "page": 84
+  "page": 84,
+  "target": "One living creature"
  },
  {
   "id": "accelerated-movement",
@@ -289,7 +294,8 @@
   "summary": "Target's armor becomes restrictive, slowing movement to 10 ft.",
   "description": "Target's armor becomes restrictive, slowing movement to 10 ft.\n\nSummary only. Full text: Complete Scoundrel, p. 95.",
   "source": "Complete Scoundrel",
-  "page": 95
+  "page": 95,
+  "target": "One creature wearing armor"
  },
  {
   "id": "arrow-mind",
@@ -387,7 +393,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -395,7 +401,8 @@
   "summary": "Caster transfers 1 hp/level of wounds to another.",
   "description": "Caster transfers 1 hp/level of wounds to another.\n\nSummary only. Full text: Book of Vile Darkness, p. 85.",
   "source": "Book of Vile Darkness",
-  "page": 85
+  "page": 85,
+  "target": "Living creature touched"
  },
  {
   "id": "bigbys-tripping-hand",
@@ -434,15 +441,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates extradimensional bag of torture tools.",
   "description": "Creates extradimensional bag of torture tools.\n\nSummary only. Full text: Book of Vile Darkness, p. 86.",
   "source": "Book of Vile Darkness",
-  "page": 86
+  "page": 86,
+  "effect": "A black leather bag"
  },
  {
   "id": "blade-of-blood",
@@ -502,11 +510,13 @@
   "castingTime": "1 swift action",
   "range": "0 ft.",
   "duration": "3 rounds",
-  "spellResistance": "No",
+  "spellResistance": "None",
   "summary": "Fill 5-ft. square with enormous block of wood.",
   "description": "Fill 5-ft. square with enormous block of wood.\n\nSummary only. Full text: Complete Scoundrel, p. 95.",
   "source": "Complete Scoundrel",
-  "page": 95
+  "page": 95,
+  "effect": "5-ft. cube of wood",
+  "savingThrow": "No"
  },
  {
   "id": "blood-wind",
@@ -657,7 +667,7 @@
  },
  {
   "id": "darkliqht",
-  "name": "Darkliqht",
+  "name": "Darklight",
   "school": "Evocation",
   "descriptors": [
    "Darkness"
@@ -667,15 +677,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates 5-ft.-radius area where all can see without light.",
   "description": "Creates 5-ft.-radius area where all can see without light.\n\nSummary only. Full text: Book of Vile Darkness, p. 91.",
   "source": "Book of Vile Darkness",
-  "page": 91
+  "page": 91,
+  "target": "One creature or object touched"
  },
  {
   "id": "dead-end",
@@ -711,7 +722,7 @@
   "components": [
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "Permanent",
   "savingThrow": "None",
@@ -719,7 +730,8 @@
   "summary": "Caster leaves magical \"calling card\" on a corpse.",
   "description": "Caster leaves magical \"calling card\" on a corpse.\n\nSummary only. Full text: Book of Vile Darkness, p. 91.",
   "source": "Book of Vile Darkness",
-  "page": 91
+  "page": 91,
+  "target": "One corpse"
  },
  {
   "id": "deep-breath",
@@ -840,7 +852,7 @@
    "V",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "1 hour/level",
   "savingThrow": "Fortitude negates (harmless)",
@@ -848,7 +860,8 @@
   "summary": "Subject is immune to addiction.",
   "description": "Subject is immune to addiction.\n\nSummary only. Full text: Book of Vile Darkness, p. 93.",
   "source": "Book of Vile Darkness",
-  "page": 93
+  "page": 93,
+  "target": "One living creature"
  },
  {
   "id": "ebon-eyes",
@@ -929,7 +942,8 @@
   "summary": "Creates drug from inanimate object.",
   "description": "Creates drug from inanimate object.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
   "source": "Book of Vile Darkness",
-  "page": 94
+  "page": 94,
+  "effect": "One dose of a drug"
  },
  {
   "id": "eyes-of-the-avoral",
@@ -1377,7 +1391,8 @@
   "summary": "Double arcane spell failure chance for target's armor.",
   "description": "Double arcane spell failure chance for target's armor.\n\nSummary only. Full text: Complete Scoundrel, p. 100.",
   "source": "Complete Scoundrel",
-  "page": 100
+  "page": 100,
+  "target": "One creature wearing armor or using a shield"
  },
  {
   "id": "mage-hand-greater",
@@ -1451,15 +1466,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates",
   "spellResistance": "No",
   "summary": "Creates a trail compelling evil outsiders to follow.",
   "description": "Creates a trail compelling evil outsiders to follow.\n\nSummary only. Full text: Book of Vile Darkness, p. 99.",
   "source": "Book of Vile Darkness",
-  "page": 99
+  "page": 99,
+  "effect": "A trail 20 ft. long/level"
  },
  {
   "id": "orb-of-acid-lesser",
@@ -1675,13 +1691,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "summary": "Caster gains +5 bonus on Knowledge (religion) checks made during sacrifice.",
   "description": "Caster gains +5 bonus on Knowledge (religion) checks made during sacrifice.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "Caster"
  },
  {
   "id": "shieldbearer",
@@ -1782,7 +1799,8 @@
   "summary": "One helpless subject is put in a state that allows him to be moved but take no other actions.",
   "description": "One helpless subject is put in a state that allows him to be moved but take no other actions.\n\nSummary only. Full text: Book of Vile Darkness, p. 106.",
   "source": "Book of Vile Darkness",
-  "page": 106
+  "page": 106,
+  "area": "One helpless creature"
  },
  {
   "id": "suspend-disease",
@@ -1795,15 +1813,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Keeps disease from harming creature for 24 hours.",
   "description": "Keeps disease from harming creature for 24 hours.\n\nSummary only. Full text: Book of Vile Darkness, p. 106.",
   "source": "Book of Vile Darkness",
-  "page": 106
+  "page": 106,
+  "target": "One creature"
  },
  {
   "id": "thunderhead",
@@ -1842,13 +1861,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 hour/level or until discharged",
   "summary": "You spit out tendrils that grapple.",
   "description": "You spit out tendrils that grapple.\n\nSummary only. Full text: Book of Vile Darkness, p. 107.",
   "source": "Book of Vile Darkness",
-  "page": 107
+  "page": 107,
+  "target": "Caster"
  },
  {
   "id": "weapon-shift",
@@ -1926,7 +1946,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -1934,7 +1954,8 @@
   "summary": "Subject becomes addicted to a drug.",
   "description": "Subject becomes addicted to a drug.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
   "source": "Book of Vile Darkness",
-  "page": 84
+  "page": 84,
+  "target": "One living creature"
  },
  {
   "id": "aiming-at-the-target",
@@ -2321,11 +2342,13 @@
   "castingTime": "1 standard action",
   "range": "Touch",
   "duration": "Instantaneous",
-  "spellResistance": "No",
+  "spellResistance": "None",
   "summary": "Magically propel an object from your hand.",
   "description": "Magically propel an object from your hand.\n\nSummary only. Full text: Complete Scoundrel, p. 95.",
   "source": "Complete Scoundrel",
-  "page": 95
+  "page": 95,
+  "target": "One held object, weighing up to 5 lb",
+  "savingThrow": "No"
  },
  {
   "id": "celerity-lesser",
@@ -2529,7 +2552,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 round",
+  "castingTime": "1 full round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Reflex half",
@@ -2537,7 +2560,8 @@
   "summary": "Nondemons take 2d20 points of damage.",
   "description": "Nondemons take 2d20 points of damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 90.",
   "source": "Book of Vile Darkness",
-  "page": 90
+  "page": 90,
+  "area": "Spread centered on caster"
  },
  {
   "id": "dark-way",
@@ -2564,7 +2588,7 @@
  },
  {
   "id": "darkbolt-vile",
-  "name": "Darkbolt, Vile",
+  "name": "Darkbolt",
   "school": "Evocation",
   "descriptors": [
    "Evil",
@@ -2575,7 +2599,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude partial",
@@ -2583,7 +2607,8 @@
   "summary": "Deals 1d8 damage/2 levels and stuns 1 round.",
   "description": "Deals 1d8 damage/2 levels and stuns 1 round.\n\nSummary only. Full text: Book of Vile Darkness, p. 90.",
   "source": "Book of Vile Darkness",
-  "page": 90
+  "page": 90,
+  "target": "One creature"
  },
  {
   "id": "death-armor",
@@ -2995,7 +3020,8 @@
   "summary": "Your weapon grows one size category.",
   "description": "Your weapon grows one size category.\n\nSummary only. Full text: Complete Scoundrel, p. 97.",
   "source": "Complete Scoundrel",
-  "page": 97
+  "page": 97,
+  "target": "One touched melee weapon"
  },
  {
   "id": "entice-gift",
@@ -3077,13 +3103,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
-  "savingThrow": "See text",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates, Reflex half; see text",
   "spellResistance": "Yes",
   "summary": "Target's body bursts into flame upon its death.",
   "description": "Target's body bursts into flame upon its death.\n\nSummary only. Full text: Complete Scoundrel, p. 99.",
   "source": "Complete Scoundrel",
-  "page": 99
+  "page": 99,
+  "target": "One living creature with 1 or more HD"
  },
  {
   "id": "fearsome-grapple",
@@ -3316,13 +3343,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "Your hand flies from you to make grapple artacks.",
   "description": "Your hand flies from you to make grapple artacks.\n\nSummary only. Full text: Book of Vile Darkness, p. 96.",
   "source": "Book of Vile Darkness",
-  "page": 96
+  "page": 96,
+  "target": "Caster"
  },
  {
   "id": "heroics",
@@ -3540,13 +3568,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Target gains +2 luck bonus on rerolls made with luck feats.",
   "description": "Target gains +2 luck bonus on rerolls made with luck feats.\n\nSummary only. Full text: Complete Scoundrel, p. 100.",
   "source": "Complete Scoundrel",
-  "page": 100
+  "page": 100,
+  "target": "One creature"
  },
  {
   "id": "malevolent-miasma",
@@ -3604,13 +3633,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 round/level",
   "summary": "For every 10 hp damage you take, you gain +1 on attacks, saves, and checks.",
   "description": "For every 10 hp damage you take, you gain +1 on attacks, saves, and checks.\n\nSummary only. Full text: Book of Vile Darkness, p. 99.",
   "source": "Book of Vile Darkness",
-  "page": 99
+  "page": 99,
+  "target": "Caster"
  },
  {
   "id": "mechanus-mind",
@@ -3832,13 +3862,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 round/level",
   "summary": "For every 10 hp damage you deal, you gain +1 on attacks, saves, and checks.",
   "description": "For every 10 hp damage you deal, you gain +1 on attacks, saves, and checks.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "Caster"
  },
  {
   "id": "sap-strength",
@@ -3853,7 +3884,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -3861,7 +3892,8 @@
   "summary": "Subject becomes exhausted.",
   "description": "Subject becomes exhausted.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "One living creature"
  },
  {
   "id": "scorch",
@@ -3942,7 +3974,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Reflex half",
@@ -3950,7 +3982,8 @@
   "summary": "Subject takes 1d4 damage per level.",
   "description": "Subject takes 1d4 damage per level.\n\n_Special component:_ Disease.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "One living creature"
  },
  {
   "id": "shroud-of-undeath",
@@ -3988,13 +4021,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "Permanent (see below)",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "Caster absorbs health and sustenance from helpless subject.",
   "description": "Caster absorbs health and sustenance from helpless subject.\n\n_Special component:_ Location.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
   "source": "Book of Vile Darkness",
-  "page": 103
+  "page": 103,
+  "target": "One living creature"
  },
  {
   "id": "snowball-swarm",
@@ -4100,13 +4134,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "1 hour/level or until triggered, then 1 round/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Hide a scrying sensor in a coin or other Tiny object for later activation.",
   "description": "Hide a scrying sensor in a coin or other Tiny object for later activation.\n\nSummary only. Full text: Complete Scoundrel, p. 104.",
   "source": "Complete Scoundrel",
-  "page": 104
+  "page": 104,
+  "effect": "Magical sensor"
  },
  {
   "id": "stay-the-hand",
@@ -4225,15 +4260,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +4 save bonus again powers of good outsiders.",
   "description": "Subject gains +4 save bonus again powers of good outsiders.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 107.",
   "source": "Book of Vile Darkness",
-  "page": 107
+  "page": 107,
+  "target": "One creature"
  },
  {
   "id": "veil-of-shadow",
@@ -4562,7 +4598,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Provides temporary protection against overtly damaging planar traits.",
   "description": "Provides temporary protection against overtly damaging planar traits.\n\nSummary only. Full text: Savage Species.",
-  "source": "Savage Species"
+  "source": "Spell Compendium",
+  "page": 19
  },
  {
   "id": "bands-of-steel",
@@ -4665,15 +4702,16 @@
    "S",
    "DF"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Concentration + 1 round/level",
+  "duration": "Concentration plus 1 round/level",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.",
   "description": "Create a ribbon-like, weightless, unbreakable, invisible bridge of sound.\n\nSummary only. Full text: Savage Species, p. 63.",
   "source": "Savage Species",
-  "page": 63
+  "page": 63,
+  "effect": "One bridge of sound 5 ft. wide, 1 in. thick, and up to 10 ft./level long"
  },
  {
   "id": "capricious-zephyr",
@@ -4886,15 +4924,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Instantaneous",
-  "savingThrow": "Will disbelief (if interacted with) and Will negates; see text",
+  "savingThrow": "Will disbelief (if interacted with) and Will negates (see text)",
   "spellResistance": "Yes",
   "summary": "Fools subject for 1 round, then -4 penalty on attacks, saves, and checks.",
   "description": "Fools subject for 1 round, then -4 penalty on attacks, saves, and checks.\n\nSummary only. Full text: Book of Vile Darkness, p. 89.",
   "source": "Book of Vile Darkness",
-  "page": 89
+  "page": 89,
+  "target": "One living creature"
  },
  {
   "id": "curse-of-impending-blades-mass",
@@ -4934,7 +4973,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round + 1d10 minutes",
   "savingThrow": "Will negates",
@@ -4942,7 +4981,8 @@
   "summary": "Subject is unconscious for 1d10 minutes.",
   "description": "Subject is unconscious for 1d10 minutes.\n\nSummary only. Full text: Book of Vile Darkness, p. 89.",
   "source": "Book of Vile Darkness",
-  "page": 89
+  "page": 89,
+  "target": "One creature"
  },
  {
   "id": "deeper-darkvision",
@@ -5022,13 +5062,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "summary": "You can see even in magical darkness up to 30 feet.",
   "description": "You can see even in magical darkness up to 30 feet.\n\nSummary only. Full text: Book of Vile Darkness, p. 92.",
   "source": "Book of Vile Darkness",
-  "page": 92
+  "page": 92,
+  "target": "Caster"
  },
  {
   "id": "diamondsteel",
@@ -5071,7 +5112,8 @@
   "summary": "Subject is shielded from mind control.",
   "description": "Subject is shielded from mind control.\n\nSummary only. Full text: Complete Scoundrel, p. 97.",
   "source": "Complete Scoundrel",
-  "page": 97
+  "page": 97,
+  "target": "One creature"
  },
  {
   "id": "disrupt-undead-greater",
@@ -5191,7 +5233,7 @@
   "components": [
    "V"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -5199,11 +5241,12 @@
   "summary": "1d3 Cha drain on one target.",
   "description": "1d3 Cha drain on one target.\n\nSummary only. Full text: Book of Vile Darkness, p. 93.",
   "source": "Book of Vile Darkness",
-  "page": 93
+  "page": 93,
+  "target": "One creature of good alignment"
  },
  {
   "id": "drown-vile",
-  "name": "Drown, Vile",
+  "name": "Drown",
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [
@@ -5213,7 +5256,7 @@
   "components": [
    "V"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -5221,7 +5264,8 @@
   "summary": "Subject begins to drown.",
   "description": "Subject begins to drown.\n\nSummary only. Full text: Book of Vile Darkness, p. 93.",
   "source": "Book of Vile Darkness",
-  "page": 93
+  "page": 93,
+  "target": "One humanoid"
  },
  {
   "id": "earthen-grace",
@@ -5366,15 +5410,16 @@
   "components": [
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous; see text",
+  "duration": "Instantaneous (see text)",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Subject takes -4 penalty on attacks, saves, and checks.",
   "description": "Subject takes -4 penalty on attacks, saves, and checks.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
   "source": "Book of Vile Darkness",
-  "page": 94
+  "page": 94,
+  "target": "One creature"
  },
  {
   "id": "eyes-of-the-zombie",
@@ -5397,7 +5442,8 @@
   "summary": "You see through a zombie's eyes.",
   "description": "You see through a zombie's eyes.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
   "source": "Book of Vile Darkness",
-  "page": 94
+  "page": 94,
+  "effect": "Caster and one zombie"
  },
  {
   "id": "false-gravity",
@@ -5500,13 +5546,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 hour",
   "summary": "You get an answer to a yes-or-no question.",
   "description": "You get an answer to a yes-or-no question.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 96.",
   "source": "Book of Vile Darkness",
-  "page": 96
+  "page": 96,
+  "target": "Caster"
  },
  {
   "id": "grasping-wall",
@@ -5522,13 +5569,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 day",
+  "duration": "Concentration (max. 1 round/level) + 3 rounds",
   "savingThrow": "Reflex negates",
   "spellResistance": "No",
   "summary": "Wall sprouts hands that entangle enemies, help allies climb.",
   "description": "Wall sprouts hands that entangle enemies, help allies climb.\n\nSummary only. Full text: Complete Scoundrel, p. 99.",
   "source": "Complete Scoundrel",
-  "page": 99
+  "page": 99,
+  "effect": "Hands sprout from a wall in an area of up to four 5-ft. squares (S)"
  },
  {
   "id": "great-thunderclap",
@@ -5999,15 +6047,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Concentration; see text",
+  "duration": "Concentration (see below)",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Subject can take no actions and afterward does not heal naturally.",
   "description": "Subject can take no actions and afterward does not heal naturally.\n\nSummary only. Full text: Book of Vile Darkness, p. 101.",
   "source": "Book of Vile Darkness",
-  "page": 101
+  "page": 101,
+  "target": "One creature"
  },
  {
   "id": "regal-procession",
@@ -6156,7 +6205,8 @@
   "summary": "Drain 5 or more charges from wand or staff to replace one or more cast spells.",
   "description": "Drain 5 or more charges from wand or staff to replace one or more cast spells.\n\nSummary only. Full text: Complete Scoundrel, p. 102.",
   "source": "Complete Scoundrel",
-  "page": 102
+  "page": 102,
+  "target": "One touched wand or staff"
  },
  {
   "id": "sonorous-hum",
@@ -6304,13 +6354,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 hour/level or until discharged",
   "summary": "You spit out one Tiny viper/4 levels.",
   "description": "You spit out one Tiny viper/4 levels.\n\nSummary only. Full text: Book of Vile Darkness, p. 107.",
   "source": "Book of Vile Darkness",
-  "page": 107
+  "page": 107,
+  "target": "Caster"
  },
  {
   "id": "vertigo-field",
@@ -6346,13 +6397,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "Creates +2 shortspear that deals vile damage.",
   "description": "Creates +2 shortspear that deals vile damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
-  "page": 108
+  "page": 108,
+  "effect": "One shortspear"
  },
  {
   "id": "wall-of-chains",
@@ -6366,15 +6418,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates barrier of woven chains that has 20 hp/4 caster levels.",
   "description": "Creates barrier of woven chains that has 20 hp/4 caster levels.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
-  "page": 108
+  "page": 108,
+  "effect": "A wall whose area is up to one 5-ft. square/level (S) (see text)"
  },
  {
   "id": "wall-of-light",
@@ -6406,16 +6459,20 @@
   "school": "Transmutation",
   "descriptors": [],
   "level": 3,
-  "components": [],
+  "components": [
+   "V",
+   "S"
+  ],
   "castingTime": "1 swift action",
-  "range": "0 ft.",
-  "duration": "1 min./level (D)",
-  "savingThrow": "None or Will negates (harmless, object)",
+  "range": "Touch",
+  "duration": "1 minute/level (D)",
+  "savingThrow": "Yes (harmless, object)",
   "spellResistance": "Yes (harmless, object)",
   "summary": "Temporarily change wand to cast another, weaker spell.",
   "description": "Temporarily change wand to cast another, weaker spell.\n\nSummary only. Full text: Complete Scoundrel, p. 105.",
   "source": "Complete Scoundrel",
-  "page": 105
+  "page": 105,
+  "target": "One touched wand"
  },
  {
   "id": "warcry",
@@ -6497,13 +6554,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "You gain +2 to Str, Con, Dex, and SR.",
   "description": "You gain +2 to Str, Con, Dex, and SR.\n\n_Special component:_ Demon.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
   "source": "Book of Vile Darkness",
-  "page": 84
+  "page": 84,
+  "target": "Caster"
  },
  {
   "id": "aerial-alacrity",
@@ -6865,13 +6923,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Craft a temporary duplicate of yourself that follows telepathic orders.",
   "description": "Craft a temporary duplicate of yourself that follows telepathic orders.\n\nSummary only. Full text: Complete Scoundrel, p. 96.",
   "source": "Complete Scoundrel",
-  "page": 96
+  "page": 96,
+  "effect": "A duplicate of yourself"
  },
  {
   "id": "dancing-chains",
@@ -6883,15 +6942,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Animates one chain per level.",
   "description": "Animates one chain per level.\n\nSummary only. Full text: Book of Vile Darkness, p. 90.",
   "source": "Book of Vile Darkness",
-  "page": 90
+  "page": 90,
+  "target": "One chain per level within range"
  },
  {
   "id": "dancing-web",
@@ -7016,7 +7076,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 hour/level",
   "savingThrow": "None",
@@ -7024,7 +7084,8 @@
   "summary": "Creates area where only evil creatures can be summoned.",
   "description": "Creates area where only evil creatures can be summoned.\n\nSummary only. Full text: Book of Vile Darkness, p. 92.",
   "source": "Book of Vile Darkness",
-  "page": 92
+  "page": 92,
+  "area": "50-ft.-radius spread"
  },
  {
   "id": "doom-scarabs",
@@ -7395,7 +7456,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -7403,7 +7464,8 @@
   "summary": "Tears hand from target, dealing 6d6 damage, then hand attacks target.",
   "description": "Tears hand from target, dealing 6d6 damage, then hand attacks target.\n\n_Special component:_ Undead.\n\nSummary only. Full text: Book of Vile Darkness, p. 97.",
   "source": "Book of Vile Darkness",
-  "page": 97
+  "page": 97,
+  "target": "One living humanoid"
  },
  {
   "id": "hells-power",
@@ -7419,13 +7481,14 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "You gain +2 AC and good to existing DR.",
   "description": "You gain +2 AC and good to existing DR.\n\n_Special component:_ Devil.\n\nSummary only. Full text: Book of Vile Darkness, p. 97.",
   "source": "Book of Vile Darkness",
-  "page": 97
+  "page": 97,
+  "target": "Caster"
  },
  {
   "id": "iron-bones",
@@ -7488,7 +7551,8 @@
   "summary": "Extracts one dose of liquid pain from tortured victim.",
   "description": "Extracts one dose of liquid pain from tortured victim.\n\nSummary only. Full text: Book of Vile Darkness, p. 98.",
   "source": "Book of Vile Darkness",
-  "page": 98
+  "page": 98,
+  "target": "One living creature"
  },
  {
   "id": "metal-melt",
@@ -7551,7 +7615,8 @@
   "summary": "You send your image to a mirror and can see and speak through it.",
   "description": "You send your image to a mirror and can see and speak through it.\n\nSummary only. Full text: Book of Vile Darkness, p. 99.",
   "source": "Book of Vile Darkness",
-  "page": 99
+  "page": 99,
+  "target": "One living creature"
  },
  {
   "id": "necrotic-domination",
@@ -7776,7 +7841,8 @@
   "summary": "Poisons those casting divination or mind-affecting spells at object, creature, or area.",
   "description": "Poisons those casting divination or mind-affecting spells at object, creature, or area.\n\nSummary only. Full text: Book of Vile Darkness, p. 101.",
   "source": "Book of Vile Darkness",
-  "page": 101
+  "page": 101,
+  "area": "50-ft.-radius spread, or one single object or creature that can fit in that area"
  },
  {
   "id": "radiant-fog",
@@ -8296,13 +8362,14 @@
   ],
   "castingTime": "1 minute",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
+  "duration": "One year",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons 2d4 dretches.",
   "description": "Summons 2d4 dretches.\n\n_Special component:_ Soul.\n\nSummary only. Full text: Book of Vile Darkness, p. 86.",
   "source": "Book of Vile Darkness",
-  "page": 86
+  "page": 86,
+  "effect": "2d4 dretches"
  },
  {
   "id": "call-lemure-horde",
@@ -8319,13 +8386,14 @@
   ],
   "castingTime": "1 minute",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "Instantaneous",
+  "duration": "One year",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons 2d4 lemures.",
   "description": "Summons 2d4 lemures.\n\n_Special component:_ Soul.\n\nSummary only. Full text: Book of Vile Darkness, p. 86.",
   "source": "Book of Vile Darkness",
-  "page": 86
+  "page": 86,
+  "effect": "3d4 lemures"
  },
  {
   "id": "call-nightmare",
@@ -8342,13 +8410,14 @@
   ],
   "castingTime": "1 minute",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
+  "duration": "One week",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons a nightmare.",
   "description": "Summons a nightmare.\n\n_Special component:_ Soul.\n\nSummary only. Full text: Book of Vile Darkness, p. 87.",
   "source": "Book of Vile Darkness",
-  "page": 87
+  "page": 87,
+  "effect": "One nightmare"
  },
  {
   "id": "call-zelekhut",
@@ -8661,13 +8730,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None (harmless)",
   "spellResistance": "No (harmless)",
   "summary": "Create invisible rune that you can teleport to as swift action.",
   "description": "Create invisible rune that you can teleport to as swift action.\n\nSummary only. Full text: Complete Scoundrel, p. 98.",
   "source": "Complete Scoundrel",
-  "page": 98
+  "page": 98,
+  "effect": "One invisible rune"
  },
  {
   "id": "fiendform",
@@ -8929,7 +8999,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Permanent (D)",
   "savingThrow": "Will negates",
@@ -8937,7 +9007,8 @@
   "summary": "Subject that can possess creatures is trapped in current body.",
   "description": "Subject that can possess creatures is trapped in current body.\n\nSummary only. Full text: Book of Vile Darkness, p. 98.",
   "source": "Book of Vile Darkness",
-  "page": 98
+  "page": 98,
+  "target": "One possessing creature and its host"
  },
  {
   "id": "indomitability",
@@ -9039,15 +9110,16 @@
    "M",
    "XP"
   ],
-  "castingTime": "1 day",
+  "castingTime": "One day",
   "range": "Touch",
   "duration": "Permanent (D)",
-  "savingThrow": "None (Object)",
+  "savingThrow": "None (object)",
   "spellResistance": "Yes (object)",
   "summary": "Animated object does your bidding.",
   "description": "Animated object does your bidding.\n\nSummary only. Full text: Savage Species, p. 68.",
   "source": "Savage Species",
-  "page": 68
+  "page": 68,
+  "effect": "One object up to 1 cu. ft./level"
  },
  {
   "id": "moonbow",
@@ -9269,13 +9341,14 @@
   "components": [
    "V"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "summary": "Foes must check spell resistance twice against you.",
   "description": "Foes must check spell resistance twice against you.\n\n_Special component:_ Fiend.\n\nSummary only. Full text: Book of Vile Darkness, p. 102.",
   "source": "Book of Vile Darkness",
-  "page": 102
+  "page": 102,
+  "target": "Caster"
  },
  {
   "id": "servant-horde",
@@ -9350,15 +9423,16 @@
    "S",
    "F"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
-  "savingThrow": "None; see text",
+  "savingThrow": "None (see text)",
   "spellResistance": "Yes",
   "summary": "Imprison soul of dead creature in talisman from which you can question it.",
   "description": "Imprison soul of dead creature in talisman from which you can question it.\n\n_Special component:_ Location.\n\nSummary only. Full text: Book of Vile Darkness, p. 104.",
   "source": "Book of Vile Darkness",
-  "page": 104
+  "page": 104,
+  "target": "One living creature"
  },
  {
   "id": "spell-matrix-lesser",
@@ -9395,10 +9469,11 @@
   "duration": "Instantaneous",
   "savingThrow": "None",
   "spellResistance": "No",
-  "summary": "Dispel spells on target and gain their benefit[lf][lf]for yourself.",
+  "summary": "Dispel spells on target and gain their benefit for yourself",
   "description": "Dispel spells on target and gain their benefit[lf][lf]for yourself.\n\nSummary only. Full text: Complete Scoundrel, p. 104.",
   "source": "Complete Scoundrel",
-  "page": 104
+  "page": 104,
+  "target": "One creature"
  },
  {
   "id": "spiritwall",
@@ -9425,12 +9500,14 @@
   "id": "stop-heart",
   "name": "Stop Heart",
   "school": "Necromancy",
-  "descriptors": [],
+  "descriptors": [
+   "Evil"
+  ],
   "level": 5,
   "components": [
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Touch",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates",
@@ -9438,7 +9515,8 @@
   "summary": "Touched living humanoid drops to -8 hitpoints.",
   "description": "Touched living humanoid drops to -8 hitpoints.\n\n_Special component:_ Drug.\n\nSummary only. Full text: Book of Vile Darkness, p. 106.",
   "source": "Book of Vile Darkness",
-  "page": 106
+  "page": 106,
+  "area": "One living humanoid or animal"
  },
  {
   "id": "sword-of-deception",
@@ -9643,15 +9721,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Concentration + 1 round/level",
-  "savingThrow": "Fortitude partial; see text",
+  "savingThrow": "Fortitude partial (see text)",
   "spellResistance": "No",
   "summary": "Creates barrier that has 50 hp/4 levels that paralyzes and deals 2d6 damage to all that touch it.",
   "description": "Creates barrier that has 50 hp/4 levels that paralyzes and deals 2d6 damage to all that touch it.\n\nSummary only. Full text: Book of Vile Darkness, p. 109.",
   "source": "Book of Vile Darkness",
-  "page": 109
+  "page": 109,
+  "effect": "A wall whose area is up to one 5-ft. square/level (S) (see text)"
  },
  {
   "id": "wrack",
@@ -9736,7 +9815,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "None",
@@ -9744,7 +9823,8 @@
   "summary": "Summons bebilith to deal with a demon.",
   "description": "Summons bebilith to deal with a demon.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
   "source": "Book of Vile Darkness",
-  "page": 84
+  "page": 84,
+  "effect": "One bebilith"
  },
  {
   "id": "anticipate-teleportation-greater",
@@ -9950,7 +10030,6 @@
   "name": "Ectoplasmic Enhancement",
   "school": "Necromancy",
   "descriptors": [
-   "Ectomancy",
    "Evil"
   ],
   "level": 6,
@@ -9958,15 +10037,16 @@
    "V",
    "S"
   ],
-  "castingTime": "1 round",
+  "castingTime": "1 full round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Incorporeal undead gain +1 AC, +1d8 hp, +1 on attacks, +2 turn resistance for every 3 levels.",
   "description": "Incorporeal undead gain +1 AC, +1d8 hp, +1 on attacks, +2 turn resistance for every 3 levels.\n\nSummary only. Full text: Book of Vile Darkness, p. 93.",
   "source": "Book of Vile Darkness",
-  "page": 93
+  "page": 93,
+  "target": "One incorporeal undead/level"
  },
  {
   "id": "energy-surge-greater",
@@ -10026,13 +10106,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "See text",
-  "duration": "1 round; see text",
+  "duration": "1 round (see text)",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "As sending, except caster imitates someone else.",
   "description": "As sending, except caster imitates someone else.\n\nSummary only. Full text: Book of Vile Darkness, p. 95.",
   "source": "Book of Vile Darkness",
-  "page": 95
+  "page": 95,
+  "target": "One creature"
  },
  {
   "id": "fiendish-quickening",
@@ -10044,13 +10125,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 round",
+  "castingTime": "1 full round",
   "range": "Personal",
   "duration": "1 round/level",
   "summary": "Your ability to teleport is quickened.",
   "description": "Your ability to teleport is quickened.\n\n_Special component:_ Fiend.\n\nSummary only. Full text: Book of Vile Darkness, p. 95.",
   "source": "Book of Vile Darkness",
-  "page": 95
+  "page": 95,
+  "target": "Caster"
  },
  {
   "id": "fire-spiders",
@@ -10314,7 +10396,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Permanent (D)",
   "savingThrow": "Will negates",
@@ -10322,7 +10404,8 @@
   "summary": "Subject that can possess creatures is rendered powerless.",
   "description": "Subject that can possess creatures is rendered powerless.\n\nSummary only. Full text: Book of Vile Darkness, p. 98.",
   "source": "Book of Vile Darkness",
-  "page": 98
+  "page": 98,
+  "target": "One possessing creature"
  },
  {
   "id": "incorporeal-nova",
@@ -10531,12 +10614,14 @@
   ],
   "castingTime": "1 hour",
   "range": "See text",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "spellResistance": "No",
   "summary": "Spy on a distant location.",
   "description": "Spy on a distant location.\n\nSummary only. Full text: Complete Scoundrel, p. 102.",
   "source": "Complete Scoundrel",
-  "page": 102
+  "page": 102,
+  "effect": "Magical sensor",
+  "savingThrow": "No"
  },
  {
   "id": "sign-of-sealing-greater",
@@ -10569,7 +10654,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 round/level",
   "savingThrow": "Will negates",
@@ -10577,7 +10662,8 @@
   "summary": "Captures one astral creature and holds it motionless.",
   "description": "Captures one astral creature and holds it motionless.\n\nSummary only. Full text: Book of Vile Darkness, p. 104.",
   "source": "Book of Vile Darkness",
-  "page": 104
+  "page": 104,
+  "target": "One astral creature"
  },
  {
   "id": "spectral-touch",
@@ -11143,13 +11229,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
   "duration": "1 round/level",
   "summary": "Your eye gains random beholder ray.",
   "description": "Your eye gains random beholder ray.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
   "source": "Book of Vile Darkness",
-  "page": 94
+  "page": 94,
+  "target": "Caster"
  },
  {
   "id": "fiendish-clarity",
@@ -11163,13 +11250,14 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Personal",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "You see in even magical darkness, see invisible up to 60 feet, and can detect good.",
   "description": "You see in even magical darkness, see invisible up to 60 feet, and can detect good.\n\nSummary only. Full text: Book of Vile Darkness, p. 95.",
   "source": "Book of Vile Darkness",
-  "page": 95
+  "page": 95,
+  "target": "Caster"
  },
  {
   "id": "ghost-trap",
@@ -11545,15 +11633,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Instantaneous",
-  "savingThrow": "Will negates; see text",
+  "savingThrow": "Will negates (see text)",
   "spellResistance": "No",
   "summary": "Creates barrier that you can see through and that paralyzes and consumes those that touch it.",
   "description": "Creates barrier that you can see through and that paralyzes and consumes those that touch it.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
-  "page": 108
+  "page": 108,
+  "effect": "A wall whose area is up to one 5-ft. square/level (S) (see text)"
  },
  {
   "id": "whirlwind-of-teeth",
@@ -11568,7 +11657,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 round/level",
   "savingThrow": "Reflex half",
@@ -11576,7 +11665,8 @@
   "summary": "Creates moving 5-ft./level cylinder that deals 1d8 damage/2 levels each round.",
   "description": "Creates moving 5-ft./level cylinder that deals 1d8 damage/2 levels each round.\n\nSummary only. Full text: Book of Vile Darkness, p. 110.",
   "source": "Book of Vile Darkness",
-  "page": 110
+  "page": 110,
+  "area": "5-ft./level radius cylinder 10 ft./level high"
  },
  {
   "id": "avascular-mass",
@@ -11837,7 +11927,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude partial",
@@ -11845,7 +11935,8 @@
   "summary": "Kills subject and gives you 4d6 temporary hit points and +4 Strength.",
   "description": "Kills subject and gives you 4d6 temporary hit points and +4 Strength.\n\n_Special component:_ Undead.\n\nSummary only. Full text: Book of Vile Darkness, p. 97.",
   "source": "Book of Vile Darkness",
-  "page": 97
+  "page": 97,
+  "target": "One living creature"
  },
  {
   "id": "heart-of-stone",
@@ -12078,7 +12169,7 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude negates (object)",
@@ -12086,7 +12177,8 @@
   "summary": "Disintegrates subject's most valuable object.",
   "description": "Disintegrates subject's most valuable object.\n\nSummary only. Full text: Book of Vile Darkness, p. 104.",
   "source": "Book of Vile Darkness",
-  "page": 104
+  "page": 104,
+  "target": "One creature"
  },
  {
   "id": "stalking-spell",
@@ -12121,7 +12213,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Concentration",
   "savingThrow": "Fortitude negates",
@@ -12129,7 +12221,8 @@
   "summary": "You drain 1 ability score point per round and becomes younger.",
   "description": "You drain 1 ability score point per round and becomes younger.\n\n_Special component:_ Location.\n\nSummary only. Full text: Book of Vile Darkness, p. 106.",
   "source": "Book of Vile Darkness",
-  "page": 106
+  "page": 106,
+  "target": "One living humanoid"
  },
  {
   "id": "veil-of-undeath",
@@ -12325,15 +12418,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 round/level",
-  "savingThrow": "Reflex half or Reflex negates; see text",
+  "savingThrow": "Reflex half or Reflex negates (see text)",
   "spellResistance": "Yes",
   "summary": "Fist deals 1d6 damage/level each round.",
   "description": "Fist deals 1d6 damage/level each round.\n\n_Special component:_ Disease.\n\nSummary only. Full text: Book of Vile Darkness, p. 89.",
   "source": "Book of Vile Darkness",
-  "page": 89
+  "page": 89,
+  "area": "5-ft.-radius cylinder, 30 ft. high"
  },
  {
   "id": "dragon-ally-greater",
@@ -12513,7 +12607,8 @@
   "summary": "Turns construct into living creature.",
   "description": "Turns construct into living creature.\n\nSummary only. Full text: Savage Species, p. 67.",
   "source": "Savage Species",
-  "page": 67
+  "page": 67,
+  "target": "One construct"
  },
  {
   "id": "instant-refuge",
@@ -12595,7 +12690,7 @@
    "V",
    "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "Instantaneous",
   "savingThrow": "Will negates",
@@ -12603,7 +12698,8 @@
   "summary": "You learn everything subject knows and can alter its memory or knowledge.",
   "description": "You learn everything subject knows and can alter its memory or knowledge.\n\nSummary only. Full text: Book of Vile Darkness, p. 99.",
   "source": "Book of Vile Darkness",
-  "page": 99
+  "page": 99,
+  "target": "One creature"
  },
  {
   "id": "necrotic-termination",
@@ -12820,7 +12916,7 @@
    "S",
    "M"
   ],
-  "castingTime": "3 rounds",
+  "castingTime": "1 hour",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 hour/level",
   "savingThrow": "None",
@@ -12828,7 +12924,8 @@
   "summary": "100-ft/level radius of darkness that evil creatures can see through.",
   "description": "100-ft/level radius of darkness that evil creatures can see through.\n\nSummary only. Full text: Book of Vile Darkness, p. 108.",
   "source": "Book of Vile Darkness",
-  "page": 108
+  "page": 108,
+  "area": "100-ft./level radius spread, centered on caster"
  },
  {
   "id": "vile-death",

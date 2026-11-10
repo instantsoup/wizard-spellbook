@@ -1,0 +1,1067 @@
+{
+ "source": "Book of Vile Darkness",
+ "verifiedBy": "subagent check against the book (page images and OCR text)",
+ "updates": [
+  {
+   "id": "no-light",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 100
+  },
+  {
+   "id": "no-light",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 100
+  },
+  {
+   "id": "no-light",
+   "field": "area",
+   "value": "20-ft.-radius spread",
+   "pdfPage": 100
+  },
+  {
+   "id": "preserve-organ",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 101
+  },
+  {
+   "id": "preserve-organ",
+   "field": "effect",
+   "value": "One organ",
+   "pdfPage": 101
+  },
+  {
+   "id": "slash-tongue",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 103
+  },
+  {
+   "id": "slash-tongue",
+   "field": "target",
+   "value": "One living creature with a tongue",
+   "pdfPage": 103
+  },
+  {
+   "id": "unnerving-gaze",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 108
+  },
+  {
+   "id": "unnerving-gaze",
+   "field": "target",
+   "value": "One humanoid creature",
+   "pdfPage": 108
+  },
+  {
+   "id": "aberrate",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 84
+  },
+  {
+   "id": "aberrate",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 84
+  },
+  {
+   "id": "aberrate",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 84
+  },
+  {
+   "id": "bestow-wound",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 85
+  },
+  {
+   "id": "bestow-wound",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 85
+  },
+  {
+   "id": "black-bag",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 86
+  },
+  {
+   "id": "black-bag",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 86
+  },
+  {
+   "id": "black-bag",
+   "field": "effect",
+   "value": "A black leather bag",
+   "pdfPage": 86
+  },
+  {
+   "id": "darkliqht",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 91
+  },
+  {
+   "id": "darkliqht",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 91
+  },
+  {
+   "id": "darkliqht",
+   "field": "target",
+   "value": "One creature or object touched",
+   "pdfPage": 91
+  },
+  {
+   "id": "death-grimace",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 91
+  },
+  {
+   "id": "death-grimace",
+   "field": "target",
+   "value": "One corpse",
+   "pdfPage": 91
+  },
+  {
+   "id": "drug-resistance",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 93
+  },
+  {
+   "id": "drug-resistance",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 93
+  },
+  {
+   "id": "extract-drug",
+   "field": "effect",
+   "value": "One dose of a drug",
+   "pdfPage": 94
+  },
+  {
+   "id": "nether-trail",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 99
+  },
+  {
+   "id": "nether-trail",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 99
+  },
+  {
+   "id": "nether-trail",
+   "field": "effect",
+   "value": "A trail 20 ft. long/level",
+   "pdfPage": 99
+  },
+  {
+   "id": "sacrificial-skill",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 103
+  },
+  {
+   "id": "sacrificial-skill",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 103
+  },
+  {
+   "id": "sacrificial-skill",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 103
+  },
+  {
+   "id": "stupor",
+   "field": "area",
+   "value": "One helpless creature",
+   "pdfPage": 106
+  },
+  {
+   "id": "suspend-disease",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 106
+  },
+  {
+   "id": "suspend-disease",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 106
+  },
+  {
+   "id": "suspend-disease",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 106
+  },
+  {
+   "id": "tongue-tendrils",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 107
+  },
+  {
+   "id": "tongue-tendrils",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 107
+  },
+  {
+   "id": "addiction",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 84
+  },
+  {
+   "id": "addiction",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 84
+  },
+  {
+   "id": "dance-of-ruin",
+   "field": "castingTime",
+   "value": "1 full round",
+   "pdfPage": 90
+  },
+  {
+   "id": "dance-of-ruin",
+   "field": "area",
+   "value": "Spread centered on caster",
+   "pdfPage": 90
+  },
+  {
+   "id": "darkbolt-vile",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 90
+  },
+  {
+   "id": "darkbolt-vile",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 90
+  },
+  {
+   "id": "grazzts-long-grasp",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 96
+  },
+  {
+   "id": "grazzts-long-grasp",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 96
+  },
+  {
+   "id": "grazzts-long-grasp",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 96
+  },
+  {
+   "id": "masochism",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 99
+  },
+  {
+   "id": "masochism",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 99
+  },
+  {
+   "id": "sadism",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 103
+  },
+  {
+   "id": "sadism",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 103
+  },
+  {
+   "id": "sap-strength",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 103
+  },
+  {
+   "id": "sap-strength",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 103
+  },
+  {
+   "id": "shriveling",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 103
+  },
+  {
+   "id": "shriveling",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 103
+  },
+  {
+   "id": "slow-consumption",
+   "field": "duration",
+   "value": "Permanent (see below)",
+   "pdfPage": 103
+  },
+  {
+   "id": "slow-consumption",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 103
+  },
+  {
+   "id": "unheavened",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 107
+  },
+  {
+   "id": "unheavened",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 107
+  },
+  {
+   "id": "unheavened",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 107
+  },
+  {
+   "id": "cruel-disappointment",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 89
+  },
+  {
+   "id": "cruel-disappointment",
+   "field": "savingThrow",
+   "value": "Will disbelief (if interacted with) and Will negates (see text)",
+   "pdfPage": 89
+  },
+  {
+   "id": "cruel-disappointment",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 89
+  },
+  {
+   "id": "curse-of-the-putrid-husk",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 89
+  },
+  {
+   "id": "curse-of-the-putrid-husk",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 89
+  },
+  {
+   "id": "devils-eye",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 92
+  },
+  {
+   "id": "devils-eye",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 92
+  },
+  {
+   "id": "devils-eye",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 92
+  },
+  {
+   "id": "dread-word",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 93
+  },
+  {
+   "id": "dread-word",
+   "field": "target",
+   "value": "One creature of good alignment",
+   "pdfPage": 93
+  },
+  {
+   "id": "drown-vile",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 93
+  },
+  {
+   "id": "drown-vile",
+   "field": "target",
+   "value": "One humanoid",
+   "pdfPage": 93
+  },
+  {
+   "id": "evil-eye",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 94
+  },
+  {
+   "id": "evil-eye",
+   "field": "duration",
+   "value": "Instantaneous (see text)",
+   "pdfPage": 94
+  },
+  {
+   "id": "evil-eye",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 94
+  },
+  {
+   "id": "eyes-of-the-zombie",
+   "field": "effect",
+   "value": "Caster and one zombie",
+   "pdfPage": 94
+  },
+  {
+   "id": "glimpse-of-truth",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 96
+  },
+  {
+   "id": "glimpse-of-truth",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 96
+  },
+  {
+   "id": "reality-blind",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 101
+  },
+  {
+   "id": "reality-blind",
+   "field": "duration",
+   "value": "Concentration (see below)",
+   "pdfPage": 101
+  },
+  {
+   "id": "reality-blind",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 101
+  },
+  {
+   "id": "tongue-serpents",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 107
+  },
+  {
+   "id": "tongue-serpents",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 107
+  },
+  {
+   "id": "vile-lance",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 108
+  },
+  {
+   "id": "vile-lance",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 108
+  },
+  {
+   "id": "vile-lance",
+   "field": "effect",
+   "value": "One shortspear",
+   "pdfPage": 108
+  },
+  {
+   "id": "wall-of-chains",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 108
+  },
+  {
+   "id": "wall-of-chains",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 108
+  },
+  {
+   "id": "wall-of-chains",
+   "field": "effect",
+   "value": "A wall whose area is up to one 5-ft. square/level (S) (see text)",
+   "pdfPage": 108
+  },
+  {
+   "id": "abyssal-might",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 84
+  },
+  {
+   "id": "abyssal-might",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 84
+  },
+  {
+   "id": "abyssal-might",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 84
+  },
+  {
+   "id": "dancing-chains",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 90
+  },
+  {
+   "id": "dancing-chains",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 90
+  },
+  {
+   "id": "dancing-chains",
+   "field": "target",
+   "value": "One chain per level within range",
+   "pdfPage": 90
+  },
+  {
+   "id": "distort-summons",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 92
+  },
+  {
+   "id": "distort-summons",
+   "field": "area",
+   "value": "50-ft.-radius spread",
+   "pdfPage": 92
+  },
+  {
+   "id": "grim-revenge",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 97
+  },
+  {
+   "id": "grim-revenge",
+   "field": "target",
+   "value": "One living humanoid",
+   "pdfPage": 97
+  },
+  {
+   "id": "hells-power",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 97
+  },
+  {
+   "id": "hells-power",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 97
+  },
+  {
+   "id": "hells-power",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 97
+  },
+  {
+   "id": "liquid-pain",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 98
+  },
+  {
+   "id": "mirror-sending",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 99
+  },
+  {
+   "id": "psychic-poison",
+   "field": "area",
+   "value": "50-ft.-radius spread, or one single object or creature that can fit in that area",
+   "pdfPage": 101
+  },
+  {
+   "id": "call-dretch-horde",
+   "field": "duration",
+   "value": "One year",
+   "pdfPage": 86
+  },
+  {
+   "id": "call-dretch-horde",
+   "field": "effect",
+   "value": "2d4 dretches",
+   "pdfPage": 86
+  },
+  {
+   "id": "call-lemure-horde",
+   "field": "duration",
+   "value": "One year",
+   "pdfPage": 86
+  },
+  {
+   "id": "call-lemure-horde",
+   "field": "effect",
+   "value": "3d4 lemures",
+   "pdfPage": 86
+  },
+  {
+   "id": "call-nightmare",
+   "field": "duration",
+   "value": "One week",
+   "pdfPage": 87
+  },
+  {
+   "id": "call-nightmare",
+   "field": "effect",
+   "value": "One nightmare",
+   "pdfPage": 87
+  },
+  {
+   "id": "imprison-possessor",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 98
+  },
+  {
+   "id": "imprison-possessor",
+   "field": "target",
+   "value": "One possessing creature and its host",
+   "pdfPage": 98
+  },
+  {
+   "id": "resonating-resistance",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 102
+  },
+  {
+   "id": "resonating-resistance",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 102
+  },
+  {
+   "id": "resonating-resistance",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 102
+  },
+  {
+   "id": "soul-shackles",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 104
+  },
+  {
+   "id": "soul-shackles",
+   "field": "savingThrow",
+   "value": "None (see text)",
+   "pdfPage": 104
+  },
+  {
+   "id": "soul-shackles",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 104
+  },
+  {
+   "id": "stop-heart",
+   "field": "descriptors",
+   "value": [
+    "Evil"
+   ],
+   "pdfPage": 106
+  },
+  {
+   "id": "stop-heart",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 106
+  },
+  {
+   "id": "stop-heart",
+   "field": "area",
+   "value": "One living humanoid or animal",
+   "pdfPage": 106
+  },
+  {
+   "id": "wall-of-ooze",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 109
+  },
+  {
+   "id": "wall-of-ooze",
+   "field": "savingThrow",
+   "value": "Fortitude partial (see text)",
+   "pdfPage": 109
+  },
+  {
+   "id": "wall-of-ooze",
+   "field": "effect",
+   "value": "A wall whose area is up to one 5-ft. square/level (S) (see text)",
+   "pdfPage": 109
+  },
+  {
+   "id": "alert-bebilith",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 84
+  },
+  {
+   "id": "alert-bebilith",
+   "field": "effect",
+   "value": "One bebilith",
+   "pdfPage": 84
+  },
+  {
+   "id": "ectoplasmic-enhancement",
+   "field": "descriptors",
+   "value": [
+    "Evil"
+   ],
+   "pdfPage": 93
+  },
+  {
+   "id": "ectoplasmic-enhancement",
+   "field": "castingTime",
+   "value": "1 full round",
+   "pdfPage": 93
+  },
+  {
+   "id": "ectoplasmic-enhancement",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 93
+  },
+  {
+   "id": "ectoplasmic-enhancement",
+   "field": "target",
+   "value": "One incorporeal undead/level",
+   "pdfPage": 93
+  },
+  {
+   "id": "false-sending",
+   "field": "duration",
+   "value": "1 round (see text)",
+   "pdfPage": 95
+  },
+  {
+   "id": "false-sending",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 95
+  },
+  {
+   "id": "fiendish-quickening",
+   "field": "castingTime",
+   "value": "1 full round",
+   "pdfPage": 95
+  },
+  {
+   "id": "fiendish-quickening",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 95
+  },
+  {
+   "id": "impotent-possessor",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 98
+  },
+  {
+   "id": "impotent-possessor",
+   "field": "target",
+   "value": "One possessing creature",
+   "pdfPage": 98
+  },
+  {
+   "id": "snare-astral-traveler",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 104
+  },
+  {
+   "id": "snare-astral-traveler",
+   "field": "target",
+   "value": "One astral creature",
+   "pdfPage": 104
+  },
+  {
+   "id": "eye-of-the-beholder",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 94
+  },
+  {
+   "id": "eye-of-the-beholder",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 94
+  },
+  {
+   "id": "fiendish-clarity",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 95
+  },
+  {
+   "id": "fiendish-clarity",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 95
+  },
+  {
+   "id": "fiendish-clarity",
+   "field": "target",
+   "value": "Caster",
+   "pdfPage": 95
+  },
+  {
+   "id": "wall-of-eyes",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 108
+  },
+  {
+   "id": "wall-of-eyes",
+   "field": "savingThrow",
+   "value": "Will negates (see text)",
+   "pdfPage": 108
+  },
+  {
+   "id": "wall-of-eyes",
+   "field": "effect",
+   "value": "A wall whose area is up to one 5-ft. square/level (S) (see text)",
+   "pdfPage": 108
+  },
+  {
+   "id": "whirlwind-of-teeth",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 110
+  },
+  {
+   "id": "whirlwind-of-teeth",
+   "field": "area",
+   "value": "5-ft./level radius cylinder 10 ft./level high",
+   "pdfPage": 110
+  },
+  {
+   "id": "gutwrench",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 97
+  },
+  {
+   "id": "gutwrench",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 97
+  },
+  {
+   "id": "souls-treasure-lost",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 104
+  },
+  {
+   "id": "souls-treasure-lost",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 104
+  },
+  {
+   "id": "steal-life",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 106
+  },
+  {
+   "id": "steal-life",
+   "field": "target",
+   "value": "One living humanoid",
+   "pdfPage": 106
+  },
+  {
+   "id": "crushing-fist-of-spite",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 89
+  },
+  {
+   "id": "crushing-fist-of-spite",
+   "field": "savingThrow",
+   "value": "Reflex half or Reflex negates (see text)",
+   "pdfPage": 89
+  },
+  {
+   "id": "crushing-fist-of-spite",
+   "field": "area",
+   "value": "5-ft.-radius cylinder, 30 ft. high",
+   "pdfPage": 89
+  },
+  {
+   "id": "mindrape",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 99
+  },
+  {
+   "id": "mindrape",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 99
+  },
+  {
+   "id": "utterdark",
+   "field": "castingTime",
+   "value": "1 hour",
+   "pdfPage": 108
+  },
+  {
+   "id": "utterdark",
+   "field": "area",
+   "value": "100-ft./level radius spread, centered on caster",
+   "pdfPage": 108
+  }
+ ],
+ "renames": [
+  {
+   "id": "darkliqht",
+   "name": "Darklight"
+  },
+  {
+   "id": "darkbolt-vile",
+   "name": "Darkbolt"
+  },
+  {
+   "id": "drown-vile",
+   "name": "Drown"
+  }
+ ],
+ "additions": [
+  {
+   "name": "Damning Darkness",
+   "school": "Evocation",
+   "descriptors": [
+    "Darkness",
+    "Evil"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "M"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Object touched",
+   "duration": "10 minutes/level (D)",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "page": 89,
+   "summary": "Darkness deals either 2d6 or 1d6 damage per round."
+  },
+  {
+   "name": "Wither Limb",
+   "school": "Necromancy",
+   "descriptors": [
+    "Evil"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One humanoid creature with limbs",
+   "duration": "1 round/level",
+   "savingThrow": "Fortitude negates",
+   "spellResistance": "Yes",
+   "page": 110,
+   "summary": "Caster reduces subject's speed to 5 ft. or makes it impossible for subject to use objects or cast somatic spells."
+  }
+ ],
+ "removals": [],
+ "notes": [
+  "Aberrate: book lists special component \"Fiend\" (not representable; omitted from components)",
+  "Addiction: book lists special component \"Drug\" (not representable; omitted from components)",
+  "Shriveling: book lists special component \"Disease\" (not representable; omitted from components)",
+  "Slow Consumption: book lists special component \"Location\" (not representable; omitted from components)",
+  "Unheavened: book lists special component \"Drug\" (not representable; omitted from components)",
+  "Glimpse of Truth: book lists special component \"Drug\" (not representable; omitted from components)",
+  "Abyssal Might: book lists special component \"Demon\" (not representable; omitted from components)",
+  "Distort Summons: book prints no savingThrow line; app has \"None\" (left as is)",
+  "Distort Summons: book prints no spellResistance line; app has \"No\" (left as is)",
+  "Grim Revenge: book lists special component \"Undead\" (not representable; omitted from components)",
+  "Hell's Power: book lists special component \"Devil\" (not representable; omitted from components)",
+  "Call Dretch Horde: book lists special component \"Soul\" (not representable; omitted from components)",
+  "Call Lemure Horde: book lists special component \"Soul\" (not representable; omitted from components)",
+  "Call Nightmare: book lists special component \"Soul\" (not representable; omitted from components)",
+  "Resonating Resistance: book lists special component \"Fiend\" (not representable; omitted from components)",
+  "Soul Shackles: book lists special component \"Location\" (not representable; omitted from components)",
+  "Stop Heart: book lists special component \"Drug\" (not representable; omitted from components)",
+  "Fiendish Quickening: book lists special component \"Fiend\" (not representable; omitted from components)",
+  "Gutwrench: book lists special component \"Undead\" (not representable; omitted from components)",
+  "Steal Life: book lists special component \"Location\" (not representable; omitted from components)",
+  "Crushing Fist of Spite: book lists special component \"Disease\" (not representable; omitted from components)",
+  "Page offset is 0: PDF page index equals printed book page (spell descriptions on PDF pages 84-110).",
+  "Book is a 3.0-era (pre-3.5) printing: stat lines say \"1 action\", \"1 full round\", \"N minutes/level\", \"24 hours\", \"(see text)\". Updates record these exactly as printed; most castingTime/duration updates are only this wording difference from the app's 3.5-style normalization (\"1 standard action\", \"min./level\", \"1 day\", \"; see text\").",
+  "Substantive differences: Utterdark casting time is \"1 hour\" (app \"3 rounds\"); Call Dretch/Lemure Horde duration \"One year\" and Call Nightmare \"One week\" (app \"Instantaneous\"); Call Lemure Horde effect is 3d4 lemures (the chapter spell list says 2d4); Slow Consumption duration \"Permanent (see below)\" (app \"1 day\"); Stop Heart has the [Evil] descriptor; Ectoplasmic Enhancement prints only [Evil] (app also has \"Ectomancy\").",
+  "Renames: \"Darkliqht\" is an OCR typo for Darklight; the book titles are plain \"Darkbolt\" and \"Drown\" (app uses \"Darkbolt, Vile\" / \"Drown, Vile\", possibly deliberately to disambiguate from other books' versions; ids left unchanged).",
+  "App spells had no target/area/effect fields; these were added as updates from the book. Dancing Chains prints the label \"Targets\".",
+  "Descriptor order differs from the app for several spells (e.g. Cruel Disappointment [Fear, Mind-Affecting, Evil], Gutwrench [Evil, Death], Crushing Fist of Spite [Evil, Force]); order-only differences were not reported.",
+  "Distort Summons appears as \"Corrupt Summons\" in the chapter's Sor/Wiz spell list, but the description heading is \"Distort Summons\".",
+  "Damning Darkness components print \"V, M/DF\" (mapped to V, M); Psychic Poison, Utterdark, Vile Lance, Wall of Ooze, Whirlwind of Teeth also use M/DF and False Sending M/DF.",
+  "Sor/Wiz spells in this book skipped because they already exist in the app under another source: Cheat, Entice Gift (Spell Compendium), Wrack (Complete Divine), Phantasmal Thief (Draconomicon), Bestow Greater Curse (as \"Bestow Curse, Greater\", Spell Compendium).",
+  "Wall of Deadly Chains is a \"As wall of chains, except\" spell: only Level (Sor/Wiz 4) and Saving Throw (Reflex half) printed; both match."
+ ]
+}

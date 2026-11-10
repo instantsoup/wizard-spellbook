@@ -20,7 +20,7 @@ import { slugify, validateSpellFile, SCHOOLS, type School, type Spell } from '..
 const DIR = 'public/data/spells'
 const FILES = ['srd.json', 'index-extra.json', 'index-books.json']
 const ADD_TO = 'index-books.json'
-const FIELDS = new Set(['name', 'school', 'subschool', 'descriptors', 'level', 'components', 'castingTime', 'range',
+const FIELDS = new Set(['source', 'page', 'name', 'school', 'subschool', 'descriptors', 'level', 'components', 'castingTime', 'range',
   'target', 'targetLabel', 'area', 'effect', 'duration', 'savingThrow', 'spellResistance', 'summary'])
 const COMPONENTS = ['V', 'S', 'M', 'F', 'DF', 'XP']
 
@@ -55,7 +55,7 @@ for (const path of paths) {
     if (!FIELDS.has(u.field)) { problems.push(`${path}: ${u.id}: unknown field "${u.field}"`); continue }
     const spell = hit.list[hit.i] as unknown as Record<string, unknown>
     let value = u.value
-    if (u.field === 'level') value = Number(value)
+    if (u.field === 'level' || u.field === 'page') value = Number(value)
     else if (u.field === 'components') value = (value as string[]).map((x) => x.toUpperCase()).filter((x) => COMPONENTS.includes(x)).sort((a, b) => COMPONENTS.indexOf(a) - COMPONENTS.indexOf(b))
     else if (u.field === 'descriptors') value = (value as string[]).map((x) => x.trim()).filter(Boolean)
     else if (u.field === 'school' && !SCHOOLS.includes(value as School)) { problems.push(`${path}: ${u.id}: bad school ${value}`); continue }
@@ -63,8 +63,6 @@ for (const path of paths) {
     if (value === '' || value === null) { delete spell[u.field]; counts.updates++; continue }
     if (JSON.stringify(spell[u.field]) === JSON.stringify(value)) { counts.unchanged++; continue }
     spell[u.field] = value
-    // a spell keeps only one of target/area/effect labels in sync
-    if (u.field === 'target' && spell.targetLabel && !/target/i.test(String(spell.targetLabel))) delete spell.targetLabel
     counts.updates++
   }
   for (const r of c.renames ?? []) {

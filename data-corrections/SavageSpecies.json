@@ -1,0 +1,264 @@
+{
+ "source": "Savage Species",
+ "verifiedBy": "subagent check against the book (page images and text)",
+ "updates": [
+  {
+   "id": "bridge-of-sound",
+   "field": "castingTime",
+   "value": "1 action",
+   "pdfPage": 63
+  },
+  {
+   "id": "bridge-of-sound",
+   "field": "effect",
+   "value": "One bridge of sound 5 ft. wide, 1 in. thick, and up to 10 ft./level long",
+   "pdfPage": 63
+  },
+  {
+   "id": "bridge-of-sound",
+   "field": "duration",
+   "value": "Concentration plus 1 round/level",
+   "pdfPage": 63
+  },
+  {
+   "id": "minor-servitor",
+   "field": "castingTime",
+   "value": "One day",
+   "pdfPage": 68
+  },
+  {
+   "id": "minor-servitor",
+   "field": "effect",
+   "value": "One object up to 1 cu. ft./level",
+   "pdfPage": 68
+  },
+  {
+   "id": "minor-servitor",
+   "field": "savingThrow",
+   "value": "None (object)",
+   "pdfPage": 69
+  },
+  {
+   "id": "incarnate-construct",
+   "field": "target",
+   "value": "One construct",
+   "pdfPage": 67
+  },
+  {
+   "id": "avoid-planar-effects",
+   "field": "source",
+   "value": "Spell Compendium"
+  },
+  {
+   "id": "avoid-planar-effects",
+   "field": "page",
+   "value": 19
+  }
+ ],
+ "renames": [],
+ "additions": [
+  {
+   "name": "Blindsight",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 minute/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Touched creature gains blindsight out to 30 feet.",
+   "page": 63
+  },
+  {
+   "name": "Cloud Wings",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 minute/level",
+   "savingThrow": "Fortitude negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject's existing fly speed increases by 30 feet.",
+   "page": 64
+  },
+  {
+   "name": "Flame Whips",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 8,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 action",
+   "range": "Personal",
+   "effect": "Flaming whips",
+   "duration": "1 round/level (D)",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Your forelimbs turn into whips of flame that deal heavy fire damage.",
+   "page": 66
+  },
+  {
+   "name": "Improved Blindsight",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 minute/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "As blindsight, but the blindsight granted reaches 60 feet.",
+   "page": 67
+  },
+  {
+   "name": "Laogzed's Breath",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "area": "Cone",
+   "duration": "Instantaneous",
+   "savingThrow": "Fortitude negates",
+   "spellResistance": "No",
+   "summary": "Breathe a cone of nauseating vapor that hangs in the air for 10 rounds.",
+   "page": 68
+  },
+  {
+   "name": "Lion's Charge",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 minute/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject can make a full attack at the end of a charge.",
+   "page": 68
+  },
+  {
+   "name": "Rapid Burrowing",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 minute/level",
+   "savingThrow": "Fortitude negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject's existing burrow speed increases by 20 feet.",
+   "page": 69
+  },
+  {
+   "name": "Skeletal Guard",
+   "school": "Necromancy",
+   "descriptors": [
+    "Evil"
+   ],
+   "level": 8,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 action",
+   "range": "Touch",
+   "target": "One or more fingerbones",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "summary": "Turn fingerbones into loyal skeletons that are hard to turn or rebuke.",
+   "page": 69
+  },
+  {
+   "name": "Stone Body",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 round/level (D)",
+   "summary": "Your body becomes living stone, granting damage reduction and many immunities.",
+   "page": 71
+  },
+  {
+   "name": "Vipergout",
+   "school": "Conjuration",
+   "subschool": "Summoning",
+   "descriptors": [],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 action",
+   "range": "Personal",
+   "effect": "1d4+3 summoned creatures",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "summary": "Spit out 1d4+3 fiendish or celestial vipers that attack your enemies.",
+   "page": 72
+  }
+ ],
+ "removals": [],
+ "notes": [
+  "PDF page index = book page (offset 0). Spells are in Chapter 6, pp. 63-72. This is a 3.0-era book: casting times print as '1 action', and they are recorded as printed.",
+  "Avoid Planar Effects is NOT in Savage Species: the book goes from Awaken Undead straight to Blindsight. The app's stat block matches Spell Compendium p. 19 exactly (Cleric 2, druid 2, sorcerer/wizard 3; 1 immediate action; 20 ft.). The spell first appeared in Planar Handbook (from memory: the Spell Compendium text only shows that it cites Planar Handbook in general), so its source should probably be Spell Compendium, p. 19. It was not removed.",
+  "Cloud Wings has misprints on the page itself, not OCR errors: 'Casting Time: 1 action)', 'Range: Tough', 'Spell Resistance: Yes(harmless)'. The addition uses '1 action', 'Touch', 'Yes (harmless)'.",
+  "Components: Major Resistance prints M/DF (mapped to M) and Rapid Burrowing prints F/DF (mapped to F).",
+  "Vipergout's school line is 'Conjuration (Summoning) (see text)'.",
+  "Improved Blindsight (Sor/Wiz 4, p. 67) and Laogzed's Breath (Sor/Wiz 3, p. 68) were also missing from the app, so they were added too (9 requested + 2). Both are 'as X, except' spells. Improved Blindsight's other fields come from Blindsight. For Laogzed's Breath, the book prints only Range, Area and Duration; the school, components, casting time, save and SR come from the 3.5 stinking cloud and should be checked.",
+  "Major Resistance (+3, Sor/Wiz 2) was added as asked, but Spell Compendium reprints the same +3 effect as 'Resistance, Greater' (Sor/Wiz 4), which is already in the app. Likewise Superior Resistance = app's 'Resistance, Superior', and Improved Enlarge / Improved Reduce (Sor/Wiz 5, p. 67) = app's 'Enlarge Person, Greater' / 'Reduce Person, Greater'. Those three were not added. Drop Major Resistance if renamed reprints should not be listed twice.",
+  "Spell Compendium reprints Flame Whips (Sor/Wiz 4), Skeletal Guard (Sor/Wiz 8), Stone Body (Sor/Wiz 6) and Vipergout (Sor/Wiz 3) at different levels, and the app has none of them under Spell Compendium either. The Spell Compendium versions of Blindsight, Cloud Wings, Rapid Burrowing and Lion's Charge are not sorcerer/wizard spells.",
+  "Stalking Spell: the book prints only Level, Duration and Saving Throw; these match the app. Its description says 'As improved invisibility' (the app summary says greater invisibility, the 3.5 name).",
+  "All other sorcerer/wizard spells in the chapter are already in the app (most under Spell Compendium).",
+  "Major Resistance dropped: reprinted as Resistance, Greater (Spell Compendium), already in the app.",
+  "Spells also reprinted in Spell Compendium keep the Spell Compendium version."
+ ]
+}
