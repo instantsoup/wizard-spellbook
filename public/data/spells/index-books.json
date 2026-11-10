@@ -2064,7 +2064,8 @@
   "duration": "10 minutes/level",
   "summary": "Get a bonus to listen, and possibly blindsense/blindsight.",
   "description": "Get a bonus to listen, and possibly blindsense/blindsight.\n\nSummary only. Full text: Complete Adventurer.",
-  "source": "Complete Adventurer"
+  "source": "Complete Adventurer",
+  "page": 154
  },
  {
   "id": "local-tremor",
@@ -2481,7 +2482,8 @@
   "spellResistance": "Yes (harmless)",
   "summary": "Grants the scent special ability.",
   "description": "Grants the scent special ability.\n\nSummary only. Full text: Complete Divine.",
-  "source": "Complete Divine"
+  "source": "Complete Divine",
+  "page": 178
  },
  {
   "id": "scintillating-scales",
@@ -6333,7 +6335,8 @@
   "duration": "1 round/level (D)",
   "summary": "As blink, but safer and with more control.",
   "description": "As blink, but safer and with more control.\n\nSummary only. Full text: Complete Divine.",
-  "source": "Complete Divine"
+  "source": "Complete Divine",
+  "page": 154
  },
  {
   "id": "boreal-wind",
@@ -6397,7 +6400,8 @@
   "spellResistance": "No",
   "summary": "Summons 1d4 lantern archons, coure eladrins, or musteval guardinals.",
   "description": "Summons 1d4 lantern archons, coure eladrins, or musteval guardinals.\n\nSummary only. Full text: Book of Exalted Deeds.",
-  "source": "Book of Exalted Deeds"
+  "source": "Book of Exalted Deeds",
+  "page": 93
  },
  {
   "id": "channeled-lifetheft",

@@ -1,0 +1,80 @@
+{
+ "source": "Complete Divine",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "blink-improved",
+   "field": "page",
+   "value": 154,
+   "pdfPage": 154
+  },
+  {
+   "id": "probe-thoughts",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 176
+  },
+  {
+   "id": "probe-thoughts",
+   "field": "savingThrow",
+   "value": "Fortitude negates; see text",
+   "pdfPage": 176
+  },
+  {
+   "id": "scent",
+   "field": "page",
+   "value": 178,
+   "pdfPage": 178
+  },
+  {
+   "id": "subvert-planar-essence",
+   "field": "area",
+   "value": "20-ft.-radius emanation centered on a point in space",
+   "pdfPage": 182
+  },
+  {
+   "id": "subvert-planar-essence",
+   "field": "page",
+   "value": 182,
+   "pdfPage": 182
+  },
+  {
+   "id": "unbinding",
+   "field": "castingTime",
+   "value": "1 full round",
+   "pdfPage": 185
+  },
+  {
+   "id": "unbinding",
+   "field": "area",
+   "value": "180-ft.-radius burst, centered on you",
+   "pdfPage": 185
+  },
+  {
+   "id": "wrack",
+   "field": "source",
+   "value": "Spell Compendium"
+  },
+  {
+   "id": "wrack",
+   "field": "page",
+   "value": 243
+  },
+  {
+   "id": "wrack",
+   "field": "duration",
+   "value": "1 round/level + 3d10 minutes; see text"
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "Book page = PDF page index - 1. New Sorcerer/Wizard Spells list on p. 150 lists 11 spells: Body of the Sun, Scent (2); Telepathic Bond, Lesser (3); Wrack (4); Dragon Breath, Blink, Improved (5); Fires of Purity, Probe Thoughts, Subvert Planar Essence (6); Bestow Curse, Greater (8); Unbinding (9). The five not in this packet are already in the app (SRD or Spell Compendium), so no additions.",
+  "Wrack: Complete Divine prints Sor/Wiz 4 and Duration '1 round/level' (the app's level 5 and '+3d10 minutes' duration match the later Spell Compendium version). Updated to the CD text as instructed; reconsider if the app intends the Spell Compendium version to win.",
+  "Subvert Planar Essence entry starts on p. 182 (stat lines continue on p. 183); components printed V, S, M/DF.",
+  "Probe Thoughts: CD prints 'Fortitude negates; see text' (app had Will).",
+  "Greater Bestow Curse (in app under Spell Compendium) is printed as Transmutation in Complete Divine p. 153; not changed here.",
+  "Wrack: Complete Divine prints Sor/Wiz 4, but Spell Compendium reprints it as Sor/Wiz 5 with the stats the app has; the later reprint is kept and the source corrected to Spell Compendium."
+ ]
+}

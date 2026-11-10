@@ -1,0 +1,254 @@
+{
+ "source": "Book of Exalted Deeds",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "affliction",
+   "field": "target",
+   "value": "Evil creature touched",
+   "pdfPage": 89
+  },
+  {
+   "id": "amber-sarcophagus",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 90
+  },
+  {
+   "id": "axiomatic-creature",
+   "field": "descriptors",
+   "value": [],
+   "pdfPage": 91
+  },
+  {
+   "id": "axiomatic-creature",
+   "field": "target",
+   "value": "One corporeal creature of lawful or neutral alignment that is native to the Material Plane",
+   "pdfPage": 91
+  },
+  {
+   "id": "blinding-glory",
+   "field": "area",
+   "value": "100-ft./level radius spread, centered on you",
+   "pdfPage": 92
+  },
+  {
+   "id": "call-faithful-servants",
+   "field": "page",
+   "value": 93,
+   "pdfPage": 93
+  },
+  {
+   "id": "celestial-brilliance",
+   "field": "school",
+   "value": "Evocation",
+   "pdfPage": 94
+  },
+  {
+   "id": "celestial-brilliance",
+   "field": "descriptors",
+   "value": [
+    "Good",
+    "Light"
+   ],
+   "pdfPage": 94
+  },
+  {
+   "id": "celestial-brilliance",
+   "field": "target",
+   "value": "Object touched",
+   "pdfPage": 94
+  },
+  {
+   "id": "dancing-web",
+   "field": "area",
+   "value": "20-ft.-radius burst",
+   "pdfPage": 96
+  },
+  {
+   "id": "distilled-joy",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 96
+  },
+  {
+   "id": "dolorous-motes",
+   "field": "effect",
+   "value": "1 10-ft. cube/level",
+   "pdfPage": 97
+  },
+  {
+   "id": "eladrin-form",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 97
+  },
+  {
+   "id": "elation",
+   "field": "target",
+   "value": "Allies in an 80-ft.-radius spread of you",
+   "pdfPage": 98
+  },
+  {
+   "id": "emerald-burst",
+   "field": "area",
+   "value": "20-ft.-radius burst",
+   "pdfPage": 98
+  },
+  {
+   "id": "energize-potion",
+   "field": "effect",
+   "value": "10-ft.-radius burst",
+   "pdfPage": 98
+  },
+  {
+   "id": "eyes-of-the-avoral",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 99
+  },
+  {
+   "id": "lantern-light",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 101
+  },
+  {
+   "id": "last-judgment",
+   "field": "target",
+   "value": "One evil humanoid, monstrous humanoid, or giant/2 levels",
+   "pdfPage": 102
+  },
+  {
+   "id": "perfect-summons",
+   "field": "area",
+   "value": "40-ft.-radius spread",
+   "pdfPage": 103
+  },
+  {
+   "id": "quickshift",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 104
+  },
+  {
+   "id": "radiant-fog",
+   "field": "effect",
+   "value": "Fog that spreads in a 20-ft. radius, 20 ft. high",
+   "pdfPage": 104
+  },
+  {
+   "id": "radiant-fog",
+   "field": "savingThrow",
+   "value": "Fortitude partial (see text)",
+   "pdfPage": 104
+  },
+  {
+   "id": "radiant-fog",
+   "field": "spellResistance",
+   "value": "Yes (see text)",
+   "pdfPage": 104
+  },
+  {
+   "id": "radiant-shield",
+   "field": "descriptors",
+   "value": [
+    "Electricity",
+    "Good"
+   ],
+   "pdfPage": 104
+  },
+  {
+   "id": "radiant-shield",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 104
+  },
+  {
+   "id": "righteous-glare",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 105
+  },
+  {
+   "id": "starmantle",
+   "field": "target",
+   "value": "One living creature touched",
+   "pdfPage": 108
+  },
+  {
+   "id": "stars-of-arvandor",
+   "field": "target",
+   "value": "Up to one creature or object per round",
+   "pdfPage": 108
+  },
+  {
+   "id": "telepathy-block",
+   "field": "area",
+   "value": "80-ft.-radius emanation centered on a creature, object, or point in space",
+   "pdfPage": 109
+  },
+  {
+   "id": "tomb-of-light",
+   "field": "target",
+   "value": "Evil extraplanar creature touched",
+   "pdfPage": 110
+  },
+  {
+   "id": "touch-of-adamantine",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 110
+  },
+  {
+   "id": "touch-of-adamantine",
+   "field": "savingThrow",
+   "value": "Will negates (object, harmless)",
+   "pdfPage": 110
+  },
+  {
+   "id": "touch-of-adamantine",
+   "field": "spellResistance",
+   "value": "Yes (object, harmless)",
+   "pdfPage": 110
+  },
+  {
+   "id": "vanishing-weapon",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 111
+  },
+  {
+   "id": "wages-of-sin",
+   "field": "target",
+   "value": "One evil creature/level",
+   "pdfPage": 111
+  },
+  {
+   "id": "warcry",
+   "field": "effect",
+   "value": "Cone-shaped burst",
+   "pdfPage": 111
+  },
+  {
+   "id": "yoke-of-mercy",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 112
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "PDF page index equals printed book page (offset 0). Sorcerer/wizard spell list on p. 89; 31 spells listed. Healing Touch (Sor/Wiz 3, p. 100) is already in the app under Spell Compendium, so it was skipped.",
+  "call-faithful-servants had no page; set to 93.",
+  "Axiomatic Creature: school line prints only 'Transmutation' with no [Good] descriptor, so descriptors set to []. Components also include Archon (not mapped).",
+  "Celestial Brilliance: book prints Evocation [Good, Light] in both the spell list and the entry; app had Abjuration [Good].",
+  "Radiant Fog: school line printed oddly as 'Conjuration (Creation, Good)'; treated Good as the descriptor (app already has it). Components include Abstinence.",
+  "Radiant Shield: book prints no Saving Throw or Spell Resistance lines; app has 'None' / 'See text'. Left unchanged; consider removing those fields. Components include Abstinence.",
+  "Elation and Stars of Arvandor use the label 'Targets:' in the book; stored as target.",
+  "Unusual components (not mapped): Abstinence (Call Faithful Servants, Lantern Light, Radiant Fog, Radiant Shield, Wages of Sin, Yoke of Mercy); Celestial (Call Faithful Servants, Last Judgment, Quickshift); Sacrifice (Dolorous Motes); Archon (Axiomatic Creature).",
+  "Summary typos in app (not stat lines): eyes-of-the-avoral 'gians', stars-of-arvandor 'letal', touch-of-adamantine 'adamantime'."
+ ]
+}

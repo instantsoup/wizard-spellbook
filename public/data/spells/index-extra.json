@@ -965,7 +965,8 @@
   "summary": "Subject gians +8 racial bonus on Spot checks.",
   "description": "Subject gians +8 racial bonus on Spot checks.\n\nSummary only. Full text: Book of Exalted Deeds, p. 99.",
   "source": "Book of Exalted Deeds",
-  "page": 99
+  "page": 99,
+  "target": "One creature"
  },
  {
   "id": "familiar-pocket",
@@ -1026,7 +1027,8 @@
   "summary": "Swift. You can sneak attack constructs for 1 round.",
   "description": "Swift. You can sneak attack constructs for 1 round.\n\nSummary only. Full text: Complete Adventurer, p. 149.",
   "source": "Complete Adventurer",
-  "page": 149
+  "page": 149,
+  "target": "You"
  },
  {
   "id": "guided-shot",
@@ -1310,7 +1312,8 @@
   "summary": "Ranged touch attack deals 1d6 points of damage.",
   "description": "Ranged touch attack deals 1d6 points of damage.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 101.",
   "source": "Book of Exalted Deeds",
-  "page": 101
+  "page": 101,
+  "effect": "Ray"
  },
  {
   "id": "light-of-lunia",
@@ -1749,7 +1752,8 @@
   "summary": "Swift. No range limit on next ranged sneak attack.",
   "description": "Swift. No range limit on next ranged sneak attack.\n\nSummary only. Full text: Complete Adventurer, p. 157.",
   "source": "Complete Adventurer",
-  "page": 157
+  "page": 157,
+  "target": "You"
  },
  {
   "id": "spell-flower",
@@ -3000,7 +3004,8 @@
   "summary": "Transforms potion into a grenade that deals energy damage in a 10-ft.-radius burst.",
   "description": "Transforms potion into a grenade that deals energy damage in a 10-ft.-radius burst.\n\nSummary only. Full text: Book of Exalted Deeds, p. 98.",
   "source": "Book of Exalted Deeds",
-  "page": 98
+  "page": 98,
+  "effect": "10-ft.-radius burst"
  },
  {
   "id": "energy-surge-lesser",
@@ -4100,7 +4105,8 @@
   "summary": "Weapon touched deals +1d6 sonic damage with each hit.",
   "description": "Weapon touched deals +1d6 sonic damage with each hit.\n\nSummary only. Full text: Complete Adventurer, p. 157.",
   "source": "Complete Adventurer",
-  "page": 157
+  "page": 157,
+  "target": "Weapon touched"
  },
  {
   "id": "spawn-screen",
@@ -4440,7 +4446,8 @@
   "summary": "Deal 1d6 damage +1/level; you also deal sneak attack damage if you have any.",
   "description": "Deal 1d6 damage +1/level; you also deal sneak attack damage if you have any.\n\nSummary only. Full text: Complete Adventurer, p. 158.",
   "source": "Complete Adventurer",
-  "page": 158
+  "page": 158,
+  "target": "Creature touched"
  },
  {
   "id": "wraithstrike",
@@ -4458,7 +4465,8 @@
   "summary": "Swift. Your melee attacks strike as touch attacks for 1 round.",
   "description": "Swift. Your melee attacks strike as touch attacks for 1 round.\n\nSummary only. Full text: Complete Adventurer, p. 158.",
   "source": "Complete Adventurer",
-  "page": 158
+  "page": 158,
+  "target": "You"
  },
  {
   "id": "yoke-of-mercy",
@@ -4481,7 +4489,8 @@
   "summary": "Target deals nonlethal damage.",
   "description": "Target deals nonlethal damage.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 112.",
   "source": "Book of Exalted Deeds",
-  "page": 112
+  "page": 112,
+  "target": "One creature"
  },
  {
   "id": "acid-breath",
@@ -5195,7 +5204,8 @@
   "summary": "Creates ambrosia.",
   "description": "Creates ambrosia.\n\nSummary only. Full text: Book of Exalted Deeds, p. 96.",
   "source": "Book of Exalted Deeds",
-  "page": 96
+  "page": 96,
+  "target": "One living creature"
  },
  {
   "id": "dolorous-blow",
@@ -5239,7 +5249,8 @@
   "summary": "Creates clouds of flickering light (1 10-ft. cube/level) that dazes creatures.",
   "description": "Creates clouds of flickering light (1 10-ft. cube/level) that dazes creatures.\n\n_Special component:_ Sacrifice.\n\nSummary only. Full text: Book of Exalted Deeds, p. 97.",
   "source": "Book of Exalted Deeds",
-  "page": 97
+  "page": 97,
+  "effect": "1 10-ft. cube/level"
  },
  {
   "id": "dragonskin",
@@ -5349,7 +5360,8 @@
   "summary": "Allies gain +2 to Strength and Dexterity, +5 ft. of speed.",
   "description": "Allies gain +2 to Strength and Dexterity, +5 ft. of speed.\n\nSummary only. Full text: Book of Exalted Deeds, p. 98.",
   "source": "Book of Exalted Deeds",
-  "page": 98
+  "page": 98,
+  "target": "Allies in an 80-ft.-radius spread of you"
  },
  {
   "id": "energy-aegis",
@@ -6309,10 +6321,9 @@
   "level": 3,
   "components": [
    "V",
-   "S",
-   "F"
+   "S"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 swift action",
   "range": "Personal",
   "duration": "1 round/level (D)",
   "savingThrow": "Will partial; see text",
@@ -6320,7 +6331,8 @@
   "summary": "Creates a quasi-real weapon.",
   "description": "Creates a quasi-real weapon.\n\nSummary only. Full text: Complete Adventurer, p. 157.",
   "source": "Complete Adventurer",
-  "page": 157
+  "page": 157,
+  "target": "You"
  },
  {
   "id": "stars-of-arvandor",
@@ -6343,7 +6355,8 @@
   "summary": "Tiny starbursts each deal 1d8 damage (half nonlethal), or 1d8 letal damage to evil creatures.",
   "description": "Tiny starbursts each deal 1d8 damage (half nonlethal), or 1d8 letal damage to evil creatures.\n\nSummary only. Full text: Book of Exalted Deeds, p. 108.",
   "source": "Book of Exalted Deeds",
-  "page": 108
+  "page": 108,
+  "target": "Up to one creature or object per round"
  },
  {
   "id": "stony-grasp",
@@ -6544,7 +6557,8 @@
   "summary": "Creatures within 30-foot cone cower for 1d4 rounds.",
   "description": "Creatures within 30-foot cone cower for 1d4 rounds.\n\nSummary only. Full text: Book of Exalted Deeds, p. 111.",
   "source": "Book of Exalted Deeds",
-  "page": 111
+  "page": 111,
+  "effect": "Cone-shaped burst"
  },
  {
   "id": "weapon-of-energy",
@@ -6651,7 +6665,8 @@
   "summary": "Infects evil subject with chosen affliction.",
   "description": "Infects evil subject with chosen affliction.\n\nSummary only. Full text: Book of Exalted Deeds, p. 89.",
   "source": "Book of Exalted Deeds",
-  "page": 89
+  "page": 89,
+  "target": "Evil creature touched"
  },
  {
   "id": "assay-spell-resistance",
@@ -6873,9 +6888,10 @@
  {
   "id": "celestial-brilliance",
   "name": "Celestial Brilliance",
-  "school": "Abjuration",
+  "school": "Evocation",
   "descriptors": [
-   "Good"
+   "Good",
+   "Light"
   ],
   "level": 4,
   "components": [
@@ -6890,7 +6906,8 @@
   "summary": "120 ft emanation of light, bright to 60 feet (double penalty to light sensitive, 1d6 damage to undead, 2d6 damage to evil outsiders and sensitive undead within 60 feet)",
   "description": "120 ft emanation of light, bright to 60 feet (double penalty to light sensitive, 1d6 damage to undead, 2d6 damage to evil outsiders and sensitive undead within 60 feet)\n\nSummary only. Full text: Book of Exalted Deeds, p. 94.",
   "source": "Book of Exalted Deeds",
-  "page": 94
+  "page": 94,
+  "target": "Object touched"
  },
  {
   "id": "channeled-pyroburst",
@@ -7025,7 +7042,8 @@
   "summary": "1d6 points/level of nonlethal damage and if save fails, evil creatures are entangled (half speed, -2 att, -4 Dex, Concentration DC 15 + level).",
   "description": "1d6 points/level of nonlethal damage and if save fails, evil creatures are entangled (half speed, -2 att, -4 Dex, Concentration DC 15 + level).\n\nSummary only. Full text: Book of Exalted Deeds, p. 96.",
   "source": "Book of Exalted Deeds",
-  "page": 96
+  "page": 96,
+  "area": "20-ft.-radius burst"
  },
  {
   "id": "darkvision-mass",
@@ -7859,7 +7877,8 @@
   "summary": "Creates an area where only good creatures can be summoned.",
   "description": "Creates an area where only good creatures can be summoned.\n\nSummary only. Full text: Book of Exalted Deeds, p. 103.",
   "source": "Book of Exalted Deeds",
-  "page": 103
+  "page": 103,
+  "area": "40-ft.-radius spread"
  },
  {
   "id": "phantom-battle",
@@ -7921,18 +7940,22 @@
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
   "duration": "1 min./level",
-  "savingThrow": "Fortitude partial; see text",
-  "spellResistance": "Yes; see text",
+  "savingThrow": "Fortitude partial (see text)",
+  "spellResistance": "Yes (see text)",
   "summary": "As solid fog, but dazzles or blinds creatures within.",
   "description": "As solid fog, but dazzles or blinds creatures within.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 104.",
   "source": "Book of Exalted Deeds",
-  "page": 104
+  "page": 104,
+  "effect": "Fog that spreads in a 20-ft. radius, 20 ft. high"
  },
  {
   "id": "radiant-shield",
   "name": "Radiant Shield",
   "school": "Evocation",
-  "descriptors": [],
+  "descriptors": [
+   "Electricity",
+   "Good"
+  ],
   "level": 4,
   "components": [
    "V",
@@ -7946,7 +7969,8 @@
   "summary": "Creatures attacking you take electricity damage; you're protected from electricity.",
   "description": "Creatures attacking you take electricity damage; you're protected from electricity.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 104.",
   "source": "Book of Exalted Deeds",
-  "page": 104
+  "page": 104,
+  "target": "You"
  },
  {
   "id": "raise-from-the-deep",
@@ -8721,7 +8745,8 @@
   "summary": "20-ft.-radius burst dazes neutral creatures for 1 round, stuns evil creatures for 1d4 rounds.",
   "description": "20-ft.-radius burst dazes neutral creatures for 1 round, stuns evil creatures for 1d4 rounds.\n\nSummary only. Full text: Book of Exalted Deeds, p. 98.",
   "source": "Book of Exalted Deeds",
-  "page": 98
+  "page": 98,
+  "area": "20-ft.-radius burst"
  },
  {
   "id": "enlarge-person-greater",
@@ -9278,7 +9303,8 @@
   "summary": "Gain +4 Dex, +3 luck bonus to AC, +5 luck bonus on Ref saves, +3d6 sneak attack, and evasion.",
   "description": "Gain +4 Dex, +3 luck bonus to AC, +5 luck bonus on Ref saves, +3d6 sneak attack, and evasion.\n\nSummary only. Full text: Complete Adventurer, p. 155.",
   "source": "Complete Adventurer",
-  "page": 155
+  "page": 155,
+  "target": "You"
  },
  {
   "id": "planar-tolerance",
@@ -9464,7 +9490,8 @@
   "summary": "Gain +4 on Hide, Move Silently, and Escape Artist checks, and concealment; you can move through obstacles if you have ranks in Escape Artist.",
   "description": "Gain +4 on Hide, Move Silently, and Escape Artist checks, and concealment; you can move through obstacles if you have ranks in Escape Artist.\n\nSummary only. Full text: Complete Adventurer, p. 156.",
   "source": "Complete Adventurer",
-  "page": 156
+  "page": 156,
+  "target": "You"
  },
  {
   "id": "sonic-shield",
@@ -9658,7 +9685,8 @@
   "summary": "Blocks all telepathic communication within 80-ft. radius.",
   "description": "Blocks all telepathic communication within 80-ft. radius.\n\nSummary only. Full text: Book of Exalted Deeds, p. 109.",
   "source": "Book of Exalted Deeds",
-  "page": 109
+  "page": 109,
+  "area": "80-ft.-radius emanation centered on a creature, object, or point in space"
  },
  {
   "id": "touch-of-adamantine",
@@ -9673,12 +9701,13 @@
   "castingTime": "1 standard action",
   "range": "Touch",
   "duration": "1 min./level",
-  "savingThrow": "Will negates (harmless, object)",
-  "spellResistance": "Yes (harmless, object)",
+  "savingThrow": "Will negates (object, harmless)",
+  "spellResistance": "Yes (object, harmless)",
   "summary": "Weapon gains the properties of an adamantime weapon.",
   "description": "Weapon gains the properties of an adamantime weapon.\n\nSummary only. Full text: Book of Exalted Deeds, p. 110.",
   "source": "Book of Exalted Deeds",
-  "page": 110
+  "page": 110,
+  "target": "Weapon touched"
  },
  {
   "id": "toxic-weapon",
@@ -9720,7 +9749,8 @@
   "summary": "Weapons' touch dispels summoned or quasi-real creatures.",
   "description": "Weapons' touch dispels summoned or quasi-real creatures.\n\nSummary only. Full text: Book of Exalted Deeds, p. 111.",
   "source": "Book of Exalted Deeds",
-  "page": 111
+  "page": 111,
+  "target": "Weapon touched"
  },
  {
   "id": "viscid-glob",
@@ -9827,13 +9857,13 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 round/level +3d10 minutes, see text",
+  "duration": "1 round/level + 3d10 minutes; see text",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "Renders creature helpless with pain.",
   "description": "Renders creature helpless with pain.\n\nSummary only. Full text: Complete Divine, p. 190.",
-  "source": "Complete Divine",
-  "page": 190
+  "source": "Spell Compendium",
+  "page": 243
  },
  {
   "id": "zone-of-respite",
@@ -10611,12 +10641,13 @@
   "castingTime": "1 minute",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "Concentration",
-  "savingThrow": "Will negates; see text",
+  "savingThrow": "Fortitude negates; see text",
   "spellResistance": "Yes",
   "summary": "Read subject's memories, one question/round.",
   "description": "Read subject's memories, one question/round.\n\nSummary only. Full text: Complete Divine, p. 176.",
   "source": "Complete Divine",
-  "page": 176
+  "page": 176,
+  "target": "One living creature"
  },
  {
   "id": "quickshift",
@@ -10636,7 +10667,8 @@
   "summary": "Caster can use teleport or teleport, greater spell-like ability as a free action for 1 round/level.",
   "description": "Caster can use teleport or teleport, greater spell-like ability as a free action for 1 round/level.\n\n_Special component:_ Celestial.\n\nSummary only. Full text: Book of Exalted Deeds, p. 104.",
   "source": "Book of Exalted Deeds",
-  "page": 104
+  "page": 104,
+  "target": "You"
  },
  {
   "id": "resistance-superior",
@@ -10789,7 +10821,8 @@
   "summary": "Cloak of stars destroys nonmagical weapons on contact and allows wearer a DC 15 Reflex save to reduce damage from magic weapons by half.",
   "description": "Cloak of stars destroys nonmagical weapons on contact and allows wearer a DC 15 Reflex save to reduce damage from magic weapons by half.\n\nSummary only. Full text: Book of Exalted Deeds, p. 108.",
   "source": "Book of Exalted Deeds",
-  "page": 108
+  "page": 108,
+  "target": "One living creature touched"
  },
  {
   "id": "subvert-planar-essence",
@@ -10810,7 +10843,8 @@
   "summary": "Reduces target's DR and SR.",
   "description": "Reduces target's DR and SR.\n\nSummary only. Full text: Complete Divine, p. 183.",
   "source": "Complete Divine",
-  "page": 183
+  "page": 182,
+  "area": "20-ft.-radius emanation centered on a point in space"
  },
  {
   "id": "telepathic-bond-interplanar",
@@ -10880,7 +10914,8 @@
   "summary": "Evil creatures attack other evil creatures.",
   "description": "Evil creatures attack other evil creatures.\n\n_Special component:_ Abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 111.",
   "source": "Book of Exalted Deeds",
-  "page": 111
+  "page": 111,
+  "target": "One evil creature/level"
  },
  {
   "id": "amber-sarcophagus",
@@ -10901,7 +10936,8 @@
   "summary": "Trap target in stasis sphere w/ hardness 5 and 10 hp/caster level.",
   "description": "Trap target in stasis sphere w/ hardness 5 and 10 hp/caster level.\n\nSummary only. Full text: Book of Exalted Deeds, p. 90.",
   "source": "Book of Exalted Deeds",
-  "page": 90
+  "page": 90,
+  "target": "One creature"
  },
  {
   "id": "animate-breath",
@@ -11161,7 +11197,8 @@
   "summary": "You become an incorporeal globe.",
   "description": "You become an incorporeal globe.\n\nSummary only. Full text: Book of Exalted Deeds, p. 97.",
   "source": "Book of Exalted Deeds",
-  "page": 97
+  "page": 97,
+  "target": "You"
  },
  {
   "id": "elemental-body",
@@ -11587,7 +11624,8 @@
   "summary": "Your gaze attack kills evil creatures with less than 5 HD, causes fear in others.",
   "description": "Your gaze attack kills evil creatures with less than 5 HD, causes fear in others.\n\nSummary only. Full text: Book of Exalted Deeds, p. 105.",
   "source": "Book of Exalted Deeds",
-  "page": 105
+  "page": 105,
+  "target": "You"
  },
  {
   "id": "spell-matrix",
@@ -11703,7 +11741,8 @@
   "summary": "Entraps and harms evil extraplanar creatures.",
   "description": "Entraps and harms evil extraplanar creatures.\n\nSummary only. Full text: Book of Exalted Deeds, p. 110.",
   "source": "Book of Exalted Deeds",
-  "page": 110
+  "page": 110,
+  "target": "Evil extraplanar creature touched"
  },
  {
   "id": "wall-of-eyes",
@@ -11782,9 +11821,7 @@
   "id": "axiomatic-creature",
   "name": "Axiomatic Creature",
   "school": "Transmutation",
-  "descriptors": [
-   "Good"
-  ],
+  "descriptors": [],
   "level": 8,
   "components": [
    "V",
@@ -11800,7 +11837,8 @@
   "summary": "Transforms creature into an axiomatic creature.",
   "description": "Transforms creature into an axiomatic creature.\n\n_Special component:_ Archon.\n\nSummary only. Full text: Book of Exalted Deeds, p. 91.",
   "source": "Book of Exalted Deeds",
-  "page": 91
+  "page": 91,
+  "target": "One corporeal creature of lawful or neutral alignment that is native to the Material Plane"
  },
  {
   "id": "bestow-curse-greater",
@@ -12088,7 +12126,8 @@
   "summary": "Evil creatures are struck dead and sent to Lower Planes.",
   "description": "Evil creatures are struck dead and sent to Lower Planes.\n\n_Special component:_ Celestial.\n\nSummary only. Full text: Book of Exalted Deeds, p. 102.",
   "source": "Book of Exalted Deeds",
-  "page": 102
+  "page": 102,
+  "target": "One evil humanoid, monstrous humanoid, or giant/2 levels"
  },
  {
   "id": "lightning-ring",
@@ -12445,7 +12484,8 @@
   "summary": "Create light as daylight in a 100 ft/level radius burst that blinds evil creatures.",
   "description": "Create light as daylight in a 100 ft/level radius burst that blinds evil creatures.\n\nSummary only. Full text: Book of Exalted Deeds, p. 92.",
   "source": "Book of Exalted Deeds",
-  "page": 92
+  "page": 92,
+  "area": "100-ft./level radius spread, centered on you"
  },
  {
   "id": "breath-weapon-admixture",
@@ -12989,7 +13029,7 @@
    "M",
    "DF"
   ],
-  "castingTime": "1 round",
+  "castingTime": "1 full round",
   "range": "180 ft.",
   "duration": "Instantaneous",
   "savingThrow": "None",
@@ -12997,7 +13037,8 @@
   "summary": "Frees everyone in range from spells that constrain or bind.",
   "description": "Frees everyone in range from spells that constrain or bind.\n\nSummary only. Full text: Complete Divine, p. 185.",
   "source": "Complete Divine",
-  "page": 185
+  "page": 185,
+  "area": "180-ft.-radius burst, centered on you"
  },
  {
   "id": "utterdark",

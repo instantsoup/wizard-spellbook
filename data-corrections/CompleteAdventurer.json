@@ -1,0 +1,83 @@
+{
+ "source": "Complete Adventurer",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "golem-strike",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 149
+  },
+  {
+   "id": "listening-lorecall",
+   "field": "page",
+   "value": 154,
+   "pdfPage": 154
+  },
+  {
+   "id": "nightstalkers-transformation",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 155
+  },
+  {
+   "id": "shadow-form",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 156
+  },
+  {
+   "id": "snipers-shot",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 157
+  },
+  {
+   "id": "sonic-weapon",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 157
+  },
+  {
+   "id": "spectral-weapon",
+   "field": "components",
+   "value": [
+    "V",
+    "S"
+   ],
+   "pdfPage": 157
+  },
+  {
+   "id": "spectral-weapon",
+   "field": "castingTime",
+   "value": "1 swift action",
+   "pdfPage": 157
+  },
+  {
+   "id": "spectral-weapon",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 157
+  },
+  {
+   "id": "wracking-touch",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 158
+  },
+  {
+   "id": "wraithstrike",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 158
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "Book page = PDF page index - 1. New Sorcerer/Wizard Spells list on pp. 141-142 has 29 spells; the 20 not in this packet (Arrow Mind, Critical Strike, Guided Shot, Insightful Feint, Instant Locksmith, Instant Search, Master's Touch, Distract Assailant, Accelerated Movement, Expeditious Retreat Swift, Daggerspell Stance, Balancing Lorecall, Mindless Rage, Bladeweave, Fly Swift, Entangling Staff, Cloak of the Sea, Cacophonic Shield, Hindsight) are already in the app under Spell Compendium, so no additions.",
+  "Spectral Weapon: book prints Components V, S (no focus) and Casting Time 1 swift action; the spell list also tags it 'Swift'.",
+  "Cacophonic Shield (in app under Spell Compendium at level 5) is printed as sorcerer/wizard 7 in Complete Adventurer p. 144; not changed here since it belongs to another book's packet."
+ ]
+}
