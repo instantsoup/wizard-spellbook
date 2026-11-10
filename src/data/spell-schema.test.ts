@@ -68,6 +68,26 @@ describe('bundled extra index', () => {
     expect(extra.filter((s: { id: string }) => srdIds.has(s.id))).toEqual([])
   })
   it('is listed in the manifest after srd.json', () => {
-    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json'])
+    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json'])
+  })
+})
+
+describe('bundled book index (from dndtools)', () => {
+  const books = JSON.parse(readFileSync('public/data/spells/index-books.json', 'utf8'))
+  const earlier = new Set(
+    ['srd.json', 'index-extra.json'].flatMap((f) => JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8')).map((s: { id: string }) => s.id)),
+  )
+  it('is valid and never overrides an earlier spell', () => {
+    expect(validateSpellFile(books)).toEqual([])
+    expect(books.filter((s: { id: string }) => earlier.has(s.id))).toEqual([])
+  })
+  it('only has spells from the allowed books', () => {
+    const allowed = new Set([
+      "Player's Handbook II", 'Complete Mage', 'Complete Arcane', 'Complete Adventurer', 'Complete Divine', 'Complete Scoundrel',
+      'Complete Warrior', 'Cityscape', 'Draconomicon', 'Dragon Magic', 'Frostburn', 'Heroes of Horror', 'Libris Mortis',
+      'Magic of Incarnum', 'Races of Destiny', 'Races of the Dragon', 'Races of Stone', 'Races of the Wild', 'Tome of Magic',
+      'Weapons of Legacy', 'Book of Exalted Deeds',
+    ])
+    expect(books.filter((s: { source: string }) => !allowed.has(s.source))).toEqual([])
   })
 })

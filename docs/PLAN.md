@@ -185,6 +185,15 @@ Species, Races of the Wild and Magic of Incarnum, plus SRD extras. Each has its 
 one-line summary and the book and page, with no full text. It was made with
 `scripts/convert-spell-list.ts`, whose `ALLOWED_SOURCES` allow list matches that library
 (no Forgotten Realms or Eberron, no Dragon Magazine issues, websites or third-party books).
+**Book index (added after v1):** `index-books.json` holds 345 more Sor/Wiz spells from the
+library's other books: Complete Mage, PHB II, Frostburn, Dragon Magic, Magic of Incarnum,
+Races of the Dragon, Draconomicon, Tome of Magic, Races of Destiny, Heroes of Horror,
+Cityscape, Weapons of Legacy and others. It's built by `scripts/convert-dndtools.ts` from
+srd.dndtools.org's wizard list (for the summaries) and its per-book pages (for school and
+stat lines only). Spells already in the earlier files keep their existing data, so Spell
+Compendium's updated versions win. Sorcerer-only spells are left out, and "functions like X"
+spells get their missing stat lines from X.
+
 Automatic starting cantrips come from the SRD only; cantrips from other books are learned
 like any other spell.
 

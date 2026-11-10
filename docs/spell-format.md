@@ -116,3 +116,18 @@ node scripts/convert-spell-list.ts list.json public/data/spells/srd.json my-spel
 - The result can be imported on a phone (**My spells → Import file**), or bundled as an
   index file in `public/` (as `index-extra.json` is). Lists like this usually include
   non-open books, so bundle summaries only, never full text.
+
+## Building the book index (srd.dndtools.org)
+
+`public/data/spells/index-books.json` comes from srd.dndtools.org:
+
+```bash
+# save the wizard list and the per-book pages it links to, then:
+node scripts/convert-dndtools.ts wizardSpells.html pages/ public/data/spells/index-books.json \
+  public/data/spells/srd.json public/data/spells/index-extra.json
+```
+
+- `ALLOWED` in the script lists the books from the player's library.
+- Only the school line and stat lines are taken from the book pages; the description is
+  the list's one-line summary plus "Summary only. Full text: <book>".
+- Spells already in the earlier files are skipped, and sorcerer-only spells are left out.

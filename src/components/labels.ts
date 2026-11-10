@@ -40,6 +40,8 @@ const BOOK_ABBR: Record<string, string> = {
   'Dragon Compendium': 'DrC',
   'Tome of Magic': 'ToM',
   'Unearthed Arcana': 'UA',
+  Cityscape: 'Ci',
+  'Weapons of Legacy': 'WoL',
 }
 
 /** Short label for a spell's source book; unknown sources get initials (or the first letters). */
