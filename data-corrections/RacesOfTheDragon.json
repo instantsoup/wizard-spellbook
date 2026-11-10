@@ -1,0 +1,15 @@
+{
+ "source": "Races of the Dragon",
+ "verifiedBy": "automatic comparison with the book's digital text",
+ "updates": [
+  {
+   "id": "summon-aspect-of-bahamut",
+   "field": "duration",
+   "value": "Concentration (maximum of 1 round/level) + 1 round",
+   "pdfPage": 118
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": []
+}

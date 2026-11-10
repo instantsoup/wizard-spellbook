@@ -72,7 +72,7 @@ describe('bundled extra index', () => {
   })
 })
 
-describe('bundled book index (from dndtools)', () => {
+describe('bundled book index', () => {
   const books = JSON.parse(readFileSync('public/data/spells/index-books.json', 'utf8'))
   const earlier = new Set(
     ['srd.json', 'index-extra.json'].flatMap((f) => JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8')).map((s: { id: string }) => s.id)),
@@ -86,7 +86,7 @@ describe('bundled book index (from dndtools)', () => {
       "Player's Handbook II", 'Complete Mage', 'Complete Arcane', 'Complete Adventurer', 'Complete Divine', 'Complete Scoundrel',
       'Complete Warrior', 'Cityscape', 'Draconomicon', 'Dragon Magic', 'Frostburn', 'Heroes of Horror', 'Libris Mortis',
       'Magic of Incarnum', 'Races of Destiny', 'Races of the Dragon', 'Races of Stone', 'Races of the Wild', 'Tome of Magic',
-      'Weapons of Legacy', 'Book of Exalted Deeds',
+      'Weapons of Legacy', 'Book of Exalted Deeds', 'Spell Compendium', 'Savage Species', 'Book of Vile Darkness', 'SRD',
     ])
     expect(books.filter((s: { source: string }) => !allowed.has(s.source))).toEqual([])
   })

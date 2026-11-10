@@ -1,0 +1,4807 @@
+{
+ "source": "Spell Compendium",
+ "verifiedBy": "automatic comparison with the book's digital text",
+ "updates": [
+  {
+   "id": "amanuensis",
+   "field": "target",
+   "value": "Object or objects with writing",
+   "pdfPage": 9
+  },
+  {
+   "id": "amanuensis",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 9
+  },
+  {
+   "id": "caltrops",
+   "field": "area",
+   "value": "See text",
+   "pdfPage": 42
+  },
+  {
+   "id": "electric-jolt",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 78
+  },
+  {
+   "id": "launch-bolt",
+   "field": "target",
+   "value": "One crossbow bolt in your possession",
+   "pdfPage": 130
+  },
+  {
+   "id": "launch-item",
+   "field": "target",
+   "value": "One Fine item in your",
+   "pdfPage": 130
+  },
+  {
+   "id": "accelerated-movement",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 7
+  },
+  {
+   "id": "appraising-touch",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 15
+  },
+  {
+   "id": "appraising-touch",
+   "field": "duration",
+   "value": "1 hour/level",
+   "pdfPage": 15
+  },
+  {
+   "id": "arrow-mind",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 15
+  },
+  {
+   "id": "arrow-mind",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 15
+  },
+  {
+   "id": "babau-slime",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 22
+  },
+  {
+   "id": "babau-slime",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 22
+  },
+  {
+   "id": "backbiter",
+   "field": "target",
+   "value": "One weapon",
+   "pdfPage": 23
+  },
+  {
+   "id": "benign-transposition",
+   "field": "target",
+   "value": "Two willing creatures of up to Large size",
+   "pdfPage": 27
+  },
+  {
+   "id": "blades-of-fire",
+   "field": "subschool",
+   "value": "Creation",
+   "pdfPage": 31
+  },
+  {
+   "id": "blades-of-fire",
+   "field": "target",
+   "value": "Up to two melee weapons you are wielding",
+   "pdfPage": 31
+  },
+  {
+   "id": "blood-wind",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 caster levels)",
+   "pdfPage": 33
+  },
+  {
+   "id": "buzzing-bee",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 41
+  },
+  {
+   "id": "buzzing-bee",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 41
+  },
+  {
+   "id": "cheat",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 46
+  },
+  {
+   "id": "cheat",
+   "field": "duration",
+   "value": "1 minute/level or until discharged",
+   "pdfPage": 46
+  },
+  {
+   "id": "corrosive-grasp",
+   "field": "target",
+   "value": "Creatures touched",
+   "pdfPage": 53
+  },
+  {
+   "id": "critical-strike",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 56
+  },
+  {
+   "id": "cutting-hand",
+   "field": "target",
+   "value": "Your hand",
+   "pdfPage": 57
+  },
+  {
+   "id": "dead-end",
+   "field": "target",
+   "value": "One creature/level touched",
+   "pdfPage": 59
+  },
+  {
+   "id": "dead-end",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 59
+  },
+  {
+   "id": "deep-breath",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 61
+  },
+  {
+   "id": "dispel-ward",
+   "field": "target",
+   "value": "One warded object or area",
+   "pdfPage": 67
+  },
+  {
+   "id": "distract",
+   "field": "target",
+   "value": "One creature/level, no two of which are more than 30 ft. apart",
+   "pdfPage": 69
+  },
+  {
+   "id": "distract-assailant",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 69
+  },
+  {
+   "id": "ebon-eyes",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 77
+  },
+  {
+   "id": "ebon-eyes",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 77
+  },
+  {
+   "id": "ectoplasmic-armor",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 77
+  },
+  {
+   "id": "familiar-pocket",
+   "field": "target",
+   "value": "One container or garment with a pocket touched",
+   "pdfPage": 88
+  },
+  {
+   "id": "fist-of-stone",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 94
+  },
+  {
+   "id": "fist-of-stone",
+   "field": "duration",
+   "value": "1 minute",
+   "pdfPage": 94
+  },
+  {
+   "id": "guided-shot",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 108
+  },
+  {
+   "id": "guiding-light",
+   "field": "target",
+   "value": "Creatures in a 5-ft.-radius burst",
+   "pdfPage": 108
+  },
+  {
+   "id": "guiding-light",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 108
+  },
+  {
+   "id": "hail-of-stone",
+   "field": "area",
+   "value": "Cylinder (5-ft. radius, 40 ft. high)",
+   "pdfPage": 108
+  },
+  {
+   "id": "horrible-taste",
+   "field": "target",
+   "value": "Creature or object touched",
+   "pdfPage": 116
+  },
+  {
+   "id": "horrible-taste",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 116
+  },
+  {
+   "id": "horrible-taste",
+   "field": "savingThrow",
+   "value": "Fortitude negates; see text",
+   "pdfPage": 116
+  },
+  {
+   "id": "ice-dagger",
+   "field": "effect",
+   "value": "Dagger of ice",
+   "pdfPage": 118
+  },
+  {
+   "id": "incite",
+   "field": "target",
+   "value": "Creatures in a 10-ft. burst",
+   "pdfPage": 121
+  },
+  {
+   "id": "incite",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 121
+  },
+  {
+   "id": "inhibit",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 123
+  },
+  {
+   "id": "insightful-feint",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 124
+  },
+  {
+   "id": "instant-locksmith",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 124
+  },
+  {
+   "id": "instant-search",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 124
+  },
+  {
+   "id": "ironguts",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 126
+  },
+  {
+   "id": "ironguts",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 126
+  },
+  {
+   "id": "low-light-vision",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 134
+  },
+  {
+   "id": "luminous-gaze",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 135
+  },
+  {
+   "id": "mage-hand-greater",
+   "field": "target",
+   "value": "One object or creature weighing up to 40 lb.",
+   "pdfPage": 136
+  },
+  {
+   "id": "masters-touch",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 139
+  },
+  {
+   "id": "masters-touch",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 139
+  },
+  {
+   "id": "portal-beacon",
+   "field": "target",
+   "value": "One interplanar gate or portal",
+   "pdfPage": 161
+  },
+  {
+   "id": "remove-scent",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 173
+  },
+  {
+   "id": "remove-scent",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 173
+  },
+  {
+   "id": "shieldbearer",
+   "field": "target",
+   "value": "Shield touched",
+   "pdfPage": 188
+  },
+  {
+   "id": "spell-flower",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 198
+  },
+  {
+   "id": "thunderhead",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 219
+  },
+  {
+   "id": "weapon-shift",
+   "field": "target",
+   "value": "One melee weapon of up to 15 lb.",
+   "pdfPage": 237
+  },
+  {
+   "id": "weapon-shift",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 237
+  },
+  {
+   "id": "wings-of-the-sea",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 240
+  },
+  {
+   "id": "wings-of-the-sea",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 240
+  },
+  {
+   "id": "aiming-at-the-target",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 8
+  },
+  {
+   "id": "augment-familiar",
+   "field": "target",
+   "value": "Your familiar",
+   "pdfPage": 17
+  },
+  {
+   "id": "balancing-lorecall",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 23
+  },
+  {
+   "id": "balancing-lorecall",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 23
+  },
+  {
+   "id": "baleful-transposition",
+   "field": "target",
+   "value": "Two creatures of up to Large size",
+   "pdfPage": 23
+  },
+  {
+   "id": "balor-nimbus",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 24
+  },
+  {
+   "id": "belker-claws",
+   "field": "target",
+   "value": "Living creature",
+   "pdfPage": 26
+  },
+  {
+   "id": "belker-claws",
+   "field": "duration",
+   "value": "Instantaneous",
+   "pdfPage": 26
+  },
+  {
+   "id": "bladeweave",
+   "field": "descriptors",
+   "value": [
+    "Pattern"
+   ],
+   "pdfPage": 31
+  },
+  {
+   "id": "bladeweave",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 31
+  },
+  {
+   "id": "blast-of-force",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 31
+  },
+  {
+   "id": "body-of-the-sun",
+   "field": "area",
+   "value": "5-ft.-radius emanation centered on you",
+   "pdfPage": 35
+  },
+  {
+   "id": "bonefiddle",
+   "field": "target",
+   "value": "One creature with a skeleton or exoskeleton",
+   "pdfPage": 37
+  },
+  {
+   "id": "bristle",
+   "field": "target",
+   "value": "Suit of armor touched",
+   "pdfPage": 40
+  },
+  {
+   "id": "bristle",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 40
+  },
+  {
+   "id": "burning-sword",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 41
+  },
+  {
+   "id": "burning-sword",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 41
+  },
+  {
+   "id": "chain-of-eyes",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 45
+  },
+  {
+   "id": "cloak-pool",
+   "field": "target",
+   "value": "One color pool",
+   "pdfPage": 48
+  },
+  {
+   "id": "cloud-of-bewilderment",
+   "field": "school",
+   "value": "Conjuration",
+   "pdfPage": 48
+  },
+  {
+   "id": "cloud-of-bewilderment",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 levels)",
+   "pdfPage": 48
+  },
+  {
+   "id": "cloud-of-bewilderment",
+   "field": "area",
+   "value": "10-ft. cube",
+   "pdfPage": 48
+  },
+  {
+   "id": "combust",
+   "field": "target",
+   "value": "Touched creature or combustible object that weighs no more than 25 lb./level",
+   "pdfPage": 50
+  },
+  {
+   "id": "create-magic-tattoo",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 55
+  },
+  {
+   "id": "create-magic-tattoo",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 55
+  },
+  {
+   "id": "curse-of-impending-blades",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 56
+  },
+  {
+   "id": "curse-of-impending-blades",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 56
+  },
+  {
+   "id": "daggerspell-stance",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 57
+  },
+  {
+   "id": "dark-way",
+   "field": "effect",
+   "value": "One bridge of force 5 ft. wide, 1 in. thick, and up to 20 ft./level long",
+   "pdfPage": 58
+  },
+  {
+   "id": "death-armor",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 60
+  },
+  {
+   "id": "delusions-of-grandeur",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 63
+  },
+  {
+   "id": "delusions-of-grandeur",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 63
+  },
+  {
+   "id": "desiccating-bubble",
+   "field": "effect",
+   "value": "3-ft.-radius sphere of air",
+   "pdfPage": 63
+  },
+  {
+   "id": "discern-shapechanger",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 66
+  },
+  {
+   "id": "discolor-pool",
+   "field": "target",
+   "value": "One color pool",
+   "pdfPage": 66
+  },
+  {
+   "id": "disguise-undead",
+   "field": "target",
+   "value": "1 corporeal undead",
+   "pdfPage": 66
+  },
+  {
+   "id": "disguise-undead",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 66
+  },
+  {
+   "id": "disguise-undead",
+   "field": "spellResistance",
+   "value": "Yes (harmless)",
+   "pdfPage": 66
+  },
+  {
+   "id": "dissonant-chant",
+   "field": "area",
+   "value": "100-foot-radius emanation",
+   "pdfPage": 69
+  },
+  {
+   "id": "dissonant-chant",
+   "field": "duration",
+   "value": "1 round/level (D)",
+   "pdfPage": 69
+  },
+  {
+   "id": "distracting-ray",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 69
+  },
+  {
+   "id": "earth-lock",
+   "field": "target",
+   "value": "One 1-foot length of tunnel with a diameter of up to 10 feet",
+   "pdfPage": 75
+  },
+  {
+   "id": "earthbind",
+   "field": "range",
+   "value": "Medium (100 ft. + 10 ft./level)",
+   "pdfPage": 76
+  },
+  {
+   "id": "earthbind",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 76
+  },
+  {
+   "id": "earthbind",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 76
+  },
+  {
+   "id": "earthen-grasp",
+   "field": "effect",
+   "value": "Animated earthen arm",
+   "pdfPage": 76
+  },
+  {
+   "id": "ectoplasmic-feedback",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 78
+  },
+  {
+   "id": "ectoplasmic-feedback",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 78
+  },
+  {
+   "id": "electric-loop",
+   "field": "target",
+   "value": "One creature/3 levels, each of which is adjacent to another target",
+   "pdfPage": 78
+  },
+  {
+   "id": "entice-gift",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 83
+  },
+  {
+   "id": "ethereal-chamber",
+   "field": "target",
+   "value": "One ethereal creature",
+   "pdfPage": 84
+  },
+  {
+   "id": "ethereal-chamber",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 84
+  },
+  {
+   "id": "extend-tentacles",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 86
+  },
+  {
+   "id": "fearsome-grapple",
+   "field": "castingTime",
+   "value": "1 immediate action",
+   "pdfPage": 90
+  },
+  {
+   "id": "fearsome-grapple",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 90
+  },
+  {
+   "id": "fins-to-feet",
+   "field": "target",
+   "value": "Willing creature touched",
+   "pdfPage": 92
+  },
+  {
+   "id": "fireburst",
+   "field": "effect",
+   "value": "Burst of fire extending 10 ft. from you",
+   "pdfPage": 93
+  },
+  {
+   "id": "flame-dagger",
+   "field": "effect",
+   "value": "A daggerlike beam",
+   "pdfPage": 94
+  },
+  {
+   "id": "flame-dagger",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 94
+  },
+  {
+   "id": "fly-swift",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 96
+  },
+  {
+   "id": "force-ladder",
+   "field": "effect",
+   "value": "One ladder of force up to 60 ft. long",
+   "pdfPage": 97
+  },
+  {
+   "id": "force-ladder",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 97
+  },
+  {
+   "id": "frost-breath",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 100
+  },
+  {
+   "id": "fuse-arms",
+   "field": "target",
+   "value": "Creature with at least two arms or tentacles touched",
+   "pdfPage": 100
+  },
+  {
+   "id": "fuse-arms",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 100
+  },
+  {
+   "id": "ghost-touch-armor",
+   "field": "target",
+   "value": "Armor of creature touched",
+   "pdfPage": 102
+  },
+  {
+   "id": "ghost-touch-armor",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 102
+  },
+  {
+   "id": "heroics",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 113
+  },
+  {
+   "id": "heroics",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 113
+  },
+  {
+   "id": "hurl",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 117
+  },
+  {
+   "id": "hurl",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 117
+  },
+  {
+   "id": "ice-knife",
+   "field": "components",
+   "value": [
+    "S",
+    "M"
+   ],
+   "pdfPage": 119
+  },
+  {
+   "id": "ice-knife",
+   "field": "effect",
+   "value": "One icy missile",
+   "pdfPage": 119
+  },
+  {
+   "id": "ice-knife",
+   "field": "savingThrow",
+   "value": "Fortitude partial or Reflex half; see text",
+   "pdfPage": 119
+  },
+  {
+   "id": "infernal-wound",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 122
+  },
+  {
+   "id": "inky-cloud",
+   "field": "area",
+   "value": "30-ft.-radius spread centered on you",
+   "pdfPage": 123
+  },
+  {
+   "id": "inky-cloud",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 123
+  },
+  {
+   "id": "ironthunder-horn",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 126
+  },
+  {
+   "id": "life-bolt",
+   "field": "effect",
+   "value": "Up to five rays",
+   "pdfPage": 131
+  },
+  {
+   "id": "lively-step",
+   "field": "area",
+   "value": "30-ft.-radius emanation centered on you",
+   "pdfPage": 133
+  },
+  {
+   "id": "malevolent-miasma",
+   "field": "area",
+   "value": "15-ft.-radius burst",
+   "pdfPage": 137
+  },
+  {
+   "id": "marked-object",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 139
+  },
+  {
+   "id": "marked-object",
+   "field": "duration",
+   "value": "24 hours/level",
+   "pdfPage": 139
+  },
+  {
+   "id": "mechanus-mind",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 140
+  },
+  {
+   "id": "mechanus-mind",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 140
+  },
+  {
+   "id": "mindless-rage",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 142
+  },
+  {
+   "id": "mountain-stance",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 144
+  },
+  {
+   "id": "mountain-stance",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 144
+  },
+  {
+   "id": "rebuke",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 170
+  },
+  {
+   "id": "scorch",
+   "field": "area",
+   "value": "30-ft. line",
+   "pdfPage": 181
+  },
+  {
+   "id": "shadow-radiance",
+   "field": "area",
+   "value": "20-ft.-radius burst centered on a point in space",
+   "pdfPage": 185
+  },
+  {
+   "id": "shroud-of-undeath",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 189
+  },
+  {
+   "id": "shroud-of-undeath",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 189
+  },
+  {
+   "id": "snowball-swarm",
+   "field": "area",
+   "value": "10-ft.-radius burst",
+   "pdfPage": 194
+  },
+  {
+   "id": "speak-to-allies",
+   "field": "target",
+   "value": "Any number of allied",
+   "pdfPage": 197
+  },
+  {
+   "id": "stolen-breath",
+   "field": "target",
+   "value": "One living creature that breathes air",
+   "pdfPage": 207
+  },
+  {
+   "id": "stolen-breath",
+   "field": "duration",
+   "value": "Instantaneous; see text",
+   "pdfPage": 207
+  },
+  {
+   "id": "stolen-breath",
+   "field": "savingThrow",
+   "value": "None",
+   "pdfPage": 207
+  },
+  {
+   "id": "veil-of-shadow",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 228
+  },
+  {
+   "id": "veil-of-shadow",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 228
+  },
+  {
+   "id": "whirling-blade",
+   "field": "effect",
+   "value": "60-ft. line",
+   "pdfPage": 238
+  },
+  {
+   "id": "acid-breath",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 7
+  },
+  {
+   "id": "air-breathing",
+   "field": "target",
+   "value": "Living creatures touched",
+   "pdfPage": 8
+  },
+  {
+   "id": "amorphous-form",
+   "field": "target",
+   "value": "Willing corporeal creature touched",
+   "pdfPage": 9
+  },
+  {
+   "id": "amorphous-form",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 9
+  },
+  {
+   "id": "analyze-portal",
+   "field": "area",
+   "value": "Cone-shaped emanation from you to the extreme of the range",
+   "pdfPage": 10
+  },
+  {
+   "id": "anticipate-teleportation",
+   "field": "range",
+   "value": "One willing creature touched",
+   "pdfPage": 13
+  },
+  {
+   "id": "anticipate-teleportation",
+   "field": "area",
+   "value": "5-ft./level radius emanation from touched creature",
+   "pdfPage": 13
+  },
+  {
+   "id": "anticipate-teleportation",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 13
+  },
+  {
+   "id": "antidragon-aura",
+   "field": "target",
+   "value": "One creature/2 levels, no two of which are more than 30 ft. apart",
+   "pdfPage": 14
+  },
+  {
+   "id": "antidragon-aura",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 14
+  },
+  {
+   "id": "bands-of-steel",
+   "field": "target",
+   "value": "One Medium or smaller creature",
+   "pdfPage": 24
+  },
+  {
+   "id": "bite-of-the-wererat",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 28
+  },
+  {
+   "id": "blade-of-pain-and-fear",
+   "field": "effect",
+   "value": "Swordlike column of gnashing teeth",
+   "pdfPage": 30
+  },
+  {
+   "id": "blade-of-pain-and-fear",
+   "field": "duration",
+   "value": "1 round/level (D)",
+   "pdfPage": 30
+  },
+  {
+   "id": "capricious-zephyr",
+   "field": "effect",
+   "value": "5-ft.-diameter sphere",
+   "pdfPage": 43
+  },
+  {
+   "id": "circle-dance",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 46
+  },
+  {
+   "id": "cone-of-dimness",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 50
+  },
+  {
+   "id": "corpse-candle",
+   "field": "effect",
+   "value": "Ghostly hand and candle",
+   "pdfPage": 53
+  },
+  {
+   "id": "corpse-candle",
+   "field": "duration",
+   "value": "1 minute/level (D); see text",
+   "pdfPage": 53
+  },
+  {
+   "id": "curse-of-impending-blades-mass",
+   "field": "target",
+   "value": "Enemies in a 20-ft.-radius",
+   "pdfPage": 57
+  },
+  {
+   "id": "deeper-darkvision",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 62
+  },
+  {
+   "id": "demon-dirge",
+   "field": "target",
+   "value": "Living creature",
+   "pdfPage": 63
+  },
+  {
+   "id": "devil-blight",
+   "field": "target",
+   "value": "Living creature",
+   "pdfPage": 64
+  },
+  {
+   "id": "diamondsteel",
+   "field": "target",
+   "value": "Suit of metal armor touched",
+   "pdfPage": 64
+  },
+  {
+   "id": "disrupt-undead-greater",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 68
+  },
+  {
+   "id": "dolorous-blow",
+   "field": "target",
+   "value": "Weapon touched",
+   "pdfPage": 70
+  },
+  {
+   "id": "dolorous-blow",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 70
+  },
+  {
+   "id": "dragonskin",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 73
+  },
+  {
+   "id": "dragonskin",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 73
+  },
+  {
+   "id": "earthen-grace",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 76
+  },
+  {
+   "id": "earthen-grace",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 76
+  },
+  {
+   "id": "enhance-familiar",
+   "field": "target",
+   "value": "Familiar touched",
+   "pdfPage": 82
+  },
+  {
+   "id": "enhance-familiar",
+   "field": "spellResistance",
+   "value": "Yes (harmless)",
+   "pdfPage": 82
+  },
+  {
+   "id": "eradicate-earth",
+   "field": "area",
+   "value": "40-ft.-radius burst centered on you",
+   "pdfPage": 84
+  },
+  {
+   "id": "false-gravity",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 87
+  },
+  {
+   "id": "false-gravity",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 87
+  },
+  {
+   "id": "flashburst",
+   "field": "area",
+   "value": "20-ft.-radius burst",
+   "pdfPage": 95
+  },
+  {
+   "id": "flashburst",
+   "field": "savingThrow",
+   "value": "Will partial; see text",
+   "pdfPage": 95
+  },
+  {
+   "id": "fortify-familiar",
+   "field": "target",
+   "value": "Familiar touched",
+   "pdfPage": 98
+  },
+  {
+   "id": "girallons-blessing",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 106
+  },
+  {
+   "id": "girallons-blessing",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 106
+  },
+  {
+   "id": "great-thunderclap",
+   "field": "area",
+   "value": "20-ft.-radius spread",
+   "pdfPage": 107
+  },
+  {
+   "id": "hailstones",
+   "field": "effect",
+   "value": "One frigid globe/5 levels",
+   "pdfPage": 109
+  },
+  {
+   "id": "hamatula-barbs",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 109
+  },
+  {
+   "id": "hamatula-barbs",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 109
+  },
+  {
+   "id": "healing-touch",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 111
+  },
+  {
+   "id": "icelance",
+   "field": "effect",
+   "value": "One lance of ice",
+   "pdfPage": 119
+  },
+  {
+   "id": "incorporeal-enhancement",
+   "field": "target",
+   "value": "One incorporeal undead/level",
+   "pdfPage": 121
+  },
+  {
+   "id": "incorporeal-enhancement",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 121
+  },
+  {
+   "id": "junglerazer",
+   "field": "area",
+   "value": "120-ft. line",
+   "pdfPage": 127
+  },
+  {
+   "id": "manyjaws",
+   "field": "effect",
+   "value": "One pair of disembodied, flying jaws per caster level (maximum ten pairs)",
+   "pdfPage": 138
+  },
+  {
+   "id": "mesmerizing-glare",
+   "field": "target",
+   "value": "One living creature/level, no two of which are more than 30 ft. apart",
+   "pdfPage": 140
+  },
+  {
+   "id": "mind-poison",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 141
+  },
+  {
+   "id": "mind-poison",
+   "field": "duration",
+   "value": "Instantaneous; see text",
+   "pdfPage": 141
+  },
+  {
+   "id": "mind-poison",
+   "field": "savingThrow",
+   "value": "Fortitude negates; see text",
+   "pdfPage": 141
+  },
+  {
+   "id": "misers-envy",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 142
+  },
+  {
+   "id": "nauseating-breath",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 146
+  },
+  {
+   "id": "primal-form",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 161
+  },
+  {
+   "id": "primal-form",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 161
+  },
+  {
+   "id": "regal-procession",
+   "field": "effect",
+   "value": "One mount/level",
+   "pdfPage": 172
+  },
+  {
+   "id": "sonorous-hum",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 196
+  },
+  {
+   "id": "sonorous-hum",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 196
+  },
+  {
+   "id": "sound-lance",
+   "field": "target",
+   "value": "One creature or object",
+   "pdfPage": 196
+  },
+  {
+   "id": "wall-of-light",
+   "field": "effect",
+   "value": "A straight wall whose area is up to one 10-ft. square/level or a sphere or hemisphere with a radius of up to 5 ft./2 levels",
+   "pdfPage": 234
+  },
+  {
+   "id": "wall-of-light",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 234
+  },
+  {
+   "id": "weapon-of-energy",
+   "field": "target",
+   "value": "One weapon",
+   "pdfPage": 236
+  },
+  {
+   "id": "weapon-of-impact",
+   "field": "range",
+   "value": "Touch",
+   "pdfPage": 237
+  },
+  {
+   "id": "weapon-of-impact",
+   "field": "target",
+   "value": "One bludgeoning weapon or fifty bludgeoning projectiles, all of which must be in contact with one another at the time of casting",
+   "pdfPage": 237
+  },
+  {
+   "id": "weapon-of-impact",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 237
+  },
+  {
+   "id": "weapon-of-impact",
+   "field": "savingThrow",
+   "value": "Fortitude negates (harmless, object)",
+   "pdfPage": 237
+  },
+  {
+   "id": "assay-spell-resistance",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 17
+  },
+  {
+   "id": "attune-form",
+   "field": "target",
+   "value": "One creature/3 levels",
+   "pdfPage": 17
+  },
+  {
+   "id": "attune-form",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 17
+  },
+  {
+   "id": "backlash",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 23
+  },
+  {
+   "id": "backlash",
+   "field": "duration",
+   "value": "10 minutes/level or until discharged",
+   "pdfPage": 23
+  },
+  {
+   "id": "battle-hymn",
+   "field": "target",
+   "value": "All allies within 30 ft.",
+   "pdfPage": 25
+  },
+  {
+   "id": "bite-of-the-werewolf",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 29
+  },
+  {
+   "id": "blast-of-flame",
+   "field": "area",
+   "value": "Cone-shaped burst",
+   "pdfPage": 31
+  },
+  {
+   "id": "blistering-radiance",
+   "field": "area",
+   "value": "50-ft.-radius spread",
+   "pdfPage": 33
+  },
+  {
+   "id": "bloodstar",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "F"
+   ],
+   "pdfPage": 34
+  },
+  {
+   "id": "bloodstar",
+   "field": "effect",
+   "value": "A bloodstar",
+   "pdfPage": 34
+  },
+  {
+   "id": "corporeal-instability",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 53
+  },
+  {
+   "id": "darkvision-mass",
+   "field": "target",
+   "value": "Allies in a 10-ft.-radius burst",
+   "pdfPage": 59
+  },
+  {
+   "id": "defenestrating-sphere",
+   "field": "effect",
+   "value": "2-ft.-radius sphere",
+   "pdfPage": 62
+  },
+  {
+   "id": "dispelling-screen",
+   "field": "effect",
+   "value": "Energy wall whose area is up to one 10-ft. square/level, or a sphere or hemisphere with a radius of up to 1 ft./level",
+   "pdfPage": 67
+  },
+  {
+   "id": "dispelling-screen",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 67
+  },
+  {
+   "id": "displacer-form",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 67
+  },
+  {
+   "id": "dragon-breath",
+   "field": "descriptors",
+   "value": [
+    "Good",
+    "Evil"
+   ],
+   "pdfPage": 73
+  },
+  {
+   "id": "dragon-breath",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 73
+  },
+  {
+   "id": "energy-spheres",
+   "field": "effect",
+   "value": "Five floating spheres",
+   "pdfPage": 80
+  },
+  {
+   "id": "entangling-staff",
+   "field": "target",
+   "value": "Quarterstaff touched",
+   "pdfPage": 83
+  },
+  {
+   "id": "entangling-staff",
+   "field": "savingThrow",
+   "value": "Yes (harmless, object)",
+   "pdfPage": 83
+  },
+  {
+   "id": "explosive-cascade",
+   "field": "area",
+   "value": "One 5-ft. square/level, all of which must be connected in one continuous path (S)",
+   "pdfPage": 85
+  },
+  {
+   "id": "fire-stride",
+   "field": "descriptors",
+   "value": [
+    "Teleportation"
+   ],
+   "pdfPage": 93
+  },
+  {
+   "id": "fire-stride",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 93
+  },
+  {
+   "id": "flight-of-the-dragon",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 95
+  },
+  {
+   "id": "flight-of-the-dragon",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 95
+  },
+  {
+   "id": "floating-disk-greater",
+   "field": "effect",
+   "value": "3-ft.-diameter disk of force",
+   "pdfPage": 96
+  },
+  {
+   "id": "force-chest",
+   "field": "effect",
+   "value": "Box of force 2 ft. on a side",
+   "pdfPage": 97
+  },
+  {
+   "id": "force-chest",
+   "field": "duration",
+   "value": "24 hours/level (D)",
+   "pdfPage": 97
+  },
+  {
+   "id": "force-claw",
+   "field": "effect",
+   "value": "Invisible claw of force",
+   "pdfPage": 97
+  },
+  {
+   "id": "force-missiles",
+   "field": "target",
+   "value": "Up to four creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 98
+  },
+  {
+   "id": "forcewave",
+   "field": "effect",
+   "value": "10-ft. burst of force centered on you",
+   "pdfPage": 98
+  },
+  {
+   "id": "know-vulnerabilities",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 129
+  },
+  {
+   "id": "raise-from-the-deep",
+   "field": "range",
+   "value": "Long (400 ft. + 40 ft./level); see text",
+   "pdfPage": 165
+  },
+  {
+   "id": "raise-from-the-deep",
+   "field": "target",
+   "value": "One creature or object",
+   "pdfPage": 165
+  },
+  {
+   "id": "resistance-greater",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 174
+  },
+  {
+   "id": "spell-enhancer",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 198
+  },
+  {
+   "id": "vortex-of-teeth",
+   "field": "area",
+   "value": "Hollow cylinder (40-ft. radius, 20 ft. high, with a 5-ft.-radius safe zone at the center)",
+   "pdfPage": 232
+  },
+  {
+   "id": "wingbind",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 240
+  },
+  {
+   "id": "acid-sheath",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 7
+  },
+  {
+   "id": "anticold-sphere",
+   "field": "area",
+   "value": "10-ft.-radius emanation centered on you",
+   "pdfPage": 13
+  },
+  {
+   "id": "anticold-sphere",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 13
+  },
+  {
+   "id": "arc-of-lightning",
+   "field": "area",
+   "value": "A line between two creatures",
+   "pdfPage": 15
+  },
+  {
+   "id": "ball-lightning",
+   "field": "effect",
+   "value": "One lightning ball",
+   "pdfPage": 23
+  },
+  {
+   "id": "bite-of-the-wereboar",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 28
+  },
+  {
+   "id": "breath-weapon-substitution",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 39
+  },
+  {
+   "id": "cacophonic-burst",
+   "field": "area",
+   "value": "20-ft.-radius burst",
+   "pdfPage": 41
+  },
+  {
+   "id": "cacophonic-shield",
+   "field": "area",
+   "value": "10-ft.-radius emanation centered on you",
+   "pdfPage": 41
+  },
+  {
+   "id": "cacophonic-shield",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 41
+  },
+  {
+   "id": "call-zelekhut",
+   "field": "effect",
+   "value": "One called zelekhut",
+   "pdfPage": 42
+  },
+  {
+   "id": "cyclonic-blast",
+   "field": "area",
+   "value": "120-ft. line",
+   "pdfPage": 57
+  },
+  {
+   "id": "dimension-door-greater",
+   "field": "descriptors",
+   "value": [
+    "Teleportation"
+   ],
+   "pdfPage": 64
+  },
+  {
+   "id": "dimension-door-greater",
+   "field": "target",
+   "value": "You and touched objects or other touched willing creatures",
+   "pdfPage": 64
+  },
+  {
+   "id": "dispelling-breath",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 67
+  },
+  {
+   "id": "draconic-might",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 72
+  },
+  {
+   "id": "draconic-might",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 72
+  },
+  {
+   "id": "enlarge-person-greater",
+   "field": "range",
+   "value": "Touch",
+   "pdfPage": 82
+  },
+  {
+   "id": "ethereal-breath",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 84
+  },
+  {
+   "id": "fiendform",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 90
+  },
+  {
+   "id": "fiendform",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 90
+  },
+  {
+   "id": "fire-shield-mass",
+   "field": "descriptors",
+   "value": [
+    "Fire",
+    "Cold"
+   ],
+   "pdfPage": 92
+  },
+  {
+   "id": "fire-shield-mass",
+   "field": "castingTime",
+   "value": "1 round",
+   "pdfPage": 92
+  },
+  {
+   "id": "fire-shield-mass",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./2 levels)",
+   "pdfPage": 92
+  },
+  {
+   "id": "fire-shield-mass",
+   "field": "target",
+   "value": "One or more allied creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 92
+  },
+  {
+   "id": "fire-shield-mass",
+   "field": "savingThrow",
+   "value": "Will negates (harmless)",
+   "pdfPage": 92
+  },
+  {
+   "id": "firebrand",
+   "field": "area",
+   "value": "One 5-ft.-radius burst/level (S)",
+   "pdfPage": 93
+  },
+  {
+   "id": "fireburst-greater",
+   "field": "effect",
+   "value": "Burst of fire extending 15 ft.",
+   "pdfPage": 94
+  },
+  {
+   "id": "graymantle",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 107
+  },
+  {
+   "id": "gutsnake",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 108
+  },
+  {
+   "id": "hidden-lodge",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 113
+  },
+  {
+   "id": "illusory-feast",
+   "field": "area",
+   "value": "40-ft.-radius spread",
+   "pdfPage": 120
+  },
+  {
+   "id": "indomitability",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 121
+  },
+  {
+   "id": "indomitability",
+   "field": "duration",
+   "value": "1 minute/level or until discharged",
+   "pdfPage": 121
+  },
+  {
+   "id": "ironguard-lesser",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 125
+  },
+  {
+   "id": "lucent-lance",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 134
+  },
+  {
+   "id": "miasma-of-entropy",
+   "field": "target",
+   "value": "Cone-shaped burst or one solid object; see text",
+   "pdfPage": 141
+  },
+  {
+   "id": "miasma-of-entropy",
+   "field": "savingThrow",
+   "value": "Fortitude half or Will negates (object); see text",
+   "pdfPage": 141
+  },
+  {
+   "id": "moonbow",
+   "field": "effect",
+   "value": "1d4 motes of electricity",
+   "pdfPage": 144
+  },
+  {
+   "id": "prismatic-ray",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 162
+  },
+  {
+   "id": "reduce-person-greater",
+   "field": "duration",
+   "value": "10 minutes/level",
+   "pdfPage": 171
+  },
+  {
+   "id": "spell-matrix-lesser",
+   "field": "effect",
+   "value": "Matrix that holds one of your spells",
+   "pdfPage": 199
+  },
+  {
+   "id": "spell-matrix-lesser",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 199
+  },
+  {
+   "id": "symbol-of-spell-loss",
+   "field": "range",
+   "value": "0 ft.; see text",
+   "pdfPage": 218
+  },
+  {
+   "id": "symbol-of-spell-loss",
+   "field": "effect",
+   "value": "One symbol",
+   "pdfPage": 218
+  },
+  {
+   "id": "viscid-glob",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 231
+  },
+  {
+   "id": "vitriolic-sphere",
+   "field": "area",
+   "value": "10-ft.-radius burst",
+   "pdfPage": 231
+  },
+  {
+   "id": "wall-of-limbs",
+   "field": "effect",
+   "value": "A wall of whirling limbs",
+   "pdfPage": 234
+  },
+  {
+   "id": "zone-of-respite",
+   "field": "area",
+   "value": "20-ft.-radius emanation centered on you",
+   "pdfPage": 244
+  },
+  {
+   "id": "zone-of-respite",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 244
+  },
+  {
+   "id": "zone-of-respite",
+   "field": "spellResistance",
+   "value": "Yes",
+   "pdfPage": 244
+  },
+  {
+   "id": "acid-storm",
+   "field": "school",
+   "value": "Conjuration",
+   "pdfPage": 7
+  },
+  {
+   "id": "acid-storm",
+   "field": "subschool",
+   "value": "Creation",
+   "pdfPage": 7
+  },
+  {
+   "id": "acid-storm",
+   "field": "area",
+   "value": "Cylinder (20-ft. radius, 20 ft. high)",
+   "pdfPage": 7
+  },
+  {
+   "id": "aura-of-evasion",
+   "field": "area",
+   "value": "10-ft.-radius emanation centered on you",
+   "pdfPage": 18
+  },
+  {
+   "id": "aura-of-evasion",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 18
+  },
+  {
+   "id": "aura-of-terror",
+   "field": "range",
+   "value": "30-ft.-radius emanation centered on you",
+   "pdfPage": 18
+  },
+  {
+   "id": "aura-of-terror",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 18
+  },
+  {
+   "id": "bite-of-the-weretiger",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 28
+  },
+  {
+   "id": "brilliant-blade",
+   "field": "target",
+   "value": "One melee or thrown",
+   "pdfPage": 40
+  },
+  {
+   "id": "cloak-of-the-sea",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 48
+  },
+  {
+   "id": "contagion-mass",
+   "field": "area",
+   "value": "20-ft.-radius spread",
+   "pdfPage": 51
+  },
+  {
+   "id": "dream-casting",
+   "field": "target",
+   "value": "You and one dreamer",
+   "pdfPage": 73
+  },
+  {
+   "id": "dream-casting",
+   "field": "duration",
+   "value": "24 hours/level; see text",
+   "pdfPage": 73
+  },
+  {
+   "id": "extract-water-elemental",
+   "field": "range",
+   "value": "Close (25 ft. + 5 ft./level)",
+   "pdfPage": 86
+  },
+  {
+   "id": "extract-water-elemental",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 86
+  },
+  {
+   "id": "fire-spiders",
+   "field": "effect",
+   "value": "Fiery spiders that cover a 10-ft.-radius spread",
+   "pdfPage": 92
+  },
+  {
+   "id": "fires-of-purity",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 94
+  },
+  {
+   "id": "fleshshiver",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 95
+  },
+  {
+   "id": "freezing-fog",
+   "field": "effect",
+   "value": "Fog spreads in a 20-ft. radius, 20 ft. high",
+   "pdfPage": 99
+  },
+  {
+   "id": "freezing-fog",
+   "field": "duration",
+   "value": "1 minute/level",
+   "pdfPage": 99
+  },
+  {
+   "id": "freezing-fog",
+   "field": "savingThrow",
+   "value": "Reflex partial; see text",
+   "pdfPage": 99
+  },
+  {
+   "id": "gemjump",
+   "field": "descriptors",
+   "value": [
+    "Teleportation"
+   ],
+   "pdfPage": 101
+  },
+  {
+   "id": "gemjump",
+   "field": "range",
+   "value": "Unlimited; see text",
+   "pdfPage": 101
+  },
+  {
+   "id": "gemjump",
+   "field": "target",
+   "value": "You and willing creatures totaling up to one/3 levels; see text",
+   "pdfPage": 101
+  },
+  {
+   "id": "gemjump",
+   "field": "duration",
+   "value": "Until triggered",
+   "pdfPage": 101
+  },
+  {
+   "id": "gemjump",
+   "field": "savingThrow",
+   "value": "None; see text",
+   "pdfPage": 101
+  },
+  {
+   "id": "gemjump",
+   "field": "spellResistance",
+   "value": "No; see text",
+   "pdfPage": 101
+  },
+  {
+   "id": "howling-chain",
+   "field": "effect",
+   "value": "One chain of force",
+   "pdfPage": 116
+  },
+  {
+   "id": "illusory-pit",
+   "field": "area",
+   "value": "10-ft. cube/level",
+   "pdfPage": 120
+  },
+  {
+   "id": "imbue-familiar-with-spell-ability",
+   "field": "target",
+   "value": "Familiar touched",
+   "pdfPage": 120
+  },
+  {
+   "id": "imperious-glare",
+   "field": "target",
+   "value": "One living creature/level, no two of which are more than 30 ft. apart",
+   "pdfPage": 120
+  },
+  {
+   "id": "incorporeal-nova",
+   "field": "area",
+   "value": "50-ft.-radius burst",
+   "pdfPage": 121
+  },
+  {
+   "id": "make-manifest",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 137
+  },
+  {
+   "id": "ooze-puppet",
+   "field": "target",
+   "value": "One ooze",
+   "pdfPage": 150
+  },
+  {
+   "id": "ooze-puppet",
+   "field": "duration",
+   "value": "24 hours/level",
+   "pdfPage": 150
+  },
+  {
+   "id": "prismatic-eye",
+   "field": "level",
+   "value": 7,
+   "pdfPage": 161
+  },
+  {
+   "id": "prismatic-eye",
+   "field": "effect",
+   "value": "Magical eye",
+   "pdfPage": 161
+  },
+  {
+   "id": "resistance-superior",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 174
+  },
+  {
+   "id": "telepathic-bond-interplanar",
+   "field": "target",
+   "value": "You plus one willing creature/3 levels, no two of which are more than 30 ft. apart",
+   "pdfPage": 125
+  },
+  {
+   "id": "telepathic-bond-interplanar",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 125
+  },
+  {
+   "id": "animate-breath",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 11
+  },
+  {
+   "id": "antimagic-ray",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 14
+  },
+  {
+   "id": "arrow-of-bone",
+   "field": "target",
+   "value": "One projectile or thrown weapon touched",
+   "pdfPage": 16
+  },
+  {
+   "id": "avasculate",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 19
+  },
+  {
+   "id": "awaken-undead",
+   "field": "target",
+   "value": "All mindless undead within a circle with a radius of 25 ft. + 5 ft./2 levels",
+   "pdfPage": 21
+  },
+  {
+   "id": "barghests-feast",
+   "field": "target",
+   "value": "Corpse touched",
+   "pdfPage": 24
+  },
+  {
+   "id": "bite-of-the-werebear",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 28
+  },
+  {
+   "id": "body-of-war",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 35
+  },
+  {
+   "id": "brilliant-aura",
+   "field": "target",
+   "value": "Weapons carried by one creature/2 levels, no two of which are more than 30 ft. apart",
+   "pdfPage": 39
+  },
+  {
+   "id": "dragon-ally",
+   "field": "effect",
+   "value": "One called dragon of 18 HD",
+   "pdfPage": 72
+  },
+  {
+   "id": "elemental-body",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 78
+  },
+  {
+   "id": "emerald-flame-fist",
+   "field": "target",
+   "value": "Creature or object touched",
+   "pdfPage": 79
+  },
+  {
+   "id": "energy-ebb",
+   "field": "descriptors",
+   "value": [
+    "Evil"
+   ],
+   "pdfPage": 80
+  },
+  {
+   "id": "energy-ebb",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 80
+  },
+  {
+   "id": "energy-ebb",
+   "field": "savingThrow",
+   "value": "Fortitude partial; see text",
+   "pdfPage": 80
+  },
+  {
+   "id": "energy-immunity",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 80
+  },
+  {
+   "id": "energy-immunity",
+   "field": "duration",
+   "value": "24 hours",
+   "pdfPage": 80
+  },
+  {
+   "id": "energy-transformation-field",
+   "field": "area",
+   "value": "40-ft.-radius spread",
+   "pdfPage": 80
+  },
+  {
+   "id": "evil-glare",
+   "field": "range",
+   "value": "30 feet",
+   "pdfPage": 85
+  },
+  {
+   "id": "evil-glare",
+   "field": "target",
+   "value": "Living creatures",
+   "pdfPage": 85
+  },
+  {
+   "id": "ghost-trap",
+   "field": "range",
+   "value": "5 ft./level",
+   "pdfPage": 103
+  },
+  {
+   "id": "ghost-trap",
+   "field": "area",
+   "value": "5 ft./level-radius emanation centered on you",
+   "pdfPage": 103
+  },
+  {
+   "id": "ghost-trap",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 103
+  },
+  {
+   "id": "ghost-trap",
+   "field": "savingThrow",
+   "value": "None",
+   "pdfPage": 103
+  },
+  {
+   "id": "hide-from-dragons",
+   "field": "target",
+   "value": "One creature touched/2 levels",
+   "pdfPage": 114
+  },
+  {
+   "id": "hide-from-dragons",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 114
+  },
+  {
+   "id": "hiss-of-sleep",
+   "field": "target",
+   "value": "One creature/level",
+   "pdfPage": 114
+  },
+  {
+   "id": "ice-claw",
+   "field": "effect",
+   "value": "10-ft. ice claw",
+   "pdfPage": 118
+  },
+  {
+   "id": "kiss-of-the-vampire",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 128
+  },
+  {
+   "id": "spell-matrix",
+   "field": "effect",
+   "value": "Matrix that holds two of your",
+   "pdfPage": 199
+  },
+  {
+   "id": "submerge-ship",
+   "field": "target",
+   "value": "Ship touched",
+   "pdfPage": 211
+  },
+  {
+   "id": "symphonic-nightmare",
+   "field": "target",
+   "value": "Living creature touched; see text",
+   "pdfPage": 218
+  },
+  {
+   "id": "symphonic-nightmare",
+   "field": "duration",
+   "value": "24 hours/level (D)",
+   "pdfPage": 218
+  },
+  {
+   "id": "avascular-mass",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 19
+  },
+  {
+   "id": "bestow-curse-greater",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 27
+  },
+  {
+   "id": "blackfire",
+   "field": "descriptors",
+   "value": [
+    "Evil"
+   ],
+   "pdfPage": 29
+  },
+  {
+   "id": "blackfire",
+   "field": "effect",
+   "value": "Ray",
+   "pdfPage": 29
+  },
+  {
+   "id": "excavate",
+   "field": "effect",
+   "value": "One 5-ft.-by-5-ft. opening, 1 ft./level deep",
+   "pdfPage": 85
+  },
+  {
+   "id": "field-of-icy-razors",
+   "field": "target",
+   "value": "One creature/level, no two of which are more than 60 ft. apart",
+   "pdfPage": 90
+  },
+  {
+   "id": "field-of-icy-razors",
+   "field": "duration",
+   "value": "Instantaneous plus 1 round/level; see text",
+   "pdfPage": 90
+  },
+  {
+   "id": "fierce-pride-of-the-beastlands",
+   "field": "effect",
+   "value": "Two or more summoned creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 91
+  },
+  {
+   "id": "fierce-pride-of-the-beastlands",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 91
+  },
+  {
+   "id": "flensing",
+   "field": "target",
+   "value": "One corporeal creature",
+   "pdfPage": 95
+  },
+  {
+   "id": "flensing",
+   "field": "savingThrow",
+   "value": "Fortitude partial; see text",
+   "pdfPage": 95
+  },
+  {
+   "id": "heart-of-stone",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 111
+  },
+  {
+   "id": "invisibility-superior",
+   "field": "target",
+   "value": "You or a creature or object weighing no more than 100 lb./level",
+   "pdfPage": 125
+  },
+  {
+   "id": "invisibility-superior",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 125
+  },
+  {
+   "id": "lightning-ring",
+   "field": "effect",
+   "value": "Ring of electricity",
+   "pdfPage": 132
+  },
+  {
+   "id": "maddening-whispers",
+   "field": "target",
+   "value": "One creature/level",
+   "pdfPage": 135
+  },
+  {
+   "id": "make-manifest-mass",
+   "field": "area",
+   "value": "25-ft.-radius emanation centered on a point in space",
+   "pdfPage": 137
+  },
+  {
+   "id": "shifting-paths",
+   "field": "area",
+   "value": "1-mile radius + 1 mile/level",
+   "pdfPage": 188
+  },
+  {
+   "id": "absorption",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 6
+  },
+  {
+   "id": "absorption",
+   "field": "duration",
+   "value": "Until expended or 10",
+   "pdfPage": 6
+  },
+  {
+   "id": "abyssal-army",
+   "field": "effect",
+   "value": "Two or more summoned creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 7
+  },
+  {
+   "id": "abyssal-army",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 7
+  },
+  {
+   "id": "awaken-construct",
+   "field": "target",
+   "value": "One construct",
+   "pdfPage": 21
+  },
+  {
+   "id": "black-blade-of-disaster",
+   "field": "effect",
+   "value": "Sword-shaped planar rift",
+   "pdfPage": 29
+  },
+  {
+   "id": "breath-weapon-admixture",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 39
+  },
+  {
+   "id": "call-marut",
+   "field": "effect",
+   "value": "One called marut",
+   "pdfPage": 42
+  },
+  {
+   "id": "dragon-ally-greater",
+   "field": "effect",
+   "value": "One called",
+   "pdfPage": 72
+  },
+  {
+   "id": "effulgent-epuration",
+   "field": "effect",
+   "value": "One magic-absorbing sphere per caster level",
+   "pdfPage": 78
+  },
+  {
+   "id": "enervating-breath",
+   "field": "target",
+   "value": "Your breath weapon",
+   "pdfPage": 82
+  },
+  {
+   "id": "eye-of-power",
+   "field": "effect",
+   "value": "Magical sensor",
+   "pdfPage": 87
+  },
+  {
+   "id": "eye-of-power",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 87
+  },
+  {
+   "id": "heavenly-host",
+   "field": "effect",
+   "value": "Two or more summoned creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 113
+  },
+  {
+   "id": "heavenly-host",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 113
+  },
+  {
+   "id": "hellish-horde",
+   "field": "effect",
+   "value": "Two or more summoned creatures, no two of which are more than 30 ft. apart",
+   "pdfPage": 113
+  },
+  {
+   "id": "hellish-horde",
+   "field": "duration",
+   "value": "10 minutes/level (D)",
+   "pdfPage": 113
+  },
+  {
+   "id": "hindsight",
+   "field": "area",
+   "value": "60-ft.-radius emanation centered on you",
+   "pdfPage": 114
+  },
+  {
+   "id": "instant-refuge",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 124
+  },
+  {
+   "id": "instant-refuge",
+   "field": "duration",
+   "value": "Until discharged",
+   "pdfPage": 124
+  },
+  {
+   "id": "magic-miasma",
+   "field": "area",
+   "value": "30-ft.-radius emanation centered on a point in space",
+   "pdfPage": 137
+  },
+  {
+   "id": "maw-of-chaos",
+   "field": "area",
+   "value": "15-ft.-radius emanation centered on a point in space",
+   "pdfPage": 140
+  },
+  {
+   "id": "vile-death",
+   "field": "target",
+   "value": "One corporeal undead creature",
+   "pdfPage": 229
+  }
+ ],
+ "renames": [],
+ "additions": [
+  {
+   "name": "Call Kolyarut",
+   "school": "Conjuration",
+   "subschool": "Calling",
+   "descriptors": [
+    "Lawful"
+   ],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "DF",
+    "XP"
+   ],
+   "castingTime": "10 minutes",
+   "summary": "A kolyarut performs one duty for you.",
+   "page": 42
+  },
+  {
+   "name": "Claws of Darkness",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 round/level (D)",
+   "savingThrow": "Fortitude partial",
+   "spellResistance": "Yes; see text",
+   "summary": "Claws deal 1d8 cold damage and have reach.",
+   "page": 47
+  },
+  {
+   "name": "Flame Whips",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "effect": "Flaming whips",
+   "duration": "1 round/level (D)",
+   "summary": "Your forelimbs deal 6d6 fire damage.",
+   "page": 95
+  },
+  {
+   "name": "Forceward",
+   "school": "Abjuration",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 round",
+   "range": "15 ft.",
+   "effect": "15-ft.-radius sphere centered on you",
+   "duration": "1 minute/level",
+   "savingThrow": "Will negates; see text",
+   "summary": "Creates a sphere of force that protects against force effects and keeps out incorporeal creatures.",
+   "page": 98
+  },
+  {
+   "name": "Giant's Wrath",
+   "school": "Transmutation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 swift action",
+   "range": "Personal",
+   "target": "One pebble/3 levels",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "None",
+   "summary": "Pebbles you throw become boulders.",
+   "page": 105
+  },
+  {
+   "name": "Glass Strike",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature or 4 cubic ft. of material",
+   "duration": "1 hour/level",
+   "savingThrow": "Fortitude negates",
+   "spellResistance": "Yes",
+   "summary": "Turns subject into glass.",
+   "page": 106
+  },
+  {
+   "name": "Glowing Orb",
+   "school": "Evocation",
+   "descriptors": [
+    "Light"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "effect": "Magical, controllable light source",
+   "duration": "Permanent",
+   "savingThrow": "None",
+   "summary": "Creates permanent magical light; you control brightness.",
+   "page": 106
+  },
+  {
+   "name": "Light of Venya",
+   "school": "Evocation",
+   "descriptors": [
+    "Good",
+    "Light"
+   ],
+   "level": 3,
+   "components": [],
+   "summary": "You radiate pearly light, which you can expend as 2 bolts that deal 2d6 damage, 4d6 against undead and evil outsiders.",
+   "page": 132
+  },
+  {
+   "name": "Nerveskitter",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 immediate action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature",
+   "duration": "1 round",
+   "savingThrow": "None (harmless)",
+   "spellResistance": "Yes",
+   "summary": "Subject gains +5 bonus on initiative checks.",
+   "page": 146
+  },
+  {
+   "name": "Net of Shadows",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [
+    "Darkness"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature/level, no two of which are more than 25 ft. apart",
+   "duration": "1d6 rounds",
+   "savingThrow": "Will negates",
+   "spellResistance": "Yes",
+   "summary": "Ordinary shadows that provide concealment to all in the area.",
+   "page": 147
+  },
+  {
+   "name": "Nightshield",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 minute/level (D)",
+   "summary": "You gain resistance bonus on saves, and spell absorbs magic missile damage.",
+   "page": 148
+  },
+  {
+   "name": "Obedient Avalanche",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [
+    "Cold"
+   ],
+   "level": 9,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "20-ft.-radius avalanche of snow centered on a point in space; see text",
+   "duration": "Instantaneous",
+   "savingThrow": "Reflex half or Reflex negates; see text",
+   "summary": "Snowy avalanche crushes and buries your foes.",
+   "page": 148
+  },
+  {
+   "name": "Opalescent Glare",
+   "school": "Necromancy",
+   "descriptors": [
+    "Death",
+    "Good"
+   ],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "DF"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "Instantaneous",
+   "savingThrow": "Will partial; see text",
+   "spellResistance": "Yes",
+   "summary": "Kill creatures with a look, or make them very afraid.",
+   "page": 150
+  },
+  {
+   "name": "Perinarch",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "DF"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "duration": "1 round/level; see text",
+   "savingThrow": "None (object) and Reflex negates; see text",
+   "summary": "Gain greater control over Limbo's morphic essence.",
+   "page": 153
+  },
+  {
+   "name": "Perinarch, Planar",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 9,
+   "components": [],
+   "summary": "Gain control over a small area of any divinely morphic plane.",
+   "page": 154
+  },
+  {
+   "name": "Persistent Blade",
+   "school": "Evocation",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "One dagger made of force",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Blade of force attacks subject, automatically flanks.",
+   "page": 154
+  },
+  {
+   "name": "Phantom Foe",
+   "school": "Illusion",
+   "subschool": "Phantasm",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 round/level",
+   "savingThrow": "Will disbelief",
+   "summary": "Subject is always flanked by one creature.",
+   "page": 156
+  },
+  {
+   "name": "Planar Bubble",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "area": "10-ft.-radius emanation from touched creature",
+   "duration": "10 minutes/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "No; see text",
+   "summary": "Create bubble around creature that emulates its native planar environment.",
+   "page": 158
+  },
+  {
+   "name": "Portal Alarm",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One interplanar gate or portal",
+   "duration": "2 hours/level (D)",
+   "savingThrow": "None",
+   "summary": "You are alerted when a creature passes through a warded portal.",
+   "page": 160
+  },
+  {
+   "name": "Portal Alarm, Improved",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "duration": "8 hours/level (D)",
+   "summary": "Warded portal alerts you or a creature designated by you to creatures passing through it.",
+   "page": 160
+  },
+  {
+   "name": "Quick Potion",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 minute",
+   "range": "Touch",
+   "target": "Flask of water touched",
+   "duration": "1 hour/level",
+   "savingThrow": "Will negates (object)",
+   "spellResistance": "Yes (object)",
+   "summary": "Creates a potion that must be used within 1 hour/level.",
+   "page": 164
+  },
+  {
+   "name": "Radiant Assault",
+   "school": "Evocation",
+   "descriptors": [
+    "Light"
+   ],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Long (400 ft. + 40 ft./level)",
+   "area": "20-ft.- radius burst",
+   "duration": "Instantaneous",
+   "savingThrow": "Will partial",
+   "spellResistance": "Yes",
+   "summary": "1d6 damage/level, victims dazed or dazzled.",
+   "page": 164
+  },
+  {
+   "name": "Raging Flame",
+   "school": "Transmutation",
+   "descriptors": [
+    "Fire"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "area": "30-ft.-radius spread",
+   "duration": "1 minute",
+   "savingThrow": "None",
+   "summary": "Fires burn twice as hot, half as long.",
+   "page": 164
+  },
+  {
+   "name": "Rainbow Beam",
+   "school": "Evocation",
+   "descriptors": [
+    "Light"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Ray dazzles and deals 1d12 damage/3 levels of random type.",
+   "page": 165
+  },
+  {
+   "name": "Rainbow Blast",
+   "school": "Evocation",
+   "descriptors": [
+    "Light"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "120 ft.",
+   "area": "120-ft. line",
+   "duration": "Instantaneous",
+   "savingThrow": "Reflex half",
+   "spellResistance": "Yes",
+   "summary": "Line deals 1d6 damage of each energy type.",
+   "page": 165
+  },
+  {
+   "name": "Ray of Clumsiness",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Victim takes 1d6 Dexterity penalty +1/2 levels.",
+   "page": 166
+  },
+  {
+   "name": "Ray of Deanimation",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One construct",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "summary": "Ray deals 1d6 damage/level to constructs.",
+   "page": 166
+  },
+  {
+   "name": "Ray Deflection",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "summary": "Ray attacks are reflected away.",
+   "page": 166
+  },
+  {
+   "name": "Ray of Dizziness",
+   "school": "Enchantment",
+   "subschool": "Compulsion",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "Ray",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Subject can take only move or standard actions.",
+   "page": 166
+  },
+  {
+   "name": "Ray of Entropy",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Subject takes –4 Strength, Dexterity, and Constitution.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Flame",
+   "school": "Evocation",
+   "descriptors": [
+    "Flame"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "See text",
+   "spellResistance": "Yes",
+   "summary": "Ray deals 1d6/2 levels fire damage, ignites subject.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Ice",
+   "school": "Evocation",
+   "descriptors": [
+    "Cold"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "See text",
+   "spellResistance": "Yes",
+   "summary": "Ray deals 1d6 cold damage/2 levels.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Light",
+   "school": "Evocation",
+   "descriptors": [
+    "Light"
+   ],
+   "level": 6,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Ray blinds subject.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Sickness",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Subject becomes sickened.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Stupidity",
+   "school": "Enchantment",
+   "subschool": "Compulsion",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Victim takes 1d4+1 Intelligence damage.",
+   "page": 167
+  },
+  {
+   "name": "Ray of Weakness",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Subject takes –2 on attacks, –10 ft. speed.",
+   "page": 168
+  },
+  {
+   "name": "Reality Maelstrom",
+   "school": "Evocation",
+   "descriptors": [],
+   "level": 9,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "area": "20-ft.-radius emanation centered on a point in space, and 40-ft.-radius emanation centered on the same point; see text",
+   "duration": "1 round",
+   "savingThrow": "Will negates, Reflex negates; see text",
+   "spellResistance": "Yes",
+   "summary": "Hole in reality sends creatures and objects to another plane.",
+   "page": 168
+  },
+  {
+   "name": "Reflective Disguise",
+   "school": "Illusion",
+   "subschool": "Glamer",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "10 minutes/level",
+   "summary": "Viewers see you as their own species and gender.",
+   "page": 171
+  },
+  {
+   "name": "Reflective Disguise, Mass",
+   "school": "Illusion",
+   "subschool": "Glamer",
+   "descriptors": [],
+   "level": 6,
+   "components": [],
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature/2 levels, no two of which are more than 30 ft. apart",
+   "duration": "12 hours (D)",
+   "savingThrow": "Will negates",
+   "spellResistance": "Yes",
+   "summary": "Viewers see subjects as their own species and gender.",
+   "page": 171
+  },
+  {
+   "name": "Replicate Casting",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 9,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 round; see text",
+   "range": "See text",
+   "effect": "One spell or spell-like ability",
+   "duration": "See text",
+   "savingThrow": "See text",
+   "spellResistance": "See text",
+   "summary": "Duplicate observed spell or spell-like ability.",
+   "page": 173
+  },
+  {
+   "name": "Resist Planar Alignment",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "DF"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "10 minutes/level",
+   "savingThrow": "Fortitude negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject can resist penalties for being of an opposed alignment on an aligned Outer Plane.",
+   "page": 174
+  },
+  {
+   "name": "Reverse Arrows",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "summary": "As protection from arrows, but negated arrows turn back upon their source.",
+   "page": 175
+  },
+  {
+   "name": "Ruby Ray of Reversal",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "One natural or magical hazard; see text",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "summary": "Ray negates magical or mundane hazards.",
+   "page": 177
+  },
+  {
+   "name": "Ruin Delver's Fortune",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V"
+   ],
+   "castingTime": "1 immediate action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1d4 rounds",
+   "summary": "Cast on another creature's turn and choose one of several benefits.",
+   "page": 178
+  },
+  {
+   "name": "Rust Ray",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One nonmagical ferrous object or one ferrous creature",
+   "effect": "Ray",
+   "duration": "Instantaneous",
+   "savingThrow": "None or Fortitude negates (object); see text",
+   "summary": "Metal objects take 2d6 damage +1/2 levels.",
+   "page": 178
+  },
+  {
+   "name": "Scatterspray",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "Six or more Diminutive or Fine objects, all within 1 ft. of each other, whose total weight does not exceed 25 lb.",
+   "duration": "Instantaneous",
+   "savingThrow": "See text",
+   "summary": "Group of small objects flies apart in a burst.",
+   "page": 180
+  },
+  {
+   "name": "Scintillating Sphere",
+   "school": "Evocation",
+   "descriptors": [
+    "Electricity"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Long (400 ft. + 40 ft./level)",
+   "area": "20-ft.-radius burst",
+   "duration": "Instantaneous",
+   "savingThrow": "Reflex half",
+   "spellResistance": "Yes",
+   "summary": "20-ft.-radius burst deals 1d6 electricity/level.",
+   "page": 181
+  },
+  {
+   "name": "Scramble Portal",
+   "school": "Transmutation",
+   "descriptors": [
+    "Chaotic"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One interplanar gate or portal",
+   "duration": "1 round/level",
+   "savingThrow": "None (for portal)",
+   "summary": "You randomize the destination of a magic portal.",
+   "page": 181
+  },
+  {
+   "name": "Seal Portal",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One interplanar gate or portal",
+   "duration": "Permanent (D)",
+   "savingThrow": "None",
+   "summary": "Seal an interplanar portal or gate.",
+   "page": 181
+  },
+  {
+   "name": "Sensory Deprivation",
+   "school": "Illusion",
+   "subschool": "Phantasm",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "One creature",
+   "duration": "1 round/level",
+   "savingThrow": "Will disbelief",
+   "spellResistance": "Yes",
+   "summary": "All of subject's senses are blocked.",
+   "page": 182
+  },
+  {
+   "name": "Serene Visage",
+   "school": "Illusion",
+   "subschool": "Glamer",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 minute/level",
+   "summary": "Gain insight bonus on Bluff checks equal to half your level.",
+   "page": 182
+  },
+  {
+   "name": "Shadow Cache",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "area": "1-ft.-diameter circle",
+   "duration": "1 minute/level (D)",
+   "summary": "You open a small portal to the Plane of Shadow through which you can put an item for later retrieval.",
+   "page": 183
+  },
+  {
+   "name": "Shadow Hand",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 5,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Medium shadowy hand",
+   "duration": "1 round/level (D)",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Medium hand blocks opponents or carries items.",
+   "page": 183
+  },
+  {
+   "name": "Shadow Phase",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 round/level (D)",
+   "savingThrow": "Fortitude negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject becomes partially incorporeal.",
+   "page": 185
+  },
+  {
+   "name": "Shadow Mask",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "10 minutes/level (D)",
+   "summary": "Grants +4 on saves against light spells, protection from gaze attacks.",
+   "page": 185
+  },
+  {
+   "name": "Shadow Spray",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "area": "5-ft.-radius burst",
+   "duration": "1 round/level",
+   "savingThrow": "Fortitude negates",
+   "spellResistance": "Yes",
+   "summary": "Deals 4 points of Str damage and dazes.",
+   "page": 186
+  },
+  {
+   "name": "Shadow Well",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature",
+   "duration": "1 round/level",
+   "savingThrow": "Will negates; see text",
+   "spellResistance": "Yes",
+   "summary": "Subject enters gloomy pocket plane and emerges frightened.",
+   "page": 186
+  },
+  {
+   "name": "Shadowfade",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 5,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "One 10-ft. portal to the Plane of Shadow",
+   "duration": "1 minute/level",
+   "savingThrow": "Will negates",
+   "spellResistance": "Yes",
+   "summary": "Opens a portal to the Plane of Shadow.",
+   "page": 186
+  },
+  {
+   "name": "Shadowy Grappler",
+   "school": "Illusion",
+   "subschool": "Shadow",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "One creature",
+   "duration": "1 round/level (D)",
+   "savingThrow": "Will partial; see text",
+   "spellResistance": "Yes",
+   "summary": "Illusory force grapples subject.",
+   "page": 186
+  },
+  {
+   "name": "Shard Storm",
+   "school": "Evocation",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "One or more20-ft.-radius bursts of piercing force",
+   "duration": "1 round/level",
+   "summary": "Blast deals 3d6 damage to creatures in area.",
+   "page": 187
+  },
+  {
+   "name": "Shatterfloor",
+   "school": "Evocation",
+   "descriptors": [
+    "Sonic"
+   ],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "area": "15-ft.-radius spread",
+   "duration": "Instantaneous",
+   "savingThrow": "Reflex half",
+   "spellResistance": "Yes",
+   "summary": "Deals 1d4 sonic/level plus damages floor surface.",
+   "page": 187
+  },
+  {
+   "name": "Shock and Awe",
+   "school": "Enchantment",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 swift action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature/level, no two of which are more than 30 ft. apart.",
+   "duration": "1 round",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Flat-footed creatures get –10 on initiative.",
+   "page": 189
+  },
+  {
+   "name": "Shroud of Flame",
+   "school": "Evocation",
+   "descriptors": [
+    "Fire"
+   ],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "One creature",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "Subject bursts into flames, taking 2d6 fire damage/round.",
+   "page": 189
+  },
+  {
+   "name": "Silent Portal",
+   "school": "Illusion",
+   "subschool": "Glamer",
+   "descriptors": [],
+   "level": 0,
+   "components": [
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One portal",
+   "duration": "1 minute/level (D)",
+   "savingThrow": "Will negates (object)",
+   "spellResistance": "Yes (object)",
+   "summary": "Negates sound from door or window.",
+   "page": 190
+  },
+  {
+   "name": "Skeletal Guard",
+   "school": "Necromancy",
+   "descriptors": [
+    "Evil"
+   ],
+   "level": 8,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "One or more fingerbones",
+   "duration": "Instantaneous",
+   "savingThrow": "None",
+   "summary": "Create one skeleton/level with turn resistance.",
+   "page": 191
+  },
+  {
+   "name": "Skull Watch",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "One humanoid skull",
+   "duration": "Permanent",
+   "savingThrow": "See text",
+   "summary": "Skull shrieks when creature enters warded area.",
+   "page": 191
+  },
+  {
+   "name": "Slide",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature",
+   "duration": "Instantaneous",
+   "savingThrow": "Will negates",
+   "spellResistance": "Yes",
+   "summary": "Move subject 5 feet.",
+   "page": 191
+  },
+  {
+   "name": "Slide, Greater",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [],
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "summary": "Move subject 20 feet.",
+   "page": 192
+  },
+  {
+   "name": "Slow Burn",
+   "school": "Transmutation",
+   "descriptors": [
+    "Fire"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "area": "30-ft.-radius spread",
+   "duration": "1 minute",
+   "savingThrow": "None",
+   "summary": "Fires burn twice as long.",
+   "page": 192
+  },
+  {
+   "name": "Snake's Swiftness",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One allied creature",
+   "duration": "Instantaneous",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject immediately makes one attack.",
+   "page": 193
+  },
+  {
+   "name": "Snake's Swiftness, Mass",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [],
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "Allied creatures in a 20-ft.-radius burst",
+   "summary": "Allies each immediately make one attack.",
+   "page": 193
+  },
+  {
+   "name": "Solipsism",
+   "school": "Illusion",
+   "subschool": "Phantasm",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 7,
+   "components": [
+    "V"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "summary": "Subject believes it alone exists.",
+   "page": 194
+  },
+  {
+   "name": "Sonic Blast",
+   "school": "Evocation",
+   "descriptors": [
+    "Sonic"
+   ],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature",
+   "duration": "Instantaneous",
+   "savingThrow": "Will partial",
+   "spellResistance": "Yes",
+   "summary": "Subject takes 1d4/2 levels sonic damage plus deafness.",
+   "page": 195
+  },
+  {
+   "name": "Sonic Rumble",
+   "school": "Evocation",
+   "descriptors": [
+    "Sonic"
+   ],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "30 ft.",
+   "area": "Cone-shaped burst",
+   "duration": "Concentration, up to 1 round/level",
+   "savingThrow": "Reflex half",
+   "spellResistance": "Yes",
+   "summary": "Cone of sound deals damage.",
+   "page": 195
+  },
+  {
+   "name": "Sonic Snap",
+   "school": "Evocation",
+   "descriptors": [
+    "Sonic"
+   ],
+   "level": 0,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature or object",
+   "duration": "Instantaneous",
+   "savingThrow": "Will partial",
+   "spellResistance": "Yes",
+   "summary": "Subject takes 1 point of sonic damage and is deafened 1 round.",
+   "page": 195
+  },
+  {
+   "name": "Spell Engine",
+   "school": "Abjuration",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 8,
+   "components": [
+    "V",
+    "S",
+    "M",
+    "XP"
+   ],
+   "castingTime": "10 minutes",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "5-ft.-radius magical wheel",
+   "duration": "See text",
+   "savingThrow": "None",
+   "spellResistance": "Yes; see text",
+   "summary": "Wizard only. Swap out prepared spells for other spells in your spellbook.",
+   "page": 198
+  },
+  {
+   "name": "Spell Vulnerability",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 round",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature",
+   "duration": "1 minute/level",
+   "savingThrow": "Fortitude negates",
+   "summary": "Reduce creature's spell resistance by 1/caster level (max reduction 15).",
+   "page": 200
+  },
+  {
+   "name": "Spider Poison",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Living creature touched",
+   "duration": "Instantaneous; see text",
+   "savingThrow": "Fortitude negates",
+   "spellResistance": "Yes",
+   "summary": "Touch deals 1d6 Str damage, repeats in 1 minute.",
+   "page": 201
+  },
+  {
+   "name": "Spiderskin",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "10 minutes/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Subject gains increasing bonus to natural armor bonus, saves against poison, and Hide checks.",
+   "page": 202
+  },
+  {
+   "name": "Spirit Worm",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Living creature touched",
+   "duration": "1 round/level, up to 5 rounds; see text",
+   "savingThrow": "Fortitude negates; see text",
+   "spellResistance": "Yes",
+   "summary": "Subject takes 1 point Con damage every round for 1 round/level.",
+   "page": 202
+  },
+  {
+   "name": "Spontaneous Search",
+   "school": "Divination",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 round",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 round",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Instantly Search area as if having taken 10.",
+   "page": 204
+  },
+  {
+   "name": "Steeldance",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "Two swords or daggers",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "summary": "Blades hover around you and attack foes.",
+   "page": 206
+  },
+  {
+   "name": "Stick",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 0,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Nonmagical, unattended object weighing up to 5 lb.",
+   "duration": "Instantaneous",
+   "savingThrow": "Will negates (object)",
+   "spellResistance": "Yes (object)",
+   "summary": "Glues an object weighing 5 pounds or less to another object.",
+   "page": 206
+  },
+  {
+   "name": "Sting Ray",
+   "school": "Enchantment",
+   "subschool": "Compulsion",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1 round/level",
+   "savingThrow": "Will partial",
+   "spellResistance": "Yes",
+   "summary": "Subject of ray can take only standard or move action, has –2 AC, and must make Concentration checks to cast spells.",
+   "page": 206
+  },
+  {
+   "name": "Stone Body",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 minute/level (D)",
+   "summary": "Your body becomes living stone.",
+   "page": 207
+  },
+  {
+   "name": "Stone Bones",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Corporeal undead creature touched",
+   "duration": "10 minutes/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Corporeal undead gains +3 natural armor bonus.",
+   "page": 208
+  },
+  {
+   "name": "Stone Shape, Greater",
+   "school": "Transmutation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 7,
+   "components": [],
+   "target": "Stone or stone objects",
+   "summary": "Sculpts 10 cu. ft. + 10 cu. ft./level of stone into any shape.",
+   "page": 208
+  },
+  {
+   "name": "Stone Sphere",
+   "school": "Evocation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "One 5-ft.-diameter stone sphere",
+   "duration": "1 round/level",
+   "savingThrow": "Reflex negates; see text",
+   "spellResistance": "Yes",
+   "summary": "3-ft.-diameter stone sphere rolls over your enemies.",
+   "page": 209
+  },
+  {
+   "name": "Stun Ray",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [
+    "Electricity"
+   ],
+   "level": 7,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "Ray",
+   "duration": "1d4+1 rounds; see text",
+   "savingThrow": "Fortitude partial; see text",
+   "spellResistance": "Yes",
+   "summary": "Subject stunned 1d4+1 rounds.",
+   "page": 211
+  },
+  {
+   "name": "Surefooted Stride",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 2,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "summary": "You can move over rubble as easily as you can over open ground.",
+   "page": 216
+  },
+  {
+   "name": "Surefooted Stride, Mass",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 5,
+   "components": [],
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One creature/level, no two of which are more than 30 ft. apart",
+   "summary": "As surefooted stride but multiple subjects.",
+   "page": 216
+  },
+  {
+   "name": "Suspended Silence",
+   "school": "Illusion",
+   "subschool": "Glamer",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "One object",
+   "duration": "24 hours or until discharged, then 6 rounds; see text",
+   "savingThrow": "None (object)",
+   "spellResistance": "No (object)",
+   "summary": "Object becomes programmed to create an area of silence at your command.",
+   "page": 216
+  },
+  {
+   "name": "Synostodweomer",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 7,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 swift action",
+   "range": "Personal",
+   "target": "One of your spells",
+   "duration": "1 round",
+   "summary": "Channel a spell into positive energy to cure 1d8/spell level.",
+   "page": 218
+  },
+  {
+   "name": "Targeting Ray",
+   "school": "Divination",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "Ray",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "summary": "You and allies are +1 to hit/3 levels against subject.",
+   "page": 219
+  },
+  {
+   "name": "Thunderlance",
+   "school": "Evocation",
+   "descriptors": [
+    "Force"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "0 ft.",
+   "effect": "A spearlike beam",
+   "duration": "1 round/level (D)",
+   "savingThrow": "None",
+   "summary": "Lance of force deals 3d6 damage and might dispel force effects.",
+   "page": 220
+  },
+  {
+   "name": "Transcribe Symbol",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Magic symbol touched",
+   "duration": "10 minutes or until discharged",
+   "savingThrow": "None",
+   "summary": "Safely moves an untriggered magical symbol to another location.",
+   "page": 221
+  },
+  {
+   "name": "Translocation Trick",
+   "school": "Conjuration",
+   "subschool": "Teleportation",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "You and one creature",
+   "duration": "10 minutes/level",
+   "savingThrow": "Will negates; see text",
+   "spellResistance": "Yes",
+   "summary": "You and subject switch places and appear as each other.",
+   "page": 222
+  },
+  {
+   "name": "Treasure Scent",
+   "school": "Divination",
+   "descriptors": [],
+   "level": 4,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "1 hour/level",
+   "summary": "You detect valuable metals and gems.",
+   "page": 223
+  },
+  {
+   "name": "Tremorsense",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "10 minutes/level (D)",
+   "summary": "Grants tremorsense to a range of 30 feet.",
+   "page": 224
+  },
+  {
+   "name": "Tunnel Swallow",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "target": "Tunnel section up to 20 ft. in diameter and up to 50 ft. long",
+   "duration": "Instantaneous",
+   "savingThrow": "Reflex partial; see text",
+   "summary": "Tunnel's peristaltic convulsions deal 1d6 points of damage/level (max 15d6).",
+   "page": 225
+  },
+  {
+   "name": "Undead Lieutenant",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One undead creature; see text",
+   "duration": "24 hours",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Chosen undead can give orders to undead in your control.",
+   "page": 226
+  },
+  {
+   "name": "Undead Torch",
+   "school": "Necromancy",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One corporeal undead/level, no two of which are more than 30 ft. apart",
+   "duration": "1 round/level",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Undead creature gains blue aura that gives +2d6 damage against living creatures.",
+   "page": 226
+  },
+  {
+   "name": "Undermaster",
+   "school": "Transmutation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 9,
+   "components": [
+    "V",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Personal",
+   "target": "You",
+   "duration": "5 rounds",
+   "summary": "You gain earth-related spell-like abilities.",
+   "page": 227
+  },
+  {
+   "name": "Vipergout",
+   "school": "Conjuration",
+   "subschool": "Summoning",
+   "descriptors": [],
+   "level": 3,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "1d4+3 summoned creatures",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "Yes",
+   "summary": "You spit forth celestial or fiendish vipers that attack your foes.",
+   "page": 230
+  },
+  {
+   "name": "Wall of Chaos",
+   "school": "Abjuration",
+   "descriptors": [
+    "Chaotic"
+   ],
+   "level": 4,
+   "components": [],
+   "page": 233,
+   "summary": "Wall blocks creatures of opposite alignment."
+  },
+  {
+   "name": "Wall of Dispel Magic",
+   "school": "Abjuration",
+   "descriptors": [],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "DF"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "A straight wall whose area is up to one 10-ft. square/level",
+   "duration": "1 minute/level",
+   "savingThrow": "None",
+   "summary": "Creatures passing through a transparent wall become subjects of targeted dispel magic.",
+   "page": 233
+  },
+  {
+   "name": "Wall of Evil",
+   "school": "Abjuration",
+   "descriptors": [
+    "Evil"
+   ],
+   "level": 4,
+   "components": [],
+   "page": 233,
+   "summary": "Wall blocks creatures of opposite alignment."
+  },
+  {
+   "name": "Wall of Gears",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [],
+   "level": 6,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "A straight wall of moving gears whose area is up to one 10-ft. square/level; see text",
+   "duration": "1 minute/level",
+   "savingThrow": "See text",
+   "summary": "Creates wall of moving gears that deals 1d6 damage/2 levels to creatures within 10 ft.",
+   "page": 233
+  },
+  {
+   "name": "Wall of Good",
+   "school": "Abjuration",
+   "descriptors": [
+    "Good"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "A straight wall whose area is up to one 10-ft. square/level or a sphere or hemisphere with a radius of up to 5 ft./2 levels",
+   "duration": "10 minutes/level",
+   "savingThrow": "See text",
+   "spellResistance": "Yes",
+   "page": 233,
+   "summary": "Wall blocks creatures of opposite alignment."
+  },
+  {
+   "name": "Wall of Law",
+   "school": "Abjuration",
+   "descriptors": [
+    "Lawful"
+   ],
+   "level": 4,
+   "components": [],
+   "page": 234,
+   "summary": "Wall blocks creatures of opposite alignment."
+  },
+  {
+   "name": "Wall of Sand",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [
+    "Earth"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+   "duration": "Concentration + 1 round/level",
+   "savingThrow": "None",
+   "summary": "Swirling sand blocks ranged attacks, slows movement through.",
+   "page": 235
+  },
+  {
+   "name": "Wall of Smoke",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [],
+   "level": 1,
+   "components": [
+    "V",
+    "S"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+   "duration": "1 round/level",
+   "savingThrow": "Fortitude partial; see text",
+   "summary": "Wall of black smoke obscures vision and nauseates those who pass through.",
+   "page": 235
+  },
+  {
+   "name": "Wall of Water",
+   "school": "Conjuration",
+   "subschool": "Creation",
+   "descriptors": [
+    "Water"
+   ],
+   "level": 4,
+   "components": [
+    "V",
+    "S",
+    "M"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Medium (100 ft. + 10 ft./level)",
+   "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+   "duration": "10 minutes/level",
+   "savingThrow": "Reflex negates; see text",
+   "summary": "Creates shapeable transparent wall of water.",
+   "page": 235
+  },
+  {
+   "name": "Wrathful Castigation",
+   "school": "Enchantment",
+   "subschool": "Compulsion",
+   "descriptors": [
+    "Mind-Affecting"
+   ],
+   "level": 8,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "target": "One living creature",
+   "duration": "1 round/level (D)",
+   "savingThrow": "See text",
+   "spellResistance": "Yes",
+   "summary": "Subject dies or is dazed and –4 on saves for 1 round/level.",
+   "page": 243
+  },
+  {
+   "name": "Xorn Movement",
+   "school": "Transmutation",
+   "descriptors": [],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 standard action",
+   "range": "Touch",
+   "target": "Creature touched",
+   "duration": "1 round/level; see text",
+   "savingThrow": "Will negates (harmless)",
+   "spellResistance": "Yes (harmless)",
+   "summary": "Touched creature swims through earth like a xorn.",
+   "page": 244
+  }
+ ],
+ "removals": []
+}

@@ -1,0 +1,15 @@
+{
+ "source": "Magic of Incarnum",
+ "verifiedBy": "automatic comparison with the book's digital text",
+ "updates": [
+  {
+   "id": "conjure-lesser-midnight-construct",
+   "field": "effect",
+   "value": "One conjured midnight construct",
+   "pdfPage": 100
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": []
+}

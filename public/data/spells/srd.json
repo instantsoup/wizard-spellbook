@@ -2824,7 +2824,8 @@
     "level": 9,
     "components": [
       "V",
-      "S"
+      "S",
+      "XP"
     ],
     "description": "Casting a _gate_ spell has two effects. First, it creates an interdimensional connection between your plane of existence and a plane you specify, allowing travel between those two planes in either direction.\n\nSecond, you may then call a particular individual or kind of being through the _gate._\n\nThe _gate_ itself is a circular hoop or disk from 5 to 20 feet in diameter (caster’s choice), oriented in the direction you desire when it comes into existence (typically vertical and facing you). It is a two-dimensional window looking into the plane you specified when casting the spell, and anyone or anything that moves through is shunted instantly to the other side.\n\nA _gate_ has a front and a back. Creatures moving through the _gate_ from the front are transported to the other plane; creatures moving through it from the back are not.\n\n_Planar Travel:_ As a mode of planar travel, a _gate_ spell functions much like a _plane shift_ spell, except that the _gate_ opens precisely at the point you desire (a creation effect). Deities and other beings who rule a planar realm can prevent a _gate_ from opening in their presence or personal demesnes if they so desire. Travelers need not join hands with you—anyone who chooses to step through the portal is transported. A _gate_ cannot be opened to another point on the same plane; the spell works only for interplanar travel.\n\nYou may hold the _gate_ open only for a brief time (no more than 1 round per caster level), and you must concentrate on doing so, or else the interplanar connection is severed.\n\n_Calling Creatures:_ The second effect of the _gate_ spell is to call an extraplanar creature to your aid (a calling effect). By naming a particular being or kind of being as you cast the spell, you cause the _gate_ to open in the immediate vicinity of the desired creature and pull the subject through, willing or unwilling. Deities and unique beings are under no compulsion to come through the _gate,_ although they may choose to do so of their own accord. This use of the spell creates a _gate_ that remains open just long enough to transport the called creatures. This use of the spell has an XP cost (see below).\n\nIf you choose to call a kind of creature instead of a known individual you may call either a single creature (of any HD) or several creatures. You can call and control several creatures as long as their HD total does not exceed your caster level. In the case of a single creature, you can control it if its HD do not exceed twice your caster level. A single creature with more HD than twice your caster level can’t be controlled. Deities and unique beings cannot be controlled in any event. An uncontrolled being acts as it pleases, making the calling of such creatures rather dangerous. An uncontrolled being may return to its home plane at any time.\n\nA controlled creature can be commanded to perform a service for you. Such services fall into two categories: immediate tasks and contractual service. Fighting for you in a single battle or taking any other actions that can be accomplished within 1 round per caster level counts as an immediate task; you need not make any agreement or pay any reward for the creature’s help. The creature departs at the end of the spell.\n\nIf you choose to exact a longer or more involved form of service from a called creature, you must offer some fair trade in return for that service. The service exacted must be reasonable with respect to the promised favor or reward; see the _lesser planar ally_ spell for appropriate rewards. (Some creatures may want their payment in “livestock” rather than in coin, which could involve complications.) Immediately upon completion of the service, the being is transported to your vicinity, and you must then and there turn over the promised reward. After this is done, the creature is instantly freed to return to its own plane.\n\nFailure to fulfill the promise to the letter results in your being subjected to service by the creature or by its liege and master, at the very least. At worst, the creature or its kin may attack you.\n\n_Note:_ When you use a calling spell such as _gate_ to call an air, chaotic, earth, evil, fire, good, lawful, or water creature, it becomes a spell of that type.",
     "source": "SRD",
@@ -3402,7 +3403,8 @@
     "level": 2,
     "components": [
       "V",
-      "S"
+      "S",
+      "M"
     ],
     "description": "A twisting pattern of subtle, shifting colors weaves through the air, fascinating creatures within it. Roll 2d4 and add your caster level (maximum 10) to determine the total number of Hit Dice of creatures affected. Creatures with the fewest HD are affected first; and, among creatures with equal HD, those who are closest to the spell’s point of origin are affected first. Hit Dice that are not sufficient to affect a creature are wasted. Affected creatures become fascinated by the pattern of colors. Sightless creatures are not affected.\n\nA wizard or sorcerer need not utter a sound to cast this spell, but a bard must sing, play music, or recite a rhyme as a verbal component.",
     "source": "SRD",
@@ -5766,7 +5768,8 @@
     "components": [
       "V",
       "S",
-      "M"
+      "M",
+      "F"
     ],
     "description": "A glowing, rainbow-hued pattern of interweaving colors fascinates those within it. _Rainbow pattern_ fascinates a maximum of 24 Hit Dice of creatures. Creatures with the fewest HD are affected first. Among creatures with equal HD, those who are closest to the spell’s point of origin are affected first. An affected creature that fails its saves is fascinated by the pattern.\n\nWith a simple gesture (a free action), you can make the rainbow pattern move up to 30 feet per round (moving its effective point of origin). All fascinated creatures follow the moving rainbow of light, trying to get or remain within the effect. Fascinated creatures who are restrained and removed from the pattern still try to follow it. If the pattern leads its subjects into a dangerous area each fascinated creature gets a second save. If the view of the lights is completely blocked creatures who can’t see them are no longer affected.\n\nThe spell does not affect sightless creatures.\n\n_Verbal Component:_ A wizard or sorcerer need not utter a sound to cast this spell, but a bard must sing, play music, or recite a rhyme as a verbal component.",
     "source": "SRD",
@@ -6280,7 +6283,8 @@
     "components": [
       "V",
       "S",
-      "M"
+      "M",
+      "F"
     ],
     "description": "You conjure a sturdy cottage or lodge made of material that is common in the area where the spell is cast. The floor is level, clean, and dry. In all respects the lodging resembles a normal cottage, with a sturdy door, two shuttered windows, and a small fireplace.\n\nThe shelter has no heating or cooling source (other than natural insulation qualities). Therefore, it must be heated as a normal dwelling, and extreme heat adversely affects it and its occupants. The dwelling does, however, provide considerable security otherwise—it is as strong as a normal stone building, regardless of its material composition. The dwelling resists flames and fire as if it were stone. It is impervious to normal missiles (but not the sort cast by siege engines or giants).\n\nThe door, shutters, and even chimney are secure against intrusion, the former two being _arcane locked_ and the latter secured by an iron grate at the top and a narrow flue. In addition, these three areas are protected by an _alarm_ spell. Finally, an _unseen servant_ is conjured to provide service to you for the duration of the shelter.\n\nThe _secure shelter_ contains rude furnishings —eight bunks, a trestle table, eight stools, and a writing desk.",
     "source": "SRD",
@@ -7194,7 +7198,7 @@
     "focus": "A tiny bag and a small (not necessarily lit) candle.",
     "castingTime": "1 round",
     "range": "Close (25 ft. + 5 ft./2 levels)",
-    "effect": "One summoned creature",
+    "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
     "duration": "1 round/level (D)",
     "savingThrow": "None",
     "spellResistance": "No",
@@ -7269,7 +7273,7 @@
     "focus": "A tiny bag and a small (not necessarily lit) candle.",
     "castingTime": "1 round",
     "range": "Close (25 ft. + 5 ft./2 levels)",
-    "effect": "One summoned creature",
+    "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
     "duration": "1 round/level (D)",
     "savingThrow": "None",
     "spellResistance": "No",
@@ -7294,7 +7298,7 @@
     "focus": "A tiny bag and a small (not necessarily lit) candle.",
     "castingTime": "1 round",
     "range": "Close (25 ft. + 5 ft./2 levels)",
-    "effect": "One summoned creature",
+    "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
     "duration": "1 round/level (D)",
     "savingThrow": "None",
     "spellResistance": "No",

@@ -1,0 +1,45 @@
+{
+ "source": "Races of the Wild",
+ "verifiedBy": "automatic comparison with the book's digital text",
+ "updates": [
+  {
+   "id": "returning-weapon",
+   "field": "target",
+   "value": "One thrown weapon",
+   "pdfPage": 175
+  },
+  {
+   "id": "returning-weapon",
+   "field": "spellResistance",
+   "value": "No (harmless)",
+   "pdfPage": 175
+  },
+  {
+   "id": "aerial-alacrity",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 174
+  },
+  {
+   "id": "aerial-alacrity",
+   "field": "duration",
+   "value": "1 minute/level (D)",
+   "pdfPage": 174
+  },
+  {
+   "id": "enduring-flight",
+   "field": "castingTime",
+   "value": "1 full round",
+   "pdfPage": 175
+  },
+  {
+   "id": "enduring-flight",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 175
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": []
+}

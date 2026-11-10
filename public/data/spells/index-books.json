@@ -1,5 +1,71 @@
 [
  {
+  "id": "silent-portal",
+  "name": "Silent Portal",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 0,
+  "components": [
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One portal",
+  "duration": "1 minute/level (D)",
+  "savingThrow": "Will negates (object)",
+  "spellResistance": "Yes (object)",
+  "summary": "Negates sound from door or window.",
+  "description": "Negates sound from door or window.\n\nSummary only. Full text: Spell Compendium, p. 190.",
+  "source": "Spell Compendium",
+  "page": 190
+ },
+ {
+  "id": "sonic-snap",
+  "name": "Sonic Snap",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "level": 0,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature or object",
+  "duration": "Instantaneous",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "summary": "Subject takes 1 point of sonic damage and is deafened 1 round.",
+  "description": "Subject takes 1 point of sonic damage and is deafened 1 round.\n\nSummary only. Full text: Spell Compendium, p. 195.",
+  "source": "Spell Compendium",
+  "page": 195
+ },
+ {
+  "id": "stick",
+  "name": "Stick",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 0,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Nonmagical, unattended object weighing up to 5 lb",
+  "duration": "Instantaneous",
+  "savingThrow": "Will negates (object)",
+  "spellResistance": "Yes (object)",
+  "summary": "Glues an object weighing 5 pounds or less to another object.",
+  "description": "Glues an object weighing 5 pounds or less to another object.\n\nSummary only. Full text: Spell Compendium, p. 206.",
+  "source": "Spell Compendium",
+  "page": 206
+ },
+ {
   "id": "beckon-person",
   "name": "Beckon Person",
   "school": "Enchantment",
@@ -410,6 +476,70 @@
   "source": "Races of the Dragon"
  },
  {
+  "id": "nerveskitter",
+  "name": "Nerveskitter",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 round",
+  "savingThrow": "None (harmless)",
+  "spellResistance": "Yes",
+  "summary": "Subject gains +5 bonus on initiative checks.",
+  "description": "Subject gains +5 bonus on initiative checks.\n\nSummary only. Full text: Spell Compendium, p. 146.",
+  "source": "Spell Compendium",
+  "page": 146
+ },
+ {
+  "id": "net-of-shadows",
+  "name": "Net of Shadows",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [
+   "Darkness"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/level, no two of which are more than 25 ft. apart",
+  "duration": "1d6 rounds",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Ordinary shadows that provide concealment to all in the area.",
+  "description": "Ordinary shadows that provide concealment to all in the area.\n\nSummary only. Full text: Spell Compendium, p. 147.",
+  "source": "Spell Compendium",
+  "page": 147
+ },
+ {
+  "id": "nightshield",
+  "name": "Nightshield",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level (D)",
+  "summary": "You gain resistance bonus on saves, and spell absorbs magic missile damage.",
+  "description": "You gain resistance bonus on saves, and spell absorbs magic missile damage.\n\nSummary only. Full text: Spell Compendium, p. 148.",
+  "source": "Spell Compendium",
+  "page": 148
+ },
+ {
   "id": "path-of-frost",
   "name": "Path of Frost",
   "school": "Transmutation",
@@ -451,6 +581,30 @@
   "summary": "Weapon is impossible to draw.",
   "description": "Weapon is impossible to draw.\n\nSummary only. Full text: Cityscape.",
   "source": "Cityscape"
+ },
+ {
+  "id": "persistent-blade",
+  "name": "Persistent Blade",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One dagger made of force",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Blade of force attacks subject, automatically flanks.",
+  "description": "Blade of force attacks subject, automatically flanks.\n\nSummary only. Full text: Spell Compendium, p. 154.",
+  "source": "Spell Compendium",
+  "page": 154
  },
  {
   "id": "power-word-fatigue",
@@ -517,6 +671,73 @@
   "source": "Magic of Incarnum"
  },
  {
+  "id": "raging-flame",
+  "name": "Raging Flame",
+  "school": "Transmutation",
+  "descriptors": [
+   "Fire"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "30-ft.-radius spread",
+  "duration": "1 minute",
+  "savingThrow": "None",
+  "summary": "Fires burn twice as hot, half as long.",
+  "description": "Fires burn twice as hot, half as long.\n\nSummary only. Full text: Spell Compendium, p. 164.",
+  "source": "Spell Compendium",
+  "page": 164
+ },
+ {
+  "id": "ray-of-clumsiness",
+  "name": "Ray of Clumsiness",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Victim takes 1d6 Dexterity penalty +1/2 levels.",
+  "description": "Victim takes 1d6 Dexterity penalty +1/2 levels.\n\nSummary only. Full text: Spell Compendium, p. 166.",
+  "source": "Spell Compendium",
+  "page": 166
+ },
+ {
+  "id": "ray-of-flame",
+  "name": "Ray of Flame",
+  "school": "Evocation",
+  "descriptors": [
+   "Flame"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "See text",
+  "spellResistance": "Yes",
+  "summary": "Ray deals 1d6/2 levels fire damage, ignites subject.",
+  "description": "Ray deals 1d6/2 levels fire damage, ignites subject.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
   "id": "reaving-aura",
   "name": "Reaving Aura",
   "school": "Necromancy",
@@ -560,6 +781,28 @@
   "source": "Complete Mage"
  },
  {
+  "id": "resist-planar-alignment",
+  "name": "Resist Planar Alignment",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "10 minutes/level",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject can resist penalties for being of an opposed alignment on an aligned Outer Plane.",
+  "description": "Subject can resist penalties for being of an opposed alignment on an aligned Outer Plane.\n\nSummary only. Full text: Spell Compendium, p. 174.",
+  "source": "Spell Compendium",
+  "page": 174
+ },
+ {
   "id": "rot-of-ages",
   "name": "Rot of Ages",
   "school": "Conjuration",
@@ -579,6 +822,26 @@
   "summary": "Cloud of rotting debris sickens or nauseates one creature, provides concealment for others.",
   "description": "Cloud of rotting debris sickens or nauseates one creature, provides concealment for others.\n\nSummary only. Full text: Dragon Magic.",
   "source": "Dragon Magic"
+ },
+ {
+  "id": "scatterspray",
+  "name": "Scatterspray",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "Six or more Diminutive or Fine objects, all within 1 ft. of each other, whose total weight does not exceed 25 lb",
+  "duration": "Instantaneous",
+  "savingThrow": "See text",
+  "summary": "Group of small objects flies apart in a burst.",
+  "description": "Group of small objects flies apart in a burst.\n\nSummary only. Full text: Spell Compendium, p. 180.",
+  "source": "Spell Compendium",
+  "page": 180
  },
  {
   "id": "scholars-touch",
@@ -644,6 +907,26 @@
   "source": "Cityscape"
  },
  {
+  "id": "serene-visage",
+  "name": "Serene Visage",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level",
+  "summary": "Gain insight bonus on Bluff checks equal to half your level.",
+  "description": "Gain insight bonus on Bluff checks equal to half your level.\n\nSummary only. Full text: Spell Compendium, p. 182.",
+  "source": "Spell Compendium",
+  "page": 182
+ },
+ {
   "id": "shivering-touch-lesser",
   "name": "Shivering Touch, Lesser",
   "school": "Necromancy",
@@ -666,6 +949,72 @@
   "source": "Frostburn"
  },
  {
+  "id": "shock-and-awe",
+  "name": "Shock and Awe",
+  "school": "Enchantment",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/level, no two of which are more than 30 ft. apart",
+  "duration": "1 round",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Flat-footed creatures get –10 on initiative.",
+  "description": "Flat-footed creatures get –10 on initiative.\n\nSummary only. Full text: Spell Compendium, p. 189.",
+  "source": "Spell Compendium",
+  "page": 189
+ },
+ {
+  "id": "slide",
+  "name": "Slide",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "Instantaneous",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Move subject 5 feet.",
+  "description": "Move subject 5 feet.\n\nSummary only. Full text: Spell Compendium, p. 191.",
+  "source": "Spell Compendium",
+  "page": 191
+ },
+ {
+  "id": "slow-burn",
+  "name": "Slow Burn",
+  "school": "Transmutation",
+  "descriptors": [
+   "Fire"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "30-ft.-radius spread",
+  "duration": "1 minute",
+  "savingThrow": "None",
+  "summary": "Fires burn twice as long.",
+  "description": "Fires burn twice as long.\n\nSummary only. Full text: Spell Compendium, p. 192.",
+  "source": "Spell Compendium",
+  "page": 192
+ },
+ {
   "id": "snowdrift",
   "name": "Snowdrift",
   "school": "Transmutation",
@@ -685,6 +1034,73 @@
   "summary": "Forms existing snow into another shape.",
   "description": "Forms existing snow into another shape.\n\nSummary only. Full text: Frostburn.",
   "source": "Frostburn"
+ },
+ {
+  "id": "sonic-blast",
+  "name": "Sonic Blast",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "Instantaneous",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "summary": "Subject takes 1d4/2 levels sonic damage plus deafness.",
+  "description": "Subject takes 1d4/2 levels sonic damage plus deafness.\n\nSummary only. Full text: Spell Compendium, p. 195.",
+  "source": "Spell Compendium",
+  "page": 195
+ },
+ {
+  "id": "spirit-worm",
+  "name": "Spirit Worm",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Living creature touched",
+  "duration": "1 round/level, up to 5 rounds; see text",
+  "savingThrow": "Fortitude negates; see text",
+  "spellResistance": "Yes",
+  "summary": "Subject takes 1 point Con damage every round for 1 round/level.",
+  "description": "Subject takes 1 point Con damage every round for 1 round/level.\n\nSummary only. Full text: Spell Compendium, p. 202.",
+  "source": "Spell Compendium",
+  "page": 202
+ },
+ {
+  "id": "spontaneous-search",
+  "name": "Spontaneous Search",
+  "school": "Divination",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 round",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 round",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Instantly Search area as if having taken 10.",
+  "description": "Instantly Search area as if having taken 10.\n\nSummary only. Full text: Spell Compendium, p. 204.",
+  "source": "Spell Compendium",
+  "page": 204
  },
  {
   "id": "sticky-floor",
@@ -753,6 +1169,27 @@
   "source": "Heroes of Horror"
  },
  {
+  "id": "targeting-ray",
+  "name": "Targeting Ray",
+  "school": "Divination",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "Ray",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "summary": "You and allies are +1 to hit/3 levels against subject.",
+  "description": "You and allies are +1 to hit/3 levels against subject.\n\nSummary only. Full text: Spell Compendium, p. 219.",
+  "source": "Spell Compendium",
+  "page": 219
+ },
+ {
   "id": "true-casting",
   "name": "True Casting",
   "school": "Divination",
@@ -787,6 +1224,27 @@
   "summary": "Set specific conditions under which you immediately wake up.",
   "description": "Set specific conditions under which you immediately wake up.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "wall-of-smoke",
+  "name": "Wall of Smoke",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "level": 1,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial; see text",
+  "summary": "Wall of black smoke obscures vision and nauseates those who pass through.",
+  "description": "Wall of black smoke obscures vision and nauseates those who pass through.\n\nSummary only. Full text: Spell Compendium, p. 235.",
+  "source": "Spell Compendium",
+  "page": 235
  },
  {
   "id": "allied-footsteps",
@@ -1046,6 +1504,28 @@
   "summary": "Absorb nearby light to release as blinding flare.",
   "description": "Absorb nearby light to release as blinding flare.\n\nSummary only. Full text: Races of Destiny.",
   "source": "Races of Destiny"
+ },
+ {
+  "id": "claws-of-darkness",
+  "name": "Claws of Darkness",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "Yes; see text",
+  "summary": "Claws deal 1d8 cold damage and have reach.",
+  "description": "Claws deal 1d8 cold damage and have reach.\n\nSummary only. Full text: Spell Compendium, p. 47.",
+  "source": "Spell Compendium",
+  "page": 47
  },
  {
   "id": "crystalline-memories",
@@ -1568,6 +2048,51 @@
   "source": "Frostburn"
  },
  {
+  "id": "phantom-foe",
+  "name": "Phantom Foe",
+  "school": "Illusion",
+  "subschool": "Phantasm",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 round/level",
+  "savingThrow": "Will disbelief",
+  "summary": "Subject is always flanked by one creature.",
+  "description": "Subject is always flanked by one creature.\n\nSummary only. Full text: Spell Compendium, p. 156.",
+  "source": "Spell Compendium",
+  "page": 156
+ },
+ {
+  "id": "portal-alarm",
+  "name": "Portal Alarm",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One interplanar gate or portal",
+  "duration": "2 hours/level (D)",
+  "savingThrow": "None",
+  "summary": "You are alerted when a creature passes through a warded portal.",
+  "description": "You are alerted when a creature passes through a warded portal.\n\nSummary only. Full text: Spell Compendium, p. 160.",
+  "source": "Spell Compendium",
+  "page": 160
+ },
+ {
   "id": "power-word-sicken",
   "name": "Power Word Sicken",
   "school": "Enchantment",
@@ -1612,6 +2137,142 @@
   "source": "Races of Destiny"
  },
  {
+  "id": "quick-potion",
+  "name": "Quick Potion",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 minute",
+  "range": "Touch",
+  "target": "Flask of water touched",
+  "duration": "1 hour/level",
+  "savingThrow": "Will negates (object)",
+  "spellResistance": "Yes (object)",
+  "summary": "Creates a potion that must be used within 1 hour/level.",
+  "description": "Creates a potion that must be used within 1 hour/level.\n\nSummary only. Full text: Spell Compendium, p. 164.",
+  "source": "Spell Compendium",
+  "page": 164
+ },
+ {
+  "id": "rainbow-beam",
+  "name": "Rainbow Beam",
+  "school": "Evocation",
+  "descriptors": [
+   "Light"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Ray dazzles and deals 1d12 damage/3 levels of random type.",
+  "description": "Ray dazzles and deals 1d12 damage/3 levels of random type.\n\nSummary only. Full text: Spell Compendium, p. 165.",
+  "source": "Spell Compendium",
+  "page": 165
+ },
+ {
+  "id": "ray-of-ice",
+  "name": "Ray of Ice",
+  "school": "Evocation",
+  "descriptors": [
+   "Cold"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "See text",
+  "spellResistance": "Yes",
+  "summary": "Ray deals 1d6 cold damage/2 levels.",
+  "description": "Ray deals 1d6 cold damage/2 levels.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
+  "id": "ray-of-sickness",
+  "name": "Ray of Sickness",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Subject becomes sickened.",
+  "description": "Subject becomes sickened.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
+  "id": "ray-of-stupidity",
+  "name": "Ray of Stupidity",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Victim takes 1d4+1 Intelligence damage.",
+  "description": "Victim takes 1d4+1 Intelligence damage.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
+  "id": "ray-of-weakness",
+  "name": "Ray of Weakness",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Subject takes –2 on attacks, –10 ft. speed.",
+  "description": "Subject takes –2 on attacks, –10 ft. speed.\n\nSummary only. Full text: Spell Compendium, p. 168.",
+  "source": "Spell Compendium",
+  "page": 168
+ },
+ {
   "id": "razorfangs",
   "name": "Razorfangs",
   "school": "Transmutation",
@@ -1627,6 +2288,26 @@
   "summary": "Your bite or claw attack threatens a critical hit on a 19 or 20.",
   "description": "Your bite or claw attack threatens a critical hit on a 19 or 20.\n\nSummary only. Full text: Draconomicon.",
   "source": "Draconomicon"
+ },
+ {
+  "id": "reflective-disguise",
+  "name": "Reflective Disguise",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "10 minutes/level",
+  "summary": "Viewers see you as their own species and gender.",
+  "description": "Viewers see you as their own species and gender.\n\nSummary only. Full text: Spell Compendium, p. 171.",
+  "source": "Spell Compendium",
+  "page": 171
  },
  {
   "id": "scale-weakening",
@@ -1688,6 +2369,50 @@
   "source": "Draconomicon"
  },
  {
+  "id": "shadow-mask",
+  "name": "Shadow Mask",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "10 minutes/level (D)",
+  "summary": "Grants +4 on saves against light spells, protection from gaze attacks.",
+  "description": "Grants +4 on saves against light spells, protection from gaze attacks.\n\nSummary only. Full text: Spell Compendium, p. 185.",
+  "source": "Spell Compendium",
+  "page": 185
+ },
+ {
+  "id": "shadow-spray",
+  "name": "Shadow Spray",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "5-ft.-radius burst",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Deals 4 points of Str damage and dazes.",
+  "description": "Deals 4 points of Str damage and dazes.\n\nSummary only. Full text: Spell Compendium, p. 186.",
+  "source": "Spell Compendium",
+  "page": 186
+ },
+ {
   "id": "share-talents",
   "name": "Share Talents",
   "school": "Transmutation",
@@ -1707,6 +2432,41 @@
   "summary": "Subjects gain +2 bonus on skill checks.",
   "description": "Subjects gain +2 bonus on skill checks.\n\nSummary only. Full text: Player's Handbook II.",
   "source": "Player's Handbook II"
+ },
+ {
+  "id": "slide-greater",
+  "name": "Slide, Greater",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [],
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "summary": "Move subject 20 feet.",
+  "description": "Move subject 20 feet.\n\nSummary only. Full text: Spell Compendium, p. 192.",
+  "source": "Spell Compendium",
+  "page": 192
+ },
+ {
+  "id": "snakes-swiftness",
+  "name": "Snake's Swiftness",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One allied creature",
+  "duration": "Instantaneous",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject immediately makes one attack.",
+  "description": "Subject immediately makes one attack.\n\nSummary only. Full text: Spell Compendium, p. 193.",
+  "source": "Spell Compendium",
+  "page": 193
  },
  {
   "id": "soul-blight",
@@ -1814,6 +2574,53 @@
   "source": "Races of the Dragon"
  },
  {
+  "id": "sting-ray",
+  "name": "Sting Ray",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1 round/level",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "summary": "Subject of ray can take only standard or move action, has –2 AC, and must make Concentration checks to cast spells.",
+  "description": "Subject of ray can take only standard or move action, has –2 AC, and must make Concentration checks to cast spells.\n\nSummary only. Full text: Spell Compendium, p. 206.",
+  "source": "Spell Compendium",
+  "page": 206
+ },
+ {
+  "id": "stone-bones",
+  "name": "Stone Bones",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Corporeal undead creature touched",
+  "duration": "10 minutes/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Corporeal undead gains +3 natural armor bonus.",
+  "description": "Corporeal undead gains +3 natural armor bonus.\n\nSummary only. Full text: Spell Compendium, p. 208.",
+  "source": "Spell Compendium",
+  "page": 208
+ },
+ {
   "id": "summon-undead-ii",
   "name": "Summon Undead II",
   "school": "Conjuration",
@@ -1856,6 +2663,26 @@
   "summary": "Magic item or soulmeld is suppressed for 1 round/level.",
   "description": "Magic item or soulmeld is suppressed for 1 round/level.\n\nSummary only. Full text: Magic of Incarnum.",
   "source": "Magic of Incarnum"
+ },
+ {
+  "id": "surefooted-stride",
+  "name": "Surefooted Stride",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 2,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "summary": "You can move over rubble as easily as you can over open ground.",
+  "description": "You can move over rubble as easily as you can over open ground.\n\nSummary only. Full text: Spell Compendium, p. 216.",
+  "source": "Spell Compendium",
+  "page": 216
  },
  {
   "id": "torrent-of-tears",
@@ -2434,6 +3261,30 @@
   "source": "Complete Mage"
  },
  {
+  "id": "giants-wrath",
+  "name": "Giant's Wrath",
+  "school": "Transmutation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "One pebble/3 levels",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "None",
+  "summary": "Pebbles you throw become boulders.",
+  "description": "Pebbles you throw become boulders.\n\nSummary only. Full text: Spell Compendium, p. 105.",
+  "source": "Spell Compendium",
+  "page": 105
+ },
+ {
   "id": "glacial-globe-of-invulnerability",
   "name": "Glacial Globe of Invulnerability",
   "school": "Abjuration",
@@ -2455,6 +3306,29 @@
   "summary": "Stops 1st- through 3rd-level concealment.",
   "description": "Stops 1st- through 3rd-level concealment.\n\nSummary only. Full text: Frostburn.",
   "source": "Frostburn"
+ },
+ {
+  "id": "glowing-orb",
+  "name": "Glowing Orb",
+  "school": "Evocation",
+  "descriptors": [
+   "Light"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "effect": "Magical, controllable light source",
+  "duration": "Permanent",
+  "savingThrow": "None",
+  "summary": "Creates permanent magical light; you control brightness.",
+  "description": "Creates permanent magical light; you control brightness.\n\nSummary only. Full text: Spell Compendium, p. 106.",
+  "source": "Spell Compendium",
+  "page": 106
  },
  {
   "id": "heart-of-water",
@@ -2537,6 +3411,21 @@
   "summary": "Take the form of a pseudodragon.",
   "description": "Take the form of a pseudodragon.\n\nSummary only. Full text: Dragon Magic.",
   "source": "Dragon Magic"
+ },
+ {
+  "id": "light-of-venya",
+  "name": "Light of Venya",
+  "school": "Evocation",
+  "descriptors": [
+   "Good",
+   "Light"
+  ],
+  "level": 3,
+  "components": [],
+  "summary": "You radiate pearly light, which you can expend as 2 bolts that deal 2d6 damage, 4d6 against undead and evil outsiders.",
+  "description": "You radiate pearly light, which you can expend as 2 bolts that deal 2d6 damage, 4d6 against undead and evil outsiders.\n\nSummary only. Full text: Spell Compendium, p. 132.",
+  "source": "Spell Compendium",
+  "page": 132
  },
  {
   "id": "luminous-assassin-lesser",
@@ -2795,6 +3684,55 @@
   "source": "Player's Handbook II"
  },
  {
+  "id": "rainbow-blast",
+  "name": "Rainbow Blast",
+  "school": "Evocation",
+  "descriptors": [
+   "Light"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "120 ft",
+  "area": "120-ft. line",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "Line deals 1d6 damage of each energy type.",
+  "description": "Line deals 1d6 damage of each energy type.\n\nSummary only. Full text: Spell Compendium, p. 165.",
+  "source": "Spell Compendium",
+  "page": 165
+ },
+ {
+  "id": "ray-of-dizziness",
+  "name": "Ray of Dizziness",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "Ray",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Subject can take only move or standard actions.",
+  "description": "Subject can take only move or standard actions.\n\nSummary only. Full text: Spell Compendium, p. 166.",
+  "source": "Spell Compendium",
+  "page": 166
+ },
+ {
   "id": "ray-of-the-python",
   "name": "Ray of the Python",
   "school": "Evocation",
@@ -2856,6 +3794,25 @@
   "source": "Heroes of Horror"
  },
  {
+  "id": "reverse-arrows",
+  "name": "Reverse Arrows",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "summary": "As protection from arrows, but negated arrows turn back upon their source.",
+  "description": "As protection from arrows, but negated arrows turn back upon their source.\n\nSummary only. Full text: Spell Compendium, p. 175.",
+  "source": "Spell Compendium",
+  "page": 175
+ },
+ {
   "id": "revitalize-legacy-least",
   "name": "Revitalize Legacy, Least",
   "school": "Transmutation",
@@ -2875,6 +3832,28 @@
   "summary": "Get extra use of chosen least legacy ability.",
   "description": "Get extra use of chosen least legacy ability.\n\nSummary only. Full text: Weapons of Legacy.",
   "source": "Weapons of Legacy"
+ },
+ {
+  "id": "rust-ray",
+  "name": "Rust Ray",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One nonmagical ferrous object or one ferrous creature",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "None or Fortitude negates (object); see text",
+  "summary": "Metal objects take 2d6 damage +1/2 levels.",
+  "description": "Metal objects take 2d6 damage +1/2 levels.\n\nSummary only. Full text: Spell Compendium, p. 178.",
+  "source": "Spell Compendium",
+  "page": 178
  },
  {
   "id": "scattering-trap",
@@ -2899,6 +3878,30 @@
   "source": "Player's Handbook II"
  },
  {
+  "id": "scintillating-sphere",
+  "name": "Scintillating Sphere",
+  "school": "Evocation",
+  "descriptors": [
+   "Electricity"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "20-ft.-radius burst",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "20-ft.-radius burst deals 1d6 electricity/level.",
+  "description": "20-ft.-radius burst deals 1d6 electricity/level.\n\nSummary only. Full text: Spell Compendium, p. 181.",
+  "source": "Spell Compendium",
+  "page": 181
+ },
+ {
   "id": "sense-of-the-dragon",
   "name": "Sense of the Dragon",
   "school": "Transmutation",
@@ -2920,6 +3923,47 @@
   "source": "Races of the Dragon"
  },
  {
+  "id": "shadow-cache",
+  "name": "Shadow Cache",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "area": "1-ft.-diameter circle",
+  "duration": "1 minute/level (D)",
+  "summary": "You open a small portal to the Plane of Shadow through which you can put an item for later retrieval.",
+  "description": "You open a small portal to the Plane of Shadow through which you can put an item for later retrieval.\n\nSummary only. Full text: Spell Compendium, p. 183.",
+  "source": "Spell Compendium",
+  "page": 183
+ },
+ {
+  "id": "shadow-phase",
+  "name": "Shadow Phase",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject becomes partially incorporeal.",
+  "description": "Subject becomes partially incorporeal.\n\nSummary only. Full text: Spell Compendium, p. 185.",
+  "source": "Spell Compendium",
+  "page": 185
+ },
+ {
   "id": "shape-of-the-hellspawned-stalker",
   "name": "Shape of the Hellspawned Stalker",
   "school": "Transmutation",
@@ -2937,6 +3981,30 @@
   "summary": "You take the form of a hell hound.",
   "description": "You take the form of a hell hound.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "shatterfloor",
+  "name": "Shatterfloor",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "15-ft.-radius spread",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "Deals 1d4 sonic/level plus damages floor surface.",
+  "description": "Deals 1d4 sonic/level plus damages floor surface.\n\nSummary only. Full text: Spell Compendium, p. 187.",
+  "source": "Spell Compendium",
+  "page": 187
  },
  {
   "id": "shivering-touch",
@@ -2961,6 +4029,61 @@
   "source": "Frostburn"
  },
  {
+  "id": "skull-watch",
+  "name": "Skull Watch",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One humanoid skull",
+  "duration": "Permanent",
+  "savingThrow": "See text",
+  "summary": "Skull shrieks when creature enters warded area.",
+  "description": "Skull shrieks when creature enters warded area.\n\nSummary only. Full text: Spell Compendium, p. 191.",
+  "source": "Spell Compendium",
+  "page": 191
+ },
+ {
+  "id": "snakes-swiftness-mass",
+  "name": "Snake's Swiftness, Mass",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [],
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "Allied creatures in a 20-ft.-radius burst",
+  "summary": "Allies each immediately make one attack.",
+  "description": "Allies each immediately make one attack.\n\nSummary only. Full text: Spell Compendium, p. 193.",
+  "source": "Spell Compendium",
+  "page": 193
+ },
+ {
+  "id": "spell-vulnerability",
+  "name": "Spell Vulnerability",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 minute/level",
+  "savingThrow": "Fortitude negates",
+  "summary": "Reduce creature's spell resistance by 1/caster level (max reduction 15).",
+  "description": "Reduce creature's spell resistance by 1/caster level (max reduction 15).\n\nSummary only. Full text: Spell Compendium, p. 200.",
+  "source": "Spell Compendium",
+  "page": 200
+ },
+ {
   "id": "spellcasters-bane",
   "name": "Spellcaster's Bane",
   "school": "Divination",
@@ -2977,6 +4100,71 @@
   "summary": "Remove increment-based penalties on ranged attacks.",
   "description": "Remove increment-based penalties on ranged attacks.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "spider-poison",
+  "name": "Spider Poison",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Living creature touched",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Touch deals 1d6 Str damage, repeats in 1 minute.",
+  "description": "Touch deals 1d6 Str damage, repeats in 1 minute.\n\nSummary only. Full text: Spell Compendium, p. 201.",
+  "source": "Spell Compendium",
+  "page": 201
+ },
+ {
+  "id": "spiderskin",
+  "name": "Spiderskin",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "10 minutes/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject gains increasing bonus to natural armor bonus, saves against poison, and Hide checks.",
+  "description": "Subject gains increasing bonus to natural armor bonus, saves against poison, and Hide checks.\n\nSummary only. Full text: Spell Compendium, p. 202.",
+  "source": "Spell Compendium",
+  "page": 202
+ },
+ {
+  "id": "steeldance",
+  "name": "Steeldance",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "Two swords or daggers",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "summary": "Blades hover around you and attack foes.",
+  "description": "Blades hover around you and attack foes.\n\nSummary only. Full text: Spell Compendium, p. 206.",
+  "source": "Spell Compendium",
+  "page": 206
  },
  {
   "id": "summon-undead-iii",
@@ -3025,6 +4213,29 @@
   "source": "Draconomicon"
  },
  {
+  "id": "suspended-silence",
+  "name": "Suspended Silence",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One object",
+  "duration": "24 hours or until discharged, then 6 rounds; see text",
+  "savingThrow": "None (object)",
+  "spellResistance": "No (object)",
+  "summary": "Object becomes programmed to create an area of silence at your command.",
+  "description": "Object becomes programmed to create an area of silence at your command.\n\nSummary only. Full text: Spell Compendium, p. 216.",
+  "source": "Spell Compendium",
+  "page": 216
+ },
+ {
   "id": "tenacious-dispelling",
   "name": "Tenacious Dispelling",
   "school": "Abjuration",
@@ -3067,6 +4278,69 @@
   "source": "Frostburn"
  },
  {
+  "id": "tremorsense",
+  "name": "Tremorsense",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "10 minutes/level (D)",
+  "summary": "Grants tremorsense to a range of 30 feet.",
+  "description": "Grants tremorsense to a range of 30 feet.\n\nSummary only. Full text: Spell Compendium, p. 224.",
+  "source": "Spell Compendium",
+  "page": 224
+ },
+ {
+  "id": "undead-lieutenant",
+  "name": "Undead Lieutenant",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One undead creature; see text",
+  "duration": "24 hours",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Chosen undead can give orders to undead in your control.",
+  "description": "Chosen undead can give orders to undead in your control.\n\nSummary only. Full text: Spell Compendium, p. 226.",
+  "source": "Spell Compendium",
+  "page": 226
+ },
+ {
+  "id": "undead-torch",
+  "name": "Undead Torch",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One corporeal undead/level, no two of which are more than 30 ft. apart",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Undead creature gains blue aura that gives +2d6 damage against living creatures.",
+  "description": "Undead creature gains blue aura that gives +2d6 damage against living creatures.\n\nSummary only. Full text: Spell Compendium, p. 226.",
+  "source": "Spell Compendium",
+  "page": 226
+ },
+ {
   "id": "unicorn-horn",
   "name": "Unicorn Horn",
   "school": "Transmutation",
@@ -3084,6 +4358,29 @@
   "summary": "You grow a horn that functions as a natural weapon.",
   "description": "You grow a horn that functions as a natural weapon.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "vipergout",
+  "name": "Vipergout",
+  "school": "Conjuration",
+  "subschool": "Summoning",
+  "descriptors": [],
+  "level": 3,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "1d4+3 summoned creatures",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "You spit forth celestial or fiendish vipers that attack your foes.",
+  "description": "You spit forth celestial or fiendish vipers that attack your foes.\n\nSummary only. Full text: Spell Compendium, p. 230.",
+  "source": "Spell Compendium",
+  "page": 230
  },
  {
   "id": "vision-of-the-omniscient-eye",
@@ -3509,6 +4806,47 @@
   "source": "Dragon Magic"
  },
  {
+  "id": "flame-whips",
+  "name": "Flame Whips",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "effect": "Flaming whips",
+  "duration": "1 round/level (D)",
+  "summary": "Your forelimbs deal 6d6 fire damage.",
+  "description": "Your forelimbs deal 6d6 fire damage.\n\nSummary only. Full text: Spell Compendium, p. 95.",
+  "source": "Spell Compendium",
+  "page": 95
+ },
+ {
+  "id": "forceward",
+  "name": "Forceward",
+  "school": "Abjuration",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "15 ft",
+  "effect": "15-ft.-radius sphere centered on you",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates; see text",
+  "summary": "Creates a sphere of force that protects against force effects and keeps out incorporeal creatures.",
+  "description": "Creates a sphere of force that protects against force effects and keeps out incorporeal creatures.\n\nSummary only. Full text: Spell Compendium, p. 98.",
+  "source": "Spell Compendium",
+  "page": 98
+ },
+ {
   "id": "glacial-ward",
   "name": "Glacial Ward",
   "school": "Abjuration",
@@ -3891,6 +5229,43 @@
   "source": "Dragon Magic"
  },
  {
+  "id": "perinarch",
+  "name": "Perinarch",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level; see text",
+  "savingThrow": "None (object) and Reflex negates; see text",
+  "summary": "Gain greater control over Limbo's morphic essence.",
+  "description": "Gain greater control over Limbo's morphic essence.\n\nSummary only. Full text: Spell Compendium, p. 153.",
+  "source": "Spell Compendium",
+  "page": 153
+ },
+ {
+  "id": "portal-alarm-improved",
+  "name": "Portal Alarm, Improved",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "duration": "8 hours/level (D)",
+  "summary": "Warded portal alerts you or a creature designated by you to creatures passing through it.",
+  "description": "Warded portal alerts you or a creature designated by you to creatures passing through it.\n\nSummary only. Full text: Spell Compendium, p. 160.",
+  "source": "Spell Compendium",
+  "page": 160
+ },
+ {
   "id": "power-word-distract",
   "name": "Power Word Distract",
   "school": "Enchantment",
@@ -3911,6 +5286,48 @@
   "summary": "Makes one creature with 150 hp or less flat-footed.",
   "description": "Makes one creature with 150 hp or less flat-footed.\n\nSummary only. Full text: Races of the Dragon.",
   "source": "Races of the Dragon"
+ },
+ {
+  "id": "ray-deflection",
+  "name": "Ray Deflection",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "summary": "Ray attacks are reflected away.",
+  "description": "Ray attacks are reflected away.\n\nSummary only. Full text: Spell Compendium, p. 166.",
+  "source": "Spell Compendium",
+  "page": 166
+ },
+ {
+  "id": "ray-of-deanimation",
+  "name": "Ray of Deanimation",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One construct",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "summary": "Ray deals 1d6 damage/level to constructs.",
+  "description": "Ray deals 1d6 damage/level to constructs.\n\nSummary only. Full text: Spell Compendium, p. 166.",
+  "source": "Spell Compendium",
+  "page": 166
  },
  {
   "id": "rebirth-of-iron",
@@ -3974,6 +5391,24 @@
   "source": "Magic of Incarnum"
  },
  {
+  "id": "ruin-delvers-fortune",
+  "name": "Ruin Delver's Fortune",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1d4 rounds",
+  "summary": "Cast on another creature's turn and choose one of several benefits.",
+  "description": "Cast on another creature's turn and choose one of several benefits.\n\nSummary only. Full text: Spell Compendium, p. 178.",
+  "source": "Spell Compendium",
+  "page": 178
+ },
+ {
   "id": "rusted-blade",
   "name": "Rusted Blade",
   "school": "Transmutation",
@@ -3992,6 +5427,29 @@
   "summary": "Touched weapon delivers filth fever.",
   "description": "Touched weapon delivers filth fever.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "scramble-portal",
+  "name": "Scramble Portal",
+  "school": "Transmutation",
+  "descriptors": [
+   "Chaotic"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One interplanar gate or portal",
+  "duration": "1 round/level",
+  "savingThrow": "None (for portal)",
+  "summary": "You randomize the destination of a magic portal.",
+  "description": "You randomize the destination of a magic portal.\n\nSummary only. Full text: Spell Compendium, p. 181.",
+  "source": "Spell Compendium",
+  "page": 181
  },
  {
   "id": "seed-of-undeath",
@@ -4013,6 +5471,53 @@
   "summary": "Subject that dies before spell expires rises as a zombie under your command.",
   "description": "Subject that dies before spell expires rises as a zombie under your command.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "sensory-deprivation",
+  "name": "Sensory Deprivation",
+  "school": "Illusion",
+  "subschool": "Phantasm",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Will disbelief",
+  "spellResistance": "Yes",
+  "summary": "All of subject's senses are blocked.",
+  "description": "All of subject's senses are blocked.\n\nSummary only. Full text: Spell Compendium, p. 182.",
+  "source": "Spell Compendium",
+  "page": 182
+ },
+ {
+  "id": "shadow-well",
+  "name": "Shadow Well",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates; see text",
+  "spellResistance": "Yes",
+  "summary": "Subject enters gloomy pocket plane and emerges frightened.",
+  "description": "Subject enters gloomy pocket plane and emerges frightened.\n\nSummary only. Full text: Spell Compendium, p. 186.",
+  "source": "Spell Compendium",
+  "page": 186
  },
  {
   "id": "sharptooth",
@@ -4050,6 +5555,30 @@
   "summary": "Subject must concentrate or botch spell.",
   "description": "Subject must concentrate or botch spell.\n\nSummary only. Full text: Player's Handbook II.",
   "source": "Player's Handbook II"
+ },
+ {
+  "id": "stone-sphere",
+  "name": "Stone Sphere",
+  "school": "Evocation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "One 5-ft.-diameter stone sphere",
+  "duration": "1 round/level",
+  "savingThrow": "Reflex negates; see text",
+  "spellResistance": "Yes",
+  "summary": "3-ft.-diameter stone sphere rolls over your enemies.",
+  "description": "3-ft.-diameter stone sphere rolls over your enemies.\n\nSummary only. Full text: Spell Compendium, p. 209.",
+  "source": "Spell Compendium",
+  "page": 209
  },
  {
   "id": "stunning-breath",
@@ -4115,6 +5644,29 @@
   "spellResistance": "No"
  },
  {
+  "id": "thunderlance",
+  "name": "Thunderlance",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "0 ft",
+  "effect": "A spearlike beam",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "summary": "Lance of force deals 3d6 damage and might dispel force effects.",
+  "description": "Lance of force deals 3d6 damage and might dispel force effects.\n\nSummary only. Full text: Spell Compendium, p. 220.",
+  "source": "Spell Compendium",
+  "page": 220
+ },
+ {
   "id": "touch-of-the-blackened-soul",
   "name": "Touch of the Blackened Soul",
   "school": "Transmutation",
@@ -4176,6 +5728,46 @@
   "summary": "Fascinate a single foe for 3 rounds, and make target vulnerable to your mind-affecting abilities.",
   "description": "Fascinate a single foe for 3 rounds, and make target vulnerable to your mind-affecting abilities.\n\nSummary only. Full text: Dragon Magic.",
   "source": "Dragon Magic"
+ },
+ {
+  "id": "translocation-trick",
+  "name": "Translocation Trick",
+  "school": "Conjuration",
+  "subschool": "Teleportation",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "You and one creature",
+  "duration": "10 minutes/level",
+  "savingThrow": "Will negates; see text",
+  "spellResistance": "Yes",
+  "summary": "You and subject switch places and appear as each other.",
+  "description": "You and subject switch places and appear as each other.\n\nSummary only. Full text: Spell Compendium, p. 222.",
+  "source": "Spell Compendium",
+  "page": 222
+ },
+ {
+  "id": "treasure-scent",
+  "name": "Treasure Scent",
+  "school": "Divination",
+  "descriptors": [],
+  "level": 4,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level",
+  "summary": "You detect valuable metals and gems.",
+  "description": "You detect valuable metals and gems.\n\nSummary only. Full text: Spell Compendium, p. 223.",
+  "source": "Spell Compendium",
+  "page": 223
  },
  {
   "id": "trollshape",
@@ -4298,6 +5890,20 @@
   "source": "Draconomicon"
  },
  {
+  "id": "wall-of-chaos",
+  "name": "Wall of Chaos",
+  "school": "Abjuration",
+  "descriptors": [
+   "Chaotic"
+  ],
+  "level": 4,
+  "components": [],
+  "summary": "Wall blocks creatures of opposite alignment.",
+  "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 233.",
+  "source": "Spell Compendium",
+  "page": 233
+ },
+ {
   "id": "wall-of-coldfire",
   "name": "Wall of Coldfire",
   "school": "Evocation",
@@ -4318,6 +5924,105 @@
   "summary": "Deals 2d4 of cold damage out to 10 ft. and 1d4 out to 20 ft. Passing through wall deals 2d6 frostburn damage +1/level.",
   "description": "Deals 2d4 of cold damage out to 10 ft. and 1d4 out to 20 ft. Passing through wall deals 2d6 frostburn damage +1/level.\n\nSummary only. Full text: Frostburn.",
   "source": "Frostburn"
+ },
+ {
+  "id": "wall-of-evil",
+  "name": "Wall of Evil",
+  "school": "Abjuration",
+  "descriptors": [
+   "Evil"
+  ],
+  "level": 4,
+  "components": [],
+  "summary": "Wall blocks creatures of opposite alignment.",
+  "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 233.",
+  "source": "Spell Compendium",
+  "page": 233
+ },
+ {
+  "id": "wall-of-good",
+  "name": "Wall of Good",
+  "school": "Abjuration",
+  "descriptors": [
+   "Good"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "A straight wall whose area is up to one 10-ft. square/level or a sphere or hemisphere with a radius of up to 5 ft./2 levels",
+  "duration": "10 minutes/level",
+  "savingThrow": "See text",
+  "spellResistance": "Yes",
+  "summary": "Wall blocks creatures of opposite alignment.",
+  "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 233.",
+  "source": "Spell Compendium",
+  "page": 233
+ },
+ {
+  "id": "wall-of-law",
+  "name": "Wall of Law",
+  "school": "Abjuration",
+  "descriptors": [
+   "Lawful"
+  ],
+  "level": 4,
+  "components": [],
+  "summary": "Wall blocks creatures of opposite alignment.",
+  "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 234.",
+  "source": "Spell Compendium",
+  "page": 234
+ },
+ {
+  "id": "wall-of-sand",
+  "name": "Wall of Sand",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+  "duration": "Concentration + 1 round/level",
+  "savingThrow": "None",
+  "summary": "Swirling sand blocks ranged attacks, slows movement through.",
+  "description": "Swirling sand blocks ranged attacks, slows movement through.\n\nSummary only. Full text: Spell Compendium, p. 235.",
+  "source": "Spell Compendium",
+  "page": 235
+ },
+ {
+  "id": "wall-of-water",
+  "name": "Wall of Water",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Water"
+  ],
+  "level": 4,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "A straight wall whose area is up to one 10-ft. square/level (S)",
+  "duration": "10 minutes/level",
+  "savingThrow": "Reflex negates; see text",
+  "summary": "Creates shapeable transparent wall of water.",
+  "description": "Creates shapeable transparent wall of water.\n\nSummary only. Full text: Spell Compendium, p. 235.",
+  "source": "Spell Compendium",
+  "page": 235
  },
  {
   "id": "warp-truename",
@@ -5131,6 +6836,120 @@
   "spellResistance": "No"
  },
  {
+  "id": "shadow-hand",
+  "name": "Shadow Hand",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Medium shadowy hand",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Medium hand blocks opponents or carries items.",
+  "description": "Medium hand blocks opponents or carries items.\n\nSummary only. Full text: Spell Compendium, p. 183.",
+  "source": "Spell Compendium",
+  "page": 183
+ },
+ {
+  "id": "shadowfade",
+  "name": "Shadowfade",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One 10-ft. portal to the Plane of Shadow",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Opens a portal to the Plane of Shadow.",
+  "description": "Opens a portal to the Plane of Shadow.\n\nSummary only. Full text: Spell Compendium, p. 186.",
+  "source": "Spell Compendium",
+  "page": 186
+ },
+ {
+  "id": "shard-storm",
+  "name": "Shard Storm",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "One or more20-ft.-radius bursts of piercing force",
+  "duration": "1 round/level",
+  "summary": "Blast deals 3d6 damage to creatures in area.",
+  "description": "Blast deals 3d6 damage to creatures in area.\n\nSummary only. Full text: Spell Compendium, p. 187.",
+  "source": "Spell Compendium",
+  "page": 187
+ },
+ {
+  "id": "shroud-of-flame",
+  "name": "Shroud of Flame",
+  "school": "Evocation",
+  "descriptors": [
+   "Fire"
+  ],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Subject bursts into flames, taking 2d6 fire damage/round.",
+  "description": "Subject bursts into flames, taking 2d6 fire damage/round.\n\nSummary only. Full text: Spell Compendium, p. 189.",
+  "source": "Spell Compendium",
+  "page": 189
+ },
+ {
+  "id": "sonic-rumble",
+  "name": "Sonic Rumble",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft",
+  "area": "Cone-shaped burst",
+  "duration": "Concentration, up to 1 round/level",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "Cone of sound deals damage.",
+  "description": "Cone of sound deals damage.\n\nSummary only. Full text: Spell Compendium, p. 195.",
+  "source": "Spell Compendium",
+  "page": 195
+ },
+ {
   "id": "spurn-the-supernatural",
   "name": "Spurn the Supernatural",
   "school": "Abjuration",
@@ -5211,6 +7030,20 @@
   "summary": "Target temporarily loses all legacy abilities of one item.",
   "description": "Target temporarily loses all legacy abilities of one item.\n\nSummary only. Full text: Weapons of Legacy.",
   "source": "Weapons of Legacy"
+ },
+ {
+  "id": "surefooted-stride-mass",
+  "name": "Surefooted Stride, Mass",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 5,
+  "components": [],
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/level, no two of which are more than 30 ft. apart",
+  "summary": "As surefooted stride but multiple subjects.",
+  "description": "As surefooted stride but multiple subjects.\n\nSummary only. Full text: Spell Compendium, p. 216.",
+  "source": "Spell Compendium",
+  "page": 216
  },
  {
   "id": "touch-of-vecna",
@@ -5295,6 +7128,49 @@
   "summary": "Reduces an opponent's damage reduction.",
   "description": "Reduces an opponent's damage reduction.\n\nSummary only. Full text: Draconomicon.",
   "source": "Draconomicon"
+ },
+ {
+  "id": "wall-of-dispel-magic",
+  "name": "Wall of Dispel Magic",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "A straight wall whose area is up to one 10-ft. square/level",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "summary": "Creatures passing through a transparent wall become subjects of targeted dispel magic.",
+  "description": "Creatures passing through a transparent wall become subjects of targeted dispel magic.\n\nSummary only. Full text: Spell Compendium, p. 233.",
+  "source": "Spell Compendium",
+  "page": 233
+ },
+ {
+  "id": "xorn-movement",
+  "name": "Xorn Movement",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 5,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 round/level; see text",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Touched creature swims through earth like a xorn.",
+  "description": "Touched creature swims through earth like a xorn.\n\nSummary only. Full text: Spell Compendium, p. 244.",
+  "source": "Spell Compendium",
+  "page": 244
  },
  {
   "id": "zone-of-peace",
@@ -5725,6 +7601,31 @@
   "source": "Frostburn"
  },
  {
+  "id": "opalescent-glare",
+  "name": "Opalescent Glare",
+  "school": "Necromancy",
+  "descriptors": [
+   "Death",
+   "Good"
+  ],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "savingThrow": "Will partial; see text",
+  "spellResistance": "Yes",
+  "summary": "Kill creatures with a look, or make them very afraid.",
+  "description": "Kill creatures with a look, or make them very afraid.\n\nSummary only. Full text: Spell Compendium, p. 150.",
+  "source": "Spell Compendium",
+  "page": 150
+ },
+ {
   "id": "overwhelm",
   "name": "Overwhelm",
   "school": "Enchantment",
@@ -5788,6 +7689,132 @@
   "source": "Complete Mage"
  },
  {
+  "id": "ray-of-entropy",
+  "name": "Ray of Entropy",
+  "school": "Necromancy",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Subject takes –4 Strength, Dexterity, and Constitution.",
+  "description": "Subject takes –4 Strength, Dexterity, and Constitution.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
+  "id": "ray-of-light",
+  "name": "Ray of Light",
+  "school": "Evocation",
+  "descriptors": [
+   "Light"
+  ],
+  "level": 6,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Ray blinds subject.",
+  "description": "Ray blinds subject.\n\nSummary only. Full text: Spell Compendium, p. 167.",
+  "source": "Spell Compendium",
+  "page": 167
+ },
+ {
+  "id": "reflective-disguise-mass",
+  "name": "Reflective Disguise, Mass",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "level": 6,
+  "components": [],
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/2 levels, no two of which are more than 30 ft. apart",
+  "duration": "12 hours (D)",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Viewers see subjects as their own species and gender.",
+  "description": "Viewers see subjects as their own species and gender.\n\nSummary only. Full text: Spell Compendium, p. 171.",
+  "source": "Spell Compendium",
+  "page": 171
+ },
+ {
+  "id": "ruby-ray-of-reversal",
+  "name": "Ruby Ray of Reversal",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One natural or magical hazard; see text",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "summary": "Ray negates magical or mundane hazards.",
+  "description": "Ray negates magical or mundane hazards.\n\nSummary only. Full text: Spell Compendium, p. 177.",
+  "source": "Spell Compendium",
+  "page": 177
+ },
+ {
+  "id": "seal-portal",
+  "name": "Seal Portal",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One interplanar gate or portal",
+  "duration": "Permanent (D)",
+  "savingThrow": "None",
+  "summary": "Seal an interplanar portal or gate.",
+  "description": "Seal an interplanar portal or gate.\n\nSummary only. Full text: Spell Compendium, p. 181.",
+  "source": "Spell Compendium",
+  "page": 181
+ },
+ {
+  "id": "shadowy-grappler",
+  "name": "Shadowy Grappler",
+  "school": "Illusion",
+  "subschool": "Shadow",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One creature",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Will partial; see text",
+  "spellResistance": "Yes",
+  "summary": "Illusory force grapples subject.",
+  "description": "Illusory force grapples subject.\n\nSummary only. Full text: Spell Compendium, p. 186.",
+  "source": "Spell Compendium",
+  "page": 186
+ },
+ {
   "id": "smoky-confinement",
   "name": "Smoky Confinement",
   "school": "Transmutation",
@@ -5828,6 +7855,26 @@
   "summary": "Take control of another caster's summoned monster.",
   "description": "Take control of another caster's summoned monster.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "stone-body",
+  "name": "Stone Body",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level (D)",
+  "summary": "Your body becomes living stone.",
+  "description": "Your body becomes living stone.\n\nSummary only. Full text: Spell Compendium, p. 207.",
+  "source": "Spell Compendium",
+  "page": 207
  },
  {
   "id": "storm-of-fire-and-ice",
@@ -5914,6 +7961,73 @@
   "summary": "Creatures in area take 1d8 sonic damage/round, knocked prone.",
   "description": "Creatures in area take 1d8 sonic damage/round, knocked prone.\n\nSummary only. Full text: Player's Handbook II.",
   "source": "Player's Handbook II"
+ },
+ {
+  "id": "transcribe-symbol",
+  "name": "Transcribe Symbol",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Magic symbol touched",
+  "duration": "10 minutes or until discharged",
+  "savingThrow": "None",
+  "summary": "Safely moves an untriggered magical symbol to another location.",
+  "description": "Safely moves an untriggered magical symbol to another location.\n\nSummary only. Full text: Spell Compendium, p. 221.",
+  "source": "Spell Compendium",
+  "page": 221
+ },
+ {
+  "id": "tunnel-swallow",
+  "name": "Tunnel Swallow",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "Tunnel section up to 20 ft. in diameter and up to 50 ft. long",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex partial; see text",
+  "summary": "Tunnel's peristaltic convulsions deal 1d6 points of damage/level (max 15d6).",
+  "description": "Tunnel's peristaltic convulsions deal 1d6 points of damage/level (max 15d6).\n\nSummary only. Full text: Spell Compendium, p. 225.",
+  "source": "Spell Compendium",
+  "page": 225
+ },
+ {
+  "id": "wall-of-gears",
+  "name": "Wall of Gears",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "level": 6,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "A straight wall of moving gears whose area is up to one 10-ft. square/level; see text",
+  "duration": "1 minute/level",
+  "savingThrow": "See text",
+  "summary": "Creates wall of moving gears that deals 1d6 damage/2 levels to creatures within 10 ft.",
+  "description": "Creates wall of moving gears that deals 1d6 damage/2 levels to creatures within 10 ft.\n\nSummary only. Full text: Spell Compendium, p. 233.",
+  "source": "Spell Compendium",
+  "page": 233
  },
  {
   "id": "waves-of-cold",
@@ -6062,6 +8176,27 @@
   "source": "Player's Handbook II"
  },
  {
+  "id": "call-kolyarut",
+  "name": "Call Kolyarut",
+  "school": "Conjuration",
+  "subschool": "Calling",
+  "descriptors": [
+   "Lawful"
+  ],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "DF",
+   "XP"
+  ],
+  "castingTime": "10 minutes",
+  "summary": "A kolyarut performs one duty for you.",
+  "description": "A kolyarut performs one duty for you.\n\nSummary only. Full text: Spell Compendium, p. 42.",
+  "source": "Spell Compendium",
+  "page": 42
+ },
+ {
   "id": "choking-cobwebs",
   "name": "Choking Cobwebs",
   "school": "Conjuration",
@@ -6124,6 +8259,28 @@
   "summary": "Area around you provides SR 25 against fire spells and effects.",
   "description": "Area around you provides SR 25 against fire spells and effects.\n\nSummary only. Full text: Frostburn.",
   "source": "Frostburn"
+ },
+ {
+  "id": "glass-strike",
+  "name": "Glass Strike",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature or 4 cubic ft. of material",
+  "duration": "1 hour/level",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Turns subject into glass.",
+  "description": "Turns subject into glass.\n\nSummary only. Full text: Spell Compendium, p. 106.",
+  "source": "Spell Compendium",
+  "page": 106
  },
  {
   "id": "glorious-master-of-the-elements",
@@ -6312,6 +8469,28 @@
   "spellResistance": "Yes (harmless)"
  },
  {
+  "id": "planar-bubble",
+  "name": "Planar Bubble",
+  "school": "Abjuration",
+  "descriptors": [],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "area": "10-ft.-radius emanation from touched creature",
+  "duration": "10 minutes/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "No; see text",
+  "summary": "Create bubble around creature that emulates its native planar environment.",
+  "description": "Create bubble around creature that emulates its native planar environment.\n\nSummary only. Full text: Spell Compendium, p. 158.",
+  "source": "Spell Compendium",
+  "page": 158
+ },
+ {
   "id": "pulse-of-hate",
   "name": "Pulse of Hate",
   "school": "Necromancy",
@@ -6333,6 +8512,30 @@
   "summary": "Nearby enemies take 2d6 damage/round.",
   "description": "Nearby enemies take 2d6 damage/round.\n\nSummary only. Full text: Player's Handbook II.",
   "source": "Player's Handbook II"
+ },
+ {
+  "id": "radiant-assault",
+  "name": "Radiant Assault",
+  "school": "Evocation",
+  "descriptors": [
+   "Light"
+  ],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "20-ft.- radius burst",
+  "duration": "Instantaneous",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "summary": "1d6 damage/level, victims dazed or dazzled.",
+  "description": "1d6 damage/level, victims dazed or dazzled.\n\nSummary only. Full text: Spell Compendium, p. 164.",
+  "source": "Spell Compendium",
+  "page": 164
  },
  {
   "id": "retributive-enervation",
@@ -6374,6 +8577,65 @@
   "spellResistance": "Yes"
  },
  {
+  "id": "solipsism",
+  "name": "Solipsism",
+  "school": "Illusion",
+  "subschool": "Phantasm",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 7,
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "summary": "Subject believes it alone exists.",
+  "description": "Subject believes it alone exists.\n\nSummary only. Full text: Spell Compendium, p. 194.",
+  "source": "Spell Compendium",
+  "page": 194
+ },
+ {
+  "id": "stone-shape-greater",
+  "name": "Stone Shape, Greater",
+  "school": "Transmutation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 7,
+  "components": [],
+  "target": "Stone or stone objects",
+  "summary": "Sculpts 10 cu. ft. + 10 cu. ft./level of stone into any shape.",
+  "description": "Sculpts 10 cu. ft. + 10 cu. ft./level of stone into any shape.\n\nSummary only. Full text: Spell Compendium, p. 208.",
+  "source": "Spell Compendium",
+  "page": 208
+ },
+ {
+  "id": "stun-ray",
+  "name": "Stun Ray",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Electricity"
+  ],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "Ray",
+  "duration": "1d4+1 rounds; see text",
+  "savingThrow": "Fortitude partial; see text",
+  "spellResistance": "Yes",
+  "summary": "Subject stunned 1d4+1 rounds.",
+  "description": "Subject stunned 1d4+1 rounds.\n\nSummary only. Full text: Spell Compendium, p. 211.",
+  "source": "Spell Compendium",
+  "page": 211
+ },
+ {
   "id": "summon-aspect-of-bahamut",
   "name": "Summon Aspect of Bahamut",
   "school": "Conjuration",
@@ -6388,12 +8650,31 @@
   "castingTime": "1 round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "effect": "One aspect of Bahamut",
-  "duration": "Concentration (maximum of 1 round/level) +",
+  "duration": "Concentration (maximum of 1 round/level) + 1 round",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons an aspect of Bahamut.",
   "description": "Summons an aspect of Bahamut.\n\nSummary only. Full text: Races of the Dragon.",
   "source": "Races of the Dragon"
+ },
+ {
+  "id": "synostodweomer",
+  "name": "Synostodweomer",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 7,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "One of your spells",
+  "duration": "1 round",
+  "summary": "Channel a spell into positive energy to cure 1d8/spell level.",
+  "description": "Channel a spell into positive energy to cure 1d8/spell level.\n\nSummary only. Full text: Spell Compendium, p. 218.",
+  "source": "Spell Compendium",
+  "page": 218
  },
  {
   "id": "truename-binding",
@@ -6776,6 +9057,29 @@
   "source": "Weapons of Legacy"
  },
  {
+  "id": "skeletal-guard",
+  "name": "Skeletal Guard",
+  "school": "Necromancy",
+  "descriptors": [
+   "Evil"
+  ],
+  "level": 8,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One or more fingerbones",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "summary": "Create one skeleton/level with turn resistance.",
+  "description": "Create one skeleton/level with turn resistance.\n\nSummary only. Full text: Spell Compendium, p. 191.",
+  "source": "Spell Compendium",
+  "page": 191
+ },
+ {
   "id": "soulbanned-zone",
   "name": "Soulbanned Zone",
   "school": "Abjuration",
@@ -6794,6 +9098,31 @@
   "summary": "Create an immobile area that blocks all incarnum effects for 10 min./level.",
   "description": "Create an immobile area that blocks all incarnum effects for 10 min./level.\n\nSummary only. Full text: Magic of Incarnum.",
   "source": "Magic of Incarnum"
+ },
+ {
+  "id": "spell-engine",
+  "name": "Spell Engine",
+  "school": "Abjuration",
+  "descriptors": [
+   "Force"
+  ],
+  "level": 8,
+  "components": [
+   "V",
+   "S",
+   "M",
+   "XP"
+  ],
+  "castingTime": "10 minutes",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "5-ft.-radius magical wheel",
+  "duration": "See text",
+  "savingThrow": "None",
+  "spellResistance": "Yes; see text",
+  "summary": "Wizard only. Swap out prepared spells for other spells in your spellbook.",
+  "description": "Wizard only. Swap out prepared spells for other spells in your spellbook.\n\nSummary only. Full text: Spell Compendium, p. 198.",
+  "source": "Spell Compendium",
+  "page": 198
  },
  {
   "id": "touch-of-the-graveborn",
@@ -6853,6 +9182,31 @@
   "summary": "You take the form of a marut.",
   "description": "You take the form of a marut.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "wrathful-castigation",
+  "name": "Wrathful Castigation",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "level": 8,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One living creature",
+  "duration": "1 round/level (D)",
+  "savingThrow": "See text",
+  "spellResistance": "Yes",
+  "summary": "Subject dies or is dazed and –4 on saves for 1 round/level.",
+  "description": "Subject dies or is dazed and –4 on saves for 1 round/level.\n\nSummary only. Full text: Spell Compendium, p. 243.",
+  "source": "Spell Compendium",
+  "page": 243
  },
  {
   "id": "burst-of-glacial-wrath",
@@ -7085,6 +9439,29 @@
   "source": "Complete Mage"
  },
  {
+  "id": "obedient-avalanche",
+  "name": "Obedient Avalanche",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "level": 9,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "20-ft.-radius avalanche of snow centered on a point in space; see text",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half or Reflex negates; see text",
+  "summary": "Snowy avalanche crushes and buries your foes.",
+  "description": "Snowy avalanche crushes and buries your foes.\n\nSummary only. Full text: Spell Compendium, p. 148.",
+  "source": "Spell Compendium",
+  "page": 148
+ },
+ {
   "id": "open-greater-chakra",
   "name": "Open Greater Chakra",
   "school": "Transmutation",
@@ -7105,6 +9482,18 @@
   "spellResistance": "Yes (harmless)"
  },
  {
+  "id": "perinarch-planar",
+  "name": "Perinarch, Planar",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 9,
+  "components": [],
+  "summary": "Gain control over a small area of any divinely morphic plane.",
+  "description": "Gain control over a small area of any divinely morphic plane.\n\nSummary only. Full text: Spell Compendium, p. 154.",
+  "source": "Spell Compendium",
+  "page": 154
+ },
+ {
   "id": "prismatic-deluge",
   "name": "Prismatic Deluge",
   "school": "Evocation",
@@ -7123,6 +9512,49 @@
   "summary": "Call down a prismatic effect over a wide area.",
   "description": "Call down a prismatic effect over a wide area.\n\nSummary only. Full text: Complete Mage.",
   "source": "Complete Mage"
+ },
+ {
+  "id": "reality-maelstrom",
+  "name": "Reality Maelstrom",
+  "school": "Evocation",
+  "descriptors": [],
+  "level": 9,
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "20-ft.-radius emanation centered on a point in space, and 40-ft.-radius emanation centered on the same point; see text",
+  "duration": "1 round",
+  "savingThrow": "Will negates, Reflex negates; see text",
+  "spellResistance": "Yes",
+  "summary": "Hole in reality sends creatures and objects to another plane.",
+  "description": "Hole in reality sends creatures and objects to another plane.\n\nSummary only. Full text: Spell Compendium, p. 168.",
+  "source": "Spell Compendium",
+  "page": 168
+ },
+ {
+  "id": "replicate-casting",
+  "name": "Replicate Casting",
+  "school": "Transmutation",
+  "descriptors": [],
+  "level": 9,
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round; see text",
+  "range": "See text",
+  "effect": "One spell or spell-like ability",
+  "duration": "See text",
+  "savingThrow": "See text",
+  "spellResistance": "See text",
+  "summary": "Duplicate observed spell or spell-like ability.",
+  "description": "Duplicate observed spell or spell-like ability.\n\nSummary only. Full text: Spell Compendium, p. 173.",
+  "source": "Spell Compendium",
+  "page": 173
  },
  {
   "id": "revitalize-legacy-greater",
@@ -7231,6 +9663,27 @@
   "summary": "Enslaves extraplanar creature of CR 14 or less with the power of its truename.",
   "description": "Enslaves extraplanar creature of CR 14 or less with the power of its truename.\n\nSummary only. Full text: Tome of Magic.",
   "source": "Tome of Magic"
+ },
+ {
+  "id": "undermaster",
+  "name": "Undermaster",
+  "school": "Transmutation",
+  "descriptors": [
+   "Earth"
+  ],
+  "level": 9,
+  "components": [
+   "V",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "5 rounds",
+  "summary": "You gain earth-related spell-like abilities.",
+  "description": "You gain earth-related spell-like abilities.\n\nSummary only. Full text: Spell Compendium, p. 227.",
+  "source": "Spell Compendium",
+  "page": 227
  },
  {
   "id": "unname",

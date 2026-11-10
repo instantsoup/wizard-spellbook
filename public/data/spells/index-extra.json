@@ -11,13 +11,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates (object)",
   "spellResistance": "Yes (object)",
   "summary": "Copy nonmagical text.",
   "description": "Copy nonmagical text.\n\nSummary only. Full text: Spell Compendium, p. 9.",
   "source": "Spell Compendium",
-  "page": 9
+  "page": 9,
+  "target": "Object or objects with writing"
  },
  {
   "id": "caltrops",
@@ -38,7 +39,8 @@
   "summary": "Creates caltrops in 5-ft.-by-5-ft. square, + 5-ft. square/2 levels beyond 1st (max 5).",
   "description": "Creates caltrops in 5-ft.-by-5-ft. square, + 5-ft. square/2 levels beyond 1st (max 5).\n\nSummary only. Full text: Spell Compendium, p. 42.",
   "source": "Spell Compendium",
-  "page": 42
+  "page": 42,
+  "area": "See text"
  },
  {
   "id": "electric-jolt",
@@ -60,7 +62,8 @@
   "summary": "Ray deals 1d3 electricity damage.",
   "description": "Ray deals 1d3 electricity damage.\n\nSummary only. Full text: Spell Compendium, p. 78.",
   "source": "Spell Compendium",
-  "page": 78
+  "page": 78,
+  "effect": "Ray"
  },
  {
   "id": "launch-bolt",
@@ -81,7 +84,8 @@
   "summary": "Launches a crossbow bolt up to 800 feet.",
   "description": "Launches a crossbow bolt up to 800 feet.\n\nSummary only. Full text: Spell Compendium, p. 130.",
   "source": "Spell Compendium",
-  "page": 130
+  "page": 130,
+  "target": "One crossbow bolt in your possession"
  },
  {
   "id": "launch-item",
@@ -100,7 +104,8 @@
   "summary": "Hurls fine item up to long range.",
   "description": "Hurls fine item up to long range.\n\nSummary only. Full text: Spell Compendium, p. 130.",
   "source": "Spell Compendium",
-  "page": 130
+  "page": 130,
+  "target": "One Fine item in your"
  },
  {
   "id": "no-light",
@@ -244,7 +249,8 @@
   "summary": "Swift. Balance, Climb, Hide, Move Silently, and Tumble at normal speed with no penalty on skill check.",
   "description": "Swift. Balance, Climb, Hide, Move Silently, and Tumble at normal speed with no penalty on skill check.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
-  "page": 7
+  "page": 7,
+  "target": "You"
  },
  {
   "id": "appraising-touch",
@@ -258,11 +264,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 hour/level",
   "summary": "Grants a bonus on Appraise skill checks.",
   "description": "Grants a bonus on Appraise skill checks.\n\nSummary only. Full text: Spell Compendium, p. 15.",
   "source": "Spell Compendium",
-  "page": 15
+  "page": 15,
+  "target": "You"
  },
  {
   "id": "armor-lock",
@@ -297,11 +304,12 @@
   ],
   "castingTime": "1 immediate action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "Immediate. You threaten nearby squares with your bow and fire without provoking attacks of opportunity.",
   "description": "Immediate. You threaten nearby squares with your bow and fire without provoking attacks of opportunity.\n\nSummary only. Full text: Spell Compendium, p. 15.",
   "source": "Spell Compendium",
-  "page": 15
+  "page": 15,
+  "target": "You"
  },
  {
   "id": "babau-slime",
@@ -316,13 +324,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Secrete a body-covering acid that damages foes' weapons.",
   "description": "Secrete a body-covering acid that damages foes' weapons.\n\nSummary only. Full text: Spell Compendium, p. 22.",
   "source": "Spell Compendium",
-  "page": 22
+  "page": 22,
+  "target": "Creature touched"
  },
  {
   "id": "backbiter",
@@ -343,7 +352,8 @@
   "summary": "Cause two handed or reach weapon to strike is wielder.",
   "description": "Cause two handed or reach weapon to strike is wielder.\n\nSummary only. Full text: Spell Compendium, p. 23.",
   "source": "Spell Compendium",
-  "page": 23
+  "page": 23,
+  "target": "One weapon"
  },
  {
   "id": "benign-transposition",
@@ -363,7 +373,8 @@
   "summary": "Two willing subjects switch places.",
   "description": "Two willing subjects switch places.\n\nSummary only. Full text: Spell Compendium, p. 27.",
   "source": "Spell Compendium",
-  "page": 27
+  "page": 27,
+  "target": "Two willing creatures of up to Large size"
  },
  {
   "id": "bestow-wound",
@@ -472,7 +483,9 @@
   "summary": "Your melee weapons deal +1d8 fire damage for 1 round (swift).",
   "description": "Your melee weapons deal +1d8 fire damage for 1 round (swift).\n\nSummary only. Full text: Spell Compendium, p. 31.",
   "source": "Spell Compendium",
-  "page": 31
+  "page": 31,
+  "subschool": "Creation",
+  "target": "Up to two melee weapons you are wielding"
  },
  {
   "id": "blockade",
@@ -506,7 +519,7 @@
    "S"
   ],
   "castingTime": "1 swift action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "range": "Close (25 ft. + 5 ft./2 caster levels)",
   "duration": "1 full round",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
@@ -548,13 +561,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Bee gives subject -10 penalty on Move Silently and Concentration checks.",
   "description": "Bee gives subject -10 penalty on Move Silently and Concentration checks.\n\nSummary only. Full text: Spell Compendium, p. 41.",
   "source": "Spell Compendium",
-  "page": 41
+  "page": 41,
+  "target": "One creature"
  },
  {
   "id": "cheat",
@@ -571,13 +585,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level or until discharged",
+  "duration": "1 minute/level or until discharged",
   "savingThrow": "Will negates; see text",
   "spellResistance": "No",
   "summary": "Caster rerolls when determining the success of a game of chance.",
   "description": "Caster rerolls when determining the success of a game of chance.\n\nSummary only. Full text: Spell Compendium, p. 46.",
   "source": "Spell Compendium",
-  "page": 46
+  "page": 46,
+  "target": "You"
  },
  {
   "id": "corrosive-grasp",
@@ -600,7 +615,8 @@
   "summary": "You deal 1d8 acid damage with one touch/level",
   "description": "You deal 1d8 acid damage with one touch/level\n\nSummary only. Full text: Spell Compendium, p. 53.",
   "source": "Spell Compendium",
-  "page": 53
+  "page": 53,
+  "target": "Creatures touched"
  },
  {
   "id": "critical-strike",
@@ -617,7 +633,8 @@
   "summary": "Swift. For 1 round you gain +1d6 damage, doubled threat range, and +4 on attack rolls to confirm critical hits.",
   "description": "Swift. For 1 round you gain +1d6 damage, doubled threat range, and +4 on attack rolls to confirm critical hits.\n\nSummary only. Full text: Spell Compendium, p. 56.",
   "source": "Spell Compendium",
-  "page": 56
+  "page": 56,
+  "target": "You"
  },
  {
   "id": "cutting-hand",
@@ -635,7 +652,8 @@
   "summary": "Your hand gains a +2 enhancement bonus and is considered armed.",
   "description": "Your hand gains a +2 enhancement bonus and is considered armed.\n\nSummary only. Full text: Spell Compendium, p. 57.",
   "source": "Spell Compendium",
-  "page": 57
+  "page": 57,
+  "target": "Your hand"
  },
  {
   "id": "darkliqht",
@@ -673,13 +691,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "Will negates (harmless) or Will disbelief (if interacted with); see text",
   "spellResistance": "Yes",
   "summary": "Illusions conceal the targets' spoor.",
   "description": "Illusions conceal the targets' spoor.\n\nSummary only. Full text: Spell Compendium, p. 59.",
   "source": "Spell Compendium",
-  "page": 59
+  "page": 59,
+  "target": "One creature/level touched"
  },
  {
   "id": "death-grimace",
@@ -720,7 +739,8 @@
   "summary": "Your lungs fill with fresh air for the duration of the spell.",
   "description": "Your lungs fill with fresh air for the duration of the spell.\n\nSummary only. Full text: Spell Compendium, p. 61.",
   "source": "Spell Compendium",
-  "page": 61
+  "page": 61,
+  "target": "You"
  },
  {
   "id": "deflect-lesser",
@@ -759,7 +779,8 @@
   "summary": "As dispel magic, but affects only wards.",
   "description": "As dispel magic, but affects only wards.\n\nSummary only. Full text: Spell Compendium, p. 67.",
   "source": "Spell Compendium",
-  "page": 67
+  "page": 67,
+  "target": "One warded object or area"
  },
  {
   "id": "distract",
@@ -781,7 +802,8 @@
   "summary": "Distracts targets with the zest for life.",
   "description": "Distracts targets with the zest for life.\n\nSummary only. Full text: Spell Compendium, p. 69.",
   "source": "Spell Compendium",
-  "page": 69
+  "page": 69,
+  "target": "One creature/level, no two of which are more than 30 ft. apart"
  },
  {
   "id": "distract-assailant",
@@ -805,7 +827,8 @@
   "summary": "Swift. One creature is flat-footed for 1 round.",
   "description": "Swift. One creature is flat-footed for 1 round.\n\nSummary only. Full text: Spell Compendium, p. 69.",
   "source": "Spell Compendium",
-  "page": 69
+  "page": 69,
+  "target": "One creature"
  },
  {
   "id": "drug-resistance",
@@ -840,13 +863,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "None",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject can see through magical darkness.",
   "description": "Subject can see through magical darkness.\n\nSummary only. Full text: Spell Compendium, p. 77.",
   "source": "Spell Compendium",
-  "page": 77
+  "page": 77,
+  "target": "Creature touched"
  },
  {
   "id": "ectoplasmic-armor",
@@ -867,7 +891,8 @@
   "summary": "Gain +5 to +9 armor bonus against incorporeal touch attacks.",
   "description": "Gain +5 to +9 armor bonus against incorporeal touch attacks.\n\nSummary only. Full text: Spell Compendium, p. 77.",
   "source": "Spell Compendium",
-  "page": 77
+  "page": 77,
+  "target": "Creature touched"
  },
  {
   "id": "expeditious-retreat-swift",
@@ -944,7 +969,8 @@
   "summary": "Creates an extradimensional hiding place for your familiar.",
   "description": "Creates an extradimensional hiding place for your familiar.\n\nSummary only. Full text: Spell Compendium, p. 88.",
   "source": "Spell Compendium",
-  "page": 88
+  "page": 88,
+  "target": "One container or garment with a pocket touched"
  },
  {
   "id": "fist-of-stone",
@@ -961,11 +987,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min.",
+  "duration": "1 minute",
   "summary": "Your fist gains +6 enhancement bonus to strength for attacks, grapples, breaking, or crushing things.  You gain a slam attack.",
   "description": "Your fist gains +6 enhancement bonus to strength for attacks, grapples, breaking, or crushing things.  You gain a slam attack.\n\nSummary only. Full text: Spell Compendium, p. 94.",
   "source": "Spell Compendium",
-  "page": 94
+  "page": 94,
+  "target": "You"
  },
  {
   "id": "golem-strike",
@@ -999,7 +1026,8 @@
   "summary": "Swift. You ignore distance penalties with your ranged attacks for 1 round.",
   "description": "Swift. You ignore distance penalties with your ranged attacks for 1 round.\n\nSummary only. Full text: Spell Compendium, p. 108.",
   "source": "Spell Compendium",
-  "page": 108
+  "page": 108,
+  "target": "You"
  },
  {
   "id": "guiding-light",
@@ -1015,13 +1043,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Long (400 ft. + 40 ft./level)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "+2 on ranged attacks against creatures in illuminated area.",
   "description": "+2 on ranged attacks against creatures in illuminated area.\n\nSummary only. Full text: Spell Compendium, p. 108.",
   "source": "Spell Compendium",
-  "page": 108
+  "page": 108,
+  "target": "Creatures in a 5-ft.-radius burst"
  },
  {
   "id": "hail-of-stone",
@@ -1045,7 +1074,8 @@
   "summary": "Stones deal 1d4 points of damage/level to creatures in the area (max 5d4).",
   "description": "Stones deal 1d4 points of damage/level to creatures in the area (max 5d4).\n\nSummary only. Full text: Spell Compendium, p. 108.",
   "source": "Spell Compendium",
-  "page": 108
+  "page": 108,
+  "area": "Cylinder (5-ft. radius, 40 ft. high)"
  },
  {
   "id": "horrible-taste",
@@ -1060,13 +1090,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
-  "savingThrow": "Fortitude negates",
+  "duration": "10 minutes/level",
+  "savingThrow": "Fortitude negates; see text",
   "spellResistance": "No",
   "summary": "Attackers that bite you must make a Fort save or be Nauseated for 1 full round.",
   "description": "Attackers that bite you must make a Fort save or be Nauseated for 1 full round.\n\nSummary only. Full text: Spell Compendium, p. 116.",
   "source": "Spell Compendium",
-  "page": 116
+  "page": 116,
+  "target": "Creature or object touched"
  },
  {
   "id": "ice-dagger",
@@ -1089,7 +1120,8 @@
   "summary": "Splash weapon deals target 1d4 cold damage per level, plus area damage.",
   "description": "Splash weapon deals target 1d4 cold damage per level, plus area damage.\n\nSummary only. Full text: Spell Compendium, p. 118.",
   "source": "Spell Compendium",
-  "page": 118
+  "page": 118,
+  "effect": "Dagger of ice"
  },
  {
   "id": "incite",
@@ -1106,13 +1138,14 @@
   ],
   "castingTime": "1 swift action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Subject can't ready actions or delay.",
   "description": "Subject can't ready actions or delay.\n\nSummary only. Full text: Spell Compendium, p. 121.",
   "source": "Spell Compendium",
-  "page": 121
+  "page": 121,
+  "target": "Creatures in a 10-ft. burst"
  },
  {
   "id": "inhibit",
@@ -1135,7 +1168,8 @@
   "summary": "Subject delays until next round.",
   "description": "Subject delays until next round.\n\nSummary only. Full text: Spell Compendium, p. 123.",
   "source": "Spell Compendium",
-  "page": 123
+  "page": 123,
+  "target": "One creature"
  },
  {
   "id": "insightful-feint",
@@ -1152,7 +1186,8 @@
   "summary": "Swift. Gain +10 on your next Bluff check to feint in combat.",
   "description": "Swift. Gain +10 on your next Bluff check to feint in combat.\n\nSummary only. Full text: Spell Compendium, p. 124.",
   "source": "Spell Compendium",
-  "page": 124
+  "page": 124,
+  "target": "You"
  },
  {
   "id": "instant-locksmith",
@@ -1170,7 +1205,8 @@
   "summary": "Swift. Make Disable Device or Open Lock check at +2 as free action.",
   "description": "Swift. Make Disable Device or Open Lock check at +2 as free action.\n\nSummary only. Full text: Spell Compendium, p. 124.",
   "source": "Spell Compendium",
-  "page": 124
+  "page": 124,
+  "target": "You"
  },
  {
   "id": "instant-search",
@@ -1188,7 +1224,8 @@
   "summary": "Swift. Make Search check at +2 as free action.",
   "description": "Swift. Make Search check at +2 as free action.\n\nSummary only. Full text: Spell Compendium, p. 124.",
   "source": "Spell Compendium",
-  "page": 124
+  "page": 124,
+  "target": "You"
  },
  {
   "id": "ironguts",
@@ -1203,13 +1240,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Target gains +5 bonus on saving throws against poison.",
   "description": "Target gains +5 bonus on saving throws against poison.\n\nSummary only. Full text: Spell Compendium, p. 126.",
   "source": "Spell Compendium",
-  "page": 126
+  "page": 126,
+  "target": "Creature touched"
  },
  {
   "id": "kelgores-fire-bolt",
@@ -1297,7 +1335,8 @@
   "summary": "Subject sees twice as far under current light.",
   "description": "Subject sees twice as far under current light.\n\nSummary only. Full text: Spell Compendium, p. 134.",
   "source": "Spell Compendium",
-  "page": 134
+  "page": 134,
+  "target": "Creature touched"
  },
  {
   "id": "luminous-gaze",
@@ -1317,7 +1356,8 @@
   "summary": "You cast a dazzling light.",
   "description": "You cast a dazzling light.\n\nSummary only. Full text: Spell Compendium, p. 135.",
   "source": "Spell Compendium",
-  "page": 135
+  "page": 135,
+  "target": "You"
  },
  {
   "id": "mage-burr",
@@ -1357,7 +1397,8 @@
   "summary": "As mage hand, but medium range and 40 lb.",
   "description": "As mage hand, but medium range and 40 lb.\n\nSummary only. Full text: Spell Compendium, p. 136.",
   "source": "Spell Compendium",
-  "page": 136
+  "page": 136,
+  "target": "One object or creature weighing up to 40 lb"
  },
  {
   "id": "masters-touch",
@@ -1371,11 +1412,12 @@
   ],
   "castingTime": "1 swift action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "You gain proficiency in any one weapon or shield.",
   "description": "You gain proficiency in any one weapon or shield.\n\nSummary only. Full text: Spell Compendium, p. 139.",
   "source": "Spell Compendium",
-  "page": 139
+  "page": 139,
+  "target": "You"
  },
  {
   "id": "necrotic-awareness",
@@ -1552,7 +1594,8 @@
   "summary": "Six creatures know distance and direction to a magic portal.",
   "description": "Six creatures know distance and direction to a magic portal.\n\nSummary only. Full text: Spell Compendium, p. 161.",
   "source": "Spell Compendium",
-  "page": 161
+  "page": 161,
+  "target": "One interplanar gate or portal"
  },
  {
   "id": "remove-scent",
@@ -1567,13 +1610,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Hides touched creature's scent.",
   "description": "Hides touched creature's scent.\n\nSummary only. Full text: Spell Compendium, p. 173.",
   "source": "Spell Compendium",
-  "page": 173
+  "page": 173,
+  "target": "Creature touched"
  },
  {
   "id": "repair-light-damage",
@@ -1657,7 +1701,8 @@
   "summary": "Shield floats near subject to offer protection.",
   "description": "Shield floats near subject to offer protection.\n\nSummary only. Full text: Spell Compendium, p. 188.",
   "source": "Spell Compendium",
-  "page": 188
+  "page": 188,
+  "target": "Shield touched"
  },
  {
   "id": "snipers-shot",
@@ -1693,7 +1738,8 @@
   "summary": "Hold the charge on one touch spell per forelimb.",
   "description": "Hold the charge on one touch spell per forelimb.\n\nSummary only. Full text: Spell Compendium, p. 198.",
   "source": "Spell Compendium",
-  "page": 198
+  "page": 198,
+  "target": "You"
  },
  {
   "id": "stand",
@@ -1780,7 +1826,8 @@
   "summary": "Small lightning bolts deal 1d6 electricity damage/round.",
   "description": "Small lightning bolts deal 1d6 electricity damage/round.\n\nSummary only. Full text: Spell Compendium, p. 219.",
   "source": "Spell Compendium",
-  "page": 219
+  "page": 219,
+  "target": "One creature"
  },
  {
   "id": "tongue-tendrils",
@@ -1816,13 +1863,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Fortitude negates (object)",
   "spellResistance": "Yes (object)",
   "summary": "Touched weapon changes form.",
   "description": "Touched weapon changes form.\n\nSummary only. Full text: Spell Compendium, p. 237.",
   "source": "Spell Compendium",
-  "page": 237
+  "page": 237,
+  "target": "One melee weapon of up to 15 lb"
  },
  {
   "id": "whelm",
@@ -1859,13 +1907,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "+30 ft. to subject’s swim speed.",
   "description": "+30 ft. to subject’s swim speed.\n\nSummary only. Full text: Spell Compendium, p. 240.",
   "source": "Spell Compendium",
-  "page": 240
+  "page": 240,
+  "target": "Creature touched"
  },
  {
   "id": "addiction",
@@ -1902,7 +1951,8 @@
   "summary": "Grants a +10 circumstance bonus to Concentration checks for a spell you are concentrating on already.",
   "description": "Grants a +10 circumstance bonus to Concentration checks for a spell you are concentrating on already.\n\nSummary only. Full text: Spell Compendium, p. 8.",
   "source": "Spell Compendium",
-  "page": 8
+  "page": 8,
+  "target": "You"
  },
  {
   "id": "alarm-greater",
@@ -1964,7 +2014,8 @@
   "summary": "Your familiar becomes more powerful.",
   "description": "Your familiar becomes more powerful.\n\nSummary only. Full text: Spell Compendium, p. 17.",
   "source": "Spell Compendium",
-  "page": 17
+  "page": 17,
+  "target": "Your familiar"
  },
  {
   "id": "balancing-lorecall",
@@ -1979,11 +2030,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "You gain a +4 bonus on Balance checks and can balance on impossible surfaces if you have 5 or more ranks in Balance.",
   "description": "You gain a +4 bonus on Balance checks and can balance on impossible surfaces if you have 5 or more ranks in Balance.\n\nSummary only. Full text: Spell Compendium, p. 23.",
   "source": "Spell Compendium",
-  "page": 23
+  "page": 23,
+  "target": "You"
  },
  {
   "id": "baleful-transposition",
@@ -2003,7 +2055,8 @@
   "summary": "Two subjects switch places.",
   "description": "Two subjects switch places.\n\nSummary only. Full text: Spell Compendium, p. 23.",
   "source": "Spell Compendium",
-  "page": 23
+  "page": 23,
+  "target": "Two creatures of up to Large size"
  },
  {
   "id": "balor-nimbus",
@@ -2024,7 +2077,8 @@
   "summary": "Your flaming body damages foes in grapple.",
   "description": "Your flaming body damages foes in grapple.\n\nSummary only. Full text: Spell Compendium, p. 24.",
   "source": "Spell Compendium",
-  "page": 24
+  "page": 24,
+  "target": "You"
  },
  {
   "id": "battering-ram",
@@ -2064,13 +2118,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 round/3 levels, up to 4 rounds",
+  "duration": "Instantaneous",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "One touch/level deals 2d12 damage.",
   "description": "One touch/level deals 2d12 damage.\n\nSummary only. Full text: Spell Compendium, p. 26.",
   "source": "Spell Compendium",
-  "page": 26
+  "page": 26,
+  "target": "Living creature"
  },
  {
   "id": "bigbys-striking-fist",
@@ -2100,7 +2155,9 @@
   "name": "Bladeweave",
   "school": "Illusion",
   "subschool": "Pattern",
-  "descriptors": [],
+  "descriptors": [
+   "Pattern"
+  ],
   "level": 2,
   "components": [
    "V"
@@ -2113,7 +2170,8 @@
   "summary": "Swift. Your melee attack dazes your opponent.",
   "description": "Swift. Your melee attack dazes your opponent.\n\nSummary only. Full text: Spell Compendium, p. 31.",
   "source": "Spell Compendium",
-  "page": 31
+  "page": 31,
+  "target": "You"
  },
  {
   "id": "blast-of-force",
@@ -2135,7 +2193,8 @@
   "summary": "Ray deals 1d6 damage/2 caster levels (max 5d6).",
   "description": "Ray deals 1d6 damage/2 caster levels (max 5d6).\n\nSummary only. Full text: Spell Compendium, p. 31.",
   "source": "Spell Compendium",
-  "page": 31
+  "page": 31,
+  "effect": "Ray"
  },
  {
   "id": "blinding-color-surge",
@@ -2180,7 +2239,8 @@
   "summary": "Your body emanates fire, dealing 1d4/2 levels (Max 5d4) damage.",
   "description": "Your body emanates fire, dealing 1d4/2 levels (Max 5d4) damage.\n\nSummary only. Full text: Spell Compendium, p. 35.",
   "source": "Spell Compendium",
-  "page": 35
+  "page": 35,
+  "area": "5-ft.-radius emanation centered on you"
  },
  {
   "id": "bonefiddle",
@@ -2201,7 +2261,8 @@
   "summary": "Target takes 3d6 sonic damage/round and -20 penalty on Move Silently checks.",
   "description": "Target takes 3d6 sonic damage/round and -20 penalty on Move Silently checks.\n\nSummary only. Full text: Spell Compendium, p. 37.",
   "source": "Spell Compendium",
-  "page": 37
+  "page": 37,
+  "target": "One creature with a skeleton or exoskeleton"
  },
  {
   "id": "bristle",
@@ -2215,13 +2276,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Armor spikes attack with wearer.",
   "description": "Armor spikes attack with wearer.\n\nSummary only. Full text: Spell Compendium, p. 40.",
   "source": "Spell Compendium",
-  "page": 40
+  "page": 40,
+  "target": "Suit of armor touched"
  },
  {
   "id": "burning-sword",
@@ -2237,13 +2299,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Weapon gains flaming burst special ability.",
   "description": "Weapon gains flaming burst special ability.\n\nSummary only. Full text: Spell Compendium, p. 41.",
   "source": "Spell Compendium",
-  "page": 41
+  "page": 41,
+  "target": "Weapon touched"
  },
  {
   "id": "catapult",
@@ -2299,7 +2362,8 @@
   "summary": "You send magical sensor to infiltrate an area.",
   "description": "You send magical sensor to infiltrate an area.\n\nSummary only. Full text: Spell Compendium, p. 45.",
   "source": "Spell Compendium",
-  "page": 45
+  "page": 45,
+  "target": "Living creature touched"
  },
  {
   "id": "cloak-pool",
@@ -2320,12 +2384,13 @@
   "summary": "Hide a color pool on the Astral Plane from view.",
   "description": "Hide a color pool on the Astral Plane from view.\n\nSummary only. Full text: Spell Compendium, p. 48.",
   "source": "Spell Compendium",
-  "page": 48
+  "page": 48,
+  "target": "One color pool"
  },
  {
   "id": "cloud-of-bewilderment",
   "name": "Cloud of Bewilderment",
-  "school": "Evocation",
+  "school": "Conjuration",
   "descriptors": [],
   "level": 2,
   "components": [
@@ -2334,14 +2399,15 @@
    "M"
   ],
   "castingTime": "1 standard action",
-  "range": "10 ft.",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round/level",
   "savingThrow": "Fortitude negates; see text",
   "spellResistance": "No",
   "summary": "Generates a nauseating 10-ft. cone.",
   "description": "Generates a nauseating 10-ft. cone.\n\nSummary only. Full text: Spell Compendium, p. 48.",
   "source": "Spell Compendium",
-  "page": 48
+  "page": 48,
+  "area": "10-ft. cube"
  },
  {
   "id": "cloud-of-knives",
@@ -2383,7 +2449,8 @@
   "summary": "Target takes 1d8/level (max 10d8) fire damage.",
   "description": "Target takes 1d8/level (max 10d8) fire damage.\n\nSummary only. Full text: Spell Compendium, p. 50.",
   "source": "Spell Compendium",
-  "page": 50
+  "page": 50,
+  "target": "Touched creature or combustible object that weighs no more than 25 lb./level"
  },
  {
   "id": "create-magic-tattoo",
@@ -2400,13 +2467,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject receives a magic tattoo with various effects.",
   "description": "Subject receives a magic tattoo with various effects.\n\nSummary only. Full text: Spell Compendium, p. 55.",
   "source": "Spell Compendium",
-  "page": 55
+  "page": 55,
+  "target": "Creature touched"
  },
  {
   "id": "curse-of-impending-blades",
@@ -2421,13 +2489,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Subject takes -2 penalty to AC.",
   "description": "Subject takes -2 penalty to AC.\n\nSummary only. Full text: Spell Compendium, p. 56.",
   "source": "Spell Compendium",
-  "page": 56
+  "page": 56,
+  "target": "One creature"
  },
  {
   "id": "daggerspell-stance",
@@ -2445,7 +2514,8 @@
   "summary": "Swift. You gain +2 insight bonus on attack and damage if you make a full attack, SR 5 + caster level if you fight defensively, and DR 5/magic if you use the total defense action.",
   "description": "Swift. You gain +2 insight bonus on attack and damage if you make a full attack, SR 5 + caster level if you fight defensively, and DR 5/magic if you use the total defense action.\n\nSummary only. Full text: Spell Compendium, p. 57.",
   "source": "Spell Compendium",
-  "page": 57
+  "page": 57,
+  "target": "You"
  },
  {
   "id": "dance-of-ruin",
@@ -2489,7 +2559,8 @@
   "summary": "Creates temporary unbreakable bridge supporting up to 200 lbs./level.",
   "description": "Creates temporary unbreakable bridge supporting up to 200 lbs./level.\n\nSummary only. Full text: Spell Compendium, p. 58.",
   "source": "Spell Compendium",
-  "page": 58
+  "page": 58,
+  "effect": "One bridge of force 5 ft. wide, 1 in. thick, and up to 20 ft./level long"
  },
  {
   "id": "darkbolt-vile",
@@ -2532,7 +2603,8 @@
   "summary": "Black aura damages creatures attacking you.",
   "description": "Black aura damages creatures attacking you.\n\nSummary only. Full text: Spell Compendium, p. 60.",
   "source": "Spell Compendium",
-  "page": 60
+  "page": 60,
+  "target": "You"
  },
  {
   "id": "deflect",
@@ -2567,13 +2639,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Subject becomes overconfident and careless.",
   "description": "Subject becomes overconfident and careless.\n\nSummary only. Full text: Spell Compendium, p. 63.",
   "source": "Spell Compendium",
-  "page": 63
+  "page": 63,
+  "target": "One creature"
  },
  {
   "id": "desiccating-bubble",
@@ -2593,7 +2666,8 @@
   "summary": "Directable globe of supernaturally dry air which causes evaporative damage to those it engulfs.",
   "description": "Directable globe of supernaturally dry air which causes evaporative damage to those it engulfs.\n\nSummary only. Full text: Spell Compendium, p. 63.",
   "source": "Spell Compendium",
-  "page": 63
+  "page": 63,
+  "effect": "3-ft.-radius sphere of air"
  },
  {
   "id": "dimension-hop",
@@ -2632,7 +2706,8 @@
   "summary": "See creatures as they really are or know they can shapechange.",
   "description": "See creatures as they really are or know they can shapechange.\n\nSummary only. Full text: Spell Compendium, p. 66.",
   "source": "Spell Compendium",
-  "page": 66
+  "page": 66,
+  "target": "You"
  },
  {
   "id": "discolor-pool",
@@ -2654,7 +2729,8 @@
   "summary": "Change the color of a color pool on the Astral Plane.",
   "description": "Change the color of a color pool on the Astral Plane.\n\nSummary only. Full text: Spell Compendium, p. 66.",
   "source": "Spell Compendium",
-  "page": 66
+  "page": 66,
+  "target": "One color pool"
  },
  {
   "id": "disguise-undead",
@@ -2670,13 +2746,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None (harmless)",
-  "spellResistance": "No",
+  "spellResistance": "Yes (harmless)",
   "summary": "Change appearance of one corporeal undead.",
   "description": "Change appearance of one corporeal undead.\n\nSummary only. Full text: Spell Compendium, p. 66.",
   "source": "Spell Compendium",
-  "page": 66
+  "page": 66,
+  "target": "1 corporeal undead"
  },
  {
   "id": "dispelling-touch",
@@ -2712,13 +2789,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 round/level",
+  "duration": "1 round/level (D)",
   "savingThrow": "None (see text)",
   "spellResistance": "Yes",
   "summary": "Distracting chant which makes Concentration checks in the area more difficult.",
   "description": "Distracting chant which makes Concentration checks in the area more difficult.\n\nSummary only. Full text: Spell Compendium, p. 69.",
   "source": "Spell Compendium",
-  "page": 69
+  "page": 69,
+  "area": "100-foot-radius emanation"
  },
  {
   "id": "distracting-ray",
@@ -2738,7 +2816,8 @@
   "summary": "Distracts target spellcaster as counterspell.",
   "description": "Distracts target spellcaster as counterspell.\n\nSummary only. Full text: Spell Compendium, p. 69.",
   "source": "Spell Compendium",
-  "page": 69
+  "page": 69,
+  "effect": "Ray"
  },
  {
   "id": "earth-lock",
@@ -2761,7 +2840,8 @@
   "summary": "Constricts tunnel, preventing access.",
   "description": "Constricts tunnel, preventing access.\n\nSummary only. Full text: Spell Compendium, p. 75.",
   "source": "Spell Compendium",
-  "page": 75
+  "page": 75,
+  "target": "One 1-foot length of tunnel with a diameter of up to 10 feet"
  },
  {
   "id": "earthbind",
@@ -2774,14 +2854,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "Subject creature can't fly.",
   "description": "Subject creature can't fly.\n\nSummary only. Full text: Spell Compendium, p. 76.",
   "source": "Spell Compendium",
-  "page": 76
+  "page": 76,
+  "target": "One creature"
  },
  {
   "id": "earthen-grasp",
@@ -2804,7 +2885,8 @@
   "summary": "Dense hand grapples creatures and pins them.",
   "description": "Dense hand grapples creatures and pins them.\n\nSummary only. Full text: Spell Compendium, p. 76.",
   "source": "Spell Compendium",
-  "page": 76
+  "page": 76,
+  "effect": "Animated earthen arm"
  },
  {
   "id": "ectoplasmic-feedback",
@@ -2820,13 +2902,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "See text",
   "summary": "Incorporeal attackers take 1d6 damage.",
   "description": "Incorporeal attackers take 1d6 damage.\n\nSummary only. Full text: Spell Compendium, p. 78.",
   "source": "Spell Compendium",
-  "page": 78
+  "page": 78,
+  "target": "You"
  },
  {
   "id": "electric-loop",
@@ -2849,7 +2932,8 @@
   "summary": "Deals 1d6/two levels electricity damage plus stunning to a single creature.",
   "description": "Deals 1d6/two levels electricity damage plus stunning to a single creature.\n\nSummary only. Full text: Spell Compendium, p. 78.",
   "source": "Spell Compendium",
-  "page": 78
+  "page": 78,
+  "target": "One creature/3 levels, each of which is adjacent to another target"
  },
  {
   "id": "energize-potion",
@@ -2933,7 +3017,8 @@
   "summary": "Subject gives caster what its holding.",
   "description": "Subject gives caster what its holding.\n\nSummary only. Full text: Spell Compendium, p. 83.",
   "source": "Spell Compendium",
-  "page": 83
+  "page": 83,
+  "target": "One creature"
  },
  {
   "id": "ethereal-chamber",
@@ -2950,13 +3035,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Reflex negates",
   "spellResistance": "Yes",
   "summary": "Crystalline force chamber is incapable of planar travel away from the Ethereal Plane and normal movement.",
   "description": "Crystalline force chamber is incapable of planar travel away from the Ethereal Plane and normal movement.\n\nSummary only. Full text: Spell Compendium, p. 84.",
   "source": "Spell Compendium",
-  "page": 84
+  "page": 84,
+  "target": "One ethereal creature"
  },
  {
   "id": "extend-tentacles",
@@ -2973,7 +3059,8 @@
   "summary": "+5 ft. to reach of tentacle attack; also lengthens medusa's snakes.",
   "description": "+5 ft. to reach of tentacle attack; also lengthens medusa's snakes.\n\nSummary only. Full text: Spell Compendium, p. 86.",
   "source": "Spell Compendium",
-  "page": 86
+  "page": 86,
+  "target": "You"
  },
  {
   "id": "fatal-flame",
@@ -3007,13 +3094,14 @@
   "components": [
    "V"
   ],
-  "castingTime": "1 standard action",
+  "castingTime": "1 immediate action",
   "range": "Personal",
   "duration": "1 round/level",
   "summary": "You gain 2 additional arms that only improve your grapple checks.",
   "description": "You gain 2 additional arms that only improve your grapple checks.\n\nSummary only. Full text: Spell Compendium, p. 90.",
   "source": "Spell Compendium",
-  "page": 90
+  "page": 90,
+  "target": "You"
  },
  {
   "id": "fins-to-feet",
@@ -3033,7 +3121,8 @@
   "summary": "Transforms tails and fins into legs and feet.",
   "description": "Transforms tails and fins into legs and feet.\n\nSummary only. Full text: Spell Compendium, p. 92.",
   "source": "Spell Compendium",
-  "page": 92
+  "page": 92,
+  "target": "Willing creature touched"
  },
  {
   "id": "fireburst",
@@ -3056,7 +3145,8 @@
   "summary": "Adjacent subjects take 1d8/level fire damage.",
   "description": "Adjacent subjects take 1d8/level fire damage.\n\nSummary only. Full text: Spell Compendium, p. 93.",
   "source": "Spell Compendium",
-  "page": 93
+  "page": 93,
+  "effect": "Burst of fire extending 10 ft. from you"
  },
  {
   "id": "flame-dagger",
@@ -3073,13 +3163,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "0 ft.",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "As flame blade, but 1d4 +1/level.",
   "description": "As flame blade, but 1d4 +1/level.\n\nSummary only. Full text: Spell Compendium, p. 94.",
   "source": "Spell Compendium",
-  "page": 94
+  "page": 94,
+  "effect": "A daggerlike beam"
  },
  {
   "id": "fly-swift",
@@ -3096,7 +3187,8 @@
   "summary": "This spell functions like fly except for 1 round (swift).",
   "description": "This spell functions like fly except for 1 round (swift).\n\nSummary only. Full text: Spell Compendium, p. 96.",
   "source": "Spell Compendium",
-  "page": 96
+  "page": 96,
+  "target": "You"
  },
  {
   "id": "force-ladder",
@@ -3113,13 +3205,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates a movable ladder of force.",
   "description": "Creates a movable ladder of force.\n\nSummary only. Full text: Spell Compendium, p. 97.",
   "source": "Spell Compendium",
-  "page": 97
+  "page": 97,
+  "effect": "One ladder of force up to 60 ft. long"
  },
  {
   "id": "frost-breath",
@@ -3142,7 +3235,8 @@
   "summary": "Icy breath deals 1d4 damage/2 levels.",
   "description": "Icy breath deals 1d4 damage/2 levels.\n\nSummary only. Full text: Spell Compendium, p. 100.",
   "source": "Spell Compendium",
-  "page": 100
+  "page": 100,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "fuse-arms",
@@ -3156,13 +3250,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Multiple arms/tentacles become one pair of stronger limbs.",
   "description": "Multiple arms/tentacles become one pair of stronger limbs.\n\nSummary only. Full text: Spell Compendium, p. 100.",
   "source": "Spell Compendium",
-  "page": 100
+  "page": 100,
+  "target": "Creature with at least two arms or tentacles touched"
  },
  {
   "id": "ghost-touch-armor",
@@ -3179,13 +3274,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Armor works normally against incorporeal attacks.",
   "description": "Armor works normally against incorporeal attacks.\n\nSummary only. Full text: Spell Compendium, p. 102.",
   "source": "Spell Compendium",
-  "page": 102
+  "page": 102,
+  "target": "Armor of creature touched"
  },
  {
   "id": "ghoul-glyph",
@@ -3241,13 +3337,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Fighter gains one fighter bonus feat.",
   "description": "Fighter gains one fighter bonus feat.\n\nSummary only. Full text: Spell Compendium, p. 113.",
   "source": "Spell Compendium",
-  "page": 113
+  "page": 113,
+  "target": "Creature touched"
  },
  {
   "id": "hurl",
@@ -3261,13 +3358,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Thrown weapon returns to thrower.",
   "description": "Thrown weapon returns to thrower.\n\nSummary only. Full text: Spell Compendium, p. 117.",
   "source": "Spell Compendium",
-  "page": 117
+  "page": 117,
+  "target": "Weapon touched"
  },
  {
   "id": "ice-knife",
@@ -3279,19 +3377,19 @@
   ],
   "level": 2,
   "components": [
-   "V",
    "S",
    "M"
   ],
   "castingTime": "1 standard action",
   "range": "Long (400 ft. + 40 ft./level)",
   "duration": "Instantaneous",
-  "savingThrow": "Fortitude partial or Reflex half",
+  "savingThrow": "Fortitude partial or Reflex half; see text",
   "spellResistance": "Yes",
   "summary": "Ranged attack, 1d8 points of cold damage and 2 cold Dexterity damage.",
   "description": "Ranged attack, 1d8 points of cold damage and 2 cold Dexterity damage.\n\nSummary only. Full text: Spell Compendium, p. 119.",
   "source": "Spell Compendium",
-  "page": 119
+  "page": 119,
+  "effect": "One icy missile"
  },
  {
   "id": "infernal-wound",
@@ -3313,7 +3411,8 @@
   "summary": "Weapon inflicts persistent, bleeding wounds.",
   "description": "Weapon inflicts persistent, bleeding wounds.\n\nSummary only. Full text: Spell Compendium, p. 122.",
   "source": "Spell Compendium",
-  "page": 122
+  "page": 122,
+  "target": "Weapon touched"
  },
  {
   "id": "inky-cloud",
@@ -3329,13 +3428,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "30 ft.",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Obscures sight underwater beyond 5 ft.",
   "description": "Obscures sight underwater beyond 5 ft.\n\nSummary only. Full text: Spell Compendium, p. 123.",
   "source": "Spell Compendium",
-  "page": 123
+  "page": 123,
+  "area": "30-ft.-radius spread centered on you"
  },
  {
   "id": "ironthunder-horn",
@@ -3357,7 +3457,8 @@
   "summary": "Intense vibrations trip those in area.",
   "description": "Intense vibrations trip those in area.\n\nSummary only. Full text: Spell Compendium, p. 126.",
   "source": "Spell Compendium",
-  "page": 126
+  "page": 126,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "life-bolt",
@@ -3379,7 +3480,8 @@
   "summary": "1 ray/2 levels draws 1 hp from you to deal 2d4 damage to undead.",
   "description": "1 ray/2 levels draws 1 hp from you to deal 2d4 damage to undead.\n\nSummary only. Full text: Spell Compendium, p. 131.",
   "source": "Spell Compendium",
-  "page": 131
+  "page": 131,
+  "effect": "Up to five rays"
  },
  {
   "id": "light-of-mercuria",
@@ -3423,7 +3525,8 @@
   "summary": "You and allies gain +10 increase to speed and can hustle for an extra hour per day per level.",
   "description": "You and allies gain +10 increase to speed and can hustle for an extra hour per day per level.\n\nSummary only. Full text: Spell Compendium, p. 133.",
   "source": "Spell Compendium",
-  "page": 133
+  "page": 133,
+  "area": "30-ft.-radius emanation centered on you"
  },
  {
   "id": "lucky-streak",
@@ -3465,7 +3568,8 @@
   "summary": "Cloud of fog deals 1d4 nonlethal damage/level.",
   "description": "Cloud of fog deals 1d4 nonlethal damage/level.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
-  "page": 137
+  "page": 137,
+  "area": "15-ft.-radius burst"
  },
  {
   "id": "marked-object",
@@ -3480,11 +3584,12 @@
   ],
   "castingTime": "1 minute",
   "range": "Personal",
-  "duration": "1 day/level",
+  "duration": "24 hours/level",
   "summary": "You gain bonus to track a specific being.",
   "description": "You gain bonus to track a specific being.\n\nSummary only. Full text: Spell Compendium, p. 139.",
   "source": "Spell Compendium",
-  "page": 139
+  "page": 139,
+  "target": "You"
  },
  {
   "id": "masochism",
@@ -3523,13 +3628,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Reformat subject's mind to be coldly calculating.",
   "description": "Reformat subject's mind to be coldly calculating.\n\nSummary only. Full text: Spell Compendium, p. 140.",
   "source": "Spell Compendium",
-  "page": 140
+  "page": 140,
+  "target": "Creature touched"
  },
  {
   "id": "mindless-rage",
@@ -3553,7 +3659,8 @@
   "summary": "Incite a rage in an opponent that drives them to attacking you by melee only.",
   "description": "Incite a rage in an opponent that drives them to attacking you by melee only.\n\nSummary only. Full text: Spell Compendium, p. 142.",
   "source": "Spell Compendium",
-  "page": 142
+  "page": 142,
+  "target": "One creature"
  },
  {
   "id": "mountain-stance",
@@ -3567,13 +3674,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "No",
   "summary": "Subject can root itself against involuntary movement.",
   "description": "Subject can root itself against involuntary movement.\n\nSummary only. Full text: Spell Compendium, p. 144.",
   "source": "Spell Compendium",
-  "page": 144
+  "page": 144,
+  "target": "One creature"
  },
  {
   "id": "necrotic-cyst",
@@ -3668,7 +3776,8 @@
   "summary": "Target is dazed 1 round, thereafter shaken, and distracted.",
   "description": "Target is dazed 1 round, thereafter shaken, and distracted.\n\nSummary only. Full text: Spell Compendium, p. 170.",
   "source": "Spell Compendium",
-  "page": 170
+  "page": 170,
+  "target": "One living creature"
  },
  {
   "id": "repair-moderate-damage",
@@ -3703,11 +3812,12 @@
   "range": "Touch",
   "duration": "1 round/level (D)",
   "savingThrow": "None (harmless)",
-  "spellResistance": "No",
+  "spellResistance": "No (harmless)",
   "summary": "Swift. Weapon gains the returning property.",
   "description": "Swift. Weapon gains the returning property.\n\nSummary only. Full text: Races of the Wild, p. 175.",
   "source": "Races of the Wild",
-  "page": 175
+  "page": 175,
+  "target": "One thrown weapon"
  },
  {
   "id": "sadism",
@@ -3774,7 +3884,8 @@
   "summary": "Jet of flame deals 1d8/2 levels (max 5d8).",
   "description": "Jet of flame deals 1d8/2 levels (max 5d8).\n\nSummary only. Full text: Spell Compendium, p. 181.",
   "source": "Spell Compendium",
-  "page": 181
+  "page": 181,
+  "area": "30-ft. line"
  },
  {
   "id": "seeking-ray",
@@ -3816,7 +3927,8 @@
   "summary": "Area filled with intense light that grows brighter.",
   "description": "Area filled with intense light that grows brighter.\n\nSummary only. Full text: Spell Compendium, p. 185.",
   "source": "Spell Compendium",
-  "page": 185
+  "page": 185,
+  "area": "20-ft.-radius burst centered on a point in space"
  },
  {
   "id": "shriveling",
@@ -3855,11 +3967,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "summary": "Negative energy shroud makes undead perceive you as undead.",
   "description": "Negative energy shroud makes undead perceive you as undead.\n\nSummary only. Full text: Spell Compendium, p. 189.",
   "source": "Spell Compendium",
-  "page": 189
+  "page": 189,
+  "target": "You"
  },
  {
   "id": "slow-consumption",
@@ -3904,7 +4017,8 @@
   "summary": "Deals 1d6 cold/2 levels to a 10-ft. radius.",
   "description": "Deals 1d6 cold/2 levels to a 10-ft. radius.\n\nSummary only. Full text: Spell Compendium, p. 194.",
   "source": "Spell Compendium",
-  "page": 194
+  "page": 194,
+  "area": "10-ft.-radius burst"
  },
  {
   "id": "sonic-weapon",
@@ -3969,7 +4083,8 @@
   "summary": "Subjects can converse at distance without moving lips.",
   "description": "Subjects can converse at distance without moving lips.\n\nSummary only. Full text: Spell Compendium, p. 197.",
   "source": "Spell Compendium",
-  "page": 197
+  "page": 197,
+  "target": "Any number of allied"
  },
  {
   "id": "spymasters-coin",
@@ -4030,13 +4145,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Subject has wind knocked out of it.",
   "description": "Subject has wind knocked out of it.\n\nSummary only. Full text: Spell Compendium, p. 207.",
   "source": "Spell Compendium",
-  "page": 207
+  "page": 207,
+  "target": "One living creature that breathes air"
  },
  {
   "id": "stretch-weapon",
@@ -4133,11 +4249,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "summary": "Darkness grants you concealment.",
   "description": "Darkness grants you concealment.\n\nSummary only. Full text: Spell Compendium, p. 228.",
   "source": "Spell Compendium",
-  "page": 228
+  "page": 228,
+  "target": "You"
  },
  {
   "id": "vertigo",
@@ -4231,7 +4348,8 @@
   "summary": "Make an attack on a line of foes with your slashing weapon.",
   "description": "Make an attack on a line of foes with your slashing weapon.\n\nSummary only. Full text: Spell Compendium, p. 238.",
   "source": "Spell Compendium",
-  "page": 238
+  "page": 238,
+  "effect": "60-ft. line"
  },
  {
   "id": "wracking-touch",
@@ -4316,7 +4434,8 @@
   "summary": "Cone of acid deals 1d6 damage/level.",
   "description": "Cone of acid deals 1d6 damage/level.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
-  "page": 7
+  "page": 7,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "air-breathing",
@@ -4336,7 +4455,8 @@
   "summary": "Subjects can breathe air freely.",
   "description": "Subjects can breathe air freely.\n\nSummary only. Full text: Spell Compendium, p. 8.",
   "source": "Spell Compendium",
-  "page": 8
+  "page": 8,
+  "target": "Living creatures touched"
  },
  {
   "id": "amorphous-form",
@@ -4350,13 +4470,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject becomes puddle-like and can slip through cracks quickly.",
   "description": "Subject becomes puddle-like and can slip through cracks quickly.\n\nSummary only. Full text: Spell Compendium, p. 9.",
   "source": "Spell Compendium",
-  "page": 9
+  "page": 9,
+  "target": "Willing corporeal creature touched"
  },
  {
   "id": "analyze-portal",
@@ -4377,7 +4498,8 @@
   "summary": "Detects and analyzes portals within 60 ft.",
   "description": "Detects and analyzes portals within 60 ft.\n\nSummary only. Full text: Spell Compendium, p. 10.",
   "source": "Spell Compendium",
-  "page": 10
+  "page": 10,
+  "area": "Cone-shaped emanation from you to the extreme of the range"
  },
  {
   "id": "anticipate-teleportation",
@@ -4391,14 +4513,15 @@
    "F"
   ],
   "castingTime": "10 minutes",
-  "range": "Touch",
-  "duration": "1 day",
+  "range": "One willing creature touched",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Delays teleporting creatures 1 round within range.",
   "description": "Delays teleporting creatures 1 round within range.\n\nSummary only. Full text: Spell Compendium, p. 13.",
   "source": "Spell Compendium",
-  "page": 13
+  "page": 13,
+  "area": "5-ft./level radius emanation from touched creature"
  },
  {
   "id": "antidragon-aura",
@@ -4414,13 +4537,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Allies gain bonus to AC and saves against dragons.",
   "description": "Allies gain bonus to AC and saves against dragons.\n\nSummary only. Full text: Spell Compendium, p. 14.",
   "source": "Spell Compendium",
-  "page": 14
+  "page": 14,
+  "target": "One creature/2 levels, no two of which are more than 30 ft. apart"
  },
  {
   "id": "avoid-planar-effects",
@@ -4460,7 +4584,8 @@
   "summary": "Bands immobilize or entangle target.",
   "description": "Bands immobilize or entangle target.\n\nSummary only. Full text: Spell Compendium, p. 24.",
   "source": "Spell Compendium",
-  "page": 24
+  "page": 24,
+  "target": "One Medium or smaller creature"
  },
  {
   "id": "bite-of-the-wererat",
@@ -4479,7 +4604,8 @@
   "summary": "You become enhanced such as that of a dire rat.",
   "description": "You become enhanced such as that of a dire rat.\n\nSummary only. Full text: Spell Compendium, p. 28.",
   "source": "Spell Compendium",
-  "page": 28
+  "page": 28,
+  "target": "You"
  },
  {
   "id": "blacklight",
@@ -4516,13 +4642,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "0 ft.",
-  "duration": "1 round/level",
+  "duration": "1 round/level (D)",
   "savingThrow": "Will partial",
   "spellResistance": "Yes",
   "summary": "Creates blade of gnashing teeth.",
   "description": "Creates blade of gnashing teeth.\n\nSummary only. Full text: Spell Compendium, p. 30.",
   "source": "Spell Compendium",
-  "page": 30
+  "page": 30,
+  "effect": "Swordlike column of gnashing teeth"
  },
  {
   "id": "bridge-of-sound",
@@ -4568,7 +4695,8 @@
   "summary": "A ball of air pushes targets around and trips them.",
   "description": "A ball of air pushes targets around and trips them.\n\nSummary only. Full text: Spell Compendium, p. 43.",
   "source": "Spell Compendium",
-  "page": 43
+  "page": 43,
+  "effect": "5-ft.-diameter sphere"
  },
  {
   "id": "chain-missile",
@@ -4608,7 +4736,8 @@
   "summary": "Indicates direction to known target.",
   "description": "Indicates direction to known target.\n\nSummary only. Full text: Spell Compendium, p. 46.",
   "source": "Spell Compendium",
-  "page": 46
+  "page": 46,
+  "target": "You"
  },
  {
   "id": "cone-of-dimness",
@@ -4631,7 +4760,8 @@
   "summary": "Cone temporarily convinces creatures that they are blind.",
   "description": "Cone temporarily convinces creatures that they are blind.\n\nSummary only. Full text: Spell Compendium, p. 50.",
   "source": "Spell Compendium",
-  "page": 50
+  "page": 50,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "contagious-fog",
@@ -4668,13 +4798,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D); see text",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Incorporeal hand and candle reveals hidden creatures and objects.",
   "description": "Incorporeal hand and candle reveals hidden creatures and objects.\n\nSummary only. Full text: Spell Compendium, p. 53.",
   "source": "Spell Compendium",
-  "page": 53
+  "page": 53,
+  "effect": "Ghostly hand and candle"
  },
  {
   "id": "crown-of-might",
@@ -4784,7 +4915,8 @@
   "summary": "Enemies take -2 penalty to AC.",
   "description": "Enemies take -2 penalty to AC.\n\nSummary only. Full text: Spell Compendium, p. 57.",
   "source": "Spell Compendium",
-  "page": 57
+  "page": 57,
+  "target": "Enemies in a 20-ft.-radius"
  },
  {
   "id": "curse-of-the-putrid-husk",
@@ -4831,7 +4963,8 @@
   "summary": "Subject can see 90 ft. in magical darkness.",
   "description": "Subject can see 90 ft. in magical darkness.\n\nSummary only. Full text: Spell Compendium, p. 62.",
   "source": "Spell Compendium",
-  "page": 62
+  "page": 62,
+  "target": "Creature touched"
  },
  {
   "id": "demon-dirge",
@@ -4852,7 +4985,8 @@
   "summary": "Demons are stunned and take 2d6 damage/round for 1d6 rounds.",
   "description": "Demons are stunned and take 2d6 damage/round for 1d6 rounds.\n\nSummary only. Full text: Spell Compendium, p. 63.",
   "source": "Spell Compendium",
-  "page": 63
+  "page": 63,
+  "target": "Living creature"
  },
  {
   "id": "devil-blight",
@@ -4873,7 +5007,8 @@
   "summary": "Damage and confuse baatezu; damage other lawful and evil creatures.",
   "description": "Damage and confuse baatezu; damage other lawful and evil creatures.\n\nSummary only. Full text: Spell Compendium, p. 64.",
   "source": "Spell Compendium",
-  "page": 64
+  "page": 64,
+  "target": "Living creature"
  },
  {
   "id": "devils-eye",
@@ -4914,7 +5049,8 @@
   "summary": "Metal armor provides damage reduction.",
   "description": "Metal armor provides damage reduction.\n\nSummary only. Full text: Spell Compendium, p. 64.",
   "source": "Spell Compendium",
-  "page": 64
+  "page": 64,
+  "target": "Suit of metal armor touched"
  },
  {
   "id": "disobedience",
@@ -4957,7 +5093,8 @@
   "summary": "As disrupt undead, but damage increases per caster level.",
   "description": "As disrupt undead, but damage increases per caster level.\n\nSummary only. Full text: Spell Compendium, p. 68.",
   "source": "Spell Compendium",
-  "page": 68
+  "page": 68,
+  "effect": "Ray"
  },
  {
   "id": "distilled-joy",
@@ -4992,13 +5129,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Weapon's threat range is doubled and threats are automatically confirmed.",
   "description": "Weapon's threat range is doubled and threats are automatically confirmed.\n\nSummary only. Full text: Spell Compendium, p. 70.",
   "source": "Spell Compendium",
-  "page": 70
+  "page": 70,
+  "target": "Weapon touched"
  },
  {
   "id": "dolorous-motes",
@@ -5035,11 +5173,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "summary": "You gain +3 to +5 natural armor bonus and Energy Resistance 10 to 20.",
   "description": "You gain +3 to +5 natural armor bonus and Energy Resistance 10 to 20.\n\nSummary only. Full text: Spell Compendium, p. 73.",
   "source": "Spell Compendium",
-  "page": 73
+  "page": 73,
+  "target": "You"
  },
  {
   "id": "dread-word",
@@ -5099,13 +5238,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Stone and rock damage sources deal nonlethal damage instead of lethal damage.",
   "description": "Stone and rock damage sources deal nonlethal damage instead of lethal damage.\n\nSummary only. Full text: Spell Compendium, p. 76.",
   "source": "Spell Compendium",
-  "page": 76
+  "page": 76,
+  "target": "Living creature touched"
  },
  {
   "id": "elation",
@@ -5184,11 +5324,12 @@
   "range": "Touch",
   "duration": "1 hour/level",
   "savingThrow": "None (harmless)",
-  "spellResistance": "Yes",
+  "spellResistance": "Yes (harmless)",
   "summary": "Your familiar gains a +2 modifier on saves, combat rolls, and AC for 1 hour/level.",
   "description": "Your familiar gains a +2 modifier on saves, combat rolls, and AC for 1 hour/level.\n\nSummary only. Full text: Spell Compendium, p. 82.",
   "source": "Spell Compendium",
-  "page": 82
+  "page": 82,
+  "target": "Familiar touched"
  },
  {
   "id": "eradicate-earth",
@@ -5211,7 +5352,8 @@
   "summary": "Deals 1d8 points of damage/level to earth creatures (max 10d8).",
   "description": "Deals 1d8 points of damage/level to earth creatures (max 10d8).\n\nSummary only. Full text: Spell Compendium, p. 84.",
   "source": "Spell Compendium",
-  "page": 84
+  "page": 84,
+  "area": "40-ft.-radius burst centered on you"
  },
  {
   "id": "evil-eye",
@@ -5270,13 +5412,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Travel on a solid surface as if that surface had its own gravity.",
   "description": "Travel on a solid surface as if that surface had its own gravity.\n\nSummary only. Full text: Spell Compendium, p. 88.",
   "source": "Spell Compendium",
-  "page": 88
+  "page": 88,
+  "target": "Creature touched"
  },
  {
   "id": "flashburst",
@@ -5294,12 +5437,13 @@
   "castingTime": "1 standard action",
   "range": "Long (400 ft. + 40 ft./level)",
   "duration": "Instantaneous; see text",
-  "savingThrow": "Will partial",
+  "savingThrow": "Will partial; see text",
   "spellResistance": "Yes",
   "summary": "Blind or dazzle creatures within area.",
   "description": "Blind or dazzle creatures within area.\n\nSummary only. Full text: Spell Compendium, p. 95.",
   "source": "Spell Compendium",
-  "page": 95
+  "page": 95,
+  "area": "20-ft.-radius burst"
  },
  {
   "id": "fortify-familiar",
@@ -5319,7 +5463,8 @@
   "summary": "Your familiar gains +2 natural armor and a 25% chance to avoid critical hits for 1 hour/level.",
   "description": "Your familiar gains +2 natural armor and a 25% chance to avoid critical hits for 1 hour/level.\n\nSummary only. Full text: Spell Compendium, p. 98.",
   "source": "Spell Compendium",
-  "page": 98
+  "page": 98,
+  "target": "Familiar touched"
  },
  {
   "id": "girallons-blessing",
@@ -5334,13 +5479,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains one additional pair of arms.",
   "description": "Subject gains one additional pair of arms.\n\nSummary only. Full text: Spell Compendium, p. 106.",
   "source": "Spell Compendium",
-  "page": 106
+  "page": 106,
+  "target": "Creature touched"
  },
  {
   "id": "glimpse-of-truth",
@@ -5405,7 +5551,8 @@
   "summary": "Loud noise causes stunning, deafness, and knocks prone in a 20-ft.-radius spread.",
   "description": "Loud noise causes stunning, deafness, and knocks prone in a 20-ft.-radius spread.\n\nSummary only. Full text: Spell Compendium, p. 107.",
   "source": "Spell Compendium",
-  "page": 107
+  "page": 107,
+  "area": "20-ft.-radius spread"
  },
  {
   "id": "hailstones",
@@ -5428,7 +5575,8 @@
   "summary": "Frigid globes deal 5d6 cold damage.",
   "description": "Frigid globes deal 5d6 cold damage.\n\nSummary only. Full text: Spell Compendium, p. 109.",
   "source": "Spell Compendium",
-  "page": 109
+  "page": 109,
+  "effect": "One frigid globe/5 levels"
  },
  {
   "id": "halt",
@@ -5462,13 +5610,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level",
+  "duration": "10 minutes/level",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subjects grow barbs, which damage foes that attack subject in melee.",
   "description": "Subjects grow barbs, which damage foes that attack subject in melee.\n\nSummary only. Full text: Spell Compendium, p. 109.",
   "source": "Spell Compendium",
-  "page": 109
+  "page": 109,
+  "target": "Creature touched"
  },
  {
   "id": "healing-touch",
@@ -5488,7 +5637,8 @@
   "summary": "You heal the target 1d6/2 levels and take half as damage.",
   "description": "You heal the target 1d6/2 levels and take half as damage.\n\nSummary only. Full text: Spell Compendium, p. 111.",
   "source": "Spell Compendium",
-  "page": 111
+  "page": 111,
+  "target": "Creature touched"
  },
  {
   "id": "hesitate",
@@ -5533,7 +5683,8 @@
   "summary": "Changes ice into lance, which attacks target for 6d6 damage and stuns for 1d4 rounds.",
   "description": "Changes ice into lance, which attacks target for 6d6 damage and stuns for 1d4 rounds.\n\nSummary only. Full text: Spell Compendium, p. 119.",
   "source": "Spell Compendium",
-  "page": 119
+  "page": 119,
+  "effect": "One lance of ice"
  },
  {
   "id": "incorporeal-enhancement",
@@ -5550,13 +5701,14 @@
   ],
   "castingTime": "1 round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Grant bonuses to incorporeal undead.",
   "description": "Grant bonuses to incorporeal undead.\n\nSummary only. Full text: Spell Compendium, p. 121.",
   "source": "Spell Compendium",
-  "page": 121
+  "page": 121,
+  "target": "One incorporeal undead/level"
  },
  {
   "id": "inevitable-defeat",
@@ -5600,7 +5752,8 @@
   "summary": "Fey, vermin, plants, and animals take 1d10 damage/level.",
   "description": "Fey, vermin, plants, and animals take 1d10 damage/level.\n\nSummary only. Full text: Spell Compendium, p. 127.",
   "source": "Spell Compendium",
-  "page": 127
+  "page": 127,
+  "area": "120-ft. line"
  },
  {
   "id": "legion-of-sentinels",
@@ -5692,7 +5845,8 @@
   "summary": "One set of jaws/level attacks enemies for 1d6 damage.",
   "description": "One set of jaws/level attacks enemies for 1d6 damage.\n\nSummary only. Full text: Spell Compendium, p. 138.",
   "source": "Spell Compendium",
-  "page": 138
+  "page": 138,
+  "effect": "One pair of disembodied, flying jaws per caster level (maximum ten pairs)"
  },
  {
   "id": "mesmerizing-glare",
@@ -5714,7 +5868,8 @@
   "summary": "Your gaze fascinates creatures.",
   "description": "Your gaze fascinates creatures.\n\nSummary only. Full text: Spell Compendium, p. 140.",
   "source": "Spell Compendium",
-  "page": 140
+  "page": 140,
+  "target": "One living creature/level, no two of which are more than 30 ft. apart"
  },
  {
   "id": "mind-poison",
@@ -5729,13 +5884,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "Instantaneous",
-  "savingThrow": "Fortitude negates",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Fortitude negates; see text",
   "spellResistance": "Yes",
   "summary": "Touch attack poison that deals 1d6 temporary Wisdom damage and again one minute later.",
   "description": "Touch attack poison that deals 1d6 temporary Wisdom damage and again one minute later.\n\nSummary only. Full text: Spell Compendium, p. 141.",
   "source": "Spell Compendium",
-  "page": 141
+  "page": 141,
+  "target": "Living creature touched"
  },
  {
   "id": "misers-envy",
@@ -5759,7 +5915,8 @@
   "summary": "Subject jealously covets nearby object.",
   "description": "Subject jealously covets nearby object.\n\nSummary only. Full text: Spell Compendium, p. 142.",
   "source": "Spell Compendium",
-  "page": 142
+  "page": 142,
+  "target": "One living creature"
  },
  {
   "id": "nauseating-breath",
@@ -5781,7 +5938,8 @@
   "summary": "Exhale a cone of nauseating gas.",
   "description": "Exhale a cone of nauseating gas.\n\nSummary only. Full text: Spell Compendium, p. 146.",
   "source": "Spell Compendium",
-  "page": 146
+  "page": 146,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "necrotic-bloat",
@@ -5819,11 +5977,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "You change into elemental, gain some abilities.",
   "description": "You change into elemental, gain some abilities.\n\nSummary only. Full text: Spell Compendium, p. 161.",
   "source": "Spell Compendium",
-  "page": 161
+  "page": 161,
+  "target": "You"
  },
  {
   "id": "reality-blind",
@@ -5870,7 +6029,8 @@
   "summary": "As mount, but you summon several mounts.",
   "description": "As mount, but you summon several mounts.\n\nSummary only. Full text: Spell Compendium, p. 172.",
   "source": "Spell Compendium",
-  "page": 172
+  "page": 172,
+  "effect": "One mount/level"
  },
  {
   "id": "regroup",
@@ -6012,11 +6172,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "Removes need to concentrate to maintain next spell cast.",
   "description": "Removes need to concentrate to maintain next spell cast.\n\nSummary only. Full text: Spell Compendium, p. 196.",
   "source": "Spell Compendium",
-  "page": 196
+  "page": 196,
+  "target": "You"
  },
  {
   "id": "sound-lance",
@@ -6038,7 +6199,8 @@
   "summary": "Sonic energy deals 1d8/level damage.",
   "description": "Sonic energy deals 1d8/level damage.\n\nSummary only. Full text: Spell Compendium, p. 196.",
   "source": "Spell Compendium",
-  "page": 196
+  "page": 196,
+  "target": "One creature or object"
  },
  {
   "id": "spectral-weapon",
@@ -6229,13 +6391,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "Yes; see text",
   "summary": "Creates wall of light, can dazzle creatures.",
   "description": "Creates wall of light, can dazzle creatures.\n\nSummary only. Full text: Spell Compendium, p. 234.",
   "source": "Spell Compendium",
-  "page": 234
+  "page": 234,
+  "effect": "A straight wall whose area is up to one 10-ft. square/level or a sphere or hemisphere with a radius of up to 5 ft./2 levels"
  },
  {
   "id": "wand-modulation",
@@ -6296,7 +6459,8 @@
   "summary": "Weapon deals extra energy damage.",
   "description": "Weapon deals extra energy damage.\n\nSummary only. Full text: Spell Compendium, p. 236.",
   "source": "Spell Compendium",
-  "page": 236
+  "page": 236,
+  "target": "One weapon"
  },
  {
   "id": "weapon-of-impact",
@@ -6309,14 +6473,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level",
-  "savingThrow": "Will negates (harmless, object)",
+  "range": "Touch",
+  "duration": "10 minutes/level",
+  "savingThrow": "Fortitude negates (harmless, object)",
   "spellResistance": "Yes (harmless, object)",
   "summary": "As keen edge, but aids blunt weapons.",
   "description": "As keen edge, but aids blunt weapons.\n\nSummary only. Full text: Spell Compendium, p. 237.",
   "source": "Spell Compendium",
-  "page": 237
+  "page": 237,
+  "target": "One bludgeoning weapon or fifty bludgeoning projectiles, all of which must be in contact with one another at the time of casting"
  },
  {
   "id": "abyssal-might",
@@ -6351,11 +6516,12 @@
   ],
   "castingTime": "1 swift action",
   "range": "Personal",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "summary": "+30 ft. fly speed, +1 AC and Reflex saves while flying, maneuverability improves by one category.",
   "description": "+30 ft. fly speed, +1 AC and Reflex saves while flying, maneuverability improves by one category.\n\nSummary only. Full text: Races of the Wild, p. 174.",
   "source": "Races of the Wild",
-  "page": 174
+  "page": 174,
+  "target": "You"
  },
  {
   "id": "affliction",
@@ -6395,7 +6561,8 @@
   "summary": "Gain +10 bonus to caster level checks for spell resistance against one creature.",
   "description": "Gain +10 bonus to caster level checks for spell resistance against one creature.\n\nSummary only. Full text: Spell Compendium, p. 17.",
   "source": "Spell Compendium",
-  "page": 17
+  "page": 17,
+  "target": "You"
  },
  {
   "id": "attune-form",
@@ -6410,13 +6577,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Grant target creature temporary protection against overtly damaging planar traits.",
   "description": "Grant target creature temporary protection against overtly damaging planar traits.\n\nSummary only. Full text: Spell Compendium, p. 17.",
   "source": "Spell Compendium",
-  "page": 17
+  "page": 17,
+  "target": "One creature/3 levels"
  },
  {
   "id": "backlash",
@@ -6430,13 +6598,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level or until discharged",
+  "duration": "10 minutes/level or until discharged",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Subject takes damage if it uses spells against another creature.",
   "description": "Subject takes damage if it uses spells against another creature.\n\nSummary only. Full text: Spell Compendium, p. 23.",
   "source": "Spell Compendium",
-  "page": 23
+  "page": 23,
+  "target": "Creature touched"
  },
  {
   "id": "battle-hymn",
@@ -6459,7 +6628,8 @@
   "summary": "Allies can reroll one Will save/round.",
   "description": "Allies can reroll one Will save/round.\n\nSummary only. Full text: Spell Compendium, p. 25.",
   "source": "Spell Compendium",
-  "page": 25
+  "page": 25,
+  "target": "All allies within 30 ft"
  },
  {
   "id": "bite-of-the-werewolf",
@@ -6478,7 +6648,8 @@
   "summary": "You become enhanced such as that of a wolf.",
   "description": "You become enhanced such as that of a wolf.\n\nSummary only. Full text: Spell Compendium, p. 29.",
   "source": "Spell Compendium",
-  "page": 29
+  "page": 29,
+  "target": "You"
  },
  {
   "id": "blast-of-flame",
@@ -6502,7 +6673,8 @@
   "summary": "60-ft. cone of fire (1d6/level damage).",
   "description": "60-ft. cone of fire (1d6/level damage).\n\nSummary only. Full text: Spell Compendium, p. 31.",
   "source": "Spell Compendium",
-  "page": 31
+  "page": 31,
+  "area": "Cone-shaped burst"
  },
  {
   "id": "blistering-radiance",
@@ -6526,7 +6698,8 @@
   "summary": "Dazzles sighted creatures and causes 2d6 fire damage/round.",
   "description": "Dazzles sighted creatures and causes 2d6 fire damage/round.\n\nSummary only. Full text: Spell Compendium, p. 33.",
   "source": "Spell Compendium",
-  "page": 33
+  "page": 33,
+  "area": "50-ft.-radius spread"
  },
  {
   "id": "bloodstar",
@@ -6538,7 +6711,7 @@
   "components": [
    "V",
    "S",
-   "M"
+   "F"
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
@@ -6548,7 +6721,8 @@
   "summary": "Hovering construct wounds foe each time foe is damaged.",
   "description": "Hovering construct wounds foe each time foe is damaged.\n\nSummary only. Full text: Spell Compendium, p. 34.",
   "source": "Spell Compendium",
-  "page": 34
+  "page": 34,
+  "effect": "A bloodstar"
  },
  {
   "id": "burning-blood-foes",
@@ -6653,7 +6827,8 @@
   "spellResistance": "No",
   "summary": "Create a lesser midnight construct.",
   "description": "Create a lesser midnight construct.\n\nSummary only. Full text: Magic of Incarnum.",
-  "source": "Magic of Incarnum"
+  "source": "Magic of Incarnum",
+  "effect": "One conjured midnight construct"
  },
  {
   "id": "corporeal-instability",
@@ -6673,7 +6848,8 @@
   "summary": "Transform a target creature into an amorphous mass.",
   "description": "Transform a target creature into an amorphous mass.\n\nSummary only. Full text: Spell Compendium, p. 53.",
   "source": "Spell Compendium",
-  "page": 53
+  "page": 53,
+  "target": "Living creature touched"
  },
  {
   "id": "create-fetch",
@@ -6759,7 +6935,8 @@
   "summary": "As darkvision, but affects subjects within 10 feet of you.",
   "description": "As darkvision, but affects subjects within 10 feet of you.\n\nSummary only. Full text: Spell Compendium, p. 59.",
   "source": "Spell Compendium",
-  "page": 59
+  "page": 59,
+  "target": "Allies in a 10-ft.-radius burst"
  },
  {
   "id": "defenestrating-sphere",
@@ -6782,7 +6959,8 @@
   "summary": "Cloudy gray sphere knocks enemies prone, hurls them upward for subsequent falling damage.",
   "description": "Cloudy gray sphere knocks enemies prone, hurls them upward for subsequent falling damage.\n\nSummary only. Full text: Spell Compendium, p. 62.",
   "source": "Spell Compendium",
-  "page": 62
+  "page": 62,
+  "effect": "2-ft.-radius sphere"
  },
  {
   "id": "dispelling-screen",
@@ -6797,13 +6975,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Create an opaque screen that targets passing objects with dispel magic.",
   "description": "Create an opaque screen that targets passing objects with dispel magic.\n\nSummary only. Full text: Spell Compendium, p. 67.",
   "source": "Spell Compendium",
-  "page": 67
+  "page": 67,
+  "effect": "Energy wall whose area is up to one 10-ft. square/level, or a sphere or hemisphere with a radius of up to 1 ft./level"
  },
  {
   "id": "displacer-form",
@@ -6822,7 +7001,8 @@
   "summary": "You change into displacer beast, gain some abilities.",
   "description": "You change into displacer beast, gain some abilities.\n\nSummary only. Full text: Spell Compendium, p. 67.",
   "source": "Spell Compendium",
-  "page": 67
+  "page": 67,
+  "target": "You"
  },
  {
   "id": "distort-summons",
@@ -6871,7 +7051,8 @@
   "name": "Dragon Breath",
   "school": "Evocation",
   "descriptors": [
-   "Varies"
+   "Good",
+   "Evil"
   ],
   "level": 4,
   "components": [
@@ -6885,7 +7066,8 @@
   "summary": "You choose a dragon type and mimic its breath weapon.",
   "description": "You choose a dragon type and mimic its breath weapon.\n\nSummary only. Full text: Spell Compendium, p. 73.",
   "source": "Spell Compendium",
-  "page": 73
+  "page": 73,
+  "target": "You"
  },
  {
   "id": "dweomer-of-transference",
@@ -6915,13 +7097,14 @@
   "components": [
    "V"
   ],
-  "castingTime": "1 round",
+  "castingTime": "1 full round",
   "range": "Personal",
   "duration": "See text",
   "summary": "Carry medium loads at full fly speed; flight duration doubles.",
   "description": "Carry medium loads at full fly speed; flight duration doubles.\n\nSummary only. Full text: Races of the Wild, p. 175.",
   "source": "Races of the Wild",
-  "page": 175
+  "page": 175,
+  "target": "You"
  },
  {
   "id": "energy-spheres",
@@ -6948,7 +7131,8 @@
   "summary": "Five colored spheres attack with or negate acid, cold, electricity, fire, and sonic damage.",
   "description": "Five colored spheres attack with or negate acid, cold, electricity, fire, and sonic damage.\n\nSummary only. Full text: Spell Compendium, p. 80.",
   "source": "Spell Compendium",
-  "page": 80
+  "page": 80,
+  "effect": "Five floating spheres"
  },
  {
   "id": "entangling-staff",
@@ -6964,12 +7148,13 @@
   "castingTime": "1 swift action",
   "range": "Touch",
   "duration": "1 round/level (D)",
-  "savingThrow": "None (Object)",
+  "savingThrow": "Yes (harmless, object)",
   "spellResistance": "Yes (harmless)",
   "summary": "Swift. Quarterstaff gains improved grab and can constrict grappled foes.",
   "description": "Swift. Quarterstaff gains improved grab and can constrict grappled foes.\n\nSummary only. Full text: Spell Compendium, p. 83.",
   "source": "Spell Compendium",
-  "page": 83
+  "page": 83,
+  "target": "Quarterstaff touched"
  },
  {
   "id": "ethereal-mount",
@@ -7013,14 +7198,17 @@
   "summary": "Bouncing flame ball deals 1d6/level fire damage.",
   "description": "Bouncing flame ball deals 1d6/level fire damage.\n\nSummary only. Full text: Spell Compendium, p. 85.",
   "source": "Spell Compendium",
-  "page": 85
+  "page": 85,
+  "area": "One 5-ft. square/level, all of which must be connected in one continuous path (S)"
  },
  {
   "id": "fire-stride",
   "name": "Fire Stride",
   "school": "Transmutation",
   "subschool": "Teleportation",
-  "descriptors": [],
+  "descriptors": [
+   "Teleportation"
+  ],
   "level": 4,
   "components": [
    "V",
@@ -7032,7 +7220,8 @@
   "summary": "Multiple-use dimension door that works only through large fires.",
   "description": "Multiple-use dimension door that works only through large fires.\n\nSummary only. Full text: Spell Compendium, p. 93.",
   "source": "Spell Compendium",
-  "page": 93
+  "page": 93,
+  "target": "You"
  },
  {
   "id": "flight-of-the-dragon",
@@ -7046,11 +7235,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "summary": "You grow dragon wings.",
   "description": "You grow dragon wings.\n\nSummary only. Full text: Spell Compendium, p. 95.",
   "source": "Spell Compendium",
-  "page": 95
+  "page": 95,
+  "target": "You"
  },
  {
   "id": "floating-disk-greater",
@@ -7073,7 +7263,8 @@
   "summary": "As floating disk, but can move independently of the caster.",
   "description": "As floating disk, but can move independently of the caster.\n\nSummary only. Full text: Spell Compendium, p. 96.",
   "source": "Spell Compendium",
-  "page": 96
+  "page": 96,
+  "effect": "3-ft.-diameter disk of force"
  },
  {
   "id": "force-chest",
@@ -7090,13 +7281,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "0 ft.",
-  "duration": "1 day/level (D)",
+  "duration": "24 hours/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates 2-foot-cube box of force.",
   "description": "Creates 2-foot-cube box of force.\n\nSummary only. Full text: Spell Compendium, p. 97.",
   "source": "Spell Compendium",
-  "page": 97
+  "page": 97,
+  "effect": "Box of force 2 ft. on a side"
  },
  {
   "id": "force-claw",
@@ -7119,7 +7311,8 @@
   "summary": "Claw of force guards an area, making attacks of opportunity.",
   "description": "Claw of force guards an area, making attacks of opportunity.\n\nSummary only. Full text: Spell Compendium, p. 97.",
   "source": "Spell Compendium",
-  "page": 97
+  "page": 97,
+  "effect": "Invisible claw of force"
  },
  {
   "id": "force-missiles",
@@ -7141,7 +7334,8 @@
   "summary": "Missiles of force strike foes for 2d6 each (max 4 missiles)",
   "description": "Missiles of force strike foes for 2d6 each (max 4 missiles)\n\nSummary only. Full text: Spell Compendium, p. 98.",
   "source": "Spell Compendium",
-  "page": 98
+  "page": 98,
+  "target": "Up to four creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "forceward-force-effects",
@@ -7186,7 +7380,8 @@
   "summary": "Bull rushes all creatures within 10 ft.",
   "description": "Bull rushes all creatures within 10 ft.\n\nSummary only. Full text: Spell Compendium, p. 98.",
   "source": "Spell Compendium",
-  "page": 98
+  "page": 98,
+  "effect": "10-ft. burst of force centered on you"
  },
  {
   "id": "grim-revenge",
@@ -7271,7 +7466,8 @@
   "summary": "Determine target's vulnerabilities and resistances.",
   "description": "Determine target's vulnerabilities and resistances.\n\nSummary only. Full text: Spell Compendium, p. 129.",
   "source": "Spell Compendium",
-  "page": 129
+  "page": 129,
+  "target": "One creature"
  },
  {
   "id": "liquid-pain",
@@ -7637,14 +7833,15 @@
    "V"
   ],
   "castingTime": "1 minute",
-  "range": "Long (400 ft. + 40 ft./level)",
+  "range": "Long (400 ft. + 40 ft./level); see text",
   "duration": "1 hour/level",
   "savingThrow": "Fortitude negates (object)",
   "spellResistance": "Yes (object)",
   "summary": "Creature or sunken ship made buoyant.",
   "description": "Creature or sunken ship made buoyant.\n\nSummary only. Full text: Spell Compendium, p. 165.",
   "source": "Spell Compendium",
-  "page": 165
+  "page": 165,
+  "target": "One creature or object"
  },
  {
   "id": "rebuke-greater",
@@ -7725,7 +7922,7 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +3 on saving throws.",
@@ -7768,7 +7965,8 @@
   "summary": "Lets you cast another spell in the same round at +2 caster level.",
   "description": "Lets you cast another spell in the same round at +2 caster level.\n\nSummary only. Full text: Spell Compendium, p. 198.",
   "source": "Spell Compendium",
-  "page": 198
+  "page": 198,
+  "target": "You"
  },
  {
   "id": "unluck",
@@ -7812,7 +8010,8 @@
   "summary": "3d8 points of damage due to force per round to all creatures in the area.",
   "description": "3d8 points of damage due to force per round to all creatures in the area.\n\nSummary only. Full text: Spell Compendium, p. 232.",
   "source": "Spell Compendium",
-  "page": 232
+  "page": 232,
+  "area": "Hollow cylinder (40-ft. radius, 20 ft. high, with a 5-ft.-radius safe zone at the center)"
  },
  {
   "id": "wall-of-deadly-chains",
@@ -7879,7 +8078,8 @@
   "summary": "A net of force entangles the target, preventing it from charging, running, or flying.",
   "description": "A net of force entangles the target, preventing it from charging, running, or flying.\n\nSummary only. Full text: Spell Compendium, p. 240.",
   "source": "Spell Compendium",
-  "page": 240
+  "page": 240,
+  "target": "One creature"
  },
  {
   "id": "acid-sheath",
@@ -7902,7 +8102,8 @@
   "summary": "Sheath of acid damages those who attack you, improves acid spell damage.",
   "description": "Sheath of acid damages those who attack you, improves acid spell damage.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
-  "page": 7
+  "page": 7,
+  "target": "You"
  },
  {
   "id": "anticold-sphere",
@@ -7918,13 +8119,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "10 ft.",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "Yes",
   "summary": "Mobile energy field provides immunity to cold.",
   "description": "Mobile energy field provides immunity to cold.\n\nSummary only. Full text: Spell Compendium, p. 13.",
   "source": "Spell Compendium",
-  "page": 13
+  "page": 13,
+  "area": "10-ft.-radius emanation centered on you"
  },
  {
   "id": "arc-of-lightning",
@@ -7948,7 +8150,8 @@
   "summary": "Line of electricity between two creatures (1d6/level damage).",
   "description": "Line of electricity between two creatures (1d6/level damage).\n\nSummary only. Full text: Spell Compendium, p. 15.",
   "source": "Spell Compendium",
-  "page": 15
+  "page": 15,
+  "area": "A line between two creatures"
  },
  {
   "id": "ball-lightning",
@@ -7971,7 +8174,8 @@
   "summary": "Energy ball deals 1d6/level electricity damage.",
   "description": "Energy ball deals 1d6/level electricity damage.\n\nSummary only. Full text: Spell Compendium, p. 23.",
   "source": "Spell Compendium",
-  "page": 23
+  "page": 23,
+  "effect": "One lightning ball"
  },
  {
   "id": "bite-of-the-wereboar",
@@ -7990,7 +8194,8 @@
   "summary": "You become enhanced such as that of a boar.",
   "description": "You become enhanced such as that of a boar.\n\nSummary only. Full text: Spell Compendium, p. 28.",
   "source": "Spell Compendium",
-  "page": 28
+  "page": 28,
+  "target": "You"
  },
  {
   "id": "blink-greater",
@@ -8027,7 +8232,8 @@
   "summary": "Your breath weapon deals a different kind of damage than normal.",
   "description": "Your breath weapon deals a different kind of damage than normal.\n\nSummary only. Full text: Spell Compendium, p. 39.",
   "source": "Spell Compendium",
-  "page": 39
+  "page": 39,
+  "target": "Your breath weapon"
  },
  {
   "id": "cacophonic-burst",
@@ -8049,7 +8255,8 @@
   "summary": "A burst of low noise which deals sonic damage.",
   "description": "A burst of low noise which deals sonic damage.\n\nSummary only. Full text: Spell Compendium, p. 41.",
   "source": "Spell Compendium",
-  "page": 41
+  "page": 41,
+  "area": "20-ft.-radius burst"
  },
  {
   "id": "cacophonic-shield",
@@ -8065,13 +8272,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "10 ft.",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Fortitude partial",
   "spellResistance": "Yes",
   "summary": "Immobile shield blocks sound, deflects missiles, deals 1d6+1/level and deafens intruders.",
   "description": "Immobile shield blocks sound, deflects missiles, deals 1d6+1/level and deafens intruders.\n\nSummary only. Full text: Spell Compendium, p. 41.",
   "source": "Spell Compendium",
-  "page": 41
+  "page": 41,
+  "area": "10-ft.-radius emanation centered on you"
  },
  {
   "id": "call-dretch-horde",
@@ -8165,7 +8373,8 @@
   "summary": "A zelekhut aids you in hunting a fugitive.",
   "description": "A zelekhut aids you in hunting a fugitive.\n\nSummary only. Full text: Spell Compendium, p. 42.",
   "source": "Spell Compendium",
-  "page": 42
+  "page": 42,
+  "effect": "One called zelekhut"
  },
  {
   "id": "contingent-energy-resistance",
@@ -8207,7 +8416,8 @@
   "summary": "Horizontal cyclone deals 1d6/level (max 15d6) damage and initiates a bull rush.",
   "description": "Horizontal cyclone deals 1d6/level (max 15d6) damage and initiates a bull rush.\n\nSummary only. Full text: Spell Compendium, p. 57.",
   "source": "Spell Compendium",
-  "page": 57
+  "page": 57,
+  "area": "120-ft. line"
  },
  {
   "id": "death-throes",
@@ -8236,7 +8446,9 @@
   "name": "Dimension Door, Greater",
   "school": "Conjuration",
   "subschool": "Teleportation",
-  "descriptors": [],
+  "descriptors": [
+   "Teleportation"
+  ],
   "level": 5,
   "components": [
    "V"
@@ -8249,7 +8461,8 @@
   "summary": "Creates short-range, multiple-use dimension door.",
   "description": "Creates short-range, multiple-use dimension door.\n\nSummary only. Full text: Spell Compendium, p. 64.",
   "source": "Spell Compendium",
-  "page": 64
+  "page": 64,
+  "target": "You and touched objects or other touched willing creatures"
  },
  {
   "id": "dispelling-breath",
@@ -8266,7 +8479,8 @@
   "summary": "Your breath weapon acts as a targeted dispel magic to all creatures in its area.",
   "description": "Your breath weapon acts as a targeted dispel magic to all creatures in its area.\n\nSummary only. Full text: Spell Compendium, p. 67.",
   "source": "Spell Compendium",
-  "page": 67
+  "page": 67,
+  "target": "Your breath weapon"
  },
  {
   "id": "draconic-might",
@@ -8280,13 +8494,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Fortitude negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Gain +5 to Str, Con, Cha; +4 natural armor; immunity to magic sleep and paralysis effects.",
   "description": "Gain +5 to Str, Con, Cha; +4 natural armor; immunity to magic sleep and paralysis effects.\n\nSummary only. Full text: Spell Compendium, p. 72.",
   "source": "Spell Compendium",
-  "page": 72
+  "page": 72,
+  "target": "Living creature touched"
  },
  {
   "id": "dragon-ally-lesser",
@@ -8385,7 +8600,7 @@
    "M"
   ],
   "castingTime": "1 round",
-  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "range": "Touch",
   "duration": "1 hour/level (D)",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
@@ -8409,7 +8624,8 @@
   "summary": "Your breath weapon manifests on the Ethereal Plane.",
   "description": "Your breath weapon manifests on the Ethereal Plane.\n\nSummary only. Full text: Spell Compendium, p. 84.",
   "source": "Spell Compendium",
-  "page": 84
+  "page": 84,
+  "target": "Your breath weapon"
  },
  {
   "id": "etherealness-swift",
@@ -8469,19 +8685,20 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "summary": "As Alter Self, except you can gain the form and powers of an evil outsider.",
   "description": "As Alter Self, except you can gain the form and powers of an evil outsider.\n\nSummary only. Full text: Spell Compendium, p. 90.",
   "source": "Spell Compendium",
-  "page": 90
+  "page": 90,
+  "target": "You"
  },
  {
   "id": "fire-shield-mass",
   "name": "Fire Shield, Mass",
   "school": "Evocation",
   "descriptors": [
-   "Cold",
-   "Fire"
+   "Fire",
+   "Cold"
   ],
   "level": 5,
   "components": [
@@ -8489,15 +8706,16 @@
    "S",
    "M"
   ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round/level (D)",
-  "savingThrow": "None (harmless)",
+  "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Creatures attacking allies take damage; allies are protected from fire or cold.",
   "description": "Creatures attacking allies take damage; allies are protected from fire or cold.\n\nSummary only. Full text: Spell Compendium, p. 92.",
   "source": "Spell Compendium",
-  "page": 92
+  "page": 92,
+  "target": "One or more allied creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "firebrand",
@@ -8520,7 +8738,8 @@
   "summary": "One 5-ft. burst/level deals 1d6 fire/level plus burning for 1 round.",
   "description": "One 5-ft. burst/level deals 1d6 fire/level plus burning for 1 round.\n\nSummary only. Full text: Spell Compendium, p. 93.",
   "source": "Spell Compendium",
-  "page": 93
+  "page": 93,
+  "area": "One 5-ft.-radius burst/level (S)"
  },
  {
   "id": "fireburst-greater",
@@ -8543,7 +8762,8 @@
   "summary": "Subjects within 15 ft. take 1d10/level fire damage.",
   "description": "Subjects within 15 ft. take 1d10/level fire damage.\n\nSummary only. Full text: Spell Compendium, p. 94.",
   "source": "Spell Compendium",
-  "page": 94
+  "page": 94,
+  "effect": "Burst of fire extending 15 ft"
  },
  {
   "id": "fly-mass",
@@ -8608,7 +8828,8 @@
   "summary": "Target is prevented from regaining hit points by any means.",
   "description": "Target is prevented from regaining hit points by any means.\n\nSummary only. Full text: Spell Compendium, p. 107.",
   "source": "Spell Compendium",
-  "page": 107
+  "page": 107,
+  "target": "One living creature"
  },
  {
   "id": "gutsnake",
@@ -8627,7 +8848,8 @@
   "summary": "15-ft tentacle grows from your stomach and attacks your enemies.",
   "description": "15-ft tentacle grows from your stomach and attacks your enemies.\n\nSummary only. Full text: Spell Compendium, p. 108.",
   "source": "Spell Compendium",
-  "page": 108
+  "page": 108,
+  "target": "You"
  },
  {
   "id": "haunt-shift",
@@ -8664,7 +8886,7 @@
   ],
   "castingTime": "10 minutes",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Creates a camouflaged Secure Shelter.",
@@ -8694,7 +8916,8 @@
   "summary": "Subjects become dazed by illusory food.",
   "description": "Subjects become dazed by illusory food.\n\nSummary only. Full text: Spell Compendium, p. 120.",
   "source": "Spell Compendium",
-  "page": 120
+  "page": 120,
+  "area": "40-ft.-radius spread"
  },
  {
   "id": "imprison-possessor",
@@ -8728,13 +8951,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 min./level or until discharged (D)",
+  "duration": "1 minute/level or until discharged",
   "savingThrow": "None (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject can't be reduced below 1 hp.",
   "description": "Subject can't be reduced below 1 hp.\n\nSummary only. Full text: Spell Compendium, p. 121.",
   "source": "Spell Compendium",
-  "page": 121
+  "page": 121,
+  "target": "Creature touched"
  },
  {
   "id": "ironguard-lesser",
@@ -8755,7 +8979,8 @@
   "summary": "Subject becomes immune to nonmagical metal.",
   "description": "Subject becomes immune to nonmagical metal.\n\nSummary only. Full text: Spell Compendium, p. 125.",
   "source": "Spell Compendium",
-  "page": 125
+  "page": 125,
+  "target": "Creature touched"
  },
  {
   "id": "lucent-lance",
@@ -8778,7 +9003,8 @@
   "summary": "Ray uses ambient light to deal varied amounts of damage and dazzle target.",
   "description": "Ray uses ambient light to deal varied amounts of damage and dazzle target.\n\nSummary only. Full text: Spell Compendium, p. 134.",
   "source": "Spell Compendium",
-  "page": 134
+  "page": 134,
+  "effect": "Ray"
  },
  {
   "id": "miasma-of-entropy",
@@ -8793,12 +9019,13 @@
   "castingTime": "1 standard action",
   "range": "30 ft.",
   "duration": "Instantaneous",
-  "savingThrow": "Will negates (object) or Fortitude half; see text",
+  "savingThrow": "Fortitude half or Will negates (object); see text",
   "spellResistance": "Yes (object)",
   "summary": "Rot all natural materials in 30-ft. cone-shaped burst.",
   "description": "Rot all natural materials in 30-ft. cone-shaped burst.\n\nSummary only. Full text: Spell Compendium, p. 141.",
   "source": "Spell Compendium",
-  "page": 141
+  "page": 141,
+  "target": "Cone-shaped burst or one solid object; see text"
  },
  {
   "id": "minor-servitor",
@@ -8843,7 +9070,8 @@
   "summary": "Creates 1d4 motes of light that attack enemies.",
   "description": "Creates 1d4 motes of light that attack enemies.\n\nSummary only. Full text: Spell Compendium, p. 144.",
   "source": "Spell Compendium",
-  "page": 144
+  "page": 144,
+  "effect": "1d4 motes of electricity"
  },
  {
   "id": "necrotic-burst",
@@ -8946,7 +9174,8 @@
   "summary": "Blind target with 6 HD or less and deal random effect.",
   "description": "Blind target with 6 HD or less and deal random effect.\n\nSummary only. Full text: Spell Compendium, p. 162.",
   "source": "Spell Compendium",
-  "page": 162
+  "page": 162,
+  "effect": "Ray"
  },
  {
   "id": "psychic-turmoil",
@@ -9002,7 +9231,7 @@
   ],
   "castingTime": "1 round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "Humanoid creature halves in size.",
@@ -9144,11 +9373,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "summary": "Magical matrix stores a 3rd level or lower spell to be cast later as a quickened spell.",
   "description": "Magical matrix stores a 3rd level or lower spell to be cast later as a quickened spell.\n\nSummary only. Full text: Spell Compendium, p. 199.",
   "source": "Spell Compendium",
-  "page": 199
+  "page": 199,
+  "effect": "Matrix that holds one of your spells"
  },
  {
   "id": "spell-theft",
@@ -9242,14 +9472,15 @@
    "S"
   ],
   "castingTime": "10 minutes",
-  "range": "0 ft.",
+  "range": "0 ft.; see text",
   "duration": "See text",
   "savingThrow": "Will negates",
   "spellResistance": "No",
   "summary": "Triggered rune absorbs spells yet to be cast.",
   "description": "Triggered rune absorbs spells yet to be cast.\n\nSummary only. Full text: Spell Compendium, p. 218.",
   "source": "Spell Compendium",
-  "page": 218
+  "page": 218,
+  "effect": "One symbol"
  },
  {
   "id": "telepathy-block",
@@ -9351,7 +9582,8 @@
   "summary": "Ranged touch attack hurls 5-ft.-diameter glob of glue at target.",
   "description": "Ranged touch attack hurls 5-ft.-diameter glob of glue at target.\n\nSummary only. Full text: Spell Compendium, p. 231.",
   "source": "Spell Compendium",
-  "page": 231
+  "page": 231,
+  "target": "One creature"
  },
  {
   "id": "vitriolic-sphere",
@@ -9375,7 +9607,8 @@
   "summary": "Potent acid deals 6d6 acid damage plus possible damage in following 2 rounds.",
   "description": "Potent acid deals 6d6 acid damage plus possible damage in following 2 rounds.\n\nSummary only. Full text: Spell Compendium, p. 231.",
   "source": "Spell Compendium",
-  "page": 231
+  "page": 231,
+  "area": "10-ft.-radius burst"
  },
  {
   "id": "wall-of-limbs",
@@ -9395,7 +9628,8 @@
   "summary": "Whirling limbs deal 5d6 damage and grab creatures passing through.",
   "description": "Whirling limbs deal 5d6 damage and grab creatures passing through.\n\nSummary only. Full text: Spell Compendium, p. 234.",
   "source": "Spell Compendium",
-  "page": 234
+  "page": 234,
+  "effect": "A wall of whirling limbs"
  },
  {
   "id": "wall-of-ooze",
@@ -9454,18 +9688,19 @@
   ],
   "castingTime": "2 rounds",
   "range": "20 ft.",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
-  "spellResistance": "No",
+  "spellResistance": "Yes",
   "summary": "Prevents teleportation and similar effects from functioning in the area",
   "description": "Prevents teleportation and similar effects from functioning in the area\n\nSummary only. Full text: Spell Compendium, p. 244.",
   "source": "Spell Compendium",
-  "page": 244
+  "page": 244,
+  "area": "20-ft.-radius emanation centered on you"
  },
  {
   "id": "acid-storm",
   "name": "Acid Storm",
-  "school": "Evocation",
+  "school": "Conjuration",
   "descriptors": [
    "Acid"
   ],
@@ -9483,7 +9718,9 @@
   "summary": "Deals 1d6/level acid damage in 20-ft radius.",
   "description": "Deals 1d6/level acid damage in 20-ft radius.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
-  "page": 7
+  "page": 7,
+  "subschool": "Creation",
+  "area": "Cylinder (20-ft. radius, 20 ft. high)"
  },
  {
   "id": "alert-bebilith",
@@ -9508,26 +9745,6 @@
   "description": "Summons bebilith to deal with a demon.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
   "source": "Book of Vile Darkness",
   "page": 84
- },
- {
-  "id": "animate-objects",
-  "name": "Animate Objects",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "None",
-  "spellResistance": "No",
-  "summary": "Objects attack your foes.",
-  "description": "Objects attack your foes.\n\nSummary only. Full text: SRD, p. 199.",
-  "source": "SRD",
-  "page": 199
  },
  {
   "id": "anticipate-teleportation-greater",
@@ -9564,13 +9781,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "10 ft.",
-  "duration": "1 min./level",
+  "duration": "1 minute/level",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "All within 10 ft. gain evasion against breath weapons.",
   "description": "All within 10 ft. gain evasion against breath weapons.\n\nSummary only. Full text: Spell Compendium, p. 18.",
   "source": "Spell Compendium",
-  "page": 18
+  "page": 18,
+  "area": "10-ft.-radius emanation centered on you"
  },
  {
   "id": "aura-of-terror",
@@ -9585,8 +9803,8 @@
    "V"
   ],
   "castingTime": "1 standard action",
-  "range": "30 ft.",
-  "duration": "1 min./level",
+  "range": "30-ft.-radius emanation centered on you",
+  "duration": "1 minute/level",
   "savingThrow": "Will negates; see text",
   "spellResistance": "Yes",
   "summary": "You gain an aura of fear, or your frightful presence becomes more effective.",
@@ -9611,7 +9829,8 @@
   "summary": "You become enhanced such as that of a tiger",
   "description": "You become enhanced such as that of a tiger\n\nSummary only. Full text: Spell Compendium, p. 28.",
   "source": "Spell Compendium",
-  "page": 28
+  "page": 28,
+  "target": "You"
  },
  {
   "id": "brilliant-blade",
@@ -9631,7 +9850,8 @@
   "summary": "Weapon or group of projectiles gain the brilliant energy quality.",
   "description": "Weapon or group of projectiles gain the brilliant energy quality.\n\nSummary only. Full text: Spell Compendium, p. 40.",
   "source": "Spell Compendium",
-  "page": 40
+  "page": 40,
+  "target": "One melee or thrown"
  },
  {
   "id": "cloak-of-the-sea",
@@ -9652,7 +9872,8 @@
   "summary": "Gain blur, freedom of movement, and water breathing while in water.",
   "description": "Gain blur, freedom of movement, and water breathing while in water.\n\nSummary only. Full text: Spell Compendium, p. 48.",
   "source": "Spell Compendium",
-  "page": 48
+  "page": 48,
+  "target": "Creature touched"
  },
  {
   "id": "conjure-midnight-construct",
@@ -9697,7 +9918,8 @@
   "summary": "As contagion, but 20-ft. radius.",
   "description": "As contagion, but 20-ft. radius.\n\nSummary only. Full text: Spell Compendium, p. 51.",
   "source": "Spell Compendium",
-  "page": 51
+  "page": 51,
+  "area": "20-ft.-radius spread"
  },
  {
   "id": "dream-casting",
@@ -9714,13 +9936,14 @@
   ],
   "castingTime": "1 hour",
   "range": "Unlimited",
-  "duration": "1 day/level; see text",
+  "duration": "24 hours/level; see text",
   "savingThrow": "Will negates; see text",
   "spellResistance": "Yes",
   "summary": "Alter subject's dreams to produce desired effect.",
   "description": "Alter subject's dreams to produce desired effect.\n\nSummary only. Full text: Spell Compendium, p. 73.",
   "source": "Spell Compendium",
-  "page": 73
+  "page": 73,
+  "target": "You and one dreamer"
  },
  {
   "id": "ectoplasmic-enhancement",
@@ -9779,14 +10002,15 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "5 ft./level",
+  "range": "Close (25 ft. + 5 ft./level)",
   "duration": "Instantaneous",
   "savingThrow": "Fortitude half",
   "spellResistance": "Yes",
   "summary": "Pulls water from victim, forms water elemental.",
   "description": "Pulls water from victim, forms water elemental.\n\nSummary only. Full text: Spell Compendium, p. 86.",
   "source": "Spell Compendium",
-  "page": 86
+  "page": 86,
+  "target": "One living creature"
  },
  {
   "id": "false-sending",
@@ -9850,7 +10074,8 @@
   "summary": "Swarm of Fine fire elementals attacks targets.",
   "description": "Swarm of Fine fire elementals attacks targets.\n\nSummary only. Full text: Spell Compendium, p. 92.",
   "source": "Spell Compendium",
-  "page": 92
+  "page": 92,
+  "effect": "Fiery spiders that cover a 10-ft.-radius spread"
  },
  {
   "id": "fires-of-purity",
@@ -9873,7 +10098,8 @@
   "summary": "Target bursts into magical flame, becoming a dangerous weapon.",
   "description": "Target bursts into magical flame, becoming a dangerous weapon.\n\nSummary only. Full text: Spell Compendium, p. 94.",
   "source": "Spell Compendium",
-  "page": 94
+  "page": 94,
+  "target": "Creature touched"
  },
  {
   "id": "fleshshiver",
@@ -9894,7 +10120,8 @@
   "summary": "Target is stunned for 1 round, takes 1d6/level damage, and is nauseated for 1d4+2 rounds.",
   "description": "Target is stunned for 1 round, takes 1d6/level damage, and is nauseated for 1d4+2 rounds.\n\nSummary only. Full text: Spell Compendium, p. 95.",
   "source": "Spell Compendium",
-  "page": 95
+  "page": 95,
+  "target": "One living creature"
  },
  {
   "id": "freezing-fog",
@@ -9911,20 +10138,23 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 min./level",
-  "savingThrow": "Reflex partial",
+  "duration": "1 minute/level",
+  "savingThrow": "Reflex partial; see text",
   "spellResistance": "No",
   "summary": "Freezing fog deals 1d6 cold damage each round, and creatures must make a Reflex save or fall.  Ballance  DC 10 to move.  Max speed 5.",
   "description": "Freezing fog deals 1d6 cold damage each round, and creatures must make a Reflex save or fall.  Ballance  DC 10 to move.  Max speed 5.\n\nSummary only. Full text: Spell Compendium, p. 99.",
   "source": "Spell Compendium",
-  "page": 99
+  "page": 99,
+  "effect": "Fog spreads in a 20-ft. radius, 20 ft. high"
  },
  {
   "id": "gemjump",
   "name": "Gemjump",
   "school": "Conjuration",
   "subschool": "Teleportation",
-  "descriptors": [],
+  "descriptors": [
+   "Teleportation"
+  ],
   "level": 6,
   "components": [
    "V",
@@ -9932,14 +10162,15 @@
    "F"
   ],
   "castingTime": "1 round",
-  "range": "Unlimited",
-  "duration": "Permanent until triggered",
-  "savingThrow": "None",
-  "spellResistance": "No",
+  "range": "Unlimited; see text",
+  "duration": "Until triggered",
+  "savingThrow": "None; see text",
+  "spellResistance": "No; see text",
   "summary": "Teleport to the location of a specially prepared gem.",
   "description": "Teleport to the location of a specially prepared gem.\n\nSummary only. Full text: Spell Compendium, p. 101.",
   "source": "Spell Compendium",
-  "page": 101
+  "page": 101,
+  "target": "You and willing creatures totaling up to one/3 levels; see text"
  },
  {
   "id": "ghoul-gauntlet",
@@ -10004,7 +10235,8 @@
   "summary": "Chain of force entangles and attacks opponent.",
   "description": "Chain of force entangles and attacks opponent.\n\nSummary only. Full text: Spell Compendium, p. 116.",
   "source": "Spell Compendium",
-  "page": 116
+  "page": 116,
+  "effect": "One chain of force"
  },
  {
   "id": "illusory-pit",
@@ -10025,7 +10257,8 @@
   "summary": "Illusiory pit causes creature to believe it is falling helplessly and stuns for 1 round when done.",
   "description": "Illusiory pit causes creature to believe it is falling helplessly and stuns for 1 round when done.\n\nSummary only. Full text: Spell Compendium, p. 120.",
   "source": "Spell Compendium",
-  "page": 120
+  "page": 120,
+  "area": "10-ft. cube/level"
  },
  {
   "id": "imbue-familiar-with-spell-ability",
@@ -10045,7 +10278,8 @@
   "summary": "You transfer spells to your familiar.",
   "description": "You transfer spells to your familiar.\n\nSummary only. Full text: Spell Compendium, p. 120.",
   "source": "Spell Compendium",
-  "page": 120
+  "page": 120,
+  "target": "Familiar touched"
  },
  {
   "id": "imperious-glare",
@@ -10067,7 +10301,8 @@
   "summary": "You cause targets to cower in fear.",
   "description": "You cause targets to cower in fear.\n\nSummary only. Full text: Spell Compendium, p. 120.",
   "source": "Spell Compendium",
-  "page": 120
+  "page": 120,
+  "target": "One living creature/level, no two of which are more than 30 ft. apart"
  },
  {
   "id": "impotent-possessor",
@@ -10109,7 +10344,8 @@
   "summary": "Destroy incorporeal undead.",
   "description": "Destroy incorporeal undead.\n\nSummary only. Full text: Spell Compendium, p. 121.",
   "source": "Spell Compendium",
-  "page": 121
+  "page": 121,
+  "area": "50-ft.-radius burst"
  },
  {
   "id": "make-manifest",
@@ -10129,7 +10365,8 @@
   "summary": "Force a creature in coterminous/coexistent plane to appear on your plane.",
   "description": "Force a creature in coterminous/coexistent plane to appear on your plane.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
-  "page": 137
+  "page": 137,
+  "target": "One creature"
  },
  {
   "id": "mental-pinnacle",
@@ -10184,34 +10421,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 day/level",
+  "duration": "24 hours/level",
   "savingThrow": "Fortitude negates",
   "spellResistance": "Yes",
   "summary": "You telekinetically control an ooze.",
   "description": "You telekinetically control an ooze.\n\nSummary only. Full text: Spell Compendium, p. 150.",
   "source": "Spell Compendium",
-  "page": 150
- },
- {
-  "id": "prismatic-eye",
-  "name": "Prismatic Eye",
-  "school": "Evocation",
-  "descriptors": [],
-  "level": 6,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 round/level",
-  "savingThrow": "See text",
-  "spellResistance": "Yes",
-  "summary": "Orb produces individual prismatic rays as touch attacks.",
-  "description": "Orb produces individual prismatic rays as touch attacks.\n\nSummary only. Full text: Spell Compendium, p. 161.",
-  "source": "Spell Compendium",
-  "page": 161
+  "page": 150,
+  "target": "One ooze"
  },
  {
   "id": "probe-thoughts",
@@ -10268,7 +10485,7 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject gains +6 on saving throws.",
@@ -10439,13 +10656,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Link lets allies communicate across planes.",
   "description": "Link lets allies communicate across planes.\n\nSummary only. Full text: Spell Compendium, p. 125.",
   "source": "Spell Compendium",
-  "page": 125
+  "page": 125,
+  "target": "You plus one willing creature/3 levels, no two of which are more than 30 ft. apart"
  },
  {
   "id": "transfix",
@@ -10530,7 +10748,8 @@
   "summary": "Your breath weapon becomes an elemental.",
   "description": "Your breath weapon becomes an elemental.\n\nSummary only. Full text: Spell Compendium, p. 11.",
   "source": "Spell Compendium",
-  "page": 11
+  "page": 11,
+  "target": "Your breath weapon"
  },
  {
   "id": "antimagic-ray",
@@ -10551,7 +10770,8 @@
   "summary": "Target loses all magical powers.",
   "description": "Target loses all magical powers.\n\nSummary only. Full text: Spell Compendium, p. 14.",
   "source": "Spell Compendium",
-  "page": 14
+  "page": 14,
+  "effect": "Ray"
  },
  {
   "id": "arrow-of-bone",
@@ -10574,7 +10794,8 @@
   "summary": "Creates a killer missile or thrown weapon, or deals 3d6 +1 (max +20) damage on successful save.",
   "description": "Creates a killer missile or thrown weapon, or deals 3d6 +1 (max +20) damage on successful save.\n\nSummary only. Full text: Spell Compendium, p. 16.",
   "source": "Spell Compendium",
-  "page": 16
+  "page": 16,
+  "target": "One projectile or thrown weapon touched"
  },
  {
   "id": "avasculate",
@@ -10597,7 +10818,8 @@
   "summary": "Reduce foe to half hp and stun foe for 1 round by purging blood vessels.",
   "description": "Reduce foe to half hp and stun foe for 1 round by purging blood vessels.\n\nSummary only. Full text: Spell Compendium, p. 19.",
   "source": "Spell Compendium",
-  "page": 19
+  "page": 19,
+  "effect": "Ray"
  },
  {
   "id": "awaken-undead",
@@ -10621,7 +10843,8 @@
   "summary": "Grant sentience to otherwise mindless undead.",
   "description": "Grant sentience to otherwise mindless undead.\n\nSummary only. Full text: Spell Compendium, p. 21.",
   "source": "Spell Compendium",
-  "page": 21
+  "page": 21,
+  "target": "All mindless undead within a circle with a radius of 25 ft. + 5 ft./2 levels"
  },
  {
   "id": "barghests-feast",
@@ -10644,7 +10867,8 @@
   "summary": "Destroy target corpse, potentially preventing its return to life.",
   "description": "Destroy target corpse, potentially preventing its return to life.\n\nSummary only. Full text: Spell Compendium, p. 24.",
   "source": "Spell Compendium",
-  "page": 24
+  "page": 24,
+  "target": "Corpse touched"
  },
  {
   "id": "bite-of-the-werebear",
@@ -10663,7 +10887,8 @@
   "summary": "You become enhanced such as that of a brown bear.",
   "description": "You become enhanced such as that of a brown bear.\n\nSummary only. Full text: Spell Compendium, p. 28.",
   "source": "Spell Compendium",
-  "page": 28
+  "page": 28,
+  "target": "You"
  },
  {
   "id": "body-of-war",
@@ -10682,7 +10907,8 @@
   "summary": "You change into warforged titan, gain some abilities.",
   "description": "You change into warforged titan, gain some abilities.\n\nSummary only. Full text: Spell Compendium, p. 35.",
   "source": "Spell Compendium",
-  "page": 35
+  "page": 35,
+  "target": "You"
  },
  {
   "id": "brilliant-aura",
@@ -10702,7 +10928,8 @@
   "summary": "Allies' weapons become brilliant energy, ignoring armor.",
   "description": "Allies' weapons become brilliant energy, ignoring armor.\n\nSummary only. Full text: Spell Compendium, p. 39.",
   "source": "Spell Compendium",
-  "page": 39
+  "page": 39,
+  "target": "Weapons carried by one creature/2 levels, no two of which are more than 30 ft. apart"
  },
  {
   "id": "dispelling-screen-greater",
@@ -10744,7 +10971,8 @@
   "summary": "As dragon ally, lesser, but up to 18 HD.",
   "description": "As dragon ally, lesser, but up to 18 HD.\n\nSummary only. Full text: Spell Compendium, p. 72.",
   "source": "Spell Compendium",
-  "page": 72
+  "page": 72,
+  "effect": "One called dragon of 18 HD"
  },
  {
   "id": "eladrin-form",
@@ -10784,7 +11012,8 @@
   "summary": "You take on the qualities of a type of elemental.",
   "description": "You take on the qualities of a type of elemental.\n\nSummary only. Full text: Spell Compendium, p. 78.",
   "source": "Spell Compendium",
-  "page": 78
+  "page": 78,
+  "target": "You"
  },
  {
   "id": "emerald-flame-fist",
@@ -10806,14 +11035,14 @@
   "summary": "You can transfer a burning aura to a subject dealing 3d6 +1/level (max +20) fire damage per round.",
   "description": "You can transfer a burning aura to a subject dealing 3d6 +1/level (max +20) fire damage per round.\n\nSummary only. Full text: Spell Compendium, p. 79.",
   "source": "Spell Compendium",
-  "page": 79
+  "page": 79,
+  "target": "Creature or object touched"
  },
  {
   "id": "energy-ebb",
   "name": "Energy Ebb",
   "school": "Necromancy",
   "descriptors": [
-   "Negative",
    "Evil"
   ],
   "level": 7,
@@ -10824,12 +11053,13 @@
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "1 round/level",
-  "savingThrow": "Fortitude negates",
+  "savingThrow": "Fortitude partial; see text",
   "spellResistance": "Yes",
   "summary": "Give subject one negative level/round for 1 round/level.",
   "description": "Give subject one negative level/round for 1 round/level.\n\nSummary only. Full text: Spell Compendium, p. 80.",
   "source": "Spell Compendium",
-  "page": 80
+  "page": 80,
+  "effect": "Ray"
  },
  {
   "id": "energy-immunity",
@@ -10843,13 +11073,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "1 day",
+  "duration": "24 hours",
   "savingThrow": "None",
   "spellResistance": "Yes (harmless)",
   "summary": "Subject is immune to damage from one kind of energy.",
   "description": "Subject is immune to damage from one kind of energy.\n\nSummary only. Full text: Spell Compendium, p. 80.",
   "source": "Spell Compendium",
-  "page": 80
+  "page": 80,
+  "target": "Creature touched"
  },
  {
   "id": "energy-transformation-field",
@@ -10871,7 +11102,8 @@
   "summary": "Area absorbs magic energy to power a predetermined spell.",
   "description": "Area absorbs magic energy to power a predetermined spell.\n\nSummary only. Full text: Spell Compendium, p. 80.",
   "source": "Spell Compendium",
-  "page": 80
+  "page": 80,
+  "area": "40-ft.-radius spread"
  },
  {
   "id": "evil-glare",
@@ -10889,14 +11121,15 @@
    "DF"
   ],
   "castingTime": "1 standard action",
-  "range": "30 ft.",
+  "range": "30 feet",
   "duration": "1 round/level; see text",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Paralyze creature with your glare.",
   "description": "Paralyze creature with your glare.\n\nSummary only. Full text: Spell Compendium, p. 85.",
   "source": "Spell Compendium",
-  "page": 85
+  "page": 85,
+  "target": "Living creatures"
  },
  {
   "id": "eye-of-the-beholder",
@@ -10951,12 +11184,14 @@
    "S"
   ],
   "castingTime": "1 standard action",
-  "range": "Personal",
-  "duration": "1 min./level (D)",
+  "range": "5 ft./level",
+  "duration": "1 minute/level (D)",
   "summary": "Incorporeal creatures turn corporeal.",
   "description": "Incorporeal creatures turn corporeal.\n\nSummary only. Full text: Spell Compendium, p. 103.",
   "source": "Spell Compendium",
-  "page": 103
+  "page": 103,
+  "area": "5 ft./level-radius emanation centered on you",
+  "savingThrow": "None"
  },
  {
   "id": "hide-from-dragons",
@@ -10970,13 +11205,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "Yes (harmless)",
   "summary": "Dragons can't perceive one subject/two levels.",
   "description": "Dragons can't perceive one subject/two levels.\n\nSummary only. Full text: Spell Compendium, p. 114.",
   "source": "Spell Compendium",
-  "page": 114
+  "page": 114,
+  "target": "One creature touched/2 levels"
  },
  {
   "id": "hiss-of-sleep",
@@ -10998,7 +11234,8 @@
   "summary": "You induce comatose slumber in targets.",
   "description": "You induce comatose slumber in targets.\n\nSummary only. Full text: Spell Compendium, p. 114.",
   "source": "Spell Compendium",
-  "page": 114
+  "page": 114,
+  "target": "One creature/level"
  },
  {
   "id": "ice-claw",
@@ -11021,7 +11258,8 @@
   "summary": "Claw of ice grapples and deals cold damage.",
   "description": "Claw of ice grapples and deals cold damage.\n\nSummary only. Full text: Spell Compendium, p. 118.",
   "source": "Spell Compendium",
-  "page": 118
+  "page": 118,
+  "effect": "10-ft. ice claw"
  },
  {
   "id": "ironguard",
@@ -11064,7 +11302,8 @@
   "summary": "You gain vampire-like supernatural abilities, but are vulnerable to attacks that harm undead.",
   "description": "You gain vampire-like supernatural abilities, but are vulnerable to attacks that harm undead.\n\nSummary only. Full text: Spell Compendium, p. 128.",
   "source": "Spell Compendium",
-  "page": 128
+  "page": 128,
+  "target": "You"
  },
  {
   "id": "necrotic-tumor",
@@ -11088,6 +11327,28 @@
   "description": "Permanently control encysted subject.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
   "page": 69
+ },
+ {
+  "id": "prismatic-eye",
+  "name": "Prismatic Eye",
+  "school": "Evocation",
+  "descriptors": [],
+  "level": 7,
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "duration": "1 round/level",
+  "savingThrow": "See text",
+  "spellResistance": "Yes",
+  "summary": "Orb produces individual prismatic rays as touch attacks.",
+  "description": "Orb produces individual prismatic rays as touch attacks.\n\nSummary only. Full text: Spell Compendium, p. 161.",
+  "source": "Spell Compendium",
+  "page": 161,
+  "effect": "Magical eye"
  },
  {
   "id": "psychic-turmoil-greater",
@@ -11172,7 +11433,8 @@
   "summary": "Stores up to two spells of 3rd level or lower to be released later.",
   "description": "Stores up to two spells of 3rd level or lower to be released later.\n\nSummary only. Full text: Spell Compendium, p. 199.",
   "source": "Spell Compendium",
-  "page": 199
+  "page": 199,
+  "effect": "Matrix that holds two of your"
  },
  {
   "id": "submerge-ship",
@@ -11195,7 +11457,8 @@
   "summary": "You control ship mentally while it travels underwater.",
   "description": "You control ship mentally while it travels underwater.\n\nSummary only. Full text: Spell Compendium, p. 211.",
   "source": "Spell Compendium",
-  "page": 211
+  "page": 211,
+  "target": "Ship touched"
  },
  {
   "id": "sword-of-darkness",
@@ -11236,13 +11499,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Touch; see text",
-  "duration": "1 day/level (D)",
+  "duration": "24 hours/level (D)",
   "savingThrow": "Will negates",
   "spellResistance": "Yes",
   "summary": "Haunting music disrupts target's sleep for 1 day/level.",
   "description": "Haunting music disrupts target's sleep for 1 day/level.\n\nSummary only. Full text: Spell Compendium, p. 218.",
   "source": "Spell Compendium",
-  "page": 218
+  "page": 218,
+  "target": "Living creature touched; see text"
  },
  {
   "id": "tomb-of-light",
@@ -11335,7 +11599,8 @@
   "summary": "Reduce foe to half hp and stun foe for 1 round by purging blood vessels, which can trap creatures in 20-ft. radius from victim.",
   "description": "Reduce foe to half hp and stun foe for 1 round by purging blood vessels, which can trap creatures in 20-ft. radius from victim.\n\nSummary only. Full text: Spell Compendium, p. 19.",
   "source": "Spell Compendium",
-  "page": 19
+  "page": 19,
+  "effect": "Ray"
  },
  {
   "id": "axiomatic-creature",
@@ -11379,14 +11644,14 @@
   "summary": "As bestow curse, but more severe penalties.",
   "description": "As bestow curse, but more severe penalties.\n\nSummary only. Full text: Spell Compendium, p. 27.",
   "source": "Spell Compendium",
-  "page": 27
+  "page": 27,
+  "target": "Creature touched"
  },
  {
   "id": "blackfire",
   "name": "Blackfire",
   "school": "Necromancy",
   "descriptors": [
-   "Negative",
    "Evil"
   ],
   "level": 8,
@@ -11403,7 +11668,8 @@
   "summary": "Negative energy fire burns at the life force of a living creature dealing 1d4 constitution damage/round.",
   "description": "Negative energy fire burns at the life force of a living creature dealing 1d4 constitution damage/round.\n\nSummary only. Full text: Spell Compendium, p. 30.",
   "source": "Spell Compendium",
-  "page": 30
+  "page": 30,
+  "effect": "Ray"
  },
  {
   "id": "celerity-greater",
@@ -11464,7 +11730,8 @@
   "summary": "Creates a permanent passage in earth and walls.",
   "description": "Creates a permanent passage in earth and walls.\n\nSummary only. Full text: Spell Compendium, p. 85.",
   "source": "Spell Compendium",
-  "page": 85
+  "page": 85,
+  "effect": "One 5-ft.-by-5-ft. opening, 1 ft./level deep"
  },
  {
   "id": "field-of-icy-razors",
@@ -11481,13 +11748,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "Instantaneous and 1 round/level; see text",
+  "duration": "Instantaneous plus 1 round/level; see text",
   "savingThrow": "Reflex partial",
   "spellResistance": "Yes",
   "summary": "Creatures in area take normal and cold damage, might be slowed.",
   "description": "Creatures in area take normal and cold damage, might be slowed.\n\nSummary only. Full text: Spell Compendium, p. 90.",
   "source": "Spell Compendium",
-  "page": 90
+  "page": 90,
+  "target": "One creature/level, no two of which are more than 60 ft. apart"
  },
  {
   "id": "fierce-pride-of-the-beastlands",
@@ -11505,13 +11773,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summon celestial lions and celestial dire lions to follow you",
   "description": "Summon celestial lions and celestial dire lions to follow you\n\nSummary only. Full text: Spell Compendium, p. 91.",
   "source": "Spell Compendium",
-  "page": 91
+  "page": 91,
+  "effect": "Two or more summoned creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "flensing",
@@ -11529,12 +11798,13 @@
   "castingTime": "1 standard action",
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "duration": "4 rounds",
-  "savingThrow": "Fortitude partial",
+  "savingThrow": "Fortitude partial; see text",
   "spellResistance": "Yes",
   "summary": "Trauma deals 2d6 damage plus 1d6 Cha and Con damage.",
   "description": "Trauma deals 2d6 damage plus 1d6 Cha and Con damage.\n\nSummary only. Full text: Spell Compendium, p. 95.",
   "source": "Spell Compendium",
-  "page": 95
+  "page": 95,
+  "target": "One corporeal creature"
  },
  {
   "id": "ghostform",
@@ -11595,7 +11865,8 @@
   "summary": "You gain DR 5/- and resist energy 5 vs cold, fire, and electricity.  Healing slows and requires caster level checks (DC 10 + your caster level)",
   "description": "You gain DR 5/- and resist energy 5 vs cold, fire, and electricity.  Healing slows and requires caster level checks (DC 10 + your caster level)\n\nSummary only. Full text: Spell Compendium, p. 111.",
   "source": "Spell Compendium",
-  "page": 111
+  "page": 111,
+  "target": "You"
  },
  {
   "id": "invisibility-superior",
@@ -11610,13 +11881,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal or touch",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "Will negates (harmless)",
   "spellResistance": "No",
   "summary": "As invisibility, greater, except you make no scent, sound, or image.",
   "description": "As invisibility, greater, except you make no scent, sound, or image.\n\nSummary only. Full text: Spell Compendium, p. 125.",
   "source": "Spell Compendium",
-  "page": 125
+  "page": 125,
+  "target": "You or a creature or object weighing no more than 100 lb./level"
  },
  {
   "id": "last-judgment",
@@ -11661,7 +11933,8 @@
   "summary": "Ring of lightning gives you resistance to electricity 20, damages adjacent creatures, and emits two lightning bolts per round.",
   "description": "Ring of lightning gives you resistance to electricity 20, damages adjacent creatures, and emits two lightning bolts per round.\n\nSummary only. Full text: Spell Compendium, p. 132.",
   "source": "Spell Compendium",
-  "page": 132
+  "page": 132,
+  "effect": "Ring of electricity"
  },
  {
   "id": "maddening-scream",
@@ -11704,7 +11977,8 @@
   "summary": "You induce confusion and madness in targets.",
   "description": "You induce confusion and madness in targets.\n\nSummary only. Full text: Spell Compendium, p. 135.",
   "source": "Spell Compendium",
-  "page": 135
+  "page": 135,
+  "target": "One creature/level"
  },
  {
   "id": "make-manifest-mass",
@@ -11725,7 +11999,8 @@
   "summary": "As the Make Manifest spell except multiple targets.",
   "description": "As the Make Manifest spell except multiple targets.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
-  "page": 137
+  "page": 137,
+  "area": "25-ft.-radius emanation centered on a point in space"
  },
  {
   "id": "necrotic-empowerment",
@@ -11789,7 +12064,8 @@
   "summary": "Illusion hides path, creates false new path.",
   "description": "Illusion hides path, creates false new path.\n\nSummary only. Full text: Spell Compendium, p. 188.",
   "source": "Spell Compendium",
-  "page": 188
+  "page": 188,
+  "area": "1-mile radius + 1 mile/level"
  },
  {
   "id": "souls-treasure-lost",
@@ -11888,11 +12164,12 @@
   ],
   "castingTime": "1 standard action",
   "range": "Personal",
-  "duration": "10 min./level or until expended",
+  "duration": "Until expended or 10",
   "summary": "You absorb 1d4+6 spell levels directed at you.",
   "description": "You absorb 1d4+6 spell levels directed at you.\n\nSummary only. Full text: Spell Compendium, p. 6.",
   "source": "Spell Compendium",
-  "page": 6
+  "page": 6,
+  "target": "You"
  },
  {
   "id": "abyssal-army",
@@ -11910,13 +12187,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons demons to fight for you.",
   "description": "Summons demons to fight for you.\n\nSummary only. Full text: Spell Compendium, p. 7.",
   "source": "Spell Compendium",
-  "page": 7
+  "page": 7,
+  "effect": "Two or more summoned creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "awaken-construct",
@@ -11938,7 +12216,8 @@
   "summary": "Awakens a humanoid-shaped construct to humanlike sentience.",
   "description": "Awakens a humanoid-shaped construct to humanlike sentience.\n\nSummary only. Full text: Spell Compendium, p. 21.",
   "source": "Spell Compendium",
-  "page": 21
+  "page": 21,
+  "target": "One construct"
  },
  {
   "id": "black-blade-of-disaster",
@@ -11959,7 +12238,8 @@
   "summary": "Floating magic weapon deals damage and may disintegrate targets.",
   "description": "Floating magic weapon deals damage and may disintegrate targets.\n\nSummary only. Full text: Spell Compendium, p. 29.",
   "source": "Spell Compendium",
-  "page": 29
+  "page": 29,
+  "effect": "Sword-shaped planar rift"
  },
  {
   "id": "blinding-glory",
@@ -12002,7 +12282,8 @@
   "summary": "Your breath weapon also deals a second type of damage.",
   "description": "Your breath weapon also deals a second type of damage.\n\nSummary only. Full text: Spell Compendium, p. 39.",
   "source": "Spell Compendium",
-  "page": 39
+  "page": 39,
+  "target": "Your breath weapon"
  },
  {
   "id": "call-marut",
@@ -12027,7 +12308,8 @@
   "summary": "A marut aids you in pursuing one seeking to cheat time.",
   "description": "A marut aids you in pursuing one seeking to cheat time.\n\nSummary only. Full text: Spell Compendium, p. 42.",
   "source": "Spell Compendium",
-  "page": 42
+  "page": 42,
+  "effect": "One called marut"
  },
  {
   "id": "crushing-fist-of-spite",
@@ -12072,7 +12354,8 @@
   "summary": "As dragon ally, lesser, but up to 27 HD.",
   "description": "As dragon ally, lesser, but up to 27 HD.\n\nSummary only. Full text: Spell Compendium, p. 72.",
   "source": "Spell Compendium",
-  "page": 72
+  "page": 72,
+  "effect": "One called"
  },
  {
   "id": "effulgent-epuration",
@@ -12092,7 +12375,8 @@
   "summary": "Creates one sphere/level to negate hostile magic.",
   "description": "Creates one sphere/level to negate hostile magic.\n\nSummary only. Full text: Spell Compendium, p. 78.",
   "source": "Spell Compendium",
-  "page": 78
+  "page": 78,
+  "effect": "One magic-absorbing sphere per caster level"
  },
  {
   "id": "enervating-breath",
@@ -12111,7 +12395,8 @@
   "summary": "Your breath weapon also bestows 2d4 negative levels.",
   "description": "Your breath weapon also bestows 2d4 negative levels.\n\nSummary only. Full text: Spell Compendium, p. 82.",
   "source": "Spell Compendium",
-  "page": 82
+  "page": 82,
+  "target": "Your breath weapon"
  },
  {
   "id": "eye-of-power",
@@ -12127,13 +12412,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Unlimited",
-  "duration": "1 min./level (D)",
+  "duration": "1 minute/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "As arcane eye, but you can cast spells of 3rd level or lower through it.",
   "description": "As arcane eye, but you can cast spells of 3rd level or lower through it.\n\nSummary only. Full text: Spell Compendium, p. 87.",
   "source": "Spell Compendium",
-  "page": 87
+  "page": 87,
+  "effect": "Magical sensor"
  },
  {
   "id": "heavenly-host",
@@ -12151,13 +12437,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons archons to fight for you.",
   "description": "Summons archons to fight for you.\n\nSummary only. Full text: Spell Compendium, p. 113.",
   "source": "Spell Compendium",
-  "page": 113
+  "page": 113,
+  "effect": "Two or more summoned creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "hellish-horde",
@@ -12175,13 +12462,14 @@
   ],
   "castingTime": "10 minutes",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "10 min./level (D)",
+  "duration": "10 minutes/level (D)",
   "savingThrow": "None",
   "spellResistance": "No",
   "summary": "Summons devils to fight for you.",
   "description": "Summons devils to fight for you.\n\nSummary only. Full text: Spell Compendium, p. 113.",
   "source": "Spell Compendium",
-  "page": 113
+  "page": 113,
+  "effect": "Two or more summoned creatures, no two of which are more than 30 ft. apart"
  },
  {
   "id": "hindsight",
@@ -12202,7 +12490,8 @@
   "summary": "Divination that allows you to see the history of a location.",
   "description": "Divination that allows you to see the history of a location.\n\nSummary only. Full text: Spell Compendium, p. 114.",
   "source": "Spell Compendium",
-  "page": 114
+  "page": 114,
+  "area": "60-ft.-radius emanation centered on you"
  },
  {
   "id": "incarnate-construct",
@@ -12240,11 +12529,12 @@
   ],
   "castingTime": "10 minutes",
   "range": "Personal",
-  "duration": "Permanent until discharged",
+  "duration": "Until discharged",
   "summary": "Enhanced contingency spell teleports you under six possible conditions.",
   "description": "Enhanced contingency spell teleports you under six possible conditions.\n\nSummary only. Full text: Spell Compendium, p. 124.",
   "source": "Spell Compendium",
-  "page": 124
+  "page": 124,
+  "target": "You"
  },
  {
   "id": "magic-miasma",
@@ -12265,7 +12555,8 @@
   "summary": "Solid fog reduces caster level by -4 and spell DCs by -2.",
   "description": "Solid fog reduces caster level by -4 and spell DCs by -2.\n\nSummary only. Full text: Spell Compendium, p. 137.",
   "source": "Spell Compendium",
-  "page": 137
+  "page": 137,
+  "area": "30-ft.-radius emanation centered on a point in space"
  },
  {
   "id": "maw-of-chaos",
@@ -12288,7 +12579,8 @@
   "summary": "Area of energy damages creatures and disrupts concentration.",
   "description": "Area of energy damages creatures and disrupts concentration.\n\nSummary only. Full text: Spell Compendium, p. 140.",
   "source": "Spell Compendium",
-  "page": 140
+  "page": 140,
+  "area": "15-ft.-radius emanation centered on a point in space"
  },
  {
   "id": "mindrape",
@@ -12561,6 +12853,7 @@
   "summary": "Undead creature gains fiendish template.",
   "description": "Undead creature gains fiendish template.\n\nSummary only. Full text: Spell Compendium, p. 229.",
   "source": "Spell Compendium",
-  "page": 229
+  "page": 229,
+  "target": "One corporeal undead creature"
  }
 ]

@@ -131,3 +131,25 @@ node scripts/convert-dndtools.ts wizardSpells.html pages/ public/data/spells/ind
 - Only the school line and stat lines are taken from the book pages; the description is
   the list's one-line summary plus "Summary only. Full text: <book>".
 - Spells already in the earlier files are skipped, and sorcerer-only spells are left out.
+
+## Corrections from the source books
+
+`data-corrections/<Book>.json` holds changes found by checking the bundled spells against the
+player's own PDFs (the books are the source of truth). Each file lists:
+
+- `updates`: a stat or school field and its value **as printed in the book**;
+- `renames`: spelling fixes (the spell id never changes, so books that already contain the
+  spell keep working);
+- `additions`: wizard spells that were missing, with stat lines and a one-line summary
+  (the book's own spell-list line when it has one; never the spell's full text);
+- `removals`: spells the book shows are not on the sorcerer/wizard list.
+
+Apply them (safe to run repeatedly) and check the result:
+
+```bash
+node scripts/apply-corrections.ts
+npm run validate:spells
+```
+
+The converters above produced the original files; the corrections are applied on top. If a
+converter is ever re-run, run `apply-corrections.ts` again afterwards.

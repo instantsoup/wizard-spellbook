@@ -1,0 +1,71 @@
+{
+ "source": "SRD",
+ "verifiedBy": "automatic comparison with the book's digital text",
+ "updates": [
+  {
+   "id": "gate",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "XP"
+   ],
+   "pdfPage": 235
+  },
+  {
+   "id": "hypnotic-pattern",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "M"
+   ],
+   "pdfPage": 243
+  },
+  {
+   "id": "rainbow-pattern",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "M",
+    "F"
+   ],
+   "pdfPage": 269
+  },
+  {
+   "id": "secure-shelter",
+   "field": "components",
+   "value": [
+    "V",
+    "S",
+    "M",
+    "F"
+   ],
+   "pdfPage": 248
+  },
+  {
+   "id": "summon-monster-vii",
+   "field": "effect",
+   "value": "One or more summoned creatures, no two of which can be more than 30 ft. apart"
+  },
+  {
+   "id": "summon-monster-viii",
+   "field": "effect",
+   "value": "One or more summoned creatures, no two of which can be more than 30 ft. apart"
+  },
+  {
+   "id": "summon-monster-ix",
+   "field": "effect",
+   "value": "One or more summoned creatures, no two of which can be more than 30 ft. apart"
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [
+  {
+   "id": "animate-objects",
+   "reason": "PHB p. 199 Level: Brd 6, Chaos 6, Clr 6 (not a sorcerer/wizard spell)"
+  }
+ ]
+}
