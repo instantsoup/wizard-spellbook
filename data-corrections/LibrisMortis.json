@@ -1,0 +1,167 @@
+{
+ "source": "Libris Mortis",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "ghoul-gauntlet",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 66
+  },
+  {
+   "id": "ghoul-glyph",
+   "field": "effect",
+   "value": "One ghoul glyph that must fit within a 1-ft. square",
+   "pdfPage": 66
+  },
+  {
+   "id": "haunt-shift",
+   "field": "target",
+   "value": "Undead creatures within a 40-ft.-radius burst",
+   "pdfPage": 66
+  },
+  {
+   "id": "necrotic-awareness",
+   "field": "area",
+   "value": "Cone-shaped emanation",
+   "pdfPage": 67
+  },
+  {
+   "id": "necrotic-bloat",
+   "field": "target",
+   "value": "Living creature with necrotic cyst",
+   "pdfPage": 67
+  },
+  {
+   "id": "necrotic-burst",
+   "field": "target",
+   "value": "Living creature with necrotic cyst",
+   "pdfPage": 67
+  },
+  {
+   "id": "necrotic-cyst",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 68
+  },
+  {
+   "id": "necrotic-domination",
+   "field": "target",
+   "value": "Living creature with necrotic cyst",
+   "pdfPage": 68
+  },
+  {
+   "id": "necrotic-empowerment",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 68
+  },
+  {
+   "id": "necrotic-eruption",
+   "field": "target",
+   "value": "Living creature with necrotic cyst and all creatures in 20 ft. radius spread",
+   "pdfPage": 69
+  },
+  {
+   "id": "necrotic-scrying",
+   "field": "effect",
+   "value": "Cyst-bearer serves as magical sensor",
+   "pdfPage": 69
+  },
+  {
+   "id": "necrotic-tumor",
+   "field": "target",
+   "value": "Living creature with necrotic cyst",
+   "pdfPage": 69
+  },
+  {
+   "id": "necrotic-tumor",
+   "field": "duration",
+   "value": "One day/level or permanent",
+   "pdfPage": 69
+  },
+  {
+   "id": "necrotic-termination",
+   "field": "target",
+   "value": "Living creature with necrotic cyst",
+   "pdfPage": 69
+  },
+  {
+   "id": "nights-caress",
+   "field": "target",
+   "value": "Creature touched",
+   "pdfPage": 70
+  },
+  {
+   "id": "plague-of-undead",
+   "field": "target",
+   "value": "One or more corpses within range",
+   "pdfPage": 70
+  },
+  {
+   "id": "revive-undead",
+   "field": "target",
+   "value": "Destroyed undead creature touched",
+   "pdfPage": 70
+  },
+  {
+   "id": "spawn-screen",
+   "field": "target",
+   "value": "Living creature touched",
+   "pdfPage": 71
+  },
+  {
+   "id": "spectral-touch",
+   "field": "descriptors",
+   "value": [],
+   "pdfPage": 71
+  },
+  {
+   "id": "spectral-touch",
+   "field": "target",
+   "value": "Creature or creatures touched (up to one/level)",
+   "pdfPage": 71
+  },
+  {
+   "id": "veil-of-undeath",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 72
+  }
+ ],
+ "renames": [],
+ "additions": [
+  {
+   "name": "Summon Undead V",
+   "school": "Conjuration",
+   "subschool": "Summoning",
+   "descriptors": [
+    "Evil"
+   ],
+   "level": 5,
+   "components": [
+    "V",
+    "S",
+    "F"
+   ],
+   "castingTime": "1 round",
+   "range": "Close (25 ft. + 5 ft./2 levels)",
+   "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
+   "duration": "1 round/level",
+   "savingThrow": "None",
+   "spellResistance": "No",
+   "page": 72,
+   "summary": "Summons undead to fight for you."
+  }
+ ],
+ "removals": [],
+ "notes": [
+  "pageOffset: PDF page index = book page + 1.",
+  "Haunt Shift, Plague of Undead and Spectral Touch print the label \"Targets:\" (plural); value stored in target.",
+  "Spectral Touch: school line prints only \"Necromancy\" with no descriptor; app had [Negative].",
+  "Necrotic Domination is a \"functions like dominate person\" spell; only Level, Components and Target are printed, other fields left as in the app.",
+  "Summon Undead V stats taken from Summon Undead I (functions-like): Components V, S, F/DF (mapped to F), Casting Time 1 round, Range Close, Duration 1 round/level, Save None, SR No. Summon Undead I-IV are in the app under Heroes of Horror; V was missing. Summary is the book spell-list line.",
+  "Spawn Screen prints Components V, S, DF even for sorcerer/wizard; app value kept as printed.",
+  "Other Libris Mortis Sor/Wiz spells (Ectoplasmic Armor, Blade of Pain and Fear, Ghost Touch Armor, Ectoplasmic Feedback, Incorporeal Enhancement, Bloodstar, Kiss of the Vampire, Incorporeal Nova, Ghost Trap, Avasculate, Awaken Undead, Energy Ebb, Avascular Mass) are in the app under Spell Compendium; Ghostform under Complete Arcane; skipped. Note Kiss of the Vampire is Sor/Wiz 5 in Libris Mortis vs 7 in the app (Spell Compendium entry)."
+ ]
+}

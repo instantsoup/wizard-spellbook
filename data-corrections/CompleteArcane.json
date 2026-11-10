@@ -1,0 +1,247 @@
+{
+ "source": "Complete Arcane",
+ "verifiedBy": "subagent check against the book page images",
+ "updates": [
+  {
+   "id": "ghostform",
+   "field": "target",
+   "value": "You",
+   "pdfPage": 109
+  },
+  {
+   "id": "orb-of-acid",
+   "field": "effect",
+   "value": "One orb of acid",
+   "pdfPage": 115
+  },
+  {
+   "id": "orb-of-cold",
+   "field": "effect",
+   "value": "One orb of cold",
+   "pdfPage": 115
+  },
+  {
+   "id": "orb-of-electricity",
+   "field": "effect",
+   "value": "One orb of electricity",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-fire",
+   "field": "effect",
+   "value": "One orb of fire",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-sound",
+   "field": "effect",
+   "value": "One orb of sonic energy",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-acid-lesser",
+   "field": "effect",
+   "value": "One orb of acid",
+   "pdfPage": 115
+  },
+  {
+   "id": "orb-of-cold-lesser",
+   "field": "effect",
+   "value": "One orb of cold",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-electricity-lesser",
+   "field": "effect",
+   "value": "One orb of electricity",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-fire-lesser",
+   "field": "effect",
+   "value": "One orb of fire",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-sound-lesser",
+   "field": "effect",
+   "value": "One orb of sonic energy",
+   "pdfPage": 116
+  },
+  {
+   "id": "orb-of-force",
+   "field": "effect",
+   "value": "One orb of force",
+   "pdfPage": 116
+  },
+  {
+   "id": "phantasmal-assailants",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 117
+  },
+  {
+   "id": "programmed-amnesia",
+   "field": "target",
+   "value": "One living creature",
+   "pdfPage": 118
+  },
+  {
+   "id": "reaving-dispel",
+   "field": "target",
+   "value": "One spellcaster, creature, or object; or a 20-ft.-radius burst",
+   "pdfPage": 119
+  },
+  {
+   "id": "reaving-dispel",
+   "field": "targetLabel",
+   "value": "Target or Area",
+   "pdfPage": 119
+  },
+  {
+   "id": "reciprocal-gyre",
+   "field": "target",
+   "value": "One creature or object",
+   "pdfPage": 119
+  },
+  {
+   "id": "refusal",
+   "field": "effect",
+   "value": "Two 10-ft. squares/level (S)",
+   "pdfPage": 120
+  },
+  {
+   "id": "repair-light-damage",
+   "field": "target",
+   "value": "Construct touched",
+   "pdfPage": 120
+  },
+  {
+   "id": "resist-energy-mass",
+   "field": "target",
+   "value": "One creature/level, no two of which can be more than 30 ft. apart",
+   "pdfPage": 120
+  },
+  {
+   "id": "resonating-bolt",
+   "field": "area",
+   "value": "60-ft. line",
+   "pdfPage": 121
+  },
+  {
+   "id": "servant-horde",
+   "field": "effect",
+   "value": "Invisible, mindless, shapeless servants",
+   "pdfPage": 121
+  },
+  {
+   "id": "shadow-binding",
+   "field": "area",
+   "value": "10-ft.-radius burst",
+   "pdfPage": 122
+  },
+  {
+   "id": "sign-of-sealing",
+   "field": "target",
+   "value": "One door, chest, or portal up to 30 sq. ft./level in size",
+   "pdfPage": 122
+  },
+  {
+   "id": "sphere-of-ultimate-destruction",
+   "field": "effect",
+   "value": "2-ft.-radius sphere",
+   "pdfPage": 123
+  },
+  {
+   "id": "spiritwall",
+   "field": "descriptors",
+   "value": [
+    "Fear",
+    "Mind-Affecting"
+   ],
+   "pdfPage": 124
+  },
+  {
+   "id": "spiritwall",
+   "field": "effect",
+   "value": "Swirling wall whose area is up to one 10-ft. square/level, or a sphere or hemisphere with a radius of up to 1 ft./level",
+   "pdfPage": 124
+  },
+  {
+   "id": "stony-grasp",
+   "field": "effect",
+   "value": "Animated stone arm",
+   "pdfPage": 124
+  },
+  {
+   "id": "summon-elemental-monolith",
+   "field": "effect",
+   "value": "One summoned elemental monolith",
+   "pdfPage": 124
+  },
+  {
+   "id": "swim",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 125
+  },
+  {
+   "id": "sword-of-darkness",
+   "field": "effect",
+   "value": "Black blade of negative energy",
+   "pdfPage": 126
+  },
+  {
+   "id": "sword-of-deception",
+   "field": "effect",
+   "value": "Pale green blade of force",
+   "pdfPage": 126
+  },
+  {
+   "id": "transfix",
+   "field": "area",
+   "value": "One or more humanoids within a 10-ft.-radius emanation",
+   "pdfPage": 127
+  },
+  {
+   "id": "transmute-rock-to-lava",
+   "field": "descriptors",
+   "value": [
+    "Earth",
+    "Fire"
+   ],
+   "pdfPage": 127
+  },
+  {
+   "id": "transmute-rock-to-lava",
+   "field": "area",
+   "value": "One 10-ft. cube",
+   "pdfPage": 127
+  },
+  {
+   "id": "unluck",
+   "field": "target",
+   "value": "One creature",
+   "pdfPage": 128
+  },
+  {
+   "id": "wall-of-gloom",
+   "field": "effect",
+   "value": "Semiopaque sheet of darkness up to 40 ft. long, or a ring of darkness with a radius of up to 15 ft.; either form 20 ft. high",
+   "pdfPage": 129
+  }
+ ],
+ "renames": [],
+ "additions": [],
+ "removals": [],
+ "notes": [
+  "pageOffset: PDF page index = book page + 1. All 39 app page numbers match the book.",
+  "Most updates fill in Target/Area/Effect lines, which the app data lacked for every spell in this book.",
+  "Spiritwall: the book prints no Range line (stat block goes Casting Time -> Effect). The app has \"Medium (100 ft. + 10 ft./level)\"; left unchanged, flagged for review.",
+  "Ghostform: the stat block says Sorcerer/wizard 8 (app matches), but the chapter spell list puts it under 7th level. Kept 8.",
+  "Resist Energy, Mass prints Components V, S, DF (app matches). Summon Elemental Monolith prints V, S, M/DF (app has M, matching the rule). Summon Elemental Monolith descriptor is printed as [see text].",
+  "Repair Minor/Moderate/Serious/Critical Damage, Sign of Sealing, Greater, Stony Grasp and Sword of Darkness are \"functions like\" spells; only printed lines were compared. Sign of Sealing, Greater prints no school line.",
+  "Transmute Rock to Lava: descriptors printed in order [Earth, Fire].",
+  "No additions. Every other Sor/Wiz spell in the chapter list is already in the app under another book (mostly Spell Compendium), sometimes with a different name: Burning Blood -> \"Burning Blood, Foe's\" (the app's \"Burning Blood\" is a different Draconomicon spell), Assay Resistance -> \"Assay Spell Resistance\", Superior Invisibility -> \"Invisibility, Superior\", Leomund's Hidden Lodge -> \"Hidden Lodge\", Otiluke's (Greater) Dispelling Screen -> \"Dispelling Screen(, Greater)\". Several of these differ in level between Complete Arcane and the app (e.g. Discern Shapechanger 3 vs 2, Aiming at the Target 5 vs 2, Arrow of Bone 6 vs 7, Fiendform 6 vs 5, Freezing Fog 5 vs 6, Anticipate Teleportation 4 vs 3, Fortify Familiar 4 vs 3, Familiar Pocket 2 vs 1, Blades of Fire 2 vs 1); left alone because they are listed under Spell Compendium."
+ ]
+}

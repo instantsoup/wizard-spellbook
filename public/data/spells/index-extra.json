@@ -1457,7 +1457,8 @@
   "summary": "Sense encysted subjects.",
   "description": "Sense encysted subjects.\n\nSummary only. Full text: Libris Mortis, p. 67.",
   "source": "Libris Mortis",
-  "page": 67
+  "page": 67,
+  "area": "Cone-shaped emanation"
  },
  {
   "id": "nether-trail",
@@ -1502,7 +1503,8 @@
   "summary": "Ranged touch, 1d8 or more acid damage.",
   "description": "Ranged touch, 1d8 or more acid damage.\n\nSummary only. Full text: Complete Arcane, p. 115.",
   "source": "Complete Arcane",
-  "page": 115
+  "page": 115,
+  "effect": "One orb of acid"
  },
  {
   "id": "orb-of-cold-lesser",
@@ -1525,7 +1527,8 @@
   "summary": "Ranged touch, 1d8 or more cold damage.",
   "description": "Ranged touch, 1d8 or more cold damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of cold"
  },
  {
   "id": "orb-of-electricity-lesser",
@@ -1548,7 +1551,8 @@
   "summary": "Ranged touch, 1d8 or more electricity damage.",
   "description": "Ranged touch, 1d8 or more electricity damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of electricity"
  },
  {
   "id": "orb-of-fire-lesser",
@@ -1571,7 +1575,8 @@
   "summary": "Ranged touch, 1d8 or more fire damage.",
   "description": "Ranged touch, 1d8 or more fire damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of fire"
  },
  {
   "id": "orb-of-sound-lesser",
@@ -1594,7 +1599,8 @@
   "summary": "Ranged touch, 1d6 or more sonic damage.",
   "description": "Ranged touch, 1d6 or more sonic damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of sonic energy"
  },
  {
   "id": "portal-beacon",
@@ -1657,7 +1663,8 @@
   "summary": "\"Cures\" 1d8+1/level (max +5) points of damage to a construct.",
   "description": "\"Cures\" 1d8+1/level (max +5) points of damage to a construct.\n\nSummary only. Full text: Complete Arcane, p. 120.",
   "source": "Complete Arcane",
-  "page": 120
+  "page": 120,
+  "target": "Construct touched"
  },
  {
   "id": "rouse",
@@ -3344,7 +3351,8 @@
   "summary": "Glyph wards area, paralyzes victims.",
   "description": "Glyph wards area, paralyzes victims.\n\nSummary only. Full text: Libris Mortis, p. 66.",
   "source": "Libris Mortis",
-  "page": 66
+  "page": 66,
+  "effect": "One ghoul glyph that must fit within a 1-ft. square"
  },
  {
   "id": "grazzts-long-grasp",
@@ -3749,7 +3757,8 @@
   "summary": "Encyst undead sac of tissue in subject.",
   "description": "Encyst undead sac of tissue in subject.\n\nSummary only. Full text: Libris Mortis, p. 68.",
   "source": "Libris Mortis",
-  "page": 68
+  "page": 68,
+  "target": "Living creature touched"
  },
  {
   "id": "necrotic-scrying",
@@ -3772,7 +3781,8 @@
   "summary": "Hear or see encysted subject at a distance.",
   "description": "Hear or see encysted subject at a distance.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
-  "page": 69
+  "page": 69,
+  "effect": "Cyst-bearer serves as magical sensor"
  },
  {
   "id": "phantasmal-assailants",
@@ -3796,7 +3806,8 @@
   "summary": "Phantasm deals 4 Wis damage and 4 Dex damage.",
   "description": "Phantasm deals 4 Wis damage and 4 Dex damage.\n\nSummary only. Full text: Complete Arcane, p. 117.",
   "source": "Complete Arcane",
-  "page": 117
+  "page": 117,
+  "target": "One living creature"
  },
  {
   "id": "rebuke",
@@ -4110,7 +4121,8 @@
   "summary": "You resist being transformed into an undead spawn if slain.",
   "description": "You resist being transformed into an undead spawn if slain.\n\nSummary only. Full text: Libris Mortis, p. 71.",
   "source": "Libris Mortis",
-  "page": 71
+  "page": 71,
+  "target": "Living creature touched"
  },
  {
   "id": "speak-to-allies",
@@ -4265,7 +4277,8 @@
   "summary": "Subject gains a swim speed equal to their land speed.",
   "description": "Subject gains a swim speed equal to their land speed.\n\nSummary only. Full text: Complete Arcane, p. 125.",
   "source": "Complete Arcane",
-  "page": 125
+  "page": 125,
+  "target": "One creature"
  },
  {
   "id": "unheavened",
@@ -4360,7 +4373,8 @@
   "summary": "A shadowy wall deters passage.",
   "description": "A shadowy wall deters passage.\n\nSummary only. Full text: Complete Arcane, p. 129.",
   "source": "Complete Arcane",
-  "page": 129
+  "page": 129,
+  "effect": "Semiopaque sheet of darkness up to 40 ft. long, or a ring of darkness with a radius of up to 15 ft.; either form 20 ft. high"
  },
  {
   "id": "whelming-blast",
@@ -6039,7 +6053,8 @@
   "summary": "Encysted subject takes 1d6 damage/level.",
   "description": "Encysted subject takes 1d6 damage/level.\n\nSummary only. Full text: Libris Mortis, p. 67.",
   "source": "Libris Mortis",
-  "page": 67
+  "page": 67,
+  "target": "Living creature with necrotic cyst"
  },
  {
   "id": "primal-form",
@@ -6172,7 +6187,8 @@
   "summary": "60 ft. line deals 1d4/level (max 10d4) sonic damage.",
   "description": "60 ft. line deals 1d4/level (max 10d4) sonic damage.\n\nSummary only. Full text: Complete Arcane, p. 121.",
   "source": "Complete Arcane",
-  "page": 121
+  "page": 121,
+  "area": "60-ft. line"
  },
  {
   "id": "shadow-binding",
@@ -6194,7 +6210,8 @@
   "summary": "Entangle and daze creatures.",
   "description": "Entangle and daze creatures.\n\nSummary only. Full text: Complete Arcane, p. 122.",
   "source": "Complete Arcane",
-  "page": 122
+  "page": 122,
+  "area": "10-ft.-radius burst"
  },
  {
   "id": "sign-of-sealing",
@@ -6215,7 +6232,8 @@
   "summary": "As Arcane Lock, except when portal is breached it deals 1d4/level (max 10d4) damage.",
   "description": "As Arcane Lock, except when portal is breached it deals 1d4/level (max 10d4) damage.\n\nSummary only. Full text: Complete Arcane, p. 122.",
   "source": "Complete Arcane",
-  "page": 122
+  "page": 122,
+  "target": "One door, chest, or portal up to 30 sq. ft./level in size"
  },
  {
   "id": "siphon",
@@ -6348,7 +6366,8 @@
   "summary": "As earthen grasp, except the stony arm can appear from any natural surface, including unworked rock, earth, mud, grass, or sand.",
   "description": "As earthen grasp, except the stony arm can appear from any natural surface, including unworked rock, earth, mud, grass, or sand.\n\nSummary only. Full text: Complete Arcane, p. 124.",
   "source": "Complete Arcane",
-  "page": 124
+  "page": 124,
+  "effect": "Animated stone arm"
  },
  {
   "id": "telepathic-bond-lesser",
@@ -7673,7 +7692,8 @@
   "summary": "Completely control encysted subject.",
   "description": "Completely control encysted subject.\n\nSummary only. Full text: Libris Mortis, p. 68.",
   "source": "Libris Mortis",
-  "page": 68
+  "page": 68,
+  "target": "Living creature with necrotic cyst"
  },
  {
   "id": "orb-of-acid",
@@ -7696,7 +7716,8 @@
   "summary": "Ranged touch, 1d6/level (max 15d6) points of acid damage.",
   "description": "Ranged touch, 1d6/level (max 15d6) points of acid damage.\n\nSummary only. Full text: Complete Arcane, p. 115.",
   "source": "Complete Arcane",
-  "page": 115
+  "page": 115,
+  "effect": "One orb of acid"
  },
  {
   "id": "orb-of-cold",
@@ -7719,7 +7740,8 @@
   "summary": "Ranged touch, 1d6/level (max 15d6) points of cold damage.",
   "description": "Ranged touch, 1d6/level (max 15d6) points of cold damage.\n\nSummary only. Full text: Complete Arcane, p. 115.",
   "source": "Complete Arcane",
-  "page": 115
+  "page": 115,
+  "effect": "One orb of cold"
  },
  {
   "id": "orb-of-electricity",
@@ -7742,7 +7764,8 @@
   "summary": "Ranged touch, 1d6/level (max 15d6) points of electricity damage.",
   "description": "Ranged touch, 1d6/level (max 15d6) points of electricity damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of electricity"
  },
  {
   "id": "orb-of-fire",
@@ -7765,7 +7788,8 @@
   "summary": "Ranged touch, 1d6/level (max 15d6) points of fire damage.",
   "description": "Ranged touch, 1d6/level (max 15d6) points of fire damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of fire"
  },
  {
   "id": "orb-of-force",
@@ -7788,7 +7812,8 @@
   "summary": "Globes of force deal 1d6/level (max 10d6) damage.",
   "description": "Globes of force deal 1d6/level (max 10d6) damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of force"
  },
  {
   "id": "orb-of-sound",
@@ -7811,7 +7836,8 @@
   "summary": "Ranged touch, 1d4/level (max 15d4) points of sonic damage.",
   "description": "Ranged touch, 1d4/level (max 15d4) points of sonic damage.\n\nSummary only. Full text: Complete Arcane, p. 116.",
   "source": "Complete Arcane",
-  "page": 116
+  "page": 116,
+  "effect": "One orb of sonic energy"
  },
  {
   "id": "perfect-summons",
@@ -8008,7 +8034,8 @@
   "summary": "As resist energy, except that it affects multiple creatures.",
   "description": "As resist energy, except that it affects multiple creatures.\n\nSummary only. Full text: Complete Arcane, p. 120.",
   "source": "Complete Arcane",
-  "page": 120
+  "page": 120,
+  "target": "One creature/level, no two of which can be more than 30 ft. apart"
  },
  {
   "id": "resistance-greater",
@@ -8090,7 +8117,8 @@
   "summary": "All actions involving random elements are rolled twice and the worse roll is used.",
   "description": "All actions involving random elements are rolled twice and the worse roll is used.\n\nSummary only. Full text: Complete Arcane, p. 128.",
   "source": "Complete Arcane",
-  "page": 128
+  "page": 128,
+  "target": "One creature"
  },
  {
   "id": "vortex-of-teeth",
@@ -8980,7 +9008,8 @@
   "summary": "Turn corporeal and incorporeal undead into haunting presences.",
   "description": "Turn corporeal and incorporeal undead into haunting presences.\n\nSummary only. Full text: Libris Mortis, p. 66.",
   "source": "Libris Mortis",
-  "page": 66
+  "page": 66,
+  "target": "Undead creatures within a 40-ft.-radius burst"
  },
  {
   "id": "hidden-lodge",
@@ -9206,7 +9235,8 @@
   "summary": "Encysted subject killed, cyst begins to roam.",
   "description": "Encysted subject killed, cyst begins to roam.\n\nSummary only. Full text: Libris Mortis, p. 67.",
   "source": "Libris Mortis",
-  "page": 67
+  "page": 67,
+  "target": "Living creature with necrotic cyst"
  },
  {
   "id": "nights-caress",
@@ -9228,7 +9258,8 @@
   "summary": "Touched foe take 1d8 points of damage per level plus 1d8+2 Con damage.",
   "description": "Touched foe take 1d8 points of damage per level plus 1d8+2 Con damage.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
-  "page": 69
+  "page": 69,
+  "target": "Creature touched"
  },
  {
   "id": "nightstalkers-transformation",
@@ -9328,7 +9359,8 @@
   "summary": "Deal 1d6 damage to target for each on-going spell on the target (max 25d6).",
   "description": "Deal 1d6 damage to target for each on-going spell on the target (max 25d6).\n\nSummary only. Full text: Complete Arcane, p. 119.",
   "source": "Complete Arcane",
-  "page": 119
+  "page": 119,
+  "target": "One creature or object"
  },
  {
   "id": "reduce-person-greater",
@@ -9370,7 +9402,8 @@
   "summary": "Create a ward that blocks spell users from entering an area.",
   "description": "Create a ward that blocks spell users from entering an area.\n\nSummary only. Full text: Complete Arcane, p. 120.",
   "source": "Complete Arcane",
-  "page": 120
+  "page": 120,
+  "effect": "Two 10-ft. squares/level (S)"
  },
  {
   "id": "resonating-resistance",
@@ -9410,7 +9443,8 @@
   "summary": "This spell creates a number of unseen servants, up to a maximum of 2d6 +1 servant per level (maximum +15).",
   "description": "This spell creates a number of unseen servants, up to a maximum of 2d6 +1 servant per level (maximum +15).\n\nSummary only. Full text: Complete Arcane, p. 121.",
   "source": "Complete Arcane",
-  "page": 121
+  "page": 121,
+  "effect": "Invisible, mindless, shapeless servants"
  },
  {
   "id": "shadow-form",
@@ -9520,7 +9554,10 @@
   "id": "spiritwall",
   "name": "Spiritwall",
   "school": "Necromancy",
-  "descriptors": [],
+  "descriptors": [
+   "Fear",
+   "Mind-Affecting"
+  ],
   "level": 5,
   "components": [
    "V",
@@ -9535,7 +9572,8 @@
   "summary": "Creates a wall of wailing spirits that inspires fear; 1d10 points of damage and energy drain on contact.",
   "description": "Creates a wall of wailing spirits that inspires fear; 1d10 points of damage and energy drain on contact.\n\nSummary only. Full text: Complete Arcane, p. 124.",
   "source": "Complete Arcane",
-  "page": 124
+  "page": 124,
+  "effect": "Swirling wall whose area is up to one 10-ft. square/level, or a sphere or hemisphere with a radius of up to 1 ft./level"
  },
  {
   "id": "stop-heart",
@@ -9578,7 +9616,8 @@
   "summary": "A blade of pale green force to appear and strikes the opponent you designate.",
   "description": "A blade of pale green force to appear and strikes the opponent you designate.\n\nSummary only. Full text: Complete Arcane, p. 126.",
   "source": "Complete Arcane",
-  "page": 126
+  "page": 126,
+  "effect": "Pale green blade of force"
  },
  {
   "id": "symbol-of-spell-loss",
@@ -10317,7 +10356,8 @@
   "summary": "Convert victim to a ghoul under your control.",
   "description": "Convert victim to a ghoul under your control.\n\nSummary only. Full text: Libris Mortis, p. 66.",
   "source": "Libris Mortis",
-  "page": 66
+  "page": 66,
+  "target": "One living creature"
  },
  {
   "id": "hardening",
@@ -10532,7 +10572,8 @@
   "summary": "Encysted subject killed, those nearby damaged and possibly encysted.",
   "description": "Encysted subject killed, those nearby damaged and possibly encysted.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
-  "page": 69
+  "page": 69,
+  "target": "Living creature with necrotic cyst and all creatures in 20 ft. radius spread"
  },
  {
   "id": "ooze-puppet",
@@ -10639,7 +10680,8 @@
   "summary": "Restores undeath to undead that was destroyed up to 1 day/level ago.",
   "description": "Restores undeath to undead that was destroyed up to 1 day/level ago.\n\nSummary only. Full text: Libris Mortis, p. 70.",
   "source": "Libris Mortis",
-  "page": 70
+  "page": 70,
+  "target": "Destroyed undead creature touched"
  },
  {
   "id": "scry-location",
@@ -10711,9 +10753,7 @@
   "id": "spectral-touch",
   "name": "Spectral Touch",
   "school": "Necromancy",
-  "descriptors": [
-   "Negative"
-  ],
+  "descriptors": [],
   "level": 6,
   "components": [
    "V",
@@ -10727,7 +10767,8 @@
   "summary": "Your touch bestows one negative level per round.",
   "description": "Your touch bestows one negative level per round.\n\nSummary only. Full text: Libris Mortis, p. 71.",
   "source": "Libris Mortis",
-  "page": 71
+  "page": 71,
+  "target": "Creature or creatures touched (up to one/level)"
  },
  {
   "id": "starmantle",
@@ -10815,7 +10856,8 @@
   "summary": "Medium or smaller targets are paralyzed.",
   "description": "Medium or smaller targets are paralyzed.\n\nSummary only. Full text: Complete Arcane, p. 127.",
   "source": "Complete Arcane",
-  "page": 127
+  "page": 127,
+  "area": "One or more humanoids within a 10-ft.-radius emanation"
  },
  {
   "id": "wages-of-sin",
@@ -11450,13 +11492,14 @@
   ],
   "castingTime": "1 standard action",
   "range": "Medium (100 ft. + 10 ft./level)",
-  "duration": "1 day/level or permanent",
+  "duration": "One day/level or permanent",
   "savingThrow": "Fortitude partial",
   "spellResistance": "No",
   "summary": "Permanently control encysted subject.",
   "description": "Permanently control encysted subject.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
-  "page": 69
+  "page": 69,
+  "target": "Living creature with necrotic cyst"
  },
  {
   "id": "prismatic-eye",
@@ -11611,7 +11654,8 @@
   "summary": "As sword of deception, except you cause a black blade of pure negative energy to appear and attack opponents at a distance, as directed by you.",
   "description": "As sword of deception, except you cause a black blade of pure negative energy to appear and attack opponents at a distance, as directed by you.\n\nSummary only. Full text: Complete Arcane, p. 126.",
   "source": "Complete Arcane",
-  "page": 126
+  "page": 126,
+  "effect": "Black blade of negative energy"
  },
  {
   "id": "symphonic-nightmare",
@@ -11954,7 +11998,8 @@
   "summary": "You become incorporeal.",
   "description": "You become incorporeal.\n\nSummary only. Full text: Complete Arcane, p. 109.",
   "source": "Complete Arcane",
-  "page": 109
+  "page": 109,
+  "target": "You"
  },
  {
   "id": "gutwrench",
@@ -12154,7 +12199,8 @@
   "summary": "Draw personal vigor from mother cyst.",
   "description": "Draw personal vigor from mother cyst.\n\nSummary only. Full text: Libris Mortis, p. 68.",
   "source": "Libris Mortis",
-  "page": 68
+  "page": 68,
+  "target": "You"
  },
  {
   "id": "plane-shift-greater",
@@ -12285,7 +12331,8 @@
   "summary": "You gain undead traits.",
   "description": "You gain undead traits.\n\nSummary only. Full text: Libris Mortis, p. 72.",
   "source": "Libris Mortis",
-  "page": 72
+  "page": 72,
+  "target": "You"
  },
  {
   "id": "absorption",
@@ -12765,7 +12812,8 @@
   "summary": "Permanently eliminates encysted subject.",
   "description": "Permanently eliminates encysted subject.\n\nSummary only. Full text: Libris Mortis, p. 69.",
   "source": "Libris Mortis",
-  "page": 69
+  "page": 69,
+  "target": "Living creature with necrotic cyst"
  },
  {
   "id": "plague-of-undead",
@@ -12788,7 +12836,8 @@
   "summary": "Animates horde of undead.",
   "description": "Animates horde of undead.\n\nSummary only. Full text: Libris Mortis, p. 70.",
   "source": "Libris Mortis",
-  "page": 70
+  "page": 70,
+  "target": "One or more corpses within range"
  },
  {
   "id": "programmed-amnesia",
@@ -12812,7 +12861,8 @@
   "summary": "You can selectively destroy, alter, or implant memories in the target creature as you see fit.",
   "description": "You can selectively destroy, alter, or implant memories in the target creature as you see fit.\n\nSummary only. Full text: Complete Arcane, p. 118.",
   "source": "Complete Arcane",
-  "page": 118
+  "page": 118,
+  "target": "One living creature"
  },
  {
   "id": "reaving-dispel",
@@ -12832,7 +12882,9 @@
   "summary": "As dispel magic, except maximum +25 and if targeted, you can take control of the spell.",
   "description": "As dispel magic, except maximum +25 and if targeted, you can take control of the spell.\n\nSummary only. Full text: Complete Arcane, p. 119.",
   "source": "Complete Arcane",
-  "page": 119
+  "page": 119,
+  "target": "One spellcaster, creature, or object; or a 20-ft.-radius burst",
+  "targetLabel": "Target or Area"
  },
  {
   "id": "spell-matrix-greater",
@@ -12873,7 +12925,8 @@
   "summary": "Sphere disintegrates everything it touches.",
   "description": "Sphere disintegrates everything it touches.\n\nSummary only. Full text: Complete Arcane, p. 123.",
   "source": "Complete Arcane",
-  "page": 123
+  "page": 123,
+  "effect": "2-ft.-radius sphere"
  },
  {
   "id": "summon-elemental-monolith",
@@ -12897,15 +12950,16 @@
   "summary": "You conjure a tremendously powerful creature known as an elemental monolith.",
   "description": "You conjure a tremendously powerful creature known as an elemental monolith.\n\nSummary only. Full text: Complete Arcane, p. 124.",
   "source": "Complete Arcane",
-  "page": 124
+  "page": 124,
+  "effect": "One summoned elemental monolith"
  },
  {
   "id": "transmute-rock-to-lava",
   "name": "Transmute Rock to Lava",
   "school": "Transmutation",
   "descriptors": [
-   "Fire",
-   "Earth"
+   "Earth",
+   "Fire"
   ],
   "level": 9,
   "components": [
@@ -12920,7 +12974,8 @@
   "summary": "Transmute rock to lava dealing 2d6 points of fire damage or 20d6.",
   "description": "Transmute rock to lava dealing 2d6 points of fire damage or 20d6.\n\nSummary only. Full text: Complete Arcane, p. 127.",
   "source": "Complete Arcane",
-  "page": 127
+  "page": 127,
+  "area": "One 10-ft. cube"
  },
  {
   "id": "unbinding",
