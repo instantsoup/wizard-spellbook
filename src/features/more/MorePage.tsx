@@ -6,6 +6,7 @@ import { deleteCharacter, setActiveCharacter } from '../../data/characters'
 import type { CharacterRecord } from '../../data/db'
 import { useCharacters, useSetting } from '../../data/hooks'
 import { getTheme, setTheme, type ThemeChoice } from '../../theme'
+import { FEEDBACK_KINDS, feedbackUrl, type FeedbackKind } from './feedback'
 
 export function MorePage({ character }: { character: CharacterRecord }) {
   const navigate = useNavigate()
@@ -14,6 +15,19 @@ export function MorePage({ character }: { character: CharacterRecord }) {
   const fileRef = useRef<HTMLInputElement>(null)
   const [theme, setThemeState] = useState<ThemeChoice>(getTheme)
   const [msg, setMsg] = useState<{ errors?: string[]; warnings?: string[] }>({})
+  const [fbKind, setFbKind] = useState<FeedbackKind>('bug')
+  const [fbTitle, setFbTitle] = useState('')
+  const [fbDetails, setFbDetails] = useState('')
+
+  const sendFeedback = () => {
+    const url = feedbackUrl(fbKind, fbTitle, fbDetails, {
+      Version: __BUILD_ID__,
+      Page: location.hash || '#/',
+      Wizard: `level ${character.wizardLevel}${character.specialty ? `, ${character.specialty}` : ''}`,
+      Device: navigator.userAgent,
+    })
+    window.open(url, '_blank', 'noopener')
+  }
 
   const onRestore = async (file: File) => {
     try {
@@ -130,9 +144,32 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         <Messages {...msg} />
       </Card>
 
+      <SectionTitle>Feedback</SectionTitle>
+      <Card className="space-y-3">
+        <p className="text-sm text-ink/70">Report a problem or suggest something. This opens a new issue on GitHub (you need to be signed in there) with your text filled in.</p>
+        <Field label="Kind">
+          <select className={inputClass} value={fbKind} onChange={(e) => setFbKind(e.target.value as FeedbackKind)}>
+            {FEEDBACK_KINDS.map((k) => (
+              <option key={k.value} value={k.value}>
+                {k.label}
+              </option>
+            ))}
+          </select>
+        </Field>
+        <Field label="Title">
+          <input className={inputClass} value={fbTitle} onChange={(e) => setFbTitle(e.target.value)} placeholder="Short summary" />
+        </Field>
+        <Field label="Details" hint="App version, wizard level and device are added automatically.">
+          <textarea className={`${inputClass} min-h-24`} value={fbDetails} onChange={(e) => setFbDetails(e.target.value)} />
+        </Field>
+        <Button className="w-full" disabled={!fbTitle.trim()} onClick={sendFeedback}>
+          Open GitHub issue
+        </Button>
+      </Card>
+
       <SectionTitle>About</SectionTitle>
       <Card className="text-sm text-ink/70">
-        <p>Wizard's Spellbook for 3.5e. Spell text is Open Game Content from the System Reference Document, used under the Open Game License v1.0a.</p>
+        <p>Wizard's Spellbook for 3.5e (version {__BUILD_ID__}). Spell text is Open Game Content from the System Reference Document, used under the Open Game License v1.0a.</p>
         <p className="mt-2">
           <a className="text-leather underline" href="https://github.com/instantsoup/wizard-spellbook/blob/main/OGL.md" target="_blank" rel="noreferrer">
             Open Game License
