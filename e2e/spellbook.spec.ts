@@ -125,7 +125,10 @@ test('candlelight theme can be chosen and is remembered', async ({ page }) => {
   expect(bg).toBe('rgb(23, 18, 13)')
 })
 
-test('works offline after the first visit', async ({ page, context }) => {
+test('works offline after the first visit', async ({ page, context, browserName }) => {
+  // Playwright's WebKit can't reload a page while emulating offline ("WebKit encountered an
+  // internal error"). This is a limit of the test browser, not Safari; check offline on Chromium.
+  test.skip(browserName === 'webkit', 'offline reload is not supported in Playwright WebKit')
   await createEvoker(page)
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready
