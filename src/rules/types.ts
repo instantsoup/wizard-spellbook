@@ -22,9 +22,22 @@ export interface IntScore {
   inherent: number
 }
 
+/** Spellcasting classes the app knows. Only wizard so far; others will come later. */
+export type CasterClass = 'wizard'
+
 /** The parts of a character the rules engine needs. */
 export interface WizardCharacter {
+  /** Defaults to wizard when missing (characters made before classes existed). */
+  casterClass?: CasterClass
   wizardLevel: number
+  /** Levels in prestige classes that add +1 wizard spellcasting level (default 0). */
+  extraCasterLevels?: number
+  /**
+   * Custom casting modifiers (e.g. Tainted Scholar). When set, they replace the Int modifier:
+   * one for bonus spells per day, one for spell DCs, and there is no minimum Int to cast.
+   * Unset = use Int. Both are set together.
+   */
+  customCasting?: { bonusSpells: number; dc: number }
   int: IntScore
   /** Int modifier when the character was 1st level; fixes the starting free-spell count. */
   intModAtLevel1: number

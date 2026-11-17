@@ -8,7 +8,7 @@ import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
+import { casterLevel, freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
 import { AddToBookSheet } from './AddToBookSheet'
 import {
   activeFilterCount,
@@ -69,7 +69,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
     setF((prev) => ({ ...prev, ...patch }))
     setLimit(PAGE)
   }
-  const castable = maxSpellLevel(character.wizardLevel)
+  const castable = maxSpellLevel(casterLevel(character))
   const picks = freePickStatus(character, known).filter((s) => s.remaining > 0)
   const freeLeft = picks.reduce((n, s) => n + s.remaining, 0)
   // Group picks by the highest spell level they can take.

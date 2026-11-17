@@ -1,6 +1,6 @@
 import MiniSearch from 'minisearch'
 import type { School, Spell } from '../../data/spell-schema'
-import { effectiveInt, isProhibited, maxSpellLevel, minIntForSpellLevel, type WizardCharacter } from '../../rules'
+import { casterLevel, isProhibited, maxSpellLevel, meetsCastingMinimum, type WizardCharacter } from '../../rules'
 
 export type ExcludableComponent = 'V' | 'S' | 'M' | 'F' | 'XP'
 
@@ -59,8 +59,7 @@ export function filterSpells(
   ctx: { character: WizardCharacter; knownIds: ReadonlySet<string>; index?: MiniSearch<Spell> },
 ): Spell[] {
   const { character, knownIds } = ctx
-  const castable = maxSpellLevel(character.wizardLevel)
-  const int = effectiveInt(character)
+  const castable = maxSpellLevel(casterLevel(character))
   // A remembered school filter may name a school that is now prohibited: ignore it.
   const schools = f.schools.filter((s) => !isProhibited(character, s))
 
@@ -82,7 +81,7 @@ export function filterSpells(
       (!f.levels.length || f.levels.includes(s.level)) &&
       (!schools.length || schools.includes(s.school)) &&
       (!f.notInBook || !knownIds.has(s.id)) &&
-      (!f.castableNow || (s.level <= castable && int >= minIntForSpellLevel(s.level))) &&
+      (!f.castableNow || (s.level <= castable && meetsCastingMinimum(character, s.level))) &&
       !isProhibited(character, s.school) &&
       !f.without.some((c) => s.components.includes(c)) &&
       (!f.sources.length || f.sources.includes(s.source)) &&

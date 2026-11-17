@@ -7,7 +7,7 @@ import { Button, Card, Loading, Page } from '../../components/ui'
 import { saveDaySlots } from '../../data/days'
 import type { CharacterRecord } from '../../data/db'
 import { useSpells } from '../../data/spells'
-import { castGroups, castOne, dayUsage, restoreOne, type CastGroup } from '../../rules'
+import { castGroups, castOne, dayUsage, restoreOne, spellDc, type CastGroup } from '../../rules'
 import { dayTitle, RestSheet, useDay, useWakeLock } from '../prepare/shared'
 
 export function TodayPage({ character }: { character: CharacterRecord }) {
@@ -63,7 +63,9 @@ export function TodayPage({ character }: { character: CharacterRecord }) {
           .map((u) => (
             <section key={u.spellLevel} className="mb-5">
               <div className="mb-2 flex items-baseline justify-between border-b border-leather/30">
-                <h2 className="font-display text-lg text-leather">{levelLabel(u.spellLevel)}</h2>
+                <h2 className="font-display text-lg text-leather">
+                  {levelLabel(u.spellLevel)} <span className="font-sans text-sm text-ink/60">DC {spellDc(character, u.spellLevel)}</span>
+                </h2>
                 <span className={`text-sm ${u.remaining ? 'text-ink/70' : 'text-rubric'}`}>
                   {u.remaining} of {u.prepared} left
                 </span>

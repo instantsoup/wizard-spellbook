@@ -4,6 +4,9 @@ import { Button, Card, Chip, Field, inputClass, Messages, SectionTitle, Stepper 
 import type { CharacterInput } from '../../data/characters'
 import {
   abilityModifier,
+  casterLevel,
+  bonusSpellModifier,
+  dcModifier,
   requiredProhibitedCount,
   SPECIALIZABLE_SCHOOLS,
   validateCharacter,
@@ -13,6 +16,7 @@ import { SlotPreview } from './SlotPreview'
 
 export const NEW_CHARACTER: CharacterInput = {
   name: '',
+  casterClass: 'wizard',
   wizardLevel: 1,
   int: { base: 16, enhancement: 0, inherent: 0 },
   intModAtLevel1: 3,
@@ -82,6 +86,63 @@ export function CharacterForm({
         <Field label="Wizard level" group>
           <Stepper label="Wizard level" value={c.wizardLevel} min={1} max={20} onChange={(v) => set({ wizardLevel: v })} />
         </Field>
+        <Field
+          label="Prestige class caster levels"
+          group
+          hint={`Levels in a prestige class that add +1 level of wizard spellcasting. Spells per day use caster level ${casterLevel(c)}; free level-up spells still come from wizard levels.`}
+        >
+          <Stepper
+            label="Prestige class caster levels"
+            value={c.extraCasterLevels ?? 0}
+            min={0}
+            max={19}
+            onChange={(v) => set({ extraCasterLevels: v || undefined })}
+          />
+        </Field>
+      </Card>
+
+      <Card className="space-y-4">
+        <h2 className="font-display text-lg text-leather">Casting</h2>
+        <Field label="Bonus spells and DCs use">
+          <select
+            className={inputClass}
+            value={c.customCasting ? 'custom' : 'int'}
+            onChange={(e) => {
+              const m = abilityModifier(totalInt)
+              set({ customCasting: e.target.value === 'custom' ? { bonusSpells: m, dc: m } : undefined })
+            }}
+          >
+            <option value="int">Intelligence modifier</option>
+            <option value="custom">Custom modifiers</option>
+          </select>
+        </Field>
+        {c.customCasting && (
+          <>
+            <Field label="Modifier for spells per day" group hint="Sets bonus spells, like an ability modifier on the bonus spells table.">
+              <Stepper
+                label="Modifier for spells per day"
+                value={c.customCasting.bonusSpells}
+                min={-5}
+                max={20}
+                onChange={(v) => set({ customCasting: { ...c.customCasting!, bonusSpells: v } })}
+              />
+            </Field>
+            <Field label="Modifier for spell DCs" group>
+              <Stepper
+                label="Modifier for spell DCs"
+                value={c.customCasting.dc}
+                min={-5}
+                max={30}
+                onChange={(v) => set({ customCasting: { ...c.customCasting!, dc: v } })}
+              />
+            </Field>
+            <p className="text-xs text-ink/60">For classes like the Tainted Scholar. There is no minimum Intelligence to cast; Intelligence only sets your starting spells.</p>
+          </>
+        )}
+        <p className="text-sm text-ink/70">
+          Spell DC = 10 + spell level {signed(dcModifier(c))}
+          {c.customCasting ? ` · bonus spells as for ${signed(bonusSpellModifier(c))}` : ''}
+        </p>
       </Card>
 
       <Card className="space-y-4">
@@ -91,7 +152,11 @@ export function CharacterForm({
             {totalInt} <span className="text-base text-ink/60">({signed(abilityModifier(totalInt))})</span>
           </span>
         </div>
-        <Field group label="Intelligence score" hint="Your current score, including your racial modifier and level-up increases. Item and tome bonuses go below.">
+        <Field
+          group
+          label="Intelligence score"
+          hint={`Your current score, including your racial modifier and level-up increases. Item and tome bonuses go below.${c.customCasting ? ' With custom modifiers, Intelligence only sets your starting spells.' : ''}`}
+        >
           <Stepper label="Intelligence score" value={c.int.base} min={3} max={50} onChange={(v) => setInt({ base: v })} />
         </Field>
         <div className="grid grid-cols-2 gap-3">

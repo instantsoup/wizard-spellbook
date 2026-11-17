@@ -2,7 +2,7 @@
 // learned spells and what they cost.
 
 import type { Spell } from '../data/spell-schema'
-import { effectiveInt, isProhibited } from './character'
+import { casterLevel, isProhibited, meetsCastingMinimum } from './character'
 import { maxSpellLevel, minIntForSpellLevel } from './tables'
 import { check, FREE_METHODS, type AcquisitionMethod, type KnownSpell, type RuleCheck, type WizardCharacter } from './types'
 
@@ -83,7 +83,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
   if (known.some((k) => k.spellId === spell.id)) errors.push(`${spell.name} is already in your book.`)
   if (isProhibited(c, spell.school)) errors.push(`${spell.school} is a prohibited school.`)
 
-  const castable = maxSpellLevel(c.wizardLevel)
+  const castable = maxSpellLevel(casterLevel(c))
   switch (req.method) {
     case 'starting-cantrip':
       if (spell.level !== 0) errors.push('Only 0-level spells can be starting cantrips.')
@@ -113,7 +113,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
       if (spell.level > castable) errors.push(`${spell.name} is level ${spell.level}; you can only learn spells up to level ${castable}.`)
   }
 
-  if (effectiveInt(c) < minIntForSpellLevel(spell.level)) {
+  if (!meetsCastingMinimum(c, spell.level)) {
     warnings.push(`You need Int ${minIntForSpellLevel(spell.level)} to prepare this spell.`)
   }
   return check(errors, warnings)

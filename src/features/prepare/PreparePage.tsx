@@ -52,7 +52,7 @@ export function PreparePage({ character }: { character: CharacterRecord }) {
 
       {check.warnings.length > 0 && (
         <Card className="mb-4 flex items-center justify-between gap-3 border-rubric/30">
-          <p className="text-sm">Your level or Int changed, so your slots changed too.</p>
+          <p className="text-sm">Your level or casting ability changed, so your slots changed too.</p>
           <Button variant="secondary" onClick={() => save(reconcileDay(character, day.slots, false))}>
             Update
           </Button>
@@ -75,7 +75,7 @@ export function PreparePage({ character }: { character: CharacterRecord }) {
             <div className="mb-1 flex items-baseline justify-between border-b border-leather/30">
               <h2 className="font-display text-lg text-leather">{levelLabel(l.spellLevel)}</h2>
               <span className="text-xs text-ink/60">
-                {u?.prepared ?? 0}/{l.total} · {l.base} base{l.bonus ? ` + ${l.bonus} bonus` : ''}
+                DC {l.dc} · {u?.prepared ?? 0}/{l.total} · {l.base} base{l.bonus ? ` + ${l.bonus} bonus` : ''}
                 {l.specialist ? ` + ${l.specialist} ${SCHOOL_STYLE[character.specialty!].abbr}` : ''}
               </span>
             </div>

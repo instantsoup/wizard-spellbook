@@ -1,5 +1,5 @@
-import { effectiveInt } from './character'
-import { abilityModifier, baseSpellsPerDay, bonusSpells, maxSpellLevel, minIntForSpellLevel } from './tables'
+import { bonusSpellModifier, casterLevel, meetsCastingMinimum, spellDc } from './character'
+import { baseSpellsPerDay, bonusSpells, maxSpellLevel } from './tables'
 import type { SlotKind, WizardCharacter } from './types'
 
 export interface LevelSlots {
@@ -10,16 +10,18 @@ export interface LevelSlots {
   total: number
   /** Int is below 10 + spell level: the slots exist but can't be used. */
   locked: boolean
+  /** Save DC for spells of this level. */
+  dc: number
 }
 
 /** Slots per day for every spell level the wizard has access to (0 to max). */
 export function computeSlots(c: WizardCharacter): LevelSlots[] {
-  const castInt = effectiveInt(c)
-  const bonusMod = abilityModifier(castInt)
+  const bonusMod = bonusSpellModifier(c)
+  const cl = casterLevel(c)
   const result: LevelSlots[] = []
 
-  for (let spellLevel = 0; spellLevel <= maxSpellLevel(c.wizardLevel); spellLevel++) {
-    const base = baseSpellsPerDay(c.wizardLevel, spellLevel) ?? 0
+  for (let spellLevel = 0; spellLevel <= maxSpellLevel(cl); spellLevel++) {
+    const base = baseSpellsPerDay(cl, spellLevel) ?? 0
     const bonus = bonusSpells(bonusMod, spellLevel)
     // PHB: one extra spell of the specialty school per spell level, cantrips included.
     const specialist = c.specialty ? 1 : 0
@@ -29,7 +31,8 @@ export function computeSlots(c: WizardCharacter): LevelSlots[] {
       bonus,
       specialist,
       total: base + bonus + specialist,
-      locked: castInt < minIntForSpellLevel(spellLevel),
+      locked: !meetsCastingMinimum(c, spellLevel),
+      dc: spellDc(c, spellLevel),
     })
   }
   return result

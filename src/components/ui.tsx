@@ -106,7 +106,8 @@ export function Stepper({
         value={draft ?? value}
         onFocus={(e) => e.target.select()}
         onChange={(e) => {
-          const text = e.target.value.replace(/[^0-9]/g, '')
+          const raw = e.target.value
+          const text = (min < 0 && raw.trim().startsWith('-') ? '-' : '') + raw.replace(/[^0-9]/g, '')
           setDraft(text)
           const n = parseInt(text, 10)
           if (!Number.isNaN(n) && n >= min && n <= max) onChange(n)
