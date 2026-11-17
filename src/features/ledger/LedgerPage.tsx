@@ -21,6 +21,14 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
     .filter((k) => k.costGp > 0)
     .map((k) => ({ key: k.id, date: k.addedAt, item: byId.get(k.spellId)?.name ?? k.spellId, kind: METHOD_LABEL[k.method], gp: k.costGp, note: k.note, level: k.spellLevel }))
     .sort((a, b) => b.date - a.date)
+  const csvRows = known.map((k) => ({
+    date: k.addedAt,
+    item: byId.get(k.spellId)?.name ?? k.spellId,
+    level: k.spellLevel,
+    kind: k.method === 'levelup-free' && k.freePickLevel ? `Level ${k.freePickLevel} pick` : METHOD_LABEL[k.method],
+    gp: k.costGp,
+    note: k.note,
+  }))
   const shown = showAll ? rows : rows.slice(0, 25)
 
   return (
@@ -65,19 +73,19 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
 
       <div className="mb-2 mt-6 flex items-baseline justify-between">
         <h2 className="font-display text-lg text-leather">Spells paid for</h2>
-        {rows.length > 0 && (
+        {known.length > 0 && (
           <Button
             variant="ghost"
             className="text-sm"
             onClick={() =>
               downloadText(
-                ledgerCsv(rows.map((r) => ({ date: r.date, item: r.item, kind: r.kind, gp: r.gp, note: r.note }))),
+                ledgerCsv(csvRows),
                 `${character.name.replace(/[^\w-]+/g, '-')}-ledger.csv`,
                 'text/csv',
               )
             }
           >
-            Export CSV
+            Export all spells (CSV)
           </Button>
         )}
       </div>

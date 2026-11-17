@@ -25,14 +25,15 @@ export function ledgerSummary(known: KnownSpell[]): LedgerSummary {
 }
 
 /** CSV of every paid spell, for spreadsheets. */
-export function ledgerCsv(rows: { date: number; item: string; kind: string; gp: number; note?: string }[]): string {
+/** Every spell in the book, oldest first; free spells show 0 gp. Ties sort by spell level, then name. */
+export function ledgerCsv(rows: { date: number; item: string; level: number; kind: string; gp: number; note?: string }[]): string {
   const cell = (v: string | number) => {
     const s = String(v)
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
   }
-  const lines = [['Date', 'Spell', 'Learned', 'Gold (gp)', 'Note']]
-  for (const r of [...rows].sort((a, b) => a.date - b.date)) {
-    lines.push([new Date(r.date).toISOString().slice(0, 10), r.item, r.kind, String(r.gp), r.note ?? ''])
+  const lines = [['Date', 'Spell', 'Spell level', 'Learned', 'Gold (gp)', 'Note']]
+  for (const r of [...rows].sort((a, b) => a.date - b.date || a.level - b.level || a.item.localeCompare(b.item))) {
+    lines.push([new Date(r.date).toISOString().slice(0, 10), r.item, String(r.level), r.kind, String(r.gp), r.note ?? ''])
   }
   return lines.map((l) => l.map(cell).join(',')).join('\n') + '\n'
 }
