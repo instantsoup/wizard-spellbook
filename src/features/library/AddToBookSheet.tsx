@@ -82,7 +82,7 @@ export function AddToBookSheet({
               >
                 {freeOptions.map((s) => (
                   <option key={s.wizardLevel} value={s.wizardLevel}>
-                    {s.wizardLevel === 1 ? 'Starting spell (1st level)' : `Wizard level ${s.wizardLevel}`} · {s.remaining} left
+                    {s.wizardLevel === 1 ? 'Starting spell (1st level)' : `Level ${s.wizardLevel} pick`} · {s.remaining} left
                   </option>
                 ))}
               </select>

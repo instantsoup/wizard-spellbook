@@ -89,7 +89,7 @@ export function CharacterForm({
         <Field
           label="Prestige class caster levels"
           group
-          hint={`Levels in a prestige class that add +1 level of wizard spellcasting. Spells per day use caster level ${casterLevel(c)}; free level-up spells still come from wizard levels.`}
+          hint={`Levels in a prestige class that add +1 level of wizard spellcasting. Your caster level is ${casterLevel(c)}: it sets spells per day, and each level after 1st gives two free spells.`}
         >
           <Stepper
             label="Prestige class caster levels"

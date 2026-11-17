@@ -60,7 +60,7 @@ describe('characters', () => {
       d,
     )
     expect(good.ok).toBe(false)
-    expect(good.errors[0]).toMatch(/No free picks left from wizard level 3/)
+    expect(good.errors[0]).toMatch(/No free picks left from level 3/)
   })
 
   it('deleting a character removes its spells and picks another active one', async () => {

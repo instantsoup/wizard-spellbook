@@ -65,7 +65,7 @@ export interface KnownSpell {
   /** Sor/Wiz level when learned. */
   spellLevel: number
   method: AcquisitionMethod
-  /** Which wizard level granted this free pick (1 for starting picks). */
+  /** Which caster level granted this free pick (1 for starting picks). */
   freePickLevel?: number
   costGp: number
   note?: string

@@ -15,7 +15,7 @@ export function EditEntrySheet({ entry, name, onClose }: { entry: KnownSpellReco
     <Sheet title={name} onClose={onClose}>
       <p className="-mt-2 mb-4 text-sm text-ink/70">
         {METHOD_LABEL[entry.method]}
-        {entry.method === 'levelup-free' && entry.freePickLevel ? ` (wizard level ${entry.freePickLevel})` : ''} ·{' '}
+        {entry.method === 'levelup-free' && entry.freePickLevel ? ` (level ${entry.freePickLevel})` : ''} ·{' '}
         {free ? 'free' : gp(entry.costGp)} · added {new Date(entry.addedAt).toLocaleDateString()}
       </p>
       <Field label="Note">

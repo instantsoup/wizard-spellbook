@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { bonusSpellModifier, casterLevel, dcModifier, meetsCastingMinimum, spellDc, validateCharacter } from './character'
 import { evoker5, generalist1, S } from './fixtures'
-import { canLearn } from './known'
+import { canLearn, freePickStatus } from './known'
 import { computeSlots } from './slots'
 
 describe('casting modifier and caster level', () => {
@@ -24,10 +24,13 @@ describe('casting modifier and caster level', () => {
     expect(meetsCastingMinimum({ ...scholar, customCasting: undefined }, 1)).toBe(false)
   })
 
-  it('prestige class levels add to spells per day but not to free picks', () => {
+  it('prestige class levels add to spells per day and free picks', () => {
     const c = { ...evoker5, extraCasterLevels: 3 }
     expect(casterLevel(c)).toBe(8)
     expect(computeSlots(c)).toHaveLength(5) // up to 4th level
+    const picks = freePickStatus(c, [])
+    expect(picks.map((p) => p.wizardLevel)).toEqual([1, 2, 3, 4, 5, 6, 7, 8])
+    expect(picks.at(-1)?.maxSpellLevel).toBe(4)
     expect(casterLevel({ ...evoker5, wizardLevel: 18, extraCasterLevels: 5 })).toBe(20)
     expect(validateCharacter({ ...evoker5, extraCasterLevels: -1 }).ok).toBe(false)
   })

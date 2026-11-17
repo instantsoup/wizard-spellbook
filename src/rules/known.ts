@@ -6,11 +6,15 @@ import { casterLevel, isProhibited, meetsCastingMinimum } from './character'
 import { maxSpellLevel, minIntForSpellLevel } from './tables'
 import { check, FREE_METHODS, type AcquisitionMethod, type KnownSpell, type RuleCheck, type WizardCharacter } from './types'
 
-/** Free picks granted at each wizard level: 3 + Int mod (at 1st) at level 1, then 2 per level. */
+/**
+ * Free picks granted at each caster level: 3 + Int mod (at 1st) at level 1, then 2 per level.
+ * Prestige class levels that add wizard spellcasting count too (the "as if you had also gained a
+ * level in an arcane spellcasting class" wording), so this runs to caster level, not wizard level.
+ */
 export function freePicksGranted(c: WizardCharacter): Map<number, number> {
   const granted = new Map<number, number>()
   granted.set(1, Math.max(0, 3 + c.intModAtLevel1))
-  for (let lvl = 2; lvl <= c.wizardLevel; lvl++) granted.set(lvl, 2)
+  for (let lvl = 2; lvl <= casterLevel(c); lvl++) granted.set(lvl, 2)
   return granted
 }
 
@@ -19,7 +23,7 @@ export interface FreePickStatus {
   granted: number
   used: number
   remaining: number
-  /** Highest spell level a pick from this wizard level may take. */
+  /** Highest spell level a pick from this caster level may take. */
   maxSpellLevel: number
 }
 
@@ -71,7 +75,7 @@ export function startingCantrips(c: WizardCharacter, spells: Spell[]): Spell[] {
 
 export interface LearnRequest {
   method: AcquisitionMethod
-  /** Required for free picks: which wizard level's pick this uses. */
+  /** Required for free picks: which caster level's pick this uses. */
   freePickLevel?: number
 }
 
@@ -95,16 +99,16 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
         errors.push('Choose which level-up this free spell comes from.')
         break
       }
-      if (req.method === 'levelup-free' && lvl < 2) errors.push('Level-up picks start at wizard level 2.')
+      if (req.method === 'levelup-free' && lvl < 2) errors.push('Level-up picks start at level 2.')
       const status = freePickStatus(c, known).find((s) => s.wizardLevel === lvl)
       if (!status) {
-        errors.push(`You haven't reached wizard level ${lvl}.`)
+        errors.push(`You haven't reached caster level ${lvl}.`)
         break
       }
-      if (status.remaining <= 0) errors.push(`No free picks left from wizard level ${lvl}.`)
+      if (status.remaining <= 0) errors.push(`No free picks left from level ${lvl}.`)
       if (lvl === 1 && spell.level !== 1) errors.push('Starting free spells must be 1st level.')
       else if (spell.level > status.maxSpellLevel) {
-        errors.push(`A free pick from wizard level ${lvl} can be at most spell level ${status.maxSpellLevel}.`)
+        errors.push(`A free pick from level ${lvl} can be at most spell level ${status.maxSpellLevel}.`)
       }
       if (spell.level === 0) warnings.push('Cantrips are already in your book for free.')
       break
