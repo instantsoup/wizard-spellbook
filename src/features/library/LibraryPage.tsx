@@ -6,7 +6,7 @@ import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Messages, Page } from '../../components/ui'
 import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
-import { SCHOOLS, type Spell } from '../../data/spell-schema'
+import { CLASS_NAMES, SCHOOLS, type ClassCode, type School, type Spell, type SpellList } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { casterLevel, freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
 import { AddToBookSheet } from './AddToBookSheet'
@@ -32,9 +32,27 @@ const loadFilters = (): LibraryFilters => {
 const toggle = <T,>(list: T[], x: T) => (list.includes(x) ? list.filter((y) => y !== x) : [...list, x])
 const PAGE = 60
 
-export function LibraryPage({ character }: { character: CharacterRecord }) {
-  const known = useKnownSpells(character.id)
-  const { spells, loading, error } = useSpells()
+// Class lists to browse without a character. "Wiz" is the sorcerer/wizard list.
+const BROWSE_LISTS: { value: SpellList; label: string }[] = [
+  { value: 'all', label: 'All classes' },
+  ...(['Wiz', 'Clr', 'Drd', 'Brd', 'Pal', 'Rgr'] as ClassCode[]).map((c) => ({ value: c, label: c === 'Wiz' ? 'Sor/Wiz' : CLASS_NAMES[c] })),
+]
+const LIST_KEY = 'libraryList'
+const loadList = (): SpellList => {
+  try {
+    const v = localStorage.getItem(LIST_KEY) as SpellList | null
+    return v && BROWSE_LISTS.some((l) => l.value === v) ? v : 'all'
+  } catch {
+    return 'all'
+  }
+}
+
+/** The searchable spell library. Without a character it is for browsing every class list. */
+export function LibraryPage({ character }: { character?: CharacterRecord }) {
+  const known = useKnownSpells(character?.id)
+  const [browseList, setBrowseList] = useState<SpellList>(loadList)
+  const list: SpellList = character ? 'Wiz' : browseList
+  const { spells, loading, error } = useSpells(list)
   const [f, setF] = useState<LibraryFilters>(loadFilters)
   const [showMore, setShowMore] = useState(false)
   const [openId, setOpenId] = useState<string>()
@@ -55,12 +73,24 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
     return () => clearTimeout(t)
   }, [toast])
 
-  const index = useMemo(() => buildSearchIndex(spells.filter((s) => !isProhibited(character, s.school))), [spells, character])
+  useEffect(() => {
+    try {
+      localStorage.setItem(LIST_KEY, browseList)
+    } catch {
+      /* not remembered */
+    }
+  }, [browseList])
+
+  const prohibited = (s: School) => !!character && isProhibited(character, s)
   // Spells from prohibited schools never appear anywhere in the Library.
-  const available = useMemo(() => spells.filter((s) => !isProhibited(character, s.school)), [spells, character])
+  const available = useMemo(() => spells.filter((s) => !(character && isProhibited(character, s.school))), [spells, character])
+  const index = useMemo(() => buildSearchIndex(available), [available])
   const options = useMemo(() => filterOptions(available), [available])
   const knownIds = useMemo(() => new Set((known ?? []).map((k) => k.spellId)), [known])
-  const results = useMemo(() => filterSpells(spells, f, { character, knownIds, index }), [spells, f, character, knownIds, index])
+  const results = useMemo(
+    () => filterSpells(spells, f, { character, knownIds, index, anyLevel: list === 'all' }),
+    [spells, f, character, knownIds, index, list],
+  )
 
   if (loading || !known) return <Loading what="Opening the library" />
   if (error) return <Page title="Library"><Messages errors={[error]} /></Page>
@@ -69,8 +99,8 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
     setF((prev) => ({ ...prev, ...patch }))
     setLimit(PAGE)
   }
-  const castable = maxSpellLevel(casterLevel(character))
-  const picks = freePickStatus(character, known).filter((s) => s.remaining > 0)
+  const castable = character ? maxSpellLevel(casterLevel(character)) : 9
+  const picks = character ? freePickStatus(character, known).filter((s) => s.remaining > 0) : []
   const freeLeft = picks.reduce((n, s) => n + s.remaining, 0)
   // Group picks by the highest spell level they can take.
   const byMax = [...picks.reduce((m, p) => m.set(p.maxSpellLevel, (m.get(p.maxSpellLevel) ?? 0) + p.remaining), new Map<number, number>())].sort(
@@ -79,7 +109,35 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
   const moreCount = (f.without.length ? 1 : 0) + (f.sources.length ? 1 : 0) + (f.subschool ? 1 : 0) + (f.descriptor ? 1 : 0)
 
   return (
-    <Page title="Library" subtitle={`${available.length} spells you can learn from`} actions={<Link to="/spells"><Button variant="secondary">My spells</Button></Link>}>
+    <Page
+      title="Library"
+      subtitle={character ? `${available.length} spells you can learn from` : `${available.length} spells`}
+      actions={<Link to="/spells"><Button variant="secondary">My spells</Button></Link>}
+    >
+      {!character && (
+        <>
+          <Card className="mb-3 flex items-center justify-between gap-3 text-sm">
+            <p>Browsing every spell. Create a character to keep a spellbook.</p>
+            <Link to="/setup" className="shrink-0">
+              <Button>Create</Button>
+            </Link>
+          </Card>
+          <div className="mb-2 flex flex-wrap gap-1.5" aria-label="Class list">
+            {BROWSE_LISTS.map((l) => (
+              <Chip
+                key={l.value}
+                selected={browseList === l.value}
+                onClick={() => {
+                  setBrowseList(l.value)
+                  setLimit(PAGE)
+                }}
+              >
+                {l.label}
+              </Chip>
+            ))}
+          </div>
+        </>
+      )}
       {freeLeft > 0 && (
         <Card className="mb-3 border-rubric/30 text-sm">
           <p>
@@ -110,7 +168,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         ))}
       </div>
       <div className="mb-2 flex flex-wrap gap-1.5" aria-label="School">
-        {SCHOOLS.filter((s) => !isProhibited(character, s)).map((s) => (
+        {SCHOOLS.filter((s) => !prohibited(s)).map((s) => (
           <Chip key={s} selected={f.schools.includes(s)} color={SCHOOL_STYLE[s].color} onClick={() => set({ schools: toggle(f.schools, s) })}>
             <span className="inline-flex items-center gap-1">
               <SchoolIcon school={s} />
@@ -120,12 +178,16 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         ))}
       </div>
       <div className="mb-2 flex flex-wrap gap-1.5">
-        <Chip selected={f.notInBook} onClick={() => set({ notInBook: !f.notInBook })}>
-          Not in book
-        </Chip>
-        <Chip selected={f.castableNow} onClick={() => set({ castableNow: !f.castableNow })}>
-          Castable now
-        </Chip>
+        {character && (
+          <>
+            <Chip selected={f.notInBook} onClick={() => set({ notInBook: !f.notInBook })}>
+              Not in book
+            </Chip>
+            <Chip selected={f.castableNow} onClick={() => set({ castableNow: !f.castableNow })}>
+              Castable now
+            </Chip>
+          </>
+        )}
         <Chip selected={showMore || moreCount > 0} onClick={() => setShowMore(!showMore)}>
           More{moreCount ? ` (${moreCount})` : ''} {showMore ? '▴' : '▾'}
         </Chip>
@@ -190,6 +252,17 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
         {results.slice(0, limit).map((s) => {
           const inBook = knownIds.has(s.id)
           const tooHigh = s.level > castable
+          if (!character) {
+            return (
+              <SpellRow
+                key={s.id}
+                spell={s}
+                open={openId === s.id}
+                onToggle={() => setOpenId(openId === s.id ? undefined : s.id)}
+                aside={list === 'all' ? undefined : <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Level {s.level}</span>}
+              />
+            )
+          }
           return (
             <SpellRow
               key={s.id}
@@ -227,7 +300,7 @@ export function LibraryPage({ character }: { character: CharacterRecord }) {
       )}
       {results.length === 0 && <p className="py-8 text-center text-ink/60">No spells match.</p>}
 
-      {adding && (
+      {adding && character && (
         <AddToBookSheet
           character={character}
           spell={adding}

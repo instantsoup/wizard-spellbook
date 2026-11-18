@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { evoker5, S } from '../../rules/fixtures'
 import { EMPTY_FILTERS, activeFilterCount, filterSpells } from './filters'
+import { spellsForClass } from '../../data/spell-schema'
 
 const spells = Object.values(S).map((s) =>
   s.id === 'fireball' ? { ...s, descriptors: ['Fire'], components: ['V', 'S', 'M'], summary: '1d6 damage per level, 20-ft. radius.' } : s,
@@ -44,4 +45,22 @@ describe('filterSpells', () => {
 it('counts active filter groups', () => {
   expect(activeFilterCount(EMPTY_FILTERS)).toBe(0)
   expect(activeFilterCount({ ...EMPTY_FILTERS, levels: [1, 2], notInBook: true })).toBe(2)
+})
+
+describe('browsing without a character', () => {
+  const cure = { ...S.mageArmor, id: 'cure', name: 'Cure', school: 'Conjuration' as const, levels: { Clr: 1, Rgr: 2 } }
+  const records = [cure, { ...S.daze }, { ...S.fireball, levels: { Sor: 3, Wiz: 3 }, domains: { Fire: 2 } }]
+
+  it('shows every spell on the "all" list at its lowest level, prohibited schools included', () => {
+    const all = spellsForClass(records, 'all')
+    expect(all.map((s) => [s.id, s.level])).toEqual([['cure', 1], ['daze', 0], ['fireball', 2]])
+    expect(filterSpells(all, EMPTY_FILTERS, {})).toHaveLength(3)
+  })
+
+  it('matches a level filter on any list, and ignores book filters', () => {
+    const all = spellsForClass(records, 'all')
+    expect(filterSpells(all, { ...EMPTY_FILTERS, levels: [2] }, { anyLevel: true }).map((s) => s.id)).toEqual(['cure', 'fireball'])
+    expect(filterSpells(all, { ...EMPTY_FILTERS, levels: [2] }, {}).map((s) => s.id)).toEqual(['fireball'])
+    expect(filterSpells(all, { ...EMPTY_FILTERS, notInBook: true, castableNow: true }, {})).toHaveLength(3)
+  })
 })

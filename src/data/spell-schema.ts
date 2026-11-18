@@ -87,13 +87,24 @@ export function classLevels(s: Pick<SpellRecord, 'levels' | 'level'>): ClassLeve
   return s.level === undefined ? {} : { Sor: s.level, Wiz: s.level }
 }
 
-/** The spells on one class list, with `level` set to that class's level. */
-export function spellsForClass(records: SpellRecord[], cls: ClassCode): Spell[] {
+/** A class list, or every spell ('all'). */
+export type SpellList = ClassCode | 'all'
+
+/** Every level a spell has, on any class list or domain. */
+export function allLevels(s: Pick<SpellRecord, 'levels' | 'level' | 'domains'>): number[] {
+  return [...new Set([...Object.values(classLevels(s)), ...Object.values(s.domains ?? {})])] as number[]
+}
+
+/**
+ * The spells on one class list, with `level` set to that class's level. For 'all', every
+ * spell, with `level` set to its lowest level on any list.
+ */
+export function spellsForClass(records: SpellRecord[], cls: SpellList): Spell[] {
   const out: Spell[] = []
   for (const r of records) {
     const levels = classLevels(r)
-    const level = levels[cls]
-    if (level === undefined) continue
+    const level = cls === 'all' ? Math.min(...allLevels(r)) : levels[cls]
+    if (level === undefined || !Number.isFinite(level)) continue
     const { level: _legacy, ...rest } = r
     out.push({ ...rest, levels, level })
   }

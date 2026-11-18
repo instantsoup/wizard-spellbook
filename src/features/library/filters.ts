@@ -1,5 +1,5 @@
 import MiniSearch from 'minisearch'
-import type { School, Spell } from '../../data/spell-schema'
+import { allLevels, type School, type Spell } from '../../data/spell-schema'
 import { casterLevel, isProhibited, maxSpellLevel, meetsCastingMinimum, type WizardCharacter } from '../../rules'
 
 export type ExcludableComponent = 'V' | 'S' | 'M' | 'F' | 'XP'
@@ -52,16 +52,22 @@ export function buildSearchIndex(spells: Spell[]) {
   return index
 }
 
-/** Applies filters (prohibited schools never appear); with a search query, results are ordered by relevance. */
+/**
+ * Applies filters (prohibited schools never appear); with a search query, results are ordered
+ * by relevance. Without a character (browsing), the book and castable filters do nothing;
+ * with `anyLevel` (every class list shown), a level filter matches a spell's level on any list.
+ */
 export function filterSpells(
   spells: Spell[],
   f: LibraryFilters,
-  ctx: { character: WizardCharacter; knownIds: ReadonlySet<string>; index?: MiniSearch<Spell> },
+  ctx: { character?: WizardCharacter; knownIds?: ReadonlySet<string>; index?: MiniSearch<Spell>; anyLevel?: boolean },
 ): Spell[] {
-  const { character, knownIds } = ctx
-  const castable = maxSpellLevel(casterLevel(character))
+  const { character, knownIds = new Set<string>() } = ctx
+  const castable = character ? maxSpellLevel(casterLevel(character)) : 9
+  const prohibited = (s: School) => !!character && isProhibited(character, s)
   // A remembered school filter may name a school that is now prohibited: ignore it.
-  const schools = f.schools.filter((s) => !isProhibited(character, s))
+  const schools = f.schools.filter((s) => !prohibited(s))
+  const levelMatch = (s: Spell) => (ctx.anyLevel ? allLevels(s).some((l) => f.levels.includes(l)) : f.levels.includes(s.level))
 
   let ordered = spells
   const q = f.query.trim()
@@ -78,11 +84,11 @@ export function filterSpells(
 
   return ordered.filter(
     (s) =>
-      (!f.levels.length || f.levels.includes(s.level)) &&
+      (!f.levels.length || levelMatch(s)) &&
       (!schools.length || schools.includes(s.school)) &&
-      (!f.notInBook || !knownIds.has(s.id)) &&
-      (!f.castableNow || (s.level <= castable && meetsCastingMinimum(character, s.level))) &&
-      !isProhibited(character, s.school) &&
+      (!character || !f.notInBook || !knownIds.has(s.id)) &&
+      (!character || !f.castableNow || (s.level <= castable && meetsCastingMinimum(character, s.level))) &&
+      !prohibited(s.school) &&
       !f.without.some((c) => s.components.includes(c)) &&
       (!f.sources.length || f.sources.includes(s.source)) &&
       (!f.subschool || s.subschool === f.subschool) &&

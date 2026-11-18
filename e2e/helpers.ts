@@ -15,6 +15,9 @@ export function failOnErrors(page: Page) {
 /** 5th-level Evoker, Int 18, prohibiting Enchantment and Illusion. */
 export async function createEvoker(page: Page, starting = ['Magic Missile', 'Shield']) {
   await page.goto('./')
+  // With no character the app opens on the Library.
+  await page.waitForURL(/#\/library/)
+  await page.getByRole('link', { name: 'Create' }).click()
   await page.getByPlaceholder('e.g. Mialee').fill('Mialee')
   // "Intelligence when you started" only matters above 1st level
   await expect(page.getByText('Intelligence when you started')).toHaveCount(0)

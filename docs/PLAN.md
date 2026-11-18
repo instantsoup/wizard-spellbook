@@ -459,6 +459,9 @@ Only the spellbook's own costs are tracked: no scroll prices or other expenses.
    its own list (the wizard sees exactly the same Sor/Wiz spells as before). 2,336 spells:
    775 cleric, 558 druid, 406 bard, 153 paladin, 173 ranger, 1,438 wizard. The PDF
    cross-check covered wizard spells only; the other lists are unchecked.
+   Without a character the app opens on the Library for browsing: every spell, or one class
+   list (All classes, Sor/Wiz, Cleric, Druid, Bard, Paladin, Ranger), with only the Library
+   and More tabs. Book, Prepare and Today appear once there is a character.
 3. Cleric and druid mode: prepare from the whole class list, domain slots, spontaneous
    cure/inflict and summon nature's ally.
 4. Bard and sorcerer mode: spells known and spontaneous casting.

@@ -3,7 +3,7 @@ import { useMemo, type ReactNode } from 'react'
 import { levelLine, type Spell } from '../data/spell-schema'
 import { sourceAbbr } from './labels'
 import { renderSpellText } from './markdown'
-import { ordinal, SCHOOL_STYLE } from './schools'
+import { SCHOOL_STYLE } from './schools'
 
 export function schoolLine(s: Spell) {
   return [s.school, s.subschool && `(${s.subschool})`, s.descriptors.length ? `[${s.descriptors.join(', ')}]` : '']
@@ -77,7 +77,7 @@ export function SpellDetails({ spell }: { spell: Spell }) {
   return (
     <div className="text-sm">
       <p className="mb-2 italic" style={{ color: SCHOOL_STYLE[spell.school].color }}>
-        {schoolLine(spell)} · {ordinal(spell.level)}-level
+        {schoolLine(spell)}
       </p>
       <dl className="mb-3 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5">
         {rows

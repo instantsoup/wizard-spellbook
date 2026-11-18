@@ -4,7 +4,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useState } from 'react'
 import { db } from './db'
-import { spellsForClass, validateSpellFile, type ClassCode, type Spell, type SpellRecord } from './spell-schema'
+import { spellsForClass, validateSpellFile, type Spell, type SpellList, type SpellRecord } from './spell-schema'
 
 const base = () => `${import.meta.env.BASE_URL}data/spells/`
 
@@ -26,7 +26,7 @@ export async function fetchBundledSpells(fetcher: typeof fetch = fetch): Promise
 }
 
 /** Merges spell files by id (later lists win) and keeps the spells on one class list. */
-export function mergeSpells(cls: ClassCode, ...lists: SpellRecord[][]): Spell[] {
+export function mergeSpells(cls: SpellList, ...lists: SpellRecord[][]): Spell[] {
   const byId = new Map<string, SpellRecord>()
   for (const list of lists) for (const s of list) byId.set(s.id, s)
   return spellsForClass([...byId.values()], cls).sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
@@ -42,8 +42,8 @@ export interface SpellData {
   error?: string
 }
 
-/** Spells on one class list (the wizard's Sor/Wiz list by default). */
-export function useSpells(cls: ClassCode = 'Wiz'): SpellData {
+/** Spells on one class list (the wizard's Sor/Wiz list by default), or 'all'. */
+export function useSpells(cls: SpellList = 'Wiz'): SpellData {
   const [bundled, setBundled] = useState<SpellRecord[]>()
   const [error, setError] = useState<string>()
   useEffect(() => {

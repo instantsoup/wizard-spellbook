@@ -8,7 +8,7 @@ import { useCharacters, useSetting } from '../../data/hooks'
 import { getTheme, setTheme, type ThemeChoice } from '../../theme'
 import { FEEDBACK_KINDS, feedbackUrl, type FeedbackKind } from './feedback'
 
-export function MorePage({ character }: { character: CharacterRecord }) {
+export function MorePage({ character }: { character?: CharacterRecord }) {
   const navigate = useNavigate()
   const characters = useCharacters() ?? []
   const lastBackupAt = useSetting<number>('lastBackupAt')
@@ -23,7 +23,7 @@ export function MorePage({ character }: { character: CharacterRecord }) {
     const url = feedbackUrl(fbKind, fbTitle, fbDetails, {
       Version: __BUILD_ID__,
       Page: location.hash || '#/',
-      Wizard: `level ${character.wizardLevel}${character.specialty ? `, ${character.specialty}` : ''}`,
+      Wizard: character ? `level ${character.wizardLevel}${character.specialty ? `, ${character.specialty}` : ''}` : 'none',
       Device: navigator.userAgent,
     })
     window.open(url, '_blank', 'noopener')
@@ -43,18 +43,19 @@ export function MorePage({ character }: { character: CharacterRecord }) {
 
   return (
     <Page title="More">
-      <SectionTitle>Wizards</SectionTitle>
+      <SectionTitle>Characters</SectionTitle>
       <Card className="space-y-2">
+        {characters.length === 0 && <p className="text-sm text-ink/70">No characters yet. You can browse the Library without one.</p>}
         {characters.map((c) => (
           <div key={c.id} className="flex items-center justify-between gap-2">
             <button type="button" className="min-h-11 flex-1 text-left" onClick={() => setActiveCharacter(c.id)}>
-              <span className={c.id === character.id ? 'font-semibold text-rubric' : ''}>{c.name}</span>
+              <span className={c.id === character?.id ? 'font-semibold text-rubric' : ''}>{c.name}</span>
               <span className="ml-2 text-sm text-ink/60">
                 Wizard {c.wizardLevel}
                 {c.specialty ? ` · ${c.specialty}` : ''}
               </span>
             </button>
-            {c.id === character.id && (
+            {c.id === character?.id && (
               <Link to="/character">
                 <Button variant="secondary">Edit</Button>
               </Link>
@@ -64,20 +65,22 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         <div className="flex gap-2 pt-2">
           <Link to="/setup" className="flex-1">
             <Button variant="secondary" className="w-full">
-              New wizard
+              New character
             </Button>
           </Link>
-          <Button
-            variant="ghost"
-            className="text-rubric"
-            onClick={async () => {
-              if (!confirm(`Delete ${character.name} and their whole spellbook? This can't be undone.`)) return
-              await deleteCharacter(character.id)
-              navigate('/')
-            }}
-          >
-            Delete {character.name}
-          </Button>
+          {character && (
+            <Button
+              variant="ghost"
+              className="text-rubric"
+              onClick={async () => {
+                if (!confirm(`Delete ${character.name} and their whole spellbook? This can't be undone.`)) return
+                await deleteCharacter(character.id)
+                navigate('/')
+              }}
+            >
+              Delete {character.name}
+            </Button>
+          )}
         </div>
       </Card>
 
@@ -100,13 +103,17 @@ export function MorePage({ character }: { character: CharacterRecord }) {
         </Field>
       </Card>
 
-      <SectionTitle>Gold</SectionTitle>
-      <Card className="flex items-center justify-between gap-3">
-        <p className="text-sm text-ink/70">Everything spent on {character.name}'s spellbook.</p>
-        <Link to="/ledger">
-          <Button variant="secondary">Ledger</Button>
-        </Link>
-      </Card>
+      {character && (
+        <>
+          <SectionTitle>Gold</SectionTitle>
+          <Card className="flex items-center justify-between gap-3">
+            <p className="text-sm text-ink/70">Everything spent on {character.name}'s spellbook.</p>
+            <Link to="/ledger">
+              <Button variant="secondary">Ledger</Button>
+            </Link>
+          </Card>
+        </>
+      )}
 
       <SectionTitle>Spells</SectionTitle>
       <Card className="flex items-center justify-between gap-3">
