@@ -352,7 +352,7 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
      about (OGL notice).
 
 **Look and feel:** a parchment-and-ink theme with a serif heading font, a dark
-"candlelight" theme, consistent school colours and glyphs, and tap targets of at
+"candlelight" theme, consistent school colours, and tap targets of at
 least 44 px.
 
 ---
@@ -439,7 +439,8 @@ Only the spellbook's own costs are tracked: no scroll prices or other expenses.
 - Candlelight (dark) theme: follows the phone, or can be forced under More →
   Appearance. Every colour is a theme token, school colours included, and the theme
   is applied before first paint.
-- A glyph for each school in spell rows, filter chips and Book headers.
+- School colours and abbreviations in spell rows, filter chips and Book headers (the
+  school glyphs were later removed to save space).
 - A one-time "How it works" card, and a backup reminder every 14 days (snoozable).
 - No horizontal scrolling anywhere: filter chips wrap, and spells per day is a
   wrapping grid.

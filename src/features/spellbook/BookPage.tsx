@@ -1,4 +1,3 @@
-import { SchoolIcon } from '../../components/SchoolIcon'
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gp, METHOD_LABEL } from '../../components/labels'
@@ -151,10 +150,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                 onClick={() => setFilter(filter === g ? undefined : g)}
               >
                 {typeof g === 'string' ? (
-                  <span className="inline-flex items-center gap-1">
-                    <SchoolIcon school={g} />
-                    {SCHOOL_STYLE[g].abbr}
-                  </span>
+                  SCHOOL_STYLE[g].abbr
                 ) : g === 0 ? (
                   'Cantrips'
                 ) : (
@@ -177,10 +173,7 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                 style={{ color: typeof g === 'string' ? SCHOOL_STYLE[g].color : 'var(--color-leather)' }}
               >
                 {typeof g === 'string' ? (
-                  <span className="inline-flex items-center gap-2">
-                    <SchoolIcon school={g} className="size-5" />
-                    {g}
-                  </span>
+                  g
                 ) : (
                   levelLabel(g)
                 )}

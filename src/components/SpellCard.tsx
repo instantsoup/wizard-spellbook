@@ -1,4 +1,3 @@
-import { SchoolIcon } from './SchoolIcon'
 import { useMemo, type ReactNode } from 'react'
 import { levelLine, type Spell } from '../data/spell-schema'
 import { sourceAbbr } from './labels'
@@ -37,8 +36,7 @@ export function SpellRow({
         <button type="button" onClick={onToggle} aria-expanded={open} className="min-w-0 flex-1 py-2.5 text-left">
           <div className="flex items-baseline gap-2">
             <span className="truncate font-semibold text-ink">{spell.name}</span>
-            <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold uppercase tracking-wide" style={{ color: style.color }}>
-              <SchoolIcon school={spell.school} />
+            <span className="shrink-0 text-xs font-semibold uppercase tracking-wide" style={{ color: style.color }}>
               {style.abbr}
             </span>
             <span className="shrink-0 text-xs text-ink/50">{spell.components.join(', ')}</span>
