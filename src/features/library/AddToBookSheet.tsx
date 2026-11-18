@@ -66,7 +66,7 @@ export function AddToBookSheet({
   return (
     <Sheet title={`Add ${spell.name}`} onClose={onClose}>
       <p className="-mt-2 mb-4 text-sm text-ink/70">
-        {spell.school} · {spell.level === 0 ? 'cantrip' : `${ordinal(spell.level)}-level`}
+        {spell.school} · {spell.level === 0 ? '0-level' : `${ordinal(spell.level)}-level`}
       </p>
 
       <fieldset className="mb-4 space-y-2">

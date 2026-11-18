@@ -13,7 +13,7 @@ export function SlotPreview({ character }: { character: WizardCharacter }) {
       <ul className="grid grid-cols-5 gap-1.5">
         {slots.map((l) => (
           <li key={l.spellLevel} className="rounded-lg border border-ink/15 bg-surface/40 px-1 py-1 text-center">
-            <div className="text-[11px] text-ink/60">{l.spellLevel === 0 ? 'Cantrip' : `Level ${l.spellLevel}`}</div>
+            <div className="text-[11px] text-ink/60">{`Level ${l.spellLevel}`}</div>
             <div className={`font-display text-xl leading-tight ${l.locked ? 'text-ink/30 line-through' : 'text-leather'}`}>{l.total}</div>
             <div className="text-[11px] text-ink/55">
               {l.base}

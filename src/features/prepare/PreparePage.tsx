@@ -155,7 +155,7 @@ function SlotRow({
           {spell ? (
             <span className={`block truncate font-semibold ${slot.expended ? 'text-ink/40 line-through' : ''}`}>
               {spell.name}
-              {spell.level < slot.slotLevel && <span className="ml-2 text-xs font-normal text-ink/50">({spell.level === 0 ? 'cantrip' : `level ${spell.level}`})</span>}
+              {spell.level < slot.slotLevel && <span className="ml-2 text-xs font-normal text-ink/50">(level {spell.level})</span>}
               {slot.expended && <span className="ml-2 text-xs font-normal no-underline">cast</span>}
             </span>
           ) : (

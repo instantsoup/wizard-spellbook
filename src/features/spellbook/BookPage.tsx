@@ -151,8 +151,6 @@ export function BookPage({ character }: { character: CharacterRecord }) {
               >
                 {typeof g === 'string' ? (
                   SCHOOL_STYLE[g].abbr
-                ) : g === 0 ? (
-                  'Cantrips'
                 ) : (
                   g
                 )}

@@ -162,7 +162,7 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
       <div className="mb-2 flex flex-wrap gap-1.5" aria-label="Spell level">
         {Array.from({ length: 10 }, (_, l) => (
           <Chip key={l} selected={f.levels.includes(l)} onClick={() => set({ levels: toggle(f.levels, l) })}>
-            {l === 0 ? 'Cantrip' : l}
+            {l}
           </Chip>
         ))}
       </div>

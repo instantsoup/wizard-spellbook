@@ -13,4 +13,5 @@ export const SCHOOL_STYLE: Record<School, { color: string; abbr: string }> = {
 }
 
 export const ordinal = (n: number) => (n === 0 ? '0' : n === 1 ? '1st' : n === 2 ? '2nd' : n === 3 ? '3rd' : `${n}th`)
-export const levelLabel = (n: number) => (n === 0 ? 'Cantrips' : `${ordinal(n)} level`)
+/** Heading for a spell level. 0 is "0 level" (cantrips for arcane casters, orisons for divine). */
+export const levelLabel = (n: number) => (n === 0 ? '0 level' : `${ordinal(n)} level`)

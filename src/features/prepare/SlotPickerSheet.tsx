@@ -7,7 +7,7 @@ import type { Spell } from '../../data/spell-schema'
 import { candidatesForSlot, type PreparedSlot, type WizardCharacter } from '../../rules'
 
 export function slotTitle(slot: Pick<PreparedSlot, 'slotLevel' | 'kind'>, specialty?: string) {
-  const lvl = slot.slotLevel === 0 ? 'Cantrip' : `${ordinal(slot.slotLevel)}-level`
+  const lvl = slot.slotLevel === 0 ? '0-level' : `${ordinal(slot.slotLevel)}-level`
   if (slot.kind === 'specialist') return `${lvl} ${specialty} slot`
   if (slot.kind === 'bonus') return `${lvl} bonus slot`
   return `${lvl} slot`

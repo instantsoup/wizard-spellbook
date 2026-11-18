@@ -96,7 +96,7 @@ function CustomSpellForm({ existing, takenIds }: { existing?: Spell; takenIds: S
               <select className={inputClass} value={form.level} onChange={(e) => set({ level: Number(e.target.value) })}>
                 {Array.from({ length: 10 }, (_, l) => (
                   <option key={l} value={l}>
-                    {l === 0 ? '0 (cantrip)' : l}
+                    {l}
                   </option>
                 ))}
               </select>
