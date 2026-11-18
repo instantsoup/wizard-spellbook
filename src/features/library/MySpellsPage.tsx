@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import { SCHOOL_STYLE } from '../../components/schools'
 import { Button, Card, Messages, Page, SectionTitle } from '../../components/ui'
 import { db } from '../../data/db'
-import { deleteStoredSpell, downloadJson, exportStoredSpells, importSpellFile } from '../../data/storedSpells'
+import { levelLine } from '../../data/spell-schema'
+import { byWizardLevel, deleteStoredSpell, downloadJson, exportStoredSpells, importSpellFile } from '../../data/storedSpells'
 
 export function MySpellsPage() {
   const stored = useLiveQuery(() => db.storedSpells.orderBy('id').toArray(), [])
@@ -26,7 +27,7 @@ export function MySpellsPage() {
     if (confirm(`Delete ${name} from this device?${warn}`)) await deleteStoredSpell(id)
   }
 
-  const sorted = [...(stored ?? [])].sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+  const sorted = [...(stored ?? [])].sort(byWizardLevel)
 
   return (
     <Page title="My spells" subtitle="Imported and custom spells on this device">
@@ -68,7 +69,7 @@ export function MySpellsPage() {
             <div className="min-w-0 flex-1">
               <p className="truncate font-semibold">{s.name}</p>
               <p className="text-xs text-ink/60">
-                Level {s.level} · {s.school} · {s.source} · {s.origin}
+                {levelLine(s)} · {s.school} · {s.source} · {s.origin}
               </p>
             </div>
             <Link to={`/library/custom/${s.id}`}>

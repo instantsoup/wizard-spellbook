@@ -450,6 +450,19 @@ Only the spellbook's own costs are tracked: no scroll prices or other expenses.
   Lighthouse's PWA audit has been removed upstream, so Chrome's own installability
   check is used instead.
 
+**Other casting classes** (in progress)
+1. ✅ Caster class on each character (wizard for now), prestige class caster levels
+   (spells per day and free spells), custom casting score and DC modifier (e.g. Tainted
+   Scholar), spell DCs on Prepare and Today.
+2. ✅ Spell data for every core class: each spell has `levels` per class (`Brd`, `Clr`,
+   `Drd`, `Pal`, `Rgr`, `Sor`, `Wiz`) and cleric `domains`. The app shows each class only
+   its own list (the wizard sees exactly the same Sor/Wiz spells as before). 2,336 spells:
+   775 cleric, 558 druid, 406 bard, 153 paladin, 173 ranger, 1,438 wizard. The PDF
+   cross-check covered wizard spells only; the other lists are unchecked.
+3. Cleric and druid mode: prepare from the whole class list, domain slots, spontaneous
+   cure/inflict and summon nature's ally.
+4. Bard and sorcerer mode: spells known and spontaneous casting.
+
 ---
 
 ## 10. Possible later options (not needed now)
@@ -465,7 +478,7 @@ Only the spellbook's own costs are tracked: no scroll prices or other expenses.
 - Metamagic feats, Spell Mastery, Ring of Wizardry, Pearl of Power.
 - Scroll inventory and the Scribe Scroll feat.
 - A native Android APK built with Capacitor.
-- Sorcerers, other classes, multiclass support.
+- Multiclass casters (two spell lists on one character).
 
 ---
 

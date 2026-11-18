@@ -1,6 +1,6 @@
 import { SchoolIcon } from './SchoolIcon'
 import { useMemo, type ReactNode } from 'react'
-import type { Spell } from '../data/spell-schema'
+import { levelLine, type Spell } from '../data/spell-schema'
 import { sourceAbbr } from './labels'
 import { renderSpellText } from './markdown'
 import { ordinal, SCHOOL_STYLE } from './schools'
@@ -63,7 +63,7 @@ export function SpellRow({
 export function SpellDetails({ spell }: { spell: Spell }) {
   const html = useMemo(() => renderSpellText(spell.description), [spell.description])
   const rows: [string, string | undefined][] = [
-    ['Level', `Sor/Wiz ${spell.level}`],
+    ['Level', levelLine(spell)],
     ['Components', spell.components.join(', ')],
     ['Casting Time', spell.castingTime],
     ['Range', spell.range],

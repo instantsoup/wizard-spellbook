@@ -37,6 +37,7 @@ const spell = (id: string, name: string, school: Spell['school'], level: number)
   name,
   school,
   level,
+  levels: { Sor: level, Wiz: level },
   descriptors: [],
   components: ['V', 'S'],
   description: '-',

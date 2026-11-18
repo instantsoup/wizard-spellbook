@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { slugify, validateSpell, validateSpellFile } from './spell-schema'
+import { levelLine, slugify, spellsForClass, validateSpell, validateSpellFile, type ClassCode, type SpellRecord } from './spell-schema'
 
 const good = {
   id: 'orb-of-fire',
@@ -20,6 +20,17 @@ describe('validateSpell', () => {
   it('rejects bad school, level, components and unknown fields', () => {
     const errors = validateSpell({ ...good, school: 'Wizardry', level: 10, components: ['Q'], colour: 'red' })
     expect(errors).toHaveLength(4)
+  })
+  it('accepts class levels and domains, and rejects unknown classes', () => {
+    const { level: _l, ...noLevel } = good
+    expect(validateSpell({ ...noLevel, levels: { Clr: 3, Sor: 4, Wiz: 4 }, domains: { Fire: 4 } })).toEqual([])
+    expect(validateSpell({ ...noLevel, levels: { Cleric: 3 } })).toHaveLength(1)
+    expect(validateSpell(noLevel)).toHaveLength(1)
+  })
+  it('writes the Level line', () => {
+    expect(levelLine({ levels: { Wiz: 4, Sor: 4, Clr: 3 }, domains: { Fire: 4 } })).toBe('Clr 3, Sor/Wiz 4, Fire 4')
+    expect(levelLine({ level: 2 })).toBe('Sor/Wiz 2')
+    expect(levelLine({ levels: { Wiz: 6 } })).toBe('Wiz 6')
   })
   it('requires lowercase-kebab ids', () => {
     expect(validateSpell({ ...good, id: 'Orb Of Fire' })).toHaveLength(1)
@@ -52,11 +63,20 @@ describe('bundled SRD data', () => {
   it('is valid', () => {
     expect(validateSpellFile(srd)).toEqual([])
   })
-  it('has the 19 PHB cantrips and wizard-only spells', () => {
-    expect(srd.filter((s: { level: number }) => s.level === 0)).toHaveLength(19)
-    const ids = new Set(srd.map((s: { id: string }) => s.id))
-    expect(ids.has('mages-lucubration')).toBe(true)
-    expect(ids.has('fireball')).toBe(true)
+  it('has the 19 PHB wizard cantrips and wizard-only spells', () => {
+    const wiz = spellsForClass(srd, 'Wiz')
+    expect(wiz.filter((s) => s.level === 0)).toHaveLength(19)
+    expect(wiz).toHaveLength(377)
+    const byId = new Map(srd.map((s: SpellRecord) => [s.id, s]))
+    expect(byId.get('mages-lucubration')).toMatchObject({ levels: { Wiz: 6 } })
+    expect(byId.get('fireball')).toMatchObject({ levels: { Sor: 3, Wiz: 3 } })
+  })
+  it('has every core class list and the cleric domains', () => {
+    const count = (c: ClassCode) => spellsForClass(srd, c).length
+    expect([count('Brd'), count('Clr'), count('Drd'), count('Pal'), count('Rgr')]).toEqual([164, 231, 169, 45, 51])
+    const byId = new Map(srd.map((s: SpellRecord) => [s.id, s]))
+    expect(byId.get('cure-light-wounds')).toMatchObject({ levels: { Brd: 1, Clr: 1, Drd: 1, Pal: 1, Rgr: 2 }, domains: { Healing: 1 } })
+    expect(byId.get('dispel-magic')).toMatchObject({ levels: { Brd: 3, Clr: 3, Drd: 4, Sor: 3, Wiz: 3 }, domains: { Magic: 3 } })
   })
 })
 

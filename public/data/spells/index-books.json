@@ -5,7 +5,10 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 0,
+  "levels": {
+   "Sor": 0,
+   "Wiz": 0
+  },
   "components": [
    "S"
   ],
@@ -27,7 +30,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 0,
+  "levels": {
+   "Sor": 0,
+   "Wiz": 0
+  },
   "components": [
    "V",
    "S"
@@ -48,7 +54,10 @@
   "name": "Stick",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 0,
+  "levels": {
+   "Sor": 0,
+   "Wiz": 0
+  },
   "components": [
    "V",
    "S",
@@ -73,7 +82,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -96,7 +109,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -121,7 +137,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -140,7 +159,10 @@
   "name": "Burning Rage",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -161,7 +183,10 @@
   "name": "Create Trap",
   "school": "Conjuration",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -184,7 +209,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -206,7 +234,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -225,7 +256,10 @@
   "name": "Detect Dragonblood",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -246,7 +280,13 @@
   "name": "Detect Incarnum",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Clr": 1,
+   "Pal": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -263,11 +303,42 @@
   "source": "Magic of Incarnum"
  },
  {
+  "id": "detect-vestige",
+  "name": "Detect Vestige",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Clr": 1,
+   "Pal": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "60 ft.",
+  "area": "Cone-shaped emanation",
+  "duration": "Concentration, up to 1 minute/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
+ },
+ {
   "id": "detect-weaponry",
   "name": "Detect Weaponry",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Clr": 1,
+   "Pal": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -288,7 +359,11 @@
   "name": "Discern Bloodline",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -309,7 +384,10 @@
   "name": "Float",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -331,7 +409,11 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -349,7 +431,10 @@
   "name": "Ghostly Reload",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -373,7 +458,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -393,7 +481,10 @@
   "name": "Hoard Gullet",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -413,7 +504,11 @@
   "school": "Illusion",
   "subschool": "Figment",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -433,7 +528,10 @@
   "descriptors": [
    "Water"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -453,7 +551,10 @@
   "name": "Karmic Aura",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -472,7 +573,12 @@
   "name": "Locate City",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Rgr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -489,7 +595,10 @@
   "name": "Mighty Wallop",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -510,7 +619,10 @@
   "name": "Nerveskitter",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -534,7 +646,10 @@
   "descriptors": [
    "Darkness"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -555,7 +670,10 @@
   "name": "Nightshield",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -576,7 +694,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 1,
+  "levels": {
+   "Drd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -597,7 +719,12 @@
   "name": "Peacebond",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Clr": 1,
+   "Pal": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -621,7 +748,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -646,7 +776,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -668,7 +801,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -687,7 +823,12 @@
   "name": "Protection from Incarnum",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Clr": 1,
+   "Pal": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -709,7 +850,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -729,7 +873,10 @@
   "name": "Ray of Clumsiness",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -752,7 +899,10 @@
   "descriptors": [
    "Flame"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -776,7 +926,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 1,
+  "levels": {
+   "Clr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -796,7 +950,11 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -818,7 +976,10 @@
   "name": "Resist Planar Alignment",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -841,7 +1002,11 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Drd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -862,7 +1027,10 @@
   "name": "Scatterspray",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -882,7 +1050,12 @@
   "name": "Scholar's Touch",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Clr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -903,7 +1076,12 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Clr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -925,7 +1103,11 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -948,7 +1130,10 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -969,7 +1154,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 1,
+  "levels": {
+   "Clr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -991,7 +1180,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -1012,7 +1204,10 @@
   "name": "Slide",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V"
   ],
@@ -1034,7 +1229,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1055,7 +1253,11 @@
   "name": "Snowdrift",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Drd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1078,7 +1280,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -1099,7 +1304,10 @@
   "name": "Spirit Worm",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1121,7 +1329,10 @@
   "name": "Spontaneous Search",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1144,7 +1355,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1166,7 +1380,11 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "S"
   ],
@@ -1188,7 +1406,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 1,
+  "levels": {
+   "Clr": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1209,7 +1431,10 @@
   "name": "Targeting Ray",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S",
@@ -1230,7 +1455,10 @@
   "name": "True Casting",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -1248,7 +1476,11 @@
   "name": "Vigilant Slumber",
   "school": "Divination",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Brd": 1,
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -1267,7 +1499,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 1,
+  "levels": {
+   "Sor": 1,
+   "Wiz": 1
+  },
   "components": [
    "V",
    "S"
@@ -1287,7 +1522,10 @@
   "name": "Allied Footsteps",
   "school": "Divination",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1307,7 +1545,10 @@
   "name": "Arcane Turmoil",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1328,7 +1569,10 @@
   "name": "Attentive Alarm",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1349,7 +1593,13 @@
   "name": "Augment Truefriend",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1372,7 +1622,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1395,7 +1648,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1418,7 +1674,11 @@
   "school": "Enchantment",
   "subschool": "Compulsion",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1435,34 +1695,16 @@
   "page": 103
  },
  {
-  "id": "blindsight",
-  "name": "Blindsight",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 action",
-  "range": "Touch",
-  "target": "Creature touched",
-  "duration": "1 minute/level",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Touched creature gains blindsight out to 30 feet.",
-  "description": "Touched creature gains blindsight out to 30 feet.\n\nSummary only. Full text: Savage Species, p. 63.",
-  "source": "Savage Species",
-  "page": 63
- },
- {
   "id": "boiling-blood",
   "name": "Boiling Blood",
   "school": "Transmutation",
   "descriptors": [
    "Fire"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1482,7 +1724,10 @@
   "name": "Bone Chill",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1505,7 +1750,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1527,7 +1777,10 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1549,7 +1802,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1571,7 +1827,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1588,33 +1847,15 @@
   "page": 47
  },
  {
-  "id": "cloud-wings",
-  "name": "Cloud Wings",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 action",
-  "range": "Touch",
-  "target": "Creature touched",
-  "duration": "1 minute/level",
-  "savingThrow": "Fortitude negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Subject's existing fly speed increases by 30 feet.",
-  "description": "Subject's existing fly speed increases by 30 feet.\n\nSummary only. Full text: Savage Species, p. 64.",
-  "source": "Savage Species",
-  "page": 64
- },
- {
   "id": "crystalline-memories",
   "name": "Crystalline Memories",
   "school": "Transmutation",
   "subschool": "Mind-Affecting",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1634,7 +1875,10 @@
   "name": "Divest Essentia",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -1653,7 +1897,10 @@
   "name": "Dragoneye Rune",
   "school": "Universal",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1676,7 +1923,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1697,7 +1947,10 @@
   "name": "Escalating Enfeeblement",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1717,7 +1970,10 @@
   "name": "False Peacebond",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1739,7 +1995,12 @@
   "name": "Frost Weapon",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1761,7 +2022,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1784,7 +2048,11 @@
   "descriptors": [
    "Air"
   ],
-  "level": 2,
+  "levels": {
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1804,7 +2072,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1828,7 +2099,12 @@
    "Fear",
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1852,7 +2128,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1874,7 +2154,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -1896,7 +2179,10 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1918,7 +2204,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1939,7 +2228,11 @@
   "name": "Increase Virulence",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1961,7 +2254,12 @@
   "name": "Insight of Good Fortune",
   "school": "Divination",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -1985,7 +2283,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2009,7 +2310,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2026,33 +2330,16 @@
   "source": "Frostburn"
  },
  {
-  "id": "lions-charge",
-  "name": "Lion's Charge",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "M"
-  ],
-  "castingTime": "1 action",
-  "range": "Touch",
-  "target": "Creature touched",
-  "duration": "1 minute/level",
-  "savingThrow": "Will negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Subject can make a full attack at the end of a charge.",
-  "description": "Subject can make a full attack at the end of a charge.\n\nSummary only. Full text: Savage Species, p. 68.",
-  "source": "Savage Species",
-  "page": 68
- },
- {
   "id": "listening-lorecall",
   "name": "Listening Lorecall",
   "school": "Divination",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Drd": 2,
+   "Rgr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2074,7 +2361,12 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2096,7 +2388,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2118,7 +2413,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2143,7 +2442,12 @@
    "Air",
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2166,7 +2470,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2187,7 +2494,10 @@
   "name": "Portal Alarm",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2211,7 +2521,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -2231,7 +2544,11 @@
   "school": "Enchantment",
   "subschool": "Charm",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2252,7 +2569,10 @@
   "name": "Quick Potion",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2275,7 +2595,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2293,35 +2616,16 @@
   "page": 165
  },
  {
-  "id": "rapid-burrowing",
-  "name": "Rapid Burrowing",
-  "school": "Transmutation",
-  "descriptors": [],
-  "level": 2,
-  "components": [
-   "V",
-   "S",
-   "F"
-  ],
-  "castingTime": "1 action",
-  "range": "Touch",
-  "target": "Creature touched",
-  "duration": "1 minute/level",
-  "savingThrow": "Fortitude negates (harmless)",
-  "spellResistance": "Yes (harmless)",
-  "summary": "Subject's existing burrow speed increases by 20 feet.",
-  "description": "Subject's existing burrow speed increases by 20 feet.\n\nSummary only. Full text: Savage Species, p. 69.",
-  "source": "Savage Species",
-  "page": 69
- },
- {
   "id": "ray-of-ice",
   "name": "Ray of Ice",
   "school": "Evocation",
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2343,7 +2647,10 @@
   "name": "Ray of Sickness",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2367,7 +2674,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2389,7 +2699,10 @@
   "name": "Ray of Weakness",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2410,7 +2723,10 @@
   "name": "Razorfangs",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -2428,7 +2744,10 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2447,7 +2766,10 @@
   "name": "Scale Weakening",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2468,7 +2790,12 @@
   "name": "Scent",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Drd": 2,
+   "Rgr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2490,7 +2817,10 @@
   "name": "Scintillating Scales",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -2508,7 +2838,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2529,7 +2862,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2551,7 +2887,13 @@
   "name": "Share Talents",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Brd": 1,
+   "Clr": 2,
+   "Rgr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2573,7 +2915,10 @@
   "name": "Slide, Greater",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [],
   "range": "Medium (100 ft. + 10 ft./level)",
   "summary": "Move subject 20 feet.",
@@ -2586,7 +2931,10 @@
   "name": "Snake's Swiftness",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2608,7 +2956,10 @@
   "name": "Soul Blight",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2631,7 +2982,11 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 2,
+  "levels": {
+   "Clr": 3,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2654,7 +3009,11 @@
   "descriptors": [
    "Chaotic"
   ],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2675,7 +3034,11 @@
   "descriptors": [
    "Lawful"
   ],
-  "level": 2,
+  "levels": {
+   "Pal": 1,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2694,7 +3057,10 @@
   "name": "Steal Size",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2718,7 +3084,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2740,7 +3109,10 @@
   "name": "Stone Bones",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2765,7 +3137,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2786,7 +3162,11 @@
   "name": "Suppress Magic",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2806,7 +3186,10 @@
   "name": "Surefooted Stride",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S"
@@ -2829,7 +3212,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Brd": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2853,7 +3240,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -2868,11 +3258,40 @@
   "source": "Races of the Dragon"
  },
  {
+  "id": "vestigewrack",
+  "name": "Vestigewrack",
+  "school": "Necromancy",
+  "descriptors": [
+   "Evil"
+  ],
+  "levels": {
+   "Clr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "20 ft.",
+  "target": "One incorporeal creature or apparition/level in a 20-ft.-radius emanation centered on you",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
+ },
+ {
   "id": "wings-of-air",
   "name": "Wings of Air",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V"
   ],
@@ -2893,7 +3312,13 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 2,
+  "levels": {
+   "Sor": 2,
+   "Wiz": 2
+  },
+  "domains": {
+   "Deathbound": 4
+  },
   "components": [
    "V",
    "S"
@@ -2916,7 +3341,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 2,
+  "levels": {
+   "Drd": 2,
+   "Rgr": 2,
+   "Sor": 2,
+   "Wiz": 2
+  },
   "components": [
    "V",
    "S",
@@ -2939,7 +3369,11 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -2963,7 +3397,12 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Clr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -2983,7 +3422,13 @@
   "name": "Alter Fortune",
   "school": "Divination",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Clr": 3,
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "XP"
@@ -3004,7 +3449,10 @@
   "name": "Animate Weapon",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3027,7 +3475,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3047,7 +3499,12 @@
   "name": "Bane of the Archrival",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Pal": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3070,7 +3527,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3094,7 +3554,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "S"
   ],
@@ -3112,7 +3575,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3135,7 +3603,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Brd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3156,7 +3628,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3179,7 +3654,11 @@
    "Cold",
    "Fire"
   ],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3202,7 +3681,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3223,7 +3705,12 @@
   "name": "Crown of Clarity",
   "school": "Divination",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Rgr": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3245,7 +3732,11 @@
   "name": "Crown of the Grave",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3268,7 +3759,12 @@
   "name": "Curse of Arrow Attraction",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Rgr": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3291,7 +3787,11 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3312,7 +3812,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3333,7 +3836,12 @@
   "name": "Enduring Scrutiny",
   "school": "Divination",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Pal": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3353,7 +3861,11 @@
   "name": "Energy Vulnerability",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3375,7 +3887,11 @@
   "name": "Evard's Menacing Tentacles",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3395,7 +3911,10 @@
   "name": "Ferocity of Sanguine Rage",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3416,7 +3935,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3439,7 +3961,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3463,7 +3988,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 4,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3486,7 +4015,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3509,7 +4041,11 @@
   "descriptors": [
    "Water"
   ],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3531,7 +4067,10 @@
    "Fear",
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3551,7 +4090,10 @@
   "name": "Karmic Backlash",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -3571,7 +4113,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3594,7 +4139,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3609,27 +4157,15 @@
   "page": 66
  },
  {
-  "id": "light-of-venya",
-  "name": "Light of Venya",
-  "school": "Evocation",
-  "descriptors": [
-   "Good",
-   "Light"
-  ],
-  "level": 3,
-  "components": [],
-  "summary": "You radiate pearly light, which you can expend as 2 bolts that deal 2d6 damage, 4d6 against undead and evil outsiders.",
-  "description": "You radiate pearly light, which you can expend as 2 bolts that deal 2d6 damage, 4d6 against undead and evil outsiders.\n\nSummary only. Full text: Spell Compendium, p. 132.",
-  "source": "Spell Compendium",
-  "page": 132
- },
- {
   "id": "luminous-assassin-lesser",
   "name": "Luminous Assassin, Lesser",
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3652,7 +4188,11 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3670,7 +4210,10 @@
   "name": "Melf's Unicorn Arrow",
   "school": "Conjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3693,7 +4236,10 @@
   "name": "Mighty Wallop, Greater",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3718,7 +4264,10 @@
    "Darkness",
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "S"
   ],
@@ -3741,7 +4290,10 @@
    "Fear",
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3762,7 +4314,10 @@
   "school": "Illusion",
   "subschool": "Figment",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3786,7 +4341,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -3808,7 +4366,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -3830,7 +4391,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -3849,7 +4413,11 @@
   "name": "Prickling Torment",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3869,7 +4437,10 @@
   "name": "Prismatic Mist",
   "school": "Evocation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -3891,7 +4462,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3916,7 +4490,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -3938,7 +4515,11 @@
   "name": "Ray of the Python",
   "school": "Evocation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3961,7 +4542,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -3979,7 +4563,14 @@
   "name": "Resist Taint",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Drd": 3,
+   "Pal": 3,
+   "Rgr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4000,7 +4591,10 @@
   "name": "Reverse Arrows",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4019,7 +4613,15 @@
   "name": "Revitalize Legacy, Least",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Clr": 3,
+   "Drd": 3,
+   "Pal": 3,
+   "Rgr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4040,7 +4642,10 @@
   "name": "Rust Ray",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4063,7 +4668,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4087,7 +4695,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4109,7 +4720,10 @@
   "name": "Sense of the Dragon",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4131,7 +4745,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4150,7 +4767,10 @@
   "name": "Shadow Phase",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4172,7 +4792,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4192,7 +4815,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4216,7 +4842,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4236,7 +4866,10 @@
   "name": "Skull Watch",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4257,7 +4890,10 @@
   "name": "Snake's Swiftness, Mass",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [],
   "range": "Medium (100 ft. + 10 ft./level)",
   "target": "Allied creatures in a 20-ft.-radius burst",
@@ -4271,7 +4907,10 @@
   "name": "Spell Vulnerability",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4291,7 +4930,10 @@
   "name": "Spellcaster's Bane",
   "school": "Divination",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4309,7 +4951,10 @@
   "name": "Spider Poison",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4331,7 +4976,10 @@
   "name": "Spiderskin",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4353,7 +5001,10 @@
   "name": "Steeldance",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4377,7 +5028,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4401,7 +5056,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V"
   ],
@@ -4421,7 +5080,10 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4443,7 +5105,10 @@
   "name": "Tenacious Dispelling",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4465,7 +5130,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 3,
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4485,7 +5155,10 @@
   "name": "Tremorsense",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4505,7 +5178,10 @@
   "name": "Undead Lieutenant",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4526,7 +5202,10 @@
   "name": "Undead Torch",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4549,7 +5228,11 @@
   "school": "Transmutation",
   "subschool": "Good",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4568,7 +5251,10 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4592,7 +5278,13 @@
   "descriptors": [
    "Light"
   ],
-  "level": 3,
+  "levels": {
+   "Brd": 3,
+   "Clr": 3,
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4611,7 +5303,11 @@
   "name": "Walk the Mountain's Path",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4635,7 +5331,10 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 3,
+  "levels": {
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S",
@@ -4658,7 +5357,11 @@
   "descriptors": [
    "Air"
   ],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4681,7 +5384,11 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 3,
+  "levels": {
+   "Drd": 3,
+   "Sor": 3,
+   "Wiz": 3
+  },
   "components": [
    "V",
    "S"
@@ -4701,7 +5408,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4719,7 +5429,11 @@
   "name": "Baleful Blink",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Brd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -4742,7 +5456,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Brd": 3,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4766,7 +5484,11 @@
    "Darkness",
    "Evil"
   ],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -4791,7 +5513,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4812,7 +5537,11 @@
   "name": "Call of Stone",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Drd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4834,7 +5563,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4857,7 +5589,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 4,
+  "levels": {
+   "Drd": 3,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -4878,7 +5614,11 @@
   "name": "Condemnation",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 5,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -4898,7 +5638,10 @@
   "name": "Crushing Grip",
   "school": "Evocation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4919,7 +5662,10 @@
   "name": "Curse of the Elemental Lords",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -4943,7 +5689,10 @@
    "Darkness",
    "Evil"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "M"
@@ -4964,7 +5713,11 @@
   "name": "Essentia Lock",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -4986,7 +5739,10 @@
   "school": "Conjuration",
   "subschool": "Fire",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5008,7 +5764,10 @@
   "name": "Finger of Agony",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5031,7 +5790,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5052,7 +5814,10 @@
   "name": "Flame Whips",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5073,7 +5838,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5095,7 +5863,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5118,7 +5889,12 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 4,
+  "levels": {
+   "Clr": 3,
+   "Rgr": 3,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5141,7 +5917,11 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 4,
+  "levels": {
+   "Drd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5159,7 +5939,10 @@
   "name": "Horrid Sickness",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5179,7 +5962,11 @@
   "name": "Ice Shield",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Drd": 5,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5202,7 +5989,10 @@
   "descriptors": [
    "Creation"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5224,7 +6014,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5244,7 +6037,10 @@
   "name": "Improved Blindsight",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5267,7 +6063,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5288,7 +6087,11 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Brd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5310,7 +6113,11 @@
   "name": "Lower Spell Resistance",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5332,7 +6139,11 @@
   "descriptors": [
    "Good"
   ],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5354,7 +6165,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Brd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5377,7 +6192,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5398,7 +6216,10 @@
   "name": "Mystic Surge",
   "school": "Universal",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -5419,7 +6240,11 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Brd": 3,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5439,7 +6264,11 @@
   "name": "Open Least Chakra",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5459,7 +6288,10 @@
   "name": "Otiluke's Suppressing Field",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5481,7 +6313,11 @@
   "descriptors": [
    "Air"
   ],
-  "level": 4,
+  "levels": {
+   "Drd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5500,7 +6336,10 @@
   "name": "Perinarch",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5520,7 +6359,10 @@
   "name": "Portal Alarm, Improved",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5540,7 +6382,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -5559,7 +6404,10 @@
   "name": "Ray Deflection",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5580,7 +6428,10 @@
   "name": "Ray of Deanimation",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5601,7 +6452,10 @@
   "name": "Rebirth of Iron",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5621,7 +6475,10 @@
   "name": "Rebuking Breath",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "S"
   ],
@@ -5641,7 +6498,10 @@
    "Evil",
    "Incarnum"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5662,7 +6522,10 @@
   "name": "Ruin Delver's Fortune",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -5680,7 +6543,11 @@
   "name": "Rusted Blade",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Drd": 3,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5702,7 +6569,10 @@
   "descriptors": [
    "Chaotic"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5723,7 +6593,11 @@
   "name": "Seed of Undeath",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5747,7 +6621,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5770,7 +6647,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5791,7 +6671,10 @@
   "name": "Sharptooth",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5809,7 +6692,11 @@
   "name": "Stifle Spell",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -5831,7 +6718,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5853,7 +6743,10 @@
   "name": "Stunning Breath",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "S"
   ],
@@ -5871,7 +6764,12 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Drd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5896,7 +6794,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5919,7 +6821,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -5942,7 +6847,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5961,7 +6870,10 @@
   "name": "Touch of Years",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -5984,7 +6896,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6006,7 +6921,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -6026,7 +6944,10 @@
   "name": "Treasure Scent",
   "school": "Divination",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6046,7 +6967,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6065,7 +6989,10 @@
   "name": "Unbind Chakra",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6086,7 +7013,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -6107,7 +7037,11 @@
   "name": "Unshape Soulmeld",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Clr": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6131,7 +7065,10 @@
    "Death",
    "Mind-Affecting"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V"
   ],
@@ -6150,7 +7087,14 @@
   "name": "Voice of the Dragon",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Brd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
+  "domains": {
+   "Dragon": 4
+  },
   "components": [
    "V",
    "S"
@@ -6170,7 +7114,10 @@
   "descriptors": [
    "Chaotic"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [],
   "summary": "Wall blocks creatures of opposite alignment.",
   "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 233.",
@@ -6184,7 +7131,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 4,
+  "levels": {
+   "Drd": 5,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6206,7 +7157,10 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [],
   "summary": "Wall blocks creatures of opposite alignment.",
   "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 233.",
@@ -6220,7 +7174,10 @@
   "descriptors": [
    "Good"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -6244,7 +7201,10 @@
   "descriptors": [
    "Lawful"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [],
   "summary": "Wall blocks creatures of opposite alignment.",
   "description": "Wall blocks creatures of opposite alignment.\n\nSummary only. Full text: Spell Compendium, p. 234.",
@@ -6259,7 +7219,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -6282,7 +7245,10 @@
   "descriptors": [
    "Water"
   ],
-  "level": 4,
+  "levels": {
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S",
@@ -6303,7 +7269,11 @@
   "name": "Warp Truename",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 4,
+  "levels": {
+   "Drd": 4,
+   "Sor": 4,
+   "Wiz": 4
+  },
   "components": [
    "V",
    "S"
@@ -6324,7 +7294,14 @@
   "name": "Blink, Improved",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
+  "domains": {
+   "Celerity": 8
+  },
   "components": [
    "V",
    "S"
@@ -6345,7 +7322,13 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Clr": 5,
+   "Drd": 4,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6366,7 +7349,10 @@
   "name": "Burning Blood",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6387,7 +7373,14 @@
   "descriptors": [
    "Good"
   ],
-  "level": 5,
+  "levels": {
+   "Clr": 6,
+   "Sor": 5,
+   "Wiz": 5
+  },
+  "domains": {
+   "Celestial": 6
+  },
   "components": [
    "V",
    "S"
@@ -6408,7 +7401,10 @@
   "name": "Channeled Lifetheft",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6429,7 +7425,11 @@
   "school": "Evocation",
   "subschool": "Sonic",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6452,7 +7452,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 5,
+  "levels": {
+   "Brd": 4,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6474,7 +7478,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6496,7 +7503,10 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6516,7 +7526,11 @@
   "name": "Dancing Blade",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6539,7 +7553,11 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -6557,7 +7575,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -6577,7 +7598,10 @@
   "name": "Draconic Polymorph",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -6596,7 +7620,11 @@
   "name": "Dragonsight",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6617,7 +7645,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6641,7 +7672,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6661,7 +7696,10 @@
   "name": "Field of Resistance",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6685,7 +7723,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6708,7 +7749,10 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6726,7 +7770,10 @@
   "name": "Flesh to Ice",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6747,7 +7794,10 @@
   "name": "Form of the Desert Hunter",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6768,7 +7818,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6788,7 +7841,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6809,7 +7865,10 @@
   "name": "Greater Wings of Air",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [],
   "summary": "Target's flight maneuverability improves by two steps.",
   "description": "Target's flight maneuverability improves by two steps.\n\nSummary only. Full text: Draconomicon.",
@@ -6822,7 +7881,11 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 5,
+  "levels": {
+   "Drd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6842,7 +7905,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 5,
+  "levels": {
+   "Clr": 3,
+   "Drd": 3,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6863,7 +7931,10 @@
   "name": "Ice to Flesh",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6886,7 +7957,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -6908,7 +7983,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -6930,7 +8008,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6950,7 +8031,10 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -6972,7 +8056,11 @@
   "name": "Mana Flux",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -6993,7 +8081,11 @@
   "name": "Oath of Blood",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7018,7 +8110,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V"
   ],
@@ -7040,7 +8135,12 @@
    "Good",
    "Light"
   ],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Drd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7064,7 +8164,11 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 5,
+  "levels": {
+   "Brd": 4,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7087,7 +8191,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7107,7 +8214,13 @@
   "name": "Revitalize Legacy, Lesser",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 5,
+   "Clr": 5,
+   "Drd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7129,7 +8242,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7151,7 +8267,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7173,7 +8292,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7196,7 +8318,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7218,7 +8343,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7242,7 +8370,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7264,7 +8395,13 @@
   "name": "Spurn the Supernatural",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Brd": 4,
+   "Clr": 5,
+   "Drd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7288,28 +8425,38 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
    "F"
   ],
-  "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
-  "summary": "Summons undead to fight for you.",
-  "description": "Summons undead to fight for you.\n\nSummary only. Full text: Heroes of Horror.",
-  "source": "Heroes of Horror",
   "castingTime": "1 round",
   "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One or more summoned creatures, no two of which can be more than 30 ft. apart",
   "duration": "1 round/level",
   "savingThrow": "None",
-  "spellResistance": "No"
+  "spellResistance": "No",
+  "summary": "Summons undead to fight for you.",
+  "description": "Summons undead to fight for you.\n\nSummary only. Full text: Libris Mortis, p. 72.",
+  "source": "Libris Mortis",
+  "page": 72
  },
  {
   "id": "superior-magic-fang",
   "name": "Superior Magic Fang",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Drd": 5,
+   "Rgr": 4,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7327,7 +8474,10 @@
   "name": "Suppress Legacy",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7347,7 +8497,10 @@
   "name": "Surefooted Stride, Mass",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [],
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "target": "One creature/level, no two of which are more than 30 ft. apart",
@@ -7364,7 +8517,10 @@
    "Evil",
    "Fear"
   ],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7385,7 +8541,10 @@
   "school": "Conjuration",
   "subschool": "Calling",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7408,7 +8567,11 @@
   "school": "Transmutation",
   "subschool": "Good",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Drd": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7426,7 +8589,11 @@
   "name": "Vulnerability",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S"
@@ -7446,7 +8613,10 @@
   "name": "Wall of Dispel Magic",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7467,7 +8637,10 @@
   "name": "Xorn Movement",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7489,7 +8662,11 @@
   "name": "Zone of Peace",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 5,
+  "levels": {
+   "Clr": 5,
+   "Sor": 5,
+   "Wiz": 5
+  },
   "components": [
    "V",
    "S",
@@ -7508,7 +8685,11 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V"
   ],
@@ -7528,7 +8709,12 @@
   "name": "Chasing Perfection",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Clr": 6,
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7552,7 +8738,12 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 6,
+  "levels": {
+   "Brd": 5,
+   "Clr": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7577,7 +8768,11 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 6,
+  "levels": {
+   "Brd": 5,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7600,7 +8795,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7622,7 +8821,10 @@
   "school": "Divination",
   "subschool": "Scrying",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7642,7 +8844,11 @@
   "name": "Eyes of the Oracle",
   "school": "Divination",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Clr": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7663,7 +8869,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V"
   ],
@@ -7684,7 +8893,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7706,7 +8918,10 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7728,7 +8943,11 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 6,
+  "levels": {
+   "Drd": 7,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7751,7 +8970,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7772,7 +8994,12 @@
   "name": "Hidden Truename",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Clr": 6,
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7795,7 +9022,12 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Clr": 6,
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7816,7 +9048,10 @@
   "name": "Karmic Retribution",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V"
   ],
@@ -7836,7 +9071,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7857,7 +9095,10 @@
   "descriptors": [
    "Fire"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7879,7 +9120,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7903,7 +9147,11 @@
    "Cold",
    "Ice"
   ],
-  "level": 6,
+  "levels": {
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7927,7 +9175,10 @@
    "Death",
    "Good"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -7952,7 +9203,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -7976,7 +9230,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V"
   ],
@@ -7995,7 +9252,10 @@
   "name": "Prismatic Aura",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8013,7 +9273,10 @@
   "name": "Rary's Arcane Conversion",
   "school": "Universal",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8032,7 +9295,10 @@
   "name": "Ray of Entropy",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8055,7 +9321,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8077,7 +9346,10 @@
   "school": "Illusion",
   "subschool": "Glamer",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [],
   "range": "Close (25 ft. + 5 ft./2 levels)",
   "target": "One creature/2 levels, no two of which are more than 30 ft. apart",
@@ -8094,7 +9366,10 @@
   "name": "Ruby Ray of Reversal",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8115,7 +9390,10 @@
   "name": "Seal Portal",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8137,7 +9415,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8158,7 +9439,10 @@
   "name": "Smoky Confinement",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8180,7 +9464,10 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8200,7 +9487,10 @@
   "name": "Stone Body",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8223,7 +9513,11 @@
    "Cold",
    "Fire"
   ],
-  "level": 6,
+  "levels": {
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8245,7 +9539,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8266,7 +9563,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8286,7 +9586,12 @@
   "name": "Thunder Field",
   "school": "Evocation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Brd": 4,
+   "Drd": 6,
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8307,7 +9612,10 @@
   "name": "Transcribe Symbol",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8331,7 +9639,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8353,7 +9664,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S",
@@ -8376,7 +9690,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8399,7 +9716,10 @@
    "Evil",
    "Incarnum"
   ],
-  "level": 6,
+  "levels": {
+   "Sor": 6,
+   "Wiz": 6
+  },
   "components": [
    "V",
    "S"
@@ -8419,7 +9739,10 @@
   "name": "Adamantine Wings",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8439,7 +9762,11 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 7,
+  "levels": {
+   "Clr": 6,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8460,7 +9787,12 @@
   "name": "Animalistic Power, Mass",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Drd": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8482,7 +9814,10 @@
   "name": "Arcane Spellsurge",
   "school": "Universal",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8503,7 +9838,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 7,
+  "levels": {
+   "Drd": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8526,7 +9865,10 @@
   "descriptors": [
    "Lawful"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8545,7 +9887,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8565,7 +9910,10 @@
   "name": "Energy Absorption",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8587,7 +9935,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8608,7 +9959,10 @@
   "name": "Glass Strike",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8635,7 +9989,10 @@
    "Electricity",
    "Fire"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [],
   "castingTime": "1 standard action",
   "range": "60 ft.",
@@ -8653,7 +10010,10 @@
   "name": "Greater Stunning Breath",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [],
   "summary": "Your breath weapon also stuns creatures for 2d4 rounds.",
   "description": "Your breath weapon also stuns creatures for 2d4 rounds.\n\nSummary only. Full text: Draconomicon.",
@@ -8667,7 +10027,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8691,7 +10054,10 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8714,7 +10080,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8733,7 +10102,10 @@
   "name": "Kiss of Draconic Defiance",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8755,7 +10127,10 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8779,7 +10154,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8800,7 +10179,11 @@
   "name": "Open Lesser Chakra",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8820,7 +10203,10 @@
   "name": "Planar Bubble",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8844,7 +10230,11 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8868,7 +10258,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8890,7 +10283,10 @@
   "name": "Retributive Enervation",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -8908,7 +10304,11 @@
   "name": "Seed of Undeath, Greater",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8932,7 +10332,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V"
   ],
@@ -8950,7 +10353,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [],
   "target": "Stone or stone objects",
   "summary": "Sculpts 10 cu. ft. + 10 cu. ft./level of stone into any shape.",
@@ -8966,7 +10372,10 @@
   "descriptors": [
    "Electricity"
   ],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -8989,7 +10398,11 @@
   "school": "Conjuration",
   "subschool": "Summoning, Good",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Clr": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -9010,7 +10423,10 @@
   "name": "Synostodweomer",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -9030,7 +10446,10 @@
   "school": "Conjuration",
   "subschool": "Calling",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S",
@@ -9053,7 +10472,11 @@
   "school": "Transmutation",
   "subschool": "Good",
   "descriptors": [],
-  "level": 7,
+  "levels": {
+   "Drd": 7,
+   "Sor": 7,
+   "Wiz": 7
+  },
   "components": [
    "V",
    "S"
@@ -9071,7 +10494,11 @@
   "name": "Chain Dispel",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Clr": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9096,7 +10523,11 @@
    "Earth",
    "Fire"
   ],
-  "level": 8,
+  "levels": {
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9117,7 +10548,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9135,7 +10569,11 @@
   "name": "Earth Glide",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9156,7 +10594,13 @@
   "name": "Expunge the Supernatural",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Brd": 6,
+   "Clr": 8,
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9182,7 +10626,12 @@
    "Language-Dependent",
    "Mind- Affecting"
   ],
-  "level": 8,
+  "levels": {
+   "Brd": 6,
+   "Clr": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V"
   ],
@@ -9203,7 +10652,15 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 8,
+  "levels": {
+   "Clr": 9,
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
+  "domains": {
+   "Winter": 9
+  },
   "components": [
    "V",
    "S",
@@ -9226,7 +10683,11 @@
   "descriptors": [
    "Incarnum"
   ],
-  "level": 8,
+  "levels": {
+   "Clr": 7,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9250,7 +10711,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9269,7 +10733,10 @@
   "name": "Mysterious Redirection",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9288,7 +10755,13 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
+  "domains": {
+   "Greed": 8
+  },
   "components": [
    "V",
    "S",
@@ -9311,7 +10784,12 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 8,
+  "levels": {
+   "Clr": 7,
+   "Drd": 7,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9335,7 +10813,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V"
   ],
@@ -9354,7 +10835,10 @@
   "name": "Prismatic Bow",
   "school": "Evocation",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9374,7 +10858,12 @@
   "name": "Ritual of Renaming",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Clr": 8,
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9396,7 +10885,10 @@
   "name": "Sever Legacy",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9418,7 +10910,10 @@
   "descriptors": [
    "Evil"
   ],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9439,7 +10934,10 @@
   "name": "Soulbanned Zone",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9461,7 +10959,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9484,7 +10985,10 @@
   "name": "Touch of the Graveborn",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9504,7 +11008,13 @@
   "name": "Truename Dispel",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Brd": 6,
+   "Clr": 8,
+   "Drd": 8,
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9526,7 +11036,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S"
@@ -9547,7 +11060,10 @@
   "descriptors": [
    "Mind-Affecting"
   ],
-  "level": 8,
+  "levels": {
+   "Sor": 8,
+   "Wiz": 8
+  },
   "components": [
    "V",
    "S",
@@ -9571,7 +11087,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9594,7 +11113,10 @@
   "descriptors": [
    "Light"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9616,7 +11138,10 @@
   "descriptors": [
    "Sonic"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [],
   "summary": "Your breath weapon also deals sonic damage and deafens.",
   "description": "Your breath weapon also deals sonic damage and deafens.\n\nSummary only. Full text: Draconomicon.",
@@ -9630,7 +11155,10 @@
    "Death",
    "Fire"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9653,7 +11181,10 @@
   "school": "Conjuration",
   "subschool": "Teleportation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V"
   ],
@@ -9671,7 +11202,10 @@
   "school": "Transmutation",
   "subschool": "Polymorph",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9692,7 +11226,11 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 9,
+  "levels": {
+   "Drd": 8,
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9714,7 +11252,10 @@
   "school": "Conjuration",
   "subschool": "Creation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9736,7 +11277,10 @@
   "school": "Illusion",
   "subschool": "Shadow",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9760,7 +11304,10 @@
   "descriptors": [
    "Cold"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9782,7 +11329,10 @@
   "descriptors": [
    "Force"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9799,34 +11349,15 @@
   "targetLabel": "Effect or Area"
  },
  {
-  "id": "obedient-avalanche",
-  "name": "Obedient Avalanche",
-  "school": "Conjuration",
-  "subschool": "Creation",
-  "descriptors": [
-   "Cold"
-  ],
-  "level": 9,
-  "components": [
-   "V",
-   "S"
-  ],
-  "castingTime": "1 standard action",
-  "range": "Medium (100 ft. + 10 ft./level)",
-  "effect": "20-ft.-radius avalanche of snow centered on a point in space; see text",
-  "duration": "Instantaneous",
-  "savingThrow": "Reflex half or Reflex negates; see text",
-  "summary": "Snowy avalanche crushes and buries your foes.",
-  "description": "Snowy avalanche crushes and buries your foes.\n\nSummary only. Full text: Spell Compendium, p. 148.",
-  "source": "Spell Compendium",
-  "page": 148
- },
- {
   "id": "open-greater-chakra",
   "name": "Open Greater Chakra",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Clr": 9,
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9846,7 +11377,10 @@
   "name": "Perinarch, Planar",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [],
   "summary": "Gain control over a small area of any divinely morphic plane.",
   "description": "Gain control over a small area of any divinely morphic plane.\n\nSummary only. Full text: Spell Compendium, p. 154.",
@@ -9858,7 +11392,10 @@
   "name": "Prismatic Deluge",
   "school": "Evocation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9878,7 +11415,10 @@
   "name": "Reality Maelstrom",
   "school": "Evocation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9900,7 +11440,10 @@
   "name": "Replicate Casting",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9921,7 +11464,12 @@
   "name": "Revitalize Legacy, Greater",
   "school": "Transmutation",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Clr": 9,
+   "Drd": 9,
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9942,7 +11490,10 @@
   "name": "Soulmeld Disjunction",
   "school": "Abjuration",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -9963,7 +11514,11 @@
   "school": "Conjuration",
   "subschool": "Summoning",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Clr": 9,
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -9988,7 +11543,11 @@
   "descriptors": [
    "Air"
   ],
-  "level": 9,
+  "levels": {
+   "Drd": 9,
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -10009,7 +11568,10 @@
   "school": "Conjuration",
   "subschool": "Calling",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S",
@@ -10033,7 +11595,10 @@
   "descriptors": [
    "Earth"
   ],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "M"
@@ -10052,7 +11617,10 @@
   "name": "Unname",
   "school": "Necromancy",
   "descriptors": [],
-  "level": 9,
+  "levels": {
+   "Sor": 9,
+   "Wiz": 9
+  },
   "components": [
    "V",
    "S"
@@ -10067,5 +11635,3848 @@
   "description": "Erase a creature from reality.\n\nSummary only. Full text: Tome of Magic.",
   "source": "Tome of Magic",
   "page": 260
+ },
+ {
+  "id": "naturewatch",
+  "name": "Naturewatch",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Drd": 0,
+   "Rgr": 1
+  },
+  "components": [
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "Quarter circle emanating from you to the extreme of the range",
+  "duration": "10 min./level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "As deathwatch, but only for animals and plants.",
+  "description": "As deathwatch, but only for animals and plants.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "catsfeet",
+  "name": "Catsfeet",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 1
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "climbing-tree",
+  "name": "Climbing Tree",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 full round",
+  "range": "0 ft.",
+  "effect": "A thin but sturdy tree",
+  "duration": "1 minute/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "combined-talent",
+  "name": "Combined Talent",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Brd": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 level)",
+  "target": "Two willing creatures no more than 30 ft. apart",
+  "duration": "10 minutes (D) or until expended",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "conjure-ice-beast-i",
+  "name": "Conjure Ice Beast I",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 1,
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One conjured ice creature",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "crunchy-snow",
+  "name": "Crunchy Snow",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "One 20-ft.-by-20-ft. square of snow/level",
+  "duration": "1 hour/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "-20 penalty on Move Silently checks in area.",
+  "description": "-20 penalty on Move Silently checks in area.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "detect-fire",
+  "name": "Detect Fire",
+  "school": "Divination",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "summary": "Detect fire within 60 ft.",
+  "description": "Detect fire within 60 ft.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 standard action",
+  "range": "60 ft.",
+  "area": "Cone-shaped emanation",
+  "duration": "Concentration, up to 10 min./ level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "detect-taint",
+  "name": "Detect Taint",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Clr": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "60 ft.",
+  "area": "Cone-shaped emanation",
+  "duration": "Concentration, up to 10 min./level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "ease-of-breath",
+  "name": "Ease of Breath",
+  "school": "Necromancy",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 1,
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "+20 inherent bonus on Fortitude saves to resist altitude sickness.",
+  "description": "+20 inherent bonus on Fortitude saves to resist altitude sickness.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "fortify-cold-creatures",
+  "name": "Fortify Cold Creatures",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "One creature/level, no two of which can be more than 30 ft. apart",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Cold subtype creatures gain +1 sacred bonus on attacks and saves against fire effects.",
+  "description": "Cold subtype creatures gain +1 sacred bonus on attacks and saves against fire effects.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "ghostly-tail",
+  "name": "Ghostly Tail",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "effect": "Evoked tail",
+  "duration": "1 hour/level",
+  "summary": "Sorceror only. Your tail of force can be used to take advantage of an attack of opportunity.",
+  "description": "Sorceror only. Your tail of force can be used to take advantage of an attack of opportunity.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "ghoul-light",
+  "name": "Ghoul Light",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {},
+  "domains": {
+   "Hunger": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Object touched",
+  "effect": "Magical, heatless green flame",
+  "duration": "10 min./level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Libris Mortis.",
+  "source": "Libris Mortis"
+ },
+ {
+  "id": "guided-path",
+  "name": "Guided Path",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Brd": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "10 minutes/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "ice-skate",
+  "name": "Ice Skate",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "10 min./level (D)",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "While on ice, your speed increases by 60 feet.",
+  "description": "While on ice, your speed increases by 60 feet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "ice-slick",
+  "name": "Ice Slick",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "One 20-ft. square",
+  "duration": "1 round/level (D)",
+  "savingThrow": "See text",
+  "spellResistance": "No",
+  "summary": "Creates a 20-ft. square of slippery ice.",
+  "description": "Creates a 20-ft. square of slippery ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "immediate-assistance",
+  "name": "Immediate Assistance",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [],
+  "levels": {
+   "Brd": 1
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One willing creature",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "impeding-stones",
+  "name": "Impeding Stones",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft.+ 10 ft./level)",
+  "area": "Brick, stone, or earthen surface in a 40-ft.-radius spread",
+  "duration": "1 min./level (D)",
+  "savingThrow": "Reflex partial; see text",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Cityscape.",
+  "source": "Cityscape"
+ },
+ {
+  "id": "invest-light-protection",
+  "name": "Invest Light Protection",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Clr": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Will half (harmless); see text",
+  "spellResistance": "Yes (harmless); see text",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "ivory-flesh",
+  "name": "Ivory Flesh",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 1,
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Flesh turns white, granting +5 circumstance bonus on Hide checks in snow and ice.",
+  "description": "Flesh turns white, granting +5 circumstance bonus on Hide checks in snow and ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "linked-perception",
+  "name": "Linked Perception",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Drd": 2,
+   "Rgr": 1
+  },
+  "components": [
+   "V",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "20 ft.",
+  "area": "20-ft.-radius emanation centered on you",
+  "duration": "1 minute/level (D)",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "omen-of-peril",
+  "name": "Omen of Peril",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Clr": 1,
+   "Drd": 1
+  },
+  "components": [
+   "V",
+   "F"
+  ],
+  "castingTime": "1 full round",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "primal-hunter",
+  "name": "Primal Hunter",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 2,
+   "Rgr": 1,
+   "Sor": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "24 hours",
+  "summary": "Gain a +5 bonus on Climb, Jump, and Swim checks. Sorcerer spell only.",
+  "description": "Gain a +5 bonus on Climb, Jump, and Swim checks. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "silvered-weapon",
+  "name": "Silvered Weapon",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Pal": 1,
+   "Rgr": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One weapon or projectile touched",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude negates (object, harmless)",
+  "spellResistance": "Yes (object, harmless)",
+  "summary": "Transforms a single weapon or projectile into a silvered weapon or silvered projectile",
+  "description": "Transforms a single weapon or projectile into a silvered weapon or silvered projectile\n\nSummary only. Full text: Book of Exalted Deeds.",
+  "source": "Book of Exalted Deeds"
+ },
+ {
+  "id": "snowsight",
+  "name": "Snowsight",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 1,
+   "Rgr": 1
+  },
+  "domains": {
+   "Winter": 1
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level",
+  "savingThrow": "None",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Normal vision in winter weather conditions.",
+  "description": "Normal vision in winter weather conditions.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "wings-of-bounding",
+  "name": "Wings of Bounding",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "summary": "Sorceror only. Get a +20 circumstance bonus on a Jump check.",
+  "description": "Sorceror only. Get a +20 circumstance bonus on a Jump check.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "wings-of-swift-flying",
+  "name": "Wings of Swift Flying",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 1
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level or until underlying flight effect lapses; see text",
+  "summary": "Sorceror only. Increase your temporary fly speed by 30 ft.",
+  "description": "Sorceror only. Increase your temporary fly speed by 30 ft.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "animal-spirit",
+  "name": "Animal Spirit",
+  "school": "Divination",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Drd": 2,
+   "Rgr": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum"
+ },
+ {
+  "id": "blackrot",
+  "name": "Blackrot",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One plant creature or one wooden weapon touched",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial or Fortitude negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "blade-brothers",
+  "name": "Blade Brothers",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2,
+   "Clr": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Two willing creatures",
+  "duration": "1 minute/level or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "cacophonous-alarm",
+  "name": "Cacophonous Alarm",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage",
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "20-ft.-radius emanation centered on a point in space",
+  "duration": "2 hours/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "caterwaul",
+  "name": "Caterwaul",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting",
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action548",
+  "range": "30 ft.",
+  "area": "Cone-shaped burst",
+  "duration": "1 round",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "conjure-ice-beast-ii",
+  "name": "Conjure Ice Beast Ii",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 2,
+   "Drd": 2,
+   "Rgr": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "conjure-ice-object",
+  "name": "Conjure Ice Object",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 2,
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "effect": "One object of up to 5 lb./level",
+  "duration": "1 min./level",
+  "savingThrow": "None (harmless)",
+  "spellResistance": "No",
+  "summary": "Conjures an object made of ice.",
+  "description": "Conjures an object made of ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "crown-of-smiting",
+  "name": "Crown of Smiting",
+  "school": "Evocation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3,
+   "Pal": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level (D) or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "doublespeak",
+  "name": "Doublespeak",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "You plus one creature touched/4 levels",
+  "duration": "1 minute/level (D)",
+  "savingThrow": "Will negates (harmless, target) or Will disbelief (if interacted with, everyone else)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "drifts-of-the-shalm",
+  "name": "Drifts of the Shalm",
+  "school": "Evocation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "One 5-ft. square/level (S)",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "essence-of-the-dragon",
+  "name": "Essence of the Dragon",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Sor": 2
+  },
+  "components": [
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Willing living creature touched",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Sorceror only. Confer the dragon type on touched creature.",
+  "description": "Sorceror only. Confer the dragon type on touched creature.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "evergreen",
+  "name": "Evergreen",
+  "school": "Transmutation",
+  "descriptors": [
+   "Fire"
+  ],
+  "levels": {
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "10-ft. radius",
+  "duration": "1 hour/level and instantaneous; see text",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Magical heat warms plant life, healing 1d8 damage +1/level (max. +10) and granting immunity to cold.",
+  "description": "Magical heat warms plant life, healing 1d8 damage +1/level (max. +10) and granting immunity to cold.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "false-lie",
+  "name": "False Lie",
+  "school": "Illusion",
+  "subschool": "Glamer",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 hour/level",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "flash-freeze",
+  "name": "Flash-Freeze",
+  "school": "Transmutation",
+  "descriptors": [
+   "Earth",
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "10-ft. square/level",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Earth, stone, and water become frozen.",
+  "description": "Earth, stone, and water become frozen.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "frostburn-lesser",
+  "name": "Frostburn, Lesser",
+  "school": "Necromancy",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "harmonize",
+  "name": "Harmonize",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 min./level (D)",
+  "summary": "Using your bardic music requires less effort.",
+  "description": "Using your bardic music requires less effort.\n\nSummary only. Full text: Races of Stone.",
+  "source": "Races of Stone"
+ },
+ {
+  "id": "hunters-eye",
+  "name": "Hunter's Eye",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Rgr": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "insignia-of-alarm",
+  "name": "Insignia of Alarm",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2,
+   "Clr": 2,
+   "Pal": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "target": "All wearers of special insignia within range",
+  "area": "400 ft. + 40 ft./level spread, centered on you",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "magic-of-the-dragonheart",
+  "name": "Magic of the Dragonheart",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Sor": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level",
+  "summary": "Enhance the benefits of your draconic teats. Sorcerer spell only.",
+  "description": "Enhance the benefits of your draconic teats. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "magic-savant",
+  "name": "Magic Savant",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "mark-of-judgment",
+  "name": "Mark of Judgment",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One creature/3 levels, no two of which are more than 30 ft. apart",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "near-horizon",
+  "name": "Near Horizon",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Rgr": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "3 rounds",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "painful-echoes",
+  "name": "Painful Echoes",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One living creature/4 levels, no two of which are more than 30 ft. apart",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "peaceful-serenity-of-io",
+  "name": "Peaceful Serenity of Io",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2,
+   "Clr": 2,
+   "Drd": 2
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature plus one additional creature/four levels, no two of which are more than 30 ft. apart",
+  "duration": "10 minutes",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Grant subject +4 bonus on Concentration checks and against compulsions and fear effects.",
+  "description": "Grant subject +4 bonus on Concentration checks and against compulsions and fear effects.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "primal-instinct",
+  "name": "Primal Instinct",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 3,
+   "Rgr": 2,
+   "Sor": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "24 hours",
+  "summary": "Gain a +5 bonus on initiative checks and Survival checks. Sorcerer spell only.",
+  "description": "Gain a +5 bonus on initiative checks and Survival checks. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "rigor-mortis",
+  "name": "Rigor Mortis",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 2
+  },
+  "components": [
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1d6+2 rounds",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Suspends all vital functions; target appears dead.",
+  "description": "Suspends all vital functions; target appears dead.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "shield-of-warding",
+  "name": "Shield of Warding",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3,
+   "Pal": 2
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One shield or buckler",
+  "duration": "1 minute/level",
+  "savingThrow": "Will negates (object, harmless)",
+  "spellResistance": "No",
+  "summary": "Shield grants +1 bonus on Reflex saves, +1 per five levels (max +5).",
+  "description": "Shield grants +1 bonus on Reflex saves, +1 per five levels (max +5).\n\nSummary only. Full text: Draconomicon.",
+  "source": "Draconomicon"
+ },
+ {
+  "id": "snow-walk",
+  "name": "Snow Walk",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 2,
+   "Rgr": 2
+  },
+  "domains": {
+   "Winter": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One creature/level touched",
+  "duration": "10 min./level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Increase your speed and walk effortlessly on top of snow without leaving tracks or scent.",
+  "description": "Increase your speed and walk effortlessly on top of snow without leaving tracks or scent.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "soulmeld-blessing",
+  "name": "Soulmeld Blessing",
+  "school": "Evocation",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Clr": 2
+  },
+  "components": [
+   "V",
+   "DF"
+  ],
+  "castingTime": "1 swift action",
+  "range": "20 ft.",
+  "target": "Up to one creature/level in a 20-ft. radius burst centered on you",
+  "duration": "Instantaneous",
+  "savingThrow": "None (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum"
+ },
+ {
+  "id": "stone-fist",
+  "name": "Stone Fist",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 2,
+   "Pal": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level (D)",
+  "summary": "Your fists become rocky bludgeoning weapons.",
+  "description": "Your fists become rocky bludgeoning weapons.\n\nSummary only. Full text: Races of Stone.",
+  "source": "Races of Stone"
+ },
+ {
+  "id": "summon-weapon",
+  "name": "Summon Weapon",
+  "school": "Conjuration",
+  "subschool": "Summoning",
+  "descriptors": [],
+  "levels": {
+   "Brd": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "0 ft.",
+  "effect": "Nonmagical light weapon",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "tail-slap",
+  "name": "Tail Slap",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "effect": "Evoked tail",
+  "duration": "1 round/level",
+  "summary": "Sorceror only. Attack a foe for 1 round/level and knock him back on the first round.",
+  "description": "Sorceror only. Attack a foe for 1 round/level and knock him back on the first round.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "thaw",
+  "name": "Thaw",
+  "school": "Transmutation",
+  "descriptors": [
+   "Earth",
+   "Fire"
+  ],
+  "levels": {
+   "Drd": 2
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "10-ft. cube/level",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Transforms one 10-ft. cube/level of everfrost, slush, snow, and ice.",
+  "description": "Transforms one 10-ft. cube/level of everfrost, slush, snow, and ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "true-prayer-of-the-faithful",
+  "name": "True Prayer of the Faithful",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 2,
+   "Pal": 2
+  },
+  "components": [
+   "V",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One or more creatures, no two of which are more than 30 ft. apart; see text",
+  "duration": "1 round/level; see text",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
+ },
+ {
+  "id": "wings-of-cover",
+  "name": "Wings of Cover",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 2
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "summary": "Sorceror only. Grant cover against a specific attack.",
+  "description": "Sorceror only. Grant cover against a specific attack.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "aura-of-cold-lesser",
+  "name": "Aura of Cold, Lesser",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 3,
+   "Drd": 3,
+   "Pal": 4,
+   "Rgr": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "5 ft.",
+  "area": "5-ft.-radius spherical emanation, centered on you",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "binding-snow",
+  "name": "Binding Snow",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 3,
+   "Drd": 3,
+   "Pal": 3,
+   "Rgr": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "One 10-ft. square/level",
+  "duration": "1 hour/level (D)",
+  "savingThrow": "Reflex negates",
+  "spellResistance": "Yes",
+  "summary": "Snow freezes, impeding movement.",
+  "description": "Snow freezes, impeding movement.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "channeled-divine-shield",
+  "name": "Channeled Divine Shield",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "See text",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "conjure-ice-beast-iii",
+  "name": "Conjure Ice Beast Iii",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 3,
+   "Drd": 3,
+   "Rgr": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "control-snow-and-ice",
+  "name": "Control Snow and Ice",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "Ice and snow in a volume of 10 ft./level by 10 ft./level by 2 ft./level (S)",
+  "duration": "10 min./level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Raise or lower ice or snow.",
+  "description": "Raise or lower ice or snow.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "deafening-blast",
+  "name": "Deafening Blast",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "20-ft.-radius spread",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "defile-snow-and-ice",
+  "name": "Defile Snow and Ice",
+  "school": "Evocation",
+  "descriptors": [
+   "Cold",
+   "Evil"
+  ],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "10 ft./level radius spread",
+  "duration": "1 min./level",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Grants undead a +4 profane bonus",
+  "description": "Grants undead a +4 profane bonus\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "divine-retaliation",
+  "name": "Divine Retaliation",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Clr": 3,
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 swift action",
+  "range": "0 ft.",
+  "effect": "Magic weapon of force",
+  "duration": "1 round",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "earth-hammer",
+  "name": "Earth Hammer",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5,
+   "Pal": 3
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Touch",
+  "target": "Weapon touched",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates (harmless, object)",
+  "spellResistance": "Yes (harmless, object)",
+  "summary": "You transform one melee weapon into a bludgeoning adamantine weapon.",
+  "description": "You transform one melee weapon into a bludgeoning adamantine weapon.\n\nSummary only. Full text: Races of Stone.",
+  "source": "Races of Stone"
+ },
+ {
+  "id": "ghoul-gesture",
+  "name": "Ghoul Gesture",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {},
+  "domains": {
+   "Hunger": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "Ray",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Libris Mortis.",
+  "source": "Libris Mortis"
+ },
+ {
+  "id": "healing-spirit",
+  "name": "Healing Spirit",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Brd": 4,
+   "Clr": 4,
+   "Drd": 4,
+   "Pal": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One conjured healing spirit",
+  "duration": "1 round/2 levels",
+  "savingThrow": "Will half (harmless); see text",
+  "spellResistance": "Yes (harmless); see text",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "insignia-of-blessing",
+  "name": "Insignia of Blessing",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "levels": {
+   "Clr": 3,
+   "Pal": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "duration": "1 min./level",
+  "savingThrow": "None",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Bearers of special insignia gain +1 bonus on attack rolls and saves against fear.",
+  "description": "Bearers of special insignia gain +1 bonus on attack rolls and saves against fear.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "insignia-of-healing",
+  "name": "Insignia of Healing",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Brd": 3,
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "duration": "Instantaneous",
+  "savingThrow": "Will half (harmless); see text",
+  "spellResistance": "Yes (harmless); see text",
+  "summary": "Bearers of special insignia healed of 1d8 damage +1 point/level (max. +10).",
+  "description": "Bearers of special insignia healed of 1d8 damage +1 point/level (max. +10).\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "insignia-of-warding",
+  "name": "Insignia of Warding",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3,
+   "Pal": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 standard action",
+  "duration": "1 min./level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Bearers of special insignia gain +1 to AC, Fortitude saves.",
+  "description": "Bearers of special insignia gain +1 to AC, Fortitude saves.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "invest-moderate-protection",
+  "name": "Invest Moderate Protection",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II",
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Will half (harmless); see text",
+  "spellResistance": "Yes (harmless); see text"
+ },
+ {
+  "id": "meld-into-ice",
+  "name": "Meld Into Ice",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 3,
+   "Drd": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "10 min./level",
+  "summary": "You and your gear merge with ice.",
+  "description": "You and your gear merge with ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "ottos-imperative-ambulation",
+  "name": "Otto's Imperative Ambulation",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "levels": {
+   "Brd": 3
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 round/3 levels",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "primal-senses",
+  "name": "Primal Senses",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 4,
+   "Rgr": 3,
+   "Sor": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "24 hours",
+  "summary": "Gain low-light vision and a +5 bonus on Listen and Spot checks. Sorcerer spell only.",
+  "description": "Gain low-light vision and a +5 bonus on Listen and Spot checks. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "soul-of-light",
+  "name": "Soul of Light",
+  "school": "Transmutation",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour",
+  "description": "No summary yet.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "soul-of-shadow",
+  "name": "Soul of Shadow",
+  "school": "Transmutation",
+  "descriptors": [
+   "Evil"
+  ],
+  "levels": {
+   "Clr": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour",
+  "description": "No summary yet.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "true-prayer-of-the-chosen",
+  "name": "True Prayer of the Chosen",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 4,
+   "Pal": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
+ },
+ {
+  "id": "winding-alleys",
+  "name": "Winding Alleys",
+  "school": "Illusion",
+  "subschool": "Phantasm",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "levels": {
+   "Brd": 3
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Trap foe in phantasmal maze.",
+  "description": "Trap foe in phantasmal maze.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "winters-embrace",
+  "name": "Winter's Embrace",
+  "school": "Evocation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 4,
+   "Drd": 3
+  },
+  "domains": {
+   "Winter": 3
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "area": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "summary": "Subject takes 1d8 damage/round; can cause fatigue.",
+  "description": "Subject takes 1d8 damage/round; can cause fatigue.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "aspect-of-the-deity-lesser",
+  "name": "Aspect of the Deity, Lesser",
+  "school": "Transmutation",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Book of Exalted Deeds.",
+  "source": "Book of Exalted Deeds"
+ },
+ {
+  "id": "bane-bow",
+  "name": "Bane Bow",
+  "school": "Evocation",
+  "descriptors": [],
+  "levels": {
+   "Rgr": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Ranged weapon touched",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "battlecry",
+  "name": "Battlecry",
+  "school": "Evocation",
+  "descriptors": [
+   "Mind-Affecting",
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "60 ft.",
+  "target": "You and all allies within 60 ft.",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "blessing-of-the-righteous",
+  "name": "Blessing of the Righteous",
+  "school": "Evocation",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Clr": 4,
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "40 ft.",
+  "area": "All allies in a 40-ft.-radius burst centered on you",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "channeled-divine-health",
+  "name": "Channeled Divine Health",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Clr": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "See text",
+  "range": "See text",
+  "target": "One creature",
+  "duration": "Instantaneous",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "conjure-ice-beast-iv",
+  "name": "Conjure Ice Beast Iv",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 4,
+   "Drd": 4,
+   "Rgr": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "freeze-armor",
+  "name": "Freeze Armor",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 4,
+   "Drd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "Metal equipment of one creature/level",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial; see text",
+  "spellResistance": "Yes",
+  "summary": "Locks up suits of metal armor and equipment, dealing damage and impeding movement.",
+  "description": "Locks up suits of metal armor and equipment, dealing damage and impeding movement.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "frostburn",
+  "name": "Frostburn",
+  "school": "Necromancy",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "summary": "Touch deals 3d12 frostburn damage +1/level (max +20).",
+  "description": "Touch deals 3d12 frostburn damage +1/level (max +20).\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half",
+  "spellResistance": "Yes"
+ },
+ {
+  "id": "frostfell-slide",
+  "name": "Frostfell Slide",
+  "school": "Conjuration",
+  "subschool": "Teleportation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 4,
+   "Rgr": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level or until expended; see text",
+  "summary": "Move instantly from one area of frostfell to another.",
+  "description": "Move instantly from one area of frostfell to another.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "glory-of-the-martyr",
+  "name": "Glory of the Martyr",
+  "school": "Abjuration",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "F",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/level",
+  "duration": "1 hour/level (D)",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "As shield other, but affecting multiple creatures, and healing them if you die.",
+  "description": "As shield other, but affecting multiple creatures, and healing them if you die.\n\nSummary only. Full text: Book of Exalted Deeds.",
+  "source": "Book of Exalted Deeds"
+ },
+ {
+  "id": "harmonize-greater",
+  "name": "Harmonize, Greater",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 min./level (D)",
+  "description": "No summary yet.\n\nSummary only. Full text: Races of Stone.",
+  "source": "Races of Stone"
+ },
+ {
+  "id": "hibernal-healing",
+  "name": "Hibernal Healing",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 5,
+   "Drd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "You absorb ice, slush, and snow, curing 10 points/level of damage (max 150).",
+  "description": "You absorb ice, slush, and snow, curing 10 points/level of damage (max 150).\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "hoard-life",
+  "name": "Hoard Life",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Sor": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 minute",
+  "range": "Personal and touch",
+  "target": "You",
+  "duration": "1 hour/level (D)",
+  "summary": "Sorceror only. Store some of your life force for later healing.",
+  "description": "Sorceror only. Store some of your life force for later healing.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "interminable-echo",
+  "name": "Interminable Echo",
+  "school": "Illusion",
+  "subschool": "Phantasm",
+  "descriptors": [
+   "Mind-Affecting",
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "5 rounds",
+  "savingThrow": "Will partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "lingering-chorus",
+  "name": "Lingering Chorus",
+  "school": "Illusion",
+  "subschool": "Figment",
+  "descriptors": [],
+  "levels": {
+   "Brd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "0 ft.",
+  "effect": "A chorus of phantasmal voices",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "longstrider-mass",
+  "name": "Longstrider, Mass",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 5,
+   "Rgr": 4
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 swift action",
+  "range": "60 ft.",
+  "area": "60-ft.-radius emanation centered on you",
+  "duration": "1 hour/level (D)",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "meteoric-strike",
+  "name": "Meteoric Strike",
+  "school": "Transmutation",
+  "descriptors": [
+   "Fire"
+  ],
+  "levels": {
+   "Clr": 5,
+   "Drd": 4,
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "0 ft.",
+  "target": "Your melee weapon",
+  "duration": "1 round or until discharged",
+  "savingThrow": "None or Reflex half; see text",
+  "spellResistance": "See text",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "mystic-aegis",
+  "name": "Mystic Aegis",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Clr": 4
+  },
+  "components": [
+   "V",
+   "DF"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "primal-speed",
+  "name": "Primal Speed",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 6,
+   "Rgr": 4,
+   "Sor": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "24 hours",
+  "summary": "Gain a +5 bonus on Reflex saves and a +10-ft. bonus to speed. Sorcerer spell only.",
+  "description": "Gain a +5 bonus on Reflex saves and a +10-ft. bonus to speed. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "pronouncement-of-fate",
+  "name": "Pronouncement of Fate",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates or Will partial; see text",
+  "spellResistance": "Special",
+  "summary": "Imposes a -4 penalty on an offender's attacks, damage, saves, and checks; target loses actions.",
+  "description": "Imposes a -4 penalty on an offender's attacks, damage, saves, and checks; target loses actions.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "renewed-vigor",
+  "name": "Renewed Vigor",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 5,
+   "Clr": 4,
+   "Drd": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft.",
+  "effect": "30-ft.-radius burst centered on you",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Fortitude negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "tail-sweep",
+  "name": "Tail Sweep",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "10 feet",
+  "area": "10-foot-radius burst",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "Sorceror only. Your tail of force can attack a group of foes within 10 ft.",
+  "description": "Sorceror only. Your tail of force can attack a group of foes within 10 ft.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "valiant-spirit",
+  "name": "Valiant Spirit",
+  "school": "Divination",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Brd": 4,
+   "Clr": 4,
+   "Pal": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 hour/level or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum"
+ },
+ {
+  "id": "wall-of-scales",
+  "name": "Wall of Scales",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Sor": 4
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "Dragonhide wall whose area is up to one 5-ft.",
+  "duration": "1 minute/level",
+  "savingThrow": "See text",
+  "spellResistance": "No",
+  "summary": "Sorceror only. Create a barrier of dragonhide.",
+  "description": "Sorceror only. Create a barrier of dragonhide.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "wings-of-flurry",
+  "name": "Wings of Flurry",
+  "school": "Evocation",
+  "descriptors": [
+   "Force"
+  ],
+  "levels": {
+   "Sor": 4
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft.",
+  "area": "30-ft.-radius burst",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half",
+  "spellResistance": "Yes",
+  "summary": "Sorceror only. Your wings of force can attack all foes within 30 ft.",
+  "description": "Sorceror only. Your wings of force can attack all foes within 30 ft.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "blizzard",
+  "name": "Blizzard",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 5
+  },
+  "domains": {
+   "Winter": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "100 ft.-radius/level spread",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "No",
+  "summary": "Temperature drops and powerful blizzard reduces visibility to zero.",
+  "description": "Temperature drops and powerful blizzard reduces visibility to zero.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "blood-creepers",
+  "name": "Blood Creepers",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "One creature",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "call-avalanche",
+  "name": "Call Avalanche",
+  "school": "Evocation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "10 ft.-radius/level spread",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half; see text",
+  "spellResistance": "No",
+  "summary": "Avalanche of ice and snow falls from the sky, burying subjects.",
+  "description": "Avalanche of ice and snow falls from the sky, burying subjects.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "conjure-ice-beast-v",
+  "name": "Conjure Ice Beast V",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 5,
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "discordant-malediction",
+  "name": "Discordant Malediction",
+  "school": "Transmutation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "1 creature",
+  "duration": "24 hours",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "dispel-cold",
+  "name": "Dispel Cold",
+  "school": "Abjuration",
+  "descriptors": [
+   "Fire"
+  ],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "summary": "Cancels cold spells and effects.",
+  "description": "Cancels cold spells and effects.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "You and a touched evil creature from another plane; or you and an enchantment or evil spell on a touched creature or object",
+  "duration": "1 round/level or until discharged, whichever comes first",
+  "savingThrow": "See text",
+  "spellResistance": "See text"
+ },
+ {
+  "id": "dispel-fire",
+  "name": "Dispel Fire",
+  "school": "Abjuration",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "summary": "Cancels fire spells and effects.",
+  "description": "Cancels fire spells and effects.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "You and a touched evil creature from another plane; or you and an enchantment or evil spell on a touched creature or object",
+  "duration": "1 round/level or until discharged, whichever comes first",
+  "savingThrow": "See text",
+  "spellResistance": "See text"
+ },
+ {
+  "id": "fire-in-the-blood",
+  "name": "Fire in the Blood",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 minute/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Your blood becomes a potent corrosive that burns attackers.",
+  "description": "Your blood becomes a potent corrosive that burns attackers.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "frostbite",
+  "name": "Frostbite",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/2 levels, no two of which can be more than 30 ft. apart",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half",
+  "spellResistance": "Yes",
+  "summary": "Fort save or take 1d6 nonlethal cold damage and be fatigued.",
+  "description": "Fort save or take 1d6 nonlethal cold damage and be fatigued.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "hibernate",
+  "name": "Hibernate",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5,
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "One living creature",
+  "duration": "1 week/level (D)",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Sends subject into state of hibernation for one week/level.",
+  "description": "Sends subject into state of hibernation for one week/level.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "incarnum-weapon",
+  "name": "Incarnum Weapon",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "effect": "Large weapon of incarnum",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Will partial",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum"
+ },
+ {
+  "id": "invest-heavy-protection",
+  "name": "Invest Heavy Protection",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II",
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "Will half (harmless); see text",
+  "spellResistance": "Yes (harmless); see text"
+ },
+ {
+  "id": "magic-convalescence",
+  "name": "Magic Convalescence",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Brd": 5,
+   "Clr": 5,
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 standard action",
+  "range": "20 ft.",
+  "area": "20-ft.-radius emanation centered on you",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "manifest-dragon-heritage",
+  "name": "Manifest Dragon Heritage",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Sor": 5
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 full round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One wyvern",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Sorceror only. Conjures a wyvern.",
+  "description": "Sorceror only. Conjures a wyvern.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon"
+ },
+ {
+  "id": "pass-through-ice",
+  "name": "Pass Through Ice",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5,
+   "Drd": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Creature touched",
+  "duration": "1 round/level (D)",
+  "savingThrow": "Yes (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Subject can pass through ice or snow like water.",
+  "description": "Subject can pass through ice or snow like water.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "stalwart-pact",
+  "name": "Stalwart Pact",
+  "school": "Evocation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 5
+  },
+  "domains": {
+   "Pact": 5
+  },
+  "components": [
+   "V",
+   "S",
+   "DF",
+   "XP"
+  ],
+  "castingTime": "10 minutes",
+  "range": "Touch",
+  "target": "Willing living creature touched",
+  "duration": "Permanent until triggered, then 1 round/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "undying-vigor-of-the-dragonlords",
+  "name": "Undying Vigor of the Dragonlords",
+  "school": "Conjuration",
+  "subschool": "Healing",
+  "descriptors": [],
+  "levels": {
+   "Sor": 5
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 full round",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "summary": "Heal yourself of 5d6 or more points of damage. Sorcerer spell only.",
+  "description": "Heal yourself of 5d6 or more points of damage. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "algid-enhancement",
+  "name": "Algid Enhancement",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One cold creature/level",
+  "duration": "24 hours",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "animal-spirit-mass",
+  "name": "Animal Spirit, Mass",
+  "school": "Divination",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Drd": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "Up to one creature/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum",
+  "castingTime": "1 standard action",
+  "duration": "1 hour/level or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)"
+ },
+ {
+  "id": "bones-of-the-earth",
+  "name": "Bones of the Earth",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Earth"
+  ],
+  "levels": {
+   "Drd": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "60 ft.",
+  "effect": "One 5-ft.-diameter pillar of stone per round",
+  "duration": "1 round/2 levels (D)",
+  "savingThrow": "Reflex negates",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "city-stride",
+  "name": "City Stride",
+  "school": "Conjuration",
+  "subschool": "Teleportation",
+  "descriptors": [],
+  "levels": {
+   "Brd": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "M"
+  ],
+  "castingTime": "1 round",
+  "range": "Touch",
+  "target": "You and touched objects or touched willing creatures",
+  "duration": "Instantaneous",
+  "savingThrow": "None and Will negates (object)",
+  "spellResistance": "No and Yes (object)",
+  "summary": "Teleport between two cities.",
+  "description": "Teleport between two cities.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "conjure-ice-beast-vi",
+  "name": "Conjure Ice Beast Vi",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 6,
+   "Drd": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "death-hail",
+  "name": "Death Hail",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold",
+   "Death"
+  ],
+  "levels": {
+   "Drd": 6
+  },
+  "domains": {
+   "Winter": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 round",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "area": "Cylinder (40-ft radius, 20 ft. high)",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude half",
+  "spellResistance": "No You call into being an intense",
+  "summary": "Summons a storm of death hail dealing 1d2 points of Strength and Constitution damage.",
+  "description": "Summons a storm of death hail dealing 1d2 points of Strength and Constitution damage.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "frostburn-mass",
+  "name": "Frostburn, Mass",
+  "school": "Necromancy",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature/level, no two of which can be more than 30 ft. apart",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "incarnum-vigor",
+  "name": "Incarnum Vigor",
+  "school": "Transmutation",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Clr": 6,
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One living creature",
+  "duration": "1 round/level",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum"
+ },
+ {
+  "id": "resonating-agony",
+  "name": "Resonating Agony",
+  "school": "Evocation",
+  "descriptors": [
+   "Sonic"
+  ],
+  "levels": {
+   "Brd": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch",
+  "target": "Living creature touched",
+  "duration": "1 round/level",
+  "savingThrow": "Fortitude partial",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "snow-wave",
+  "name": "Snow Wave",
+  "school": "Conjuration",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 round",
+  "range": "30 ft.",
+  "area": "Cone-shaped burst",
+  "duration": "Instantaneous",
+  "savingThrow": "Fortitude half and Reflex negates; see text",
+  "spellResistance": "No",
+  "summary": "Knocks creatures prone and deals 4d6 crushing damage and 1d6 cold damage.",
+  "description": "Knocks creatures prone and deals 4d6 crushing damage and 1d6 cold damage.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "snowsong",
+  "name": "Snowsong",
+  "school": "Enchantment",
+  "subschool": "Compulsion",
+  "descriptors": [
+   "Mind-Affecting"
+  ],
+  "levels": {
+   "Brd": 6
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft.",
+  "area": "30-ft. radius centered on you",
+  "duration": "10 min./level",
+  "savingThrow": "Will negates",
+  "spellResistance": "Yes",
+  "summary": "Musical snowfall aids allies in within 30 ft. and hinders enemy spellcasters.",
+  "description": "Musical snowfall aids allies in within 30 ft. and hinders enemy spellcasters.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "tortoise-shell",
+  "name": "Tortoise Shell",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 6
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Touch Area/Effect/",
+  "target": "Living creature touched",
+  "duration": "10 min./level",
+  "savingThrow": "None",
+  "spellResistance": "Yes (harmless)",
+  "summary": "Large shell provides cover or shelter.",
+  "description": "Large shell provides cover or shelter.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "warp-destiny",
+  "name": "Warp Destiny",
+  "school": "Transmutation",
+  "descriptors": [],
+  "levels": {},
+  "domains": {
+   "Destiny": 6
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 immediate action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "Instantaneous",
+  "description": "No summary yet.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "aspect-of-the-platinum-dragon",
+  "name": "Aspect of the Platinum Dragon",
+  "school": "Transmutation",
+  "subschool": "Polymorph",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Sor": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level (D)",
+  "summary": "Take the form of an aspect of Bahamut. Sorcerer spell only.",
+  "description": "Take the form of an aspect of Bahamut. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "aura-of-cold-greater",
+  "name": "Aura of Cold, Greater",
+  "school": "Transmutation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 7,
+   "Drd": 7
+  },
+  "components": [],
+  "range": "10 ft.",
+  "area": "10-ft.-radius spherical emanation, centered on you",
+  "description": "No summary yet.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "conjure-ice-beast-vii",
+  "name": "Conjure Ice Beast Vii",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 7,
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "great-worm-of-the-earth",
+  "name": "Great Worm of the Earth",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Earth"
+  ],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "A great wormlike maw",
+  "duration": "1 round/level or until escaped",
+  "savingThrow": "Reflex partial",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Complete Mage.",
+  "source": "Complete Mage"
+ },
+ {
+  "id": "harm-greater",
+  "name": "Harm, Greater",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 7
+  },
+  "components": [],
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One creature",
+  "description": "No summary yet.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "pact-of-return",
+  "name": "Pact of Return",
+  "school": "Necromancy",
+  "descriptors": [],
+  "levels": {
+   "Clr": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Heroes of Horror.",
+  "source": "Heroes of Horror"
+ },
+ {
+  "id": "poison-vines",
+  "name": "Poison Vines",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [],
+  "savingThrow": "Fortitude negates; see text",
+  "spellResistance": "Yes",
+  "summary": "Vines that entangle and are poisonous.",
+  "description": "Vines that entangle and are poisonous.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "raise-ice-forest",
+  "name": "Raise Ice Forest",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 round",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "20-ft. square of snow/level",
+  "duration": "Permanent",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Conjures trees of ice.",
+  "description": "Conjures trees of ice.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "righteous-burst",
+  "name": "Righteous Burst",
+  "school": "Evocation",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {
+   "Clr": 7
+  },
+  "components": [
+   "V",
+   "S",
+   "M",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft.",
+  "area": "30-ft.-radius burst centered on you",
+  "duration": "Instantaneous",
+  "savingThrow": "None or Will half; see text",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "storm-tower",
+  "name": "Storm Tower",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 full round",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "area": "100-ft. tall, 20-ft.-radius spread",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "summary": "Tower of swirling clouds absorbs electricity, gives concealment, and prevents movement.",
+  "description": "Tower of swirling clouds absorbs electricity, gives concealment, and prevents movement.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "whiteout",
+  "name": "Whiteout",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Long (400 ft. + 40 ft./level)",
+  "effect": "Cloud centered on target spreads 120 ft. and is 20 ft. high",
+  "duration": "1 hour/level",
+  "savingThrow": "None (see text)",
+  "spellResistance": "No",
+  "summary": "Snow and wind obscure sight; creatures affected may become lost.",
+  "description": "Snow and wind obscure sight; creatures affected may become lost.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "wrack-earth",
+  "name": "Wrack Earth",
+  "school": "Evocation",
+  "descriptors": [
+   "Earth"
+  ],
+  "levels": {
+   "Drd": 7
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "30 ft.",
+  "area": "30-ft. line",
+  "duration": "Instantaneous",
+  "savingThrow": "Reflex half; see text",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "aspect-of-the-chromatic-dragon",
+  "name": "Aspect of the Chromatic Dragon",
+  "school": "Transmutation",
+  "subschool": "Polymorph",
+  "descriptors": [
+   "Evil"
+  ],
+  "levels": {
+   "Sor": 8
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level (D)",
+  "summary": "Take the form of an aspect of Tiamat. Sorcerer spell only.",
+  "description": "Take the form of an aspect of Tiamat. Sorcerer spell only.\n\nSummary only. Full text: Dragon Magic.",
+  "source": "Dragon Magic"
+ },
+ {
+  "id": "conjure-ice-beast-viii",
+  "name": "Conjure Ice Beast Viii",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 8,
+   "Drd": 8
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "glacier",
+  "name": "Glacier",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 8
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels); see text",
+  "effect": "One 20-ft. cube/2 levels",
+  "duration": "1 round/level",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Conjures glaciers that attack your enemies.",
+  "description": "Conjures glaciers that attack your enemies.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "manifest-dragon-heritage-greater",
+  "name": "Manifest Dragon Heritage, Greater",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Sor": 8
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "effect": "One dragon turtle",
+  "summary": "Sorceror only. Conjures a dragon turtle.",
+  "description": "Sorceror only. Conjures a dragon turtle.\n\nSummary only. Full text: Races of the Dragon.",
+  "source": "Races of the Dragon",
+  "castingTime": "1 full round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "stormrage",
+  "name": "Stormrage",
+  "school": "Transmutation",
+  "descriptors": [
+   "Electricity"
+  ],
+  "levels": {
+   "Clr": 8,
+   "Drd": 8
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 min./level (D)",
+  "summary": "Fly, wind wall, protection from strong winds, and make electrical attacks.",
+  "description": "Fly, wind wall, protection from strong winds, and make electrical attacks.\n\nSummary only. Full text: Complete Divine.",
+  "source": "Complete Divine"
+ },
+ {
+  "id": "summon-giants",
+  "name": "Summon Giants",
+  "school": "Conjuration",
+  "subschool": "Summoning",
+  "descriptors": [],
+  "levels": {
+   "Clr": 8
+  },
+  "domains": {
+   "Winter": 8
+  },
+  "components": [
+   "V",
+   "S",
+   "F"
+  ],
+  "castingTime": "1 full round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "effect": "One or more summoned creatures",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "summary": "Summons outsider giants to fight for you.",
+  "description": "Summons outsider giants to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "true-banishment",
+  "name": "True Banishment",
+  "school": "Abjuration",
+  "descriptors": [],
+  "levels": {
+   "Clr": 8
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "One extraplanar creature",
+  "duration": "Instantaneous; see text",
+  "savingThrow": "None",
+  "spellResistance": "Yes",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
+ },
+ {
+  "id": "valiant-spirit-mass",
+  "name": "Valiant Spirit, Mass",
+  "school": "Divination",
+  "descriptors": [
+   "Incarnum"
+  ],
+  "levels": {
+   "Clr": 8
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "target": "Up to one creature/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Magic of Incarnum.",
+  "source": "Magic of Incarnum",
+  "castingTime": "1 standard action",
+  "duration": "1 hour/level or until discharged",
+  "savingThrow": "Will negates (harmless)",
+  "spellResistance": "Yes (harmless)"
+ },
+ {
+  "id": "visions-of-the-future",
+  "name": "Visions of the Future",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {
+   "Clr": 8
+  },
+  "components": [
+   "V",
+   "S"
+  ],
+  "castingTime": "10 minutes",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 hour/level or until discharged",
+  "description": "No summary yet.\n\nSummary only. Full text: Player's Handbook II.",
+  "source": "Player's Handbook II"
+ },
+ {
+  "id": "aspect-of-the-deity-greater",
+  "name": "Aspect of the Deity, Greater",
+  "school": "Transmutation",
+  "descriptors": [
+   "Good"
+  ],
+  "levels": {},
+  "domains": {
+   "Herald": 9
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "description": "No summary yet.\n\nSummary only. Full text: Book of Exalted Deeds.",
+  "source": "Book of Exalted Deeds",
+  "castingTime": "1 standard action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level"
+ },
+ {
+  "id": "choose-destiny",
+  "name": "Choose Destiny",
+  "school": "Divination",
+  "descriptors": [],
+  "levels": {},
+  "domains": {
+   "Destiny": 9
+  },
+  "components": [
+   "V"
+  ],
+  "castingTime": "1 swift action",
+  "range": "Personal",
+  "target": "You",
+  "duration": "1 round/level",
+  "description": "No summary yet.\n\nSummary only. Full text: Races of Destiny.",
+  "source": "Races of Destiny"
+ },
+ {
+  "id": "cometstrike",
+  "name": "Cometstrike",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Drd": 9
+  },
+  "components": [
+   "V",
+   "DF"
+  ],
+  "castingTime": "1 standard action",
+  "range": "Medium (100 ft. + 10 ft./level)",
+  "target": "Three different creatures or objects",
+  "duration": "3 rounds",
+  "savingThrow": "Reflex partial",
+  "spellResistance": "No",
+  "summary": "Three comets per round strike targets, each dealing 3d6 bludgeoning damage and 1d4/level cold damage.",
+  "description": "Three comets per round strike targets, each dealing 3d6 bludgeoning damage and 1d4/level cold damage.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn"
+ },
+ {
+  "id": "conjure-ice-beast-ix",
+  "name": "Conjure Ice Beast Ix",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [
+   "Cold"
+  ],
+  "levels": {
+   "Clr": 9,
+   "Drd": 9
+  },
+  "components": [
+   "V",
+   "S",
+   "DF"
+  ],
+  "effect": "One or more conjured ice creatures, no two of",
+  "summary": "Conjures ice creature to fight for you.",
+  "description": "Conjures ice creature to fight for you.\n\nSummary only. Full text: Frostburn.",
+  "source": "Frostburn",
+  "castingTime": "1 round",
+  "range": "Close (25 ft. + 5 ft./2 levels)",
+  "duration": "1 round/level (D)",
+  "savingThrow": "None",
+  "spellResistance": "No"
+ },
+ {
+  "id": "word-of-genesis",
+  "name": "Word of Genesis",
+  "school": "Conjuration",
+  "subschool": "Creation",
+  "descriptors": [],
+  "levels": {
+   "Clr": 9
+  },
+  "components": [
+   "V",
+   "S",
+   "XP"
+  ],
+  "castingTime": "Six days (8 hours/day)",
+  "range": "100 ft. (see text)",
+  "effect": "A demiplane coterminous with the Astral Plane, centered on your location",
+  "duration": "Instantaneous",
+  "savingThrow": "None",
+  "spellResistance": "No",
+  "description": "No summary yet.\n\nSummary only. Full text: Tome of Magic.",
+  "source": "Tome of Magic"
  }
 ]

@@ -1,7 +1,7 @@
 // Spells kept on the device: imported JSON files and the custom spell form.
 
 import { db, type SpellbookDB, type StoredSpellRecord } from './db'
-import { slugify, validateSpell, validateSpellFile, type Spell } from './spell-schema'
+import { classLevels, slugify, validateSpell, validateSpellFile, type SpellRecord } from './spell-schema'
 
 export interface ImportResult {
   ok: boolean
@@ -22,7 +22,7 @@ export async function importSpellFile(text: string, d: SpellbookDB = db): Promis
   if (data && !Array.isArray(data) && typeof data === 'object') data = [data]
   const errors = validateSpellFile(data)
   if (errors.length) return { ok: false, added: 0, replaced: 0, errors }
-  const spells = data as Spell[]
+  const spells = data as SpellRecord[]
   const existing = new Set((await d.storedSpells.bulkGet(spells.map((s) => s.id))).filter(Boolean).map((s) => s!.id))
   await d.storedSpells.bulkPut(spells.map((s) => ({ ...s, origin: 'imported' as const })))
   return { ok: true, added: spells.length - existing.size, replaced: existing.size, errors: [] }
@@ -35,7 +35,7 @@ export function uniqueSpellId(name: string, takenIds: ReadonlySet<string>): stri
   for (let i = 2; ; i++) if (!takenIds.has(`${base}-${i}`)) return `${base}-${i}`
 }
 
-export async function saveCustomSpell(spell: Spell, d: SpellbookDB = db): Promise<string[]> {
+export async function saveCustomSpell(spell: SpellRecord, d: SpellbookDB = db): Promise<string[]> {
   const errors = validateSpell(spell)
   if (errors.length) return errors
   await d.storedSpells.put({ ...spell, origin: 'custom' })
@@ -47,12 +47,14 @@ export async function deleteStoredSpell(id: string, d: SpellbookDB = db) {
 }
 
 /** Stored spells as a spell file (same format as public/data/spells/*.json). */
-export async function exportStoredSpells(d: SpellbookDB = db): Promise<Spell[]> {
+export async function exportStoredSpells(d: SpellbookDB = db): Promise<SpellRecord[]> {
   const rows: StoredSpellRecord[] = await d.storedSpells.toArray()
-  return rows
-    .map(({ origin: _o, ...s }) => s)
-    .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+  return rows.map(({ origin: _o, ...s }) => s).sort(byWizardLevel)
 }
+
+/** Sorts records by sorcerer/wizard level (others last), then name. */
+export const byWizardLevel = (a: SpellRecord, b: SpellRecord) =>
+  (classLevels(a).Wiz ?? 99) - (classLevels(b).Wiz ?? 99) || a.name.localeCompare(b.name)
 
 export function downloadText(text: string, fileName: string, type = 'text/plain') {
   const url = URL.createObjectURL(new Blob([text], { type }))

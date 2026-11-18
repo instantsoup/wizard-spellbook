@@ -37,7 +37,8 @@ this to correct an SRD spell without editing `srd.json`.
     "school": "Conjuration",
     "subschool": "Creation",
     "descriptors": ["Fire"],
-    "level": 4,
+    "levels": { "Sor": 4, "Wiz": 4, "Clr": 5 },
+    "domains": { "Fire": 4 },
     "components": ["V", "S"],
     "castingTime": "1 standard action",
     "range": "Close (25 ft. + 5 ft./2 levels)",
@@ -61,7 +62,9 @@ this to correct an SRD spell without editing `srd.json`.
 | `school` | yes | text | One of: `Abjuration`, `Conjuration`, `Divination`, `Enchantment`, `Evocation`, `Illusion`, `Necromancy`, `Transmutation`, `Universal`. |
 | `subschool` | no | text | For example `"Creation"`, `"Summoning"`, `"Figment"`, `"Charm"`. |
 | `descriptors` | yes | list | For example `["Fire"]`, `["Mind-Affecting", "Fear"]`. Use `[]` for none. |
-| `level` | yes | number | The **Sor/Wiz** level, 0–9. |
+| `levels` | yes* | object | Level per class list, 0–9: `"Brd"`, `"Clr"`, `"Drd"`, `"Pal"`, `"Rgr"`, `"Sor"`, `"Wiz"`. A spell on the sorcerer/wizard list has both `Sor` and `Wiz`; a wizard-only spell has just `Wiz`. Each class only sees the spells on its own list. |
+| `domains` | no | object | Cleric domain levels, for example `{"Fire": 4, "Sun": 4}`. |
+| `level` | no | number | Older format: the Sor/Wiz level, read as `{"Sor": n, "Wiz": n}`. Still accepted (for imports and custom spells); bundled files use `levels`. |
 | `components` | yes | list | Any of `"V"`, `"S"`, `"M"`, `"F"`, `"DF"`, `"XP"`. |
 | `materialComponent` | no | text | Text of the material component. |
 | `focus` | no | text | Text of the focus. |
@@ -80,6 +83,8 @@ this to correct an SRD spell without editing `srd.json`.
 | `source` | yes | text | Book or origin: `"SRD"`, `"Spell Compendium"`, `"Homebrew"`. Used by the Source filter. |
 | `page` | no | number | Page in the source book. |
 
+\* Give `levels`, or `domains` for a domain-only spell, or the older `level`.
+
 Any other field name is reported as an error, which catches typos such as
 `"savingthrow"`.
 
@@ -93,10 +98,13 @@ git clone --depth 1 https://github.com/olimot/srd-v3.5-md /tmp/srd
 npm run build:srd -- /tmp/srd/spells
 ```
 
-The converter keeps only Sor/Wiz spells, including the wizard-only ones (such as
-*Mage's Lucubration*). For "functions like X" spells, it fills in the missing stat
-lines from the base spell. It also adds summaries from the SRD spell list and checks
-every level against that list.
+The converter keeps every spell on a core class list (bard, cleric, druid, paladin, ranger,
+sorcerer, wizard) or a cleric domain, with its levels for each. Wizard-only spells (such as
+*Mage's Lucubration*) get just `Wiz`. For "functions like X" spells, it fills in the missing
+stat lines from the base spell. It also adds summaries from the SRD class spell lists (the
+Sor/Wiz list first) and checks every level against those lists; it reports two known
+differences, *Mage's Lucubration* and *Mnemonic Enhancer*, where the Level line (wizard only)
+is used.
 
 ## Converting another spell list
 
@@ -110,7 +118,8 @@ list must be a JSON array whose entries have `name`, `source: {abbr, page}`, `sc
 node scripts/convert-spell-list.ts list.json public/data/spells/srd.json my-spells.json
 ```
 
-- Only spells with a Sor/Wiz level are kept. "Arc" is the Archivist list, not the wizard list.
+- Spells on a core class list or a cleric domain are kept; other classes in the list (Archivist
+  "Arc", Wu Jen, prestige classes) are ignored. Domain names are in `scripts/lib/classes.ts`.
 - Spells already in `srd.json` are skipped, so the full SRD text is never replaced by a summary.
 - Non-standard components (Corrupt, Sacrifice, Abstinence, …) are kept as a note in the description.
 - The result can be imported on a phone (**My spells → Import file**), or bundled as an
@@ -123,26 +132,57 @@ node scripts/convert-spell-list.ts list.json public/data/spells/srd.json my-spel
 
 ```bash
 # save the wizard list and the per-book pages it links to, then:
-node scripts/convert-dndtools.ts wizardSpells.html pages/ public/data/spells/index-books.json \
-  public/data/spells/srd.json public/data/spells/index-extra.json
+SUMMARIES=class-summaries.json node scripts/convert-dndtools.ts wizardSpells.html pages/ \
+  public/data/spells/index-books.json public/data/spells/srd.json public/data/spells/index-extra.json
 ```
 
 - `ALLOWED` in the script lists the books from the player's library.
 - Only the school line and stat lines are taken from the book pages; the description is
-  the list's one-line summary plus "Summary only. Full text: <book>".
-- Spells already in the earlier files are skipped, and sorcerer-only spells are left out.
+  a one-line summary plus "Summary only. Full text: <book>".
+- Wizard-list spells come first, with the list's summary. Every other spell on the same
+  book pages that is on a core class list or domain is added too, with a summary from
+  `SUMMARIES` when there is one. Build that file from imarvintpa.com's class indexes
+  (`Index_Class_Desc.php?Class=Clr`, `Drd`, `Brd`, `Pal`, `Rgr`, saved as HTML):
+  ```bash
+  node scripts/extract-class-summaries.ts class-summaries.json Clr.html Drd.html Brd.html Pal.html Rgr.html
+  ```
+- Spells already in the earlier files are skipped, but the classes and domains the book page
+  shows are added to them (`index-extra.json` only; `srd.json` is never changed). If the page
+  puts a spell on the Sor/Wiz list that `index-extra.json` has only for other classes, the
+  page's version replaces it.
+
+## Rebuilding everything
+
+The files are built in this order, then corrected:
+
+```bash
+node scripts/build-srd.ts /tmp/srd/spells
+node scripts/convert-spell-list.ts spells.json public/data/spells/srd.json public/data/spells/index-extra.json
+SUMMARIES=class-summaries.json node scripts/convert-dndtools.ts wizardSpells.html pages/ \
+  public/data/spells/index-books.json public/data/spells/srd.json public/data/spells/index-extra.json
+node scripts/apply-corrections.ts
+npm run validate:spells
+```
 
 ## Corrections from the source books
 
 `data-corrections/<Book>.json` holds changes found by checking the bundled spells against the
 player's own PDFs (the books are the source of truth). Each file lists:
 
-- `updates`: a stat or school field and its value **as printed in the book**;
+These files came from checking **wizard** spells, so they only touch the sorcerer/wizard list:
+
+- `updates`: a stat or school field and its value **as printed in the book** (`level` is the
+  Sor/Wiz level);
 - `renames`: spelling fixes (the spell id never changes, so books that already contain the
   spell keep working);
 - `additions`: wizard spells that were missing, with stat lines and a one-line summary
   (the book's own spell-list line when it has one; never the spell's full text);
-- `removals`: spells the book shows are not on the sorcerer/wizard list.
+- `removals`: spells the book shows are not on the sorcerer/wizard list. The spell loses its
+  Sor/Wiz level and stays for any other class that has it.
+
+`SpellCompendium.json` is applied first, so for a reprinted spell its version wins. An
+addition replaces a converter's version of the same spell (keeping its other class levels),
+except for SRD spells, which only get the Sor/Wiz level.
 
 Apply them (safe to run repeatedly) and check the result:
 

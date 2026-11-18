@@ -5,11 +5,15 @@
 //   git clone --depth 1 https://github.com/olimot/srd-v3.5-md /some/dir
 //   node scripts/build-srd.ts /some/dir/spells
 //
-// Only spells with a Sor/Wiz level are kept.
+// Every spell on a core class list (bard, cleric, druid, paladin, ranger, sorcerer, wizard) or
+// a cleric domain is kept, with its levels for each.
 
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { SCHOOLS, slugify, validateSpellFile, type School, type Spell } from '../src/data/spell-schema.ts'
+import { SCHOOLS, slugify, validateSpellFile, type ClassCode, type School, type SpellRecord } from '../src/data/spell-schema.ts'
+import { addLevel, isEmpty, levelFields, parseLevelText, type LevelInfo } from './lib/classes.ts'
+
+type Spell = SpellRecord
 
 const srcDir = process.argv[2]
 const outFile = process.argv[3] ?? 'public/data/spells/srd.json'
@@ -68,10 +72,6 @@ function parseSchoolLine(line: string) {
   }
 }
 
-function parseSorWizLevel(levelText: string): number | undefined {
-  const m = levelText.match(/\b(?:Sor\/Wiz|Wiz)\s+(\d)/) // a few spells are wizard-only ("Wiz 6")
-  return m ? Number(m[1]) : undefined
-}
 
 function parseComponents(text: string): string[] {
   return text
@@ -82,7 +82,7 @@ function parseComponents(text: string): string[] {
     .filter((c, i, all) => all.indexOf(c) === i)
 }
 
-type ParsedSpell = Omit<Spell, 'level'> & { level?: number }
+type ParsedSpell = Spell & { info: LevelInfo }
 
 function parseSpellBlock(name: string, lines: string[]): ParsedSpell | undefined {
   const paragraphs = lines
@@ -93,7 +93,8 @@ function parseSpellBlock(name: string, lines: string[]): ParsedSpell | undefined
 
   const levelPara = paragraphs.find((p) => p.startsWith('**Level:**'))
   if (!levelPara) return undefined
-  const level = parseSorWizLevel(levelPara) // undefined for non-wizard spells (kept for lookups)
+  // Some spells are wizard-only ("Wiz 6"); spells off every core list are kept for lookups.
+  const info = parseLevelText(unescape(levelPara.replace('**Level:**', '')))
 
   const { school, subschool, descriptors } = parseSchoolLine(paragraphs[0])
   const spell: ParsedSpell = {
@@ -102,7 +103,7 @@ function parseSpellBlock(name: string, lines: string[]): ParsedSpell | undefined
     school,
     ...(subschool ? { subschool } : {}),
     descriptors: descriptors.map((d) => d.replace(/_/g, '')),
-    level,
+    info,
     components: [],
     description: '',
     source: 'SRD',
@@ -203,45 +204,83 @@ function resolve(s: ParsedSpell, depth = 0): void {
 }
 parsed.forEach((s) => resolve(s))
 
-const all = parsed.filter((s): s is Spell => s.level !== undefined)
+const all = parsed.filter((s) => !isEmpty(s.info))
 
-// One-line summaries from the SRD's Sorcerer/Wizard spell list; also cross-checks levels.
-const listMd = readFileSync(join(srcDir, 'spell-list-ii.md'), 'utf8')
-const listSection = listMd.slice(listMd.indexOf('## Sorcerer/Wizard Spells'))
-let listLevel = -1
+// One-line summaries from the SRD's class spell lists (the Sor/Wiz list first, so wizard
+// summaries stay as they were); also cross-checks every level against the lists.
+const LISTS: [file: string, heading: string, cls: ClassCode][] = [
+  ['spell-list-ii.md', 'Sorcerer/Wizard Spells', 'Wiz'],
+  ['spell-list-i.md', 'Cleric Spells', 'Clr'],
+  ['spell-list-ii.md', 'Druid Spells', 'Drd'],
+  ['spell-list-i.md', 'Bard Spells', 'Brd'],
+  ['spell-list-ii.md', 'Paladin Spells', 'Pal'],
+  ['spell-list-ii.md', 'Ranger Spells', 'Rgr'],
+]
 const problems: string[] = []
-const listed = new Set<ParsedSpell>()
-for (const line of listSection.split('\n')) {
-  const lh = line.match(/^### (\d)/)
-  if (lh) listLevel = Number(lh[1])
-  const entry = line.match(/^\*\*(.+?):\*\*\s*(.*)$/)
-  if (!entry || listLevel < 0) continue
-  const listName = unescape(entry[1]).replace(/<sup>.*?<\/sup>/g, '').replace(/[*_]/g, '').trim()
+const listed = new Map<ParsedSpell, LevelInfo>()
+const listName = (raw: string) => unescape(raw).replace(/<sup>.*?<\/sup>/g, '').replace(/[*_]/g, '').trim()
+function onList(name: string, apply: (s: ParsedSpell) => void) {
   // "Protection from Chaos/Evil/Good/Law" covers four spells
-  const grouped = listName.match(/^(.* )(Chaos\/Evil\/Good\/Law)$/)
-  const names = grouped ? grouped[2].split('/').map((a) => grouped[1] + a) : [listName]
-  for (const n of names) {
+  const grouped = name.match(/^(.* )((?:Chaos|Evil|Good|Law)(?:\/(?:Chaos|Evil|Good|Law))+)$/)
+  for (const n of grouped ? grouped[2].split('/').map((a) => grouped[1] + a) : [name]) {
     const spell = byName.get(norm(n))
-    if (!spell) {
-      problems.push(`list entry not found: ${n}`)
-      continue
-    }
-    listed.add(spell)
-    if (spell.level !== listLevel) problems.push(`${spell.name}: level ${spell.level} but list says ${listLevel}`)
-    spell.summary = unescape(entry[2])
+    if (!spell) problems.push(`list entry not found: ${n}`)
+    else apply(spell)
   }
 }
-for (const s of all) if (!listed.has(s)) problems.push(`not in Sor/Wiz list: ${s.name}`)
-if (problems.length) console.warn('Spell list cross-check:\n  ' + problems.join('\n  '))
+const seen = (s: ParsedSpell) => listed.get(s) ?? (listed.set(s, { levels: {}, domains: {} }), listed.get(s)!)
+for (const [file, heading, cls] of LISTS) {
+  const md = readFileSync(join(srcDir, file), 'utf8')
+  const start = md.indexOf(`## ${heading}`)
+  const end = md.indexOf('\n## ', start + 3)
+  const section = md.slice(start, end < 0 ? undefined : end)
+  let listLevel = -1
+  for (const line of section.split('\n')) {
+    const lh = line.match(/^### (\d)/)
+    if (lh) listLevel = Number(lh[1])
+    const entry = line.match(/^\*\*(.+?):\*\*\s*(.*)$/)
+    if (!entry || listLevel < 0) continue
+    onList(listName(entry[1]), (spell) => {
+      addLevel(seen(spell), cls === 'Wiz' ? 'Sor/Wiz' : cls, listLevel)
+      spell.summary ??= unescape(entry[2])
+    })
+  }
+}
+{
+  // Cleric domain tables: "### Air Domain" then <td>1</td><td><strong>Name:</strong> summary</td>
+  const md = readFileSync(join(srcDir, 'spell-list-i.md'), 'utf8')
+  let domain = ''
+  for (const line of md.slice(md.indexOf('## Cleric Domains')).split('\n')) {
+    const dh = line.match(/^### (.+) Domain\s*$/)
+    if (dh) domain = dh[1]
+    for (const m of line.matchAll(/<td>(\d)<\/td><td><strong>(.+?):?<\/strong>:?\s*(.*?)<\/td>/g)) {
+      onList(listName(m[2]), (spell) => {
+        addLevel(seen(spell), domain, Number(m[1]))
+        spell.summary ??= unescape(m[3])
+      })
+    }
+  }
+}
+for (const s of all) {
+  const fromLists = JSON.stringify(levelFields(listed.get(s) ?? { levels: {}, domains: {} }))
+  const fromSpell = JSON.stringify(levelFields(s.info))
+  if (fromLists !== fromSpell) problems.push(`${s.name}: Level line ${fromSpell} but lists say ${fromLists}`)
+}
+if (problems.length) console.warn(`Spell list cross-check (${problems.length}):\n  ` + problems.join('\n  '))
 all.sort((a, b) => a.name.localeCompare(b.name))
 
-const errors = validateSpellFile(all)
+// Field order as before, with levels where "level" used to be.
+const out: Spell[] = all.map(({ info, ...s }) => {
+  const { id, name, school, subschool, descriptors, ...rest } = s
+  return { id, name, school, ...(subschool ? { subschool } : {}), descriptors, ...levelFields(info), ...rest }
+})
+const errors = validateSpellFile(out)
 if (errors.length) {
   console.error(errors.join('\n'))
   process.exit(1)
 }
-writeFileSync(outFile, JSON.stringify(all, null, 2) + '\n')
+writeFileSync(outFile, JSON.stringify(out, null, 2) + '\n')
 
-const byLevel = all.reduce<Record<number, number>>((acc, s) => ((acc[s.level] = (acc[s.level] ?? 0) + 1), acc), {})
-console.log(`Wrote ${all.length} Sor/Wiz spells to ${outFile}`)
-console.log('By level:', JSON.stringify(byLevel))
+const count = (c: ClassCode) => out.filter((s) => s.levels?.[c] !== undefined).length
+console.log(`Wrote ${out.length} spells to ${outFile}`)
+console.log('By class:', JSON.stringify(Object.fromEntries((['Brd', 'Clr', 'Drd', 'Pal', 'Rgr', 'Sor', 'Wiz'] as const).map((c) => [c, count(c)]))))

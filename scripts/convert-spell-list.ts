@@ -1,12 +1,14 @@
 // Converts a third-party 3.5 spell list (name/source{abbr,page}/school/subschool/descriptor/levels/
 // components/castingTime/range/duration/savingThrow/spellResistance/description) into the app's
-// spell file format. Keeps only Sor/Wiz spells and skips spells already in srd.json.
+// spell file format. Keeps spells on a core class list (bard, cleric, druid, paladin, ranger,
+// sorcerer, wizard) or a cleric domain, and skips spells already in srd.json.
 //
 // The output can be imported in the app (My spells → Import file) or bundled as an index file.
 // Such lists usually contain non-open books: bundle summaries only, never full text.
 //   node scripts/convert-spell-list.ts <list.json> public/data/spells/srd.json <out.json>
 import { readFileSync, writeFileSync } from 'node:fs'
-import { slugify, validateSpellFile, SCHOOLS, type Spell } from '../src/data/spell-schema.ts'
+import { slugify, validateSpellFile, SCHOOLS, type SpellRecord as Spell } from '../src/data/spell-schema.ts'
+import { addLevel, isEmpty, levelFields, sortLevel, type LevelInfo } from './lib/classes.ts'
 
 const [input, srdPath, out] = process.argv.slice(2)
 const raw = JSON.parse(readFileSync(input, 'utf8')) as any[] // eslint-disable-line
@@ -42,10 +44,11 @@ const book = (abbr: string) => BOOKS[abbr] ?? (abbr.startsWith('Dragon ') ? `Dra
 const STANDARD = new Set(['V', 'S', 'M', 'F', 'DF', 'XP'])
 
 const result: Spell[] = []
-const skipped = { notWizard: 0, alreadyBuiltIn: 0, excludedBook: 0 }
+const skipped = { noCoreList: 0, alreadyBuiltIn: 0, excludedBook: 0 }
 for (const x of raw) {
-  const level = x.levels?.['Sor/Wiz']
-  if (level === undefined) { skipped.notWizard++; continue }
+  const info: LevelInfo = { levels: {}, domains: {} }
+  for (const [k, n] of Object.entries(x.levels ?? {})) addLevel(info, k, Number(n))
+  if (isEmpty(info)) { skipped.noCoreList++; continue }
   const id = slugify(x.name)
   if (srdIds.has(id)) { skipped.alreadyBuiltIn++; continue }
   if (!ALLOWED_SOURCES.has(x.source?.abbr)) { skipped.excludedBook++; continue }
@@ -76,7 +79,7 @@ for (const x of raw) {
     school: x.school,
     ...(x.subschool ? { subschool: x.subschool } : {}),
     descriptors: (x.descriptor ?? []).filter((d: string) => d && d.trim()),
-    level,
+    ...levelFields(info),
     components: comps,
     ...(x.castingTime ? { castingTime: x.castingTime } : {}),
     ...(x.range ? { range: x.range } : {}),
@@ -90,12 +93,11 @@ for (const x of raw) {
   }
   result.push(spell)
 }
-result.sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+result.sort((a, b) => sortLevel(a) - sortLevel(b) || a.name.localeCompare(b.name))
 const errors = validateSpellFile(result)
 if (errors.length) { console.error(errors.slice(0, 30).join('\n')); process.exit(1) }
 writeFileSync(out, JSON.stringify(result, null, 1) + '\n')
 const bySource = result.reduce<Record<string, number>>((m, s) => ((m[s.source] = (m[s.source] ?? 0) + 1), m), {})
-console.log(`Wrote ${result.length} wizard spells. Skipped: ${skipped.notWizard} not on the Sor/Wiz list, ${skipped.alreadyBuiltIn} already built in with full text, ${skipped.excludedBook} from books not in the allowed list.`)
-console.log('By level:', JSON.stringify(result.reduce<Record<number, number>>((m, s) => ((m[s.level] = (m[s.level] ?? 0) + 1), m), {})))
+console.log(`Wrote ${result.length} spells (${result.filter((s) => s.levels?.Wiz !== undefined).length} wizard). Skipped: ${skipped.noCoreList} on no core class list, ${skipped.alreadyBuiltIn} already built in with full text, ${skipped.excludedBook} from books not in the allowed list.`)
 console.log('By source:', JSON.stringify(Object.entries(bySource).sort((a, b) => b[1] - a[1])))
 console.log('With special components:', result.filter((s) => s.description.includes('_Special component')).length)

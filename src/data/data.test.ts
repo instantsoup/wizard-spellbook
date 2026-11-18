@@ -97,8 +97,15 @@ describe('backup', () => {
 describe('mergeSpells', () => {
   it('lets later lists replace spells by id and sorts by level then name', () => {
     const fixed = { ...S.fireball, name: 'Fireball (fixed)' }
-    const merged = mergeSpells([S.fireball, S.magicMissile], [fixed])
+    const merged = mergeSpells('Wiz', [S.fireball, S.magicMissile], [fixed])
     expect(merged.map((s) => s.name)).toEqual(['Magic Missile', 'Fireball (fixed)'])
+  })
+  it('keeps one class list and uses that class level; legacy "level" means Sor/Wiz', () => {
+    const cure = { id: 'cure', name: 'Cure', school: 'Conjuration' as const, descriptors: [], components: ['V'], description: '-', source: 'SRD', levels: { Clr: 1, Brd: 1 } }
+    const dispel = { ...cure, id: 'dispel', name: 'Dispel', levels: { Clr: 3, Sor: 3, Wiz: 3 } }
+    const legacy = { ...cure, id: 'old', name: 'Old', levels: undefined, level: 2 }
+    expect(mergeSpells('Wiz', [cure, dispel, legacy]).map((s) => [s.id, s.level])).toEqual([['old', 2], ['dispel', 3]])
+    expect(mergeSpells('Clr', [cure, dispel, legacy]).map((s) => [s.id, s.level])).toEqual([['cure', 1], ['dispel', 3]])
   })
 })
 

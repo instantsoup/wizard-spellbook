@@ -4,7 +4,7 @@
 import Dexie, { type EntityTable } from 'dexie'
 import { migrateCharacter } from './migrate'
 import type { KnownSpell, PreparedSlot, WizardCharacter } from '../rules'
-import type { Spell } from './spell-schema'
+import type { SpellRecord } from './spell-schema'
 
 export interface CharacterRecord extends WizardCharacter {
   id: string
@@ -45,7 +45,7 @@ export interface LedgerRecord {
 }
 
 /** Spells imported from a JSON file or entered with the custom spell form. */
-export interface StoredSpellRecord extends Spell {
+export interface StoredSpellRecord extends SpellRecord {
   origin: 'imported' | 'custom'
 }
 

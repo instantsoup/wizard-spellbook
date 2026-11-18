@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Card, Chip, Field, inputClass, Loading, Messages, Page } from '../../components/ui'
-import { COMPONENTS, SCHOOLS, validateSpell, type School, type Spell } from '../../data/spell-schema'
+import { COMPONENTS, SCHOOLS, validateSpell, type School, type Spell, type SpellRecord } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { saveCustomSpell, uniqueSpellId } from '../../data/storedSpells'
 
@@ -12,6 +12,7 @@ const BLANK: Form = {
   name: '',
   school: 'Evocation',
   level: 1,
+  levels: {},
   components: ['V', 'S'],
   descriptorsText: '',
   description: '',
@@ -30,10 +31,12 @@ const TEXT_FIELDS: [keyof Spell, string, string?][] = [
   ['spellResistance', 'Spell resistance', 'Yes'],
 ]
 
-function toSpell(form: Form, id: string): Spell {
-  const { descriptorsText, pageText, ...rest } = form
+function toSpell(form: Form, id: string): SpellRecord {
+  const { descriptorsText, pageText, level, ...rest } = form
   const spell: Record<string, unknown> = {
     ...rest,
+    // The form edits the Sor/Wiz level; other class levels of an edited spell are kept.
+    levels: { ...form.levels, Sor: level, Wiz: level },
     id,
     name: form.name.trim(),
     descriptors: descriptorsText.split(',').map((d) => d.trim()).filter(Boolean),
@@ -44,7 +47,7 @@ function toSpell(form: Form, id: string): Spell {
   if (!form.components.includes('M')) delete spell.materialComponent
   if (!form.components.includes('F')) delete spell.focus
   if (!form.components.includes('XP')) delete spell.xpCost
-  return spell as unknown as Spell
+  return spell as unknown as SpellRecord
 }
 
 export function CustomSpellPage() {

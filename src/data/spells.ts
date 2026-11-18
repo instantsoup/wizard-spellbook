@@ -4,11 +4,11 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { useEffect, useMemo, useState } from 'react'
 import { db } from './db'
-import { validateSpellFile, type Spell } from './spell-schema'
+import { spellsForClass, validateSpellFile, type ClassCode, type Spell, type SpellRecord } from './spell-schema'
 
 const base = () => `${import.meta.env.BASE_URL}data/spells/`
 
-export async function fetchBundledSpells(fetcher: typeof fetch = fetch): Promise<Spell[]> {
+export async function fetchBundledSpells(fetcher: typeof fetch = fetch): Promise<SpellRecord[]> {
   const res = await fetcher(`${base()}manifest.json`)
   if (!res.ok) throw new Error(`Could not load spell list (${res.status}).`)
   const files = (await res.json()) as string[]
@@ -19,19 +19,20 @@ export async function fetchBundledSpells(fetcher: typeof fetch = fetch): Promise
       const data = await r.json()
       const errors = validateSpellFile(data)
       if (errors.length) console.warn(`${file} has problems:`, errors)
-      return data as Spell[]
+      return data as SpellRecord[]
     }),
   )
   return lists.flat()
 }
 
-export function mergeSpells(...lists: Spell[][]): Spell[] {
-  const byId = new Map<string, Spell>()
+/** Merges spell files by id (later lists win) and keeps the spells on one class list. */
+export function mergeSpells(cls: ClassCode, ...lists: SpellRecord[][]): Spell[] {
+  const byId = new Map<string, SpellRecord>()
   for (const list of lists) for (const s of list) byId.set(s.id, s)
-  return [...byId.values()].sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+  return spellsForClass([...byId.values()], cls).sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
 }
 
-let bundledPromise: Promise<Spell[]> | undefined
+let bundledPromise: Promise<SpellRecord[]> | undefined
 const loadBundled = () => (bundledPromise ??= fetchBundledSpells())
 
 export interface SpellData {
@@ -41,8 +42,9 @@ export interface SpellData {
   error?: string
 }
 
-export function useSpells(): SpellData {
-  const [bundled, setBundled] = useState<Spell[]>()
+/** Spells on one class list (the wizard's Sor/Wiz list by default). */
+export function useSpells(cls: ClassCode = 'Wiz'): SpellData {
+  const [bundled, setBundled] = useState<SpellRecord[]>()
   const [error, setError] = useState<string>()
   useEffect(() => {
     let live = true
@@ -58,7 +60,7 @@ export function useSpells(): SpellData {
   }, [])
   const stored = useLiveQuery(() => db.storedSpells.toArray(), [])
   return useMemo(() => {
-    const spells = bundled ? mergeSpells(bundled, (stored ?? []).map(({ origin: _o, ...s }) => s)) : []
+    const spells = bundled ? mergeSpells(cls, bundled, (stored ?? []).map(({ origin: _o, ...s }) => s)) : []
     return { spells, byId: new Map(spells.map((s) => [s.id, s])), loading: !bundled && !error, error }
-  }, [bundled, stored, error])
+  }, [bundled, stored, error, cls])
 }
