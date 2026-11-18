@@ -107,42 +107,42 @@ export function CharacterForm({
           <select
             className={inputClass}
             value={c.customCasting ? 'custom' : 'int'}
-            onChange={(e) => {
-              const m = abilityModifier(totalInt)
-              set({ customCasting: e.target.value === 'custom' ? { bonusSpells: m, dc: m } : undefined })
-            }}
+            onChange={(e) =>
+              set({ customCasting: e.target.value === 'custom' ? { score: totalInt, dc: abilityModifier(totalInt) } : undefined })
+            }
           >
-            <option value="int">Intelligence modifier</option>
-            <option value="custom">Custom modifiers</option>
+            <option value="int">Intelligence</option>
+            <option value="custom">Custom score and DC modifier</option>
           </select>
         </Field>
         {c.customCasting && (
           <>
-            <Field label="Modifier for spells per day" group hint="Sets bonus spells, like an ability modifier on the bonus spells table.">
+            <Field
+              label="Score for spells per day"
+              group
+              hint={`Used as if it were your Intelligence: bonus spells (${signed(bonusSpellModifier(c))}) and the minimum score of 10 + spell level to cast. Tainted Scholar: 10 + depravity.`}
+            >
               <Stepper
-                label="Modifier for spells per day"
-                value={c.customCasting.bonusSpells}
-                min={-5}
-                max={20}
-                onChange={(v) => set({ customCasting: { ...c.customCasting!, bonusSpells: v } })}
+                label="Score for spells per day"
+                value={c.customCasting.score}
+                min={1}
+                max={60}
+                onChange={(v) => set({ customCasting: { ...c.customCasting!, score: v } })}
               />
             </Field>
-            <Field label="Modifier for spell DCs" group>
+            <Field label="Modifier for spell DCs" group hint="Added to 10 + spell level. Tainted Scholar: half your corruption.">
               <Stepper
                 label="Modifier for spell DCs"
                 value={c.customCasting.dc}
                 min={-5}
-                max={30}
+                max={40}
                 onChange={(v) => set({ customCasting: { ...c.customCasting!, dc: v } })}
               />
             </Field>
-            <p className="text-xs text-ink/60">For classes like the Tainted Scholar. There is no minimum Intelligence to cast; Intelligence only sets your starting spells.</p>
+            <p className="text-xs text-ink/60">Intelligence below then only sets your starting spells.</p>
           </>
         )}
-        <p className="text-sm text-ink/70">
-          Spell DC = 10 + spell level {signed(dcModifier(c))}
-          {c.customCasting ? ` · bonus spells as for ${signed(bonusSpellModifier(c))}` : ''}
-        </p>
+        <p className="text-sm text-ink/70">Spell DC = 10 + spell level {signed(dcModifier(c))}</p>
       </Card>
 
       <Card className="space-y-4">
@@ -155,7 +155,7 @@ export function CharacterForm({
         <Field
           group
           label="Intelligence score"
-          hint={`Your current score, including your racial modifier and level-up increases. Item and tome bonuses go below.${c.customCasting ? ' With custom modifiers, Intelligence only sets your starting spells.' : ''}`}
+          hint={`Your current score, including your racial modifier and level-up increases. Item and tome bonuses go below.${c.customCasting ? ' With a custom casting score, Intelligence only sets your starting spells.' : ''}`}
         >
           <Stepper label="Intelligence score" value={c.int.base} min={3} max={50} onChange={(v) => setInt({ base: v })} />
         </Field>

@@ -2,6 +2,7 @@
 // phases don't need a schema migration.
 
 import Dexie, { type EntityTable } from 'dexie'
+import { migrateCharacter } from './migrate'
 import type { KnownSpell, PreparedSlot, WizardCharacter } from '../rules'
 import type { Spell } from './spell-schema'
 
@@ -96,6 +97,17 @@ export class SpellbookDB extends Dexie {
             delete k.extraCostGp
           })
       })
+    // v4: custom casting stores a score for spells per day instead of a modifier.
+    this.version(4)
+      .stores({})
+      .upgrade((tx) =>
+        tx
+          .table('characters')
+          .toCollection()
+          .modify((c: Record<string, unknown>, ref: { value: unknown }) => {
+            ref.value = migrateCharacter(c)
+          }),
+      )
   }
 }
 

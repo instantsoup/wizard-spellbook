@@ -11,11 +11,14 @@ export function casterLevel(c: WizardCharacter): number {
   return Math.min(MAX_WIZARD_LEVEL, c.wizardLevel + (c.extraCasterLevels ?? 0))
 }
 
-export const hasCustomCasting = (c: WizardCharacter): boolean => c.customCasting !== undefined
+/** Score for bonus spells per day and the minimum to cast: the custom one if set, otherwise Int. */
+export function castingScore(c: WizardCharacter): number {
+  return c.customCasting?.score ?? effectiveInt(c)
+}
 
-/** Modifier for bonus spells per day: the custom one if set, otherwise Int's. */
+/** Modifier for bonus spells per day (from the casting score). */
 export function bonusSpellModifier(c: WizardCharacter): number {
-  return c.customCasting?.bonusSpells ?? abilityModifier(effectiveInt(c))
+  return abilityModifier(castingScore(c))
 }
 
 /** Modifier added to spell DCs: the custom one if set, otherwise Int's. */
@@ -23,9 +26,12 @@ export function dcModifier(c: WizardCharacter): number {
   return c.customCasting?.dc ?? abilityModifier(effectiveInt(c))
 }
 
-/** Is the casting ability high enough for spells of this level? Always true with a custom modifier. */
+/** What the casting score is called in messages: "Int" or "casting score". */
+export const castingScoreName = (c: WizardCharacter): string => (c.customCasting ? 'casting score' : 'Int')
+
+/** Is the casting score at least 10 + spell level? */
 export function meetsCastingMinimum(c: WizardCharacter, spellLevel: number): boolean {
-  return hasCustomCasting(c) || effectiveInt(c) >= minIntForSpellLevel(spellLevel)
+  return castingScore(c) >= minIntForSpellLevel(spellLevel)
 }
 
 /** Save DC for a spell of this level: 10 + spell level + DC modifier. */
@@ -54,14 +60,14 @@ export function validateCharacter(c: WizardCharacter): RuleCheck {
   const extra = c.extraCasterLevels ?? 0
   if (!Number.isInteger(extra) || extra < 0) errors.push('Prestige class caster levels must be 0 or more.')
   else if (c.wizardLevel + extra > MAX_WIZARD_LEVEL) warnings.push('Caster level is capped at 20 for spells per day.')
-  if (c.customCasting && ![c.customCasting.bonusSpells, c.customCasting.dc].every(Number.isInteger)) {
-    errors.push('Casting modifiers must be whole numbers.')
+  if (c.customCasting && ![c.customCasting.score, c.customCasting.dc].every(Number.isInteger)) {
+    errors.push('Casting score and DC modifier must be whole numbers.')
   }
   for (const [k, v] of Object.entries(c.int)) {
     if (!Number.isInteger(v)) errors.push(`Int ${k} must be a whole number.`)
   }
   if (c.int.base < 1) errors.push('Intelligence score must be at least 1.')
-  if (!meetsCastingMinimum(c, 1)) warnings.push('With Int below 11 a wizard cannot cast 1st-level spells.')
+  if (!meetsCastingMinimum(c, 1)) warnings.push(`With ${castingScoreName(c)} below 11 a wizard cannot cast 1st-level spells.`)
   if (abilityModifier(c.int.base) !== c.intModAtLevel1 && c.wizardLevel === 1) {
     warnings.push('Starting Int modifier does not match base Int.')
   }

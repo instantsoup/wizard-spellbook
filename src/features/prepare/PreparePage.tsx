@@ -7,7 +7,7 @@ import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import type { Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { canFillSlot, computeSlots, dayUsage, minIntForSpellLevel, reconcileDay, validateDay, type PreparedSlot } from '../../rules'
+import { canFillSlot, castingScoreName, computeSlots, dayUsage, minIntForSpellLevel, reconcileDay, validateDay, type PreparedSlot } from '../../rules'
 import { dayTitle, RestSheet, useDay } from './shared'
 import { SlotPickerSheet } from './SlotPickerSheet'
 import { TemplatesSheet } from './TemplatesSheet'
@@ -80,7 +80,7 @@ export function PreparePage({ character }: { character: CharacterRecord }) {
               </span>
             </div>
             {l.locked ? (
-              <p className="py-2 text-sm text-rubric">You need Int {minIntForSpellLevel(l.spellLevel)} to prepare spells of this level.</p>
+              <p className="py-2 text-sm text-rubric">You need {castingScoreName(character)} {minIntForSpellLevel(l.spellLevel)} to prepare spells of this level.</p>
             ) : (
               <ul>
                 {indexes.map((i) => (

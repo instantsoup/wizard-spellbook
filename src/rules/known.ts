@@ -2,7 +2,7 @@
 // learned spells and what they cost.
 
 import type { Spell } from '../data/spell-schema'
-import { casterLevel, isProhibited, meetsCastingMinimum } from './character'
+import { casterLevel, castingScoreName, isProhibited, meetsCastingMinimum } from './character'
 import { maxSpellLevel, minIntForSpellLevel } from './tables'
 import { check, FREE_METHODS, type AcquisitionMethod, type KnownSpell, type RuleCheck, type WizardCharacter } from './types'
 
@@ -118,7 +118,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
   }
 
   if (!meetsCastingMinimum(c, spell.level)) {
-    warnings.push(`You need Int ${minIntForSpellLevel(spell.level)} to prepare this spell.`)
+    warnings.push(`You need ${castingScoreName(c)} ${minIntForSpellLevel(spell.level)} to prepare this spell.`)
   }
   return check(errors, warnings)
 }

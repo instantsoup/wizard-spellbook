@@ -12,14 +12,15 @@ describe('casting modifier and caster level', () => {
     expect(computeSlots(evoker5).map((l) => l.dc)).toEqual([14, 15, 16, 17])
   })
 
-  it('custom modifiers set bonus spells and DCs separately, with no minimum Int', () => {
-    const scholar = { ...generalist1, wizardLevel: 3, int: { base: 10, enhancement: 0, inherent: 0 }, customCasting: { bonusSpells: 5, dc: 3 } }
+  it('a custom score sets bonus spells and the casting minimum; the DC modifier is separate', () => {
+    // Tainted Scholar: depravity 20 -> score 30 (+10); corruption 24 -> DC +12
+    const scholar = { ...generalist1, wizardLevel: 3, int: { base: 10, enhancement: 0, inherent: 0 }, customCasting: { score: 30, dc: 12 } }
     const slots = computeSlots(scholar)
-    // +5: bonus 2/1 at levels 1-2
-    expect(slots.map((l) => l.bonus)).toEqual([0, 2, 1])
+    expect(bonusSpellModifier(scholar)).toBe(10)
+    expect(slots.map((l) => l.bonus)).toEqual([0, 3, 3])
     expect(slots.every((l) => !l.locked)).toBe(true)
-    expect(spellDc(scholar, 2)).toBe(15)
-    expect(meetsCastingMinimum(scholar, 9)).toBe(true)
+    expect(spellDc(scholar, 2)).toBe(24)
+    expect(meetsCastingMinimum({ ...scholar, customCasting: { score: 12, dc: 0 } }, 3)).toBe(false)
     // Int 10 alone would lock 1st-level spells
     expect(meetsCastingMinimum({ ...scholar, customCasting: undefined }, 1)).toBe(false)
   })

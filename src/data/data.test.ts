@@ -181,3 +181,14 @@ describe('changing prohibited schools', () => {
     expect((await d.characters.get(c.id))?.prohibited).toEqual(['Transmutation', 'Illusion'])
   })
 })
+
+describe('migrateCharacter', () => {
+  it('turns the old bonus-spell modifier into a score and drops table rules', async () => {
+    const { migrateCharacter } = await import('./migrate')
+    expect(migrateCharacter({ name: 'A', houseRules: {}, customCasting: { bonusSpells: 10, dc: 12 } })).toEqual({
+      name: 'A',
+      customCasting: { score: 30, dc: 12 },
+    })
+    expect(migrateCharacter({ name: 'B', customCasting: { score: 22, dc: 3 } })).toEqual({ name: 'B', customCasting: { score: 22, dc: 3 } })
+  })
+})

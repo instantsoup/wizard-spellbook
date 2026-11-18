@@ -1,6 +1,7 @@
 // Export / import everything as one JSON file.
 
 import { db, type SpellbookDB } from './db'
+import { migrateCharacter } from './migrate'
 
 export const BACKUP_APP = 'wizard-spellbook'
 export const BACKUP_VERSION = 1
@@ -51,7 +52,7 @@ export async function restoreBackup(backup: Backup, d: SpellbookDB = db) {
       // Older backups may hold data the app no longer tracks.
       if (t === 'ledger') rows = []
       if (t === 'knownSpells') rows = (rows as Record<string, unknown>[]).map(({ extraCostGp: _x, ...k }) => k)
-      if (t === 'characters') rows = (rows as Record<string, unknown>[]).map(({ houseRules: _h, ...c }) => c)
+      if (t === 'characters') rows = (rows as Record<string, unknown>[]).map(migrateCharacter)
       if (rows.length) await d.table(t).bulkAdd(rows)
     }
   })

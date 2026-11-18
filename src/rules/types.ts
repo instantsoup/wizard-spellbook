@@ -33,11 +33,12 @@ export interface WizardCharacter {
   /** Levels in prestige classes that add +1 wizard spellcasting level (default 0). */
   extraCasterLevels?: number
   /**
-   * Custom casting modifiers (e.g. Tainted Scholar). When set, they replace the Int modifier:
-   * one for bonus spells per day, one for spell DCs, and there is no minimum Int to cast.
-   * Unset = use Int. Both are set together.
+   * Custom casting (e.g. Tainted Scholar), replacing Int. Unset = use Int.
+   * - `score`: the score used for bonus spells per day and the minimum to cast (10 + spell level),
+   *   as if it were your Int (Tainted Scholar: 10 + depravity).
+   * - `dc`: the modifier added to spell DCs (Tainted Scholar: half corruption).
    */
-  customCasting?: { bonusSpells: number; dc: number }
+  customCasting?: { score: number; dc: number }
   int: IntScore
   /** Int modifier when the character was 1st level; fixes the starting free-spell count. */
   intModAtLevel1: number

@@ -23,7 +23,7 @@ export function SlotPreview({ character }: { character: WizardCharacter }) {
           </li>
         ))}
       </ul>
-      <p className="mt-1.5 text-[11px] text-ink/55">Per day: base + Int bonus{character.specialty ? ' + specialist' : ''}.</p>
+      <p className="mt-1.5 text-[11px] text-ink/55">Per day: base + bonus{character.specialty ? ' + specialist' : ''}.</p>
       {slots.some((l) => l.locked) && (
         <p className="mt-1 text-xs text-rubric">Crossed-out levels need more Int (10 + spell level) to prepare.</p>
       )}
