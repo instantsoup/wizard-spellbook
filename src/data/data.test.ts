@@ -110,14 +110,17 @@ describe('mergeSpells', () => {
 })
 
 describe('entry edits', () => {
-  it('changes only the note; the cost stays fixed', async () => {
-    const { updateKnownSpellNote } = await import('./characters')
+  it('changes the note and scroll price; the scribing cost stays fixed', async () => {
+    const { updateKnownSpell } = await import('./characters')
     const c = await createCharacter({ ...evoker5, name: 'E' }, d)
-    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, note: 'x' }], d)
-    await updateKnownSpellNote(r.added[0].id, '  From the lich  ', d)
-    expect((await knownSpellsFor(c.id, d))[0]).toMatchObject({ costGp: 300, note: 'From the lich' })
-    await updateKnownSpellNote(r.added[0].id, '', d)
-    expect((await knownSpellsFor(c.id, d))[0].note).toBeUndefined()
+    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'scroll' }, note: 'x', scrollCostGp: 375 }], d)
+    expect(r.added[0]).toMatchObject({ costGp: 300, scrollCostGp: 375 })
+    await updateKnownSpell(r.added[0].id, { note: '  From the lich  ', scrollCostGp: 0 }, d)
+    expect((await knownSpellsFor(c.id, d))[0]).toMatchObject({ costGp: 300, scrollCostGp: 0, note: 'From the lich' })
+    await updateKnownSpell(r.added[0].id, { note: '' }, d)
+    const after = (await knownSpellsFor(c.id, d))[0]
+    expect(after.note).toBeUndefined()
+    expect(after.scrollCostGp).toBe(0)
   })
 })
 

@@ -68,7 +68,10 @@ export interface KnownSpell {
   method: AcquisitionMethod
   /** Which caster level granted this free pick (1 for starting picks). */
   freePickLevel?: number
+  /** Cost to scribe the spell into the book (100 gp x spell level). */
   costGp: number
+  /** What the scroll it was copied from cost (scroll method only). Copying uses the scroll up. */
+  scrollCostGp?: number
   note?: string
 }
 

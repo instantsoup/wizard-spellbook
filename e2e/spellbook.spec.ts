@@ -35,17 +35,23 @@ test('library: free pick, paid spell, prohibited and above-level spells, fixed c
   await expect(page.getByRole('button', { name: /^Cone of Cold/ })).toBeVisible()
   await expect(page.getByRole('button', { name: 'Add Cone of Cold', exact: true })).toHaveCount(0)
 
-  // learning cost is fixed: shown, not editable
+  // scribing cost is fixed: shown, not editable. The scroll's price is editable and starts at the standard price.
   await page.getByPlaceholder('Search names and text').fill('Web')
   await page.getByRole('button', { name: 'Add Web', exact: true }).click()
   await page.getByLabel('From a scroll').check()
-  await expect(page.getByRole('dialog')).toContainText('200 gp')
+  await expect(page.getByRole('dialog')).toContainText('Scribing cost: 200 gp')
   await expect(page.getByLabel('Cost to learn (gp)')).toHaveCount(0)
   await expect(page.getByLabel('Extra cost (gp)')).toHaveCount(0)
-  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+  const price = page.getByLabel('What the scroll cost (gp)')
+  await expect(price).toHaveValue('150')
+  await expect(page.getByRole('button', { name: /^Add to book · 350 gp/ })).toBeVisible()
+  await price.fill('0') // found it
+  await page.getByRole('button', { name: /^Add to book · 200 gp/ }).click()
+  await expect(page.getByRole('status').filter({ hasText: 'Web added' })).toBeVisible()
 
+  // Haste: 300 scribing + 375 scroll; Web: 200 scribing + found scroll
   await page.getByRole('link', { name: 'Book' }).click()
-  await expect(page.locator('header')).toContainText('300 gp spent')
+  await expect(page.locator('header')).toContainText('875 gp spent')
   noErrors()
 })
 
@@ -93,7 +99,10 @@ test('ledger totals and backup round trip', async ({ page }) => {
   await learn(page, 'Web', "From another wizard's book")
   await page.getByRole('link', { name: 'Book' }).click()
   await page.getByRole('link', { name: /gp spent/ }).click()
-  await expect(page.locator('header')).toContainText('500 gp spent on the spellbook')
+  // Haste: 300 gp to scribe + 375 gp standard scroll price; Web: 200 gp
+  await expect(page.locator('header')).toContainText('875 gp spent on the spellbook')
+  await expect(page.getByText('500 gp scribing + 375 gp on scrolls')).toBeVisible()
+  await expect(page.getByText('300 gp scribing + 375 gp scroll')).toBeVisible()
   await expect(page.getByText('Add an expense')).toHaveCount(0)
 
   await page.getByRole('link', { name: 'More' }).click()
@@ -109,7 +118,7 @@ test('ledger totals and backup round trip', async ({ page }) => {
   await expect(page.getByText('Backup restored.')).toBeVisible()
   await page.getByRole('link', { name: 'Book' }).click()
   await expect(page.locator('header')).toContainText('Mialee')
-  await expect(page.locator('header')).toContainText('500 gp spent')
+  await expect(page.locator('header')).toContainText('875 gp spent')
   noErrors()
 })
 

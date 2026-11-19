@@ -56,7 +56,7 @@ export async function knownSpellsFor(characterId: string, d: SpellbookDB = db) {
  */
 export async function learnSpells(
   character: CharacterRecord,
-  items: { spell: Spell; req: LearnRequest; note?: string }[],
+  items: { spell: Spell; req: LearnRequest; note?: string; scrollCostGp?: number }[],
   d: SpellbookDB = db,
 ): Promise<{ ok: boolean; errors: string[]; added: KnownSpellRecord[] }> {
   return d.transaction('rw', d.knownSpells, async () => {
@@ -93,9 +93,14 @@ export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {
   await d.knownSpells.delete(knownSpellId)
 }
 
-/** Change a book entry's note (the cost is fixed by the rules). */
-export async function updateKnownSpellNote(id: string, note: string, d: SpellbookDB = db) {
-  await d.knownSpells.update(id, { note: note.trim() || undefined })
+/**
+ * Change a book entry's note and, for a spell copied from a scroll, what the scroll cost.
+ * The scribing cost is fixed by the rules.
+ */
+export async function updateKnownSpell(id: string, changes: { note: string; scrollCostGp?: number }, d: SpellbookDB = db) {
+  const patch: Partial<KnownSpellRecord> = { note: changes.note.trim() || undefined }
+  if (changes.scrollCostGp !== undefined) patch.scrollCostGp = Math.max(0, changes.scrollCostGp)
+  await d.knownSpells.update(id, patch)
 }
 
 /** Book entries whose spell is from one of the given schools. */

@@ -6,9 +6,9 @@ import type { CharacterRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { useSpells } from '../../data/spells'
 import { downloadText } from '../../data/storedSpells'
-import { ledgerCsv, ledgerSummary } from '../../rules'
+import { entryCost, ledgerCsv, ledgerSummary } from '../../rules'
 
-/** What it has cost to add spells to the book (100 gp x spell level for each learned spell). */
+/** What it has cost to add spells to the book: scribing (100 gp x spell level) plus any scroll copied from. */
 export function LedgerPage({ character }: { character: CharacterRecord }) {
   const known = useKnownSpells(character.id)
   const { byId, loading } = useSpells()
@@ -18,15 +18,27 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
 
   const s = ledgerSummary(known)
   const rows = known
-    .filter((k) => k.costGp > 0)
-    .map((k) => ({ key: k.id, date: k.addedAt, item: byId.get(k.spellId)?.name ?? k.spellId, kind: METHOD_LABEL[k.method], gp: k.costGp, note: k.note, level: k.spellLevel }))
+    .filter((k) => entryCost(k) > 0)
+    .map((k) => ({
+      key: k.id,
+      date: k.addedAt,
+      item: byId.get(k.spellId)?.name ?? k.spellId,
+      kind: METHOD_LABEL[k.method],
+      gp: entryCost(k),
+      scribeGp: k.costGp,
+      scrollGp: k.scrollCostGp,
+      unrecordedScroll: k.method === 'scroll' && k.scrollCostGp === undefined,
+      note: k.note,
+      level: k.spellLevel,
+    }))
     .sort((a, b) => b.date - a.date)
   const csvRows = known.map((k) => ({
     date: k.addedAt,
     item: byId.get(k.spellId)?.name ?? k.spellId,
     level: k.spellLevel,
     kind: k.method === 'levelup-free' && k.freePickLevel ? `Level ${k.freePickLevel} pick` : METHOD_LABEL[k.method],
-    gp: k.costGp,
+    scribeGp: k.costGp,
+    scrollGp: k.method === 'scroll' ? k.scrollCostGp : undefined,
     note: k.note,
   }))
   const shown = showAll ? rows : rows.slice(0, 25)
@@ -51,6 +63,13 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
                   <td className="pt-1 text-right">{known.length}</td>
                   <td className="pt-1 text-right">{gp(s.total)}</td>
                 </tr>
+                {s.scrolls > 0 && (
+                  <tr className="text-xs text-ink/60">
+                    <td colSpan={3} className="pt-1 text-right">
+                      {gp(s.scribing)} scribing + {gp(s.scrolls)} on scrolls
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </Card>
@@ -98,6 +117,13 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
                 {new Date(r.date).toLocaleDateString()} · {levelLabel(r.level)} · {r.kind}
                 {r.note ? ` · ${r.note}` : ''}
               </p>
+              {r.scrollGp ? (
+                <p className="text-xs text-ink/60">
+                  {gp(r.scribeGp)} scribing + {gp(r.scrollGp)} scroll
+                </p>
+              ) : r.unrecordedScroll ? (
+                <p className="text-xs text-ink/60">Scroll price not recorded: edit the spell in your book to add it.</p>
+              ) : null}
             </div>
             <span className="shrink-0 font-display text-leather">{gp(r.gp)}</span>
           </li>

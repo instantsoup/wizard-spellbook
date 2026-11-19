@@ -8,7 +8,7 @@ import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { freePickStatus, isProhibited, ledgerSummary } from '../../rules'
+import { entryCost, freePickStatus, isProhibited, ledgerSummary } from '../../rules'
 import { EditEntrySheet } from './EditEntrySheet'
 import { Reminders } from './Reminders'
 
@@ -190,7 +190,8 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                       <span>
                         {METHOD_LABEL[k.method]}
                         {k.freePickLevel && k.method === 'levelup-free' ? ` (level ${k.freePickLevel})` : ''} ·{' '}
-                        {k.costGp ? gp(k.costGp) : 'free'}
+                        {entryCost(k) ? gp(entryCost(k)) : 'free'}
+                        {k.scrollCostGp ? ` (${gp(k.costGp)} scribing + ${gp(k.scrollCostGp)} scroll)` : ''}
                         {k.note ? ` · ${k.note}` : ''}
                       </span>
                       <button type="button" className="min-h-9 shrink-0 px-2 text-sm text-leather underline" onClick={() => setEditing(k)}>

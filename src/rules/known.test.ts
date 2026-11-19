@@ -9,6 +9,8 @@ import {
   startingCantrips,
   totalFreePicksRemaining,
   totalSpent,
+  scrollPrice,
+  entryCost,
 } from './known'
 import type { KnownSpell } from './types'
 
@@ -105,8 +107,17 @@ describe('costs', () => {
       freePickLevel: 5,
     })
   })
-  it('totals gold spent', () => {
+  it('totals gold spent, scrolls included', () => {
     expect(totalSpent([k('a', 3, { costGp: 300 }), k('b', 1, { costGp: 100 })])).toBe(400)
+    expect(totalSpent([k('a', 3, { method: 'scroll', costGp: 300, scrollCostGp: 375 })])).toBe(675)
+  })
+  it('prices scrolls at the lowest caster level (DMG)', () => {
+    expect([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(scrollPrice)).toEqual([12.5, 25, 150, 375, 700, 1125, 1650, 2275, 3000, 3825])
+  })
+  it('records a scroll price only for spells copied from a scroll', () => {
+    expect(makeKnownSpell(S.fireball, { method: 'scroll' }, { scrollCostGp: 375 })).toMatchObject({ costGp: 300, scrollCostGp: 375 })
+    expect(makeKnownSpell(S.fireball, { method: 'research' }, { scrollCostGp: 375 })).not.toHaveProperty('scrollCostGp')
+    expect(entryCost(makeKnownSpell(S.fireball, { method: 'scroll' }, { scrollCostGp: 0 }))).toBe(300)
   })
 })
 

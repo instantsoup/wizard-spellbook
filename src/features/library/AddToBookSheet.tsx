@@ -5,7 +5,7 @@ import { Button, Field, inputClass, Messages } from '../../components/ui'
 import { learnSpells } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import type { Spell } from '../../data/spell-schema'
-import { canLearn, freePickStatus, learnCost, type AcquisitionMethod, type LearnRequest } from '../../rules'
+import { canLearn, freePickStatus, learnCost, scrollPrice, type AcquisitionMethod, type LearnRequest } from '../../rules'
 
 type Choice = 'free' | Extract<AcquisitionMethod, 'scroll' | 'other-book' | 'research' | 'other'>
 
@@ -42,6 +42,8 @@ export function AddToBookSheet({
   const [choice, setChoice] = useState<Choice>(canUseFree ? 'free' : 'scroll')
   const [freeLevel, setFreeLevel] = useState(freeOptions[0]?.wizardLevel)
   const [note, setNote] = useState('')
+  // What the scroll cost, as typed. Starts at the standard price; 0 for a scroll found as loot.
+  const [scrollGp, setScrollGp] = useState(String(scrollPrice(spell.level)))
   const [busy, setBusy] = useState(false)
   const [saveErrors, setSaveErrors] = useState<string[]>([])
 
@@ -50,16 +52,19 @@ export function AddToBookSheet({
       ? { method: freeLevel === 1 ? 'starting-free' : 'levelup-free', freePickLevel: freeLevel }
       : { method: choice }
   const cost = learnCost(spell.level, req.method)
+  const scrollCost = Number(scrollGp)
+  const scrollValid = scrollGp.trim() !== '' && Number.isFinite(scrollCost) && scrollCost >= 0
+  const total = cost + (choice === 'scroll' && scrollValid ? scrollCost : 0)
   const result = canLearn(character, spell, known, req)
+  const scrollErrors = choice === 'scroll' && !scrollValid ? ['Enter what the scroll cost (0 if you found it).'] : []
 
   const add = async () => {
     setBusy(true)
     const r = await learnSpells(character, [
-      { spell, req, note: note.trim() || undefined },
+      { spell, req, note: note.trim() || undefined, ...(choice === 'scroll' ? { scrollCostGp: scrollCost } : {}) },
     ])
     setBusy(false)
     if (!r.ok) return setSaveErrors(r.errors)
-    const total = cost
     onAdded(`${spell.name} added${total ? ` · ${total.toLocaleString()} gp` : ' · free'}`)
   }
 
@@ -96,19 +101,42 @@ export function AddToBookSheet({
 
       {choice !== 'free' && (
         <p className="mb-4 text-sm">
-          <span className="font-semibold text-ink/80">Cost to learn: </span>
+          <span className="font-semibold text-ink/80">Scribing cost: </span>
           <span className="font-display text-lg text-leather">{cost.toLocaleString()} gp</span>
           <span className="text-ink/60"> (100 gp × spell level)</span>
         </p>
+      )}
+      {choice === 'scroll' && (
+        <div className="mb-4">
+          <Field label="What the scroll cost (gp)">
+            <input
+              className={inputClass}
+              type="number"
+              inputMode="decimal"
+              min={0}
+              step="any"
+              value={scrollGp}
+              onChange={(e) => setScrollGp(e.target.value)}
+            />
+          </Field>
+          <p className="mt-1 text-xs text-ink/60">
+            Standard price {scrollPrice(spell.level).toLocaleString()} gp (25 gp × spell level × caster level). Copying uses the scroll up. Enter 0 if
+            you found it.
+          </p>
+          <p className="mt-2 text-sm">
+            <span className="font-semibold text-ink/80">Total: </span>
+            <span className="font-display text-lg text-leather">{total.toLocaleString()} gp</span>
+          </p>
+        </div>
       )}
       <Field label="Note (optional)">
         <input className={inputClass} value={note} onChange={(e) => setNote(e.target.value)} placeholder="e.g. From the lich's tome, session 12" />
       </Field>
 
       <div className="mt-4 space-y-3">
-        <Messages errors={[...result.errors, ...saveErrors]} warnings={result.warnings} />
-        <Button className="w-full" disabled={!result.ok || busy} onClick={add}>
-          Add to book{choice === 'free' ? ' · free' : ` · ${cost.toLocaleString()} gp`}
+        <Messages errors={[...result.errors, ...scrollErrors, ...saveErrors]} warnings={result.warnings} />
+        <Button className="w-full" disabled={!result.ok || scrollErrors.length > 0 || busy} onClick={add}>
+          Add to book{choice === 'free' ? ' · free' : ` · ${total.toLocaleString()} gp`}
         </Button>
       </div>
     </Sheet>

@@ -61,8 +61,22 @@ export function learnCost(spellLevel: number, method: AcquisitionMethod): number
   return GP_PER_SPELL_LEVEL * Math.max(1, spellLevel)
 }
 
+/**
+ * Market price of an arcane scroll of a spell, at the lowest caster level that can cast it
+ * (DMG: 25 gp x spell level x caster level; a 0-level spell counts as 1/2).
+ */
+export function scrollPrice(spellLevel: number): number {
+  if (spellLevel <= 0) return 12.5
+  return 25 * spellLevel * Math.max(1, spellLevel * 2 - 1)
+}
+
+/** Everything this book entry cost: scribing plus the scroll, if it came from one. */
+export function entryCost(k: KnownSpell): number {
+  return k.costGp + (k.scrollCostGp ?? 0)
+}
+
 export function totalSpent(known: KnownSpell[]): number {
-  return known.reduce((sum, k) => sum + k.costGp, 0)
+  return known.reduce((sum, k) => sum + entryCost(k), 0)
 }
 
 /**
@@ -127,7 +141,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
 export function makeKnownSpell(
   spell: Spell,
   req: LearnRequest,
-  extra?: { note?: string },
+  extra?: { note?: string; scrollCostGp?: number },
 ): KnownSpell {
   const freePickLevel = req.method === 'starting-free' ? 1 : req.method === 'levelup-free' ? req.freePickLevel : undefined
   return {
@@ -136,6 +150,7 @@ export function makeKnownSpell(
     method: req.method,
     ...(freePickLevel ? { freePickLevel } : {}),
     costGp: learnCost(spell.level, req.method),
+    ...(req.method === 'scroll' && extra?.scrollCostGp !== undefined ? { scrollCostGp: Math.max(0, extra.scrollCostGp) } : {}),
     ...(extra?.note ? { note: extra.note } : {}),
   }
 }

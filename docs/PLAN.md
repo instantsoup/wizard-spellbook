@@ -106,6 +106,10 @@ Store this as a data table in code, not as a formula.
     Eidetic Spellcasting keeps the standard gold cost (flavoured as incense or
     mental mapping) and skips writing on pages. The cost is fixed and can't be
     edited.
+  - **Scroll price:** a spell copied from a scroll also records what the scroll cost,
+    since copying uses it up. It starts at the DMG market price (25 gp × spell level ×
+    the lowest caster level for that level; 12.5 gp for a 0-level spell) and can be
+    changed, e.g. to 0 for a scroll found as loot, when adding or later from the book.
 - **Spell levels above what the wizard can cast** can't be learned.
 
 ### 2.5 Preparing spells
@@ -264,6 +268,7 @@ interface KnownSpell {                 // an entry in the book
   method: AcquisitionMethod;
   freePickLevel?: number;              // which wizard level granted this free pick
   costGp: number;                      // 0 if free; default 100 × max(1, level)
+  scrollCostGp?: number;               // scroll copied from (method "scroll" only)
   note?: string;                       // "From the lich's tome, session 12"
   addedAt: number;
 }
@@ -290,9 +295,9 @@ interface PrepTemplate {               // saved loadouts: "Dungeon crawl", "Trav
 
 interface ImportedSpell extends Spell { origin: "imported" | "custom"; }
 ```
-**Total spent** = the sum of `costGp` over the book's spells. It is calculated when
-shown, not stored. The app covers only the spellbook side: no scroll prices or other
-expenses.
+**Total spent** = the sum of `costGp` (scribing) and `scrollCostGp` (the scroll copied
+from, if any) over the book's spells. It is calculated when shown, not stored. Other
+expenses are not tracked.
 
 ---
 
@@ -345,8 +350,8 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
    - The screen stays awake (Wake Lock API) while this tab is open.
 
 6. **More**
-   - **Ledger:** every learned spell with its cost and method,
-     with totals.
+   - **Ledger:** every learned spell with its cost and method, scribing and scroll
+     prices shown separately, with totals.
    - **Settings:** theme (parchment or dark),
      import spells JSON, export custom spells, back up and restore character data,
      about (OGL notice).
@@ -365,7 +370,8 @@ None. The app follows the rules as written:
 - learning a spell costs a fixed 100 gp × spell level (cantrips 100 gp);
 - specialists get their extra slot at every spell level, including cantrips.
 
-Only the spellbook's own costs are tracked: no scroll prices or other expenses.
+Only the spellbook's own costs are tracked: scribing, plus the scroll a spell was
+copied from. No other expenses.
 
 ---
 
@@ -403,8 +409,8 @@ Only the spellbook's own costs are tracked: no scroll prices or other expenses.
   prohibited, without component, source, subschool, descriptor. Filters are
   remembered between visits.
 - Add to book sheet: free pick (defaults to the lowest level-up pick that fits),
-  scroll, another book, research or other. A fixed cost and an optional note, checked
-  by `canLearn`.
+  scroll, another book, research or other. A fixed scribing cost, an editable scroll
+  price for scrolls, and an optional note, checked by `canLearn`.
 - Book: "Remove from book".
 - My spells: custom spell form (create and edit), import a JSON file (validated,
   all-or-nothing), export as JSON, delete.
