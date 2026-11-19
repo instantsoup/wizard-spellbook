@@ -323,6 +323,8 @@ Bottom navigation has five tabs: **Book · Library · Prepare · Today · More**
 3. **Library** (spell database)
    - Search bar and filter chips: **Level (0–9, multi-select)**, **School**,
      Subschool, Descriptor, Components, Source, "Not known yet", "Castable now".
+   - Spells are listed alphabetically; the level chips narrow by level. A search
+     orders results by relevance, names starting with the query first.
    - Prohibited schools and their spells don't appear at all. Known spells are marked.
    - The **"Add to book"** sheet has:
      - How it was learned: free pick (shows the free picks left for each level),

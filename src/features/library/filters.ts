@@ -53,8 +53,8 @@ export function buildSearchIndex(spells: Spell[]) {
 }
 
 /**
- * Applies filters (prohibited schools never appear); with a search query, results are ordered
- * by relevance. Without a character (browsing), the book and castable filters do nothing;
+ * Applies filters (prohibited schools never appear). Results are alphabetical (use the level
+ * filters to narrow by level); with a search query they are ordered by relevance instead. Without a character (browsing), the book and castable filters do nothing;
  * with `anyLevel` (every class list shown), a level filter matches a spell's level on any list.
  */
 export function filterSpells(
@@ -69,7 +69,7 @@ export function filterSpells(
   const schools = f.schools.filter((s) => !prohibited(s))
   const levelMatch = (s: Spell) => (ctx.anyLevel ? allLevels(s).some((l) => f.levels.includes(l)) : f.levels.includes(s.level))
 
-  let ordered = spells
+  let ordered = [...spells].sort((a, b) => a.name.localeCompare(b.name))
   const q = f.query.trim()
   if (q) {
     const index = ctx.index ?? buildSearchIndex(spells)

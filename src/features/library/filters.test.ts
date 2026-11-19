@@ -15,6 +15,11 @@ describe('filterSpells', () => {
     // evoker5 prohibits Enchantment and Illusion: Daze, Sleep, Invisibility
     expect(run({})).toHaveLength(spells.length - 3)
   })
+  it('lists spells alphabetically, not by level', () => {
+    const names = run({}).map((id) => spells.find((s) => s.id === id)!.name)
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)))
+    expect(new Set(run({}).map((id) => spells.find((s) => s.id === id)!.level)).size).toBeGreaterThan(1)
+  })
   it('filters by levels and schools (multi-select)', () => {
     expect(run({ levels: [3] })).toEqual(['fireball', 'haste'])
     expect(run({ levels: [1, 2], schools: ['Evocation'] })).toEqual(['magic-missile', 'scorching-ray'])
