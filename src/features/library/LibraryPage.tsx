@@ -111,7 +111,6 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
     <Page
       title="Library"
       subtitle={character ? `${available.length} spells you can learn from` : `${available.length} spells`}
-      actions={<Link to="/spells"><Button variant="secondary">My spells</Button></Link>}
     >
       {!character && (
         <>
