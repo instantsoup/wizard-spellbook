@@ -88,7 +88,19 @@ describe('bundled extra index', () => {
     expect(extra.filter((s: { id: string }) => srdIds.has(s.id))).toEqual([])
   })
   it('is listed in the manifest after srd.json', () => {
-    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json'])
+    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json', 'kanderra.json'])
+  })
+})
+
+describe("bundled Kan'Derra spells", () => {
+  const kd = JSON.parse(readFileSync('public/data/spells/kanderra.json', 'utf8'))
+  const others = new Set(
+    ['srd.json', 'index-extra.json', 'index-books.json'].flatMap((f) => JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8')).map((s: { id: string }) => s.id)),
+  )
+  it('are valid, have a level somewhere, and override nothing', () => {
+    expect(validateSpellFile(kd)).toEqual([])
+    expect(kd.filter((s: { levels: object; domains?: object }) => !Object.keys(s.levels).length && !Object.keys(s.domains ?? {}).length)).toEqual([])
+    expect(kd.filter((s: { id: string }) => others.has(s.id))).toEqual([])
   })
 })
 

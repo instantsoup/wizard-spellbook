@@ -87,17 +87,31 @@ export async function addStartingCantrips(character: CharacterRecord, spells: Sp
   const known = new Set((await knownSpellsFor(character.id, d)).map((k) => k.spellId))
   const missing = startingCantrips(character, spells).filter((s) => !known.has(s.id))
   const result = await learnSpells(character, missing.map((spell) => ({ spell, req: { method: 'starting-cantrip' as const } })), d)
-  if (result.ok) await d.characters.update(character.id, { allCantrips: true })
+  if (result.ok) await d.characters.update(character.id, { cantripsOffered: spells.filter((s) => s.level === 0).map((s) => s.id) })
   return result
 }
 
+/** Cantrips this character has already been given, including for records saved before the list existed. */
+function offeredCantrips(character: CharacterRecord, spells: Spell[]): Set<string> {
+  if (character.cantripsOffered) return new Set(character.cantripsOffered)
+  // The older flag meant every cantrip then in the app, which was all but Kan'Derra's.
+  if (character.allCantrips) return new Set(spells.filter((s) => s.level === 0 && s.source !== "Kan'Derra Player's Edition").map((s) => s.id))
+  return new Set()
+}
+
 /**
- * One-time upgrade: a character made when only core cantrips were added gets the 0-level
- * spells from other books. Does nothing once done, so removed cantrips stay removed.
+ * Adds cantrips this character hasn't been given yet: ones from books added since the
+ * character was made. Cantrips the player removed are not added back.
  */
-export async function addMissingCantripsOnce(character: CharacterRecord, spells: Spell[], d: SpellbookDB = db) {
-  if (character.allCantrips) return { ok: true, errors: [], added: [] }
-  return addStartingCantrips(character, spells, d)
+export async function addNewCantrips(character: CharacterRecord, spells: Spell[], d: SpellbookDB = db) {
+  const offered = offeredCantrips(character, spells)
+  const cantrips = spells.filter((s) => s.level === 0)
+  if (character.cantripsOffered && cantrips.every((s) => offered.has(s.id))) return { ok: true, errors: [], added: [] }
+  const known = new Set((await knownSpellsFor(character.id, d)).map((k) => k.spellId))
+  const fresh = startingCantrips(character, spells).filter((s) => !offered.has(s.id) && !known.has(s.id))
+  const result = await learnSpells(character, fresh.map((spell) => ({ spell, req: { method: 'starting-cantrip' as const } })), d)
+  if (result.ok) await d.characters.update(character.id, { cantripsOffered: [...new Set([...offered, ...cantrips.map((s) => s.id)])] })
+  return result
 }
 
 export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {

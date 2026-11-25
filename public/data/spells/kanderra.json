@@ -1,0 +1,1470 @@
+[
+  {
+    "id": "animate-night-guardian",
+    "name": "Animate Night Guardian",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 3,
+      "Wiz": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A woven figurine worth at least 50gp.",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "effect": "One tiny woven figurine",
+    "duration": "1 hour/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Woven figurine guards you while you sleep.",
+    "description": "You animate a tiny figurine to guard you as you sleep. The figurine must be made of a woven material such as cloth or burlap. Upon casting this spell the target figurine will not animate until the caster falls asleep. The figurine will try its best to defend the caster and all creatures you designate at the casting of the spell so long as it doesn't move more than 40 feet from the caster's body. If at any point the figurine is moved more than 40 feet from the caster's body, the spell ends. The spell ends at the beginning of your turn five rounds after you wake.\n\n**Night Guardian:** CR 5; Tiny construct; HD 6d10; hp 33; Init +5; Spd 40 ft.; AC 18 (+2 size, +5 Dex, +1 shield); touch 17, flat-footed 13; Base atk +4; Grp -15; Atk Sword +9 melee (1d3-3); Full Atk Bite +5 melee (1d3-3 plus poison) and Tiny Short Sword +9 melee (1d3-3); SA Poison; SQ Darkvision 60 ft., Low-light vision, construct traits; AL same as caster; SV Fort +2, Ref +7, Will +2; Str 4, Dex 20, Con -, Int 3, Wis 11, Cha 1.\n\n_Skills and Feats:_ Spot +3, Listen +3; Weapon Finesse, Weapon Focus (bite), Dodge.\n\n_Poison:_ Injury, Fortitude DC 13, initial damage 2d4 Str, secondary damage 2d4 Str. The save DC is Constitution-based.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 79
+  },
+  {
+    "id": "bush-guard",
+    "name": "Bush Guard",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 1
+    },
+    "domains": {
+      "Taratassa Facet": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One small plant",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Animate a small plant to guard you in combat.",
+    "description": "You animate a small plant to help defend you in combat. The plant never leaves your side unless forced. As a free action you may direct the plant to move to any square adjacent to you. The animated plant may aid your defense and make attacks of opportunity but will not aid an attack, or make any other type of attack action such as a trip or disarm. The plant is closely connected to your actions and never causes the caster to suffer penalties to attack rolls due to cover, however cover penalties due to other creatures and objects still apply. The animated plant is treated as a small animated object with no legs. If the caster moves away from the bush, the bush must attempt to move adjacent to the caster before taking any other actions.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 79
+  },
+  {
+    "id": "cord-strum",
+    "name": "Cord Strum",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 0,
+      "Drd": 0,
+      "Sor": 0,
+      "Wiz": 0
+    },
+    "components": [
+      "S",
+      "M",
+      "DF"
+    ],
+    "materialComponent": "A piece of cat gut.",
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Illusory vibration",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will disbelief (if interacted with)",
+    "spellResistance": "No",
+    "summary": "Create a stationary illusory cord vibration felt by tremorsense.",
+    "description": "_Cord strum_ allows you to create a vibration of the cords that remains at a fixed place. This vibration is detected by tremorsense. You choose what intensity that the vibration has when casting it and cannot thereafter change the vibration's basic character. The possible intensity of the vibration depends on your level. You can produce the vibration of a small or smaller creature at 1st level. The vibration increases to a medium sized creature vibration at 3rd level, a large sized creature vibration at 6th level, a huge sized creature vibration at 9th level, a gargantuan sized creature vibration at 12th level and a colossal sized creature vibration at 15th level.\n\n_Other class lists:_ Assassin 1, Oracle of Fate 1.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 79
+  },
+  {
+    "id": "chromatic-resistance",
+    "name": "Chromatic Resistance",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2,
+      "Pal": 2,
+      "Rgr": 1,
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "10 min./level",
+    "savingThrow": "Fortitude negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Energy resistance 2 (4 at 7th, 6 at 11th) against all five energy types.",
+    "description": "This abjuration grants a creature limited protection from damage from all five energy types (acid, cold, electricity, fire, sonic). The subject gains energy resistance 2 against the five energy types, meaning that each time the creature is subjected to such damage (whether from a natural or magical source), that damage is reduced by 2 points before being applied to the creature's hit points. The value of the energy resistance granted increases to 4 points at 7th level and to a maximum of 6 points at 11th level. The spell protects the recipient's equipment as well. _Chromatic resistance_ absorbs only damage. The subject could still suffer unfortunate side effects, such as drowning in acid (since drowning damage comes from lack of oxygen) or becoming encased in ice. _Note: chromatic resistance_ overlaps (and does not stack with), _resist energy_ or _protection from energy_. If a character is warded by _protection from energy_ and _chromatic resistance_, the _protection_ spell absorbs damage until its power is exhausted before the _chromatic resistance_ spell is applied.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 79
+  },
+  {
+    "id": "chromatic-touch",
+    "name": "Chromatic Touch",
+    "school": "Evocation",
+    "subschool": "Chromatic",
+    "descriptors": [],
+    "levels": {
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "domains": {
+      "Ulvyn": 2
+    },
+    "components": [],
+    "effect": "Creature or object touched",
+    "summary": "Melee touch, 1d3 each of electricity, fire, cold, acid and sonic.",
+    "description": "Your successful melee touch attack deals 1d3 point of electricity, 1d3 point of fire, 1d3 point of cold, 1d3 point of acid and 1d3 point of sonic damage. The damage dice increase to 1d4 at 5th caster level, 1d6 at 8th caster level, 1d8 at 11th caster level, 1d10 at 14th caster level, 1d12 at 18th caster level and 1d20 at 21st caster level.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 80
+  },
+  {
+    "id": "chromatic-touch-lesser",
+    "name": "Chromatic Touch, Lesser",
+    "school": "Evocation",
+    "subschool": "Chromatic",
+    "descriptors": [],
+    "levels": {
+      "Sor": 1,
+      "Wiz": 1
+    },
+    "domains": {
+      "Ulvyn": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "Creature or object touched",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Melee touch, 1 point each of electricity, fire, cold, acid and sonic.",
+    "description": "Your successful melee touch attack deals 1 point of electricity, 1 point of fire, 1 point of cold, 1 point of acid and 1 point of sonic damage.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 80
+  },
+  {
+    "id": "chromatic-web",
+    "name": "Chromatic Web",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 5,
+      "Wiz": 5
+    },
+    "domains": {
+      "Ulvyn": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A cord tender's hair.",
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft.+ 10 ft./level)",
+    "effect": "Webs in a 20-ft.-radius spread",
+    "duration": "10 min./level (D)",
+    "savingThrow": "See below",
+    "spellResistance": "No",
+    "summary": "Webs entangle and deal 1d6 chromatic damage to those who struggle.",
+    "description": "_Chromatic web_ creates a many-layered mass of strong, sticky strands. These strands trap those caught in them. The strands are similar to spider webs but far larger and tougher. These masses must be anchored to two or more solid and diametrically opposed points -- floor and ceiling, opposite walls, or the like -- or else the web collapses upon itself and disappears. Creatures caught within a _chromatic web_ become entangled among the gluey fibers. Atttacking a creature in a _chromatic web_ with an adjacent melee attack won't cause you to become entangled but you will take damage from the chromatic effect if you fail a Reflex save.\n\nAnyone in the effect's area when the spell is cast must make a Reflex save. If this save succeeds, the creature is entangled, but not prevented from moving, through moving is more difficult than normal for being entangled (see below). Success on the Reflex save also prevents the creature from taking the chromatic damage. If the save fails, the creature is entangled and can't move from its space, but can break loose by spending 1 round and making a DC 20 Strength check or a DC 25 Escape Artist check. Once loose (either by making the initial Reflex save or a later Strength check or Escape Artist check), a creature remains entangled, but may move through the _chromatic web_ very slowly. Each round devoted to moving allows the creature to make a new Strength check or Escape Artist check. The creature moves 5 feet for each full 5 points by which the check result exceeds 10.\n\nIf you move through a chromatic web or attack a creature in a chromatic web with a melee weapon while adjacent to the web you are required to make a Reflex save. A failed Reflex saving throw causes you to take 1d6 chromatic damage. If a creature is entangled by a _chromatic web_ spell then the creature takes 1d6 chromatic damage each round that it is entangled including the first. A creature that is in the _chromatic web_ area of effect but is not entangled and does not move or make a melee attack takes no chromatic damage.\n\nIf you have at least 5 feet of web between you and an opponent, it provides cover. If you have at least 20 feet of web between you, it provides total cover.\n\nThe strands of a _chromatic web_ spell are not flammable like a standard _web_ spell and thus do not catch fire. The webs of a _chromatic web_ spell have 5 hp per 5ft. square and damage reduction 15/slashing. Each 5 ft. square of a _chromatic web_ that is attacked requires a Reflex saving throw to avoid the chromatic damage.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 80
+  },
+  {
+    "id": "create-node",
+    "name": "Create Node",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 9
+    },
+    "domains": {
+      "Ulvyn": 9
+    },
+    "components": [
+      "V",
+      "S",
+      "XP"
+    ],
+    "materialComponent": "100 experience points or a ruby, emerald, onyx, diamond and sapphire worth 1000 gold each.",
+    "castingTime": "10 minutes",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "See text",
+    "duration": "1 round/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Opens a 20-ft. portal between the material plane and the cords.",
+    "description": "Casting a _create node_ spell creates a connection between the material plane and the cords allowing travel between the two. The node itself is a tear in the fabric of the material plane that is 20' in diameter. The node is a two-dimentional window looking into the the material plane or the cords that is opposite of your current location. Anyone or anything that moves through is shunted instantly to the other side.\n\nCord tenders within 120 ft. of a created node do not suffer Con loss from being away from the cords and do not loose Con for that day. Traveling through a _create node_ spell does not require the Use Web skill. The caster has no control over what creatures travel through a created node.\n\n_Other class lists:_ Oracle of Fate 9.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 80
+  },
+  {
+    "id": "crown-of-leadership",
+    "name": "Crown of Leadership",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [],
+    "levels": {
+      "Clr": 7
+    },
+    "domains": {
+      "Credullyus Facet": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "20 ft.",
+    "target": "You and one creature/level in a 20-ft.-radius burst centered on you.",
+    "targetLabel": "Targets",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "+2 Cha for you; allies get +3 morale, fear immunity, temp hp.",
+    "description": "You are imbued with energy from the Credullyus facet granting you an aura of authority, inspiring awe in all lesser creatures that behold your increased power. You gain a +2 enhancement bonus to Charisma for the duration of the spell. In addition, you and the subject creatures gain a +3 morale bonus on attack rolls, saves, and skill checks, immunity to fear effects, and temporary hit points equal to your caster level (maximum +20).",
+    "source": "Kan'Derra Player's Edition",
+    "page": 80
+  },
+  {
+    "id": "curse-of-the-unnatural",
+    "name": "Curse of the Unnatural",
+    "school": "Necromancy",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Sor": 4,
+      "Wiz": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "Permanent",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Curse gives the target the unnatural subtype.",
+    "description": "You place a curse on the subject that causes the creature to take on the unnatural subtype. The curse bestowed by this spell cannot be dispelled, but it can be removed with a _break enchantment_, _limited wish_, _miracle_, _remove curse_, or _wish_ spell.\n\n_Curse of the unnatural_ counters _remove curse_.\n\n_Other class lists:_ Oracle of Fate 3.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "damage-fate",
+    "name": "Damage Fate",
+    "school": "Necromancy",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Drd": 2
+    },
+    "domains": {
+      "Ulvyn": 3
+    },
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 immediate action",
+    "range": "Touch",
+    "effect": "One creature with a fateline",
+    "duration": "Instantaneous",
+    "savingThrow": "Will save for half",
+    "spellResistance": "Yes",
+    "summary": "Touch, 1d8 cord damage/level (max 10d8) to a creature with a fateline.",
+    "description": "Deal 1d8 cord damage per level (max 10d8).\n\n_Other class lists:_ Oracle of Fate 2.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "delay-fate",
+    "name": "Delay Fate",
+    "school": "Necromancy",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {},
+    "domains": {
+      "Hathafestus Facet": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 immediate action",
+    "range": "30 ft.",
+    "effect": "One living creature/3 levels",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Subjects cannot drop below -9 hit points and are stabilized.",
+    "description": "This spell is cast as soon as the subject(s) takes damage that would cause the death of the creature. It effectivily prevents all damage that would cause the subject(s) to drop below -9 hit points. For example, if a subject of the spell had 1 hit point and took damage from an attack that dealt 12 hit points, the subject would normally have died except this spell causes the subject to instead drop to -9 hit points. This spell stabalizes the subjects for the duration of the spell, but bleeding continues when the spell ends.\n\n_Other class lists:_ Oracle of Fate 1.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "delayed-teleport",
+    "name": "Delayed Teleport",
+    "school": "Conjuration",
+    "subschool": "Teleportation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 6,
+      "Wiz": 6
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal and touch",
+    "target": "You and touched objects or other touched willing creatures",
+    "duration": "See text",
+    "savingThrow": "None and Will negates (object)",
+    "spellResistance": "No and yes (object)",
+    "summary": "Teleport, but its effect can be delayed up to 4 rounds.",
+    "description": "This spell functions like _teleport_, except that there is an option to delay its effects. When casting this spell the caster can choose to delay its effects from happening up to a maximum of 4 rounds. The round in which this spell was cast does not count as one of the rounds to be delayed. On the round in which this spell is chosen to activate, it does so at the end of the caster's action. For example, a caster casts _delayed teleport_ and chooses to have it delay only 1 round. On the next round, the caster chooses to cast fireball and then touch her adjacent friends that are nearby then teleport.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "delayed-teleport-greater",
+    "name": "Delayed Teleport, Greater",
+    "school": "Conjuration",
+    "subschool": "Teleportation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 8,
+      "Wiz": 8
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal and touch",
+    "target": "You and touched objects or other touched willing creatures",
+    "duration": "See text",
+    "savingThrow": "None and Will negates (object)",
+    "spellResistance": "No and yes (object)",
+    "summary": "Greater teleport, but its effect can be delayed up to 4 rounds.",
+    "description": "This spell functions like _greater teleport_, except that there is an option to delay its effects. When casting this spell the caster can choose to delay its effects from happening up to a maximum of 4 rounds. The round in which this spell cast does not count as one of the rounds to be delayed. On the round in which this spell is chosen to activate, it does so at the end of the caster's action.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "fate-suppression-zone",
+    "name": "Fate Suppression Zone",
+    "school": "Abjuration",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Sor": 6,
+      "Wiz": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "F",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "area": "10-ft.-radius emanation, centered on you",
+    "duration": "10 min./level (D)",
+    "savingThrow": "None",
+    "spellResistance": "See text",
+    "summary": "Barrier suppresses fate effects and winks out summoned creatures.",
+    "description": "An invisible barrier surrounds you and moves with you. The space within this barrier is impervious to fate effects, including spells, spell-like abilities, and supernatural abilities. Likewise, it prevents the functioning of any magic items, spells, spell-like abilities or supernatural abilities with the fate descriptor within its confines.\n\nA _fate suppression zone_ suppresses any fate spell or magical effect used within, brought into, or cast into the area, but does not dispel it. Time spent within a _fate suppression zone_ counts against the suppressed spell's duration.\n\nSummoned creatures of any type wink out if they enter a _fate suppression zone_. They reappear in the same spot once the field goes away. Time spent winked out counts normally against the duration of the conjuration that is maintaining the creature. If you cast _fate suppression zone_ in an area occupied by a summoned creature that has spell resistance, you must make a caster level check (1d20 + caster level) against the creature's spell resistance to make it wink out. (The effects of instantaneous conjurations are not affected by a _fate suppression zone_ because the conjuration itself is no longer in effect, only its result.) A normal creature can enter the area, as can normal missiles. Furthermore, while a magic sword with the fate descriptor does not function magically within the area, it is still a sword (and a masterwork sword at that). Artifacts and deities are unaffected by mortal magic such as this. Should a creature be larger than the area enclosed by the barrier, any part of it that lies outside the barrier is unaffected by the field.\n\n_Arcane Material Component:_ A pinch of powdered sawdust.\n\n_Other class lists:_ Oracle of Fate 5.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 81
+  },
+  {
+    "id": "fateline-guardian",
+    "name": "Fateline Guardian",
+    "school": "Abjuration",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 8,
+      "Sor": 8,
+      "Wiz": 8
+    },
+    "domains": {
+      "Hathafestus Facet": 8,
+      "Ulvyn": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "M",
+      "DF"
+    ],
+    "materialComponent": "A diamond worth 5 gold pieces.",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "effect": "One creature with a fateline",
+    "duration": "1 hour/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "No",
+    "summary": "Subject is immune to spells and abilities with the fate descriptor.",
+    "description": "For the duration of this spell, the subject is immune to spells, spell-like abilities or supernatural abilities with the fate descriptor.\n\n_Other class lists:_ Oracle of Fate 8.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 82
+  },
+  {
+    "id": "fateweave",
+    "name": "Fateweave",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {},
+    "domains": {
+      "Hathafestus Facet": 9
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "materialComponent": "A diamond worth 5000 gold pieces.",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "effect": "One fateless creature",
+    "duration": "Instantaneous",
+    "savingThrow": "Will negates",
+    "spellResistance": "No",
+    "summary": "Reconnects a fateless creature's fateline, removing the template.",
+    "description": "You reconnect the fateline of a fateless creature. Reconnecting the fateline removes the fateless template from the creature.\n\n_Other class lists:_ Oracle of Fate 9.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 82
+  },
+  {
+    "id": "fire-beast",
+    "name": "Fire Beast",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Ignigniius Facet": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A drop of lamp oil lit on your forehead.",
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 min./level (D)",
+    "summary": "Become living flame: incorporeal, +6 Dex, fire unarmed attacks.",
+    "description": "This spell transforms your body into living flame, which grants you several powerful resistances and abilities.\n\nYou become incorporeal and are immune to blindness, critical hits, ability score damage, deafness, disease, fire, poison, stunning and all spells or attacks that affect your physiology or respiration, because you have no physiology or respiration while this spell is in effect. You take only half damage from acid and sonic attacks of all kinds. However, you also become vulnerable to all attacks and spells with the cold and water descriptors.\n\nYou gain a +6 enhancement bonus to your Dexterity score and your speed is increased by 10 feet, but you take a -6 penalty to your Strength as well (to a minimum score of 1). You cannot drink (and thus can't use potions) or play wind instruments. Your armor melds into your body during the transformation, so you are treated as not wearing the armor in the _fire beast_ form.\n\nYour unarmed attacks deal 1d6 plus your Constitution modifier in fire damage and you are considered armed when making unarmed attacks.\n\nYour weight decreases by a factor of ten allowing you to walk over liquids but doing so causes 1d6 non-lethal damage for each round in which you spend any time in contact with the liquid. The exception would be if you walked over a flammable liquid, in which case the liquid would cause no non-lethal damage and would ignite.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 82
+  },
+  {
+    "id": "flower-patch",
+    "name": "Flower Patch",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A dried flower.",
+    "castingTime": "1 standard action",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area": "40-ft.-radius",
+    "duration": "See text",
+    "savingThrow": "Will negates",
+    "spellResistance": "No",
+    "summary": "Aromatic flowers daze and prone creatures that fail Will saves.",
+    "description": "This spell causes the ground to erupt with aromatic flowers. All creatures within the area of the the spell must immediately make a Will save. Each round that the creature remains within the area of effect an additional Will save must be made. Failure of the Will save requires that the creature stop what they are doing, drop to their knees and do nothing but smell the flowers for one round. While smelling the flowers the creature is considered to be both prone and dazed.\n\nAll creatures that are not in the area of effect but are adjacent to the area of affect must also make a Will save. Failure of this Will save means that the creature is slowed. Each round that the creature stays adjacent to the area of affect requires an additional Will save.\n\nCreatures that do not have a sense of smell or that are unaffected by smell (such as non-intelligent undead) are not affected by this spell. Creatures with the scent ability take a -4 penalty to their Will saves to resist this spell. Although the flowers last until they die of normal causes, their powerful smell effect only lasts one round per level of the caster.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 82
+  },
+  {
+    "id": "givytiss-servant",
+    "name": "Givytis's Servant",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3
+    },
+    "domains": {
+      "Racanis Facet": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A pinch of metal shavings.",
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One invisible, mindless, shapeless servant",
+    "duration": "1 day/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Invisible servant helps craft armor, weapons and metalwork (Take 10).",
+    "description": "A _servant of Givytis_ is an invisible, mindless, shapeless force that is helpful at creating weapons and armor. The servant can perform any duty in a blacksmith's forge that is directly related to the creation of armor, shields, weapons or any object created out of metal. A _servant of Givytis_ can help with creating armor, shields and weapons not made out of metal as well.\n\nIf the servant is left to work on its own it is considered to have 5 ranks in Craft (armor/shields), 5 ranks in Craft (weapons) and 5 ranks in Craft (metalwork). If the servant is used to aid you or another individual during the creation process, it can automatically take a 10 on any Craft skill it possesses.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 82
+  },
+  {
+    "id": "gnollics-advantageous-defense-matrix",
+    "name": "Gnollic's Advantageous Defense Matrix",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "descriptors": [],
+    "levels": {
+      "Sor": 5,
+      "Wiz": 5
+    },
+    "components": [
+      "V",
+      "M"
+    ],
+    "materialComponent": "A small strip of leather made from displacer beast hide tied around the subject's finger.",
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "Creature touched",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Subject gets displacement and mirror image, with displaced images.",
+    "description": "The target creature of _Gnollic's advantageous defense matrix_ is treated as if they are under the _displacement_ and _mirror image_ spells. All of the images are also treated as if under the _displacement_ spell. In addition to looking and sounding like the subject, the images also are partially made of shadow so they are also detected with blindsight and tremorsense causing the same miss chance when targeting with these senses as if using sight to target the subject.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 83
+  },
+  {
+    "id": "gnollics-extra-deep-pockets",
+    "name": "Gnollic's Extra Deep Pockets",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A piece of clothing worth 15 gold or more that contains at least one pocket.",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "effect": "One pocket in a piece of clothing",
+    "duration": "1 hour/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Turn a pocket into a type I bag of holding.",
+    "description": "You turn one pocket on a piece of clothing into a type I bag of holding for the duration of the spell. At the end of the spell all contents remaining in the target pocket instantly appear within 5 ft of the piece of clothing that was the target of this spell. Casting the spell again resets the duration of the spell without causing the spell to end.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 83
+  },
+  {
+    "id": "gnollics-honest-coin-collector",
+    "name": "Gnollic's Honest Coin Collector",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "effect": "All nonmagical, unattended gems and coins",
+    "area": "15 ft. radius",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Counts, sorts and stacks nearby gems and coins into containers.",
+    "description": "Upon casting this spell all non-magical, unattended gems and coins within the area of effect are counted and stacked in front of the caster. The area of effect is centered on the caster. The caster may choose to have the coins and gems placed into one or more containers such as a coin purse, chest, pocket or bag of holding instead of in front of the caster. The container must be open and accessible by the caster. Placing coins or gems into a container attended by an unwilling creature is not possible. All gems and coins that do not fit in the specified container are stacked in front of the caster.\n\nWhen cast the caster knows the value of all the coins and the coins can be sorted by either value or type. The caster also knows the number and type of gems but not the value of the gems. The gems may be sorted by type only. Also, when _Gnollic's honest coin collector_ is cast, the caster decides what gems or coins will be placed into containers first.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 83
+  },
+  {
+    "id": "gnollics-not-so-honest-coin-collector",
+    "name": "Gnollic's (Not So) Honest Coin Collector",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "The secret container of the spell must be worth at least 15 gold pieces and is the focus of this spell.",
+    "savingThrow": "Will identifies",
+    "spellResistance": "No",
+    "summary": "As honest coin collector, but 10% of the coins go to a secret container.",
+    "description": "This spell works the same way as _Gnollic's honest coin collector_ except for as follows.\n\nWhen this spell is cast and the coins and gems are counted and sorted, 10% in value of the coins are placed into a secret container without the knowledge of others. This secret container does not need to be open or accessible to the caster but it must be within the radius of the spell and owned by the caster. All coins that were sent to the secret container that do not fit are stacked in front of the most honest creature within the area of effect of the spell.\n\nA standard spellcraft of _Gnollic's (Not So) honest coin collector_ reveals it as being the standard version of the spell. To recognize the difference between _Gnollic's honest coin collector_ and _Gnollic's (Not So) honest coin collector_ requires a Will save provided that the creature making the save has a reasonable reason to doubt the nature of the spell (such as coins stacking in front of the most honest creature within the area of effect) and has successfully spellcraft the spell.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 83
+  },
+  {
+    "id": "gnollics-insidious-grinning-gaze",
+    "name": "Gnollic's Insidious Grinning Gaze",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Sor": 4,
+      "Wiz": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "Tiny small paper mask that is crumpled during casting.",
+    "castingTime": "1 standard action",
+    "effect": "One or more creatures; see text",
+    "area": "60-ft.-radius centered on caster",
+    "duration": "1 round/level; see text",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Gaze makes subjects collapse in laughter, falling prone.",
+    "description": "When this spell is cast, the caster's face distorts into an exaggerated grin. This grin does not affect the caster's ability to use her mouth such as to speak, drink, or play an instrument. This grin lasts for the duration of the spell.\n\nThe caster gains a gaze attack that allows her to afflict the subject with uncontrollable laughter. Subjects affected by the spell collapse into gales of manic laughter, falling prone. The subjects can take no actions while laughing, but are not considered helpless. After one round, the subjects can act normally, however the subjects are not immune to _Gnollic's insidious grinning gaze_ and can thus fall under the spell's effect again. If the caster wants to target a creature that has made their save or has averted or covered their eyes, the caster may actively target the creature as per a normal gaze attack.\n\nA creature with an Intelligence score of 2 or lower is not affected. A creature whose type (such as humanoid or dragon) is different from the caster's receives a +4 bonus on its saving throw, because humor doesn't \"translate\" well.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 83
+  },
+  {
+    "id": "gnollics-random-duplicate-generator",
+    "name": "Gnollic's Random Duplicate Generator",
+    "school": "Illusion",
+    "subschool": "Shadow",
+    "descriptors": [],
+    "levels": {
+      "Sor": 9,
+      "Wiz": 9
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "see text",
+    "target": "Personal",
+    "effect": "see text",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will disbelief (if interacted with); varies; see text",
+    "spellResistance": "No",
+    "summary": "Create a new random-acting shadow duplicate of yourself each round.",
+    "description": "This spell creates a duplicate of the caster that instantly chooses to take a random action. Much like _mirror image_, it is impossible for observers to tell which the caster is and which is the duplicate without magical spells (such as _true sight_) or physically interacting with the subject. Physically interacting with the duplicate grants a Will saving throw to disbelieve. Objects automatically succeed on their Will saves against this spell.\n\nEach round after the appearance of the first duplicate, another duplicate appears and chooses to take a random action. Each time a new duplicate appears, the caster determines if the duplicate starts in the caster's location or the location of one of the duplicates. The duplicates are partially real much like creatures created by the _shadow conjuration_ spell. The duplicates move with the same motions as the caster would. They occupy a space, provoke attacks of opportunity and provide flanking bonuses. They can be tripped, grappled, bull rushed and anything else that a normal creature can suffer. Duplicates may be targeted and affected by spells but are treated as a summoned creature. Duplicates cannot be disarmed and are treated as if they automatically win all rolls when defending against a disarm attempt. Duplicates have 50% of the hit points of the caster. Slaying a duplicate causes it to disappear.\n\nDuplicates always do minimum damage when attacking and spellcasting attempts by the duplicate always appear to fail to cast. The duplicate has all the normal abilities and weaknesses of the caster and copies of the caster's equipment. The equipment carried by the duplicates are mundane versions of the actual equipment of the caster and have no magical properties and lose the ability to bypass damage reduction. This means that the duplicates do not benefit from enhancement bonuses to hit that are granted to the caster by magical weapons. Although the equipment is not actually magical, the perceptive effects of the equipment are the same. For example: a +1 flaming dagger held by a duplicate loses the +1 bonus and the extra damage done by the flaming effect but still looks to be on fire and radiates heat.\n\nAgainst a creature that recognizes it as a shadow creature, the duplicate's damage is one-half the minimum, and all special abilities that do not deal lethal damage are only 50% likely to work. (Roll for each use and each affected character separately.) Furthermore, the duplicate's AC bonuses are one-half as large (so a +7 bonus resulting in a AC 17 would change to a +3 total bonus for a new AC of 13). The duplicates will act on their own doing one of four actions most advantageous to the situation as determined by the caster. The four actions that are possible are to take a full move action, make a full round melee attack, fight defensively, or cast a spell. As a move action the caster can make one duplicate take a different action (such as use a special ability or shoot a bow) than the four previously mentioned abilities. Duplicates that enter the area of an anti-magic field are dispelled. Spellcasting done by the duplicate automatically fails to work.\n\nAt the beginning of the caster's turn, the caster may choose to switch places with any duplicate within 30 feet as a free action.\n\n_Gnollic's random duplicate generator_ and _mirror image_ effects do not stack.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 84
+  },
+  {
+    "id": "humperdink",
+    "name": "Humperdink",
+    "school": "Necromancy",
+    "descriptors": [],
+    "levels": {
+      "Sor": 5,
+      "Wiz": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Touch removes a limb from the target creature.",
+    "description": "The _humperdink_ spell removes a limb from the target creature. Some creatures, such as many aberrations and all oozes, have no limbs to sever. Others, such as golems, plants and undead creatures are less affected by the loss of a limb. Most other creatures, however, are significantly affected when limbs are severed.\n\nSevered limbs can vary in the penalties given to the affected creature. Ultimately the penalty is determined by the D.M. yet the following are some examples. Severed arm incurs a -20 to grapple checks, two-handed weapons used at a -4 penalty, and a +10 concentration check is added to all spells with a somatic component. Severed leg causes a Balance check (DC 20 for 2-legged creatures, DC 15 for 3-legged creatures and DC 12 for 4 or more legged creatures) or fall to the ground. In addition, a severed leg also reduces the creatures movement to 5 feet (if the creature has three or more legs, the movement is instead cut in half). Severed tails reduce all Balance checks by -5 and might have additional social impact for the creature.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 84
+  },
+  {
+    "id": "invisibility-from-animals",
+    "name": "Invisibility from Animals",
+    "school": "Illusion",
+    "descriptors": [],
+    "levels": {
+      "Drd": 1,
+      "Rgr": 1
+    },
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One creature touched/level",
+    "duration": "1 round/level",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Animals cannot perceive the warded creatures.",
+    "description": "Animals cannot perceive the warded creatures by sight, hearing or smell. They act as though the warded creatures are not there. Warded creatures could stand before the hungriest of lions and not be molested or even noticed. If a warded character touches an animal, attacks any creature, or casts a spell, the spell ends for all recipients.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "invisibility-from-corded-creatures",
+    "name": "Invisibility from Corded Creatures",
+    "school": "Illusion",
+    "descriptors": [],
+    "levels": {
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A piece of abalone shell.",
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "Hidden from corded creatures' sight, hearing, smell and tremorsense.",
+    "description": "This spell hides the caster from corded creatures. The spell prevents corded creatures from seeing, hearing, and smelling the caster. The spell also prevents the caster from being detected by tremorsense used by the corded creature. Much like the _invisibility_ spell, any forceful or agressive action cancels the spell.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "izzics-unwanted-truth",
+    "name": "Izzic's Unwanted Truth",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Sor": 7,
+      "Wiz": 7
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 round",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "Like contact other plane without concentration; +1 AC and caster level.",
+    "description": "This spell works similar to _contact other plane_. Concentration is not required to maintain this spell but a move action is required to ask a question. In addition, the caster gains a +1 bonus to AC and +1 bonus caster level for all spells.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "liquid-armor",
+    "name": "Liquid Armor",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 1,
+      "Drd": 1,
+      "Pal": 1,
+      "Rgr": 1
+    },
+    "domains": {
+      "Aquininan Facet": 1
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One suit of armor or shield/3 levels",
+    "duration": "1 minute/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Armor and shields do not apply their check penalty to swimming.",
+    "description": "Armor or shields under the effect of the _liquid armor_ spell do not apply their armor check penalty to swimming for the duration of the spell.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "muse",
+    "name": "Muse",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Brd": 6
+    },
+    "domains": {
+      "Maslaada Facet": 7
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "Each turn choose one enhancement bonus, such as +2 caster level or +4 stat.",
+    "description": "The _muse_ spell grants the caster a variety of bonuses that may be useful. The caster only gains the benefit of one bonus granted by this spell at a time. Multiple bonuses may be gained by multiple castings of this spell but bonuses granted by the _muse_ spell do not stack with bonuses granted by additional castings of the _muse_ spell. At the beginning of the caster's turn as a free action, the caster chooses the bonus granted by this spell. The possible bonuses are: +2 caster level, +4 to one characteristic, +10 to one skill, +2 to all saving throws, +10 feet movement, +2 natural armor, +5 to hit with melee and ranged attacks or +5 bonus to damage on all melee weapon and ranged weapon attacks. The bonus provided by the _muse_ spell is an enhancement bonus and lasts until the caster changes the bonus or the spell ends.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "mute",
+    "name": "Mute",
+    "school": "Necromancy",
+    "descriptors": [],
+    "levels": {
+      "Brd": 3,
+      "Clr": 4,
+      "Sor": 3,
+      "Wiz": 3
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./ level)",
+    "effect": "One living creature",
+    "duration": "Permanent (D)",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Target creature is rendered mute.",
+    "description": "You call upon the powers of unlife to render the target subject mute. All spells that can remove deafness can also remove the mute penalty.\n\n_Other class lists:_ Assassin 4.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "natural-form",
+    "name": "Natural Form",
+    "school": "Illusion",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Drd": 3,
+      "Sor": 2,
+      "Wiz": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One creature",
+    "duration": "10 min./level",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Hides the target's unnatural subtype from cord tenders and cordic creatures.",
+    "description": "The creature under the effect of the _natural form_ spell masks their unnatural descriptor from cord tenders and cordic creatures. Any cord tender or cordic creature looking at the creature assume the creature does not have the unnatural subtype.\n\n_Other class lists:_ Oracle of Fate 1.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 85
+  },
+  {
+    "id": "obscure-fateline",
+    "name": "Obscure Fateline",
+    "school": "Abjuration",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Sor": 4,
+      "Wiz": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A pinch of sawdust aged in kackleberry wine for 10 years. The process of creating this kackleberry sawdust costs 50gp.",
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "1 hour/level",
+    "savingThrow": "Will negates (harmless, object)",
+    "spellResistance": "Yes (harmless, object)",
+    "summary": "Ward a creature or object against detection by fate-based abilities.",
+    "description": "The warded creature or object becomes difficult to detect by any ability that uses fate such as the oracle of fate's read the fates ability. _Obscure fateline_ also prevents location by such magic items as crystal balls that use fate-based spells, spell-like or supernatural abilities.\n\nIf cast on a creature, _obscure fateline_ wards the creature's gear as well as the creature itself.\n\n_Other class lists:_ Oracle of Fate 3.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "pakorns-hammer",
+    "name": "Pa'Korn's Hammer",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Racanis Facet": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One creature touched",
+    "duration": "1 day/level",
+    "savingThrow": "Fortitude negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "+1 on Craft checks and quarter crafting time (+2, half time for arms/armor).",
+    "description": "A creature under the effects of the _Pa'Korn's hammer_ spell gains a +1 competence bonus on Craft checks and reduces the crafting time by one quarter for any craft that might use a hammer. This bonus improves to +2 and the time reduction is increased to one-half when making armors, shields, weapons or metal objects.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "pakorns-forge",
+    "name": "Pa'Korn's Forge",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Racanis Facet": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A miniature hammer made of tin.",
+    "castingTime": "1 minute",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "30-ft. cube/level (S)",
+    "duration": "1 day/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Creates a working forge giving +2 insight on Craft skills.",
+    "description": "You turn the area affected by the spell into a working forge. The area used to create the forge must be free of large objects such as boulders, trees and buildings. The forge provides metal working space for one person per 30-ft. cube created. All creatures that use _Pa'Korn's forge_ gain a +2 insight bonus on all Craft skills when making any object, armor, shield or weapon made of metal. This bonus also applies when making armor, shields or weapons that are not made of metal.\n\nAnyone using _Pa'Korn's forge_ has all the necessary tools and equipment to work any type of metal without penalty. This may be used with _Pa'Korn's hammer_.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "paralysis-of-speech",
+    "name": "Paralysis of Speech",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Sor": 1,
+      "Wiz": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One creature",
+    "duration": "1 round",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Target creature is mute for one round.",
+    "description": "Creature targeted by _paralysis of speech_ is mute for one round. All spells that remove deafness also remove the mute penalty.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "repulse-the-fated",
+    "name": "Repulse the Fated",
+    "school": "Abjuration",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Clr": 6,
+      "Sor": 5,
+      "Wiz": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "F",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "up to 10 ft./level",
+    "area": "Up to 10-ft.-radius/level emanation centered on you",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Creatures with a fateline cannot approach you if they fail a Will save.",
+    "description": "An invisible, mobile field surrounds you and prevents creatures with a fateline from approaching you. You decide how big the field is at the time of casting (to the limit your level allows). Any creature with a fate line within or entering the field must attempt a save. If it fails, it becomes unable to move toward you for the duration of the spell. Repelled creatures' actions are not otherwise restricted.\n\nThey can fight other creatures and can cast spells and attack you with ranged weapons. If you move closer to an affected creature, nothing happens. (The creature is not forced back.) The creature is free to make melee attacks against you if you come within reach. If a repelled creature moves away from you and then tries to turn back toward you, it cannot move any closer if it is still within the spell's area.\n\n_Arcane Focus:_ A finely carved wooden spider with glass fangs worth 50gp.\n\n_Other class lists:_ Oracle of Fate 4.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "solar-blast",
+    "name": "Solar Blast",
+    "school": "Evocation",
+    "descriptors": [
+      "Light"
+    ],
+    "levels": {},
+    "domains": {
+      "Poterra Facet": 9
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A small mirror worth at least 100gp.",
+    "castingTime": "1 standard action",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "savingThrow": "See text",
+    "spellResistance": "Yes",
+    "summary": "Ranged touch ray, 1d6 damage/level (max 25d6), blinds on failed Fort save.",
+    "description": "A ray of bright light springs from your palm. You must succeed on a ranged touch attack with the ray to deal damage to a target. The ray deals 1d6 points of damage per caster level (maximum 25d6). The creature hit by the _solar blast_ must succeed on a Fortitude save or be blinded. Any creature to which sunlight is harmful takes an additional 1 point of damage per caster level. In addition, the ray results in the destruction of any undead creature specifically harmed by bright light (such as a vampire) if it fails a Will save.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 86
+  },
+  {
+    "id": "splice-fateline",
+    "name": "Splice Fateline",
+    "school": "Transmutation",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Sor": 8,
+      "Wiz": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A pinch of sawdust aged in kackleberry wine for 10 years. The process of creating this kackleberry sawdust costs 50gp.",
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "Creature touched",
+    "duration": "1 hour/level",
+    "savingThrow": "See text",
+    "spellResistance": "Yes",
+    "summary": "Temporarily copy one talent (skill, save, BAB or feat) of a fated creature.",
+    "description": "You temporariy duplicate one of the talents (detailed below) of another creature with a fateline. This is done by temporarily splicing your fateline and the fateline of the target creature. You choose the talents that are duplicated/given. This spell does not grant you knowledge of the talents of the target creature and thus you may end up not gaining a benefit from this spell if attempting to duplicate a talent that the target creature does not have. The creature does not get a saving throw against you duplicating the target creature's talent. You replace your talent with that of the target creature even if the talent is less than yours. If the target creature has no ranks in a skill you attempt to duplicate you treat the duplicated skill as having zero ranks which reduces the number of ranks you have in that skill to zero.\n\nWhen casting this spell, you may choose to also give the target creature access to one of your talents. If you attempt to grant the target creature one of your talents the target creature gets a Fortitude saving throw (which it may choose to fail). If the target creature fails its saving throw, you replace the target creature's talent with one of your own which could end up as a benefit or a penalty. You do not duplicate/grant other modifiers to these talents (such as ability bonuses and magic item bonuses) and you cannot duplicate/grant a talent granted by a magic item. The talents that may be taken/given are:\n\nThe ranks of a single skill\n\nThe base saving throw bonus for one save\n\nThe base attack bonus\n\nA single feat (ignore prerequisites)\n\n_Other class lists:_ Oracle of Fate 7.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 87
+  },
+  {
+    "id": "summon-golden-guard",
+    "name": "Summon Golden Guard",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Zolah Facet": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "See Below",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "See below",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summon 1-5 golden guards, depending on casting time.",
+    "description": "This spell summons a 1-5 golden guards to fight for the caster. Depending on how long the caster spends casting the spell a different number of golden guards appear. If cast as a swift action, this spell summons one golden guard; if cast as a standard action this spell summons two golden guards; if cast as a 1 round action, this spell summons 3-5 golden guards. The golden guards summoned are as per the write up under the creature section of this book. Golden guards will defend their summoner to the best of their ability and without hesitation unless otherwise directed and disappear if more than 100 yards from the caster.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 87
+  },
+  {
+    "id": "summon-herd",
+    "name": "Summon Herd",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Drd": 7
+    },
+    "domains": {
+      "Kaopotchula Facet": 7
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One herd of megaloceros",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summon 1d4 + level megaloceros that act as a herd.",
+    "description": "This spell summons a number of megaloceros (_Frostburn_) equal to 1d4 + your caster level. The herd functions as one unit and must act together. The herd attacks your opponents to the best of their ability including the use of the stampede ability. If you can communicate with the herd, you can direct them to perform other actions, but all actions will be performed as a herd.\n\nAll members of the herd must stay adjacent to at least one other member of the herd. If at any point a member of the herd is separated from the rest of the herd or moves more than 100 ft. from the caster, it disappears. Creatures cannot be summoned into an environment that cannot support them. Creatures summoned by this spell are neutral.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 87
+  },
+  {
+    "id": "summon-herd-greater",
+    "name": "Summon Herd, Greater",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Kaopotchula Facet": 8
+    },
+    "components": [],
+    "effect": "One herd of dire bison",
+    "summary": "As summon herd, but 1d4 + level dire bison.",
+    "description": "This spell works like _summon herd_ except that you summon a number of dire bison equal to 1d4 + your caster level.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 87
+  },
+  {
+    "id": "summon-herd-lesser",
+    "name": "Summon Herd, Lesser",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Drd": 6
+    },
+    "domains": {
+      "Kaopotchula Facet": 6
+    },
+    "components": [],
+    "effect": "One herd of bison",
+    "summary": "As summon herd, but 1d4 + level bison.",
+    "description": "This spell works like _summon herd_ except that you summon a number of bison (_Monster Manual_) equal to 1d4 + your caster level.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 87
+  },
+  {
+    "id": "summon-royal-guards",
+    "name": "Summon Royal Guards",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Lawful"
+    ],
+    "levels": {},
+    "domains": {
+      "Credullyus Facet": 9
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "10 minutes",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Two or more summoned creatures, no two of which are more than 30 ft. apart",
+    "duration": "10 minutes/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summon 2d4+4 royal guards that serve you for the duration.",
+    "description": "When the spell is complete 2d4+4 royal guards appear. Once these creatures appear, they serve you for the duration of the spell.\n\nThe creatures obey you and all attempts to gain control over them by anyone else fails. You do not need to concentrate to maintain control over the creatures. You can dismiss them singly or in groups at any time. Unless otherwise commanded, they will make decisions on their own to help the caster of this spell using the knowledge that they have or can observe.\n\n**Royal Guard:** Medium Outsider; HD 8d10+16; hp 96; Init +1; Spd 15 ft.; AC 21 (+1 Dex, +8 full plate, +2 large shield); touch 11, flat-footed 20; Base atk +8; Grp +11; Atk +2 Long Sword +14 melee (1d8+7; 19-20/x2); Full Atk +2 longsword +14/+9 melee (1d8+7; 19-20/x2); SA None; SQ Darkvision 60 ft.; AL same as caster; SV Fort +8, Ref +7, Will +7; Str 16, Dex 13, Con 15, Int 10, Wis 12, Cha 8.\n\n_Skills and Feats:_ Climb +11, Jump +11, Listen +11, Psicraft +11, Sense Motive +11, Spellcraft +11, Spot +11, Swim +11; Weapon Focus (Long Sword), Weapon Specialization (longsword), Combat Reflexes, Armor Proficiency (light, medium, heavy), Shield Proficiency (light, heavy).",
+    "source": "Kan'Derra Player's Edition",
+    "page": 88
+  },
+  {
+    "id": "summon-tendriculos",
+    "name": "Summon Tendriculos",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Taratassa Facet": 7
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned tendriculos",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summon a tendriculos from Taratassa to fight for you.",
+    "description": "This spell summons a tendriculos from Taratassa. It appears where you designate and acts immediately, on your turn. It understands your speech (regardless of your language), and it follows your commands to the best of its ability. You must concentrate to maintain the spell's effect, but commanding the creature is a free action.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 88
+  },
+  {
+    "id": "summon-treant",
+    "name": "Summon Treant",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Drd": 8
+    },
+    "domains": {
+      "Taratassa Facet": 8
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "1d4+1 summoned treant",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summon 1d4+1 treants from Taratassa to fight for you.",
+    "description": "This spell summons 1d4+1 treants from Taratassa. They appear where you designate and act immediately, on your turn. They understand your speech (regardless of your language), and follow your commands to the best of their ability. You must concentrate to maintain the spell's effect, but commanding the creatures is a free action.\n\nA summoned treant cannot animate other trees.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 88
+  },
+  {
+    "id": "suppress-fate",
+    "name": "Suppress Fate",
+    "school": "Abjuration",
+    "descriptors": [
+      "Fate"
+    ],
+    "levels": {
+      "Sor": 7,
+      "Wiz": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A pinch of sawdust.",
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature or object",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates (object)",
+    "spellResistance": "Yes (object)",
+    "summary": "Ranged touch ray suppresses fate abilities of a creature or object.",
+    "description": "An invisible ray projects from your fingers. You must succeed on a ranged touch attack with the ray to strike a target. The target, if struck, functions as if it were inside a _fate suppression field_.\n\nIf this spell is used against a creature, the target can't cast spells or can't use supernatural or spell-like abilities with the fate descriptor. In addition, spells, supernatural or spell-like abilities with the fate descriptor have no effect on the creature.\n\nIf this spell is used against an object, that object's powers with the fate descriptor are suppressed. Remember that an object struck by the ray only receives a saving throw if it is attended or if it is a magic item. An unattended item receives no save.\n\nThe spell doesn't affect any objects other than the target itself, even if those objects are worn, carried by, or in contact with the target. For instance, if a creature is the target, its equipment remains unaffected.\n\n_Other class lists:_ Oracle of Fate 6.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 88
+  },
+  {
+    "id": "tree-guard",
+    "name": "Tree Guard",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 6
+    },
+    "domains": {
+      "Taratassa Facet": 6
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "One huge or larger tree",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Animate a huge tree to defend you in combat.",
+    "description": "You animate a tree to help defend you in combat. The tree never leaves your side unless forced. As a free action you may direct the animated tree to act on your turn. The animated tree may take any action that it can on the caster's turn so long as that action does not cause the animated tree to move away from the caster. The tree is closely connected to your actions and never causes the caster to suffer penalties to attack rolls due to cover, however cover penalties due to other creatures and objects still apply. If the caster moves away from the tree, the tree must attempt to move adjacent to the caster before taking any other actions.\n\nThe animated tree is treated as a animated object of a size equal to the size of the tree and has no legs. If the caster steps into the same space as the animated tree, the caster gains a +4 cover bonus to AC regardless of the direction that the caster is being targeted.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 88
+  },
+  {
+    "id": "toughen",
+    "name": "Toughen",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 0,
+      "Drd": 0,
+      "Rgr": 1,
+      "Pal": 1,
+      "Sor": 0,
+      "Wiz": 0
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 immediate action",
+    "range": "Touch",
+    "effect": "One item worn or carried by caster",
+    "duration": "1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Worn or carried item gets +10 hardness for 1 round.",
+    "description": "This spell can be cast in reaction to an action such as sunder attack or casting of a spell. After being cast, one item that is currently being worn or carried by the caster gains a +10 bonus to its hardness for 1 round.\n\n_Other class lists:_ Blackguard 1.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 89
+  },
+  {
+    "id": "ugarits-dagger",
+    "name": "Ugarit's Dagger",
+    "school": "Evocation",
+    "descriptors": [
+      "Force",
+      "Evil"
+    ],
+    "levels": {},
+    "domains": {
+      "Sademon Facet": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One dagger",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Force dagger attacks each round, 1d4+1 force damage, crit 19-20.",
+    "description": "This spell brings into being a black dagger-like plane of force. The dagger strikes at any opponent within its range as you desire, starting in the round that you cast the spell. The dagger attacks its designated target once each round on your turn. Its attack bonus is equal to your caster level with a +1 enhancement bonus. As a force effect, it can strike ethereal and incorporeal creatures, it deals 1d4+1 points of force damage, with a threat range of 19-20 and a critical multiplier of x2.\n\nThe dagger always strikes from your direction. It does not get a bonus for flanking or help a combatant get one. If the dagger goes beyond the spell range from you, if it goes out of your sight, or if you are not directing it, the dagger returns to you and hovers.\n\nEach round after the first, you can use a standard action to switch the dagger to a new target. If you do not, the dagger continues to attack the previous round's target. The dagger cannot be attacked or harmed by physical attacks, but _dispel magic_, _disintegrate_, a _sphere of annihilation_, or a _rod of cancellation_ affects it. The dagger's AC is 12 (10, +1 size bonus for Small object, +1 deflection bonus).\n\nIf an attacked creature has spell resistance, the resistance is checked the first time _Ugarit's dagger_ strikes it. If not, the dagger has its normal full effect on that creature for the duration of the spell.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 89
+  },
+  {
+    "id": "water-candle",
+    "name": "Water Candle",
+    "school": "Transmutation",
+    "descriptors": [
+      "Water",
+      "Light"
+    ],
+    "levels": {},
+    "domains": {
+      "Aquininan Facet": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A candle worth at least 5 copper pieces.",
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "1 candle",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will negates (see text)",
+    "spellResistance": "No",
+    "summary": "Candle lights the area and boosts water spells cast nearby.",
+    "description": "The enchanted candle provides magical light as a candle that cannot be extinguished nor does it put off any heat. All creatures within the radius of the candle light add +1 caster level and +1 DC to all of their water-spells. In addition, the creature holding the candle is considered to be under a _sanctuary_ spell against all water type creatures. A Will save by the water creature negates the _sanctuary_ affect of this spell for that creature.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 89
+  },
+  {
+    "id": "waterform",
+    "name": "Waterform",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Aquininan Facet": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "A drop of sweat from a warrior taken after a battle.",
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 min./level (D)",
+    "summary": "Become living water: DR 20/magic, swim 20 ft., +2 Str.",
+    "description": "This spell transforms your body into living water, which grants you several powerful resistances and abilities.\n\nYou gain damage reduction 20/magic and a swim speed of 20ft. You are immune to blindness, critical hits, ability score damage, deafness, disease, drowning, poison, stunning, water spells and effects and all spells or attacks that affect your physiology or respiration while this spell is in effect. You take only half damage from acid of all kinds. However, you also gain a vulnerability to electrical attacks and dessication attacks.\n\nYou gain a +2 enhancement bonus to Strength score but your speed is reduced to half normal. You have an arcane spell failure chance of 50% and you cannot use potions or wind/string instruments.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 89
+  },
+  {
+    "id": "wind-column",
+    "name": "Wind Column",
+    "school": "Evocation",
+    "descriptors": [
+      "Air"
+    ],
+    "levels": {},
+    "domains": {
+      "Nauran Facet": 8
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "150 ft.",
+    "effect": "A cone of powerful wind emanating out from you to the extreme of the range",
+    "duration": "1 round/3 caster levels",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Cone of wind knocks down and blows back creatures by size.",
+    "description": "This spell creates a powerful blast of air that originates from you, affecting all creatures in its path.\n\nA Tiny or smaller creature on the ground is knocked down and rolled 3d4x10 feet, taking 1d4 points of non-lethal per 10 feet. If flying, a Tiny or smaller creature is blown back 4d6x10 feet and takes 3d6 points of nonlethal damage due to battering and buffeting.\n\nA Small or Medium creature on the ground is knocked down and rolled 1d4x10 feet, taking 1d4 points of non-lethal per 10 feet. If flying, a Small or Medium creature is blown back 2d6x10 feet and takes 2d6 points of nonlethal damage due to battering and buffeting.\n\nLarge and Huge creatures are unable to move forward against the force of the wind, or if flying are blown back 1d6x5 feet. Gargantuan or larger creatures may move at half speed within a _wind column_ effect.\n\nA _Wind Column_ can't move a creature beyond the limit of its range. Any creature, regardless of size, takes a -8 penalty on ranged attacks and Listen checks in the area of a _wind column_.\n\nThe force of the column automatically extinguishes candles, torches, and similar unprotected flames. It causes protected flames, such as those of lanterns, to dance wildly and has a 75% chance to extinguish those lights.\n\nIn addition to the effects noted, a _wind column_ can do anything that a sudden blast of wind would be expected to do. It can cause 1d4 points of damage per 2/caster levels in an area of small pebbles, sand or dust; cause 1d6 points of damage per caster level to buildings, have a 25% chance to keel over a medium or smaller sized boat, and blow gases or vapors to the edge of its range.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 89
+  },
+  {
+    "id": "yom-glitterpots-wagon",
+    "name": "Yom Glitterpot's Wagon",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {},
+    "domains": {
+      "Racanis Facet": 9
+    },
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A small bronze wagon worth 100gp.",
+    "castingTime": "1 minute",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One wagon",
+    "duration": "1 day/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "See below",
+    "summary": "Force wagon with a chest giving +4 insight on metalwork Craft checks.",
+    "description": "You create a wagon of force. The wagon has a movement rate of 100 ft. and requires no horses to pull. To move the wagon requires a movement action by the caster, thus moving the wagon 200 ft. in a single round requires two movement actions by the caster. The wagon has a chest that contains blacksmithing equipment that grants a +4 insight bonus on all Craft skills when making any object, armor, shield or weapon made of metal. This bonus also applies when making armor, shields or weapons that are not made of metal. This bonus may be used by no more than one individual at at time. The wagon has the ability to carry great amounts of weight. The weight that can be carried is equal to 200 lbs weight per caster level. The wagon is 7 ft. wide and 12 ft. long.\n\nThe inside of the wagon is treated as if it was a 20 ft. radius space with the same protective features as a _leomund's tiny hut_ spell. People traveling in the wagon cannot see outside but are under total cover.\n\nAs an immediate action the caster may turn _Yom Glitterpot's wagon_ into a dome of force with a diameter of 30 ft. centered on the location of the wagon. All objects on the wagon fall to the ground when the wagon is changed. The dome of force may be be turned back into the wagon but this transformation requires 1 minute to make. There is no limit to the number of times that the wagon can be changed to a dome of force and back again but each time the wagon must be reloaded by hand. Creatures caught within the dome of force can make a Reflex save to dive outside of the dome to avoid being trapped.\n\nThe wagon and the dome of force are indestructible except by a _rod of cancellation_, a _rod of negation_, a _disintegrate_ spell or a targeted _dispel magic_ spell. These effects destroy the wagon or dome without harm to the contents. Nothing can pass through the dome, inside or out, though creatures within can breathe normally.",
+    "source": "Kan'Derra Player's Edition",
+    "page": 90
+  }
+]

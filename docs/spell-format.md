@@ -23,7 +23,10 @@ this to correct an SRD spell without editing `srd.json`.
 
 > **Public site warning:** everything in `public/` is published on GitHub Pages.
 > `srd.json` is Open Game Content. `index-extra.json` is an index of spells from other
-> books: name, stats, a one-line summary and book/page, but never full text. Don't add
+> books: name, stats, a one-line summary and book/page, but never full text. `kanderra.json`
+> is the group's own Kan'Derra setting (Player's Edition), published with its author's
+> agreement: full text, with Facets as domains and Kan'Derra classes noted at the end of
+> each description. Don't add
 > full spell text from non-open books here. To keep a spell private, use the app's
 > **My spells → Import file**, which stores it only on your phone.
 

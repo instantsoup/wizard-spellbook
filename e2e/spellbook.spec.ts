@@ -4,11 +4,11 @@ import { autoConfirm, createEvoker, failOnErrors, learn } from './helpers'
 test('new wizard gets cantrips and starting spells', async ({ page }) => {
   const noErrors = failOnErrors(page)
   await createEvoker(page)
-  // all 32 cantrips from every book, minus 4 Enchantment/Illusion ones (Daze, Ghost Sound,
-  // Silent Portal, Unnerving Gaze), plus 2 chosen
-  await expect(page.locator('header')).toContainText('30 spells')
+  // all 34 cantrips from every book (Kan'Derra included), minus 5 Enchantment/Illusion ones
+  // (Daze, Ghost Sound, Silent Portal, Unnerving Gaze, Cord Strum), plus 2 chosen
+  await expect(page.locator('header')).toContainText('31 spells')
   await page.reload()
-  await expect(page.locator('header')).toContainText('30 spells')
+  await expect(page.locator('header')).toContainText('31 spells')
   noErrors()
 })
 

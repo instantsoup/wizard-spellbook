@@ -12,9 +12,11 @@ export interface CharacterRecord extends WizardCharacter {
   createdAt: number
   updatedAt: number
   /**
-   * Set once every 0-level spell (from every book) has been added. Characters made when only
-   * core cantrips were added get the rest once, without bringing back ones removed since.
+   * Ids of the 0-level spells already given to this character as starting cantrips. A cantrip
+   * that appears later (a new book) is added once; one the player removed is not added back.
    */
+  cantripsOffered?: string[]
+  /** Older flag: every cantrip except Kan'Derra's had been added. Read only, for upgrades. */
   allCantrips?: boolean
 }
 

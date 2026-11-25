@@ -34,23 +34,37 @@ describe('characters', () => {
     const known = await knownSpellsFor(c.id, d)
     expect(known.map((k) => k.spellId).sort()).toEqual(['detect-magic', 'ray-of-frost'])
     expect(known.every((k) => k.method === 'starting-cantrip' && k.costGp === 0)).toBe(true)
-    expect((await d.characters.get(c.id))?.allCantrips).toBe(true)
+    expect((await d.characters.get(c.id))?.cantripsOffered?.sort()).toEqual(allSpells.filter((s) => s.level === 0).map((s) => s.id).sort())
   })
 
   it('gives older characters the other books\' cantrips once, and never re-adds removed ones', async () => {
-    const { addMissingCantripsOnce, forgetSpell } = await import('./characters')
+    const { addNewCantrips, forgetSpell } = await import('./characters')
     const c = await createCharacter({ ...evoker5, name: 'E' }, d) // made before the upgrade: no flag
     const extra = { ...S.rayOfFrost, id: 'electric-jolt', name: 'Electric Jolt', source: 'Spell Compendium' }
     await learnSpells(c, [{ spell: S.detectMagic, req: { method: 'starting-cantrip' } }], d)
-    await addMissingCantripsOnce(c, [...allSpells, extra], d)
+    await addNewCantrips(c, [...allSpells, extra], d)
     let known = (await knownSpellsFor(c.id, d)).map((k) => k.spellId).sort()
     expect(known).toEqual(['detect-magic', 'electric-jolt', 'ray-of-frost'])
     const jolt = (await knownSpellsFor(c.id, d)).find((k) => k.spellId === 'electric-jolt')!
     await forgetSpell(jolt.id, d)
     const upgraded = (await d.characters.get(c.id))!
-    await addMissingCantripsOnce(upgraded, [...allSpells, extra], d)
+    await addNewCantrips(upgraded, [...allSpells, extra], d)
     known = (await knownSpellsFor(c.id, d)).map((k) => k.spellId).sort()
     expect(known).toEqual(['detect-magic', 'ray-of-frost'])
+    // a cantrip from a book added later arrives once
+    const later = { ...S.rayOfFrost, id: 'toughen', name: 'Toughen', school: 'Transmutation' as const, source: "Kan'Derra Player's Edition" }
+    await addNewCantrips((await d.characters.get(c.id))!, [...allSpells, extra, later], d)
+    known = (await knownSpellsFor(c.id, d)).map((k) => k.spellId).sort()
+    expect(known).toEqual(['detect-magic', 'ray-of-frost', 'toughen'])
+  })
+
+  it('upgrades characters saved with the older all-cantrips flag', async () => {
+    const { addNewCantrips } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    await d.characters.update(c.id, { allCantrips: true }) // had every non-Kan'Derra cantrip; removed some since
+    const later = { ...S.rayOfFrost, id: 'toughen', name: 'Toughen', school: 'Transmutation' as const, source: "Kan'Derra Player's Edition" }
+    await addNewCantrips((await d.characters.get(c.id))!, [...allSpells, later], d)
+    expect((await knownSpellsFor(c.id, d)).map((k) => k.spellId)).toEqual(['toughen'])
   })
 
   it('learnSpells is all-or-nothing and enforces free-pick limits', async () => {

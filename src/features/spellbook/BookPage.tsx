@@ -4,7 +4,7 @@ import { gp, METHOD_LABEL } from '../../components/labels'
 import { levelLabel, ordinal, SCHOOL_STYLE } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Page } from '../../components/ui'
-import { addMissingCantripsOnce } from '../../data/characters'
+import { addNewCantrips } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
@@ -33,9 +33,9 @@ export function BookPage({ character }: { character: CharacterRecord }) {
   const [editing, setEditing] = useState<KnownSpellRecord>()
   const [showPicks, setShowPicks] = useState(false)
 
-  // Characters made before every book's cantrips counted get them once.
+  // Cantrips from books added since this character was made arrive once.
   useEffect(() => {
-    if (!loading && spells.length && known && !character.allCantrips) void addMissingCantripsOnce(character, spells)
+    if (!loading && spells.length && known) void addNewCantrips(character, spells)
   }, [loading, spells, known, character])
 
   const setGroupBy = (g: GroupBy) => {
