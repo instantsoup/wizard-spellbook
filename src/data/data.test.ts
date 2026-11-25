@@ -34,6 +34,23 @@ describe('characters', () => {
     const known = await knownSpellsFor(c.id, d)
     expect(known.map((k) => k.spellId).sort()).toEqual(['detect-magic', 'ray-of-frost'])
     expect(known.every((k) => k.method === 'starting-cantrip' && k.costGp === 0)).toBe(true)
+    expect((await d.characters.get(c.id))?.allCantrips).toBe(true)
+  })
+
+  it('gives older characters the other books\' cantrips once, and never re-adds removed ones', async () => {
+    const { addMissingCantripsOnce, forgetSpell } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d) // made before the upgrade: no flag
+    const extra = { ...S.rayOfFrost, id: 'electric-jolt', name: 'Electric Jolt', source: 'Spell Compendium' }
+    await learnSpells(c, [{ spell: S.detectMagic, req: { method: 'starting-cantrip' } }], d)
+    await addMissingCantripsOnce(c, [...allSpells, extra], d)
+    let known = (await knownSpellsFor(c.id, d)).map((k) => k.spellId).sort()
+    expect(known).toEqual(['detect-magic', 'electric-jolt', 'ray-of-frost'])
+    const jolt = (await knownSpellsFor(c.id, d)).find((k) => k.spellId === 'electric-jolt')!
+    await forgetSpell(jolt.id, d)
+    const upgraded = (await d.characters.get(c.id))!
+    await addMissingCantripsOnce(upgraded, [...allSpells, extra], d)
+    known = (await knownSpellsFor(c.id, d)).map((k) => k.spellId).sort()
+    expect(known).toEqual(['detect-magic', 'ray-of-frost'])
   })
 
   it('learnSpells is all-or-nothing and enforces free-pick limits', async () => {

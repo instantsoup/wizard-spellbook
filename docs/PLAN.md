@@ -198,8 +198,9 @@ stat lines only). Spells already in the earlier files keep their existing data, 
 Compendium's updated versions win. Sorcerer-only spells are left out, and "functions like X"
 spells get their missing stat lines from X.
 
-Automatic starting cantrips come from the SRD only; cantrips from other books are learned
-like any other spell.
+Automatic starting cantrips are every 0-level wizard spell from every book (PH p. 57: "all
+0-level wizard spells"), except prohibited schools. Characters made when only core cantrips
+were added get the rest once, the next time their Book opens.
 
 ---
 

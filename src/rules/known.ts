@@ -80,11 +80,11 @@ export function totalSpent(known: KnownSpell[]): number {
 }
 
 /**
- * Cantrips a new wizard starts with: every core (SRD) 0-level spell not from a prohibited
- * school. Cantrips from other books are learned like any other spell.
+ * Cantrips a new wizard starts with: "all 0-level wizard spells" (PH p. 57) except prohibited
+ * schools. That covers every book in the spell list, not only the Player's Handbook.
  */
 export function startingCantrips(c: WizardCharacter, spells: Spell[]): Spell[] {
-  return spells.filter((s) => s.level === 0 && s.source === 'SRD' && !isProhibited(c, s.school))
+  return spells.filter((s) => s.level === 0 && !isProhibited(c, s.school))
 }
 
 export interface LearnRequest {

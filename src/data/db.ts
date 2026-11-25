@@ -11,6 +11,11 @@ export interface CharacterRecord extends WizardCharacter {
   name: string
   createdAt: number
   updatedAt: number
+  /**
+   * Set once every 0-level spell (from every book) has been added. Characters made when only
+   * core cantrips were added get the rest once, without bringing back ones removed since.
+   */
+  allCantrips?: boolean
 }
 
 export interface KnownSpellRecord extends KnownSpell {

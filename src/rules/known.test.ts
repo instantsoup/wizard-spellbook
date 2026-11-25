@@ -122,9 +122,9 @@ describe('costs', () => {
 })
 
 describe('startingCantrips', () => {
-  it('leaves out cantrips from other books', () => {
+  it('includes cantrips from every book ("all 0-level wizard spells")', () => {
     const other = { ...S.rayOfFrost, id: 'other-cantrip', source: 'Spell Compendium' }
-    expect(startingCantrips(generalist1, [...Object.values(S), other]).map((s) => s.id)).not.toContain('other-cantrip')
+    expect(startingCantrips(generalist1, [...Object.values(S), other]).map((s) => s.id)).toContain('other-cantrip')
   })
   it('includes every core cantrip except prohibited schools', () => {
     const all = Object.values(S)

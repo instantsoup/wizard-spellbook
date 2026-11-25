@@ -86,7 +86,18 @@ export async function learnSpells(
 export async function addStartingCantrips(character: CharacterRecord, spells: Spell[], d: SpellbookDB = db) {
   const known = new Set((await knownSpellsFor(character.id, d)).map((k) => k.spellId))
   const missing = startingCantrips(character, spells).filter((s) => !known.has(s.id))
-  return learnSpells(character, missing.map((spell) => ({ spell, req: { method: 'starting-cantrip' as const } })), d)
+  const result = await learnSpells(character, missing.map((spell) => ({ spell, req: { method: 'starting-cantrip' as const } })), d)
+  if (result.ok) await d.characters.update(character.id, { allCantrips: true })
+  return result
+}
+
+/**
+ * One-time upgrade: a character made when only core cantrips were added gets the 0-level
+ * spells from other books. Does nothing once done, so removed cantrips stay removed.
+ */
+export async function addMissingCantripsOnce(character: CharacterRecord, spells: Spell[], d: SpellbookDB = db) {
+  if (character.allCantrips) return { ok: true, errors: [], added: [] }
+  return addStartingCantrips(character, spells, d)
 }
 
 export async function forgetSpell(knownSpellId: string, d: SpellbookDB = db) {

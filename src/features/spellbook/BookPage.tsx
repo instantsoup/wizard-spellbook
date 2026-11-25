@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gp, METHOD_LABEL } from '../../components/labels'
 import { levelLabel, ordinal, SCHOOL_STYLE } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Page } from '../../components/ui'
+import { addMissingCantripsOnce } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useKnownSpells } from '../../data/hooks'
 import { SCHOOLS, type School, type Spell } from '../../data/spell-schema'
@@ -24,13 +25,18 @@ const loadGroup = (): GroupBy => {
 
 export function BookPage({ character }: { character: CharacterRecord }) {
   const known = useKnownSpells(character.id)
-  const { byId, loading } = useSpells()
+  const { spells, byId, loading } = useSpells()
   const [groupBy, setGroupByState] = useState<GroupBy>(loadGroup)
   const [filter, setFilter] = useState<number | School>()
   const [query, setQuery] = useState('')
   const [openId, setOpenId] = useState<string>()
   const [editing, setEditing] = useState<KnownSpellRecord>()
   const [showPicks, setShowPicks] = useState(false)
+
+  // Characters made before every book's cantrips counted get them once.
+  useEffect(() => {
+    if (!loading && spells.length && known && !character.allCantrips) void addMissingCantripsOnce(character, spells)
+  }, [loading, spells, known, character])
 
   const setGroupBy = (g: GroupBy) => {
     setGroupByState(g)
