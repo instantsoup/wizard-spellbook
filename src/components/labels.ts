@@ -15,6 +15,7 @@ export const gp = (n: number) => `${n.toLocaleString()} gp`
 /** Common community abbreviations for 3.5 books. */
 const BOOK_ABBR: Record<string, string> = {
   SRD: 'SRD',
+  "Kan'Derra Player's Edition": 'KD',
   'Spell Compendium': 'SpC',
   "Player's Handbook II": 'PH2',
   'Complete Arcane': 'CAr',
