@@ -97,7 +97,7 @@ describe('bundled extra index', () => {
     expect(extra.filter((s: { id: string }) => srdIds.has(s.id))).toEqual([])
   })
   it('is listed in the manifest after srd.json', () => {
-    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json', 'index-special.json', 'kanderra.json'])
+    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json', 'index-special.json', 'index-added.json', 'kanderra.json'])
   })
 })
 
@@ -147,5 +147,27 @@ describe('bundled corrupt and sanctified spells', () => {
       expect(s.levels).not.toHaveProperty('Sor')
     }
     expect(special.filter((s: { id: string }) => others.has(s.id))).toEqual([])
+  })
+})
+
+describe('every bundled spell file', () => {
+  const files: string[] = JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))
+  it('is valid, and no id appears in two files', () => {
+    const seen = new Map<string, string>()
+    for (const f of files) {
+      const spells = JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8'))
+      expect(validateSpellFile(spells)).toEqual([])
+      for (const s of spells as { id: string }[]) {
+        expect(seen.get(s.id), `${s.id} in ${f}`).toBeUndefined()
+        seen.set(s.id, f)
+      }
+    }
+  })
+  it('has no book text outside the SRD and Kan\'Derra files', () => {
+    for (const f of files.filter((f) => f.startsWith('index-'))) {
+      for (const s of JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8')) as { id: string; description: string }[]) {
+        expect(s.description, s.id).toMatch(/Summary only\. Full text: /)
+      }
+    }
   })
 })

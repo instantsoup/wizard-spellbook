@@ -1,0 +1,2351 @@
+[
+  {
+    "id": "arcane-fusion",
+    "name": "Arcane Fusion",
+    "school": "Universal",
+    "descriptors": [],
+    "levels": {
+      "Sor": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "Instantaneous",
+    "summary": "Cast a 1st-level and a 4th-level-or-lower sorcerer spell together.",
+    "description": "Cast a 1st-level and a 4th-level-or-lower sorcerer spell together.\n\nSummary only. Full text: Complete Mage, p. 96.",
+    "source": "Complete Mage",
+    "page": 96
+  },
+  {
+    "id": "arcane-fusion-greater",
+    "name": "Arcane Fusion, Greater",
+    "school": "Universal",
+    "descriptors": [],
+    "levels": {
+      "Sor": 8
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "Instantaneous",
+    "summary": "Cast a 4th-level and a 7th-level-or-lower sorcerer spell together.",
+    "description": "Cast a 4th-level and a 7th-level-or-lower sorcerer spell together.\n\nSummary only. Full text: Complete Mage, p. 96.",
+    "source": "Complete Mage",
+    "page": 96
+  },
+  {
+    "id": "aura-of-glory",
+    "name": "Aura of Glory",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 2
+    },
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "area": "10-ft.-radius spread",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Removes fear effects from allies within your aura of courage.",
+    "description": "Removes fear effects from allies within your aura of courage.\n\nSummary only. Full text: Spell Compendium, p. 18.",
+    "source": "Spell Compendium",
+    "page": 18
+  },
+  {
+    "id": "befoul",
+    "name": "Befoul",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 8
+    },
+    "domains": {
+      "Corruption": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "area": "Water in a volume of 100 ft./level by 100 ft./level by 10 ft./level (S)",
+    "duration": "Permanent (see text)",
+    "savingThrow": "None (see text)",
+    "spellResistance": "No",
+    "summary": "Fouls water, killing weak creatures in it and poisoning drinkers.",
+    "description": "Fouls water, killing weak creatures in it and poisoning drinkers.\n\nSummary only. Full text: Book of Vile Darkness, p. 85.",
+    "source": "Book of Vile Darkness",
+    "page": 85
+  },
+  {
+    "id": "force-whip",
+    "name": "Force Whip",
+    "school": "Evocation",
+    "descriptors": [
+      "Sonic",
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Brd": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "effect": "A whip of force",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates; see text",
+    "spellResistance": "No",
+    "summary": "Whip of force that keeps normal animals at bay and frightens them.",
+    "description": "Whip of force that keeps normal animals at bay and frightens them.\n\nSummary only. Full text: Complete Arcane, p. 108.",
+    "source": "Complete Arcane",
+    "page": 108
+  },
+  {
+    "id": "forest-child",
+    "name": "Forest Child",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "M",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft/level)",
+    "effect": "One wooden duplicate",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Wooden duplicate of you; see through it and swap places.",
+    "description": "Wooden duplicate of you; see through it and swap places.\n\nSummary only. Full text: Complete Champion, p. 121.",
+    "source": "Complete Champion",
+    "page": 121
+  },
+  {
+    "id": "forest-eyes",
+    "name": "Forest Eyes",
+    "school": "Divination",
+    "subschool": "Scrying",
+    "descriptors": [],
+    "levels": {
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 minute",
+    "range": "Unlimited",
+    "target": "Two plants of the same type, one of which must be in physical contact with you",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "See through a distant plant of the same type.",
+    "description": "See through a distant plant of the same type.\n\nSummary only. Full text: Complete Champion, p. 121.",
+    "source": "Complete Champion",
+    "page": 121
+  },
+  {
+    "id": "forest-voice",
+    "name": "Forest Voice",
+    "school": "Transmutation",
+    "subschool": "Language-Dependent",
+    "descriptors": [],
+    "levels": {
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 minute",
+    "range": "Unlimited",
+    "target": "Two plants of the same kind, one of which must be in physical contact with you",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Converse through two plants of the same kind.",
+    "description": "Converse through two plants of the same kind.\n\nSummary only. Full text: Complete Champion, p. 122.",
+    "source": "Complete Champion",
+    "page": 122
+  },
+  {
+    "id": "healing-circle",
+    "name": "Healing Circle",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute/level or until discharged",
+    "summary": "Five healing charges that allies draw on one at a time.",
+    "description": "Five healing charges that allies draw on one at a time.\n\nSummary only. Full text: Complete Champion, p. 122.",
+    "source": "Complete Champion",
+    "page": 122
+  },
+  {
+    "id": "iconic-manifestation",
+    "name": "Iconic Manifestation",
+    "school": "Transmutation",
+    "descriptors": [
+      "Chaotic",
+      "Evil",
+      "Good",
+      "Lawful"
+    ],
+    "levels": {
+      "Drd": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level, then 1 minute/level (D); see text",
+    "summary": "Spend wild shape to gain a celestial, fiendish, anarchic, or axiomatic template.",
+    "description": "Spend wild shape to gain a celestial, fiendish, anarchic, or axiomatic template.\n\nSummary only. Full text: Complete Champion, p. 122.",
+    "source": "Complete Champion",
+    "page": 122
+  },
+  {
+    "id": "impede",
+    "name": "Impede",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 1
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft/level)",
+    "target": "One humanoid creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will partial",
+    "spellResistance": "Yes",
+    "summary": "Subject cannot leave its square; later saves only slow it.",
+    "description": "Subject cannot leave its square; later saves only slow it.\n\nSummary only. Full text: Complete Champion, p. 122.",
+    "source": "Complete Champion",
+    "page": 122
+  },
+  {
+    "id": "interfaith-blessing",
+    "name": "Interfaith Blessing",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "20 ft.",
+    "area": "20-ft.-radius burst centered on you",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Each creature in range gains a blessing from its own deity.",
+    "description": "Each creature in range gains a blessing from its own deity.\n\nSummary only. Full text: Complete Champion, p. 123.",
+    "source": "Complete Champion",
+    "page": 123
+  },
+  {
+    "id": "light-of-courage",
+    "name": "Light of Courage",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Touch",
+    "target": "Holy symbol touched",
+    "duration": "1 round/level, or until discharged",
+    "savingThrow": "Will half",
+    "spellResistance": "No",
+    "summary": "Your turning check also deals 1d8 per two levels to undead.",
+    "description": "Your turning check also deals 1d8 per two levels to undead.\n\nSummary only. Full text: Complete Champion, p. 123.",
+    "source": "Complete Champion",
+    "page": 123
+  },
+  {
+    "id": "light-of-faith",
+    "name": "Light of Faith",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Touch",
+    "target": "Holy symbol touched",
+    "duration": "1 round/level, or until discharged",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Bonus on your next turning check.",
+    "description": "Bonus on your next turning check.\n\nSummary only. Full text: Complete Champion, p. 123.",
+    "source": "Complete Champion",
+    "page": 123
+  },
+  {
+    "id": "light-of-purity",
+    "name": "Light of Purity",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Touch",
+    "target": "Holy symbol touched",
+    "duration": "1 round/level, or until discharged",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Extra turning damage on your next successful turning check.",
+    "description": "Extra turning damage on your next successful turning check.\n\nSummary only. Full text: Complete Champion, p. 123.",
+    "source": "Complete Champion",
+    "page": 123
+  },
+  {
+    "id": "light-of-wisdom",
+    "name": "Light of Wisdom",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Touch",
+    "target": "Holy symbol touched",
+    "duration": "1 round/level, or until discharged",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Effective turning level increases by 1 per three caster levels.",
+    "description": "Effective turning level increases by 1 per three caster levels.\n\nSummary only. Full text: Complete Champion, p. 124.",
+    "source": "Complete Champion",
+    "page": 124
+  },
+  {
+    "id": "lore-of-the-gods",
+    "name": "Lore of the Gods",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level or until discharged",
+    "summary": "+5 insight on Knowledge checks; try untrained or retry checks.",
+    "description": "+5 insight on Knowledge checks; try untrained or retry checks.\n\nSummary only. Full text: Complete Champion, p. 124.",
+    "source": "Complete Champion",
+    "page": 124
+  },
+  {
+    "id": "mark-of-sin",
+    "name": "Mark of Sin",
+    "school": "Enchantment",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 full round",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "1 round/level or permanent; see text",
+    "savingThrow": "Will partial",
+    "spellResistance": "Yes",
+    "summary": "Brands subject: Diplomacy penalty and -4 to an ability; may be permanent.",
+    "description": "Brands subject: Diplomacy penalty and -4 to an ability; may be permanent.\n\nSummary only. Full text: Complete Champion, p. 124.",
+    "source": "Complete Champion",
+    "page": 124
+  },
+  {
+    "id": "master-cavalier",
+    "name": "Master Cavalier",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2,
+      "Pal": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level (D)",
+    "summary": "+10 bonus on Ride checks (+20 on your special mount).",
+    "description": "+10 bonus on Ride checks (+20 on your special mount).\n\nSummary only. Full text: Complete Champion, p. 124.",
+    "source": "Complete Champion",
+    "page": 124
+  },
+  {
+    "id": "metal-fang",
+    "name": "Metal Fang",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2,
+      "Rgr": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Living creature touched",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Natural weapon bypasses cold iron or silver damage reduction.",
+    "description": "Natural weapon bypasses cold iron or silver damage reduction.\n\nSummary only. Full text: Complete Champion, p. 124.",
+    "source": "Complete Champion",
+    "page": 124
+  },
+  {
+    "id": "moral-facade",
+    "name": "Moral Facade",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Brd": 3,
+      "Clr": 4,
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft/2 levels)",
+    "target": "One creature or object",
+    "duration": "24 hours",
+    "savingThrow": "Will negates (object)",
+    "spellResistance": "Yes (object)",
+    "summary": "Target reads as a chosen alignment to divination spells.",
+    "description": "Target reads as a chosen alignment to divination spells.\n\nSummary only. Full text: Complete Champion, p. 125.",
+    "source": "Complete Champion",
+    "page": 125
+  },
+  {
+    "id": "negative-energy-aura",
+    "name": "Negative Energy Aura",
+    "school": "Necromancy",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "area": "10-ft.-radius emanation centered on you",
+    "duration": "1 round/level",
+    "summary": "Aura drains hit points of living creatures near you; undead gain them.",
+    "description": "Aura drains hit points of living creatures near you; undead gain them.\n\nSummary only. Full text: Spell Compendium, p. 146.",
+    "source": "Spell Compendium",
+    "page": 146
+  },
+  {
+    "id": "nightmare-lullaby",
+    "name": "Nightmare Lullaby",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting",
+      "Sonic"
+    ],
+    "levels": {
+      "Brd": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One creature",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Subject falls into a sleepwalking nightmare and is confused.",
+    "description": "Subject falls into a sleepwalking nightmare and is confused.\n\nSummary only. Full text: Spell Compendium, p. 147.",
+    "source": "Spell Compendium",
+    "page": 147
+  },
+  {
+    "id": "one-with-the-land",
+    "name": "One with the Land",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2,
+      "Rgr": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 hour/level",
+    "summary": "+2 competence on Handle Animal, Hide, Move Silently, Search, Survival.",
+    "description": "+2 competence on Handle Animal, Hide, Move Silently, Search, Survival.\n\nSummary only. Full text: Spell Compendium, p. 149.",
+    "source": "Spell Compendium",
+    "page": 149
+  },
+  {
+    "id": "owls-insight",
+    "name": "Owl's Insight",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "1 hour",
+    "savingThrow": "Fortitude negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Subject gains an insight bonus to Wisdom of 1/2 caster level.",
+    "description": "Subject gains an insight bonus to Wisdom of 1/2 caster level.\n\nSummary only. Full text: Spell Compendium, p. 152.",
+    "source": "Spell Compendium",
+    "page": 152
+  },
+  {
+    "id": "panacea",
+    "name": "Panacea",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4,
+      "Drd": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Will half (harmless); see text",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Ends many conditions and cures 1d8 +1/level damage; harms undead.",
+    "description": "Ends many conditions and cures 1d8 +1/level damage; harms undead.\n\nSummary only. Full text: Spell Compendium, p. 152.",
+    "source": "Spell Compendium",
+    "page": 152
+  },
+  {
+    "id": "phantom-charge",
+    "name": "Phantom Charge",
+    "school": "Conjuration",
+    "subschool": "Teleportation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Personal and touch",
+    "target": "You and your special mount or fiendish companion",
+    "duration": "Instantaneous",
+    "summary": "You and your mount teleport forward up to 5 ft. per two levels.",
+    "description": "You and your mount teleport forward up to 5 ft. per two levels.\n\nSummary only. Full text: Complete Champion, p. 125.",
+    "source": "Complete Champion",
+    "page": 125
+  },
+  {
+    "id": "planar-exchange",
+    "name": "Planar Exchange",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "0 ft.",
+    "effect": "One called creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Trade places with an avoral, bone devil, or babau for a time.",
+    "description": "Trade places with an avoral, bone devil, or babau for a time.\n\nSummary only. Full text: Spell Compendium, p. 159.",
+    "source": "Spell Compendium",
+    "page": 159
+  },
+  {
+    "id": "planar-exchange-greater",
+    "name": "Planar Exchange, Greater",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [],
+    "levels": {
+      "Clr": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "0 ft.",
+    "effect": "One called creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Trade places with a leonal, barbed devil, or hezrou for a time.",
+    "description": "Trade places with a leonal, barbed devil, or hezrou for a time.\n\nSummary only. Full text: Spell Compendium, p. 159.",
+    "source": "Spell Compendium",
+    "page": 159
+  },
+  {
+    "id": "planar-exchange-lesser",
+    "name": "Planar Exchange, Lesser",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "0 ft.",
+    "effect": "One called creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Trade places with a celestial or fiendish animal for a time.",
+    "description": "Trade places with a celestial or fiendish animal for a time.\n\nSummary only. Full text: Spell Compendium, p. 159.",
+    "source": "Spell Compendium",
+    "page": 159
+  },
+  {
+    "id": "positive-energy-aura",
+    "name": "Positive Energy Aura",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "area": "10-ft.-radius emanation centered on you",
+    "duration": "1 round/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Aura heals living creatures near you and damages undead.",
+    "description": "Aura heals living creatures near you and damages undead.\n\nSummary only. Full text: Spell Compendium, p. 161.",
+    "source": "Spell Compendium",
+    "page": 161
+  },
+  {
+    "id": "profane-item",
+    "name": "Profane Item",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 full round",
+    "range": "Touch",
+    "target": "Object touched",
+    "duration": "Permanent until discharged",
+    "savingThrow": "Will negates (object)",
+    "spellResistance": "Yes (object)",
+    "summary": "Object discharges negative energy at animals, plants, and good outsiders.",
+    "description": "Object discharges negative energy at animals, plants, and good outsiders.\n\nSummary only. Full text: Complete Champion, p. 126.",
+    "source": "Complete Champion",
+    "page": 126
+  },
+  {
+    "id": "puppeteer",
+    "name": "Puppeteer",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Brd": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Subject mimics your actions awkwardly, with Str and Dex penalties.",
+    "description": "Subject mimics your actions awkwardly, with Str and Dex penalties.\n\nSummary only. Full text: Spell Compendium, p. 163.",
+    "source": "Spell Compendium",
+    "page": 163
+  },
+  {
+    "id": "quillfire",
+    "name": "Quillfire",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "Hand sprouts poisonous quills for melee or throwing.",
+    "description": "Hand sprouts poisonous quills for melee or throwing.\n\nSummary only. Full text: Spell Compendium, p. 164.",
+    "source": "Spell Compendium",
+    "page": 164
+  },
+  {
+    "id": "rams-might",
+    "name": "Ram's Might",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 1,
+      "Rgr": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute/level",
+    "summary": "+2 enhancement bonus to Strength; unarmed attacks deal lethal damage.",
+    "description": "+2 enhancement bonus to Strength; unarmed attacks deal lethal damage.\n\nSummary only. Full text: Spell Compendium, p. 166.",
+    "source": "Spell Compendium",
+    "page": 166
+  },
+  {
+    "id": "ravenous-darkness",
+    "name": "Ravenous Darkness",
+    "school": "Necromancy",
+    "descriptors": [
+      "Darkness"
+    ],
+    "levels": {
+      "Clr": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Object touched",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None or Fortitude negates; see text",
+    "spellResistance": "No or yes; see text",
+    "summary": "Deeper darkness that damages the living and heals undead.",
+    "description": "Deeper darkness that damages the living and heals undead.\n\nSummary only. Full text: Complete Champion, p. 126.",
+    "source": "Complete Champion",
+    "page": 126
+  },
+  {
+    "id": "red-tide",
+    "name": "Red Tide",
+    "school": "Evocation",
+    "descriptors": [
+      "Water"
+    ],
+    "levels": {
+      "Drd": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area": "30-ft.-radius burst",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude partial; see text",
+    "spellResistance": "Yes",
+    "summary": "Burst of red water knocks prone, sickens, and deals Strength damage.",
+    "description": "Burst of red water knocks prone, sickens, and deals Strength damage.\n\nSummary only. Full text: Spell Compendium, p. 170.",
+    "source": "Spell Compendium",
+    "page": 170
+  },
+  {
+    "id": "rejuvenating-light",
+    "name": "Rejuvenating Light",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [
+      "Light"
+    ],
+    "levels": {
+      "Clr": 7
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Object touched",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None or Fortitude negates; see text",
+    "spellResistance": "No or yes; see text",
+    "summary": "Bright light gives the living fast healing and damages undead.",
+    "description": "Bright light gives the living fast healing and damages undead.\n\nSummary only. Full text: Complete Champion, p. 126.",
+    "source": "Complete Champion",
+    "page": 126
+  },
+  {
+    "id": "reveille",
+    "name": "Reveille",
+    "school": "Necromancy",
+    "descriptors": [
+      "Language-Dependent"
+    ],
+    "levels": {
+      "Brd": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Touch",
+    "target": "One recently dead creature",
+    "duration": "5 rounds",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Dead creature tersely reveals what led to its death.",
+    "description": "Dead creature tersely reveals what led to its death.\n\nSummary only. Full text: Spell Compendium, p. 175.",
+    "source": "Spell Compendium",
+    "page": 175
+  },
+  {
+    "id": "revive-outsider",
+    "name": "Revive Outsider",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "M",
+      "DF"
+    ],
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "target": "Dead outsider touched",
+    "duration": "Instantaneous",
+    "savingThrow": "None; see text",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Restores life to a dead outsider.",
+    "description": "Restores life to a dead outsider.\n\nSummary only. Full text: Spell Compendium, p. 175.",
+    "source": "Spell Compendium",
+    "page": 175
+  },
+  {
+    "id": "revivify",
+    "name": "Revivify",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Dead creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "None; see text",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Restores life to a creature dead no more than 1 round.",
+    "description": "Restores life to a creature dead no more than 1 round.\n\nSummary only. Full text: Spell Compendium, p. 176.",
+    "source": "Spell Compendium",
+    "page": 176
+  },
+  {
+    "id": "righteous-aura",
+    "name": "Righteous Aura",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good",
+      "Light"
+    ],
+    "levels": {
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 hour/level",
+    "summary": "+4 sacred Charisma and glow; you explode in holy energy if you die.",
+    "description": "+4 sacred Charisma and glow; you explode in holy energy if you die.\n\nSummary only. Full text: Spell Compendium, p. 177.",
+    "source": "Spell Compendium",
+    "page": 177
+  },
+  {
+    "id": "righteous-fury",
+    "name": "Righteous Fury",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute/level",
+    "summary": "5 temporary hit points per level and +4 sacred bonus to Strength.",
+    "description": "5 temporary hit points per level and +4 sacred bonus to Strength.\n\nSummary only. Full text: Spell Compendium, p. 177.",
+    "source": "Spell Compendium",
+    "page": 177
+  },
+  {
+    "id": "rushing-waters",
+    "name": "Rushing Waters",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Water"
+    ],
+    "levels": {
+      "Drd": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area": "15-ft.-radius spread",
+    "duration": "Instantaneous",
+    "savingThrow": "None; see text",
+    "spellResistance": "No",
+    "summary": "Wave bull rushes creatures in area and may knock them prone.",
+    "description": "Wave bull rushes creatures in area and may knock them prone.\n\nSummary only. Full text: Spell Compendium, p. 178.",
+    "source": "Spell Compendium",
+    "page": 178
+  },
+  {
+    "id": "sacred-item",
+    "name": "Sacred Item",
+    "school": "Transmutation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 4,
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 full round",
+    "range": "Touch",
+    "target": "Object touched",
+    "duration": "Permanent until discharged",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes (object)",
+    "summary": "Object discharges positive energy at undead and evil outsiders.",
+    "description": "Object discharges positive energy at undead and evil outsiders.\n\nSummary only. Full text: Complete Champion, p. 126.",
+    "source": "Complete Champion",
+    "page": 126
+  },
+  {
+    "id": "safe-clearing",
+    "name": "Safe Clearing",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Rgr": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "10 minutes",
+    "range": "30 ft.",
+    "area": "30-ft.-radius emanation centered on you",
+    "duration": "1 hour/level",
+    "savingThrow": "Will negates; see text",
+    "spellResistance": "Yes",
+    "summary": "Area wards against attacks, as sanctuary.",
+    "description": "Area wards against attacks, as sanctuary.\n\nSummary only. Full text: Spell Compendium, p. 179.",
+    "source": "Spell Compendium",
+    "page": 179
+  },
+  {
+    "id": "saltray",
+    "name": "Saltray",
+    "school": "Evocation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude partial",
+    "spellResistance": "Yes",
+    "summary": "Ray of salt deals 1d6 per two levels and may stun.",
+    "description": "Ray of salt deals 1d6 per two levels and may stun.\n\nSummary only. Full text: Spell Compendium, p. 179.",
+    "source": "Spell Compendium",
+    "page": 179
+  },
+  {
+    "id": "seed-of-life",
+    "name": "Seed of Life",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4,
+      "Drd": 5,
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Living creature touched",
+    "duration": "10 rounds + 1 round/level (maximum 30 rounds) or until discharged",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Subject gains fast healing 2 or can release a burst of healing.",
+    "description": "Subject gains fast healing 2 or can release a burst of healing.\n\nSummary only. Full text: Complete Champion, p. 127.",
+    "source": "Complete Champion",
+    "page": 127
+  },
+  {
+    "id": "seek-eternal-rest",
+    "name": "Seek Eternal Rest",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Pal": 3
+    },
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 hour/level",
+    "summary": "Paladin turns undead as a cleric of her paladin level.",
+    "description": "Paladin turns undead as a cleric of her paladin level.\n\nSummary only. Full text: Spell Compendium, p. 182.",
+    "source": "Spell Compendium",
+    "page": 182
+  },
+  {
+    "id": "shadowblast",
+    "name": "Shadowblast",
+    "school": "Evocation",
+    "descriptors": [
+      "Light"
+    ],
+    "levels": {
+      "Clr": 4,
+      "Drd": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area": "20-ft.-radius spread",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Stuns natives of the Plane of Shadow and closes shadow portals.",
+    "description": "Stuns natives of the Plane of Shadow and closes shadow portals.\n\nSummary only. Full text: Spell Compendium, p. 186.",
+    "source": "Spell Compendium",
+    "page": 186
+  },
+  {
+    "id": "share-husk",
+    "name": "Share Husk",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Animal touched",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes",
+    "summary": "Sense through an animal's eyes and ears.",
+    "description": "Sense through an animal's eyes and ears.\n\nSummary only. Full text: Spell Compendium, p. 187.",
+    "source": "Spell Compendium",
+    "page": 187
+  },
+  {
+    "id": "shield-of-faith-mass",
+    "name": "Shield of Faith, Mass",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature/level, no two of which are more than 30 ft. apart",
+    "targetLabel": "Targets",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "As shield of faith, but affects multiple allies at a distance.",
+    "description": "As shield of faith, but affects multiple allies at a distance.\n\nSummary only. Full text: Spell Compendium, p. 188.",
+    "source": "Spell Compendium",
+    "page": 188
+  },
+  {
+    "id": "sign",
+    "name": "Sign",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 1
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level or until discharged",
+    "summary": "+4 bonus on your next initiative check.",
+    "description": "+4 bonus on your next initiative check.\n\nSummary only. Full text: Spell Compendium, p. 189.",
+    "source": "Spell Compendium",
+    "page": 189
+  },
+  {
+    "id": "silverbeard",
+    "name": "Silverbeard",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 1
+    },
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute/level",
+    "summary": "Silver beard grants +2 sacred bonus to AC and Diplomacy vs. dwarves.",
+    "description": "Silver beard grants +2 sacred bonus to AC and Diplomacy vs. dwarves.\n\nSummary only. Full text: Spell Compendium, p. 190.",
+    "source": "Spell Compendium",
+    "page": 190
+  },
+  {
+    "id": "sink",
+    "name": "Sink",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature/3 levels, no two of which are more than 30 ft. apart",
+    "targetLabel": "Targets",
+    "duration": "1 round",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Targets in liquid sink 100 feet down.",
+    "description": "Targets in liquid sink 100 feet down.\n\nSummary only. Full text: Spell Compendium, p. 190.",
+    "source": "Spell Compendium",
+    "page": 190
+  },
+  {
+    "id": "sirines-grace",
+    "name": "Sirine's Grace",
+    "school": "Evocation",
+    "descriptors": [],
+    "levels": {
+      "Brd": 4,
+      "Drd": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "+4 Cha and Dex, +8 Perform, swim speed, Cha bonus to AC.",
+    "description": "+4 Cha and Dex, +8 Perform, swim speed, Cha bonus to AC.\n\nSummary only. Full text: Spell Compendium, p. 191.",
+    "source": "Spell Compendium",
+    "page": 191
+  },
+  {
+    "id": "smell-of-fear",
+    "name": "Smell of Fear",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Rgr": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Subject attracts predatory animals, who attack it with bonuses.",
+    "description": "Subject attracts predatory animals, who attack it with bonuses.\n\nSummary only. Full text: Spell Compendium, p. 193.",
+    "source": "Spell Compendium",
+    "page": 193
+  },
+  {
+    "id": "snakebite",
+    "name": "Snakebite",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 3,
+      "Rgr": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level (D)",
+    "summary": "One arm becomes a venomous snake that bites for Constitution damage.",
+    "description": "One arm becomes a venomous snake that bites for Constitution damage.\n\nSummary only. Full text: Spell Compendium, p. 193.",
+    "source": "Spell Compendium",
+    "page": 193
+  },
+  {
+    "id": "songbird",
+    "name": "Songbird",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Brd": 0
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Personal",
+    "target": "You",
+    "duration": "Performance +1 hour or until discharged; see text",
+    "summary": "+1 competence on a Charisma check after a performance.",
+    "description": "+1 competence on a Charisma check after a performance.\n\nSummary only. Full text: Spell Compendium, p. 195.",
+    "source": "Spell Compendium",
+    "page": 195
+  },
+  {
+    "id": "soul-ward",
+    "name": "Soul Ward",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "1 minute/level or until discharged",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "As body ward, but bolsters a mental ability score.",
+    "description": "As body ward, but bolsters a mental ability score.\n\nSummary only. Full text: Complete Champion, p. 127.",
+    "source": "Complete Champion",
+    "page": 127
+  },
+  {
+    "id": "spiritjaws",
+    "name": "Spiritjaws",
+    "school": "Evocation",
+    "descriptors": [
+      "Force"
+    ],
+    "levels": {
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 + 10 ft./level)",
+    "effect": "Jaws of force",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Jaws of force grapple and damage a designated foe.",
+    "description": "Jaws of force grapple and damage a designated foe.\n\nSummary only. Full text: Spell Compendium, p. 202.",
+    "source": "Spell Compendium",
+    "page": 202
+  },
+  {
+    "id": "spiritual-advisor",
+    "name": "Spiritual Advisor",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute/level",
+    "summary": "+4 insight on Knowledge checks; use Knowledge untrained.",
+    "description": "+4 insight on Knowledge checks; use Knowledge untrained.\n\nSummary only. Full text: Complete Champion, p. 127.",
+    "source": "Complete Champion",
+    "page": 127
+  },
+  {
+    "id": "spiritual-guardian",
+    "name": "Spiritual Guardian",
+    "school": "Evocation",
+    "descriptors": [
+      "Force"
+    ],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "5 ft.",
+    "effect": "A phantasmal knight",
+    "duration": "1 minute/level or 1 round/level; see text",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Phantasmal knight gives +6 deflection AC and attacks foes.",
+    "description": "Phantasmal knight gives +6 deflection AC and attacks foes.\n\nSummary only. Full text: Complete Champion, p. 127.",
+    "source": "Complete Champion",
+    "page": 127
+  },
+  {
+    "id": "splinterbolt",
+    "name": "Splinterbolt",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One or more streams of splinters",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Ranged attack deals 4d6 piercing damage; more bolts at higher levels.",
+    "description": "Ranged attack deals 4d6 piercing damage; more bolts at higher levels.\n\nSummary only. Full text: Spell Compendium, p. 203.",
+    "source": "Spell Compendium",
+    "page": 203
+  },
+  {
+    "id": "stalking-brand",
+    "name": "Stalking Brand",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Rgr": 1
+    },
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature",
+    "duration": "24 hours/level",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Marks a creature with a symbol only you can see.",
+    "description": "Marks a creature with a symbol only you can see.\n\nSummary only. Full text: Spell Compendium, p. 204.",
+    "source": "Spell Compendium",
+    "page": 204
+  },
+  {
+    "id": "stone-shatter",
+    "name": "Stone Shatter",
+    "school": "Evocation",
+    "descriptors": [
+      "Sonic"
+    ],
+    "levels": {
+      "Brd": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./level)",
+    "target": "One stone object or creature",
+    "duration": "Instantaneous",
+    "savingThrow": "None or Fortitude half; see text",
+    "spellResistance": "No",
+    "summary": "Shatters a stone object or damages a stone creature.",
+    "description": "Shatters a stone object or damages a stone creature.\n\nSummary only. Full text: Spell Compendium, p. 208.",
+    "source": "Spell Compendium",
+    "page": 208
+  },
+  {
+    "id": "stonehold",
+    "name": "Stonehold",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Earth"
+    ],
+    "levels": {
+      "Drd": 6
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area": "One 10-ft. square/level",
+    "duration": "24 hours/level",
+    "savingThrow": "See text",
+    "spellResistance": "Yes (object)",
+    "summary": "Stone arms immobilize creatures that enter the area.",
+    "description": "Stone arms immobilize creatures that enter the area.\n\nSummary only. Full text: Spell Compendium, p. 209.",
+    "source": "Spell Compendium",
+    "page": 209
+  },
+  {
+    "id": "strength-of-stone",
+    "name": "Strength of Stone",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round",
+    "summary": "+8 enhancement bonus to Strength while you keep contact with the ground.",
+    "description": "+8 enhancement bonus to Strength while you keep contact with the ground.\n\nSummary only. Full text: Spell Compendium, p. 211.",
+    "source": "Spell Compendium",
+    "page": 211
+  },
+  {
+    "id": "subdue-aura",
+    "name": "Subdue Aura",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3,
+      "Pal": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Creature or object touched",
+    "duration": "10 minutes/level",
+    "savingThrow": "Will negates (object)",
+    "spellResistance": "Yes (object)",
+    "summary": "Makes a creature's aura appear weaker, with fewer Hit Dice.",
+    "description": "Makes a creature's aura appear weaker, with fewer Hit Dice.\n\nSummary only. Full text: Complete Champion, p. 128.",
+    "source": "Complete Champion",
+    "page": 128
+  },
+  {
+    "id": "substitute-domain",
+    "name": "Substitute Domain",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "10 minutes",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 day/level (D)",
+    "summary": "Swap one of your domains for another your deity offers.",
+    "description": "Swap one of your domains for another your deity offers.\n\nSummary only. Full text: Complete Champion, p. 128.",
+    "source": "Complete Champion",
+    "page": 128
+  },
+  {
+    "id": "summon-babau-demon",
+    "name": "Summon Babau Demon",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Chaotic",
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned babau demon",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a babau demon.",
+    "description": "Summons a babau demon.\n\nSummary only. Full text: Spell Compendium, p. 213.",
+    "source": "Spell Compendium",
+    "page": 213
+  },
+  {
+    "id": "summon-bearded-devil",
+    "name": "Summon Bearded Devil",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Evil",
+      "Lawful"
+    ],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned bearded devil",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a bearded devil.",
+    "description": "Summons a bearded devil.\n\nSummary only. Full text: Spell Compendium, p. 213.",
+    "source": "Spell Compendium",
+    "page": 213
+  },
+  {
+    "id": "summon-bralani-eladrin",
+    "name": "Summon Bralani Eladrin",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Chaotic",
+      "Good"
+    ],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned bralani eladrin",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a bralani eladrin.",
+    "description": "Summons a bralani eladrin.\n\nSummary only. Full text: Spell Compendium, p. 213.",
+    "source": "Spell Compendium",
+    "page": 213
+  },
+  {
+    "id": "summon-elementite-swarm",
+    "name": "Summon Elementite Swarm",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Drd": 4
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned elementite swarm",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons an elementite swarm.",
+    "description": "Summons an elementite swarm.\n\nSummary only. Full text: Spell Compendium, p. 214.",
+    "source": "Spell Compendium",
+    "page": 214
+  },
+  {
+    "id": "summon-elysian-thrush",
+    "name": "Summon Elysian Thrush",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Brd": 2,
+      "Clr": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "10 minutes",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned Elysian thrush",
+    "duration": "8 hours",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a thrush whose song speeds natural healing.",
+    "description": "Summons a thrush whose song speeds natural healing.\n\nSummary only. Full text: Spell Compendium, p. 214.",
+    "source": "Spell Compendium",
+    "page": 214
+  },
+  {
+    "id": "summon-greater-elemental",
+    "name": "Summon Greater Elemental",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Drd": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned elemental",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a greater elemental.",
+    "description": "Summons a greater elemental.\n\nSummary only. Full text: Spell Compendium, p. 214.",
+    "source": "Spell Compendium",
+    "page": 214
+  },
+  {
+    "id": "summon-holy-symbol",
+    "name": "Summon Holy Symbol",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [],
+    "levels": {
+      "Clr": 0,
+      "Pal": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "0 ft.",
+    "effect": "Small wooden holy symbol",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Conjures a small wooden holy symbol.",
+    "description": "Conjures a small wooden holy symbol.\n\nSummary only. Full text: Complete Champion, p. 128.",
+    "source": "Complete Champion",
+    "page": 128
+  },
+  {
+    "id": "summon-hound-archon",
+    "name": "Summon Hound Archon",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Good",
+      "Lawful"
+    ],
+    "levels": {
+      "Clr": 4
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "One summoned hound archon",
+    "duration": "Concentration, up to 1 round/level + 1 round",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Summons a hound archon.",
+    "description": "Summons a hound archon.\n\nSummary only. Full text: Spell Compendium, p. 214.",
+    "source": "Spell Compendium",
+    "page": 214
+  },
+  {
+    "id": "suppress-glyph",
+    "name": "Suppress Glyph",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "100 ft.",
+    "area": "100-ft.-radius burst centered on you.",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (object)",
+    "spellResistance": "Yes (object)",
+    "summary": "Reveals and suppresses magical writing such as glyphs and symbols.",
+    "description": "Reveals and suppresses magical writing such as glyphs and symbols.\n\nSummary only. Full text: Spell Compendium, p. 216.",
+    "source": "Spell Compendium",
+    "page": 216
+  },
+  {
+    "id": "surefoot",
+    "name": "Surefoot",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Rgr": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level",
+    "summary": "+10 competence on Balance, Climb, Jump, and Tumble.",
+    "description": "+10 competence on Balance, Climb, Jump, and Tumble.\n\nSummary only. Full text: Spell Compendium, p. 216.",
+    "source": "Spell Compendium",
+    "page": 216
+  },
+  {
+    "id": "surge-of-fortune",
+    "name": "Surge of Fortune",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level or until discharged",
+    "summary": "+2 luck on many rolls; can force a natural 20 once.",
+    "description": "+2 luck on many rolls; can force a natural 20 once.\n\nSummary only. Full text: Complete Champion, p. 128.",
+    "source": "Complete Champion",
+    "page": 128
+  },
+  {
+    "id": "telepathic-aura",
+    "name": "Telepathic Aura",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Pal": 4
+    },
+    "components": [
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "100 ft.",
+    "area": "100-ft.-radius emanation centered on you",
+    "duration": "10 minutes/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "One-way telepathic communication with all allies in range.",
+    "description": "One-way telepathic communication with all allies in range.\n\nSummary only. Full text: Spell Compendium, p. 219.",
+    "source": "Spell Compendium",
+    "page": 219
+  },
+  {
+    "id": "tigers-tooth",
+    "name": "Tiger's Tooth",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 2
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 swift action",
+    "duration": "1 round",
+    "summary": "As magic fang, but a swift action lasting 1 round.",
+    "description": "As magic fang, but a swift action lasting 1 round.\n\nSummary only. Full text: Spell Compendium, p. 221.",
+    "source": "Spell Compendium",
+    "page": 221
+  },
+  {
+    "id": "touch-of-restoration",
+    "name": "Touch of Restoration",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "descriptors": [],
+    "levels": {
+      "Pal": 2
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 minute",
+    "summary": "Lay on hands cures ability damage.",
+    "description": "Lay on hands cures ability damage.\n\nSummary only. Full text: Complete Champion, p. 129.",
+    "source": "Complete Champion",
+    "page": 129
+  },
+  {
+    "id": "towering-oak",
+    "name": "Towering Oak",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "descriptors": [],
+    "levels": {
+      "Rgr": 1
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level",
+    "summary": "+10 competence on Intimidate and +2 enhancement bonus to Strength.",
+    "description": "+10 competence on Intimidate and +2 enhancement bonus to Strength.\n\nSummary only. Full text: Spell Compendium, p. 221.",
+    "source": "Spell Compendium",
+    "page": 221
+  },
+  {
+    "id": "triadspell",
+    "name": "Triadspell",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 5
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "Instantaneous",
+    "summary": "A prepared spell of 3rd level or lower can be cast three times.",
+    "description": "A prepared spell of 3rd level or lower can be cast three times.\n\nSummary only. Full text: Spell Compendium, p. 224.",
+    "source": "Spell Compendium",
+    "page": 224
+  },
+  {
+    "id": "turn-anathema",
+    "name": "Turn Anathema",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting",
+      "Chaotic",
+      "Evil",
+      "Good",
+      "Lawful"
+    ],
+    "levels": {
+      "Clr": 2,
+      "Pal": 2
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "10 minutes/level",
+    "summary": "Turn creatures of the opposing alignment subtype as if undead.",
+    "description": "Turn creatures of the opposing alignment subtype as if undead.\n\nSummary only. Full text: Complete Champion, p. 129.",
+    "source": "Complete Champion",
+    "page": 129
+  },
+  {
+    "id": "undeaths-eternal-foe",
+    "name": "Undeath's Eternal Foe",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 9
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature/5 levels",
+    "targetLabel": "Targets",
+    "duration": "1 round/level",
+    "savingThrow": "None (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Allies gain death ward, undead immunities, and ghost touch attacks.",
+    "description": "Allies gain death ward, undead immunities, and ghost touch attacks.\n\nSummary only. Full text: Spell Compendium, p. 226.",
+    "source": "Spell Compendium",
+    "page": 226
+  },
+  {
+    "id": "updraft",
+    "name": "Updraft",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Air"
+    ],
+    "levels": {
+      "Clr": 1,
+      "Drd": 1
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 swift action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "Instantaneous",
+    "summary": "Rise 10 feet per level, then float gently down.",
+    "description": "Rise 10 feet per level, then float gently down.\n\nSummary only. Full text: Spell Compendium, p. 228.",
+    "source": "Spell Compendium",
+    "page": 228
+  },
+  {
+    "id": "vine-mine",
+    "name": "Vine Mine",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 3
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area": "10-ft.-radius/level spread",
+    "duration": "10 minutes/level",
+    "savingThrow": "See text",
+    "spellResistance": "Yes",
+    "summary": "Vines aid climbing, bind, hamper movement, or camouflage.",
+    "description": "Vines aid climbing, bind, hamper movement, or camouflage.\n\nSummary only. Full text: Spell Compendium, p. 230.",
+    "source": "Spell Compendium",
+    "page": 230
+  },
+  {
+    "id": "wall-of-greater-dispel-magic",
+    "name": "Wall of Greater Dispel Magic",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 8,
+      "Sor": 8,
+      "Wiz": 8
+    },
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "A straight wall whose area is up to one 10-ft. square/level",
+    "duration": "1 minute/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "As wall of dispel magic, but with the effect of greater dispel magic.",
+    "description": "As wall of dispel magic, but with the effect of greater dispel magic.\n\nSummary only. Full text: Spell Compendium, p. 234.",
+    "source": "Spell Compendium",
+    "page": 234
+  },
+  {
+    "id": "war-mount",
+    "name": "War-Mount",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Pal": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Special mount or fiendish companion touched",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Mount's natural weapons gain +2 enhancement and count as magic.",
+    "description": "Mount's natural weapons gain +2 enhancement and count as magic.\n\nSummary only. Full text: Complete Champion, p. 129.",
+    "source": "Complete Champion",
+    "page": 129
+  },
+  {
+    "id": "warning-shout",
+    "name": "Warning Shout",
+    "school": "Transmutation",
+    "descriptors": [
+      "Sonic"
+    ],
+    "levels": {
+      "Pal": 1
+    },
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 immediate action",
+    "range": "30 ft.",
+    "target": "All allies within 30 feet",
+    "targetLabel": "Targets",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Allies within 30 ft. are no longer flat-footed; wakes sleepers.",
+    "description": "Allies within 30 ft. are no longer flat-footed; wakes sleepers.\n\nSummary only. Full text: Spell Compendium, p. 236.",
+    "source": "Spell Compendium",
+    "page": 236
+  },
+  {
+    "id": "weight-of-sin",
+    "name": "Weight of Sin",
+    "school": "Evocation",
+    "descriptors": [
+      "Chaotic",
+      "Evil",
+      "Good",
+      "Lawful"
+    ],
+    "levels": {
+      "Clr": 6
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One creature",
+    "duration": "Instantaneous, then 1 round/level or permanent; see text",
+    "savingThrow": "Fortitude partial, then Will partial; see text",
+    "spellResistance": "Yes",
+    "summary": "Damages target by alignment difference and adds a secondary effect.",
+    "description": "Damages target by alignment difference and adds a secondary effect.\n\nSummary only. Full text: Complete Champion, p. 129.",
+    "source": "Complete Champion",
+    "page": 129
+  },
+  {
+    "id": "wooden-blight",
+    "name": "Wooden Blight",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Drd": 6
+    },
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One living creature",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Fortitude partial",
+    "spellResistance": "Yes",
+    "summary": "Dexterity damage each round; at 0 the subject becomes a wooden statue.",
+    "description": "Dexterity damage each round; at 0 the subject becomes a wooden statue.\n\nSummary only. Full text: Complete Champion, p. 130.",
+    "source": "Complete Champion",
+    "page": 130
+  },
+  {
+    "id": "wounding-whispers",
+    "name": "Wounding Whispers",
+    "school": "Abjuration",
+    "descriptors": [
+      "Sonic"
+    ],
+    "levels": {
+      "Brd": 3
+    },
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 round/level (D)",
+    "summary": "Creatures striking you take 1d6 +1/level sonic damage.",
+    "description": "Creatures striking you take 1d6 +1/level sonic damage.\n\nSummary only. Full text: Spell Compendium, p. 242.",
+    "source": "Spell Compendium",
+    "page": 242
+  }
+]
