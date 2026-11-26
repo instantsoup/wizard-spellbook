@@ -372,6 +372,16 @@ least 44 px.
 
 ---
 
+## Alignment
+
+A character can have an alignment (unset = no checks). Evil characters can't learn or
+prepare sanctified spells (Book of Exalted Deeds), and those are hidden from their Library.
+A spell with an alignment descriptor opposed to the character's (or a corrupt spell, for a
+good character) gets a note that casting it is an act of that alignment; wizards aren't
+stopped from casting it. Corrupt and sanctified spells are on every prepared caster's list
+(field `special`). The cleric rule (no spells opposed to your or your deity's alignment)
+comes with cleric mode.
+
 ## 8. Table rules
 
 None. The app follows the rules as written:

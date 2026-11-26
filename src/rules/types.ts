@@ -1,4 +1,5 @@
 import type { School } from '../data/spell-schema'
+import type { Alignment } from './alignment'
 
 export type { School }
 
@@ -29,6 +30,8 @@ export type CasterClass = 'wizard'
 export interface WizardCharacter {
   /** Defaults to wizard when missing (characters made before classes existed). */
   casterClass?: CasterClass
+  /** Unset = no alignment checks. */
+  alignment?: Alignment
   wizardLevel: number
   /** Levels in prestige classes that add +1 wizard spellcasting level (default 0). */
   extraCasterLevels?: number

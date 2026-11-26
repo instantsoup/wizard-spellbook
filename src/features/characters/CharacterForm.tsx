@@ -3,6 +3,9 @@ import { SCHOOL_STYLE } from '../../components/schools'
 import { Button, Card, Chip, Field, inputClass, Messages, SectionTitle, Stepper } from '../../components/ui'
 import type { CharacterInput } from '../../data/characters'
 import {
+  ALIGNMENT_NAMES,
+  ALIGNMENTS,
+  type Alignment,
   abilityModifier,
   casterLevel,
   bonusSpellModifier,
@@ -198,6 +201,27 @@ export function CharacterForm({
             />
           </Field>
         )}
+      </Card>
+
+      <Card className="space-y-3">
+        <Field label="Alignment">
+          <select
+            className={inputClass}
+            value={c.alignment ?? ''}
+            onChange={(e) => set({ alignment: (e.target.value || undefined) as Alignment | undefined })}
+          >
+            <option value="">Not set</option>
+            {ALIGNMENTS.map((a) => (
+              <option key={a} value={a}>
+                {ALIGNMENT_NAMES[a]}
+              </option>
+            ))}
+          </select>
+        </Field>
+        <p className="text-xs text-ink/60">
+          Evil characters can't cast sanctified spells. Casting a spell of an opposed alignment (good, evil, law, chaos) is noted
+          as an act of that alignment.
+        </p>
       </Card>
 
       <Card className="space-y-3">

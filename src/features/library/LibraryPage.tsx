@@ -7,7 +7,7 @@ import type { CharacterRecord } from '../../data/db'
 import { useBooks, useKnownSpells } from '../../data/hooks'
 import { CLASS_NAMES, SCHOOLS, type ClassCode, type School, type Spell, type SpellList } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
-import { casterLevel, freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
+import { alignmentBar, casterLevel, freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
 import { AddToBookSheet } from './AddToBookSheet'
 import {
   activeFilterCount,
@@ -85,8 +85,12 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
   }, [browseList])
 
   const prohibited = (s: School) => !!character && isProhibited(character, s)
-  // Spells from prohibited schools never appear anywhere in the Library.
-  const available = useMemo(() => spells.filter((s) => !(character && isProhibited(character, s.school))), [spells, character])
+  // Spells the character can never cast (prohibited schools; sanctified spells for evil
+  // characters) never appear anywhere in the Library.
+  const available = useMemo(
+    () => spells.filter((s) => !(character && (isProhibited(character, s.school) || alignmentBar(character, s)))),
+    [spells, character],
+  )
   const index = useMemo(() => buildSearchIndex(available), [available])
   const options = useMemo(() => filterOptions(available), [available])
   const knownIds = useMemo(() => new Set((known ?? []).map((k) => k.spellId)), [known])

@@ -2,6 +2,7 @@
 // learned spells and what they cost.
 
 import type { Spell } from '../data/spell-schema'
+import { alignmentBar, alignmentNotes } from './alignment'
 import { casterLevel, castingScoreName, isProhibited, meetsCastingMinimum } from './character'
 import { maxSpellLevel, minIntForSpellLevel } from './tables'
 import { check, FREE_METHODS, type AcquisitionMethod, type KnownSpell, type RuleCheck, type WizardCharacter } from './types'
@@ -114,6 +115,9 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
   const inThisBook = (k: KnownSpell) => req.bookId === undefined || k.bookId === undefined || k.bookId === req.bookId
   if (known.some((k) => k.spellId === spell.id && inThisBook(k))) errors.push(`${spell.name} is already in this book.`)
   if (isProhibited(c, spell.school)) errors.push(`${spell.school} is a prohibited school.`)
+  const barred = alignmentBar(c, spell)
+  if (barred) errors.push(barred)
+  warnings.push(...alignmentNotes(c, spell))
 
   const castable = maxSpellLevel(casterLevel(c))
   switch (req.method) {

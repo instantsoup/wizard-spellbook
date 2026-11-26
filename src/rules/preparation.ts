@@ -1,6 +1,7 @@
 // Daily preparation: which spells may go in which slot, and day bookkeeping.
 
 import type { Spell } from '../data/spell-schema'
+import { alignmentBar } from './alignment'
 import { isProhibited } from './character'
 import { computeSlots, listSlots } from './slots'
 import { check, type PreparedSlot, type RuleCheck, type WizardCharacter } from './types'
@@ -20,6 +21,8 @@ export function canFillSlot(
   const errors: string[] = []
   if (!knownSpellIds.has(spell.id)) errors.push(`${spell.name} is not in your book.`)
   if (isProhibited(c, spell.school)) errors.push(`${spell.school} is a prohibited school.`)
+  const barred = alignmentBar(c, spell)
+  if (barred) errors.push(barred)
   if (spell.level > slot.slotLevel) {
     errors.push(`${spell.name} is level ${spell.level} and won't fit a level ${slot.slotLevel} slot.`)
   }
