@@ -200,8 +200,16 @@ test("spellbooks: add a Boccob's book, write and copy spells into it", async ({ 
   await page.getByPlaceholder('e.g. Travelling book').fill('Blessed tome')
   await page.getByLabel(/^Boccob's blessed book \(1000 pages/).check()
   await page.getByRole('button', { name: 'Add book' }).click()
-  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+  // adding switches to the new book; the starting book keeps its name
   await expect(page.getByText("Blessed tome · Boccob's blessed book · 0 spells · 0/1000 pages")).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Starting spellbook' })).toBeVisible()
+  // renaming is an explicit step
+  await page.getByRole('button', { name: 'Manage books' }).click()
+  await page.getByRole('button', { name: 'Rename Blessed tome' }).click()
+  await page.getByLabel('Rename "Blessed tome"').fill('Blessed tome of Mialee')
+  await page.getByRole('dialog').getByRole('button', { name: 'Save', exact: true }).click()
+  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+  await page.getByRole('button', { name: 'Blessed tome of Mialee' }).click()
 
   // a new spell into the Boccob's book: no scribing cost, the scroll still costs
   await page.getByRole('link', { name: 'Library' }).click()
@@ -219,8 +227,8 @@ test("spellbooks: add a Boccob's book, write and copy spells into it", async ({ 
   await page.getByRole('button', { name: 'Edit' }).first().click()
   await expect(page.getByLabel('Copy into')).toHaveValue(/.+/)
   await page.getByRole('button', { name: 'Copy · free' }).click()
-  await page.getByRole('button', { name: 'Blessed tome' }).click()
-  await expect(page.getByText("Blessed tome · Boccob's blessed book · 2 spells · 5/1000 pages")).toBeVisible()
+  await page.getByRole('button', { name: 'Blessed tome of Mialee' }).click()
+  await expect(page.getByText("Blessed tome of Mialee · Boccob's blessed book · 2 spells · 5/1000 pages")).toBeVisible()
 
   await page.getByRole('link', { name: /gp spent/ }).click()
   await expect(page.locator('header')).toContainText('825 gp spent') // 300 + 375 + 150

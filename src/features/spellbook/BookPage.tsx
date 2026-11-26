@@ -280,7 +280,10 @@ export function BookPage({ character }: { character: CharacterRecord }) {
           books={books}
           known={known}
           onClose={() => setManaging(false)}
-          onAdded={(b) => setBookId(b.id)}
+          onAdded={(b) => {
+            setBookId(b.id)
+            setManaging(false)
+          }}
         />
       )}
     </Page>
