@@ -14,7 +14,7 @@ export interface LedgerSummary {
   byLevel: { spellLevel: number; count: number; gp: number }[]
 }
 
-const METHOD_ORDER: AcquisitionMethod[] = ['starting-cantrip', 'starting-free', 'levelup-free', 'scroll', 'other-book', 'research', 'other']
+const METHOD_ORDER: AcquisitionMethod[] = ['starting-cantrip', 'starting-free', 'levelup-free', 'scroll', 'other-book', 'research', 'copy', 'other']
 
 export function ledgerSummary(known: KnownSpell[]): LedgerSummary {
   const sum = (ks: KnownSpell[]) => ks.reduce((n, k) => n + entryCost(k), 0)
@@ -34,13 +34,13 @@ export function ledgerSummary(known: KnownSpell[]): LedgerSummary {
 
 /** Every spell in the book as CSV, oldest first; free spells show 0 gp. Ties sort by spell level, then name. */
 export function ledgerCsv(
-  rows: { date: number; item: string; level: number; kind: string; scribeGp: number; scrollGp?: number; note?: string }[],
+  rows: { date: number; item: string; level: number; kind: string; book?: string; scribeGp: number; scrollGp?: number; note?: string }[],
 ): string {
   const cell = (v: string | number) => {
     const s = String(v)
     return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
   }
-  const lines = [['Date', 'Spell', 'Spell level', 'Learned', 'Scribing (gp)', 'Scroll (gp)', 'Total (gp)', 'Note']]
+  const lines = [['Date', 'Spell', 'Spell level', 'Learned', 'Book', 'Scribing (gp)', 'Scroll (gp)', 'Total (gp)', 'Note']]
   for (const r of [...rows].sort((a, b) => a.date - b.date || a.level - b.level || a.item.localeCompare(b.item))) {
     const scroll = r.scrollGp ?? 0
     lines.push([
@@ -48,6 +48,7 @@ export function ledgerCsv(
       r.item,
       String(r.level),
       r.kind,
+      r.book ?? '',
       String(r.scribeGp),
       r.scrollGp === undefined ? '' : String(scroll),
       String(r.scribeGp + scroll),

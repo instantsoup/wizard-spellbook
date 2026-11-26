@@ -26,6 +26,19 @@ export interface KnownSpellRecord extends KnownSpell {
   addedAt: number
 }
 
+/** One of a character's spellbooks. Every character has at least one. */
+export interface BookRecord {
+  id: string
+  characterId: string
+  /** "Starting spellbook" for the first; the player names the rest. */
+  name: string
+  /** A Boccob's blessed book: 1000 pages, and writing spells in it costs nothing (DMG). */
+  boccobs?: boolean
+  createdAt: number
+}
+
+export const STARTING_BOOK_NAME = 'Starting spellbook'
+
 export interface PreparedDayRecord {
   id: string
   characterId: string
@@ -69,6 +82,7 @@ export class SpellbookDB extends Dexie {
   ledger!: EntityTable<LedgerRecord, 'id'>
   storedSpells!: EntityTable<StoredSpellRecord, 'id'>
   settings!: EntityTable<SettingRecord, 'key'>
+  books!: EntityTable<BookRecord, 'id'>
 
   constructor(name = 'wizard-spellbook') {
     super(name)
@@ -115,12 +129,29 @@ export class SpellbookDB extends Dexie {
             ref.value = migrateCharacter(c)
           }),
       )
+    // v5: characters can have several spellbooks. Each gets a starting book holding the
+    // spells it already knows.
+    this.version(5)
+      .stores({ books: 'id, characterId', knownSpells: 'id, characterId, spellId, bookId, [characterId+spellId]' })
+      .upgrade(async (tx) => {
+        for (const c of await tx.table('characters').toArray()) {
+          const bookId = newId()
+          await tx.table('books').add({ id: bookId, characterId: c.id, name: STARTING_BOOK_NAME, createdAt: c.createdAt ?? Date.now() })
+          await tx
+            .table('knownSpells')
+            .where('characterId')
+            .equals(c.id)
+            .modify((k: Record<string, unknown>) => {
+              k.bookId = bookId
+            })
+        }
+      })
   }
 }
 
-export const db = new SpellbookDB()
-
 export const newId = () => crypto.randomUUID()
+
+export const db = new SpellbookDB()
 
 /** Ask the browser not to clear our data under storage pressure. */
 export async function requestPersistentStorage(): Promise<boolean> {

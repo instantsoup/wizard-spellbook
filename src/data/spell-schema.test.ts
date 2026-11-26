@@ -42,6 +42,15 @@ describe('validateSpell', () => {
   })
 })
 
+describe('corrupt and sanctified spells', () => {
+  const absorb = { ...good, id: 'absorb-mind', name: 'Absorb Mind', levels: { Clr: 3, Drd: 3, Pal: 3, Rgr: 3, Wiz: 3 }, special: 'Corrupt' as const }
+  it('show one level for every list', () => {
+    expect(levelLine(absorb)).toBe('Corrupt 3')
+    expect(validateSpell(absorb)).toEqual([])
+    expect(validateSpell({ ...absorb, special: 'Vile' })).toContain('"special" must be one of Corrupt, Sanctified')
+  })
+})
+
 describe('validateSpellFile', () => {
   it('flags duplicate ids', () => {
     expect(validateSpellFile([good, good])).toEqual(['Orb of Fire: duplicate id "orb-of-fire"'])

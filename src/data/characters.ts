@@ -2,7 +2,7 @@
 
 import type { Spell } from './spell-schema'
 import { canLearn, makeKnownSpell, startingCantrips, type LearnRequest, type WizardCharacter } from '../rules'
-import { db, newId, type CharacterRecord, type KnownSpellRecord, type SpellbookDB } from './db'
+import { db, newId, STARTING_BOOK_NAME, type BookRecord, type CharacterRecord, type KnownSpellRecord, type SpellbookDB } from './db'
 
 export const ACTIVE_CHARACTER_KEY = 'activeCharacterId'
 
@@ -20,11 +20,79 @@ export type CharacterInput = WizardCharacter & { name: string }
 export async function createCharacter(input: CharacterInput, d: SpellbookDB = db): Promise<CharacterRecord> {
   const now = Date.now()
   const record: CharacterRecord = { ...input, id: newId(), createdAt: now, updatedAt: now }
-  await d.transaction('rw', d.characters, d.settings, async () => {
+  await d.transaction('rw', d.characters, d.settings, d.books, async () => {
     await d.characters.add(record)
+    await d.books.add({ id: newId(), characterId: record.id, name: STARTING_BOOK_NAME, createdAt: now })
     await setActiveCharacter(record.id, d)
   })
   return record
+}
+
+/** A character's books, oldest (the starting book) first. */
+export async function booksFor(characterId: string, d: SpellbookDB = db): Promise<BookRecord[]> {
+  return (await d.books.where('characterId').equals(characterId).toArray()).sort((a, b) => a.createdAt - b.createdAt || a.name.localeCompare(b.name))
+}
+
+/**
+ * Makes sure the character has a book and every entry is in one. Repairs data restored from
+ * an older backup, made before characters had several books.
+ */
+export async function ensureBooks(characterId: string, d: SpellbookDB = db): Promise<BookRecord[]> {
+  return d.transaction('rw', d.books, d.knownSpells, async () => {
+    let books = await booksFor(characterId, d)
+    if (!books.length) {
+      await d.books.add({ id: newId(), characterId, name: STARTING_BOOK_NAME, createdAt: Date.now() })
+      books = await booksFor(characterId, d)
+    }
+    const first = books[0].id
+    const ids = new Set(books.map((b) => b.id))
+    await d.knownSpells
+      .where('characterId')
+      .equals(characterId)
+      .filter((k) => !k.bookId || !ids.has(k.bookId))
+      .modify({ bookId: first })
+    return books
+  })
+}
+
+/** Adds a spellbook. Names must differ so books can be told apart. */
+export async function addBook(characterId: string, name: string, boccobs: boolean, d: SpellbookDB = db): Promise<{ ok: boolean; error?: string; book?: BookRecord }> {
+  const clean = name.trim()
+  if (!clean) return { ok: false, error: 'Give the book a name.' }
+  const books = await booksFor(characterId, d)
+  if (books.some((b) => b.name.toLowerCase() === clean.toLowerCase())) return { ok: false, error: `You already have a book called "${clean}".` }
+  const book: BookRecord = { id: newId(), characterId, name: clean, ...(boccobs ? { boccobs: true } : {}), createdAt: Date.now() }
+  await d.books.add(book)
+  return { ok: true, book }
+}
+
+/** Renames a book or changes whether it is a Boccob's blessed book (costs already paid stay). */
+export async function updateBook(id: string, changes: { name?: string; boccobs?: boolean }, d: SpellbookDB = db): Promise<{ ok: boolean; error?: string }> {
+  const book = await d.books.get(id)
+  if (!book) return { ok: false, error: 'That book no longer exists.' }
+  const patch: Partial<BookRecord> = {}
+  if (changes.name !== undefined) {
+    const clean = changes.name.trim()
+    if (!clean) return { ok: false, error: 'Give the book a name.' }
+    const others = (await booksFor(book.characterId, d)).filter((b) => b.id !== id)
+    if (others.some((b) => b.name.toLowerCase() === clean.toLowerCase())) return { ok: false, error: `You already have a book called "${clean}".` }
+    patch.name = clean
+  }
+  if (changes.boccobs !== undefined) patch.boccobs = changes.boccobs
+  await d.books.update(id, patch)
+  return { ok: true }
+}
+
+/** Deletes a book and the spells written in it. The last book can't be deleted. */
+export async function deleteBook(id: string, d: SpellbookDB = db): Promise<{ ok: boolean; error?: string }> {
+  const book = await d.books.get(id)
+  if (!book) return { ok: true }
+  if ((await booksFor(book.characterId, d)).length <= 1) return { ok: false, error: 'You need at least one spellbook.' }
+  await d.transaction('rw', d.books, d.knownSpells, async () => {
+    await d.knownSpells.where('bookId').equals(id).delete()
+    await d.books.delete(id)
+  })
+  return { ok: true }
 }
 
 export async function updateCharacter(id: string, changes: Partial<CharacterInput>, d: SpellbookDB = db) {
@@ -33,9 +101,10 @@ export async function updateCharacter(id: string, changes: Partial<CharacterInpu
 
 /** Deletes a character and everything that belongs to it. */
 export async function deleteCharacter(id: string, d: SpellbookDB = db) {
-  await d.transaction('rw', [d.characters, d.knownSpells, d.days, d.templates, d.ledger, d.settings], async () => {
+  await d.transaction('rw', [d.characters, d.knownSpells, d.days, d.templates, d.ledger, d.settings, d.books], async () => {
     await d.characters.delete(id)
     await d.knownSpells.where('characterId').equals(id).delete()
+    await d.books.where('characterId').equals(id).delete()
     await d.days.where('characterId').equals(id).delete()
     await d.templates.where('characterId').equals(id).delete()
     await d.ledger.where('characterId').equals(id).delete()
@@ -59,18 +128,22 @@ export async function learnSpells(
   items: { spell: Spell; req: LearnRequest; note?: string; scrollCostGp?: number }[],
   d: SpellbookDB = db,
 ): Promise<{ ok: boolean; errors: string[]; added: KnownSpellRecord[] }> {
-  return d.transaction('rw', d.knownSpells, async () => {
+  return d.transaction('rw', d.knownSpells, d.books, async () => {
+    // Spells go into the starting book unless a book is named.
+    const books = await ensureBooks(character.id, d)
     const known = await knownSpellsFor(character.id, d)
     const errors: string[] = []
     const added: KnownSpellRecord[] = []
     for (const item of items) {
-      const result = canLearn(character, item.spell, [...known, ...added], item.req)
+      const book = books.find((b) => b.id === item.req.bookId) ?? books[0]
+      const req = { ...item.req, bookId: book.id }
+      const result = canLearn(character, item.spell, [...known, ...added], req)
       if (!result.ok) {
         errors.push(...result.errors.map((e) => `${item.spell.name}: ${e}`))
         continue
       }
       added.push({
-        ...makeKnownSpell(item.spell, item.req, item),
+        ...makeKnownSpell(item.spell, req, { ...item, boccobs: book.boccobs }),
         id: newId(),
         characterId: character.id,
         addedAt: Date.now(),

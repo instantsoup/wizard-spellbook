@@ -57,6 +57,8 @@ export type AcquisitionMethod =
   | 'other-book'
   | 'research'
   | 'other'
+  /** Copied from another of the wizard's own spellbooks (half cost, PH p. 179). */
+  | 'copy'
 
 export const FREE_METHODS: readonly AcquisitionMethod[] = ['starting-cantrip', 'starting-free', 'levelup-free']
 
@@ -66,6 +68,8 @@ export interface KnownSpell {
   /** Sor/Wiz level when learned. */
   spellLevel: number
   method: AcquisitionMethod
+  /** Which of the character's spellbooks this entry is written in. */
+  bookId?: string
   /** Which caster level granted this free pick (1 for starting picks). */
   freePickLevel?: number
   /** Cost to scribe the spell into the book (100 gp x spell level). */

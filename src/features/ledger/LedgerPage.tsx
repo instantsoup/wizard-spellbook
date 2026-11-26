@@ -3,7 +3,7 @@ import { gp, METHOD_LABEL } from '../../components/labels'
 import { levelLabel } from '../../components/schools'
 import { Button, Card, Loading, Page, SectionTitle } from '../../components/ui'
 import type { CharacterRecord } from '../../data/db'
-import { useKnownSpells } from '../../data/hooks'
+import { useBooks, useKnownSpells } from '../../data/hooks'
 import { useSpells } from '../../data/spells'
 import { downloadText } from '../../data/storedSpells'
 import { entryCost, ledgerCsv, ledgerSummary } from '../../rules'
@@ -11,12 +11,19 @@ import { entryCost, ledgerCsv, ledgerSummary } from '../../rules'
 /** What it has cost to add spells to the book: scribing (100 gp x spell level) plus any scroll copied from. */
 export function LedgerPage({ character }: { character: CharacterRecord }) {
   const known = useKnownSpells(character.id)
+  const books = useBooks(character.id)
   const { byId, loading } = useSpells()
   const [showAll, setShowAll] = useState(false)
 
-  if (!known || loading) return <Loading />
+  if (!known || !books || loading) return <Loading />
 
   const s = ledgerSummary(known)
+  const bookName = (id?: string) => books.find((b) => b.id === id)?.name
+  const several = books.length > 1
+  const byBook = books.map((b) => {
+    const ks = known.filter((k) => k.bookId === b.id)
+    return { id: b.id, name: b.name, boccobs: b.boccobs, count: ks.length, gp: ks.reduce((n, k) => n + entryCost(k), 0) }
+  })
   const rows = known
     .filter((k) => entryCost(k) > 0)
     .map((k) => ({
@@ -30,6 +37,7 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
       unrecordedScroll: k.method === 'scroll' && k.scrollCostGp === undefined,
       note: k.note,
       level: k.spellLevel,
+      book: several ? bookName(k.bookId) : undefined,
     }))
     .sort((a, b) => b.date - a.date)
   const csvRows = known.map((k) => ({
@@ -39,6 +47,7 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
     kind: k.method === 'levelup-free' && k.freePickLevel ? `Level ${k.freePickLevel} pick` : METHOD_LABEL[k.method],
     scribeGp: k.costGp,
     scrollGp: k.method === 'scroll' ? k.scrollCostGp : undefined,
+    book: bookName(k.bookId),
     note: k.note,
   }))
   const shown = showAll ? rows : rows.slice(0, 25)
@@ -73,6 +82,27 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
               </tbody>
             </table>
           </Card>
+          {several && (
+            <>
+              <SectionTitle>By book</SectionTitle>
+              <Card>
+                <table className="w-full text-sm">
+                  <tbody>
+                    {byBook.map((b) => (
+                      <tr key={b.id}>
+                        <td className="py-0.5">
+                          {b.name}
+                          {b.boccobs ? <span className="text-ink/60"> · Boccob&apos;s</span> : null}
+                        </td>
+                        <td className="text-right text-ink/60">{b.count}</td>
+                        <td className="w-28 text-right">{b.gp ? gp(b.gp) : 'free'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </Card>
+            </>
+          )}
           <SectionTitle>By spell level</SectionTitle>
           <Card>
             <table className="w-full text-sm">
@@ -115,6 +145,7 @@ export function LedgerPage({ character }: { character: CharacterRecord }) {
               <p className="truncate font-semibold">{r.item}</p>
               <p className="truncate text-xs text-ink/60">
                 {new Date(r.date).toLocaleDateString()} · {levelLabel(r.level)} · {r.kind}
+                {r.book ? ` · ${r.book}` : ''}
                 {r.note ? ` · ${r.note}` : ''}
               </p>
               {r.scrollGp ? (

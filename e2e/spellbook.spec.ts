@@ -188,3 +188,42 @@ test('works offline after the first visit', async ({ page, context, browserName 
   await expect(page.getByRole('button', { name: /^Fireball/ })).toBeVisible()
   await context.setOffline(false)
 })
+
+test("spellbooks: add a Boccob's book, write and copy spells into it", async ({ page }) => {
+  const noErrors = failOnErrors(page)
+  await createEvoker(page)
+  await learn(page, 'Haste', 'From a scroll') // starting book: 300 gp + 375 gp scroll
+  await page.getByRole('link', { name: 'Book' }).click()
+  await expect(page.getByText(/Starting spellbook · \d+ spells · \d+\/100 pages/)).toBeVisible()
+
+  await page.getByRole('button', { name: 'Add a spellbook' }).click()
+  await page.getByPlaceholder('e.g. Travelling book').fill('Blessed tome')
+  await page.getByLabel(/^Boccob's blessed book \(1000 pages/).check()
+  await page.getByRole('button', { name: 'Add book' }).click()
+  await page.getByRole('dialog').getByRole('button', { name: 'Close' }).last().click()
+  await expect(page.getByText("Blessed tome · Boccob's blessed book · 0 spells · 0/1000 pages")).toBeVisible()
+
+  // a new spell into the Boccob's book: no scribing cost, the scroll still costs
+  await page.getByRole('link', { name: 'Library' }).click()
+  await page.getByPlaceholder('Search names and text').fill('Web')
+  await page.getByRole('button', { name: 'Add Web', exact: true }).click()
+  await expect(page.getByLabel('Which book')).toHaveValue(/.+/)
+  await page.getByLabel('From a scroll').check()
+  await expect(page.getByRole('dialog')).toContainText('Scribing cost: 0 gp')
+  await page.getByRole('button', { name: /^Add to book · 150 gp/ }).click()
+
+  // copy Haste from the starting book: free in a Boccob's
+  await page.getByRole('link', { name: 'Book' }).click()
+  await page.getByRole('button', { name: 'Starting spellbook' }).click()
+  await page.getByRole('button', { name: /^Haste/ }).click()
+  await page.getByRole('button', { name: 'Edit' }).first().click()
+  await expect(page.getByLabel('Copy into')).toHaveValue(/.+/)
+  await page.getByRole('button', { name: 'Copy · free' }).click()
+  await page.getByRole('button', { name: 'Blessed tome' }).click()
+  await expect(page.getByText("Blessed tome · Boccob's blessed book · 2 spells · 5/1000 pages")).toBeVisible()
+
+  await page.getByRole('link', { name: /gp spent/ }).click()
+  await expect(page.locator('header')).toContainText('825 gp spent') // 300 + 375 + 150
+  await expect(page.getByText('By book')).toBeVisible()
+  noErrors()
+})

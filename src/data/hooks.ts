@@ -1,6 +1,6 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import { ACTIVE_CHARACTER_KEY } from './characters'
-import { db, type CharacterRecord, type KnownSpellRecord } from './db'
+import { db, type BookRecord, type CharacterRecord, type KnownSpellRecord } from './db'
 
 /** undefined while loading, null when there is no character yet. */
 export function useActiveCharacter(): CharacterRecord | null | undefined {
@@ -40,6 +40,17 @@ export function useCurrentDay(characterId: string | undefined) {
 export function useTemplates(characterId: string | undefined) {
   return useLiveQuery(
     () => (characterId ? db.templates.where('characterId').equals(characterId).sortBy('name') : []),
+    [characterId],
+  )
+}
+
+/** A character's spellbooks, starting book first. */
+export function useBooks(characterId: string | undefined): BookRecord[] | undefined {
+  return useLiveQuery(
+    async () =>
+      characterId
+        ? (await db.books.where('characterId').equals(characterId).toArray()).sort((a, b) => a.createdAt - b.createdAt || a.name.localeCompare(b.name))
+        : [],
     [characterId],
   )
 }

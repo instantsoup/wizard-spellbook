@@ -38,15 +38,15 @@ describe('ledgerSummary', () => {
 describe('ledgerCsv', () => {
   it('sorts by date and quotes awkward cells', () => {
     const csv = ledgerCsv([
-      { date: Date.UTC(2026, 10, 2), item: 'Haste', level: 3, kind: 'From a scroll', scribeGp: 300, scrollGp: 375, note: 'From "Waterdeep", cheap' },
+      { date: Date.UTC(2026, 10, 2), item: 'Haste', level: 3, kind: 'From a scroll', book: 'Travelling book', scribeGp: 300, scrollGp: 375, note: 'From "Waterdeep", cheap' },
       { date: Date.UTC(2026, 10, 1), item: 'Web', level: 2, kind: "From another wizard's book", scribeGp: 200 },
       { date: Date.UTC(2026, 10, 1), item: 'Ray of Frost', level: 0, kind: 'Starting cantrip', scribeGp: 0 },
     ])
     expect(csv).toBe(
-      'Date,Spell,Spell level,Learned,Scribing (gp),Scroll (gp),Total (gp),Note\n' +
-        '2026-11-01,Ray of Frost,0,Starting cantrip,0,,0,\n' +
-        "2026-11-01,Web,2,From another wizard's book,200,,200,\n" +
-        '2026-11-02,Haste,3,From a scroll,300,375,675,"From ""Waterdeep"", cheap"\n',
+      'Date,Spell,Spell level,Learned,Book,Scribing (gp),Scroll (gp),Total (gp),Note\n' +
+        '2026-11-01,Ray of Frost,0,Starting cantrip,,0,,0,\n' +
+        "2026-11-01,Web,2,From another wizard's book,,200,,200,\n" +
+        '2026-11-02,Haste,3,From a scroll,Travelling book,300,375,675,"From ""Waterdeep"", cheap"\n',
     )
   })
 })

@@ -132,3 +132,12 @@ describe('startingCantrips', () => {
     expect(startingCantrips(evoker5, all).map((s) => s.id)).toEqual(['detect-magic', 'ray-of-frost'])
   })
 })
+
+describe('spellbook costs', () => {
+  it('copying from your own book costs half; a Boccob\'s blessed book costs nothing', () => {
+    expect(learnCost(3, 'copy')).toBe(150)
+    expect(learnCost(0, 'copy')).toBe(50)
+    expect(learnCost(3, 'scroll', { boccobs: true })).toBe(0)
+    expect(learnCost(3, 'copy', { boccobs: true })).toBe(0)
+  })
+})

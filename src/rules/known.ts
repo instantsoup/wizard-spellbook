@@ -55,10 +55,21 @@ export function totalFreePicksRemaining(c: WizardCharacter, known: KnownSpell[])
 /** 100 gp per spell level (cantrips count as 1st). */
 export const GP_PER_SPELL_LEVEL = 100
 
-/** Gold cost to learn a spell. Free methods cost nothing. */
-export function learnCost(spellLevel: number, method: AcquisitionMethod): number {
-  if (FREE_METHODS.includes(method)) return 0
-  return GP_PER_SPELL_LEVEL * Math.max(1, spellLevel)
+/** Pages a spell takes in a spellbook: one per spell level, one for a cantrip (PH p. 179). */
+export const pagesFor = (spellLevel: number) => Math.max(1, spellLevel)
+
+/** Pages in a standard spellbook, and in a Boccob's blessed book (DMG). */
+export const BOOK_PAGES = 100
+export const BOCCOBS_PAGES = 1000
+
+/**
+ * Gold cost to write a spell into a book. Free methods cost nothing; copying from your own
+ * book costs half (PH p. 179); a Boccob's blessed book needs no costly inks (DMG).
+ */
+export function learnCost(spellLevel: number, method: AcquisitionMethod, opts: { boccobs?: boolean } = {}): number {
+  if (FREE_METHODS.includes(method) || opts.boccobs) return 0
+  const full = GP_PER_SPELL_LEVEL * pagesFor(spellLevel)
+  return method === 'copy' ? full / 2 : full
 }
 
 /**
@@ -91,6 +102,8 @@ export interface LearnRequest {
   method: AcquisitionMethod
   /** Required for free picks: which caster level's pick this uses. */
   freePickLevel?: number
+  /** The spellbook to write it in. Entries without a book count as the starting book. */
+  bookId?: string
 }
 
 /** Can this spell be added to the book this way? */
@@ -98,7 +111,8 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
   const errors: string[] = []
   const warnings: string[] = []
 
-  if (known.some((k) => k.spellId === spell.id)) errors.push(`${spell.name} is already in your book.`)
+  const inThisBook = (k: KnownSpell) => req.bookId === undefined || k.bookId === undefined || k.bookId === req.bookId
+  if (known.some((k) => k.spellId === spell.id && inThisBook(k))) errors.push(`${spell.name} is already in this book.`)
   if (isProhibited(c, spell.school)) errors.push(`${spell.school} is a prohibited school.`)
 
   const castable = maxSpellLevel(casterLevel(c))
@@ -127,6 +141,9 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
       if (spell.level === 0) warnings.push('Cantrips are already in your book for free.')
       break
     }
+    case 'copy':
+      if (!known.some((k) => k.spellId === spell.id && !inThisBook(k))) errors.push(`${spell.name} isn't in another of your books to copy from.`)
+      break
     default:
       if (spell.level > castable) errors.push(`${spell.name} is level ${spell.level}; you can only learn spells up to level ${castable}.`)
   }
@@ -141,7 +158,7 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
 export function makeKnownSpell(
   spell: Spell,
   req: LearnRequest,
-  extra?: { note?: string; scrollCostGp?: number },
+  extra?: { note?: string; scrollCostGp?: number; boccobs?: boolean },
 ): KnownSpell {
   const freePickLevel = req.method === 'starting-free' ? 1 : req.method === 'levelup-free' ? req.freePickLevel : undefined
   return {
@@ -149,7 +166,8 @@ export function makeKnownSpell(
     spellLevel: spell.level,
     method: req.method,
     ...(freePickLevel ? { freePickLevel } : {}),
-    costGp: learnCost(spell.level, req.method),
+    ...(req.bookId ? { bookId: req.bookId } : {}),
+    costGp: learnCost(spell.level, req.method, { boccobs: extra?.boccobs }),
     ...(req.method === 'scroll' && extra?.scrollCostGp !== undefined ? { scrollCostGp: Math.max(0, extra.scrollCostGp) } : {}),
     ...(extra?.note ? { note: extra.note } : {}),
   }

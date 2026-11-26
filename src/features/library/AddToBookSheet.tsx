@@ -4,10 +4,12 @@ import { Sheet } from '../../components/Sheet'
 import { Button, Field, inputClass, Messages } from '../../components/ui'
 import { learnSpells } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
+import { useBooks } from '../../data/hooks'
+import { loadSelectedBook, pickBook } from '../spellbook/selectedBook'
 import type { Spell } from '../../data/spell-schema'
 import { canLearn, freePickStatus, learnCost, scrollPrice, type AcquisitionMethod, type LearnRequest } from '../../rules'
 
-type Choice = 'free' | Extract<AcquisitionMethod, 'scroll' | 'other-book' | 'research' | 'other'>
+type Choice = 'free' | Extract<AcquisitionMethod, 'scroll' | 'other-book' | 'research' | 'other' | 'copy'>
 
 const PAID: { value: Choice; label: string }[] = [
   { value: 'scroll', label: 'From a scroll' },
@@ -39,7 +41,13 @@ export function AddToBookSheet({
     [character, known, spell.level],
   )
   const canUseFree = spell.level > 0 && freeOptions.length > 0
-  const [choice, setChoice] = useState<Choice>(canUseFree ? 'free' : 'scroll')
+  const books = useBooks(character.id) ?? []
+  // Default to the book open on the Book page, but never one that already has this spell.
+  const freeBooks = books.filter((b) => !known.some((k) => k.spellId === spell.id && k.bookId === b.id))
+  const [bookId, setBookId] = useState<string>()
+  const book = pickBook(freeBooks, bookId ?? loadSelectedBook(character.id))
+  const inOtherBook = known.some((k) => k.spellId === spell.id)
+  const [choice, setChoice] = useState<Choice>(inOtherBook ? 'copy' : canUseFree ? 'free' : 'scroll')
   const [freeLevel, setFreeLevel] = useState(freeOptions[0]?.wizardLevel)
   const [note, setNote] = useState('')
   // What the scroll cost, as typed. Starts at the standard price; 0 for a scroll found as loot.
@@ -51,7 +59,8 @@ export function AddToBookSheet({
     choice === 'free'
       ? { method: freeLevel === 1 ? 'starting-free' : 'levelup-free', freePickLevel: freeLevel }
       : { method: choice }
-  const cost = learnCost(spell.level, req.method)
+  if (book) req.bookId = book.id
+  const cost = learnCost(spell.level, req.method, { boccobs: book?.boccobs })
   const scrollCost = Number(scrollGp)
   const scrollValid = scrollGp.trim() !== '' && Number.isFinite(scrollCost) && scrollCost >= 0
   const total = cost + (choice === 'scroll' && scrollValid ? scrollCost : 0)
@@ -74,8 +83,23 @@ export function AddToBookSheet({
         {spell.school} · {spell.level === 0 ? '0-level' : `${ordinal(spell.level)}-level`}
       </p>
 
+      {books.length > 1 && (
+        <div className="mb-4">
+          <Field label="Which book">
+            <select className={inputClass} value={book?.id} onChange={(e) => setBookId(e.target.value)}>
+              {freeBooks.map((b) => (
+                <option key={b.id} value={b.id}>
+                  {b.name}
+                  {b.boccobs ? " (Boccob's: no scribing cost)" : ''}
+                </option>
+              ))}
+            </select>
+          </Field>
+        </div>
+      )}
       <fieldset className="mb-4 space-y-2">
         <legend className="mb-2 text-sm font-semibold text-ink/80">How did you learn it?</legend>
+        {inOtherBook && <Option checked={choice === 'copy'} onSelect={() => setChoice('copy')} label="Copy from your other book (half cost)" />}
         {canUseFree && (
           <Option checked={choice === 'free'} onSelect={() => setChoice('free')} label="Free spell from leveling up">
             {choice === 'free' && (
@@ -103,7 +127,9 @@ export function AddToBookSheet({
         <p className="mb-4 text-sm">
           <span className="font-semibold text-ink/80">Scribing cost: </span>
           <span className="font-display text-lg text-leather">{cost.toLocaleString()} gp</span>
-          <span className="text-ink/60"> (100 gp × spell level)</span>
+          <span className="text-ink/60">
+            {book?.boccobs ? " (Boccob's blessed book)" : choice === 'copy' ? ' (50 gp × spell level)' : ' (100 gp × spell level)'}
+          </span>
         </p>
       )}
       {choice === 'scroll' && (

@@ -4,7 +4,7 @@ import { ordinal, SCHOOL_STYLE } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
 import { Button, Card, Chip, inputClass, Loading, Messages, Page } from '../../components/ui'
 import type { CharacterRecord } from '../../data/db'
-import { useKnownSpells } from '../../data/hooks'
+import { useBooks, useKnownSpells } from '../../data/hooks'
 import { CLASS_NAMES, SCHOOLS, type ClassCode, type School, type Spell, type SpellList } from '../../data/spell-schema'
 import { useSpells } from '../../data/spells'
 import { casterLevel, freePickStatus, isProhibited, maxSpellLevel } from '../../rules'
@@ -49,6 +49,7 @@ const loadList = (): SpellList => {
 /** The searchable spell library. Without a character it is for browsing every class list. */
 export function LibraryPage({ character }: { character?: CharacterRecord }) {
   const known = useKnownSpells(character?.id)
+  const books = useBooks(character?.id)
   const [browseList, setBrowseList] = useState<SpellList>(loadList)
   const list: SpellList = character ? 'Wiz' : browseList
   const { spells, loading, error } = useSpells(list)
@@ -259,7 +260,9 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
 
       <ul>
         {results.slice(0, limit).map((s) => {
-          const inBook = knownIds.has(s.id)
+          // ✓ once it is in every book; with several books, + stays until it is in all of them.
+          const bookCount = known?.filter((k) => k.spellId === s.id).length ?? 0
+          const inBook = knownIds.has(s.id) && bookCount >= Math.max(1, books?.length ?? 1)
           const tooHigh = s.level > castable
           if (!character) {
             return (

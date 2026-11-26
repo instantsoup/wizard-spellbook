@@ -1,12 +1,13 @@
 // Export / import everything as one JSON file.
 
 import { db, type SpellbookDB } from './db'
+import { ensureBooks } from './characters'
 import { migrateCharacter } from './migrate'
 
 export const BACKUP_APP = 'wizard-spellbook'
 export const BACKUP_VERSION = 1
 
-const TABLES = ['characters', 'knownSpells', 'days', 'templates', 'ledger', 'storedSpells', 'settings'] as const
+const TABLES = ['characters', 'knownSpells', 'days', 'templates', 'ledger', 'storedSpells', 'settings', 'books'] as const
 type TableName = (typeof TABLES)[number]
 
 export interface Backup {
@@ -55,6 +56,8 @@ export async function restoreBackup(backup: Backup, d: SpellbookDB = db) {
       if (t === 'characters') rows = (rows as Record<string, unknown>[]).map(migrateCharacter)
       if (rows.length) await d.table(t).bulkAdd(rows)
     }
+    // Backups made before several spellbooks: give every character its starting book.
+    for (const c of await d.characters.toArray()) await ensureBooks(c.id, d)
   })
 }
 

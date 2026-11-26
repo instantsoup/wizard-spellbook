@@ -7,6 +7,7 @@ export const METHOD_LABEL: Record<AcquisitionMethod, string> = {
   scroll: 'From a scroll',
   'other-book': "From another wizard's book",
   research: 'Researched',
+  copy: 'Copied from your other book',
   other: 'Other',
 }
 

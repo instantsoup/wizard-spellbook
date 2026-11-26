@@ -33,6 +33,14 @@ export const CLASS_NAMES: Record<ClassCode, string> = {
 }
 
 /**
+ * Class-agnostic spell kinds: open to every class that prepares spells (wizard, cleric,
+ * druid, paladin, ranger) at one level. Corrupt spells: Book of Vile Darkness; sanctified
+ * spells: Book of Exalted Deeds (evil characters can't cast them).
+ */
+export const SPECIAL_KINDS = ['Corrupt', 'Sanctified'] as const
+export type SpecialKind = (typeof SPECIAL_KINDS)[number]
+
+/**
  * A spell as stored in a spell file. Class levels are in `levels` (and cleric `domains`).
  * Older files and imports may give only `level`, which means the sorcerer/wizard level.
  */
@@ -47,6 +55,11 @@ export interface SpellRecord {
   levels?: ClassLevels
   /** Cleric domain levels, e.g. { Fire: 4 }. */
   domains?: Record<string, number>
+  /**
+   * A corrupt or sanctified spell. `levels` still lists every class that can prepare it;
+   * the Level line shows "Corrupt 3" instead.
+   */
+  special?: SpecialKind
   /** Legacy: sorcerer/wizard level, for files without `levels`. */
   level?: number
   components: string[]
@@ -112,14 +125,20 @@ export function spellsForClass(records: SpellRecord[], cls: SpellList): Spell[] 
 }
 
 /** "Brd 2, Clr 3, Sor/Wiz 3, Fire 4" (Sor and Wiz at the same level are joined). */
-export function levelLine(s: Pick<SpellRecord, 'levels' | 'level' | 'domains'>): string {
+export function levelLine(s: Pick<SpellRecord, 'levels' | 'level' | 'domains' | 'special'>): string {
   const lv = classLevels(s)
   const parts: string[] = []
-  for (const c of CLASS_CODES) {
-    const n = lv[c]
-    if (n === undefined) continue
-    if (c === 'Sor' && lv.Wiz === n) continue
-    parts.push(`${c === 'Wiz' && lv.Sor === n ? 'Sor/Wiz' : c} ${n}`)
+  const levels = Object.values(lv)
+  if (s.special && levels.length) {
+    // Corrupt and sanctified spells are one level on every list: "Corrupt 3".
+    parts.push(`${s.special} ${Math.min(...levels)}`)
+  } else {
+    for (const c of CLASS_CODES) {
+      const n = lv[c]
+      if (n === undefined) continue
+      if (c === 'Sor' && lv.Wiz === n) continue
+      parts.push(`${c === 'Wiz' && lv.Sor === n ? 'Sor/Wiz' : c} ${n}`)
+    }
   }
   for (const [d, n] of Object.entries(s.domains ?? {}).sort(([a], [b]) => a.localeCompare(b))) parts.push(`${d} ${n}`)
   return parts.join(', ')
@@ -150,6 +169,7 @@ const KNOWN_FIELDS = new Set<string>([
   'level',
   'levels',
   'domains',
+  'special',
   'components',
   'description',
   'source',
@@ -208,6 +228,9 @@ export function validateSpell(raw: unknown): string[] {
   }
   if (!Array.isArray(s.components) || !s.components.every((c) => COMPONENTS.includes(c as never))) {
     errors.push(`"components" must be a list using only ${COMPONENTS.join(', ')}`)
+  }
+  if (s.special !== undefined && !SPECIAL_KINDS.includes(s.special as SpecialKind)) {
+    errors.push(`"special" must be one of ${SPECIAL_KINDS.join(', ')}`)
   }
   if (!isNonEmptyString(s.description)) errors.push('missing "description"')
   if (!isNonEmptyString(s.source)) errors.push('missing "source"')

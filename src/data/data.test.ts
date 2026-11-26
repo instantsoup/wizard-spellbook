@@ -233,3 +233,86 @@ describe('migrateCharacter', () => {
     expect(migrateCharacter({ name: 'B', customCasting: { score: 22, dc: 3 } })).toEqual({ name: 'B', customCasting: { score: 22, dc: 3 } })
   })
 })
+
+describe('spellbooks', () => {
+  it('a new character has a starting spellbook, and spells go into it', async () => {
+    const { booksFor } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    const books = await booksFor(c.id, d)
+    expect(books.map((b) => b.name)).toEqual(['Starting spellbook'])
+    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'research' } }], d)
+    expect(r.added[0].bookId).toBe(books[0].id)
+  })
+
+  it('the same spell can be in two books; copying costs half, a Boccob\'s costs nothing', async () => {
+    const { addBook } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    await learnSpells(c, [{ spell: S.fireball, req: { method: 'research' } }], d)
+    const travel = (await addBook(c.id, 'Travelling book', false, d)).book!
+    const boccob = (await addBook(c.id, "Boccob's", true, d)).book!
+    const again = await learnSpells(c, [{ spell: S.fireball, req: { method: 'research' } }], d)
+    expect(again.errors[0]).toMatch(/already in this book/)
+    const copy = await learnSpells(c, [{ spell: S.fireball, req: { method: 'copy', bookId: travel.id } }], d)
+    expect(copy.added[0]).toMatchObject({ method: 'copy', costGp: 150, bookId: travel.id })
+    const free = await learnSpells(c, [{ spell: S.fireball, req: { method: 'copy', bookId: boccob.id } }], d)
+    expect(free.added[0].costGp).toBe(0)
+    const scroll = await learnSpells(c, [{ spell: S.haste, req: { method: 'scroll', bookId: boccob.id }, scrollCostGp: 375 }], d)
+    expect(scroll.added[0]).toMatchObject({ costGp: 0, scrollCostGp: 375 })
+  })
+
+  it('copying needs the spell in another of your books', async () => {
+    const { addBook } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    const b = (await addBook(c.id, 'Second', false, d)).book!
+    const r = await learnSpells(c, [{ spell: S.fireball, req: { method: 'copy', bookId: b.id } }], d)
+    expect(r.errors[0]).toMatch(/isn't in another of your books/)
+  })
+
+  it('book names must differ; the last book cannot be deleted; deleting a book removes its spells', async () => {
+    const { addBook, deleteBook, booksFor, updateBook } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, name: 'E' }, d)
+    expect((await addBook(c.id, ' starting SPELLBOOK ', false, d)).error).toMatch(/already have a book/)
+    const [start] = await booksFor(c.id, d)
+    expect((await deleteBook(start.id, d)).error).toMatch(/at least one/)
+    const extra = (await addBook(c.id, 'Extra', false, d)).book!
+    await learnSpells(c, [{ spell: S.fireball, req: { method: 'research', bookId: extra.id } }], d)
+    expect((await updateBook(extra.id, { name: 'Starting spellbook' }, d)).error).toMatch(/already have a book/)
+    expect((await updateBook(extra.id, { name: 'Field book', boccobs: true }, d)).ok).toBe(true)
+    await deleteBook(extra.id, d)
+    expect(await knownSpellsFor(c.id, d)).toEqual([])
+    expect((await booksFor(c.id, d)).map((b) => b.name)).toEqual(['Starting spellbook'])
+  })
+
+  it('v5 gives every saved character a starting book holding its spells', async () => {
+    const Dexie = (await import('dexie')).default
+    const name = `upgrade-${n++}`
+    const old = new Dexie(name)
+    const stores = { characters: 'id, name', knownSpells: 'id, characterId, spellId, [characterId+spellId]', days: 'id, characterId, [characterId+current]', templates: 'id, characterId', ledger: 'id, characterId', storedSpells: 'id, origin', settings: 'key' }
+    old.version(1).stores(stores)
+    old.version(2).stores({})
+    old.version(3).stores({})
+    old.version(4).stores({})
+    await old.table('characters').add({ ...evoker5, id: 'c1', name: 'Old', createdAt: 1, updatedAt: 1 })
+    await old.table('knownSpells').add({ id: 'k1', characterId: 'c1', spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300, addedAt: 1 })
+    old.close()
+    const v5 = new SpellbookDB(name)
+    const books = await v5.books.where('characterId').equals('c1').toArray()
+    expect(books.map((b) => b.name)).toEqual(['Starting spellbook'])
+    expect((await v5.knownSpells.get('k1'))?.bookId).toBe(books[0].id)
+  })
+
+  it('restoring a backup from before books gives each character a starting book', async () => {
+    const backup = parseBackup(
+      JSON.stringify({
+        app: 'wizard-spellbook',
+        version: 1,
+        exportedAt: '2026-11-01T00:00:00Z',
+        data: { characters: [{ ...evoker5, id: 'c1', name: 'Old', createdAt: 1, updatedAt: 1 }], knownSpells: [{ id: 'k1', characterId: 'c1', spellId: 'haste', spellLevel: 3, method: 'scroll', costGp: 300, addedAt: 1 }] },
+      }),
+    )
+    await restoreBackup(backup, d)
+    const books = await d.books.toArray()
+    expect(books).toHaveLength(1)
+    expect((await d.knownSpells.get('k1'))?.bookId).toBe(books[0].id)
+  })
+})
