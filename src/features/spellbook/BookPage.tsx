@@ -121,50 +121,45 @@ export function BookPage({ character }: { character: CharacterRecord }) {
           {pages > capacity ? ' (over the limit)' : ''}
         </p>
       </div>
-      <Card className={`mb-4 ${freeLeft ? 'border-rubric/30' : ''}`}>
-        <div className="flex items-center justify-between gap-3">
-          <button type="button" className="min-h-11 flex-1 text-left text-sm" onClick={() => setShowPicks(!showPicks)} aria-expanded={showPicks}>
-            {freeLeft ? (
-              <>
-                <span className="font-semibold text-rubric">{freeLeft} free spell{freeLeft === 1 ? '' : 's'}</span> to choose
-              </>
-            ) : (
-              'All free spells chosen'
-            )}
-            <span className="text-ink/60">
-              {' '}
-              · {freeGranted - freeLeft}/{freeGranted} used {showPicks ? '▴' : '▾'}
-            </span>
-          </button>
-          {freeLeft > 0 && (
+      {/* Free picks belong to the character, not a book: shown only while some are left. */}
+      {freeLeft > 0 && (
+        <Card className="mb-4 border-rubric/30">
+          <div className="flex items-center justify-between gap-3">
+            <button type="button" className="min-h-11 flex-1 text-left text-sm" onClick={() => setShowPicks(!showPicks)} aria-expanded={showPicks}>
+              <span className="font-semibold text-rubric">{freeLeft} free spell{freeLeft === 1 ? '' : 's'}</span> to choose
+              <span className="text-ink/60">
+                {' '}
+                · {freeGranted - freeLeft}/{freeGranted} used {showPicks ? '▴' : '▾'}
+              </span>
+            </button>
             <Link to={startingLeft > 0 ? '/setup/spells' : '/library'}>
               <Button variant="secondary">Choose</Button>
             </Link>
-          )}
-        </div>
-        {showPicks && (
-          <table className="mt-2 w-full text-sm">
-            <thead>
-              <tr className="text-left text-xs text-ink/60">
-                <th className="font-normal">Granted at</th>
-                <th className="font-normal">Up to</th>
-                <th className="text-right font-normal">Used</th>
-              </tr>
-            </thead>
-            <tbody>
-              {picks.map((p) => (
-                <tr key={p.wizardLevel} className={p.remaining ? 'text-rubric' : ''}>
-                  <td>{p.wizardLevel === 1 ? 'Start (level 1)' : `Level ${p.wizardLevel}`}</td>
-                  <td>{ordinal(p.maxSpellLevel)}-level</td>
-                  <td className="text-right">
-                    {p.used}/{p.granted}
-                  </td>
+          </div>
+          {showPicks && (
+            <table className="mt-2 w-full text-sm">
+              <thead>
+                <tr className="text-left text-xs text-ink/60">
+                  <th className="font-normal">Granted at</th>
+                  <th className="font-normal">Up to</th>
+                  <th className="text-right font-normal">Used</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
-      </Card>
+              </thead>
+              <tbody>
+                {picks.map((p) => (
+                  <tr key={p.wizardLevel} className={p.remaining ? 'text-rubric' : ''}>
+                    <td>{p.wizardLevel === 1 ? 'Start (level 1)' : `Level ${p.wizardLevel}`}</td>
+                    <td>{ordinal(p.maxSpellLevel)}-level</td>
+                    <td className="text-right">
+                      {p.used}/{p.granted}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </Card>
+      )}
 
       {inBook.length > 0 && (
         <>
@@ -224,7 +219,6 @@ export function BookPage({ character }: { character: CharacterRecord }) {
                     spell={spell}
                     open={openId === k.id}
                     onToggle={() => setOpenId(openId === k.id ? undefined : k.id)}
-                    aside={groupBy === 'school' ? <span className="w-8 text-center font-display text-ink/50">{spell.level}</span> : undefined}
                   >
                     <div className="mt-3 flex items-center justify-between gap-2 rounded-md bg-parchment-dark/60 px-3 py-1.5 text-xs text-ink/70">
                       <span>

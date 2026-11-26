@@ -275,7 +275,7 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
                 spell={s}
                 open={openId === s.id}
                 onToggle={() => setOpenId(openId === s.id ? undefined : s.id)}
-                aside={list === 'all' ? undefined : <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Level {s.level}</span>}
+                showLevel={list !== 'all'}
               />
             )
           }
@@ -290,7 +290,7 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
                 inBook ? (
                   <span className="w-11 text-center text-xs font-semibold text-leather">✓<br />Book</span>
                 ) : tooHigh ? (
-                  <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Level {s.level}</span>
+                  <span className="w-11 text-center text-[11px] leading-tight text-ink/60">Not yet</span>
                 ) : (
                   <button
                     type="button"

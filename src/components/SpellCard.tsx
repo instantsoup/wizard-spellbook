@@ -17,6 +17,7 @@ export function SpellRow({
   onToggle,
   aside,
   muted,
+  showLevel = true,
   children,
 }: {
   spell: Spell
@@ -25,6 +26,8 @@ export function SpellRow({
   /** Right-hand slot: checkbox, badge, button... */
   aside?: ReactNode
   muted?: boolean
+  /** Show the spell's level in the name line (off when browsing every class list, where it differs by class). */
+  showLevel?: boolean
   /** Extra content shown under the details when open. */
   children?: ReactNode
 }) {
@@ -40,11 +43,16 @@ export function SpellRow({
               {style.abbr}
             </span>
             <span className="shrink-0 text-xs text-ink/50">{spell.components.join(', ')}</span>
+            {showLevel && (
+              <span className="shrink-0 text-xs font-semibold text-ink/70" title={`Spell level ${spell.level}`}>
+                Lv {spell.level}
+              </span>
+            )}
             <span className="ml-auto shrink-0 rounded border border-ink/20 px-1 text-[10px] font-semibold tracking-wide text-ink/60" title={spell.source}>
               {sourceAbbr(spell.source)}
             </span>
           </div>
-          {spell.summary && <p className="truncate text-sm text-ink/70">{spell.summary}</p>}
+          {spell.summary && <Summary text={spell.summary} />}
         </button>
         {aside && <div className="flex shrink-0 items-center">{aside}</div>}
       </div>
@@ -106,5 +114,15 @@ function ComponentNote({ label, text }: { label: string; text: string }) {
       <span className="font-semibold italic">{label}: </span>
       <span dangerouslySetInnerHTML={{ __html: html.replace(/^<p>|<\/p>$/g, '') }} />
     </div>
+  )
+}
+
+/** One-line summary; _underscores_ become italics (spell names). */
+function Summary({ text }: { text: string }) {
+  const parts = text.split(/_([^_]+)_/)
+  return (
+    <p className="truncate text-sm text-ink/70">
+      {parts.map((p, i) => (i % 2 ? <em key={i}>{p}</em> : p))}
+    </p>
   )
 }
