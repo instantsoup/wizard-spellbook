@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ordinal, SCHOOL_STYLE } from '../../components/schools'
 import { SpellRow } from '../../components/SpellCard'
@@ -58,6 +58,9 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
   const [adding, setAdding] = useState<Spell>()
   const [toast, setToast] = useState<string>()
   const [limit, setLimit] = useState(PAGE)
+  // Rows are drawn a page at a time (drawing all ~2,400 makes every filter tap slow on a
+  // phone); more load as the end of the list scrolls near.
+  const moreRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     try {
@@ -90,6 +93,17 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
     () => filterSpells(spells, f, { character, knownIds, index, anyLevel: list === 'all' }),
     [spells, f, character, knownIds, index, list],
   )
+
+  const hasMore = results.length > limit
+  useEffect(() => {
+    const el = moreRef.current
+    if (!el || !hasMore) return
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) setLimit((l) => l + PAGE * 2)
+    }, { rootMargin: '800px 0px' })
+    io.observe(el)
+    return () => io.disconnect()
+  }, [hasMore, limit])
 
   if (loading || !known) return <Loading what="Opening the library" />
   if (error) return <Page title="Library"><Messages errors={[error]} /></Page>
@@ -288,10 +302,10 @@ export function LibraryPage({ character }: { character?: CharacterRecord }) {
           )
         })}
       </ul>
-      {results.length > limit && (
-        <Button variant="secondary" className="mt-3 w-full" onClick={() => setLimit(limit + PAGE * 2)}>
-          Show more ({results.length - limit} left)
-        </Button>
+      {hasMore && (
+        <div ref={moreRef} className="py-4 text-center text-sm text-ink/50" aria-live="polite">
+          Loading more spells…
+        </div>
       )}
       {results.length === 0 && <p className="py-8 text-center text-ink/60">No spells match.</p>}
 

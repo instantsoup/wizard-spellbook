@@ -123,6 +123,17 @@ test('ledger totals and backup round trip', async ({ page }) => {
   noErrors()
 })
 
+test('library loads more spells as you scroll', async ({ page }) => {
+  const noErrors = failOnErrors(page)
+  await page.goto('./')
+  await page.waitForURL(/#\/library/)
+  const rows = page.locator('li button[aria-expanded]')
+  await expect(rows).toHaveCount(60)
+  await page.getByText('Loading more spells…').scrollIntoViewIfNeeded()
+  await expect(rows).toHaveCount(180)
+  noErrors()
+})
+
 test('browsing without a character: every class list, no book tabs', async ({ page }) => {
   const noErrors = failOnErrors(page)
   await page.goto('./')
