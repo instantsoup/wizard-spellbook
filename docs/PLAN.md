@@ -299,7 +299,8 @@ interface ImportedSpell extends Spell { origin: "imported" | "custom"; }
 **Spellbooks:** a character has one or more books; the first is "Starting spellbook". Each
 book entry (`KnownSpell`) has a `bookId`, and the same spell can be in several books. A book
 holds 100 pages (one per spell level, one for a cantrip); a Boccob's blessed book holds 1000
-and writing spells in it costs nothing (DMG). Copying a spell from one of your own books into
+and writing spells in it costs nothing (DMG). A spell can't be written into a book without
+enough pages left (checked in `canLearn`). Copying a spell from one of your own books into
 another costs half (PH p. 179: "Replacing and Copying Spellbooks"), method `copy`. Free picks
 are per character, not per book. Prepare uses every book.
 

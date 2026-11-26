@@ -316,3 +316,21 @@ describe('spellbooks', () => {
     expect((await d.knownSpells.get('k1'))?.bookId).toBe(books[0].id)
   })
 })
+
+describe('spellbook pages', () => {
+  it('blocks a spell that would overfill the book; a Boccob\'s holds 1000 pages', async () => {
+    const { addBook, booksFor } = await import('./characters')
+    const c = await createCharacter({ ...evoker5, wizardLevel: 20, name: 'E' }, d)
+    const [start] = await booksFor(c.id, d)
+    // fill 97 of the starting book's 100 pages with existing entries
+    await d.knownSpells.bulkAdd(
+      Array.from({ length: 97 }, (_, i) => ({ id: `k${i}`, characterId: c.id, bookId: start.id, spellId: `filler-${i}`, spellLevel: 1, method: 'research' as const, costGp: 100, addedAt: 1 })),
+    )
+    const fireball = await learnSpells(c, [{ spell: S.fireball, req: { method: 'research' } }], d) // 3 pages: fits exactly
+    expect(fireball.ok).toBe(true)
+    const haste = await learnSpells(c, [{ spell: S.haste, req: { method: 'research' } }], d)
+    expect(haste.errors[0]).toMatch(/Not enough pages: Haste needs 3, and this book has 0 left/)
+    const big = (await addBook(c.id, 'Big', true, d)).book!
+    expect((await learnSpells(c, [{ spell: S.haste, req: { method: 'research', bookId: big.id } }], d)).ok).toBe(true)
+  })
+})

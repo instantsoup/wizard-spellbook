@@ -5,6 +5,7 @@ import { Button, Field, inputClass, Messages } from '../../components/ui'
 import { learnSpells } from '../../data/characters'
 import type { CharacterRecord, KnownSpellRecord } from '../../data/db'
 import { useBooks } from '../../data/hooks'
+import { bookCapacity } from '../spellbook/BooksSheet'
 import { loadSelectedBook, pickBook } from '../spellbook/selectedBook'
 import type { Spell } from '../../data/spell-schema'
 import { canLearn, freePickStatus, learnCost, scrollPrice, type AcquisitionMethod, type LearnRequest } from '../../rules'
@@ -59,7 +60,10 @@ export function AddToBookSheet({
     choice === 'free'
       ? { method: freeLevel === 1 ? 'starting-free' : 'levelup-free', freePickLevel: freeLevel }
       : { method: choice }
-  if (book) req.bookId = book.id
+  if (book) {
+    req.bookId = book.id
+    req.bookPages = bookCapacity(book)
+  }
   const cost = learnCost(spell.level, req.method, { boccobs: book?.boccobs })
   const scrollCost = Number(scrollGp)
   const scrollValid = scrollGp.trim() !== '' && Number.isFinite(scrollCost) && scrollCost >= 0

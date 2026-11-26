@@ -5,7 +5,8 @@ import { Button, Field, inputClass, Messages } from '../../components/ui'
 import { forgetSpell, learnSpells, updateKnownSpell } from '../../data/characters'
 import type { BookRecord, CharacterRecord, KnownSpellRecord } from '../../data/db'
 import type { Spell } from '../../data/spell-schema'
-import { entryCost, FREE_METHODS, learnCost, scrollPrice } from '../../rules'
+import { canLearn, entryCost, FREE_METHODS, learnCost, scrollPrice } from '../../rules'
+import { bookCapacity } from './BooksSheet'
 
 /** Edit a spell already in the book (its note, and what the scroll cost), or remove it. */
 export function EditEntrySheet({
@@ -39,6 +40,8 @@ export function EditEntrySheet({
   const [copyErrors, setCopyErrors] = useState<string[]>([])
   const targetBook = targets.find((b) => b.id === target)
   const copyCost = targetBook ? learnCost(entry.spellLevel, 'copy', { boccobs: targetBook.boccobs }) : 0
+  const copyCheck =
+    spell && targetBook ? canLearn(character, spell, known, { method: 'copy', bookId: targetBook.id, bookPages: bookCapacity(targetBook) }) : undefined
 
   return (
     <Sheet title={name} onClose={onClose}>
@@ -96,9 +99,10 @@ export function EditEntrySheet({
           <p className="mt-1 text-xs text-ink/60">
             {targetBook?.boccobs ? "Free in a Boccob's blessed book." : 'Copying your own spell costs half (50 gp × spell level).'}
           </p>
-          <Messages errors={copyErrors} />
+          <Messages errors={[...(copyCheck?.errors ?? []), ...copyErrors]} />
           <Button
             variant="secondary"
+            disabled={!copyCheck?.ok}
             className="mt-2 w-full"
             onClick={async () => {
               const r = await learnSpells(character, [{ spell, req: { method: 'copy', bookId: target } }])

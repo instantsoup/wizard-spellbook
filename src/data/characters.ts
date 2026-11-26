@@ -1,7 +1,7 @@
 // Character and spellbook actions. UI calls these; they call the rules engine.
 
 import type { Spell } from './spell-schema'
-import { canLearn, makeKnownSpell, startingCantrips, type LearnRequest, type WizardCharacter } from '../rules'
+import { BOCCOBS_PAGES, BOOK_PAGES, canLearn, makeKnownSpell, startingCantrips, type LearnRequest, type WizardCharacter } from '../rules'
 import { db, newId, STARTING_BOOK_NAME, type BookRecord, type CharacterRecord, type KnownSpellRecord, type SpellbookDB } from './db'
 
 export const ACTIVE_CHARACTER_KEY = 'activeCharacterId'
@@ -136,7 +136,7 @@ export async function learnSpells(
     const added: KnownSpellRecord[] = []
     for (const item of items) {
       const book = books.find((b) => b.id === item.req.bookId) ?? books[0]
-      const req = { ...item.req, bookId: book.id }
+      const req = { ...item.req, bookId: book.id, bookPages: book.boccobs ? BOCCOBS_PAGES : BOOK_PAGES }
       const result = canLearn(character, item.spell, [...known, ...added], req)
       if (!result.ok) {
         errors.push(...result.errors.map((e) => `${item.spell.name}: ${e}`))

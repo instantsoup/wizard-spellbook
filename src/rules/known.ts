@@ -105,6 +105,13 @@ export interface LearnRequest {
   freePickLevel?: number
   /** The spellbook to write it in. Entries without a book count as the starting book. */
   bookId?: string
+  /** That book's pages (100, or 1000 for a Boccob's): the spell must fit in what's left. */
+  bookPages?: number
+}
+
+/** Pages already used in a book by these entries. */
+export function pagesUsed(known: KnownSpell[], bookId: string): number {
+  return known.filter((k) => k.bookId === bookId).reduce((n, k) => n + pagesFor(k.spellLevel), 0)
 }
 
 /** Can this spell be added to the book this way? */
@@ -118,6 +125,11 @@ export function canLearn(c: WizardCharacter, spell: Spell, known: KnownSpell[], 
   const barred = alignmentBar(c, spell)
   if (barred) errors.push(barred)
   warnings.push(...alignmentNotes(c, spell))
+  if (req.bookId && req.bookPages !== undefined) {
+    const left = req.bookPages - pagesUsed(known, req.bookId)
+    const need = pagesFor(spell.level)
+    if (need > left) errors.push(`Not enough pages: ${spell.name} needs ${need}, and this book has ${Math.max(0, left)} left.`)
+  }
 
   const castable = maxSpellLevel(casterLevel(c))
   switch (req.method) {
