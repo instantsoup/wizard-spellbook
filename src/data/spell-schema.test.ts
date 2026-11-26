@@ -97,7 +97,7 @@ describe('bundled extra index', () => {
     expect(extra.filter((s: { id: string }) => srdIds.has(s.id))).toEqual([])
   })
   it('is listed in the manifest after srd.json', () => {
-    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json', 'kanderra.json'])
+    expect(JSON.parse(readFileSync('public/data/spells/manifest.json', 'utf8'))).toEqual(['srd.json', 'index-extra.json', 'index-books.json', 'index-special.json', 'kanderra.json'])
   })
 })
 
@@ -130,5 +130,22 @@ describe('bundled book index', () => {
       'Weapons of Legacy', 'Book of Exalted Deeds', 'Spell Compendium', 'Savage Species', 'Book of Vile Darkness', 'SRD',
     ])
     expect(books.filter((s: { source: string }) => !allowed.has(s.source))).toEqual([])
+  })
+})
+
+describe('bundled corrupt and sanctified spells', () => {
+  const special = JSON.parse(readFileSync('public/data/spells/index-special.json', 'utf8'))
+  const others = new Set(
+    ['srd.json', 'index-extra.json', 'index-books.json', 'kanderra.json'].flatMap((f) => JSON.parse(readFileSync(`public/data/spells/${f}`, 'utf8')).map((s: { id: string }) => s.id)),
+  )
+  it('are valid, summary only, on every prepared caster list and override nothing', () => {
+    expect(validateSpellFile(special)).toEqual([])
+    for (const s of special) {
+      expect(['Corrupt', 'Sanctified']).toContain(s.special)
+      expect(s.description).toMatch(/Summary only\. Full text: Book of (Vile Darkness|Exalted Deeds), p\. \d+\.$/)
+      expect(Object.keys(s.levels).sort()).toEqual(expect.arrayContaining(['Clr', 'Drd', 'Wiz']))
+      expect(s.levels).not.toHaveProperty('Sor')
+    }
+    expect(special.filter((s: { id: string }) => others.has(s.id))).toEqual([])
   })
 })

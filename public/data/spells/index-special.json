@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "absorb-mind",
+    "name": "Absorb Mind",
+    "school": "Divination",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A fresh or preserved (still bloody) 1-ounce portion of another creature's brain.",
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "1 minute/level",
+    "summary": "Gain a corpse's memories; 2d6 Wis damage.",
+    "description": "Gain a corpse's memories; 2d6 Wis damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
+    "source": "Book of Vile Darkness",
+    "page": 84
+  },
+  {
+    "id": "absorb-strength",
+    "name": "Absorb Strength",
+    "school": "Necromancy",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 4,
+      "Drd": 4,
+      "Wiz": 4,
+      "Pal": 4,
+      "Rgr": 4
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A fresh or preserved (still bloody) 1-ounce portion of another creature's flesh.",
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "10 minutes/level",
+    "summary": "Eat flesh to gain 1/4 the creature's Str and Con; 2d6 Wis damage.",
+    "description": "Eat flesh to gain 1/4 the creature's Str and Con; 2d6 Wis damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 84.",
+    "source": "Book of Vile Darkness",
+    "page": 84
+  },
+  {
+    "id": "apocalypse-from-the-sky",
+    "name": "Apocalypse from the Sky",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 9,
+      "Drd": 9,
+      "Wiz": 9
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "An artifact, usually one of good perverted to this corrupt use.",
+    "castingTime": "1 day",
+    "range": "Personal",
+    "area": "10-mile radius/level, centered on caster",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Rain ruin on a 10-mile radius/level; 10d6 damage; 3d6 Con, 4d6 Wis cost.",
+    "description": "Rain ruin on a 10-mile radius/level; 10d6 damage; 3d6 Con, 4d6 Wis cost.\n\nSummary only. Full text: Book of Vile Darkness, p. 85.",
+    "source": "Book of Vile Darkness",
+    "page": 85
+  },
+  {
+    "id": "claws-of-the-bebilith",
+    "name": "Claws of the Bebilith",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "10 minutes/level",
+    "summary": "Grow claws that tear armor and shields; 1d6 Dex damage.",
+    "description": "Grow claws that tear armor and shields; 1d6 Dex damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 88.",
+    "source": "Book of Vile Darkness",
+    "page": 88
+  },
+  {
+    "id": "consume-likeness",
+    "name": "Consume Likeness",
+    "school": "Necromancy",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 6,
+      "Drd": 6,
+      "Wiz": 6
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A fresh or preserved (still bloody) 1-ounce portion of another creature's flesh.",
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "Permanent",
+    "summary": "Take a fresh corpse's form; +10 Disguise; 2d6 Wis drain.",
+    "description": "Take a fresh corpse's form; +10 Disguise; 2d6 Wis drain.\n\nSummary only. Full text: Book of Vile Darkness, p. 89.",
+    "source": "Book of Vile Darkness",
+    "page": 89
+  },
+  {
+    "id": "death-by-thorns",
+    "name": "Death by Thorns",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Evil",
+      "Death"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "Up to three creatures, no two of which can be more than 15 ft. apart",
+    "duration": "Instantaneous",
+    "targetLabel": "Targets",
+    "savingThrow": "Fortitude partial",
+    "spellResistance": "Yes",
+    "summary": "Thorns burst from up to three foes; death or 1d6/round agony; 1d3 Wis drain.",
+    "description": "Thorns burst from up to three foes; death or 1d6/round agony; 1d3 Wis drain.\n\nSummary only. Full text: Book of Vile Darkness, p. 91.",
+    "source": "Book of Vile Darkness",
+    "page": 91
+  },
+  {
+    "id": "devils-tongue",
+    "name": "Devil's Tongue",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2,
+      "Wiz": 2,
+      "Pal": 2,
+      "Rgr": 2
+    },
+    "special": "Corrupt",
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "1 minute/level",
+    "summary": "Tongue grapples or disarms at 15 ft.; 1d6 Wis damage.",
+    "description": "Tongue grapples or disarms at 15 ft.; 1d6 Wis damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 92.",
+    "source": "Book of Vile Darkness",
+    "page": 92
+  },
+  {
+    "id": "evil-weather",
+    "name": "Evil Weather",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 8,
+      "Drd": 8,
+      "Wiz": 8
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "M",
+      "XP"
+    ],
+    "materialComponent": "10,000 gp worth of amethysts (violet rain only)",
+    "xpCost": "200 XP (violet rain only)",
+    "castingTime": "1 hour",
+    "range": "Personal",
+    "area": "1-mile/level radius, centered on caster",
+    "duration": "3d6 minutes",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Conjure a type of evil weather; 3d6 Con damage.",
+    "description": "Conjure a type of evil weather; 3d6 Con damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 94.",
+    "source": "Book of Vile Darkness",
+    "page": 94
+  },
+  {
+    "id": "forbidden-speech",
+    "name": "Forbidden Speech",
+    "school": "Enchantment",
+    "descriptors": [
+      "Evil",
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "target": "1 living creature",
+    "duration": "Permanent",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Subject cannot communicate about one topic; 1d6 Str damage.",
+    "description": "Subject cannot communicate about one topic; 1d6 Str damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 96.",
+    "source": "Book of Vile Darkness",
+    "page": 96
+  },
+  {
+    "id": "lahms-finger-darts",
+    "name": "Lahm's Finger Darts",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2,
+      "Wiz": 2,
+      "Pal": 2,
+      "Rgr": 2
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Up to five creatures, no two of which can be more than 15 ft. apart",
+    "duration": "Instantaneous",
+    "targetLabel": "Targets",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Fingers fly as unerring darts; 1d4 Dex damage each; Str damage per dart.",
+    "description": "Fingers fly as unerring darts; 1d4 Dex damage each; Str damage per dart.\n\nSummary only. Full text: Book of Vile Darkness, p. 98.",
+    "source": "Book of Vile Darkness",
+    "page": 98
+  },
+  {
+    "id": "loves-pain",
+    "name": "Love's Pain",
+    "school": "Evocation",
+    "descriptors": [
+      "Evil",
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One living creature",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Harm the target's dearest loved one, 1d6/2 levels; 1d6 Int damage.",
+    "description": "Harm the target's dearest loved one, 1d6/2 levels; 1d6 Int damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 98.",
+    "source": "Book of Vile Darkness",
+    "page": 98
+  },
+  {
+    "id": "plague-of-nightmares",
+    "name": "Plague of Nightmares",
+    "school": "Enchantment",
+    "descriptors": [
+      "Evil",
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 8,
+      "Drd": 8,
+      "Wiz": 8
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A fresh or preserved (still bloody) 1-ounce portion of another creature's flesh.",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "One living creature",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Nightmares deny rest, sap Cha, and kill; 1d6 Str damage each week.",
+    "description": "Nightmares deny rest, sap Cha, and kill; 1d6 Str damage each week.\n\nSummary only. Full text: Book of Vile Darkness, p. 100.",
+    "source": "Book of Vile Darkness",
+    "page": 100
+  },
+  {
+    "id": "power-leech",
+    "name": "Power Leech",
+    "school": "Necromancy",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One creature",
+    "duration": "1 round/level",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Drain 1 ability point/round and gain it as a bonus; 1 Wis drain.",
+    "description": "Drain 1 ability point/round and gain it as a bonus; 1 Wis drain.\n\nSummary only. Full text: Book of Vile Darkness, p. 101.",
+    "source": "Book of Vile Darkness",
+    "page": 101
+  },
+  {
+    "id": "rapture-of-rupture",
+    "name": "Rapture of Rupture",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "One living creature touched per level",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude half",
+    "spellResistance": "Yes",
+    "summary": "Touch bursts flesh: 6d6, stun, then 1d6/round; 1 Str damage per target.",
+    "description": "Touch bursts flesh: 6d6, stun, then 1d6/round; 1 Str damage per target.\n\nSummary only. Full text: Book of Vile Darkness, p. 101.",
+    "source": "Book of Vile Darkness",
+    "page": 101
+  },
+  {
+    "id": "red-fester",
+    "name": "Red Fester",
+    "school": "Necromancy",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Blister the target; 1d6 Str and 1d4 Cha damage; 1d6 Str damage.",
+    "description": "Blister the target; 1d6 Str and 1d4 Cha damage; 1d6 Str damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 102.",
+    "source": "Book of Vile Darkness",
+    "page": 102
+  },
+  {
+    "id": "rotting-curse-of-urfestra",
+    "name": "Rotting Curse of Urfestra",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "Living creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Flesh rots: 1d6 Con damage now and each hour; 1d6 Str damage.",
+    "description": "Flesh rots: 1d6 Con damage now and each hour; 1d6 Str damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 102.",
+    "source": "Book of Vile Darkness",
+    "page": 102
+  },
+  {
+    "id": "seething-eyebane",
+    "name": "Seething Eyebane",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil",
+      "Acid"
+    ],
+    "levels": {
+      "Clr": 1,
+      "Drd": 1,
+      "Wiz": 1,
+      "Pal": 1,
+      "Rgr": 1
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates (see text)",
+    "spellResistance": "Yes",
+    "summary": "Eyes burst: blind subject, acid splashes 5 ft.; 1d6 Con damage.",
+    "description": "Eyes burst: blind subject, acid splashes 5 ft.; 1d6 Con damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
+    "source": "Book of Vile Darkness",
+    "page": 103
+  },
+  {
+    "id": "serpents-of-theggeron",
+    "name": "Serpents of Theggeron",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Personal",
+    "target": "Caster",
+    "duration": "1 minute/level",
+    "summary": "Arms become poisonous serpents, 10 ft. reach; 1d6 Int damage.",
+    "description": "Arms become poisonous serpents, 10 ft. reach; 1d6 Int damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 103.",
+    "source": "Book of Vile Darkness",
+    "page": 103
+  },
+  {
+    "id": "touch-of-juiblex",
+    "name": "Touch of Juiblex",
+    "school": "Transmutation",
+    "descriptors": [
+      "Evil"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Corrupt",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 action",
+    "range": "Touch",
+    "target": "Creature touched",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates",
+    "spellResistance": "Yes",
+    "summary": "Subject turns to green slime over 4 rounds; 1d6 Str damage.",
+    "description": "Subject turns to green slime over 4 rounds; 1d6 Str damage.\n\nSummary only. Full text: Book of Vile Darkness, p. 107.",
+    "source": "Book of Vile Darkness",
+    "page": 107
+  },
+  {
+    "id": "armageddon",
+    "name": "Armageddon",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 9,
+      "Drd": 9,
+      "Wiz": 9
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "2 or more summoned creatures, no two of which can be more than 30 ft. apart",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Call avorals, a ghaele and an astral deva to fight evil; costs 1 level.",
+    "description": "Call avorals, a ghaele and an astral deva to fight evil; costs 1 level.\n\nSummary only. Full text: Book of Exalted Deeds, p. 90.",
+    "source": "Book of Exalted Deeds",
+    "page": 90
+  },
+  {
+    "id": "ayaillas-radiant-burst",
+    "name": "Ayailla's Radiant Burst",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2,
+      "Wiz": 2,
+      "Pal": 2,
+      "Rgr": 2
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "60 ft.",
+    "area": "Cone-shaped burst",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates (blindness) and Reflex half (shards)",
+    "spellResistance": "Yes",
+    "summary": "Cone blinds evil 1 round, 1d6/2 levels damage; 1d2 Str damage.",
+    "description": "Cone blinds evil 1 round, 1d6/2 levels damage; 1d2 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 91.",
+    "source": "Book of Exalted Deeds",
+    "page": 91
+  },
+  {
+    "id": "brilliant-emanation",
+    "name": "Brilliant Emanation",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "100 ft. + 10 ft./level",
+    "area": "100-ft.-radius emanation + 10-ft. radius per level",
+    "duration": "1d4 rounds",
+    "savingThrow": "Fortitude partial",
+    "spellResistance": "Yes",
+    "summary": "Reflective surfaces blaze, blinding evil creatures; 1d3 Str damage.",
+    "description": "Reflective surfaces blaze, blinding evil creatures; 1d3 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 92.",
+    "source": "Book of Exalted Deeds",
+    "page": 92
+  },
+  {
+    "id": "celestial-aspect",
+    "name": "Celestial Aspect",
+    "school": "Transmutation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One creature touched",
+    "duration": "1 minute/level",
+    "savingThrow": "Fortitude negates (harmless); see text",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Target gains a celestial trait (armblade, fire eyes, horns, wings); 1d3 Str.",
+    "description": "Target gains a celestial trait (armblade, fire eyes, horns, wings); 1d3 Str.\n\nSummary only. Full text: Book of Exalted Deeds, p. 93.",
+    "source": "Book of Exalted Deeds",
+    "page": 93
+  },
+  {
+    "id": "channel-celestial",
+    "name": "Channel Celestial",
+    "school": "Transmutation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "You and 1 willing celestial",
+    "duration": "10 minutes/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Let a willing celestial (up to 12 HD) occupy your body; 1d3 Str and Dex.",
+    "description": "Let a willing celestial (up to 12 HD) occupy your body; 1d3 Str and Dex.\n\nSummary only. Full text: Book of Exalted Deeds, p. 94.",
+    "source": "Book of Exalted Deeds",
+    "page": 94
+  },
+  {
+    "id": "channel-greater-celestial",
+    "name": "Channel Greater Celestial",
+    "school": "Transmutation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 9,
+      "Drd": 9,
+      "Wiz": 9
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "You and 1 willing celestial",
+    "duration": "10 minutes/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "As channel celestial, but up to 24 HD; 1d6 Str and Dex.",
+    "description": "As channel celestial, but up to 24 HD; 1d6 Str and Dex.\n\nSummary only. Full text: Book of Exalted Deeds, p. 94.",
+    "source": "Book of Exalted Deeds",
+    "page": 94
+  },
+  {
+    "id": "constricting-chains",
+    "name": "Constricting Chains",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A small silver chain (10 gp).",
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "One creature",
+    "duration": "1 round/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Chains of light entangle and hold a foe, 3d6 nonlethal/round; 1d2 Str drain.",
+    "description": "Chains of light entangle and hold a foe, 3d6 nonlethal/round; 1d2 Str drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 94.",
+    "source": "Book of Exalted Deeds",
+    "page": 94
+  },
+  {
+    "id": "cry-of-ysgard",
+    "name": "Cry of Ysgard",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Sanctified",
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Calls 2d4 bariaur defenders of Ysgard",
+    "duration": "Instantaneous; see text",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Call 2d4 bariaur defenders (max four rangers kept); 1d3 Str drain.",
+    "description": "Call 2d4 bariaur defenders (max four rangers kept); 1d3 Str drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 95.",
+    "source": "Book of Exalted Deeds",
+    "page": 95
+  },
+  {
+    "id": "curtain-of-light",
+    "name": "Curtain of Light",
+    "school": "Evocation",
+    "descriptors": [
+      "Light"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Curtain of light whose area is up to one 5-ft. square/level",
+    "duration": "1 round/level (D)",
+    "savingThrow": "See text",
+    "spellResistance": "No",
+    "summary": "Light curtain burns evil creatures near and passing through; 1d4 Str damage.",
+    "description": "Light curtain burns evil creatures near and passing through; 1d4 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 96.",
+    "source": "Book of Exalted Deeds",
+    "page": 96
+  },
+  {
+    "id": "diamond-spray",
+    "name": "Diamond Spray",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 4,
+      "Drd": 4,
+      "Wiz": 4,
+      "Pal": 4,
+      "Rgr": 4
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "materialComponent": "Diamond dust worth at least 100 gp.",
+    "castingTime": "1 standard action",
+    "range": "60 ft.",
+    "area": "Cone-shaped burst",
+    "duration": "Instantaneous",
+    "savingThrow": "Reflex half",
+    "spellResistance": "Yes",
+    "summary": "Diamond shards dazzle evil creatures and deal 1d6/level; diamond dust.",
+    "description": "Diamond shards dazzle evil creatures and deal 1d6/level; diamond dust.\n\nSummary only. Full text: Book of Exalted Deeds, p. 96.",
+    "source": "Book of Exalted Deeds",
+    "page": 96
+  },
+  {
+    "id": "divine-inspiration",
+    "name": "Divine Inspiration",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Clr": 1,
+      "Drd": 1,
+      "Wiz": 1,
+      "Pal": 1,
+      "Rgr": 1
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One creature touched",
+    "duration": "1d4 rounds",
+    "savingThrow": "None",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Target gets +3 sacred bonus to attacks against evil; 1d2 Str damage.",
+    "description": "Target gets +3 sacred bonus to attacks against evil; 1d2 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 96.",
+    "source": "Book of Exalted Deeds",
+    "page": 96
+  },
+  {
+    "id": "dragon-cloud",
+    "name": "Dragon Cloud",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [
+      "Air"
+    ],
+    "levels": {
+      "Clr": 8,
+      "Drd": 8,
+      "Wiz": 8
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 round",
+    "range": "Special (see text)",
+    "effect": "One conjured dragon cloud (see text)",
+    "duration": "1 min. + 1 minute/level",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Call a dragon-shaped air elemental cloud as an ally; 1d3 Con damage.",
+    "description": "Call a dragon-shaped air elemental cloud as an ally; 1d3 Con damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 97.",
+    "source": "Book of Exalted Deeds",
+    "page": 97
+  },
+  {
+    "id": "exalted-fury",
+    "name": "Exalted Fury",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 9,
+      "Drd": 9,
+      "Wiz": 9
+    },
+    "special": "Sanctified",
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "40 ft.",
+    "area": "40-ft. radius burst, centered on you",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Burst deals your hp +50 to all evil nearby; you die.",
+    "description": "Burst deals your hp +50 to all evil nearby; you die.\n\nSummary only. Full text: Book of Exalted Deeds, p. 99.",
+    "source": "Book of Exalted Deeds",
+    "page": 99
+  },
+  {
+    "id": "exalted-raiment",
+    "name": "Exalted Raiment",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 6,
+      "Drd": 6,
+      "Wiz": 6
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "Robe, garment, or outfit touched",
+    "duration": "1 minute/level",
+    "savingThrow": "Will negates (harmless, object)",
+    "spellResistance": "Yes (harmless, object)",
+    "summary": "Clothing grants sacred AC, DR 10/evil and spell resistance; 1d4 Str damage.",
+    "description": "Clothing grants sacred AC, DR 10/evil and spell resistance; 1d4 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 99.",
+    "source": "Book of Exalted Deeds",
+    "page": 99
+  },
+  {
+    "id": "hammer-of-righteousness",
+    "name": "Hammer of Righteousness",
+    "school": "Evocation",
+    "descriptors": [
+      "Force",
+      "Good"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Magic warhammer of force",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude half",
+    "spellResistance": "Yes",
+    "summary": "Force hammer deals 1d6/level (1d8 vs evil); 1d3 Str damage.",
+    "description": "Force hammer deals 1d6/level (1d8 vs evil); 1d3 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 100.",
+    "source": "Book of Exalted Deeds",
+    "page": 100
+  },
+  {
+    "id": "inquisition",
+    "name": "Inquisition",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": [
+      "Mind-Affecting"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One creature with an Intelligence of 6 or more",
+    "duration": "See text",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Target must answer truthfully, a question per 3 levels; 1d4 Con damage.",
+    "description": "Target must answer truthfully, a question per 3 levels; 1d4 Con damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 101.",
+    "source": "Book of Exalted Deeds",
+    "page": 101
+  },
+  {
+    "id": "luminous-armor",
+    "name": "Luminous Armor",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 2,
+      "Drd": 2,
+      "Wiz": 2,
+      "Pal": 2,
+      "Rgr": 2
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One good creature touched",
+    "duration": "1 hour/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Shimmering light gives +5 armor bonus and -4 to melee against target; 1d2 Str.",
+    "description": "Shimmering light gives +5 armor bonus and -4 to melee against target; 1d2 Str.\n\nSummary only. Full text: Book of Exalted Deeds, p. 102.",
+    "source": "Book of Exalted Deeds",
+    "page": 102
+  },
+  {
+    "id": "luminous-armor-greater",
+    "name": "Luminous Armor, Greater",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4,
+      "Drd": 4,
+      "Wiz": 4,
+      "Pal": 4,
+      "Rgr": 4
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One good creature touched",
+    "duration": "1 hour/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "Yes (harmless)",
+    "summary": "As luminous armor with +8 armor bonus; 1d3 Str damage.",
+    "description": "As luminous armor with +8 armor bonus; 1d3 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 102.",
+    "source": "Book of Exalted Deeds",
+    "page": 102
+  },
+  {
+    "id": "path-of-the-exalted",
+    "name": "Path of the Exalted",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "target": "You",
+    "duration": "1 decision; see text",
+    "summary": "Your deity or its agent helps you decide a hard choice; no cost but abstinence.",
+    "description": "Your deity or its agent helps you decide a hard choice; no cost but abstinence.\n\nSummary only. Full text: Book of Exalted Deeds, p. 103.",
+    "source": "Book of Exalted Deeds",
+    "page": 103
+  },
+  {
+    "id": "phierans-resolve",
+    "name": "Phieran's Resolve",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S",
+      "DF"
+    ],
+    "castingTime": "1 standard action",
+    "range": "20 ft.",
+    "target": "One good creature/level in a 20-ft.-radius burst centered on you",
+    "duration": "1 minute/level",
+    "targetLabel": "Targets",
+    "savingThrow": "Will negates (harmless)",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Allies gain +4 sacred bonus on saves vs. evil spells; 1d3 Str damage.",
+    "description": "Allies gain +4 sacred bonus on saves vs. evil spells; 1d3 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 103.",
+    "source": "Book of Exalted Deeds",
+    "page": 103
+  },
+  {
+    "id": "phoenix-fire",
+    "name": "Phoenix Fire",
+    "school": "Necromancy",
+    "descriptors": [
+      "Fire",
+      "Good"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A tail feather from a phoenix, worth 40 gp.",
+    "castingTime": "1 standard action",
+    "range": "15 ft.",
+    "area": "15-ft.-radius spread, centered on you",
+    "duration": "Instantaneous (see text)",
+    "savingThrow": "Reflex half (see text)",
+    "spellResistance": "Yes (see text)",
+    "summary": "Immolate yourself for 2d6/level to evil nearby; you die and rise later.",
+    "description": "Immolate yourself for 2d6/level to evil nearby; you die and rise later.\n\nSummary only. Full text: Book of Exalted Deeds, p. 103.",
+    "source": "Book of Exalted Deeds",
+    "page": 103
+  },
+  {
+    "id": "rain-of-embers",
+    "name": "Rain of Embers",
+    "school": "Evocation",
+    "descriptors": [
+      "Fire",
+      "Good"
+    ],
+    "levels": {
+      "Clr": 7,
+      "Drd": 7,
+      "Wiz": 7
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area": "Cylinder (40-ft. radius, 120 ft. high)",
+    "duration": "1 round/level (D)",
+    "savingThrow": "Reflex half; see text",
+    "spellResistance": "Yes",
+    "summary": "Divine embers deal 10d6/round to evil creatures; 1d2 Str drain.",
+    "description": "Divine embers deal 10d6/round to evil creatures; 1d2 Str drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 104.",
+    "source": "Book of Exalted Deeds",
+    "page": 104
+  },
+  {
+    "id": "restore-souls-treasure",
+    "name": "Restore Soul's Treasure",
+    "school": "Transmutation",
+    "descriptors": [],
+    "levels": {
+      "Clr": 8,
+      "Drd": 8,
+      "Wiz": 8
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 round",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Disintegrated remains of one item",
+    "duration": "Instantaneous",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Restore an item lost to soul's treasure lost; 1d4 Con drain.",
+    "description": "Restore an item lost to soul's treasure lost; 1d4 Con drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 105.",
+    "source": "Book of Exalted Deeds",
+    "page": 105
+  },
+  {
+    "id": "sanctify-the-wicked",
+    "name": "Sanctify the Wicked",
+    "school": "Necromancy",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 9,
+      "Drd": 9,
+      "Wiz": 9
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S",
+      "F"
+    ],
+    "focus": "A flawless diamond worth no less than 10,000 gp.",
+    "castingTime": "1 standard action",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "One evil creature",
+    "duration": "See text",
+    "savingThrow": "Will negates",
+    "spellResistance": "Yes",
+    "summary": "Trap an evil soul in a diamond to be reborn sanctified; costs 1 level.",
+    "description": "Trap an evil soul in a diamond to be reborn sanctified; costs 1 level.\n\nSummary only. Full text: Book of Exalted Deeds, p. 106.",
+    "source": "Book of Exalted Deeds",
+    "page": 106
+  },
+  {
+    "id": "sicken-evil",
+    "name": "Sicken Evil",
+    "school": "Necromancy",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 5,
+      "Drd": 5,
+      "Wiz": 5
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "area": "20-ft.-radius emanation",
+    "duration": "1 minute/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Evil creatures nearby are sickened; 1d4 Str damage.",
+    "description": "Evil creatures nearby are sickened; 1d4 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 107.",
+    "source": "Book of Exalted Deeds",
+    "page": 107
+  },
+  {
+    "id": "storm-of-shards",
+    "name": "Storm of Shards",
+    "school": "Evocation",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 6,
+      "Drd": 6,
+      "Wiz": 6
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "0 ft.",
+    "area": "80-ft.-radius spread",
+    "duration": "Instantaneous",
+    "savingThrow": "Fortitude negates (blinding) and Reflex half (shards)",
+    "spellResistance": "Yes",
+    "summary": "Heavenly shards blind evil permanently and deal 1d6/level; 1d3 Str drain.",
+    "description": "Heavenly shards blind evil permanently and deal 1d6/level; 1d3 Str drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 108.",
+    "source": "Book of Exalted Deeds",
+    "page": 108
+  },
+  {
+    "id": "sunmantle",
+    "name": "Sunmantle",
+    "school": "Abjuration",
+    "descriptors": [],
+    "levels": {
+      "Clr": 4,
+      "Drd": 4,
+      "Wiz": 4,
+      "Pal": 4,
+      "Rgr": 4
+    },
+    "special": "Sanctified",
+    "components": [
+      "S"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One creature touched",
+    "duration": "1 round/level",
+    "savingThrow": "None",
+    "spellResistance": "Yes",
+    "summary": "Daylight cloak gives DR 5/- and lashes melee attackers; 1d4 Str damage.",
+    "description": "Daylight cloak gives DR 5/- and lashes melee attackers; 1d4 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 109.",
+    "source": "Book of Exalted Deeds",
+    "page": 109
+  },
+  {
+    "id": "telepathy-tap",
+    "name": "Telepathy Tap",
+    "school": "Divination",
+    "descriptors": [],
+    "levels": {
+      "Clr": 3,
+      "Drd": 3,
+      "Wiz": 3,
+      "Pal": 3,
+      "Rgr": 3
+    },
+    "special": "Sanctified",
+    "components": [],
+    "castingTime": "1 standard action",
+    "range": "Personal",
+    "area": "10-ft./level-radius emanation",
+    "duration": "1 round/level (D)",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Overhear nearby creatures' telepathic conversations; 1d3 Str damage.",
+    "description": "Overhear nearby creatures' telepathic conversations; 1d3 Str damage.\n\nSummary only. Full text: Book of Exalted Deeds, p. 110.",
+    "source": "Book of Exalted Deeds",
+    "page": 110
+  },
+  {
+    "id": "twilight-luck",
+    "name": "Twilight Luck",
+    "school": "Abjuration",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 1,
+      "Drd": 1,
+      "Wiz": 1,
+      "Pal": 1,
+      "Rgr": 1
+    },
+    "special": "Sanctified",
+    "components": [
+      "V"
+    ],
+    "castingTime": "1 standard action",
+    "range": "Touch",
+    "target": "One nonevil creature touched",
+    "duration": "1 minute/level",
+    "savingThrow": "None",
+    "spellResistance": "Yes (harmless)",
+    "summary": "Nonevil target gets +1 luck bonus on saves; abstain from alcohol 3 days.",
+    "description": "Nonevil target gets +1 luck bonus on saves; abstain from alcohol 3 days.\n\nSummary only. Full text: Book of Exalted Deeds, p. 110.",
+    "source": "Book of Exalted Deeds",
+    "page": 110
+  },
+  {
+    "id": "valiant-steed",
+    "name": "Valiant Steed",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "descriptors": [
+      "Good"
+    ],
+    "levels": {
+      "Clr": 6,
+      "Drd": 6,
+      "Wiz": 6
+    },
+    "special": "Sanctified",
+    "components": [
+      "V",
+      "S"
+    ],
+    "castingTime": "1 hour",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Calls 1 pegasus or unicorn",
+    "duration": "Instantaneous; see text",
+    "savingThrow": "None",
+    "spellResistance": "No",
+    "summary": "Call a pegasus or unicorn as a year's servant; 1d3 Str drain.",
+    "description": "Call a pegasus or unicorn as a year's servant; 1d3 Str drain.\n\nSummary only. Full text: Book of Exalted Deeds, p. 110.",
+    "source": "Book of Exalted Deeds",
+    "page": 110
+  }
+]
